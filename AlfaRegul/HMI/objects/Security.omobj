@@ -1,0 +1,33 @@
+<object access-modifier="private" name="Security" display-name="Security" uuid="c94687a8-69db-4fc9-b369-6f2b43443867" base-type="JustDummy" base-type-id="34bc054d-53be-4c82-873b-bd509d7c7c3b" ver="4">
+	<object access-modifier="private" name="SecurityContextHMI" display-name="SecurityContextHMI" uuid="390f3141-2b9b-41ed-9cbd-450b2734edb1" base-type="SecurityContext" base-type-id="d9cb0fff-b70a-4e2d-833d-3f73cf74e0dd" ver="4">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="CurrentUserChanged">
+			<body kind="om">
+				<![CDATA[unit.Global.CurrentUser = me.CurrentUserDisplayName;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="4" event="LoginFailed">
+			<body kind="om">
+				<![CDATA[unit.Global.AuthFailed = true;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="4" event="LoginRejected">
+			<body kind="om">
+				<![CDATA[unit.Global.AuthFailed = true;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="SecurityManagerApplication_1" display-name="SecurityManagerApplication_1" uuid="16ccbda0-a7c3-4ffd-bad4-313fa976c382" base-type="SecurityManagerApplication" base-type-id="cfc3985c-54fc-4fe4-b001-cade048d6ee0" ver="4">
+		<designed target="ApplicationName" value="" ver="4"/>
+	</object>
+	<object access-modifier="private" name="AllowSettingsChange" display-name="AllowSettingsChange" uuid="cee51a9e-d70f-4afa-bf71-2380693bc0a3" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="4">
+		<init target="Application" ver="4" value="HMI"/>
+		<init target="Right" ver="4" value="AllowSettingsChange"/>
+		<init target="SecurityContext" ver="4" ref="SecurityContextHMI"/>
+	</object>
+	<object access-modifier="private" name="AllowAllWindows" display-name="AllowAllWindows" uuid="db985f4b-f70f-4f0f-a813-2c1b153f80df" base-type="BoolTokenProxy" base-type-id="9cc1c61e-9310-406a-8f93-18028f747d59" ver="4">
+		<init target="Application" ver="4" value="HMI"/>
+		<init target="Right" ver="4" value="AllowAllWindows"/>
+		<init target="SecurityContext" ver="4" ref="SecurityContextHMI"/>
+	</object>
+</object>
+

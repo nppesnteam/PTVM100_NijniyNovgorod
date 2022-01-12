@@ -1,0 +1,68 @@
+<type access-modifier="private" name="Arrow" display-name="Arrow" uuid="bd45c7e6-c41b-44ca-a8f9-0542667feb49" base-type="Dummy" base-type-id="e4b644cf-f3a8-4d11-82a0-6acc23748e14" ver="4">
+	<designed target="X" value="0" ver="4"/>
+	<designed target="Y" value="0" ver="4"/>
+	<designed target="ZValue" value="0" ver="4"/>
+	<designed target="Rotation" value="0" ver="4"/>
+	<designed target="Scale" value="1" ver="4"/>
+	<designed target="Visible" value="true" ver="4"/>
+	<designed target="Opacity" value="1" ver="4"/>
+	<designed target="Enabled" value="true" ver="4"/>
+	<designed target="Tooltip" value="" ver="4"/>
+	<object access-modifier="private" name="Arrow" display-name="Arrow" uuid="175d4f30-cdeb-4088-a528-6ac500e37d5f" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="3">
+		<designed target="X" value="0" ver="3"/>
+		<designed target="Y" value="0" ver="3"/>
+		<designed target="ZValue" value="0" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<designed target="Scale" value="1" ver="3"/>
+		<designed target="Visible" value="true" ver="3"/>
+		<designed target="Opacity" value="1" ver="3"/>
+		<designed target="Enabled" value="true" ver="3"/>
+		<designed target="Tooltip" value="" ver="3"/>
+		<designed target="Width" value="15" ver="3"/>
+		<designed target="Height" value="14" ver="3"/>
+		<designed target="PenColor" value="0xffffffff" ver="3"/>
+		<designed target="PenStyle" value="0" ver="3"/>
+		<designed target="PenWidth" value="1" ver="3"/>
+		<designed target="BrushColor" value="0xff888888" ver="3"/>
+		<designed target="BrushStyle" value="1" ver="3"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="b1e1068a-6c74-47a3-a71e-29dff628c14a" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="0" ver="3"/>
+			<designed target="Y" value="0" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="f293e6ab-4e69-4071-b8c0-e112b1508602" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="7" ver="3"/>
+			<designed target="Y" value="-7" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="ed4d2e14-fbe1-4f1b-90fa-7f72579ee75c" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="7" ver="3"/>
+			<designed target="Y" value="-2" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="dd74cdb0-63f9-4036-859e-91e971c0cc1f" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="15" ver="3"/>
+			<designed target="Y" value="-2" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="ea63be48-b256-4605-8f5a-077f29e5214b" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="15" ver="3"/>
+			<designed target="Y" value="2" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Point_6" display-name="Point_6" uuid="f112724f-06c0-4fee-be4a-08c335a8adeb" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="7" ver="3"/>
+			<designed target="Y" value="2" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Point_7" display-name="Point_7" uuid="3e26ab8d-9d3d-4680-b257-3ca2b34e0546" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="7" ver="3"/>
+			<designed target="Y" value="7" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Point_8" display-name="Point_8" uuid="c445da6d-91e0-40dd-ae01-6a05fa07afec" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="0" ver="3"/>
+			<designed target="Y" value="0" ver="3"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="4">
+			<body>
+				<![CDATA[Color]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Color" display-name="Color" uuid="936abe6c-0629-49d2-b665-5d7058d0efb8" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="4"/>
+</type>
+

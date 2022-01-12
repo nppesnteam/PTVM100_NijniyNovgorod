@@ -1,0 +1,1488 @@
+<type access-modifier="private" name="SensDouble" display-name="SensDouble" uuid="f0efb2b9-b2c2-4ae5-9828-4b87079c3c46" base-type="Dummy" base-type-id="e4b644cf-f3a8-4d11-82a0-6acc23748e14" ver="3">
+	<designed target="X" value="0" ver="3"/>
+	<designed target="Y" value="0" ver="3"/>
+	<designed target="ZValue" value="0" ver="3"/>
+	<designed target="Rotation" value="0" ver="3"/>
+	<designed target="Scale" value="1" ver="3"/>
+	<designed target="Visible" value="true" ver="3"/>
+	<designed target="Opacity" value="1" ver="3"/>
+	<designed target="Enabled" value="true" ver="3"/>
+	<designed target="Tooltip" value="" ver="3"/>
+	<object access-modifier="private" name="EUColor" display-name="EUColor" uuid="a6005210-27fe-4943-acb6-4a477613ed41" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="3"/>
+	<object access-modifier="private" name="rectEUWrapper" display-name="rectEUWrapper" uuid="ae833a43-05c3-475c-9cb2-de7530a5eb90" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="3">
+		<designed target="X" value="0" ver="3"/>
+		<designed target="Y" value="0" ver="3"/>
+		<designed target="ZValue" value="0" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<designed target="Scale" value="1" ver="3"/>
+		<designed target="Visible" value="true" ver="3"/>
+		<designed target="Opacity" value="1" ver="3"/>
+		<designed target="Enabled" value="true" ver="3"/>
+		<designed target="Tooltip" value="" ver="3"/>
+		<designed target="Width" value="65" ver="3"/>
+		<designed target="Height" value="15" ver="3"/>
+		<designed target="RoundingRadius" value="0" ver="3"/>
+		<designed target="PenColor" value="0xffbfbfbf" ver="3"/>
+		<designed target="PenStyle" value="1" ver="3"/>
+		<designed target="PenWidth" value="1" ver="3"/>
+		<designed target="BrushColor" value="0xff444444" ver="3"/>
+		<designed target="BrushStyle" value="1" ver="3"/>
+		<object access-modifier="private" name="txtEU" display-name="txtEU" uuid="ab36173b-33d5-433c-b2ec-ba2eefaf5020" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="3">
+			<designed target="X" value="1" ver="3"/>
+			<designed target="Y" value="0" ver="3"/>
+			<designed target="ZValue" value="0" ver="3"/>
+			<designed target="Rotation" value="0" ver="3"/>
+			<designed target="Scale" value="1" ver="3"/>
+			<designed target="Visible" value="true" ver="3"/>
+			<designed target="Opacity" value="1" ver="3"/>
+			<designed target="Enabled" value="true" ver="3"/>
+			<designed target="Tooltip" value="" ver="3"/>
+			<designed target="Width" value="15" ver="3"/>
+			<designed target="Height" value="15" ver="3"/>
+			<designed target="Text" value="ЕИ" ver="3"/>
+			<designed target="Font" value="Arial,9,-1,5,50,0,0,0,0,0,Обычный" ver="3"/>
+			<designed target="FontColor" value="0xff888888" ver="3"/>
+			<designed target="TextAlignment" value="132" ver="3"/>
+			<do-trace access-modifier="private" target="Text" ver="4">
+				<body>
+					<![CDATA[ALIAS_1]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="FontColor" ver="3">
+				<body>
+					<![CDATA[EUColor]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="txtValue" display-name="txtValue" uuid="deec192f-efa4-48e5-b719-691a56920768" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="3">
+			<designed target="X" value="18" ver="3"/>
+			<designed target="Y" value="0" ver="3"/>
+			<designed target="ZValue" value="0" ver="3"/>
+			<designed target="Rotation" value="0" ver="3"/>
+			<designed target="Scale" value="1" ver="3"/>
+			<designed target="Visible" value="true" ver="3"/>
+			<designed target="Opacity" value="1" ver="3"/>
+			<designed target="Enabled" value="true" ver="3"/>
+			<designed target="Tooltip" value="" ver="3"/>
+			<designed target="Width" value="47" ver="3"/>
+			<designed target="Height" value="15" ver="3"/>
+			<designed target="Text" value="0,0" ver="3"/>
+			<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0,Narrow Bold" ver="3"/>
+			<designed target="FontColor" value="0xff00ff00" ver="3"/>
+			<designed target="TextAlignment" value="132" ver="3"/>
+			<do-trace access-modifier="private" target="Text" ver="4">
+				<body>
+					<![CDATA[CorrectValue.OutValue]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="FontColor" ver="4">
+				<body>
+					<![CDATA[VALUETxtColor]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Blinker_1" display-name="Blinker_1" uuid="e95d61cb-7445-4247-8e93-9941544133fa" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006" ver="4">
+			<designed target="Period" value="1000" ver="4"/>
+			<designed target="Active" value="false" ver="4"/>
+			<designed target="PenColor" value="0xffff0000" ver="4"/>
+			<designed target="BrushColor" value="4278190080" ver="4"/>
+			<designed target="FontColor" value="4278190080" ver="4"/>
+			<do-trace access-modifier="private" target="Active" ver="4">
+				<body>
+					<![CDATA[Protect||Signal]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="PenColor" ver="4">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Protect]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffff0000]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Signal]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffb700]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="rectFooter" display-name="rectFooter" uuid="47ffbf2c-879c-41ab-9076-0a0607db5e50" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="3">
+		<designed target="X" value="0" ver="3"/>
+		<designed target="Y" value="15" ver="3"/>
+		<designed target="ZValue" value="0" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<designed target="Scale" value="1" ver="3"/>
+		<designed target="Visible" value="true" ver="3"/>
+		<designed target="Opacity" value="1" ver="3"/>
+		<designed target="Enabled" value="true" ver="3"/>
+		<designed target="Tooltip" value="" ver="3"/>
+		<designed target="Width" value="65" ver="3"/>
+		<designed target="Height" value="3" ver="3"/>
+		<designed target="RoundingRadius" value="0" ver="3"/>
+		<designed target="PenColor" value="0xffbfbfbf" ver="3"/>
+		<designed target="PenStyle" value="1" ver="3"/>
+		<designed target="PenWidth" value="1" ver="3"/>
+		<designed target="BrushColor" value="4278190080" ver="3"/>
+		<designed target="BrushStyle" value="0" ver="3"/>
+		<object access-modifier="private" name="Divider" display-name="Divider" uuid="b921180d-137f-4640-928d-2df5ad08c763" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="3">
+			<designed target="X" value="30" ver="3"/>
+			<designed target="Y" value="0" ver="3"/>
+			<designed target="ZValue" value="0" ver="3"/>
+			<designed target="Rotation" value="0" ver="3"/>
+			<designed target="Scale" value="1" ver="3"/>
+			<designed target="Visible" value="true" ver="3"/>
+			<designed target="Opacity" value="1" ver="3"/>
+			<designed target="Enabled" value="true" ver="3"/>
+			<designed target="Tooltip" value="" ver="3"/>
+			<designed target="Width" value="0" ver="3"/>
+			<designed target="Height" value="3" ver="3"/>
+			<designed target="PenColor" value="0xffbfbfbf" ver="3"/>
+			<designed target="PenStyle" value="1" ver="3"/>
+			<designed target="PenWidth" value="1" ver="3"/>
+			<designed target="BrushColor" value="4278190080" ver="3"/>
+			<designed target="BrushStyle" value="0" ver="3"/>
+			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="cf1adf48-8a68-4969-8450-b1338730b578" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+				<designed target="X" value="0" ver="3"/>
+				<designed target="Y" value="0" ver="3"/>
+			</object>
+			<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="36a3254c-05fa-45b2-bdc8-756d04b4a085" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+				<designed target="X" value="0" ver="3"/>
+				<designed target="Y" value="3" ver="3"/>
+			</object>
+			<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="31537bf1-7725-4621-95c1-8a6d3f36f0e1" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+				<designed target="X" value="0" ver="3"/>
+				<designed target="Y" value="0" ver="3"/>
+			</object>
+		</object>
+		<do-trace access-modifier="private" target="PenColor" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[(VALUE_1.Quality == 192) && (outiSel == 1)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffbfbfbf]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[(VALUE_2.Quality == 192) && (outiSel == 2)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffbfbfbf]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[((VALUE_1.Quality == 192)&&(VALUE_2.Quality == 192)) && (outiSel == 0)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffbfbfbf]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[(VALUE_1.Quality == 64) && (outiSel == 1)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffffaa00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[(VALUE_2.Quality == 64) && (outiSel == 2)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffffaa00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[((VALUE_1.Quality == 64)||(VALUE_2.Quality == 64)) && (outiSel == 0)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffffaa00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[(VALUE_1.Quality == 4) && (outiSel == 1)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[(VALUE_2.Quality == 4) && (outiSel == 2)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[((VALUE_1.Quality == 4) || (VALUE_2.Quality == 4)) && (outiSel == 0)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<object access-modifier="private" name="Blinker_1" display-name="Blinker_1" uuid="98b55fca-756c-46da-bf32-baeca6bda23b" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006" ver="4">
+			<designed target="Period" value="1000" ver="4"/>
+			<designed target="Active" value="false" ver="4"/>
+			<designed target="PenColor" value="0xffff0000" ver="4"/>
+			<designed target="BrushColor" value="4278190080" ver="4"/>
+			<designed target="FontColor" value="4278190080" ver="4"/>
+			<do-trace access-modifier="private" target="Active" ver="4">
+				<body>
+					<![CDATA[Protect||Signal]]>
+				</body>
+			</do-trace>
+			<do-trace access-modifier="private" target="PenColor" ver="4">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Protect]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffff0000]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Signal]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffb700]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="VALUETxtColor" display-name="VALUETxtColor" uuid="069540b3-2810-4e91-be61-3bf351937b82" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="4"/>
+	<object access-modifier="private" name="hereOPCSource_1" display-name="hereOPCSource_1" uuid="0d48a1bf-523f-4584-bc4b-39d025775df3" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+		<designed target="Active" value="false" ver="4"/>
+		<designed target="UpdateRate" value="0" ver="4"/>
+		<designed target="ReAdvise" value="0" ver="4"/>
+		<init target="ParentSource" ver="4" ref="initOPCSource"/>
+		<init target="Path" ver="4" ref="initPath_1"/>
+	</object>
+	<param access-modifier="private" name="initOPCSource" display-name="initOPCSource" uuid="22b5fe73-ae3f-451c-a960-79b04885894b" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" base-const="true" base-ref="true" ver="4"/>
+	<param access-modifier="private" name="initPath_1" display-name="initPath_1" uuid="a735e069-270f-4ecc-9860-9465ab750eda" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+	<object access-modifier="private" name="KKS_1" display-name="KKS_1" uuid="b4c0d228-3964-4ca6-9ccc-af11569ffdc7" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+		<init target="Path" ver="4" value="KKS"/>
+	</object>
+	<object access-modifier="private" name="NAME_1" display-name="NAME_1" uuid="cb4e3a3c-3042-4ee5-9f55-631386d51eaa" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+		<init target="Path" ver="4" value="NAME"/>
+	</object>
+	<object access-modifier="private" name="EU_1" display-name="EU_1" uuid="c9d49f68-5a01-4bce-b495-5343aeeae657" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+		<init target="Path" ver="4" value="EU"/>
+	</object>
+	<object access-modifier="private" name="ALIAS_1" display-name="ALIAS_1" uuid="0921fcf2-f269-4731-bdf9-60c539544ade" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+		<init target="Path" ver="4" value="ALIAS"/>
+	</object>
+	<object access-modifier="private" name="VALUE_1" display-name="VALUE_1" uuid="18370f32-5508-45f9-8de7-3ae97a5f571e" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+		<init target="Path" ver="4" value="VALUE"/>
+	</object>
+	<object access-modifier="private" name="AH_1" display-name="AH_1" uuid="5dc57d1b-f1f4-421d-9d40-88ff94fad836" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4">
+			<expr>
+				<![CDATA[initPathAlarm_H]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="AL_1" display-name="AL_1" uuid="480a2d1d-57f4-4f00-92ae-ce5be195a28e" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4">
+			<expr>
+				<![CDATA[initPathAlarm_L]]>
+			</expr>
+		</init>
+	</object>
+	<object access-modifier="private" name="BH_1" display-name="BH_1" uuid="4bd5a3a5-9c1f-4563-a194-055fb0f5e776" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+		<init target="Path" ver="4" value="BH"/>
+	</object>
+	<object access-modifier="private" name="BL_1" display-name="BL_1" uuid="f6a707e2-6abb-470f-91fc-c094cddb2a7f" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+		<init target="Path" ver="4" value="BL"/>
+	</object>
+	<object access-modifier="private" name="hereOPCSource_2" display-name="hereOPCSource_2" uuid="d40c721f-59f2-4061-bfa1-0410f7be4d81" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+		<designed target="Active" value="false" ver="4"/>
+		<designed target="UpdateRate" value="0" ver="4"/>
+		<designed target="ReAdvise" value="0" ver="4"/>
+		<init target="ParentSource" ver="4" ref="initOPCSource"/>
+		<init target="Path" ver="4" ref="initPath_2"/>
+	</object>
+	<param access-modifier="private" name="initPath_2" display-name="initPath_2" uuid="2be2effe-40c7-414a-a21b-f4a2d0d2c505" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+	<object access-modifier="private" name="KKS_2" display-name="KKS_2" uuid="80546d83-a8a6-4ed5-84d8-22d691bf2d72" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+		<init target="Path" ver="4" value="KKS"/>
+		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+	</object>
+	<object access-modifier="private" name="NAME_2" display-name="NAME_2" uuid="badf7d60-797e-49e1-be5c-438574e0d132" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+		<init target="Path" ver="4" value="NAME"/>
+		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+	</object>
+	<object access-modifier="private" name="EU_2" display-name="EU_2" uuid="f59c7be3-3e78-4bc2-8552-c0a71c9122b9" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+		<init target="Path" ver="4" value="EU"/>
+		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+	</object>
+	<object access-modifier="private" name="ALIAS_2" display-name="ALIAS_2" uuid="afbe288c-ffa3-446e-a58e-6cdba885288a" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+		<init target="Path" ver="4" value="ALIAS"/>
+		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+	</object>
+	<object access-modifier="private" name="VALUE_2" display-name="VALUE_2" uuid="eb0a01bc-4960-4d99-859a-568fc94c9c0f" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+		<init target="Path" ver="4" value="VALUE"/>
+	</object>
+	<object access-modifier="private" name="AH_2" display-name="AH_2" uuid="fa1a0046-fc29-42ca-9a10-a4ecf0ee8b56" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+	</object>
+	<object access-modifier="private" name="AL_2" display-name="AL_2" uuid="f5598b52-ad18-4b36-bc1e-099ddbf8d5ff" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+	</object>
+	<object access-modifier="private" name="BH_2" display-name="BH_2" uuid="beeabf4b-eb70-4de0-906b-8c4db81ba85f" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Path" ver="4" value="BH"/>
+		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+	</object>
+	<object access-modifier="private" name="BL_2" display-name="BL_2" uuid="19fd9230-1c5e-42e2-a6bb-6822c2cca336" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Path" ver="4" value="BL"/>
+		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+	</object>
+	<object access-modifier="private" name="OpenModuleWindow" display-name="OpenModuleWindow" uuid="f1c3bc4d-1d13-4903-b418-2343c6381f48" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4" cardinal="1">
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="InvokeTrigger" value="false" ver="4"/>
+		<do-trace access-modifier="private" target="Enabled" ver="4">
+			<body>
+				<![CDATA[!isOpened]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="Invoked">
+			<body kind="om">
+				<![CDATA[mX = TypeConvert.ToFloat(ScreenX(MouseX, MouseY));
+mY = TypeConvert.ToFloat(ScreenY(MouseX, MouseY));
+if (mX+200>1920)
+{
+	posX=mX-(206-(1920-mX));
+}
+else
+{
+	posX=mX;
+}
+if (mY+300>1080)
+{
+	posY=(mY-20)-(300-(1080-mY));
+}
+else
+{
+	posY=mY;
+}]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-action="open-new" form-by-id="false">
+			<object access-modifier="private" uuid="abd01513-47f6-4e45-8e8d-794a8ac67ffc" base-type="2 датчика" base-type-id="a104b692-57e6-4ab3-bea4-4df08bf16447" ver="4">
+				<init target="refData" ver="4" ref="here"/>
+				<designed target="WindowHeight" value="270" ver="4"/>
+				<init target="WindowX" ver="4">
+					<expr>
+						<![CDATA[here.posX]]>
+					</expr>
+				</init>
+				<init target="WindowY" ver="4">
+					<expr>
+						<![CDATA[here.posY]]>
+					</expr>
+				</init>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="isOpened" display-name="isOpened" uuid="78a3a5e3-3b03-4305-8a43-e45e79709440" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseRightClick">
+		<body kind="om">
+			<![CDATA[/*if (unit.Security.AllowSettingsChange.Value==true)
+{
+	mX = TypeConvert.ToFloat(ScreenX(MouseX, MouseY));
+	mY = TypeConvert.ToFloat(ScreenY(MouseX, MouseY));
+	if (mX+302>1920)
+	{
+		posX=mX-(310-(1920-mX));
+	}
+	else
+	{
+		posX=mX;
+	}
+	if (mY+100>1080)
+	{
+		posY=mY-(100-(1080-mY));
+	}
+	else
+	{
+		posY=mY;
+	}
+	OpenContextWindow.Invoke();
+}*/]]>
+		</body>
+	</do-on>
+	<param access-modifier="private" name="initPath" display-name="initPath" uuid="451744f9-e2bd-4a9a-a017-4e61baaa5b9b" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+	<object access-modifier="private" name="iniSel" display-name="iniSel" uuid="5c21206f-68da-4e73-b795-35c4b7cb390c" base-type="OpcItemInt2" base-type-id="01786030-8d4e-41cb-a7fb-fbaa0e344f13" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="IniSel"/>
+	</object>
+	<object access-modifier="private" name="outiSel" display-name="outiSel" uuid="f8162180-c5ad-4214-9385-9a00db015de6" base-type="OpcItemInt2" base-type-id="01786030-8d4e-41cb-a7fb-fbaa0e344f13" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="OutiSel"/>
+	</object>
+	<object access-modifier="private" name="hereOPCSource" display-name="hereOPCSource" uuid="8ff934c9-cc62-4c59-9875-2e486d5b2ccf" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+		<designed target="Active" value="false" ver="4"/>
+		<designed target="UpdateRate" value="0" ver="4"/>
+		<designed target="ReAdvise" value="0" ver="4"/>
+		<init target="ParentSource" ver="4" ref="initOPCSource"/>
+		<init target="Path" ver="4" ref="initPath"/>
+	</object>
+	<object access-modifier="private" name="VALUE" display-name="VALUE" uuid="f5cf38bb-368c-408a-9e1d-ab06473add46" base-type="notifying_float4" base-type-id="bb7d05ee-cbf0-4c44-8740-1905239c8ead" ver="4"/>
+	<do-trace access-modifier="private" target="VALUE" ver="4">
+		<conditional-expr>
+			<condition>
+				<![CDATA[outiSel == 0]]>
+			</condition>
+			<expr>
+				<![CDATA[(VALUE_1 + VALUE_2)/2]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[outiSel == 1]]>
+			</condition>
+			<expr>
+				<![CDATA[VALUE_1]]>
+			</expr>
+		</conditional-expr>
+		<conditional-expr>
+			<condition>
+				<![CDATA[outiSel == 2]]>
+			</condition>
+			<expr>
+				<![CDATA[VALUE_2]]>
+			</expr>
+		</conditional-expr>
+	</do-trace>
+	<object access-modifier="private" name="MAN_ON" display-name="MAN_ON" uuid="85d14b5e-56c6-4ed4-9431-ce5ceb009085" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+	<init target="MAN_ON" ver="4" value="false"/>
+	<object access-modifier="private" name="OpenContextWindow" display-name="OpenContextWindow" uuid="7705de43-eb54-466c-b525-9efb5c409a5c" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4" cardinal="1">
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="InvokeTrigger" value="false" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-action="open-new" form-by-id="false">
+			<object access-modifier="private" uuid="763678e6-8e58-48e8-9472-72d65f2ef461" base-type="Контекстное меню (заслонка)" base-type-id="7ff8281a-41b3-4ac6-807c-e1adac92357d" ver="4">
+				<designed target="Opacity" value="1" ver="4"/>
+				<init target="refData" ver="4" ref="here"/>
+				<init target="WindowX" ver="4">
+					<expr>
+						<![CDATA[here.posX]]>
+					</expr>
+				</init>
+				<init target="WindowY" ver="4">
+					<expr>
+						<![CDATA[here.posY]]>
+					</expr>
+				</init>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="isOpenedTrends" display-name="isOpenedTrends" uuid="c78f0e41-471a-4a3c-82e4-e9a51aca190e" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+	<object access-modifier="private" name="isOpenedHistory" display-name="isOpenedHistory" uuid="f0c833f6-0b05-4b34-a107-d90ecdb57499" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+	<object access-modifier="private" name="mX" display-name="mX" uuid="69293606-a0be-4bd0-a845-500111f6afdf" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
+	<object access-modifier="private" name="mY" display-name="mY" uuid="5c29f705-56c2-4262-a916-4d1a47cb5e9a" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
+	<object access-modifier="private" name="posX" display-name="posX" uuid="968650dc-b0b3-4429-a6a8-90a76993779d" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
+	<object access-modifier="private" name="posY" display-name="posY" uuid="38fb3832-7dc2-4bef-8313-ce769562d561" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
+	<object access-modifier="private" name="isOpenedSettings" display-name="isOpenedSettings" uuid="1eabcef9-5c3a-40af-98f9-e3d5726c4b3f" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+	<object access-modifier="private" name="OpenTrendsWindow" display-name="OpenTrendsWindow" uuid="b69c4281-3a04-49f0-81cf-ef0a4d426081" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4" cardinal="1">
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="InvokeTrigger" value="false" ver="4"/>
+		<do-trace access-modifier="private" target="Enabled" ver="4">
+			<body>
+				<![CDATA[!isOpenedTrends]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-action="open-new" form-by-id="false">
+			<object access-modifier="private" uuid="0a21b095-ad4f-49f4-8b9b-7ea256ca8f72" base-type="График" base-type-id="0146db6e-1d42-4856-9e94-7e6c5518dc7b" ver="4">
+				<init target="WindowX" ver="4">
+					<expr>
+						<![CDATA[posX]]>
+					</expr>
+				</init>
+				<init target="WindowY" ver="4">
+					<expr>
+						<![CDATA[posY]]>
+					</expr>
+				</init>
+				<init target="EU_2" ver="4">
+					<expr>
+						<![CDATA[here.EU_2]]>
+					</expr>
+				</init>
+				<init target="OPCTag_2" ver="4">
+					<expr>
+						<![CDATA[here.VALUE_2.Tag]]>
+					</expr>
+				</init>
+				<init target="OPCTag_1" ver="4">
+					<expr>
+						<![CDATA[here.VALUE_1.Tag]]>
+					</expr>
+				</init>
+				<init target="EU_1" ver="4">
+					<expr>
+						<![CDATA[here.EU_1]]>
+					</expr>
+				</init>
+				<init target="Description_1" ver="4">
+					<expr>
+						<![CDATA[here.NAME_1 + " (датчик 1)"]]>
+					</expr>
+				</init>
+				<init target="Description_2" ver="4">
+					<expr>
+						<![CDATA[here.NAME_2 + " (датчик 2)"]]>
+					</expr>
+				</init>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="OpenHistoryWindow" display-name="OpenHistoryWindow" uuid="f720583c-6ba9-43f6-996a-89618ec11d70" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4" cardinal="1">
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="InvokeTrigger" value="false" ver="4"/>
+		<do-trace access-modifier="private" target="Enabled" ver="4">
+			<body>
+				<![CDATA[!isOpenedHistory]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="OpenSettingsWindow" display-name="OpenSettingsWindow" uuid="a454b56e-f429-4116-8355-f77d55730a6f" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4" cardinal="1">
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="InvokeTrigger" value="false" ver="4"/>
+		<do-trace access-modifier="private" target="Enabled" ver="4">
+			<body>
+				<![CDATA[!isOpenedSettings]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-action="open-new" form-by-id="false">
+			<object access-modifier="private" uuid="ad0325bc-9c20-4ef4-b68a-d51ef01566ed" base-type="2 датчика (настройка)" base-type-id="80285bd0-4760-4616-91aa-b609853626f0" ver="4">
+				<init target="WindowX" ver="4">
+					<expr>
+						<![CDATA[here.posX]]>
+					</expr>
+				</init>
+				<init target="WindowY" ver="4">
+					<expr>
+						<![CDATA[here.posY]]>
+					</expr>
+				</init>
+				<init target="refData" ver="4" ref="here"/>
+			</object>
+		</do-on>
+	</object>
+	<do-trace access-modifier="private" target="Tooltip" ver="4">
+		<body>
+			<![CDATA[NAME_1 + ", " + EU_1]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="EH_1" display-name="EH_1" uuid="88e8973d-16bb-4f76-a506-91be1a64c7c5" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+		<init target="Path" ver="4" value="EH"/>
+	</object>
+	<object access-modifier="private" name="EH_2" display-name="EH_2" uuid="1a60250f-d4c8-4096-980d-ecb405ea4b94" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+		<init target="Path" ver="4" value="EH"/>
+	</object>
+	<object access-modifier="private" name="WH_1" display-name="WH_1" uuid="59420506-decc-47ba-a36a-09b4c43386fe" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+		<init target="Path" ver="4" value="WH"/>
+	</object>
+	<object access-modifier="private" name="WH_2" display-name="WH_2" uuid="86e4dbee-e086-4128-8086-454bed8bbe2d" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+		<init target="Path" ver="4" value="WH"/>
+	</object>
+	<object access-modifier="private" name="EL_1" display-name="EL_1" uuid="6cb0469d-8502-4a8c-b41a-94d7995d0472" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+		<init target="Path" ver="4" value="EL"/>
+	</object>
+	<object access-modifier="private" name="EL_2" display-name="EL_2" uuid="dd2f0ff3-0753-4a65-afab-3a96d12fc6c6" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+		<init target="Path" ver="4" value="EL"/>
+	</object>
+	<object access-modifier="private" name="WL_1" display-name="WL_1" uuid="968459f6-4bbe-4558-b908-dcbe35428b49" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+		<init target="Path" ver="4" value="WL"/>
+	</object>
+	<object access-modifier="private" name="WL_2" display-name="WL_2" uuid="b6b24413-81b3-4d6a-9a9d-2a8a91e7d295" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+		<init target="Path" ver="4" value="WL"/>
+	</object>
+	<object access-modifier="private" name="OWL_1" display-name="OWL_1" uuid="b4aa6f57-3f8c-4332-9557-f36c71302d1e" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+		<init target="Path" ver="4" value="OWL"/>
+	</object>
+	<object access-modifier="private" name="OWL_2" display-name="OWL_2" uuid="8ec3c82f-06f0-43a0-945e-1b2e35dba19b" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+		<init target="Path" ver="4" value="OWL"/>
+	</object>
+	<object access-modifier="private" name="OWH_1" display-name="OWH_1" uuid="b0d57829-a987-4428-b07b-c3fe2cc2696b" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+		<init target="Path" ver="4" value="OWH"/>
+	</object>
+	<object access-modifier="private" name="OWH_2" display-name="OWH_2" uuid="29c547fa-7fb3-4274-b295-f85490c75fea" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+		<init target="Path" ver="4" value="OWH"/>
+	</object>
+	<object access-modifier="private" name="OEL_1" display-name="OEL_1" uuid="b790a200-17dd-4433-abf1-ebb9ee6a3882" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+		<init target="Path" ver="4" value="OEL"/>
+	</object>
+	<object access-modifier="private" name="OEL_2" display-name="OEL_2" uuid="57380add-45dd-4d68-9e4a-3ce86877f633" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+		<init target="Path" ver="4" value="OEL"/>
+	</object>
+	<object access-modifier="private" name="OEH_1" display-name="OEH_1" uuid="8d42a81f-d806-4fc8-af35-23e7e7bf8fec" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+		<init target="Path" ver="4" value="OEH"/>
+	</object>
+	<object access-modifier="private" name="OEH_2" display-name="OEH_2" uuid="9ef72eb3-956f-4745-804d-b2e0cfc7d151" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+		<init target="Path" ver="4" value="OEH"/>
+	</object>
+	<object access-modifier="private" name="OL_1" display-name="OL_1" uuid="bb80c543-544c-4ada-a53b-7879ecd7d3a0" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+		<init target="Path" ver="4" value="OL"/>
+		<init target="Value" ver="4" value="true"/>
+	</object>
+	<object access-modifier="private" name="OL_2" display-name="OL_2" uuid="471c4e6b-27e7-4298-9efd-d1360f627ef7" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+		<init target="Path" ver="4" value="OL"/>
+		<init target="Value" ver="4" value="true"/>
+	</object>
+	<object access-modifier="private" name="OH_1" display-name="OH_1" uuid="81573ac9-3517-49e9-b44e-f4a9464315b1" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+		<init target="Path" ver="4" value="OH"/>
+		<init target="Value" ver="4" value="true"/>
+	</object>
+	<object access-modifier="private" name="OH_2" display-name="OH_2" uuid="765cb700-562a-4aa2-a4d4-97f682282b4d" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+		<init target="Path" ver="4" value="OH"/>
+		<init target="Value" ver="4" value="true"/>
+	</object>
+	<object access-modifier="private" name="inAH_1" display-name="inAH_1" uuid="2ada2e28-e44a-4f9b-ad1f-1f737417df3c" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Path" ver="4" value="inAH"/>
+		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+	</object>
+	<object access-modifier="private" name="inAL_1" display-name="inAL_1" uuid="fb21e6c5-9781-47fa-a6df-d4cbd5b93d68" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Path" ver="4" value="inAL"/>
+		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+	</object>
+	<object access-modifier="private" name="inFTdead_1" display-name="inFTdead_1" uuid="21c30e51-fae8-484c-986e-b6b058663436" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Path" ver="4" value="inFTdead"/>
+		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+	</object>
+	<object access-modifier="private" name="inFdead_1" display-name="inFdead_1" uuid="629a1f06-294d-4c57-accb-933a7f18fcb4" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Path" ver="4" value="inFdead"/>
+		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+	</object>
+	<object access-modifier="private" name="AWH_1" display-name="AWH_1" uuid="5dff3661-de8c-4057-9059-69d85be11327" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+		<init target="Path" ver="4" value="AWH"/>
+	</object>
+	<object access-modifier="private" name="AWL_1" display-name="AWL_1" uuid="a7d8415b-7440-4855-b4dd-2cbf49e02b54" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+		<init target="Path" ver="4" value="AWL"/>
+	</object>
+	<object access-modifier="private" name="AEH_1" display-name="AEH_1" uuid="3693883b-fd83-47e0-8f9d-985576641160" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+		<init target="Path" ver="4" value="AEH"/>
+	</object>
+	<object access-modifier="private" name="AEL_1" display-name="AEL_1" uuid="a237d643-d1dc-468c-a8d1-2a41e3beba9f" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+		<init target="Path" ver="4" value="AEL"/>
+	</object>
+	<object access-modifier="private" name="inAH_2" display-name="inAH_2" uuid="65faf580-0106-464d-8888-f8a38e667dcf" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Path" ver="4" value="inAH"/>
+		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+	</object>
+	<object access-modifier="private" name="inAL_2" display-name="inAL_2" uuid="d65c270f-073b-4fef-a4b8-5928c4530ab3" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Path" ver="4" value="inAL"/>
+		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+	</object>
+	<object access-modifier="private" name="inFTdead_2" display-name="inFTdead_2" uuid="ae99821b-a1c4-4285-a5f1-b5e8490962b5" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Path" ver="4" value="inFTdead"/>
+		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+	</object>
+	<object access-modifier="private" name="inFdead_2" display-name="inFdead_2" uuid="391b6869-fb50-4b7f-9fce-9ed805f9eee5" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Path" ver="4" value="inFdead"/>
+		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+	</object>
+	<object access-modifier="private" name="AWH_2" display-name="AWH_2" uuid="c7c95ce8-1c2c-4785-9849-409eb803c1cf" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Path" ver="4" value="AWH"/>
+		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+	</object>
+	<object access-modifier="private" name="AWL_2" display-name="AWL_2" uuid="737c0285-2fbf-44e6-861c-be7b3d0771e5" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Path" ver="4" value="AWL"/>
+		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+	</object>
+	<object access-modifier="private" name="AEH_2" display-name="AEH_2" uuid="ca8d0873-607d-4214-bf88-43e18b27d0e0" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Path" ver="4" value="AEH"/>
+		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+	</object>
+	<object access-modifier="private" name="AEL_2" display-name="AEL_2" uuid="6eb809c1-88de-4489-a2b1-15b05557ceac" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Path" ver="4" value="AEL"/>
+		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+	</object>
+	<object access-modifier="private" name="outFTdead_1" display-name="outFTdead_1" uuid="ba34633c-95d8-4efe-a81e-a8aa13680955" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+		<init target="Path" ver="4" value="outFTdead"/>
+	</object>
+	<object access-modifier="private" name="outFdead_1" display-name="outFdead_1" uuid="4d5715cf-0898-42a2-8d88-12b050147fdd" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+		<init target="Path" ver="4" value="outFdead"/>
+	</object>
+	<object access-modifier="private" name="outFTdead_2" display-name="outFTdead_2" uuid="fc727128-fa22-442b-9db4-f26119c8ed6e" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Path" ver="4" value="outFTdead"/>
+		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+	</object>
+	<object access-modifier="private" name="outFdead_2" display-name="outFdead_2" uuid="5b8025cf-2662-4c71-98dd-235722eff37f" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Path" ver="4" value="outFdead"/>
+		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+	</object>
+	<object access-modifier="private" name="CorrectValue" display-name="CorrectValue" uuid="10299d62-7f9f-44fd-8cc6-fcf35ea5bf0c" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="4">
+		<designed target="InValue" value="" ver="4"/>
+		<init target="Format" ver="4">
+			<object access-modifier="private" uuid="2a2337c5-8bcb-49f1-8073-95406267a35c" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
+				<designed target="DigitsCount" value="0" ver="4"/>
+				<do-trace access-modifier="private" target="DigitsCount" ver="4">
+					<conditional-expr>
+						<condition>
+							<![CDATA[ALIAS_1=="P"]]>
+						</condition>
+						<expr>
+							<![CDATA[2]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[ALIAS_1=="T"]]>
+						</condition>
+						<expr>
+							<![CDATA[1]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[ALIAS_1=="F"]]>
+						</condition>
+						<expr>
+							<![CDATA[1]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="4">
+			<body>
+				<![CDATA[VALUE]]>
+			</body>
+		</do-trace>
+	</object>
+	<param access-modifier="private" name="initPathAlarm_H" display-name="initPathAlarm_H" uuid="949af09b-8da8-475e-95bd-05d2d6f35245" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+	<param access-modifier="private" name="initPathAlarm_L" display-name="initPathAlarm_L" uuid="d3dc3327-abaa-47f1-9f79-c7bfc510fc54" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+	<object access-modifier="private" name="ETSignalL" display-name="ETSignalL" uuid="a5660b7e-f678-4c69-8769-84e5a0922e4e" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="4">
+		<designed target="Period" value="1" ver="4"/>
+		<designed target="Active" value="false" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnTimer">
+			<body kind="om">
+				<![CDATA[if (fETSignalL<2)
+{
+	fETSignalL+=0.001;
+}]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Active" ver="4">
+			<body>
+				<![CDATA[HaveProt&&VALUE<=SignalL&&!OutMaskProt]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ETSignalH" display-name="ETSignalH" uuid="bbd9e01f-81d5-426f-93cc-248d23385080" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="4">
+		<designed target="Period" value="1" ver="4"/>
+		<designed target="Active" value="false" ver="4"/>
+		<do-trace access-modifier="private" target="Active" ver="4">
+			<body>
+				<![CDATA[HaveProt&&VALUE>=SignalH&&!OutMaskProt]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnTimer">
+			<body kind="om">
+				<![CDATA[if (fETSignalH<2)
+{
+	fETSignalH+=0.001;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ETProtectL" display-name="ETProtectL" uuid="ae8c1456-db5a-4760-a560-2889deb4c0e4" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="4">
+		<designed target="Period" value="1" ver="4"/>
+		<designed target="Active" value="false" ver="4"/>
+		<do-trace access-modifier="private" target="Active" ver="4">
+			<body>
+				<![CDATA[HaveProt&&VALUE<=ProtectL&&!OutMaskProt]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnTimer">
+			<body kind="om">
+				<![CDATA[if (fETProtectL<TimeAlarmL)
+{
+	fETProtectL+=0.001;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ETProtectH" display-name="ETProtectH" uuid="33930443-496e-412a-836f-3e71fb5288d5" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="4">
+		<designed target="Period" value="1" ver="4"/>
+		<designed target="Active" value="false" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnTimer">
+			<body kind="om">
+				<![CDATA[if (fETProtectH<TimeAlarmH)
+{
+	fETProtectH+=0.001;
+}]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Active" ver="4">
+			<body>
+				<![CDATA[HaveProt&&VALUE>=ProtectH&&!OutMaskProt]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ProtectOpcSorce" display-name="ProtectOpcSorce" uuid="14cb6c84-5bb1-45bd-ac39-067a3a29d1e9" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+		<designed target="Active" value="false" ver="4"/>
+		<designed target="UpdateRate" value="0" ver="4"/>
+		<designed target="ReAdvise" value="0" ver="4"/>
+		<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.PROTECTS.BoilerVal"/>
+	</object>
+	<object access-modifier="private" name="ProtectH" display-name="ProtectH" uuid="a8dda133-69c4-44a9-b265-d364faa8741c" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="ProtectOpcSorce"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[if (VALUE<me)
+	fETProtectH=0;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Path" ver="4">
+			<body>
+				<![CDATA["Out"+initName+"H"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ProtectL" display-name="ProtectL" uuid="d5f3a2df-bacb-4ebe-9dde-7f221159214b" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="ProtectOpcSorce"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[if (VALUE>me)
+	fETProtectL=0;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Path" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[TWatOut1<120&&TWatOut2<120&&ALIAS_1=="P"]]>
+				</condition>
+				<expr>
+					<![CDATA["Out"+initName+"L120"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[TWatOut1>=120&&TWatOut1<130&&TWatOut2>=120&&TWatOut2<130&&ALIAS_1=="P"]]>
+				</condition>
+				<expr>
+					<![CDATA["Out"+initName+"L120130"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[TWatOut1>=130&&TWatOut2>=130&&ALIAS_1=="P"]]>
+				</condition>
+				<expr>
+					<![CDATA["Out"+initName+"L130"]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA["Out"+initName+"L"]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="SignalH" display-name="SignalH" uuid="4084ab30-7b5a-4f0a-bdcb-431e44196ff2" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="SignalOpcSorce"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[if (VALUE<me)
+	fETSignalH=0;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Path" ver="4">
+			<body>
+				<![CDATA["Out"+initName+"H"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="SignalL" display-name="SignalL" uuid="40db4787-5ab7-40f1-b36f-8ee0c11f25fe" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="SignalOpcSorce"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[if (VALUE>me)
+	fETSignalL=0;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Path" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[TWatOut1<120&&TWatOut2<120&&ALIAS_1=="P"]]>
+				</condition>
+				<expr>
+					<![CDATA["Out"+initName+"L120"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[TWatOut1>=120&&TWatOut1<130&&TWatOut2>=120&&TWatOut2<130&&ALIAS_1=="P"]]>
+				</condition>
+				<expr>
+					<![CDATA["Out"+initName+"L120130"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[TWatOut1>=130&&TWatOut2>=130&&ALIAS_1=="P"]]>
+				</condition>
+				<expr>
+					<![CDATA["Out"+initName+"L130"]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA["Out"+initName+"L"]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="SignalOpcSorce" display-name="SignalOpcSorce" uuid="39d7eb1d-1970-4e60-a0c5-0d3048073095" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+		<designed target="Active" value="false" ver="4"/>
+		<designed target="UpdateRate" value="0" ver="4"/>
+		<designed target="ReAdvise" value="0" ver="4"/>
+		<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.PROTECTS.BoilerSignal"/>
+	</object>
+	<object access-modifier="private" name="TimeAlarmH" display-name="TimeAlarmH" uuid="9d9432cc-f002-4fce-8bd1-ada53531e472" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="TimeOpcSorce"/>
+		<do-trace access-modifier="private" target="Path" ver="4">
+			<body>
+				<![CDATA["Out"+initName+"H"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="TimeAlarmL" display-name="TimeAlarmL" uuid="a4398bcf-79f7-4c37-a2b6-9b1c7d8a728a" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="TimeOpcSorce"/>
+		<do-trace access-modifier="private" target="Path" ver="4">
+			<body>
+				<![CDATA["Out"+initName+"L"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="TimeOpcSorce" display-name="TimeOpcSorce" uuid="9ab98b4d-0529-44ea-9186-f5c3b12d01fd" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+		<designed target="Active" value="false" ver="4"/>
+		<designed target="UpdateRate" value="0" ver="4"/>
+		<designed target="ReAdvise" value="0" ver="4"/>
+		<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.PROTECTS.BoilerTime"/>
+	</object>
+	<object access-modifier="private" name="ProtectLPLC" display-name="ProtectLPLC" uuid="5ac7697e-bfea-4b86-9f4c-016559017201" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[if (!me.Value)
+	fETProtectL=0;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Path" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[TWatOut1<120&&TWatOut2<120&&ALIAS_1=="P"]]>
+				</condition>
+				<expr>
+					<![CDATA["ROOT.ALARMS.OtherAlarms.Alarm"+initName+"L120"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[TWatOut1>=120&&TWatOut1<130&&TWatOut2>=120&&TWatOut2<130&&ALIAS_1=="P"]]>
+				</condition>
+				<expr>
+					<![CDATA["ROOT.ALARMS.OtherAlarms.Alarm"+initName+"L120130"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[TWatOut1>=130&&TWatOut2>=130&&ALIAS_1=="P"]]>
+				</condition>
+				<expr>
+					<![CDATA["ROOT.ALARMS.OtherAlarms.Alarm"+initName+"L130"]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA["ROOT.ALARMS.OtherAlarms.Alarm"+initName+"L"]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="SignalLPLC" display-name="SignalLPLC" uuid="74286313-e1de-45cc-ba85-3de71f67dd35" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[if (!me.Value)
+	fETSignalL=0;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Path" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[TWatOut1<120&&TWatOut2<120&&ALIAS_1=="P"]]>
+				</condition>
+				<expr>
+					<![CDATA["ROOT.ALARMS.Signal.Alarm"+initName+"L120"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[TWatOut1>=120&&TWatOut1<130&&TWatOut2>=120&&TWatOut2<130&&ALIAS_1=="P"]]>
+				</condition>
+				<expr>
+					<![CDATA["ROOT.ALARMS.Signal.Alarm"+initName+"L120130"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[TWatOut1>=130&&TWatOut2>=130&&ALIAS_1=="P"]]>
+				</condition>
+				<expr>
+					<![CDATA["ROOT.ALARMS.Signal.Alarm"+initName+"L130"]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA["ROOT.ALARMS.Signal.Alarm"+initName+"L"]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ProtectHPLC" display-name="ProtectHPLC" uuid="a5dff38b-30c1-40b9-9de7-b729d2fd1c09" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[if (!me.Value)
+	fETProtectH=0;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Path" ver="4">
+			<body>
+				<![CDATA["ROOT.ALARMS.OtherAlarms.Alarm"+initName+"H"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="SignalHPLC" display-name="SignalHPLC" uuid="e55443de-6d1a-4542-a27a-67e01c8ffdd1" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[if (!me.Value)
+	fETSignalH=0;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Path" ver="4">
+			<body>
+				<![CDATA["ROOT.ALARMS.Signal.Alarm"+initName+"H"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="HaveProt" display-name="HaveProt" uuid="34923f41-2ebc-4fde-bb6d-02773bd35ec8" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+	<object access-modifier="private" name="fETSignalL" display-name="fETSignalL" uuid="88e4bcb1-c942-4336-ba81-917fa90db0fe" base-type="notifying_float8" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="4"/>
+	<object access-modifier="private" name="fETProtectL" display-name="fETProtectL" uuid="10aa4f1b-21df-473d-8966-496a9734a3ee" base-type="notifying_float8" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="4"/>
+	<object access-modifier="private" name="fETSignalH" display-name="fETSignalH" uuid="3a5ebca9-fd1d-423a-80a1-09db1e8b685b" base-type="notifying_float8" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="4"/>
+	<object access-modifier="private" name="fETProtectH" display-name="fETProtectH" uuid="72e6bcd1-1c6d-4942-941f-855c853bd05d" base-type="notifying_float8" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="4"/>
+	<object access-modifier="private" name="OpenProtCheckWindow" display-name="OpenProtCheckWindow" uuid="d115e2db-94af-47b9-9ff3-fb9c292356f4" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4" cardinal="1">
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="InvokeTrigger" value="false" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-action="open-new" form-by-id="false">
+			<object access-modifier="private" uuid="72865f35-3052-4b54-bc31-c2222c6a2332" base-type="Сдвоенный датчик (смена уставки)" base-type-id="7317d7ee-f96c-4c44-8f52-568e35cf7b17" ver="4">
+				<init target="WindowX" ver="4">
+					<expr>
+						<![CDATA[posX]]>
+					</expr>
+				</init>
+				<init target="WindowY" ver="4" ref="posY"/>
+				<init target="refData" ver="4" ref="here"/>
+			</object>
+		</do-on>
+		<do-trace access-modifier="private" target="Enabled" ver="4">
+			<body>
+				<![CDATA[!isOpenedProtCheck&&HaveProt&&unit.Security.AllowSettingsChange.Value&&unit.Global.OutCheckProt]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="isOpenedProtCheck" display-name="isOpenedProtCheck" uuid="da6ed3d7-a825-4c58-9f02-5be3c49d5e95" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+	<object access-modifier="private" name="CorrectValueTimeSignalL" display-name="CorrectValueTimeSignalL" uuid="4b99e65c-5863-4c08-8920-39ae3cb75536" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="4">
+		<designed target="InValue" value="" ver="4"/>
+		<init target="Format" ver="4">
+			<object access-modifier="private" uuid="2a2337c5-8bcb-49f1-8073-95406267a35c" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
+				<designed target="DigitsCount" value="1" ver="4"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="4">
+			<body>
+				<![CDATA[fETSignalL]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="CorrectValueTimeSignalH" display-name="CorrectValueTimeSignalH" uuid="9eaec4d8-5c2d-464f-a792-8557d39dacc4" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="4">
+		<designed target="InValue" value="" ver="4"/>
+		<init target="Format" ver="4">
+			<object access-modifier="private" uuid="2a2337c5-8bcb-49f1-8073-95406267a35c" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
+				<designed target="DigitsCount" value="1" ver="4"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="4">
+			<body>
+				<![CDATA[fETSignalH]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="CorrectValueTimeProtectL" display-name="CorrectValueTimeProtectL" uuid="2fdf08f8-8714-48e7-a1ad-1b3130a02bc7" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="4">
+		<designed target="InValue" value="" ver="4"/>
+		<init target="Format" ver="4">
+			<object access-modifier="private" uuid="2a2337c5-8bcb-49f1-8073-95406267a35c" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
+				<designed target="DigitsCount" value="1" ver="4"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="4">
+			<body>
+				<![CDATA[fETProtectL]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="CorrectValueTimeProtectH" display-name="CorrectValueTimeProtectH" uuid="20623e8e-1f3c-4422-97d8-271dcd503e84" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="4">
+		<designed target="InValue" value="" ver="4"/>
+		<init target="Format" ver="4">
+			<object access-modifier="private" uuid="2a2337c5-8bcb-49f1-8073-95406267a35c" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
+				<designed target="DigitsCount" value="1" ver="4"/>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="4">
+			<body>
+				<![CDATA[fETProtectH]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Signal" display-name="Signal" uuid="523bfbcc-5b8b-4056-8823-a5c98665de2f" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+	<object access-modifier="private" name="Protect" display-name="Protect" uuid="a9f993fd-0e94-42da-a600-628bd2870897" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+	<object access-modifier="private" name="InMaskProt" display-name="InMaskProt" uuid="da7ea889-e875-4d68-a27b-74036ddf6f66" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<do-trace access-modifier="private" target="Path" ver="4">
+			<body>
+				<![CDATA["ROOT.BOILER.InMask"+initName]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="OutMaskProt" display-name="OutMaskProt" uuid="5985a132-ace5-422e-812c-f8edf732ee67" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[if (!me.Value&&isOpenedProtCheck&&unit.Global.OutCheckProt)
+{
+	/*OrigSignalL=SignalL;
+	OrigSignalH=SignalH;*/
+	OrigProtectL=ProtectL;
+	OrigProtectH=ProtectH;
+}
+if (me.Value&&isOpenedProtCheck&&unit.Global.OutCheckProt)
+{
+	fETSignalL=0;
+	fETProtectL=0;
+	fETSignalH=0;
+	fETProtectH=0;
+	/*InSignalL=OrigSignalL;
+	InSignalH=OrigSignalH;*/
+	InProtectL=OrigProtectL;
+	InProtectH=OrigProtectH;
+}]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Path" ver="4">
+			<body>
+				<![CDATA["ROOT.BOILER.OutMask"+initName]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="InProtectH" display-name="InProtectH" uuid="882d4f64-392f-4880-81f4-d9691e5711ef" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="ProtectOpcSorce"/>
+		<do-trace access-modifier="private" target="Path" ver="4">
+			<body>
+				<![CDATA["In"+initName+"H"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="InProtectL" display-name="InProtectL" uuid="e36d43ee-fb54-4195-a0fc-e52b88500256" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="ProtectOpcSorce"/>
+		<do-trace access-modifier="private" target="Path" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[TWatOut1<120&&TWatOut2<120&&ALIAS_1=="P"]]>
+				</condition>
+				<expr>
+					<![CDATA["In"+initName+"L120"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[TWatOut1>=120&&TWatOut1<130&&TWatOut2>=120&&TWatOut2<130&&ALIAS_1=="P"]]>
+				</condition>
+				<expr>
+					<![CDATA["In"+initName+"L120130"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[TWatOut1>=130&&TWatOut2>=130&&ALIAS_1=="P"]]>
+				</condition>
+				<expr>
+					<![CDATA["In"+initName+"L130"]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA["In"+initName+"L"]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="InSignalH" display-name="InSignalH" uuid="a33e59a0-5ff7-4a9a-9daa-c91e3625d3b7" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="SignalOpcSorce"/>
+		<do-trace access-modifier="private" target="Path" ver="4">
+			<body>
+				<![CDATA["In"+initName+"H"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="InSignalL" display-name="InSignalL" uuid="255e06d2-cda3-40d0-91eb-7b1d00ac7609" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="SignalOpcSorce"/>
+		<do-trace access-modifier="private" target="Path" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[TWatOut1<120&&TWatOut2<120&&ALIAS_1=="P"]]>
+				</condition>
+				<expr>
+					<![CDATA["In"+initName+"L120"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[TWatOut1>=120&&TWatOut1<130&&TWatOut2>=120&&TWatOut2<130&&ALIAS_1=="P"]]>
+				</condition>
+				<expr>
+					<![CDATA["In"+initName+"L120130"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[TWatOut1>=130&&TWatOut2>=130&&ALIAS_1=="P"]]>
+				</condition>
+				<expr>
+					<![CDATA["In"+initName+"L130"]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA["In"+initName+"L"]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="OrigSignalL" display-name="OrigSignalL" uuid="4fbca97e-1cf1-4c46-8a80-4accfe16f8ff" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
+	<object access-modifier="private" name="OrigSignalH" display-name="OrigSignalH" uuid="2b7311ad-6030-4e56-8750-6b49397c6cea" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
+	<object access-modifier="private" name="OrigProtectL" display-name="OrigProtectL" uuid="5ffdd10f-5ade-477e-b0f5-356507527514" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
+	<object access-modifier="private" name="OrigProtectH" display-name="OrigProtectH" uuid="11f06b28-406a-4eae-805b-e81f7e3848be" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
+	<object access-modifier="private" name="CorrectValue_1" display-name="CorrectValue_1" uuid="b49c5de9-dac4-40b6-9e46-a6306f141613" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="4">
+		<designed target="InValue" value="" ver="4"/>
+		<init target="Format" ver="4">
+			<object access-modifier="private" uuid="2a2337c5-8bcb-49f1-8073-95406267a35c" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
+				<designed target="DigitsCount" value="0" ver="4"/>
+				<do-trace access-modifier="private" target="DigitsCount" ver="4">
+					<conditional-expr>
+						<condition>
+							<![CDATA[ALIAS_1=="P"]]>
+						</condition>
+						<expr>
+							<![CDATA[2]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[ALIAS_1=="T"]]>
+						</condition>
+						<expr>
+							<![CDATA[1]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[ALIAS_1=="F"]]>
+						</condition>
+						<expr>
+							<![CDATA[1]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="4">
+			<body>
+				<![CDATA[VALUE_1]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="CorrectValue_2" display-name="CorrectValue_2" uuid="02804f69-4c06-41b9-95df-aef29ceb0cd1" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="4">
+		<designed target="InValue" value="" ver="4"/>
+		<init target="Format" ver="4">
+			<object access-modifier="private" uuid="2a2337c5-8bcb-49f1-8073-95406267a35c" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
+				<designed target="DigitsCount" value="0" ver="4"/>
+				<do-trace access-modifier="private" target="DigitsCount" ver="4">
+					<conditional-expr>
+						<condition>
+							<![CDATA[ALIAS_1=="P"]]>
+						</condition>
+						<expr>
+							<![CDATA[2]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[ALIAS_1=="T"]]>
+						</condition>
+						<expr>
+							<![CDATA[1]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[ALIAS_1=="F"]]>
+						</condition>
+						<expr>
+							<![CDATA[1]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+			</object>
+		</init>
+		<do-trace access-modifier="private" target="InValue" ver="4">
+			<body>
+				<![CDATA[VALUE_2]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="TWatOut1" display-name="TWatOut1" uuid="34942c5d-9e1a-46bb-9600-45fda296b261" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.WATER.TWaterOut1.VALUE"/>
+	</object>
+	<object access-modifier="private" name="TWatOut2" display-name="TWatOut2" uuid="669740ae-6d47-4b50-9707-7173147c8bc1" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.WATER.TWaterOut2.VALUE"/>
+	</object>
+	<object access-modifier="private" name="initName" display-name="initName" uuid="ac631674-9e5a-4ef9-b50e-a34aaeebb1a6" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="4"/>
+	<do-trace access-modifier="private" target="Signal" ver="4">
+		<body>
+			<![CDATA[SignalLPLC||SignalHPLC]]>
+		</body>
+	</do-trace>
+	<do-trace access-modifier="private" target="Protect" ver="4">
+		<body>
+			<![CDATA[ProtectLPLC||ProtectHPLC]]>
+		</body>
+	</do-trace>
+	<do-trace access-modifier="private" target="HaveProt" ver="4">
+		<body>
+			<![CDATA[initName!=""]]>
+		</body>
+	</do-trace>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseRightClick">
+		<body kind="om">
+			<![CDATA[mX = TypeConvert.ToFloat(ScreenX(MouseX, MouseY));
+mY = TypeConvert.ToFloat(ScreenY(MouseX, MouseY));
+if (mX+200>1920)
+{
+	posX=mX-(206-(1920-mX));
+}
+else
+{
+	posX=mX;
+}
+if (mY+300>1080)
+{
+	posY=(mY-20)-(300-(1080-mY));
+}
+else
+{
+	posY=mY;
+}]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="MouseRightClick">
+		<body kind="om">
+			<![CDATA[mX = TypeConvert.ToFloat(ScreenX(MouseX, MouseY));
+mY = TypeConvert.ToFloat(ScreenY(MouseX, MouseY));
+OpenModuleWindow.Invoke();]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="4" event="MouseClick" form-by-id="false">
+		<body kind="om">
+			<![CDATA[mX = TypeConvert.ToFloat(ScreenX(MouseX, MouseY));
+mY = TypeConvert.ToFloat(ScreenY(MouseX, MouseY));
+if (mX+202>1920)
+{
+	posX=1920-202;
+}
+else
+{
+	posX=mX;
+}
+if (mY+115>1080)
+{
+	posY=1080-115;
+}
+else
+{
+	posY=mY;
+}
+OpenProtCheckWindow.Invoke();]]>
+		</body>
+	</do-on>
+</type>
+

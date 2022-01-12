@@ -1,0 +1,123 @@
+<type access-modifier="private" name="Шаги вентиляции" display-name="Шаги вентиляции" uuid="df022b51-50fa-4614-8b2c-4f6fc9cfc5ac" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="4">
+	<designed target="X" value="0" ver="4"/>
+	<designed target="Y" value="0" ver="4"/>
+	<designed target="ZValue" value="0" ver="4"/>
+	<designed target="Rotation" value="0" ver="4"/>
+	<designed target="Scale" value="1" ver="4"/>
+	<designed target="Visible" value="true" ver="4"/>
+	<designed target="Opacity" value="1" ver="4"/>
+	<designed target="Enabled" value="true" ver="4"/>
+	<designed target="Tooltip" value="" ver="4"/>
+	<designed target="Width" value="400" ver="4"/>
+	<designed target="Height" value="240" ver="4"/>
+	<designed target="PenColor" value="4278190080" ver="4"/>
+	<designed target="PenStyle" value="0" ver="4"/>
+	<designed target="PenWidth" value="1" ver="4"/>
+	<designed target="BrushColor" value="4293980400" ver="4"/>
+	<designed target="BrushStyle" value="1" ver="4"/>
+	<designed target="WindowX" value="0" ver="4"/>
+	<designed target="WindowY" value="0" ver="4"/>
+	<designed target="WindowWidth" value="400" ver="4"/>
+	<designed target="WindowHeight" value="240" ver="4"/>
+	<designed target="WindowCaption" value="Шаги вентиляции" ver="4"/>
+	<designed target="ShowWindowCaption" value="true" ver="4"/>
+	<designed target="ShowWindowMinimize" value="false" ver="4"/>
+	<designed target="ShowWindowMaximize" value="false" ver="4"/>
+	<designed target="ShowWindowClose" value="true" ver="4"/>
+	<designed target="AlwaysOnTop" value="false" ver="4"/>
+	<designed target="WindowSizeMode" value="0" ver="4"/>
+	<designed target="WindowBorderStyle" value="2" ver="4"/>
+	<designed target="WindowState" value="0" ver="4"/>
+	<designed target="WindowScalingMode" value="0" ver="4"/>
+	<designed target="MonitorNumber" value="0" ver="4"/>
+	<designed target="WindowPosition" value="4" ver="4"/>
+	<designed target="WindowCloseMode" value="0" ver="4"/>
+	<object access-modifier="private" name="Step" display-name="Step" uuid="5773f1cb-e415-4fbc-a6b2-54714c5b820d" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4" cardinal="12">
+		<designed target="X" value="0" ver="4"/>
+		<designed target="Y" value="0" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="400" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="RoundingRadius" value="0" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="1" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="BrushColor" value="0xffeeeeee" ver="4"/>
+		<designed target="BrushStyle" value="1" ver="4"/>
+		<object access-modifier="private" name="txt" display-name="txt" uuid="95d06428-94f6-4cfd-ae13-2e8f79b7aed2" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+			<designed target="X" value="5" ver="4"/>
+			<designed target="Y" value="0" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="390" ver="4"/>
+			<designed target="Height" value="20" ver="4"/>
+			<designed target="Text" value="ШАГИ" ver="4"/>
+			<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+			<designed target="FontColor" value="4278190080" ver="4"/>
+			<designed target="TextAlignment" value="129" ver="4"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[me.Index==nStep]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff55ff7f]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xffeeeeee]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Initializer" display-name="Initializer" uuid="27daaa93-557b-4c1d-acee-952ce27cb9c1" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="4">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Initialized">
+			<body kind="om">
+				<![CDATA[Step[0].txt.Text="НИЧЕГО НЕ ДЕЛАЕМ";
+Step[1].txt.Text="ПУСК ВЕНТИЛЯТОРОВ";
+Step[2].txt.Text="ОТКРЫТИЕ ШИБЕРОВ ВОЗДУХА";
+Step[3].txt.Text="ВЕНТИЛЯЦИЯ ТОПКИ";
+Step[4].txt.Text="ВОЗЬМИТЕ АНАЛИЗ И НАЖМИТЕ СБРОС";
+Step[5].txt.Text="ИСХОДНОЕ, ПЕРЕКЛЮЧАТЕЛИ ГОРЕЛОК - В ОТКЛ.";
+Step[6].txt.Text="ВЕНТИЛЯЦИЯ ТОПКИ ЗАВЕРШЕНА";
+Step[7].txt.Text="АВАРИЯ ВЕНТИЛЯТОРА 5";
+Step[8].txt.Text="АВАРИЯ ВЕНТИЛЯТОРА 6";
+Step[9].txt.Text="АВАРИЯ ВЕНТИЛЯТОРА 7";
+Step[10].txt.Text="АВАРИЯ ВЕНТИЛЯТОРА 8";
+Step[11].txt.Text="ВЕНТИЛЯЦИЯ ТОПКИ ПОСЛЕ СТОПА";
+i: uint1 = 0;
+while (i<12)
+{
+	Step[i].Y =Step.Y + i*Step.Height;
+	if (i==4)
+	{
+		Step[i].Y=Step.Y + (i+1)*Step.Height;
+	}	
+	if (i==5)
+	{
+		Step[i].Y=Step.Y + (i-1)*Step.Height;
+	}
+	i += 1;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="nStep" display-name="nStep" uuid="14b28921-58d1-4824-bddf-793e78eae0b1" base-type="OpcItemInt4" base-type-id="c8220066-9348-4b3e-a68e-d8ac76d47db1" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.BOILER.nVent"/>
+	</object>
+</type>
+

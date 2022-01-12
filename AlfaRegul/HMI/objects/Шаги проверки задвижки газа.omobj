@@ -1,0 +1,114 @@
+<type access-modifier="private" name="Шаги проверки задвижки газа" display-name="Шаги проверки задвижки газа" uuid="e9387ae5-4c63-4801-ae88-e7bc36035f9c" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="4">
+	<designed target="X" value="0" ver="4"/>
+	<designed target="Y" value="0" ver="4"/>
+	<designed target="ZValue" value="0" ver="4"/>
+	<designed target="Rotation" value="0" ver="4"/>
+	<designed target="Scale" value="1" ver="4"/>
+	<designed target="Visible" value="true" ver="4"/>
+	<designed target="Opacity" value="1" ver="4"/>
+	<designed target="Enabled" value="true" ver="4"/>
+	<designed target="Tooltip" value="" ver="4"/>
+	<designed target="Width" value="400" ver="4"/>
+	<designed target="Height" value="220" ver="4"/>
+	<designed target="PenColor" value="4278190080" ver="4"/>
+	<designed target="PenStyle" value="0" ver="4"/>
+	<designed target="PenWidth" value="1" ver="4"/>
+	<designed target="BrushColor" value="4293980400" ver="4"/>
+	<designed target="BrushStyle" value="1" ver="4"/>
+	<designed target="WindowX" value="0" ver="4"/>
+	<designed target="WindowY" value="0" ver="4"/>
+	<designed target="WindowWidth" value="400" ver="4"/>
+	<designed target="WindowHeight" value="220" ver="4"/>
+	<designed target="WindowCaption" value="Шаги проверки задвижки" ver="4"/>
+	<designed target="ShowWindowCaption" value="true" ver="4"/>
+	<designed target="ShowWindowMinimize" value="false" ver="4"/>
+	<designed target="ShowWindowMaximize" value="false" ver="4"/>
+	<designed target="ShowWindowClose" value="true" ver="4"/>
+	<designed target="AlwaysOnTop" value="false" ver="4"/>
+	<designed target="WindowSizeMode" value="0" ver="4"/>
+	<designed target="WindowBorderStyle" value="2" ver="4"/>
+	<designed target="WindowState" value="0" ver="4"/>
+	<designed target="WindowScalingMode" value="0" ver="4"/>
+	<designed target="MonitorNumber" value="0" ver="4"/>
+	<designed target="WindowPosition" value="0" ver="4"/>
+	<designed target="WindowCloseMode" value="0" ver="4"/>
+	<object access-modifier="private" name="Step" display-name="Step" uuid="95d02f39-349e-48e8-a293-9be1673ece35" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4" cardinal="11">
+		<designed target="X" value="0" ver="4"/>
+		<designed target="Y" value="0" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="400" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="RoundingRadius" value="0" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="1" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="BrushColor" value="0xffeeeeee" ver="4"/>
+		<designed target="BrushStyle" value="1" ver="4"/>
+		<object access-modifier="private" name="txt" display-name="txt" uuid="ce199c1d-4f01-4e4b-90bc-d96acb711155" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+			<designed target="X" value="5" ver="4"/>
+			<designed target="Y" value="0" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="390" ver="4"/>
+			<designed target="Height" value="20" ver="4"/>
+			<designed target="Text" value="ШАГИ" ver="4"/>
+			<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+			<designed target="FontColor" value="4278190080" ver="4"/>
+			<designed target="TextAlignment" value="129" ver="4"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[me.Index==nStep]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff55ff7f]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xffeeeeee]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Initializer" display-name="Initializer" uuid="2b6a7d82-8976-408e-b3f1-05d23157dd47" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="4">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Initialized">
+			<body kind="om">
+				<![CDATA[Step[0].txt.Text="НИЧЕГО НЕ ДЕЛАЕМ";
+Step[1].txt.Text="ИСХОДНОЕ";
+Step[2].txt.Text="ОТКРЫТИЕ ВХОДНОЙ ЗАДВИЖКИ И РЕГУЛИРУЮЩЕЙ ЗАСЛОНКИ ГАЗА";
+Step[3].txt.Text="ПРОДУВКА ЛИНИЙ ЗАПАЛЬНИКОВ И ГОРЕЛОК";
+Step[4].txt.Text="ЗАКРЫТИЕ ВХОДНОЙ ЗАДВИЖКИ ГАЗА";
+Step[5].txt.Text="ПРОВЕРКА ПЛОТНОСТИ ЗАКРЫТИЯ ЗАДВИЖКИ ГАЗА";
+Step[6].txt.Text="НЕПЛОТНОЕ ЗАКРЫТИЕ ЗАДВИЖКИ ГАЗА";
+Step[7].txt.Text="НЕОТКРЫТИЕ ЗАДВИЖКИ ИЛИ РЕГУЛИРУЮЩЕЙ ЗАСЛОНКИ ГАЗА";
+Step[8].txt.Text="ЗАДВИЖКА ИЛИ РЕГУЛИРУЮЩАЯ ЗАСЛОНКА ГАЗА НЕ ЗАКРЫТА";
+Step[9].txt.Text="ПОЛНОЕ ОТКРЫТИЕ ЗАДВИЖКИ ГАЗА";
+Step[10].txt.Text="ПРОВЕРКА ЗАДВИЖКИ ГАЗА ЗАВЕРШЕНА";
+i: uint1 = 0;
+while (i<11)
+{
+	Step[i].Y =Step.Y + i*Step.Height;
+	i += 1;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="nStep" display-name="nStep" uuid="a8284085-fda6-413c-80f4-6bd749deb29e" base-type="OpcItemInt4" base-type-id="c8220066-9348-4b3e-a68e-d8ac76d47db1" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.BOILER.nBlow"/>
+	</object>
+</type>
+

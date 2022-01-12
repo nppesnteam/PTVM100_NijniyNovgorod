@@ -1,0 +1,263 @@
+<type access-modifier="private" name="Алармы" display-name="Алармы" uuid="578ca24a-7ad0-4c4b-a4b9-79f340804e42" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="4">
+	<designed target="X" value="0" ver="4"/>
+	<designed target="Y" value="0" ver="4"/>
+	<designed target="ZValue" value="0" ver="4"/>
+	<designed target="Rotation" value="0" ver="4"/>
+	<designed target="Scale" value="1" ver="4"/>
+	<designed target="Visible" value="true" ver="4"/>
+	<designed target="Opacity" value="1" ver="4"/>
+	<designed target="Enabled" value="true" ver="4"/>
+	<designed target="Tooltip" value="" ver="4"/>
+	<designed target="Width" value="1272" ver="4"/>
+	<designed target="Height" value="99" ver="4"/>
+	<designed target="PenColor" value="4278190080" ver="4"/>
+	<designed target="PenStyle" value="0" ver="4"/>
+	<designed target="PenWidth" value="1" ver="4"/>
+	<designed target="BrushColor" value="4293980400" ver="4"/>
+	<designed target="BrushStyle" value="0" ver="4"/>
+	<designed target="WindowX" value="0" ver="4"/>
+	<designed target="WindowY" value="0" ver="4"/>
+	<designed target="WindowWidth" value="1000" ver="4"/>
+	<designed target="WindowHeight" value="99" ver="4"/>
+	<designed target="WindowCaption" value="MainForm" ver="4"/>
+	<designed target="ShowWindowCaption" value="false" ver="4"/>
+	<designed target="ShowWindowMinimize" value="false" ver="4"/>
+	<designed target="ShowWindowMaximize" value="false" ver="4"/>
+	<designed target="ShowWindowClose" value="false" ver="4"/>
+	<designed target="AlwaysOnTop" value="false" ver="4"/>
+	<designed target="WindowSizeMode" value="0" ver="4"/>
+	<designed target="WindowBorderStyle" value="0" ver="4"/>
+	<designed target="WindowState" value="0" ver="4"/>
+	<designed target="WindowScalingMode" value="0" ver="4"/>
+	<designed target="MonitorNumber" value="0" ver="4"/>
+	<designed target="WindowPosition" value="0" ver="4"/>
+	<designed target="WindowCloseMode" value="0" ver="4"/>
+	<object access-modifier="private" name="alrmAll" display-name="alrmAll" uuid="baebc1d8-0ed8-4a1d-993d-970620b86252" base-type="AlarmsAxControl" base-type-id="9508eca3-f80d-4232-90e7-7a3607bc56fa" ver="4">
+		<designed target="X" value="0" ver="4"/>
+		<designed target="Y" value="0" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Width" value="1200" ver="4"/>
+		<designed target="Height" value="99" ver="4"/>
+		<designed target="ConfigurationFolder" value="" ver="4"/>
+		<designed target="ActiveMode" value="0" ver="4"/>
+		<designed target="ShowMilliseconds" value="false" ver="4"/>
+		<designed target="RowHeight" value="20" ver="4"/>
+		<designed target="OperativeVisibleRowCount" value="500" ver="4"/>
+		<designed target="GUIModificationAvailable" value="false" ver="4"/>
+		<designed target="ButtonPanelVisible" value="false" ver="4"/>
+		<designed target="Mute" value="false" ver="4"/>
+		<designed target="FilterActive" value="false" ver="4"/>
+		<designed target="IsAdvancedFilterActive" value="false" ver="4"/>
+		<designed target="EventDisplayOrder" value="0" ver="4"/>
+		<designed target="IsFullAccessAllowed" value="false" ver="4"/>
+		<designed target="CurrentEventsAvailable" value="true" ver="4"/>
+		<designed target="EventHistoryAvailable" value="true" ver="4"/>
+		<designed target="FilterAvailable" value="true" ver="4"/>
+		<designed target="SnapshotAvailable" value="false" ver="4"/>
+		<designed target="ClearingCurrentEventsAvailable" value="true" ver="4"/>
+		<designed target="SoundPlaybackManagmentAvailable" value="false" ver="4"/>
+		<designed target="WindowsFixed" value="false" ver="4"/>
+		<designed target="EditingSettingsAvailable" value="true" ver="4"/>
+		<designed target="AcknowledgmentAvailable" value="true" ver="4"/>
+		<designed target="EventHistoryPagedViewingAvailable" value="false" ver="4"/>
+		<designed target="PrintingAvailable" value="true" ver="4"/>
+		<designed target="FollowLatestEvent" value="false" ver="4"/>
+		<designed target="EnableSortingOnGridHeader" value="true" ver="4"/>
+		<designed target="EventTableSortAvailability" value="true" ver="4"/>
+		<designed target="ExportDataAvailability" value="true" ver="4"/>
+		<designed target="FileSystemSafeMode" value="true" ver="4"/>
+		<designed target="AlwaysOnTop" value="false" ver="4"/>
+		<designed target="ActiveViewMode" value="0" ver="4"/>
+		<designed target="AreaTreeVisible" value="false" ver="4"/>
+		<designed target="LookLatestEvent" value="true" ver="4"/>
+		<do-trace access-modifier="private" target="Mute" ver="4">
+			<body>
+				<![CDATA[unit.Global.Mute]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="EditingSettingsAvailable" ver="4">
+			<body>
+				<![CDATA[unit.Security.AllowSettingsChange.Value]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="EventTableSortAvailability" ver="4">
+			<body>
+				<![CDATA[unit.Security.AllowSettingsChange.Value]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="FinishedPlayingSounds">
+			<body kind="om">
+				<![CDATA[Timer.Active=true;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="AuthOK" display-name="AuthOK" uuid="b0e85280-74ee-4a98-9265-c67f92aad280" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="ValueChanged">
+			<body kind="om">
+				<![CDATA[if (unit.Global.AuthOK == false)
+{
+	here.Close();
+}
+else
+{
+	alrmAll.LogOn(unit.Global.CurrentUser);
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<do-trace access-modifier="private" target="AuthOK" ver="4">
+		<body>
+			<![CDATA[unit.Global.AuthOK]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="btnClear" display-name="btnClear" uuid="0d5371b1-8cab-480d-b0f5-8474bad77803" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
+		<designed target="X" value="1201" ver="4"/>
+		<designed target="Y" value="78" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="70" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="Checkable" value="false" ver="4"/>
+		<designed target="Text" value="Очистить" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+		<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0,Narrow Bold" ver="4"/>
+		<designed target="FontColor" value="4278190080" ver="4"/>
+		<designed target="OnClickFontColor" value="4278190080" ver="4"/>
+		<designed target="OnHoverFontColor" value="4278190080" ver="4"/>
+		<designed target="DisabledFontColor" value="4278190080" ver="4"/>
+		<designed target="BrushColor" value="4293980400" ver="4"/>
+		<designed target="BrushStyle" value="1" ver="4"/>
+		<designed target="OnClickBrushColor" value="4288716960" ver="4"/>
+		<designed target="OnClickBrushStyle" value="1" ver="4"/>
+		<designed target="OnHoverBrushColor" value="4294967295" ver="4"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="4"/>
+		<designed target="DisabledBrushColor" value="4288716960" ver="4"/>
+		<designed target="DisabledBrushStyle" value="1" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="1" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="OnClickPenColor" value="4278190080" ver="4"/>
+		<designed target="OnClickPenStyle" value="1" ver="4"/>
+		<designed target="OnClickPenWidth" value="1" ver="4"/>
+		<designed target="OnHoverPenColor" value="4278190080" ver="4"/>
+		<designed target="OnHoverPenStyle" value="1" ver="4"/>
+		<designed target="OnHoverPenWidth" value="1" ver="4"/>
+		<designed target="DisabledPenColor" value="4288716960" ver="4"/>
+		<designed target="DisabledPenStyle" value="1" ver="4"/>
+		<designed target="DisabledPenWidth" value="1" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
+			<body kind="om">
+				<![CDATA[alrmAll.ClearAcknowledgedEvents();]]>
+			</body>
+		</do-on>
+		<designed target="Checked" value="false" ver="4"/>
+	</object>
+	<object access-modifier="private" name="btnExpand" display-name="btnExpand" uuid="89440250-2caa-41a6-a355-ac8c41459dc6" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
+		<designed target="X" value="1201" ver="4"/>
+		<designed target="Y" value="58" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="70" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="Checkable" value="false" ver="4"/>
+		<designed target="Text" value="Развернуть" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+		<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0,Narrow Bold" ver="4"/>
+		<designed target="FontColor" value="4278190080" ver="4"/>
+		<designed target="OnClickFontColor" value="4278190080" ver="4"/>
+		<designed target="OnHoverFontColor" value="4278190080" ver="4"/>
+		<designed target="DisabledFontColor" value="4278190080" ver="4"/>
+		<designed target="BrushColor" value="4293980400" ver="4"/>
+		<designed target="BrushStyle" value="1" ver="4"/>
+		<designed target="OnClickBrushColor" value="4288716960" ver="4"/>
+		<designed target="OnClickBrushStyle" value="1" ver="4"/>
+		<designed target="OnHoverBrushColor" value="4294967295" ver="4"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="4"/>
+		<designed target="DisabledBrushColor" value="4288716960" ver="4"/>
+		<designed target="DisabledBrushStyle" value="1" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="1" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="OnClickPenColor" value="4278190080" ver="4"/>
+		<designed target="OnClickPenStyle" value="1" ver="4"/>
+		<designed target="OnClickPenWidth" value="1" ver="4"/>
+		<designed target="OnHoverPenColor" value="4278190080" ver="4"/>
+		<designed target="OnHoverPenStyle" value="1" ver="4"/>
+		<designed target="OnHoverPenWidth" value="1" ver="4"/>
+		<designed target="DisabledPenColor" value="4288716960" ver="4"/>
+		<designed target="DisabledPenStyle" value="1" ver="4"/>
+		<designed target="DisabledPenWidth" value="1" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
+			<body kind="om">
+				<![CDATA[if (IsExpanded == false)
+{
+	alrmAll.ButtonPanelVisible = true;
+	alrmAll.Height = 600;
+}
+if (IsExpanded == true)
+{
+	alrmAll.ActiveMode=0;
+	alrmAll.ButtonPanelVisible = false;
+	alrmAll.Height = 99;
+}
+IsExpanded = !IsExpanded;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Text" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[IsExpanded == true]]>
+				</condition>
+				<expr>
+					<![CDATA["Свернуть"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[IsExpanded == false]]>
+				</condition>
+				<expr>
+					<![CDATA["Развернуть"]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<designed target="Checked" value="false" ver="4"/>
+	</object>
+	<object access-modifier="private" name="IsExpanded" display-name="IsExpanded" uuid="2554aac7-f4f2-4b03-ad87-bbe31b5729fc" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+	<init target="IsExpanded" ver="4" value="false"/>
+	<object access-modifier="private" name="Reset" display-name="Reset" uuid="b4886334-2595-4bdc-8485-e09b017b86ae" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.BOILER.InReset"/>
+	</object>
+	<object access-modifier="private" name="Timer" display-name="Timer" uuid="d518eaba-eb5b-4a97-9114-7c3dd529ac5e" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="4">
+		<designed target="Period" value="1" ver="4"/>
+		<designed target="Active" value="false" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnTimer">
+			<body kind="om">
+				<![CDATA[if (Reset==true)
+{
+	Reset=false;
+	me.Active=false;
+	me.Period=1;
+}
+if (Reset==false)
+{
+	Reset=true;
+	me.Period=1000;
+}]]>
+			</body>
+		</do-on>
+	</object>
+</type>
+

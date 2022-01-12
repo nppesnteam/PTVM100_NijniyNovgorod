@@ -1,0 +1,290 @@
+<type access-modifier="private" name="Смена пароля" display-name="Смена пароля" uuid="440a4834-66db-41a2-ac6a-53f5ca3506d4" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="4">
+	<designed target="X" value="0" ver="4"/>
+	<designed target="Y" value="0" ver="4"/>
+	<designed target="ZValue" value="0" ver="4"/>
+	<designed target="Rotation" value="0" ver="4"/>
+	<designed target="Scale" value="1" ver="4"/>
+	<designed target="Visible" value="true" ver="4"/>
+	<designed target="Opacity" value="1" ver="4"/>
+	<designed target="Enabled" value="true" ver="4"/>
+	<designed target="Tooltip" value="" ver="4"/>
+	<designed target="Width" value="170" ver="4"/>
+	<designed target="Height" value="130" ver="4"/>
+	<designed target="PenColor" value="4278190080" ver="4"/>
+	<designed target="PenStyle" value="0" ver="4"/>
+	<designed target="PenWidth" value="1" ver="4"/>
+	<designed target="BrushColor" value="4293980400" ver="4"/>
+	<designed target="BrushStyle" value="1" ver="4"/>
+	<designed target="WindowX" value="0" ver="4"/>
+	<designed target="WindowY" value="0" ver="4"/>
+	<designed target="WindowWidth" value="170" ver="4"/>
+	<designed target="WindowHeight" value="130" ver="4"/>
+	<designed target="WindowCaption" value="Смена пароля" ver="4"/>
+	<designed target="ShowWindowCaption" value="true" ver="4"/>
+	<designed target="ShowWindowMinimize" value="false" ver="4"/>
+	<designed target="ShowWindowMaximize" value="false" ver="4"/>
+	<designed target="ShowWindowClose" value="true" ver="4"/>
+	<designed target="AlwaysOnTop" value="false" ver="4"/>
+	<designed target="WindowSizeMode" value="0" ver="4"/>
+	<designed target="WindowBorderStyle" value="2" ver="4"/>
+	<designed target="WindowState" value="0" ver="4"/>
+	<designed target="WindowScalingMode" value="0" ver="4"/>
+	<designed target="MonitorNumber" value="0" ver="4"/>
+	<designed target="WindowPosition" value="1" ver="4"/>
+	<designed target="WindowCloseMode" value="0" ver="4"/>
+	<object access-modifier="private" name="CurrentUser" display-name="CurrentUser" uuid="2ff7834f-17b9-43b3-9b85-48f8cf0c82cb" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+		<designed target="X" value="10" ver="4"/>
+		<designed target="Y" value="10" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="150" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="Text" value="Пользователь" ver="4"/>
+		<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0,Narrow Bold" ver="4"/>
+		<designed target="FontColor" value="4278190080" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+		<do-trace access-modifier="private" target="Text" ver="4">
+			<body>
+				<![CDATA[unit.Global.CurrentUser]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="txtOldPasw" display-name="txtOldPasw" uuid="189ce958-b327-408a-b741-9abe1030927c" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="4">
+		<designed target="X" value="10" ver="4"/>
+		<designed target="Y" value="40" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="130" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="Text" value="" ver="4"/>
+		<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0" ver="4"/>
+		<designed target="FontColor" value="4278190080" ver="4"/>
+		<designed target="TextAlignment" value="129" ver="4"/>
+		<designed target="HideInput" value="true" ver="4"/>
+		<designed target="PlaceholderText" value="Старый пароль" ver="4"/>
+		<designed target="ReadOnly" value="false" ver="4"/>
+	</object>
+	<object access-modifier="private" name="txtNewPasw" display-name="txtNewPasw" uuid="72baac11-37f4-4139-99af-6111ecfb039b" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="4">
+		<designed target="X" value="10" ver="4"/>
+		<designed target="Y" value="70" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="130" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="Text" value="" ver="4"/>
+		<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0" ver="4"/>
+		<designed target="FontColor" value="4278190080" ver="4"/>
+		<designed target="TextAlignment" value="129" ver="4"/>
+		<designed target="HideInput" value="true" ver="4"/>
+		<designed target="PlaceholderText" value="Новый пароль" ver="4"/>
+		<designed target="ReadOnly" value="false" ver="4"/>
+	</object>
+	<object access-modifier="private" name="txtChng" display-name="txtChng" uuid="139f0fd7-11a3-461f-b1fc-b47dc3599838" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
+		<designed target="X" value="60" ver="4"/>
+		<designed target="Y" value="100" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="50" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="Checkable" value="false" ver="4"/>
+		<designed target="Text" value="Сменить" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+		<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0,Narrow Bold" ver="4"/>
+		<designed target="FontColor" value="4278190080" ver="4"/>
+		<designed target="OnClickFontColor" value="4278190080" ver="4"/>
+		<designed target="OnHoverFontColor" value="4278190080" ver="4"/>
+		<designed target="DisabledFontColor" value="4278190080" ver="4"/>
+		<designed target="BrushColor" value="4293980400" ver="4"/>
+		<designed target="BrushStyle" value="1" ver="4"/>
+		<designed target="OnClickBrushColor" value="4288716960" ver="4"/>
+		<designed target="OnClickBrushStyle" value="1" ver="4"/>
+		<designed target="OnHoverBrushColor" value="4294967295" ver="4"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="4"/>
+		<designed target="DisabledBrushColor" value="4288716960" ver="4"/>
+		<designed target="DisabledBrushStyle" value="1" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="1" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="OnClickPenColor" value="4278190080" ver="4"/>
+		<designed target="OnClickPenStyle" value="1" ver="4"/>
+		<designed target="OnClickPenWidth" value="1" ver="4"/>
+		<designed target="OnHoverPenColor" value="4278190080" ver="4"/>
+		<designed target="OnHoverPenStyle" value="1" ver="4"/>
+		<designed target="OnHoverPenWidth" value="1" ver="4"/>
+		<designed target="DisabledPenColor" value="4288716960" ver="4"/>
+		<designed target="DisabledPenStyle" value="1" ver="4"/>
+		<designed target="DisabledPenWidth" value="1" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[unit.Security.SecurityContextHMI.ChangePassword(txtOldPasw.Text, txtNewPasw.Text);
+Timer_1.Active = true;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="showOld" display-name="showOld" uuid="54551fee-87a5-4fdc-9572-012913235d79" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
+		<designed target="X" value="145" ver="4"/>
+		<designed target="Y" value="40" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="20" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="0" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="ImageFile" value="show.png" ver="4"/>
+		<designed target="Active" value="true" ver="4"/>
+		<designed target="CurrentFrameNumber" value="0" ver="4"/>
+		<designed target="Speed" value="1" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
+			<body kind="om">
+				<![CDATA[txtOldPasw.HideInput = !txtOldPasw.HideInput;
+hideOld.Visible = true;
+me.Visible = false;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="showNew" display-name="showNew" uuid="74c954cf-bbbb-4f96-8cc0-f4416d889969" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
+		<designed target="X" value="145" ver="4"/>
+		<designed target="Y" value="70" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="20" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="0" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="ImageFile" value="show.png" ver="4"/>
+		<designed target="Active" value="true" ver="4"/>
+		<designed target="CurrentFrameNumber" value="0" ver="4"/>
+		<designed target="Speed" value="1" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
+			<body kind="om">
+				<![CDATA[txtNewPasw.HideInput = !txtNewPasw.HideInput;
+hideNew.Visible = true;
+me.Visible = false;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="hideOld" display-name="hideOld" uuid="b116abc2-6691-40c3-8356-58a7b425fb6f" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
+		<designed target="X" value="145" ver="4"/>
+		<designed target="Y" value="40" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="false" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="20" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="0" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="ImageFile" value="hide.png" ver="4"/>
+		<designed target="Active" value="true" ver="4"/>
+		<designed target="CurrentFrameNumber" value="0" ver="4"/>
+		<designed target="Speed" value="1" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
+			<body kind="om">
+				<![CDATA[txtOldPasw.HideInput = !txtOldPasw.HideInput;
+showOld.Visible = true;
+me.Visible = false;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="hideNew" display-name="hideNew" uuid="efd2b0ee-ec3f-42c1-930b-ca83f57ef17d" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
+		<designed target="X" value="145" ver="4"/>
+		<designed target="Y" value="70" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="false" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="20" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="0" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="ImageFile" value="hide.png" ver="4"/>
+		<designed target="Active" value="true" ver="4"/>
+		<designed target="CurrentFrameNumber" value="0" ver="4"/>
+		<designed target="Speed" value="1" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
+			<body kind="om">
+				<![CDATA[txtNewPasw.HideInput = !txtNewPasw.HideInput;
+showNew.Visible = true;
+me.Visible = false;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Error" display-name="Error" uuid="51b63b2d-00c6-4714-bca9-2d8f0d8e59be" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4">
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="InvokeTrigger" value="false" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-action="open-new" form-by-id="false">
+			<object access-modifier="private" uuid="d415973c-9b86-4b37-b29f-a8b212ce08ef" base-type="Ошибка" base-type-id="71e4282d-ac4c-4686-b42b-b400ae3a645a" ver="4">
+				<init target="ErrorMsg" ver="4">
+					<expr>
+						<![CDATA[unit.Security.SecurityContextHMI.PasswordChangeError]]>
+					</expr>
+				</init>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Timer_1" display-name="Timer_1" uuid="65eec596-75fa-48bb-b840-8165c35bc52c" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="4">
+		<designed target="Period" value="1000" ver="4"/>
+		<designed target="Active" value="false" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnTimer">
+			<body kind="om">
+				<![CDATA[if (unit.Security.SecurityContextHMI.PasswordChangeError != "")
+{
+	Error.Invoke();
+}
+else
+{
+	PassChngOK.Invoke();
+}
+me.Active = false;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="PassChngOK" display-name="PassChngOK" uuid="72b6443a-8bde-4e91-b9c2-c475e9ebe847" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4">
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="InvokeTrigger" value="false" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-action="open-new" form-by-id="false">
+			<object access-modifier="private" uuid="8676831a-7c6e-4a0d-a7da-a4e3e8e5868e" base-type="Успех" base-type-id="38056e99-4411-41fb-8e92-3080f1a1ca5a" ver="4"/>
+		</do-on>
+	</object>
+</type>
+

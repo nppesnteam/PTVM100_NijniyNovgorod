@@ -1,0 +1,884 @@
+<type access-modifier="private" name="ФГУ розжига" display-name="ФГУ розжига" uuid="94bd5536-9e3c-4b80-b296-b6744ba3ae9e" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="4">
+	<designed target="X" value="0" ver="4"/>
+	<designed target="Y" value="0" ver="4"/>
+	<designed target="ZValue" value="0" ver="4"/>
+	<designed target="Rotation" value="0" ver="4"/>
+	<designed target="Scale" value="1" ver="4"/>
+	<designed target="Visible" value="true" ver="4"/>
+	<designed target="Opacity" value="1" ver="4"/>
+	<designed target="Enabled" value="true" ver="4"/>
+	<designed target="Tooltip" value="" ver="4"/>
+	<designed target="Width" value="300" ver="4"/>
+	<designed target="Height" value="250" ver="4"/>
+	<designed target="PenColor" value="4278190080" ver="4"/>
+	<designed target="PenStyle" value="0" ver="4"/>
+	<designed target="PenWidth" value="1" ver="4"/>
+	<designed target="BrushColor" value="0xff000000" ver="4"/>
+	<designed target="BrushStyle" value="1" ver="4"/>
+	<designed target="WindowX" value="0" ver="4"/>
+	<designed target="WindowY" value="0" ver="4"/>
+	<designed target="WindowWidth" value="300" ver="4"/>
+	<designed target="WindowHeight" value="250" ver="4"/>
+	<designed target="WindowCaption" value="ФГУ РОЗЖИГА" ver="4"/>
+	<designed target="ShowWindowCaption" value="true" ver="4"/>
+	<designed target="ShowWindowMinimize" value="false" ver="4"/>
+	<designed target="ShowWindowMaximize" value="false" ver="4"/>
+	<designed target="ShowWindowClose" value="true" ver="4"/>
+	<designed target="AlwaysOnTop" value="false" ver="4"/>
+	<designed target="WindowSizeMode" value="0" ver="4"/>
+	<designed target="WindowBorderStyle" value="2" ver="4"/>
+	<designed target="WindowState" value="0" ver="4"/>
+	<designed target="WindowScalingMode" value="0" ver="4"/>
+	<designed target="MonitorNumber" value="0" ver="4"/>
+	<designed target="WindowPosition" value="0" ver="4"/>
+	<designed target="WindowCloseMode" value="0" ver="4"/>
+	<object access-modifier="private" name="txtFuel" display-name="txtFuel" uuid="beaa0c98-b59d-4b50-a2ac-de018e727bb8" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+		<designed target="X" value="27" ver="4"/>
+		<designed target="Y" value="10" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="101.5" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="Text" value="Тип топлива" ver="4"/>
+		<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0,Narrow Bold" ver="4"/>
+		<designed target="FontColor" value="0xffffffff" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+	</object>
+	<object access-modifier="private" name="btnGas" display-name="btnGas" uuid="3e0d51b5-98ec-433f-930c-6618ba1998b9" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
+		<designed target="X" value="154.5" ver="4"/>
+		<designed target="Y" value="8.5" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="52" ver="4"/>
+		<designed target="Height" value="23" ver="4"/>
+		<designed target="Checkable" value="false" ver="4"/>
+		<designed target="Text" value="ГАЗ" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+		<designed target="FontColor" value="4278190080" ver="4"/>
+		<designed target="OnClickFontColor" value="4278190080" ver="4"/>
+		<designed target="OnHoverFontColor" value="4278190080" ver="4"/>
+		<designed target="DisabledFontColor" value="4278190080" ver="4"/>
+		<designed target="BrushColor" value="4293980400" ver="4"/>
+		<designed target="BrushStyle" value="1" ver="4"/>
+		<designed target="OnClickBrushColor" value="4288716960" ver="4"/>
+		<designed target="OnClickBrushStyle" value="1" ver="4"/>
+		<designed target="OnHoverBrushColor" value="0xffffff7f" ver="4"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="4"/>
+		<designed target="DisabledBrushColor" value="4288716960" ver="4"/>
+		<designed target="DisabledBrushStyle" value="1" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="1" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="OnClickPenColor" value="4278190080" ver="4"/>
+		<designed target="OnClickPenStyle" value="1" ver="4"/>
+		<designed target="OnClickPenWidth" value="1" ver="4"/>
+		<designed target="OnHoverPenColor" value="4278190080" ver="4"/>
+		<designed target="OnHoverPenStyle" value="1" ver="4"/>
+		<designed target="OnHoverPenWidth" value="1" ver="4"/>
+		<designed target="DisabledPenColor" value="4288716960" ver="4"/>
+		<designed target="DisabledPenStyle" value="1" ver="4"/>
+		<designed target="DisabledPenWidth" value="1" ver="4"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[OutSelOil==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffffff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[OutSelOil==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xfff0f0f0]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
+			<body kind="om">
+				<![CDATA[InSelOil=false;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Enabled" ver="4">
+			<body>
+				<![CDATA[!BoilerWork]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="btnMazut" display-name="btnMazut" uuid="d3c39356-c431-4df7-ad28-5954d25c8a6e" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
+		<designed target="X" value="228" ver="4"/>
+		<designed target="Y" value="8.5" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="52" ver="4"/>
+		<designed target="Height" value="23" ver="4"/>
+		<designed target="Checkable" value="false" ver="4"/>
+		<designed target="Text" value="ЖТ" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+		<designed target="FontColor" value="4278190080" ver="4"/>
+		<designed target="OnClickFontColor" value="4278190080" ver="4"/>
+		<designed target="OnHoverFontColor" value="4278190080" ver="4"/>
+		<designed target="DisabledFontColor" value="4278190080" ver="4"/>
+		<designed target="BrushColor" value="4293980400" ver="4"/>
+		<designed target="BrushStyle" value="1" ver="4"/>
+		<designed target="OnClickBrushColor" value="4288716960" ver="4"/>
+		<designed target="OnClickBrushStyle" value="1" ver="4"/>
+		<designed target="OnHoverBrushColor" value="0xffffaa7f" ver="4"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="4"/>
+		<designed target="DisabledBrushColor" value="4288716960" ver="4"/>
+		<designed target="DisabledBrushStyle" value="1" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="1" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="OnClickPenColor" value="4278190080" ver="4"/>
+		<designed target="OnClickPenStyle" value="1" ver="4"/>
+		<designed target="OnClickPenWidth" value="1" ver="4"/>
+		<designed target="OnHoverPenColor" value="4278190080" ver="4"/>
+		<designed target="OnHoverPenStyle" value="1" ver="4"/>
+		<designed target="OnHoverPenWidth" value="1" ver="4"/>
+		<designed target="DisabledPenColor" value="4288716960" ver="4"/>
+		<designed target="DisabledPenStyle" value="1" ver="4"/>
+		<designed target="DisabledPenWidth" value="1" ver="4"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[OutSelOil==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xfff0f0f0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[OutSelOil==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffffaa00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
+			<body kind="om">
+				<![CDATA[InSelOil=true;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Enabled" ver="4">
+			<body>
+				<![CDATA[!BoilerWork]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="IgnSequence" display-name="IgnSequence" uuid="1bb8552a-9f05-48fa-a97c-b04170e04e80" base-type="ComboBox" base-type-id="3495bcd2-01f2-4709-b7f4-e9cf6f3a00bc" ver="4">
+		<designed target="X" value="155" ver="4"/>
+		<designed target="Y" value="74" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="125" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="Editable" value="false" ver="4"/>
+		<designed target="Text" value="" ver="4"/>
+		<designed target="SelectedIndex" value="-1" ver="4"/>
+		<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0" ver="4"/>
+		<designed target="FontColor" value="0xff000000" ver="4"/>
+		<designed target="MaxVisibleItems" value="16" ver="4"/>
+		<do-trace access-modifier="private" target="SelectedIndex" ver="4">
+			<body>
+				<![CDATA[OutSelSequence]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="SelectedChanged">
+			<body kind="om">
+				<![CDATA[if ((OutSelSequence!=me.SelectedIndex)&&(me.SelectedIndex!=-1))
+	InSelSequence=TypeConvert.ToInt2(me.SelectedIndex);]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="btnStartIgn" display-name="btnStartIgn" uuid="b009eea2-c909-4498-849a-52acf5647fa3" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
+		<designed target="X" value="177.5" ver="4"/>
+		<designed target="Y" value="102.5" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="91" ver="4"/>
+		<designed target="Height" value="23" ver="4"/>
+		<designed target="Checkable" value="false" ver="4"/>
+		<designed target="Text" value="ПУСК" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+		<designed target="FontColor" value="4278190080" ver="4"/>
+		<designed target="OnClickFontColor" value="4278190080" ver="4"/>
+		<designed target="OnHoverFontColor" value="4278190080" ver="4"/>
+		<designed target="DisabledFontColor" value="4278190080" ver="4"/>
+		<designed target="BrushColor" value="4293980400" ver="4"/>
+		<designed target="BrushStyle" value="1" ver="4"/>
+		<designed target="OnClickBrushColor" value="4288716960" ver="4"/>
+		<designed target="OnClickBrushStyle" value="1" ver="4"/>
+		<designed target="OnHoverBrushColor" value="4294967295" ver="4"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="4"/>
+		<designed target="DisabledBrushColor" value="4288716960" ver="4"/>
+		<designed target="DisabledBrushStyle" value="1" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="1" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="OnClickPenColor" value="4278190080" ver="4"/>
+		<designed target="OnClickPenStyle" value="1" ver="4"/>
+		<designed target="OnClickPenWidth" value="1" ver="4"/>
+		<designed target="OnHoverPenColor" value="4278190080" ver="4"/>
+		<designed target="OnHoverPenStyle" value="1" ver="4"/>
+		<designed target="OnHoverPenWidth" value="1" ver="4"/>
+		<designed target="DisabledPenColor" value="4288716960" ver="4"/>
+		<designed target="DisabledPenStyle" value="1" ver="4"/>
+		<designed target="DisabledPenWidth" value="1" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
+			<body kind="om">
+				<![CDATA[unit.Global.DelayIgn.Active=true;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Enabled" ver="4">
+			<body>
+				<![CDATA[(!OutAutoIgn)&&(ArmStartAllow)&&(!unit.Global.DelayStop.Active)]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="txtIgnMode" display-name="txtIgnMode" uuid="2cc644d1-6184-4d2a-b03b-f7eef1149101" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+		<designed target="X" value="23.75" ver="4"/>
+		<designed target="Y" value="42" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="108.5" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="Text" value="Тип розжига" ver="4"/>
+		<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0,Narrow Bold" ver="4"/>
+		<designed target="FontColor" value="0xffffffff" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+	</object>
+	<object access-modifier="private" name="btnModeAuto" display-name="btnModeAuto" uuid="6a7857ff-8a84-4d87-b518-6b01a6ce6465" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
+		<designed target="X" value="155" ver="4"/>
+		<designed target="Y" value="40.5" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="52" ver="4"/>
+		<designed target="Height" value="23" ver="4"/>
+		<designed target="Checkable" value="false" ver="4"/>
+		<designed target="Text" value="АВТ" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+		<designed target="FontColor" value="4278190080" ver="4"/>
+		<designed target="OnClickFontColor" value="4278190080" ver="4"/>
+		<designed target="OnHoverFontColor" value="4278190080" ver="4"/>
+		<designed target="DisabledFontColor" value="4278190080" ver="4"/>
+		<designed target="BrushColor" value="4293980400" ver="4"/>
+		<designed target="BrushStyle" value="1" ver="4"/>
+		<designed target="OnClickBrushColor" value="4288716960" ver="4"/>
+		<designed target="OnClickBrushStyle" value="1" ver="4"/>
+		<designed target="OnHoverBrushColor" value="0xffa9ffba" ver="4"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="4"/>
+		<designed target="DisabledBrushColor" value="4288716960" ver="4"/>
+		<designed target="DisabledBrushStyle" value="1" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="1" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="OnClickPenColor" value="4278190080" ver="4"/>
+		<designed target="OnClickPenStyle" value="1" ver="4"/>
+		<designed target="OnClickPenWidth" value="1" ver="4"/>
+		<designed target="OnHoverPenColor" value="4278190080" ver="4"/>
+		<designed target="OnHoverPenStyle" value="1" ver="4"/>
+		<designed target="OnHoverPenWidth" value="1" ver="4"/>
+		<designed target="DisabledPenColor" value="4288716960" ver="4"/>
+		<designed target="DisabledPenStyle" value="1" ver="4"/>
+		<designed target="DisabledPenWidth" value="1" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
+			<body kind="om">
+				<![CDATA[InAutoIgn=true;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="BrushColor" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[OutAutoIgn==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[OutAutoIgn==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xfff0f0f0]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="btnModeMan" display-name="btnModeMan" uuid="1968c189-a1e2-49c9-b86a-f29fa7b6004c" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
+		<designed target="X" value="228" ver="4"/>
+		<designed target="Y" value="40.5" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="52" ver="4"/>
+		<designed target="Height" value="23" ver="4"/>
+		<designed target="Checkable" value="false" ver="4"/>
+		<designed target="Text" value="РУЧ" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+		<designed target="FontColor" value="4278190080" ver="4"/>
+		<designed target="OnClickFontColor" value="4278190080" ver="4"/>
+		<designed target="OnHoverFontColor" value="4278190080" ver="4"/>
+		<designed target="DisabledFontColor" value="4278190080" ver="4"/>
+		<designed target="BrushColor" value="4293980400" ver="4"/>
+		<designed target="BrushStyle" value="1" ver="4"/>
+		<designed target="OnClickBrushColor" value="4288716960" ver="4"/>
+		<designed target="OnClickBrushStyle" value="1" ver="4"/>
+		<designed target="OnHoverBrushColor" value="0xffa9ffba" ver="4"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="4"/>
+		<designed target="DisabledBrushColor" value="4288716960" ver="4"/>
+		<designed target="DisabledBrushStyle" value="1" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="1" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="OnClickPenColor" value="4278190080" ver="4"/>
+		<designed target="OnClickPenStyle" value="1" ver="4"/>
+		<designed target="OnClickPenWidth" value="1" ver="4"/>
+		<designed target="OnHoverPenColor" value="4278190080" ver="4"/>
+		<designed target="OnHoverPenStyle" value="2" ver="4"/>
+		<designed target="OnHoverPenWidth" value="1" ver="4"/>
+		<designed target="DisabledPenColor" value="4288716960" ver="4"/>
+		<designed target="DisabledPenStyle" value="1" ver="4"/>
+		<designed target="DisabledPenWidth" value="1" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
+			<body kind="om">
+				<![CDATA[InAutoIgn=false;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="BrushColor" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[OutAutoIgn==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xfff0f0f0]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[OutAutoIgn==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="txtIgnSequence" display-name="txtIgnSequence" uuid="8c20af31-f440-495e-be86-86ad57e85409" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+		<designed target="X" value="6.75" ver="4"/>
+		<designed target="Y" value="74" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="142.5" ver="4"/>
+		<designed target="Height" value="21" ver="4"/>
+		<designed target="Text" value="Очередь розжига" ver="4"/>
+		<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0,Narrow Bold" ver="4"/>
+		<designed target="FontColor" value="0xffffffff" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+	</object>
+	<object access-modifier="private" name="btnStopIgn" display-name="btnStopIgn" uuid="6a708aed-d532-4560-a85b-7395d212adf8" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
+		<designed target="X" value="32.1667" ver="4"/>
+		<designed target="Y" value="102.5" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="91" ver="4"/>
+		<designed target="Height" value="23" ver="4"/>
+		<designed target="Checkable" value="false" ver="4"/>
+		<designed target="Text" value="СТОП" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+		<designed target="FontColor" value="4278190080" ver="4"/>
+		<designed target="OnClickFontColor" value="4278190080" ver="4"/>
+		<designed target="OnHoverFontColor" value="4278190080" ver="4"/>
+		<designed target="DisabledFontColor" value="4278190080" ver="4"/>
+		<designed target="BrushColor" value="4293980400" ver="4"/>
+		<designed target="BrushStyle" value="1" ver="4"/>
+		<designed target="OnClickBrushColor" value="4288716960" ver="4"/>
+		<designed target="OnClickBrushStyle" value="1" ver="4"/>
+		<designed target="OnHoverBrushColor" value="4294967295" ver="4"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="4"/>
+		<designed target="DisabledBrushColor" value="4288716960" ver="4"/>
+		<designed target="DisabledBrushStyle" value="1" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="1" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="OnClickPenColor" value="4278190080" ver="4"/>
+		<designed target="OnClickPenStyle" value="1" ver="4"/>
+		<designed target="OnClickPenWidth" value="1" ver="4"/>
+		<designed target="OnHoverPenColor" value="4278190080" ver="4"/>
+		<designed target="OnHoverPenStyle" value="1" ver="4"/>
+		<designed target="OnHoverPenWidth" value="1" ver="4"/>
+		<designed target="DisabledPenColor" value="4288716960" ver="4"/>
+		<designed target="DisabledPenStyle" value="1" ver="4"/>
+		<designed target="DisabledPenWidth" value="1" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
+			<body kind="om">
+				<![CDATA[unit.Global.DelayStop.Active=true;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Enabled" ver="4">
+			<body>
+				<![CDATA[(ArmStartAllow)&&(!unit.Global.DelayStop.Active)&&(!unit.Global.DelayIgn.Active)]]>
+			</body>
+		</do-trace>
+	</object>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Opened">
+		<body kind="om">
+			<![CDATA[IgnSequence.Clear();
+IgnSequence.AddItem("5,6,7,8");
+IgnSequence.AddItem("5,6,8,7");
+IgnSequence.AddItem("5,7,6,8");
+IgnSequence.AddItem("5,7,8,6");
+IgnSequence.AddItem("6,5,7,8");
+IgnSequence.AddItem("6,5,8,7");
+IgnSequence.AddItem("6,8,5,7");
+IgnSequence.AddItem("6,8,7,5");
+IgnSequence.AddItem("7,8,5,6");
+IgnSequence.AddItem("7,8,6,5");
+IgnSequence.AddItem("7,5,6,8");
+IgnSequence.AddItem("7,5,7,6");
+IgnSequence.AddItem("8,7,5,6");
+IgnSequence.AddItem("8,7,6,5");
+IgnSequence.AddItem("8,6,5,7");
+IgnSequence.AddItem("8,6,7,5");
+IgnSequence.SelectedIndex=OutSelSequence;
+unit.Global.isFGUOpened=true;]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="ProgressBarVent" display-name="ProgressBarVent" uuid="3fa3393b-f698-4ae5-bd00-247389ceade8" base-type="ProgressBar" base-type-id="a5193173-0399-4840-95f8-2e9958e4e74e" ver="4">
+		<designed target="X" value="10" ver="4"/>
+		<designed target="Y" value="152" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="280" ver="4"/>
+		<designed target="Height" value="30" ver="4"/>
+		<designed target="Orientation" value="1" ver="4"/>
+		<designed target="MinLimit" value="0" ver="4"/>
+		<designed target="MaxLimit" value="100" ver="4"/>
+		<designed target="Value" value="0" ver="4"/>
+		<designed target="ShowText" value="false" ver="4"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="4"/>
+		<designed target="FontColor" value="0xffffffff" ver="4"/>
+		<object access-modifier="private" name="VentStatus" display-name="VentStatus" uuid="13c7b488-800d-42b7-a1c1-fa41a3308df6" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+			<designed target="X" value="0" ver="4"/>
+			<designed target="Y" value="0" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="280" ver="4"/>
+			<designed target="Height" value="30" ver="4"/>
+			<designed target="Text" value="Шаги вентиляции" ver="4"/>
+			<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+			<designed target="FontColor" value="0xff000000" ver="4"/>
+			<designed target="TextAlignment" value="132" ver="4"/>
+			<do-trace access-modifier="private" target="Text" ver="4">
+				<body>
+					<![CDATA[here.VentStatus]]>
+				</body>
+			</do-trace>
+		</object>
+		<do-trace access-modifier="private" target="Value" ver="4">
+			<body>
+				<![CDATA[VentProgress]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ProgressBarGerm" display-name="ProgressBarGerm" uuid="413f6006-4583-43c4-b9f2-5846c379607f" base-type="ProgressBar" base-type-id="a5193173-0399-4840-95f8-2e9958e4e74e" ver="4">
+		<designed target="X" value="10" ver="4"/>
+		<designed target="Y" value="210" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="280" ver="4"/>
+		<designed target="Height" value="30" ver="4"/>
+		<designed target="Orientation" value="1" ver="4"/>
+		<designed target="MinLimit" value="0" ver="4"/>
+		<designed target="MaxLimit" value="100" ver="4"/>
+		<designed target="Value" value="0" ver="4"/>
+		<designed target="ShowText" value="false" ver="4"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="4"/>
+		<designed target="FontColor" value="0xffffffff" ver="4"/>
+		<object access-modifier="private" name="GermStatus" display-name="GermStatus" uuid="0101c21b-959b-419f-8d74-088a76fc4a2d" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+			<designed target="X" value="0" ver="4"/>
+			<designed target="Y" value="0" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="280" ver="4"/>
+			<designed target="Height" value="30" ver="4"/>
+			<designed target="Text" value="Шаги опрессовки" ver="4"/>
+			<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+			<designed target="FontColor" value="0xff000000" ver="4"/>
+			<designed target="TextAlignment" value="132" ver="4"/>
+			<do-trace access-modifier="private" target="Text" ver="4">
+				<conditional-expr>
+					<condition>
+						<![CDATA[DensityOk==true]]>
+					</condition>
+					<expr>
+						<![CDATA[here.GermStatus]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[DensityOk==false]]>
+					</condition>
+					<expr>
+						<![CDATA[DensityStatus]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+		</object>
+		<do-trace access-modifier="private" target="Value" ver="4">
+			<body>
+				<![CDATA[GermProgress]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="hereOpcSource" display-name="hereOpcSource" uuid="c8ccd283-8258-4a14-a734-4999ee647e6e" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+		<designed target="Active" value="false" ver="4"/>
+		<designed target="UpdateRate" value="0" ver="4"/>
+		<designed target="ReAdvise" value="0" ver="4"/>
+		<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.BOILER"/>
+	</object>
+	<object access-modifier="private" name="InSelOil" display-name="InSelOil" uuid="00eab09d-8be5-4dbb-902e-2ff18ee09568" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+		<init target="Path" ver="4" value="InSelOil"/>
+	</object>
+	<object access-modifier="private" name="OutSelOil" display-name="OutSelOil" uuid="b82785ce-94b3-436d-8e3d-82bae82d0109" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+		<init target="Path" ver="4" value="OutSelOil"/>
+	</object>
+	<object access-modifier="private" name="InAutoIgn" display-name="InAutoIgn" uuid="f9b8178a-c987-4bcc-8b84-d90ecb800b17" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+		<init target="Path" ver="4" value="InAutoIgn"/>
+	</object>
+	<object access-modifier="private" name="OutAutoIgn" display-name="OutAutoIgn" uuid="1ce5f631-1774-47a5-afa1-85901aa38f2f" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+		<init target="Path" ver="4" value="OutAutoIgn"/>
+	</object>
+	<object access-modifier="private" name="InSelSequence" display-name="InSelSequence" uuid="beb4cba8-2f40-4a31-be25-9d0a532a1ead" base-type="OpcItemInt2" base-type-id="01786030-8d4e-41cb-a7fb-fbaa0e344f13" ver="4">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+		<init target="Path" ver="4" value="InSelSequence"/>
+	</object>
+	<object access-modifier="private" name="OutSelSequence" display-name="OutSelSequence" uuid="1a2c2795-64e9-499d-9c69-cc09d600ee77" base-type="OpcItemInt2" base-type-id="01786030-8d4e-41cb-a7fb-fbaa0e344f13" ver="4">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+		<init target="Path" ver="4" value="OutSelSequence"/>
+	</object>
+	<object access-modifier="private" name="SoftStop" display-name="SoftStop" uuid="a4f22475-6336-460d-99ae-f20accde741a" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+		<init target="Path" ver="4" value="SoftStop"/>
+	</object>
+	<object access-modifier="private" name="GermProgress" display-name="GermProgress" uuid="76813714-4043-4e72-80d8-4be01ce2e588" base-type="OpcItemInt4" base-type-id="c8220066-9348-4b3e-a68e-d8ac76d47db1" ver="4">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+		<init target="Path" ver="4" value="GermProgress"/>
+	</object>
+	<object access-modifier="private" name="VentProgress" display-name="VentProgress" uuid="5b82554f-feb2-42d5-b42b-a9d6f182f67f" base-type="OpcItemInt4" base-type-id="c8220066-9348-4b3e-a68e-d8ac76d47db1" ver="4">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+		<init target="Path" ver="4" value="VentProgress"/>
+	</object>
+	<object access-modifier="private" name="GermStatus" display-name="GermStatus" uuid="92cc257d-15f8-4ebd-8485-b499cadb6d1e" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+		<init target="Path" ver="4" value="GermStatus"/>
+	</object>
+	<object access-modifier="private" name="VentStatus" display-name="VentStatus" uuid="89c7fb57-4de7-4e69-b1e1-07ffb9de841d" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+		<init target="Path" ver="4" value="VentStatus"/>
+	</object>
+	<object access-modifier="private" name="txtVent" display-name="txtVent" uuid="78627bc5-852c-4fb6-8646-970c2c6f2ddf" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+		<designed target="X" value="94.5" ver="4"/>
+		<designed target="Y" value="133" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="111" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="Text" value="Шаги вентиляции" ver="4"/>
+		<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+		<designed target="FontColor" value="0xffffffff" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+	</object>
+	<object access-modifier="private" name="txtVent_1" display-name="txtVent_1" uuid="d1b7771b-8150-4305-9d8f-e1fe194ef42e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+		<designed target="X" value="94.5" ver="4"/>
+		<designed target="Y" value="191.5" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="111" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="Text" value="Шаги опрессовки" ver="4"/>
+		<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+		<designed target="FontColor" value="0xffffffff" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+	</object>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="Closed">
+		<body kind="om">
+			<![CDATA[unit.Global.isFGUOpened=false;]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="ArmStartAllow" display-name="ArmStartAllow" uuid="aed66655-2ee3-4c7e-8f6c-316dec1f1407" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.BOILER.ArmStartAllow"/>
+	</object>
+	<object access-modifier="private" name="btnGermTest" display-name="btnGermTest" uuid="aec67c93-4b87-4733-96d4-0eb0175143b0" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
+		<designed target="X" value="169.5" ver="4"/>
+		<designed target="Y" value="102.5" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="107" ver="4"/>
+		<designed target="Height" value="23" ver="4"/>
+		<designed target="Checkable" value="false" ver="4"/>
+		<designed target="Text" value="ОПРЕССОВКА" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+		<designed target="FontColor" value="4278190080" ver="4"/>
+		<designed target="OnClickFontColor" value="4278190080" ver="4"/>
+		<designed target="OnHoverFontColor" value="4278190080" ver="4"/>
+		<designed target="DisabledFontColor" value="4278190080" ver="4"/>
+		<designed target="BrushColor" value="4293980400" ver="4"/>
+		<designed target="BrushStyle" value="1" ver="4"/>
+		<designed target="OnClickBrushColor" value="4288716960" ver="4"/>
+		<designed target="OnClickBrushStyle" value="1" ver="4"/>
+		<designed target="OnHoverBrushColor" value="4294967295" ver="4"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="4"/>
+		<designed target="DisabledBrushColor" value="4288716960" ver="4"/>
+		<designed target="DisabledBrushStyle" value="1" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="1" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="OnClickPenColor" value="4278190080" ver="4"/>
+		<designed target="OnClickPenStyle" value="1" ver="4"/>
+		<designed target="OnClickPenWidth" value="1" ver="4"/>
+		<designed target="OnHoverPenColor" value="4278190080" ver="4"/>
+		<designed target="OnHoverPenStyle" value="1" ver="4"/>
+		<designed target="OnHoverPenWidth" value="1" ver="4"/>
+		<designed target="DisabledPenColor" value="4288716960" ver="4"/>
+		<designed target="DisabledPenStyle" value="1" ver="4"/>
+		<designed target="DisabledPenWidth" value="1" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
+			<body kind="om">
+				<![CDATA[if (DensityOk==true&&OutTestGerm==false)
+	InTestGerm=true;
+	
+if (DensityOk==false&&OutTestDensity==false)
+	InTestDensity==true;]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Enabled" ver="4">
+			<body>
+				<![CDATA[!OutSelOil&&((!GermOk&&!OutTestGerm&&DensityOk)||(!DensityOk&&!OutTestDensity))&&BoilerWork]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Visible" ver="4">
+			<body>
+				<![CDATA[!VentOK]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="btnReset" display-name="btnReset" uuid="7f1c4955-af93-40a0-88d1-b4f5de0c02a0" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
+		<designed target="X" value="32.5" ver="4"/>
+		<designed target="Y" value="102.5" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="91" ver="4"/>
+		<designed target="Height" value="23" ver="4"/>
+		<designed target="Checkable" value="false" ver="4"/>
+		<designed target="Text" value="СБРОС" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+		<designed target="FontColor" value="4278190080" ver="4"/>
+		<designed target="OnClickFontColor" value="4278190080" ver="4"/>
+		<designed target="OnHoverFontColor" value="4278190080" ver="4"/>
+		<designed target="DisabledFontColor" value="4278190080" ver="4"/>
+		<designed target="BrushColor" value="4293980400" ver="4"/>
+		<designed target="BrushStyle" value="1" ver="4"/>
+		<designed target="OnClickBrushColor" value="4288716960" ver="4"/>
+		<designed target="OnClickBrushStyle" value="1" ver="4"/>
+		<designed target="OnHoverBrushColor" value="4294967295" ver="4"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="4"/>
+		<designed target="DisabledBrushColor" value="4288716960" ver="4"/>
+		<designed target="DisabledBrushStyle" value="1" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="1" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="OnClickPenColor" value="4278190080" ver="4"/>
+		<designed target="OnClickPenStyle" value="1" ver="4"/>
+		<designed target="OnClickPenWidth" value="1" ver="4"/>
+		<designed target="OnHoverPenColor" value="4278190080" ver="4"/>
+		<designed target="OnHoverPenStyle" value="1" ver="4"/>
+		<designed target="OnHoverPenWidth" value="1" ver="4"/>
+		<designed target="DisabledPenColor" value="4288716960" ver="4"/>
+		<designed target="DisabledPenStyle" value="1" ver="4"/>
+		<designed target="DisabledPenWidth" value="1" ver="4"/>
+		<do-trace access-modifier="private" target="Enabled" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[VentStatus=="ВОЗЬМИТЕ АНАЛИЗ И НАЖМИТЕ СБРОС"]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="Visible" ver="4">
+			<body>
+				<![CDATA[!VentOK]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="MouseRelease">
+			<body kind="om">
+				<![CDATA[InReset=false;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MousePress">
+			<body kind="om">
+				<![CDATA[InReset=true;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="GermOk" display-name="GermOk" uuid="0abb5139-c51f-4ba6-b368-94a8abc327d6" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.ALARMS.OtherAlarms.AlarmGermOK"/>
+	</object>
+	<object access-modifier="private" name="VentOK" display-name="VentOK" uuid="aa8d5c9d-8b4d-411d-abaa-01d2d597bf57" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.ALARMS.OtherAlarms.AlarmVentOK"/>
+	</object>
+	<object access-modifier="private" name="OutReset" display-name="OutReset" uuid="1cb7a359-a5e8-4f70-b699-8cbb3baa05e4" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.BOILER.OutReset"/>
+	</object>
+	<object access-modifier="private" name="InReset" display-name="InReset" uuid="2c8a6593-9a2c-40a6-8e70-c671673d3d77" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.BOILER.InReset"/>
+	</object>
+	<object access-modifier="private" name="OutTestGerm" display-name="OutTestGerm" uuid="f085c345-839d-4172-9ec9-22a7e5018777" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.BOILER.OutGermTestStart"/>
+	</object>
+	<object access-modifier="private" name="InTestGerm" display-name="InTestGerm" uuid="c5d1f661-d928-468b-9a3e-1ccaa76f37be" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.BOILER.InGermTestStart"/>
+	</object>
+	<object access-modifier="private" name="OutTestDensity" display-name="OutTestDensity" uuid="9c4e76b9-9ab1-477c-a48b-997f30d1bc19" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.BOILER.OutGateTestStart"/>
+	</object>
+	<object access-modifier="private" name="InTestDensity" display-name="InTestDensity" uuid="87b80f49-fd2c-4fac-98f3-42f04c856886" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.BOILER.InGateTestStart"/>
+	</object>
+	<object access-modifier="private" name="DensityStatus" display-name="DensityStatus" uuid="1bd4465d-74a3-4155-880a-d6971e19325f" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+		<init target="Path" ver="4" value="DensityStatus"/>
+	</object>
+	<object access-modifier="private" name="DensityOk" display-name="DensityOk" uuid="0014256f-d946-41ac-a6a7-a6d1e54ee9b5" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.ALARMS.OtherAlarms.AlarmGateGOk"/>
+	</object>
+	<object access-modifier="private" name="BoilerWork" display-name="BoilerWork" uuid="2a209cea-9e32-4f19-ae09-b87bbfc6a1ce" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.BOILER.BoilerInWork"/>
+	</object>
+</type>
+

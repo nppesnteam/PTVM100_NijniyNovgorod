@@ -1,0 +1,114 @@
+<type access-modifier="private" name="DI" display-name="DI" uuid="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" base-type="Dummy" base-type-id="e4b644cf-f3a8-4d11-82a0-6acc23748e14" ver="4">
+	<designed target="X" value="0" ver="4"/>
+	<designed target="Y" value="0" ver="4"/>
+	<designed target="ZValue" value="0" ver="4"/>
+	<designed target="Rotation" value="0" ver="4"/>
+	<designed target="Scale" value="1" ver="4"/>
+	<designed target="Visible" value="true" ver="4"/>
+	<designed target="Opacity" value="1" ver="4"/>
+	<designed target="Enabled" value="true" ver="4"/>
+	<designed target="Tooltip" value="" ver="4"/>
+	<object access-modifier="private" name="module" display-name="module" uuid="981629b5-6a30-4f31-8232-76fd01c800ff" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
+		<designed target="X" value="0" ver="4"/>
+		<designed target="Y" value="0" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="265" ver="4"/>
+		<designed target="Height" value="1174" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="0" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="ImageFile" value="DI_32_011.png" ver="4"/>
+		<designed target="Active" value="true" ver="4"/>
+		<designed target="CurrentFrameNumber" value="0" ver="4"/>
+		<designed target="Speed" value="1" ver="4"/>
+	</object>
+	<object access-modifier="private" name="OpenModuleWindow" display-name="OpenModuleWindow" uuid="1b471303-16ee-4f15-a01c-ff27e08d1ab3" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4" cardinal="18">
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="InvokeTrigger" value="false" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-action="open-new" form-by-id="false">
+			<object access-modifier="private" uuid="a2e604b3-6f61-47b2-9773-abe3bf7474be" base-type="Модуль дискретный" base-type-id="da3b6b26-5d54-4135-bfbe-5685e8f2e5e6" ver="4">
+				<init target="refDI" ver="4" ref="here"/>
+				<init target="WindowX" ver="4">
+					<expr>
+						<![CDATA[mX]]>
+					</expr>
+				</init>
+				<init target="WindowY" ver="4">
+					<expr>
+						<![CDATA[TypeConvert.ToInt4(mY-(690-(1080-mY)))]]>
+					</expr>
+				</init>
+			</object>
+		</do-on>
+		<do-trace access-modifier="private" target="Enabled" ver="4">
+			<body>
+				<![CDATA[!isOpened]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="isOpened" display-name="isOpened" uuid="b77550e1-bd86-4374-aa00-a2f9afb009af" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+	<param access-modifier="private" name="initPath" display-name="initPath" uuid="219399f0-2559-47c3-a324-3d19dacb9181" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+	<param access-modifier="private" name="initOpcSource" display-name="initOpcSource" uuid="7325e735-c0e4-4310-8d14-15ab52c46191" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" base-const="true" base-ref="true" ver="4"/>
+	<object access-modifier="private" name="mX" display-name="mX" uuid="6103bb53-df7e-461d-914a-4a949ed378ba" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
+	<object access-modifier="private" name="mY" display-name="mY" uuid="759dce3f-5e17-406f-9888-50fdaf5f8206" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
+		<body kind="om">
+			<![CDATA[mX = TypeConvert.ToFloat(ScreenX(MouseX, MouseY));
+mY = TypeConvert.ToFloat(ScreenY(MouseX, MouseY));
+if (mX+700>1920)
+{
+	mX = TypeConvert.ToInt4(mX-(710-(1920-mX)));
+}
+if (mY+690>1080)
+{
+	mY = TypeConvert.ToInt4(mY-(690-(1080-mY)));
+}
+OpenModuleWindow.Invoke();]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="VALUE" display-name="VALUE" uuid="a6fbcba3-ffe1-4289-9eeb-1cc3dfb81f15" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4" cardinal="32">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+	<object access-modifier="private" name="NAME" display-name="NAME" uuid="b7efe5cc-e3ca-40c4-9185-45d0d06569e6" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4" cardinal="32">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+	<object access-modifier="private" name="hereOpcSource" display-name="hereOpcSource" uuid="f6c9a66a-ace3-494b-b19e-788308285783" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+		<designed target="Active" value="false" ver="4"/>
+		<designed target="UpdateRate" value="0" ver="4"/>
+		<designed target="ReAdvise" value="0" ver="4"/>
+		<init target="ParentSource" ver="4" ref="initOpcSource"/>
+		<init target="Path" ver="4" ref="initPath"/>
+	</object>
+	<object access-modifier="private" name="KKS" display-name="KKS" uuid="25fa8e8c-d7b4-4199-99ca-e0ec8e77e299" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4" cardinal="32">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+	<object access-modifier="private" name="Initializer" display-name="Initializer" uuid="1b0cd20b-5537-4b2f-934d-8ea3cb8d7242" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="4">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Initialized">
+			<body kind="om">
+				<![CDATA[i: uint1 = 0;
+while(i<32)
+{
+	VALUE[i].Path = "DI"+Str.ToString(i+1)+".H";
+	NAME[i].Path = "DI"+Str.ToString(i+1)+".NAME";
+	KKS[i].Path = "DI"+Str.ToString(i+1)+".KKS";
+	InInvert[i].Path = "DI"+Str.ToString(i+1)+".InInvert";
+	OutInvert[i].Path = "DI"+Str.ToString(i+1)+".OutInvert";
+	i += 1;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="InInvert" display-name="InInvert" uuid="6246ba9e-4afc-427b-a422-49c64804a6e9" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4" cardinal="32">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+	<object access-modifier="private" name="OutInvert" display-name="OutInvert" uuid="d2e9f645-537c-458b-a7df-ea8e1829d340" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4" cardinal="32">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+</type>
+

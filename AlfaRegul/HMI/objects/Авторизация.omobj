@@ -1,0 +1,360 @@
+<type access-modifier="private" name="Авторизация" display-name="Авторизация" uuid="8a60d63d-91bf-4478-b291-580a00deec81" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="4">
+	<designed target="X" value="0" ver="4"/>
+	<designed target="Y" value="0" ver="4"/>
+	<designed target="ZValue" value="0" ver="4"/>
+	<designed target="Rotation" value="0" ver="4"/>
+	<designed target="Scale" value="1" ver="4"/>
+	<designed target="Visible" value="true" ver="4"/>
+	<designed target="Opacity" value="1" ver="4"/>
+	<designed target="Enabled" value="true" ver="4"/>
+	<designed target="Tooltip" value="" ver="4"/>
+	<designed target="Width" value="300" ver="4"/>
+	<designed target="Height" value="120" ver="4"/>
+	<designed target="PenColor" value="4278190080" ver="4"/>
+	<designed target="PenStyle" value="0" ver="4"/>
+	<designed target="PenWidth" value="1" ver="4"/>
+	<designed target="BrushColor" value="4293980400" ver="4"/>
+	<designed target="BrushStyle" value="1" ver="4"/>
+	<designed target="WindowX" value="0" ver="4"/>
+	<designed target="WindowY" value="0" ver="4"/>
+	<designed target="WindowWidth" value="300" ver="4"/>
+	<designed target="WindowHeight" value="120" ver="4"/>
+	<designed target="WindowCaption" value="Авторизация" ver="4"/>
+	<designed target="ShowWindowCaption" value="true" ver="4"/>
+	<designed target="ShowWindowMinimize" value="false" ver="4"/>
+	<designed target="ShowWindowMaximize" value="false" ver="4"/>
+	<designed target="ShowWindowClose" value="true" ver="4"/>
+	<designed target="AlwaysOnTop" value="false" ver="4"/>
+	<designed target="WindowSizeMode" value="0" ver="4"/>
+	<designed target="WindowBorderStyle" value="2" ver="4"/>
+	<designed target="WindowState" value="0" ver="4"/>
+	<designed target="WindowScalingMode" value="0" ver="4"/>
+	<designed target="MonitorNumber" value="0" ver="4"/>
+	<designed target="WindowPosition" value="0" ver="4"/>
+	<designed target="WindowCloseMode" value="0" ver="4"/>
+	<object access-modifier="private" name="combUsers" display-name="combUsers" uuid="902771bf-ccf9-4a3b-8102-0ec631f44b5c" base-type="ComboBox" base-type-id="3495bcd2-01f2-4709-b7f4-e9cf6f3a00bc" ver="4">
+		<designed target="X" value="50" ver="4"/>
+		<designed target="Y" value="20" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="200" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="Editable" value="false" ver="4"/>
+		<designed target="Text" value="" ver="4"/>
+		<designed target="SelectedIndex" value="-1" ver="4"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="4"/>
+		<designed target="FontColor" value="4278190080" ver="4"/>
+		<designed target="MaxVisibleItems" value="10" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="SelectedChanged">
+			<body kind="om">
+				<![CDATA[txtPass.Text = "";]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="UserList" display-name="UserList" uuid="888ca6c4-cca8-4b64-871f-f40cf66d9ac3" base-type="UserList" base-type-id="7d9c142e-8718-4caa-82be-60ea2ec65981" ver="4">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="UpdateFinished">
+			<body kind="om">
+				<![CDATA[combUsers.Clear();
+i: uint1 = 0;
+while (i<Count)
+{
+	combUsers.AddItem(UserList.GetDisplayName(i));
+	i+=1;
+}]]>
+			</body>
+		</do-on>
+		<init target="SecurityContext" ver="4" ref="unit.Security.SecurityContextHMI"/>
+	</object>
+	<object access-modifier="private" name="txtPass" display-name="txtPass" uuid="6d934179-d350-4bd1-858f-77c8d39eedae" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="4">
+		<designed target="X" value="50" ver="4"/>
+		<designed target="Y" value="50" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="200" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="Text" value="" ver="4"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="4"/>
+		<designed target="FontColor" value="4278190080" ver="4"/>
+		<designed target="TextAlignment" value="129" ver="4"/>
+		<designed target="HideInput" value="true" ver="4"/>
+		<designed target="PlaceholderText" value="Введите пароль" ver="4"/>
+		<designed target="ReadOnly" value="false" ver="4"/>
+		<init target="Focus" ver="4" value="true"/>
+	</object>
+	<object access-modifier="private" name="btnLogin" display-name="btnLogin" uuid="45acbb34-4b4d-4efb-94de-32bcb9b63512" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
+		<designed target="X" value="190" ver="4"/>
+		<designed target="Y" value="80" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="60" ver="4"/>
+		<designed target="Height" value="23" ver="4"/>
+		<designed target="Checkable" value="false" ver="4"/>
+		<designed target="Text" value="Вход" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+		<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0,Narrow Bold" ver="4"/>
+		<designed target="FontColor" value="4278190080" ver="4"/>
+		<designed target="OnClickFontColor" value="4278190080" ver="4"/>
+		<designed target="OnHoverFontColor" value="4278190080" ver="4"/>
+		<designed target="DisabledFontColor" value="4278190080" ver="4"/>
+		<designed target="BrushColor" value="4293980400" ver="4"/>
+		<designed target="BrushStyle" value="1" ver="4"/>
+		<designed target="OnClickBrushColor" value="4288716960" ver="4"/>
+		<designed target="OnClickBrushStyle" value="1" ver="4"/>
+		<designed target="OnHoverBrushColor" value="4294967295" ver="4"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="4"/>
+		<designed target="DisabledBrushColor" value="4288716960" ver="4"/>
+		<designed target="DisabledBrushStyle" value="1" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="1" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="OnClickPenColor" value="4278190080" ver="4"/>
+		<designed target="OnClickPenStyle" value="1" ver="4"/>
+		<designed target="OnClickPenWidth" value="1" ver="4"/>
+		<designed target="OnHoverPenColor" value="4278190080" ver="4"/>
+		<designed target="OnHoverPenStyle" value="1" ver="4"/>
+		<designed target="OnHoverPenWidth" value="1" ver="4"/>
+		<designed target="DisabledPenColor" value="4288716960" ver="4"/>
+		<designed target="DisabledPenStyle" value="1" ver="4"/>
+		<designed target="DisabledPenWidth" value="1" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="ButtonPressed">
+			<body kind="javascript">
+				<![CDATA[unit.Global.AuthFailed = false;
+unit.Security.SecurityContextHMI.Logout();
+for (var i=0; i<UserList.Count; i++)
+{
+	var login = "";
+	if (combUsers.Text == UserList.GetDisplayName(i))
+	{
+		login = UserList.GetLoginName(i);
+		unit.Security.SecurityContextHMI.AsyncLogin(login, txtPass.Text);
+	}
+}
+Timer.Active = true;]]>
+			</body>
+		</do-on>
+	</object>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Opened">
+		<body kind="om">
+			<![CDATA[UserList.BeginUpdate();
+Trig=false;]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="Keyboard" display-name="Keyboard" uuid="f045d579-428d-4940-ab13-4ef3628a29d2" base-type="Keyboard" base-type-id="9430301f-2693-4c5c-9013-867d8d8f73f4" ver="4">
+		<designed target="Locale" value="en-US" ver="4"/>
+	</object>
+	<object access-modifier="private" name="btnChngPass" display-name="btnChngPass" uuid="0f046f7b-fa46-474b-be03-9d89ae50b4a4" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
+		<designed target="X" value="50" ver="4"/>
+		<designed target="Y" value="80" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="120" ver="4"/>
+		<designed target="Height" value="23" ver="4"/>
+		<designed target="Checkable" value="false" ver="4"/>
+		<designed target="Text" value="Сменить пароль" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+		<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0,Narrow Bold" ver="4"/>
+		<designed target="FontColor" value="4278190080" ver="4"/>
+		<designed target="OnClickFontColor" value="4278190080" ver="4"/>
+		<designed target="OnHoverFontColor" value="4278190080" ver="4"/>
+		<designed target="DisabledFontColor" value="4278190080" ver="4"/>
+		<designed target="BrushColor" value="4293980400" ver="4"/>
+		<designed target="BrushStyle" value="1" ver="4"/>
+		<designed target="OnClickBrushColor" value="4288716960" ver="4"/>
+		<designed target="OnClickBrushStyle" value="1" ver="4"/>
+		<designed target="OnHoverBrushColor" value="4294967295" ver="4"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="4"/>
+		<designed target="DisabledBrushColor" value="4288716960" ver="4"/>
+		<designed target="DisabledBrushStyle" value="1" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="1" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="OnClickPenColor" value="4278190080" ver="4"/>
+		<designed target="OnClickPenStyle" value="1" ver="4"/>
+		<designed target="OnClickPenWidth" value="1" ver="4"/>
+		<designed target="OnHoverPenColor" value="4278190080" ver="4"/>
+		<designed target="OnHoverPenStyle" value="1" ver="4"/>
+		<designed target="OnHoverPenWidth" value="1" ver="4"/>
+		<designed target="DisabledPenColor" value="4288716960" ver="4"/>
+		<designed target="DisabledPenStyle" value="1" ver="4"/>
+		<designed target="DisabledPenWidth" value="1" ver="4"/>
+		<do-trace access-modifier="private" target="Enabled" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[unit.Security.SecurityContextHMI.CurrentUser == "guest"]]>
+				</condition>
+				<expr>
+					<![CDATA[false]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[unit.Security.SecurityContextHMI.CurrentUser != "guest"]]>
+				</condition>
+				<expr>
+					<![CDATA[true]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick" form-action="open-dialog" form-by-id="false">
+			<object access-modifier="private" uuid="0ac9add0-0916-4cd3-998c-edfe0685d12b" base-type="Смена пароля" base-type-id="440a4834-66db-41a2-ac6a-53f5ca3506d4" ver="4">
+				<designed target="WindowPosition" value="1" ver="4"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Error" display-name="Error" uuid="bf784e76-a1c6-42af-95b4-5267bd2ed2c9" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4">
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="InvokeTrigger" value="false" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-action="open-new" form-by-id="false">
+			<object access-modifier="private" uuid="7ec5e865-3799-415a-bf0e-a51f78449dd4" base-type="Ошибка" base-type-id="71e4282d-ac4c-4686-b42b-b400ae3a645a" ver="4">
+				<init target="ErrorMsg" ver="4">
+					<expr>
+						<![CDATA[unit.Security.SecurityContextHMI.LoginRejectReason]]>
+					</expr>
+				</init>
+			</object>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="Invoked">
+			<body kind="om">
+				<![CDATA[txtPass.Text = "";]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="LogTry" display-name="LogTry" uuid="39caccb0-ff2f-4536-8894-36a559f28557" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4">
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="InvokeTrigger" value="false" ver="4"/>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="Invoked">
+			<body kind="om">
+				<![CDATA[if (unit.Global.AuthFailed == true)
+{
+	Error.Invoke();
+}
+else if (unit.Global.AuthOK == true)
+{
+	Trig=true;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Timer" display-name="Timer" uuid="560e07d2-5767-4aad-9f69-b896bec2b151" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="4">
+		<designed target="Period" value="200" ver="4"/>
+		<designed target="Active" value="false" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnTimer">
+			<body kind="om">
+				<![CDATA[me.Active = false;
+LogTry.Invoke();]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="show" display-name="show" uuid="da8cafb1-0b5f-4563-bbf6-abae8edfdf09" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
+		<designed target="X" value="255" ver="4"/>
+		<designed target="Y" value="50" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="Показать пароль" ver="4"/>
+		<designed target="Width" value="20" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="0" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="ImageFile" value="show.png" ver="4"/>
+		<designed target="Active" value="true" ver="4"/>
+		<designed target="CurrentFrameNumber" value="0" ver="4"/>
+		<designed target="Speed" value="1" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
+			<body kind="om">
+				<![CDATA[txtPass.HideInput = !txtPass.HideInput;
+hide.Visible = true;
+me.Visible = false;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="hide" display-name="hide" uuid="0f7d8331-9eca-4910-aac3-2c572da66089" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
+		<designed target="X" value="255" ver="4"/>
+		<designed target="Y" value="50" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="false" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="Скрыть пароль" ver="4"/>
+		<designed target="Width" value="20" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="0" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="ImageFile" value="hide.png" ver="4"/>
+		<designed target="Active" value="true" ver="4"/>
+		<designed target="CurrentFrameNumber" value="0" ver="4"/>
+		<designed target="Speed" value="1" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
+			<body kind="om">
+				<![CDATA[txtPass.HideInput = !txtPass.HideInput;
+show.Visible = true;
+me.Visible = false;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="CloseOnAuthOk" display-name="CloseOnAuthOk" uuid="08e0b25e-21a9-4d41-a7da-431d339486e9" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4">
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="InvokeTrigger" value="false" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-action="close"/>
+		<do-trace access-modifier="private" target="InvokeTrigger" ver="4">
+			<body>
+				<![CDATA[unit.Global.AuthOK&&Trig]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Trig" display-name="Trig" uuid="508bccba-dec5-4548-8553-d49cfdd9059f" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+	<object access-modifier="private" name="TimerKeyState" display-name="TimerKeyState" uuid="20425c12-95cd-41b9-a934-a24561cb8542" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="4">
+		<designed target="Period" value="1" ver="4"/>
+		<designed target="Active" value="false" ver="4"/>
+		<do-trace access-modifier="private" target="Active" ver="4">
+			<body>
+				<![CDATA[here.WindowActive]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="OnTimer">
+			<body kind="om">
+				<![CDATA[if (((OldStateEsc==1)||(OldStateEsc==3))&&((Keyboard.KeyState(75)==0)||(Keyboard.KeyState(75)==2)))
+{
+	here.Close();
+}
+OldStateEsc=Keyboard.KeyState(75);
+if (((OldStateEnt==1)||(OldStateEnt==3))&&((Keyboard.KeyState(82)==0)||(Keyboard.KeyState(82)==2)))
+{
+	btnLogin.Click();
+}
+OldStateEnt=Keyboard.KeyState(82);
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="OldStateEsc" display-name="OldStateEsc" uuid="dbd369a2-55ab-4da1-8e96-291ddfa3034e" base-type="int1" base-type-id="756a0a23-7e63-4a13-8a35-e8a38909e5ed" ver="4"/>
+	<object access-modifier="private" name="OldStateEnt" display-name="OldStateEnt" uuid="550a6282-6f10-47cd-a262-1cd2dd30d948" base-type="int1" base-type-id="756a0a23-7e63-4a13-8a35-e8a38909e5ed" ver="4"/>
+</type>
+

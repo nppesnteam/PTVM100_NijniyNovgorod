@@ -1,0 +1,162 @@
+<type access-modifier="private" name="AI" display-name="AI" uuid="9b579fb6-d797-4d72-89ea-5c3e6e63a0f4" base-type="Dummy" base-type-id="e4b644cf-f3a8-4d11-82a0-6acc23748e14" ver="4">
+	<designed target="X" value="0" ver="4"/>
+	<designed target="Y" value="0" ver="4"/>
+	<designed target="ZValue" value="0" ver="4"/>
+	<designed target="Rotation" value="0" ver="4"/>
+	<designed target="Scale" value="1" ver="4"/>
+	<designed target="Visible" value="true" ver="4"/>
+	<designed target="Opacity" value="1" ver="4"/>
+	<designed target="Enabled" value="true" ver="4"/>
+	<designed target="Tooltip" value="" ver="4"/>
+	<object access-modifier="private" name="module" display-name="module" uuid="40a1624b-0bda-43ff-945f-50c4e0c84b05" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
+		<designed target="X" value="0" ver="4"/>
+		<designed target="Y" value="0" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="266" ver="4"/>
+		<designed target="Height" value="1174" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="0" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="ImageFile" value="AI_16_011.png" ver="4"/>
+		<designed target="Active" value="true" ver="4"/>
+		<designed target="CurrentFrameNumber" value="0" ver="4"/>
+		<designed target="Speed" value="1" ver="4"/>
+	</object>
+	<object access-modifier="private" name="OpenModuleWindow" display-name="OpenModuleWindow" uuid="59e60c38-0519-45f2-9b06-ff9158452252" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4" cardinal="18">
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="InvokeTrigger" value="false" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-action="open-new" form-by-id="false">
+			<object access-modifier="private" uuid="f3fe5bd4-b8b7-47cf-b759-0ad3f8483e67" base-type="Модуль аналоговых входов" base-type-id="b1483bda-4aac-482d-95a8-cfa18ca7aea3" ver="4">
+				<init target="WindowX" ver="4">
+					<expr>
+						<![CDATA[mX]]>
+					</expr>
+				</init>
+				<init target="WindowY" ver="4">
+					<expr>
+						<![CDATA[mY]]>
+					</expr>
+				</init>
+				<init target="refAI" ver="4" ref="here"/>
+			</object>
+		</do-on>
+		<do-trace access-modifier="private" target="Enabled" ver="4">
+			<body>
+				<![CDATA[!isOpened]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="isOpened" display-name="isOpened" uuid="85d22d1d-fab6-468c-ba16-73a221a766a8" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+	<param access-modifier="private" name="initPath" display-name="initPath" uuid="a435ca9c-0d55-4996-82e1-6ca8fea93e0c" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+	<param access-modifier="private" name="initOpcSource" display-name="initOpcSource" uuid="1d75d844-f7ab-4396-897b-d4adbf7660c1" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" base-const="true" base-ref="true" ver="4"/>
+	<object access-modifier="private" name="mX" display-name="mX" uuid="d7919907-8b80-4b49-9fa6-1c98846d7c5c" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
+	<object access-modifier="private" name="mY" display-name="mY" uuid="6f0637b4-c213-466f-8301-b61067fe06ff" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
+		<body kind="om">
+			<![CDATA[mX = TypeConvert.ToFloat(ScreenX(MouseX, MouseY));
+mY = TypeConvert.ToFloat(ScreenY(MouseX, MouseY));
+if (mX+700>1920)
+{
+	mX = TypeConvert.ToInt4(mX-(710-(1920-mX)));
+}
+OpenModuleWindow.Invoke();]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="hereOpcSource" display-name="hereOpcSource" uuid="f50f905a-9f92-4f39-987c-0313c2e595e4" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+		<designed target="Active" value="false" ver="4"/>
+		<designed target="UpdateRate" value="0" ver="4"/>
+		<designed target="ReAdvise" value="0" ver="4"/>
+		<init target="ParentSource" ver="4" ref="initOpcSource"/>
+		<init target="Path" ver="4" ref="initPath"/>
+	</object>
+	<object access-modifier="private" name="VALUE" display-name="VALUE" uuid="836728ea-5432-49d5-9040-323db1eab461" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+	<object access-modifier="private" name="NAME" display-name="NAME" uuid="cbde8232-0050-4d6c-ba41-77b918433621" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+	<object access-modifier="private" name="EU" display-name="EU" uuid="994948e3-732e-4db5-baa6-58e3f245ef62" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+	<object access-modifier="private" name="KKS" display-name="KKS" uuid="dafaf057-934a-4a77-8921-25092d42a75a" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+	<object access-modifier="private" name="Initializer" display-name="Initializer" uuid="ed0ed1d3-89e4-421a-b256-84736c83266b" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="4">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Initialized">
+			<body kind="om">
+				<![CDATA[i: uint1 = 0;
+while(i<16)
+{
+	VALUE[i].Path = "AI"+Str.ToString(i+1)+".VALUE";
+	NAME[i].Path = "AI"+Str.ToString(i+1)+".NAME";
+	KKS[i].Path = "AI"+Str.ToString(i+1)+".KKS";
+	EU[i].Path = "AI"+Str.ToString(i+1)+".EU";	
+	InPerefMin[i].Path = "AI"+Str.ToString(i+1)+".InPerefMin";
+	InPerefMax[i].Path = "AI"+Str.ToString(i+1)+".InPerefMax";
+	InScaleMin[i].Path = "AI"+Str.ToString(i+1)+".InScaleMin";
+	InScaleMax[i].Path = "AI"+Str.ToString(i+1)+".InScaleMax";
+	InTFil[i].Path = "AI"+Str.ToString(i+1)+".InTFil";
+	InConvers[i].Path = "AI"+Str.ToString(i+1)+".InConvers";
+	InFDead[i].Path = "AI"+Str.ToString(i+1)+".InFDead";
+	OutPerefMin[i].Path = "AI"+Str.ToString(i+1)+".OutPerefMin";
+	OutPerefMax[i].Path = "AI"+Str.ToString(i+1)+".OutPerefMax";
+	OutScaleMin[i].Path = "AI"+Str.ToString(i+1)+".OutScaleMin";
+	OutScaleMax[i].Path = "AI"+Str.ToString(i+1)+".OutScaleMax";
+	OutTFil[i].Path = "AI"+Str.ToString(i+1)+".OutTFil";
+	OutConvers[i].Path = "AI"+Str.ToString(i+1)+".OutConvers";
+	OutFDead[i].Path = "AI"+Str.ToString(i+1)+".OutFDead";
+	i += 1;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="InPerefMin" display-name="InPerefMin" uuid="72e281e2-14f6-480a-a99c-6d287136b98d" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+	<object access-modifier="private" name="InPerefMax" display-name="InPerefMax" uuid="72c11ddc-4830-4101-82e5-4fcc49b6b544" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+	<object access-modifier="private" name="OutPerefMin" display-name="OutPerefMin" uuid="0cb33a09-c98d-408b-a15a-cd56a860f096" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+	<object access-modifier="private" name="OutPerefMax" display-name="OutPerefMax" uuid="230e5ac8-687b-47e0-a043-655790e46afa" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+	<object access-modifier="private" name="InScaleMin" display-name="InScaleMin" uuid="d495f7a6-80ed-4de8-b822-666acd2d9f72" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+	<object access-modifier="private" name="InScaleMax" display-name="InScaleMax" uuid="586b5e71-3973-4387-a212-4a946fba78d3" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+	<object access-modifier="private" name="OutScaleMin" display-name="OutScaleMin" uuid="ec5afdd6-e155-4481-92ee-f45cbeff0cb3" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+	<object access-modifier="private" name="OutScaleMax" display-name="OutScaleMax" uuid="88e16ff0-46c1-41b1-be7d-e8eb1a6e39a2" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+	<object access-modifier="private" name="InTFil" display-name="InTFil" uuid="2f1028f3-517f-481e-844d-c099edf94630" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+	<object access-modifier="private" name="OutTFil" display-name="OutTFil" uuid="5963c593-0932-41e8-bce8-680da18696ed" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+	<object access-modifier="private" name="InConvers" display-name="InConvers" uuid="c93db101-fe00-4708-b92c-e4de994fd2b8" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+	<object access-modifier="private" name="OutConvers" display-name="OutConvers" uuid="ffd64bb7-3bd7-44c1-a7a3-34d1520f692f" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+	<object access-modifier="private" name="InFDead" display-name="InFDead" uuid="7592d5d9-a34d-497d-bb99-a2b00422e376" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+	<object access-modifier="private" name="OutFDead" display-name="OutFDead" uuid="5cbf6a2c-854f-47ed-9f3b-442a8510c16e" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+</type>
+

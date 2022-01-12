@@ -1,0 +1,181 @@
+<type access-modifier="private" name="Шаги подготовки к растопке" display-name="Шаги подготовки к растопке" uuid="045aa052-08c4-4fed-b0fe-669d7a0651ea" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="4">
+	<designed target="X" value="0" ver="4"/>
+	<designed target="Y" value="0" ver="4"/>
+	<designed target="ZValue" value="0" ver="4"/>
+	<designed target="Rotation" value="0" ver="4"/>
+	<designed target="Scale" value="1" ver="4"/>
+	<designed target="Visible" value="true" ver="4"/>
+	<designed target="Opacity" value="1" ver="4"/>
+	<designed target="Enabled" value="true" ver="4"/>
+	<designed target="Tooltip" value="" ver="4"/>
+	<designed target="Width" value="810" ver="4"/>
+	<designed target="Height" value="320" ver="4"/>
+	<designed target="PenColor" value="4278190080" ver="4"/>
+	<designed target="PenStyle" value="0" ver="4"/>
+	<designed target="PenWidth" value="1" ver="4"/>
+	<designed target="BrushColor" value="4293980400" ver="4"/>
+	<designed target="BrushStyle" value="1" ver="4"/>
+	<designed target="WindowX" value="0" ver="4"/>
+	<designed target="WindowY" value="0" ver="4"/>
+	<designed target="WindowWidth" value="810" ver="4"/>
+	<designed target="WindowHeight" value="320" ver="4"/>
+	<designed target="WindowCaption" value="Шаги подготовки к растопке" ver="4"/>
+	<designed target="ShowWindowCaption" value="true" ver="4"/>
+	<designed target="ShowWindowMinimize" value="false" ver="4"/>
+	<designed target="ShowWindowMaximize" value="false" ver="4"/>
+	<designed target="ShowWindowClose" value="true" ver="4"/>
+	<designed target="AlwaysOnTop" value="false" ver="4"/>
+	<designed target="WindowSizeMode" value="0" ver="4"/>
+	<designed target="WindowBorderStyle" value="2" ver="4"/>
+	<designed target="WindowState" value="0" ver="4"/>
+	<designed target="WindowScalingMode" value="0" ver="4"/>
+	<designed target="MonitorNumber" value="0" ver="4"/>
+	<designed target="WindowPosition" value="4" ver="4"/>
+	<designed target="WindowCloseMode" value="0" ver="4"/>
+	<object access-modifier="private" name="divider" display-name="divider" uuid="21c90a41-1453-43dc-9d83-a2edff215efc" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+		<designed target="X" value="404" ver="4"/>
+		<designed target="Y" value="1" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="2" ver="4"/>
+		<designed target="Height" value="318" ver="4"/>
+		<designed target="RoundingRadius" value="0" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="1" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="BrushColor" value="0xffffffff" ver="4"/>
+		<designed target="BrushStyle" value="1" ver="4"/>
+	</object>
+	<object access-modifier="private" name="Frame_Vent" display-name="Frame_Vent" uuid="2c6c8442-49a3-47fe-a880-6775fe6ed46f" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
+		<designed target="X" value="1" ver="4"/>
+		<designed target="Y" value="0" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="400" ver="4"/>
+		<designed target="Height" value="240" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="0" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="BrushColor" value="4278190080" ver="4"/>
+		<designed target="BrushStyle" value="0" ver="4"/>
+		<designed target="OverrideScaling" value="false" ver="4"/>
+		<designed target="ShowScrollBars" value="true" ver="4"/>
+		<designed target="MoveByMouse" value="false" ver="4"/>
+	</object>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Opened" frame-link="Frame_Vent" form-action="open-in-frame" form-by-id="false">
+		<object access-modifier="private" uuid="c5a2ffb7-ad8d-4725-86d1-b7769e95c7f6" base-type="Шаги вентиляции" base-type-id="df022b51-50fa-4614-8b2c-4f6fc9cfc5ac" ver="4">
+			<designed target="WindowBorderStyle" value="0" ver="4"/>
+		</object>
+	</do-on>
+	<object access-modifier="private" name="Frame_Germ" display-name="Frame_Germ" uuid="17d1c00a-d16e-4f66-a79a-a2a307776884" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
+		<designed target="X" value="409" ver="4"/>
+		<designed target="Y" value="0" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="400" ver="4"/>
+		<designed target="Height" value="320" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="0" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="BrushColor" value="4278190080" ver="4"/>
+		<designed target="BrushStyle" value="0" ver="4"/>
+		<designed target="OverrideScaling" value="false" ver="4"/>
+		<designed target="ShowScrollBars" value="true" ver="4"/>
+		<designed target="MoveByMouse" value="false" ver="4"/>
+	</object>
+	<object access-modifier="private" name="SwitchToGerm" display-name="SwitchToGerm" uuid="789a4baf-9c07-47e3-b77f-d718fb15b555" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4">
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="InvokeTrigger" value="false" ver="4"/>
+		<do-trace access-modifier="private" target="InvokeTrigger" ver="4">
+			<body>
+				<![CDATA[nBlow==10&&SelOil==false]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" frame-link="Frame_Germ" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="1f4bf2ea-210c-4d1b-9358-a1b87edc3d39" base-type="Шаги проверки герметичности" base-type-id="dc12b1e2-3877-42c3-9576-bcf0e396cd8d" ver="4">
+				<designed target="WindowSizeMode" value="0" ver="4"/>
+				<designed target="WindowBorderStyle" value="0" ver="4"/>
+				<designed target="WindowState" value="0" ver="4"/>
+			</object>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="4" event="Invoked">
+			<body kind="om">
+				<![CDATA[here.WindowHeight=320;
+here.Height=320;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="nBlow" display-name="nBlow" uuid="63b13b0d-408a-4fc7-9ff1-e394ac394025" base-type="OpcItemInt4" base-type-id="c8220066-9348-4b3e-a68e-d8ac76d47db1" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.BOILER.nBlow"/>
+	</object>
+	<object access-modifier="private" name="SwitchToBlow" display-name="SwitchToBlow" uuid="7852a471-0cec-45b5-a159-3f75ef9ac520" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4">
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="InvokeTrigger" value="false" ver="4"/>
+		<do-trace access-modifier="private" target="InvokeTrigger" ver="4">
+			<body>
+				<![CDATA[nBlow!=10&&SelOil==false]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="Invoked" frame-link="Frame_Germ" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="3d837e3e-2c33-431b-a120-8280cc5f1977" base-type="Шаги проверки задвижки" base-type-id="e9387ae5-4c63-4801-ae88-e7bc36035f9c" ver="4">
+				<designed target="WindowBorderStyle" value="0" ver="4"/>
+			</object>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="4" event="Invoked">
+			<body kind="om">
+				<![CDATA[here.WindowHeight=240;
+here.Height=240;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="refGas" display-name="refGas" uuid="e2d90798-9f32-4978-ad2d-7d090f16d187" base-type="Газ" base-type-id="f51061bd-0db8-43c4-a53c-77c2e4c09e04" base-const="true" base-ref="true" ver="4"/>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="Opened">
+		<body kind="om">
+			<![CDATA[refGas.FGU.isOpenedSteps=true;]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="Closed">
+		<body kind="om">
+			<![CDATA[refGas.FGU.isOpenedSteps=false;]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="SwitchToOil" display-name="SwitchToOil" uuid="3002d64b-4be6-4b52-98ad-7b01b769cf4a" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4">
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="InvokeTrigger" value="false" ver="4"/>
+		<do-trace access-modifier="private" target="InvokeTrigger" ver="4">
+			<body>
+				<![CDATA[SelOil==true]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="Invoked" frame-link="Frame_Germ" form-action="open-in-frame" form-by-id="false">
+			<object access-modifier="private" uuid="6baa1d9b-c2fc-4be9-b6ff-25700d3656d7" base-type="Шаги проверки задвижки дизтоплива" base-type-id="59229a88-91c5-4af8-b585-1218a38c381a" ver="4"/>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="4" event="Invoked">
+			<body kind="om">
+				<![CDATA[here.WindowHeight=240;
+here.Height=240;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="SelOil" display-name="SelOil" uuid="6a7ca20d-e91e-4de0-9999-f1294464a2eb" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.BOILER.OutSelOil"/>
+	</object>
+</type>
+

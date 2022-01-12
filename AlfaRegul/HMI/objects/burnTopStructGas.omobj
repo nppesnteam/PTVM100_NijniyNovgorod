@@ -1,0 +1,458 @@
+<type access-modifier="private" name="burnTopStructGas" display-name="burnTopStructGas" uuid="db217da3-5b19-4c08-9357-c27589892127" base-type="Dummy" base-type-id="e4b644cf-f3a8-4d11-82a0-6acc23748e14" ver="4">
+	<designed target="X" value="0" ver="4"/>
+	<designed target="Y" value="0" ver="4"/>
+	<designed target="ZValue" value="0" ver="4"/>
+	<designed target="Rotation" value="0" ver="4"/>
+	<designed target="Scale" value="1" ver="4"/>
+	<designed target="Visible" value="true" ver="4"/>
+	<designed target="Opacity" value="1" ver="4"/>
+	<designed target="Enabled" value="true" ver="4"/>
+	<designed target="Tooltip" value="" ver="4"/>
+	<object access-modifier="private" name="BurnNumber" display-name="BurnNumber" uuid="0d7048a1-fdae-43b0-9e58-92024702df3c" base-type="notifying_int1" base-type-id="cc2bf8ea-3898-4228-bc8f-71a7738f0c62" ver="4"/>
+	<object access-modifier="private" name="TubeOIl" display-name="TubeOIl" uuid="d330e698-4688-4b4f-af7b-d8e0874daddf" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="3">
+		<designed target="X" value="-15" ver="3"/>
+		<designed target="Y" value="154" ver="3"/>
+		<designed target="ZValue" value="0" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<designed target="Scale" value="1" ver="3"/>
+		<designed target="Visible" value="true" ver="3"/>
+		<designed target="Opacity" value="1" ver="3"/>
+		<designed target="Enabled" value="true" ver="3"/>
+		<designed target="Tooltip" value="" ver="3"/>
+		<designed target="Width" value="20" ver="3"/>
+		<designed target="Height" value="67" ver="3"/>
+		<designed target="PenColor" value="0xffffaa00" ver="3"/>
+		<designed target="PenStyle" value="1" ver="3"/>
+		<designed target="PenWidth" value="1" ver="3"/>
+		<designed target="BrushColor" value="0xffffffff" ver="3"/>
+		<designed target="BrushStyle" value="1" ver="3"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="6322e22b-bf53-43f9-8bd2-ab51e9ef6e23" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="0" ver="3"/>
+			<designed target="Y" value="0" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="df697e36-17f1-4fdf-9eb2-b1df001c9d6c" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="-16" ver="3"/>
+			<designed target="Y" value="-17" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="532942da-b5d3-42e5-838d-77d5e4fc334d" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="-16" ver="3"/>
+			<designed target="Y" value="-64" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="a9d399cd-abef-4a1c-9558-5cf9bff742c6" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="-20" ver="3"/>
+			<designed target="Y" value="-64" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="6531ae65-0243-43de-b2aa-561324ceb5b3" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="-20" ver="3"/>
+			<designed target="Y" value="-16" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Point_6" display-name="Point_6" uuid="ee5b5fa0-5718-4d1f-b0a3-0fe2be5abfac" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="-2" ver="3"/>
+			<designed target="Y" value="3" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Point_7" display-name="Point_7" uuid="19ed35d1-0c0c-44b8-a6ee-93a865553862" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="0" ver="3"/>
+			<designed target="Y" value="0" ver="3"/>
+		</object>
+		<object access-modifier="private" name="HasGas" display-name="HasGas" uuid="212034f8-73df-46ca-b124-1cbe96c0365a" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[HasGas==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00aaff]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[HasGas==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="HasGas" ver="4">
+			<body>
+				<![CDATA[TubeO2In.HasGas&&RefFlapO2.NoL]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="TubeGasAfterValves" display-name="TubeGasAfterValves" uuid="943c8026-fbfe-4bfd-b665-919b8249ba4f" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
+		<designed target="X" value="6" ver="4"/>
+		<designed target="Y" value="90" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="4" ver="4"/>
+		<designed target="Height" value="60" ver="4"/>
+		<designed target="PenColor" value="0xffffff00" ver="4"/>
+		<designed target="PenStyle" value="1" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="BrushColor" value="0xffffffff" ver="4"/>
+		<designed target="BrushStyle" value="1" ver="4"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="2c25d14c-a900-47ea-8102-e90174eb8d68" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+			<designed target="X" value="0" ver="4"/>
+			<designed target="Y" value="0" ver="4"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="ed191c11-6e82-4fac-965b-7ce5c5de72e3" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+			<designed target="X" value="0" ver="4"/>
+			<designed target="Y" value="60" ver="4"/>
+		</object>
+		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="6063a981-c2da-44c8-bd68-97bbe4a6cff1" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+			<designed target="X" value="4" ver="4"/>
+			<designed target="Y" value="60" ver="4"/>
+		</object>
+		<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="704c2ce6-43d9-45eb-a44b-2d2bac852bb4" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+			<designed target="X" value="4" ver="4"/>
+			<designed target="Y" value="0" ver="4"/>
+		</object>
+		<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="d2bb8ef3-6e90-4e73-8ed8-e92f78ceeacf" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+			<designed target="X" value="0" ver="4"/>
+			<designed target="Y" value="0" ver="4"/>
+		</object>
+		<object access-modifier="private" name="HasGas" display-name="HasGas" uuid="92d4a75d-4f00-4a60-a12e-bf6abe8413e9" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[HasGas==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffffff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[HasGas==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="TubeO2In" display-name="TubeO2In" uuid="9b2da047-fbe1-4758-ac60-4540daa9db69" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="3">
+		<designed target="X" value="-62" ver="3"/>
+		<designed target="Y" value="100" ver="3"/>
+		<designed target="ZValue" value="0" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<designed target="Scale" value="1" ver="3"/>
+		<designed target="Visible" value="true" ver="3"/>
+		<designed target="Opacity" value="1" ver="3"/>
+		<designed target="Enabled" value="true" ver="3"/>
+		<designed target="Tooltip" value="" ver="3"/>
+		<designed target="Width" value="4" ver="3"/>
+		<designed target="Height" value="20" ver="3"/>
+		<designed target="PenColor" value="0xff00aaff" ver="3"/>
+		<designed target="PenStyle" value="1" ver="3"/>
+		<designed target="PenWidth" value="1" ver="3"/>
+		<designed target="BrushColor" value="0xffffffff" ver="3"/>
+		<designed target="BrushStyle" value="1" ver="3"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="c5c3c722-6c6f-4391-82a3-cc7622c4791d" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="0" ver="3"/>
+			<designed target="Y" value="0" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="158ef795-41ae-4771-ba57-e9a67f2501aa" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="0" ver="3"/>
+			<designed target="Y" value="20" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="3c994b50-3e98-4295-9c6c-1a2165295c9a" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="4" ver="3"/>
+			<designed target="Y" value="20" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="2ef806e9-f679-4d1d-b1e9-59a336dfd01b" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="4" ver="3"/>
+			<designed target="Y" value="0" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="30f8ce73-f80d-442e-863e-6f263afe3944" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="0" ver="3"/>
+			<designed target="Y" value="0" ver="3"/>
+		</object>
+		<object access-modifier="private" name="HasGas" display-name="HasGas" uuid="3bd994c1-2418-4ee5-9479-80f43a93bab7" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[HasGas==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00aaff]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[HasGas==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="HasGas" ver="4">
+			<body>
+				<![CDATA[RefVent.InOn]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="TubeO2AfterFlap" display-name="TubeO2AfterFlap" uuid="8f14cb63-1ffc-4bf2-ad95-5e397f6c9e20" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="3">
+		<designed target="X" value="-18" ver="3"/>
+		<designed target="Y" value="166" ver="3"/>
+		<designed target="ZValue" value="0" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<designed target="Scale" value="1" ver="3"/>
+		<designed target="Visible" value="true" ver="3"/>
+		<designed target="Opacity" value="1" ver="3"/>
+		<designed target="Enabled" value="true" ver="3"/>
+		<designed target="Tooltip" value="" ver="3"/>
+		<designed target="Width" value="44" ver="3"/>
+		<designed target="Height" value="30" ver="3"/>
+		<designed target="PenColor" value="0xff00aaff" ver="3"/>
+		<designed target="PenStyle" value="1" ver="3"/>
+		<designed target="PenWidth" value="1" ver="3"/>
+		<designed target="BrushColor" value="0xffffffff" ver="3"/>
+		<designed target="BrushStyle" value="1" ver="3"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="01904e8c-b850-414b-9924-3ef766622271" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="0" ver="3"/>
+			<designed target="Y" value="0" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="5fa2786c-b9f5-43b2-bb52-e405b3c0f6a2" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="-40" ver="3"/>
+			<designed target="Y" value="-19" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="f36502f6-deae-4906-aa1a-7c242714998d" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="-40" ver="3"/>
+			<designed target="Y" value="-26" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="0c2b6304-063e-467c-9ec2-99145fad7cfc" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="-44" ver="3"/>
+			<designed target="Y" value="-26" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="ca63d8ba-4371-481f-877d-d1fb21fe8066" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="-44" ver="3"/>
+			<designed target="Y" value="-16" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Point_6" display-name="Point_6" uuid="d25ded9b-4077-4ab3-b192-c49af2487214" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="-2" ver="3"/>
+			<designed target="Y" value="4" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Point_7" display-name="Point_7" uuid="a7a6c4df-5c10-44f9-89d2-645cb5f5179a" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="0" ver="3"/>
+			<designed target="Y" value="0" ver="3"/>
+		</object>
+		<object access-modifier="private" name="HasGas" display-name="HasGas" uuid="e6be6a46-d1bb-4d25-9df9-3b03912ec1b4" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+		<do-trace access-modifier="private" target="BrushColor" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[HasGas==true]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00aaff]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[HasGas==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="HasGas" ver="4">
+			<body>
+				<![CDATA[TubeO2In.HasGas&&RefFlapO2.NoL]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="burner" display-name="burner" uuid="c0e40a3c-a1cc-419e-8dec-3706786fe8a2" base-type="burner" base-type-id="f51dcd8c-5858-405d-a8d6-c95eca82779c" ver="3">
+		<designed target="X" value="-33" ver="3"/>
+		<designed target="Y" value="150" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<do-trace access-modifier="private" target="Number" ver="4">
+			<body>
+				<![CDATA[BurnNumber]]>
+			</body>
+		</do-trace>
+		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
+		<init target="initPath" ver="4" value="Burn"/>
+		<init target="UseFinal" ver="4" value="true"/>
+	</object>
+	<object access-modifier="private" name="FlapO2" display-name="FlapO2" uuid="694f66c3-28c2-42a7-b804-956874bf7b40" base-type="flap" base-type-id="a3e73327-f733-446d-ac01-918439e55f3f" ver="3">
+		<designed target="X" value="-70" ver="3"/>
+		<designed target="Y" value="120" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<init target="Color" ver="3" value="0xff00aaff"/>
+		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
+		<init target="initPath" ver="4" value="FlapO2"/>
+	</object>
+	<object access-modifier="private" name="PGas" display-name="PGas" uuid="d9b5e3f5-0687-4714-92e9-8f4c02efab3a" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
+		<designed target="X" value="12" ver="4"/>
+		<designed target="Y" value="230" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1.2" ver="4"/>
+		<init target="EUTextColor" ver="4" value="0xffffff00"/>
+		<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+		<init target="VALUEBrushType" ver="4" value="1"/>
+		<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
+		<init target="EUBrushType" ver="4" value="1"/>
+		<init target="PenType" ver="4" value="1"/>
+		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
+		<init target="initPath" ver="4" value="PGasBefore"/>
+		<init target="InBurner" ver="4" value="true"/>
+		<init target="initName" ver="4" value="PGas"/>
+		<do-trace access-modifier="private" target="BurnValPath" ver="4">
+			<body>
+				<![CDATA["GROUP"+Str.ToString(Group)+"."+here.InitPath+".Burn"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="txtВГ" display-name="txtВГ" uuid="b2020bcf-7c99-4415-a17d-4f9dd24198bc" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+		<designed target="X" value="-75" ver="4"/>
+		<designed target="Y" value="40" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="false" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="16.6667" ver="4"/>
+		<designed target="Height" value="11.6667" ver="4"/>
+		<designed target="Text" value="ВГ" ver="4"/>
+		<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0,Narrow Bold" ver="4"/>
+		<designed target="FontColor" value="0xffffffff" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+	</object>
+	<object access-modifier="private" name="txtШВ" display-name="txtШВ" uuid="d5112f56-99eb-4e0d-a570-ed2d2944cc9b" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+		<designed target="X" value="-40" ver="4"/>
+		<designed target="Y" value="105" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="false" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="23.6666" ver="4"/>
+		<designed target="Height" value="11.6667" ver="4"/>
+		<designed target="Text" value="ШВ" ver="4"/>
+		<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0,Narrow Bold" ver="4"/>
+		<designed target="FontColor" value="0xffffffff" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+	</object>
+	<object access-modifier="private" name="txtПЗК-2" display-name="txtПЗК-2" uuid="ad9eef1d-123b-4c00-b840-08d13569d1f4" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+		<designed target="X" value="-45" ver="4"/>
+		<designed target="Y" value="60" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="false" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="34.3333" ver="4"/>
+		<designed target="Height" value="11.6667" ver="4"/>
+		<designed target="Text" value="ПЗК-2" ver="4"/>
+		<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0,Narrow Bold" ver="4"/>
+		<designed target="FontColor" value="0xffffffff" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+	</object>
+	<object access-modifier="private" name="Vent" display-name="Vent" uuid="f7fcbbfd-a31b-452a-a674-77ff445f4338" base-type="engineTop" base-type-id="c50df17d-e1a0-4f27-9be4-f55a0d8eed22" ver="4">
+		<designed target="X" value="-67" ver="4"/>
+		<designed target="Y" value="64" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
+		<init target="initPath" ver="4" value="Fan"/>
+		<do-trace access-modifier="private" target="BurnNumber" ver="4">
+			<body>
+				<![CDATA[Str.ToString(here.BurnNumber)]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Valve2" display-name="Valve2" uuid="7802a225-8ead-45cf-91b6-27a61349d8e6" base-type="valveEM" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="3">
+		<designed target="X" value="-2" ver="3"/>
+		<designed target="Y" value="70" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<init target="Color" ver="3" value="0xffffff00"/>
+		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
+		<init target="initPath" ver="4" value="ValveII"/>
+	</object>
+	<object access-modifier="private" name="hereOPCSource" display-name="hereOPCSource" uuid="2d9aa5b1-e429-4ef8-aa17-6cdedc644900" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+		<designed target="Active" value="false" ver="4"/>
+		<designed target="UpdateRate" value="0" ver="4"/>
+		<designed target="ReAdvise" value="0" ver="4"/>
+		<init target="ParentSource" ver="4" ref="InitOpcSource"/>
+		<do-trace access-modifier="private" target="Path" ver="4">
+			<body>
+				<![CDATA[InitPath]]>
+			</body>
+		</do-trace>
+	</object>
+	<param access-modifier="private" name="InitOpcSource" display-name="InitOpcSource" uuid="f37652f5-36a4-4886-8435-10ac4295f546" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" base-const="true" base-ref="true" ver="4"/>
+	<object access-modifier="private" name="BurnerHasGas" display-name="BurnerHasGas" uuid="bf225204-0011-4e20-a815-ae675f69d867" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+	<object access-modifier="private" name="RefValve1" display-name="RefValve1" uuid="82a7ad1f-2a12-4a92-baf4-59569b2fb220" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" base-const="true" base-ref="true" ver="4"/>
+	<object access-modifier="private" name="RefValve2" display-name="RefValve2" uuid="16983436-a33c-488b-957c-adb9f278a03a" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" base-const="true" base-ref="true" ver="4"/>
+	<object access-modifier="private" name="RefValveSafety" display-name="RefValveSafety" uuid="38f840a9-6d37-4af3-bc11-819975df4141" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" base-const="true" base-ref="true" ver="4"/>
+	<init target="RefValve2" ver="4" ref="Valve2"/>
+	<object access-modifier="private" name="RefFlapO2" display-name="RefFlapO2" uuid="8ed0d0f1-c8ea-4e11-8935-816a9e82d264" base-type="flap" base-type-id="a3e73327-f733-446d-ac01-918439e55f3f" base-const="true" base-ref="true" ver="4"/>
+	<object access-modifier="private" name="RefFlapGas" display-name="RefFlapGas" uuid="ee111a04-aa91-45ea-a81a-ea03fa74a142" base-type="flap" base-type-id="a3e73327-f733-446d-ac01-918439e55f3f" base-const="true" base-ref="true" ver="4"/>
+	<init target="RefFlapO2" ver="4" ref="FlapO2"/>
+	<object access-modifier="private" name="RefVent" display-name="RefVent" uuid="2368f4bb-34f0-4020-bf2f-0640235aeb69" base-type="engineTop" base-type-id="c50df17d-e1a0-4f27-9be4-f55a0d8eed22" base-const="true" base-ref="true" ver="4"/>
+	<init target="RefVent" ver="4" ref="Vent"/>
+	<object access-modifier="private" name="Group" display-name="Group" uuid="53d72577-7214-43c4-a2cf-c2b19276f39f" base-type="notifying_int1" base-type-id="cc2bf8ea-3898-4228-bc8f-71a7738f0c62" ver="4"/>
+	<object access-modifier="private" name="InitPath" display-name="InitPath" uuid="6ba14442-f965-4aee-9ab9-ae966cd4f4c1" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="4"/>
+	<object access-modifier="private" name="PO2" display-name="PO2" uuid="65df98ad-24fa-4b07-abce-f307c1899b69" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
+		<designed target="X" value="-92" ver="4"/>
+		<designed target="Y" value="165.5" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1.2" ver="4"/>
+		<init target="EUTextColor" ver="4" value="0xff00aaff"/>
+		<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+		<init target="VALUEBrushType" ver="4" value="1"/>
+		<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
+		<init target="EUBrushType" ver="4" value="1"/>
+		<init target="PenType" ver="4" value="1"/>
+		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
+		<init target="initPath" ver="4" value="PO2"/>
+		<init target="InBurner" ver="4" value="true"/>
+		<init target="initName" ver="4" value="PO2"/>
+		<do-trace access-modifier="private" target="BurnValPath" ver="4">
+			<body>
+				<![CDATA["GROUP"+Str.ToString(Group)+"."+here.InitPath+".Burn"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="FlapOil" display-name="FlapOil" uuid="f6ec5dc9-8a88-45bd-8dbf-7f04ab1cc866" base-type="flap" base-type-id="a3e73327-f733-446d-ac01-918439e55f3f" ver="3">
+		<designed target="X" value="-43" ver="3"/>
+		<designed target="Y" value="70" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<init target="Color" ver="3" value="0xff00aaff"/>
+		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
+		<init target="initPath" ver="4" value="FlapO2"/>
+	</object>
+	<object access-modifier="private" name="POil" display-name="POil" uuid="23b8aa61-8097-4beb-87e6-27ad86bb3204" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
+		<designed target="X" value="-60" ver="4"/>
+		<designed target="Y" value="230.5" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+		<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
+		<init target="VALUEBrushType" ver="4" value="1"/>
+		<init target="EUBrushType" ver="4" value="1"/>
+		<init target="PenType" ver="4" value="1"/>
+		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
+		<init target="InBurner" ver="4" value="true"/>
+		<init target="initName" ver="4" value="POil"/>
+		<do-trace access-modifier="private" target="BurnValPath" ver="4">
+			<body>
+				<![CDATA["GROUP"+Str.ToString(Group)+"."+here.InitPath+".Burn"]]>
+			</body>
+		</do-trace>
+		<init target="EUTextColor" ver="4" value="0xffffaa00"/>
+		<init target="initPath" ver="4" value="POil"/>
+	</object>
+</type>
+

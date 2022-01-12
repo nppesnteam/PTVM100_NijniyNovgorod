@@ -1,0 +1,221 @@
+<type access-modifier="private" name="Burner" display-name="Burner" uuid="f51dcd8c-5858-405d-a8d6-c95eca82779c" base-type="Dummy" base-type-id="e4b644cf-f3a8-4d11-82a0-6acc23748e14" ver="3">
+	<designed target="X" value="0" ver="3"/>
+	<designed target="Y" value="0" ver="3"/>
+	<designed target="ZValue" value="0" ver="3"/>
+	<designed target="Rotation" value="0" ver="3"/>
+	<designed target="Scale" value="1" ver="3"/>
+	<designed target="Visible" value="true" ver="3"/>
+	<designed target="Opacity" value="1" ver="3"/>
+	<designed target="Enabled" value="true" ver="3"/>
+	<designed target="Tooltip" value="" ver="3"/>
+	<object access-modifier="private" name="circleOut" display-name="circleOut" uuid="7bd0a307-10cd-4e88-8362-f5cc6ba23ed3" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="3">
+		<designed target="X" value="0" ver="3"/>
+		<designed target="Y" value="0" ver="3"/>
+		<designed target="ZValue" value="0" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<designed target="Scale" value="1" ver="3"/>
+		<designed target="Visible" value="true" ver="3"/>
+		<designed target="Opacity" value="1" ver="3"/>
+		<designed target="Enabled" value="true" ver="3"/>
+		<designed target="Tooltip" value="" ver="3"/>
+		<designed target="Width" value="70" ver="3"/>
+		<designed target="Height" value="70" ver="3"/>
+		<designed target="PenColor" value="0xffffffff" ver="3"/>
+		<designed target="PenStyle" value="1" ver="3"/>
+		<designed target="PenWidth" value="2" ver="3"/>
+		<designed target="BrushColor" value="0xffbababa" ver="3"/>
+		<designed target="BrushStyle" value="1" ver="3"/>
+		<designed target="PieAngle" value="360" ver="3"/>
+		<designed target="PieAngleStart" value="360" ver="3"/>
+		<object access-modifier="private" name="circleIn" display-name="circleIn" uuid="c48ca9e0-1d55-4189-a933-f347126042c2" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="3">
+			<designed target="X" value="20" ver="3"/>
+			<designed target="Y" value="20" ver="3"/>
+			<designed target="ZValue" value="0" ver="3"/>
+			<designed target="Rotation" value="0" ver="3"/>
+			<designed target="Scale" value="1" ver="3"/>
+			<designed target="Visible" value="true" ver="3"/>
+			<designed target="Opacity" value="1" ver="3"/>
+			<designed target="Enabled" value="true" ver="3"/>
+			<designed target="Tooltip" value="" ver="3"/>
+			<designed target="Width" value="30" ver="3"/>
+			<designed target="Height" value="30" ver="3"/>
+			<designed target="PenColor" value="0xffffffff" ver="3"/>
+			<designed target="PenStyle" value="1" ver="3"/>
+			<designed target="PenWidth" value="2" ver="3"/>
+			<designed target="BrushColor" value="0xffbababa" ver="3"/>
+			<designed target="BrushStyle" value="1" ver="3"/>
+			<designed target="PieAngle" value="360" ver="3"/>
+			<designed target="PieAngleStart" value="360" ver="3"/>
+			<object access-modifier="private" name="txtNumber" display-name="txtNumber" uuid="5e1c5ef0-eecd-418b-8d39-9d0668028687" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="3">
+				<designed target="X" value="0" ver="3"/>
+				<designed target="Y" value="0" ver="3"/>
+				<designed target="ZValue" value="0" ver="3"/>
+				<designed target="Rotation" value="0" ver="3"/>
+				<designed target="Scale" value="1" ver="3"/>
+				<designed target="Visible" value="true" ver="3"/>
+				<designed target="Opacity" value="1" ver="3"/>
+				<designed target="Enabled" value="true" ver="3"/>
+				<designed target="Tooltip" value="" ver="3"/>
+				<designed target="Width" value="30" ver="3"/>
+				<designed target="Height" value="30" ver="3"/>
+				<designed target="Text" value="" ver="3"/>
+				<designed target="Font" value="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0,Bold" ver="3"/>
+				<designed target="FontColor" value="4278190080" ver="3"/>
+				<designed target="TextAlignment" value="132" ver="3"/>
+				<do-trace access-modifier="private" target="Text" ver="3">
+					<body>
+						<![CDATA[Number]]>
+					</body>
+				</do-trace>
+			</object>
+			<do-trace access-modifier="private" target="BrushColor" ver="4">
+				<conditional-expr>
+					<condition>
+						<![CDATA[(FireIgnSens == true)&&(unit.Global.OutSelOil==true)]]>
+					</condition>
+					<expr>
+						<![CDATA[0xfffd5d00]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[(FireIgnSens == true)&&(unit.Global.OutSelOil==false)]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffff00]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Start == true]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff00ff00]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xffbababa]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+			<object access-modifier="private" name="Blinker_1" display-name="Blinker_1" uuid="2707250f-33c9-454d-8afc-e6c50931c753" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006" ver="4">
+				<designed target="Period" value="1000" ver="4"/>
+				<designed target="Active" value="false" ver="4"/>
+				<designed target="PenColor" value="0xffffffff" ver="4"/>
+				<designed target="BrushColor" value="0xffff0000" ver="4"/>
+				<designed target="FontColor" value="4278190080" ver="4"/>
+				<do-trace access-modifier="private" target="Active" ver="4">
+					<body>
+						<![CDATA[((AlarmBurner>=7)&&(AlarmBurner<=18))||(AlarmGerm==true)]]>
+					</body>
+				</do-trace>
+			</object>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[((UseFinal==false)&&(FireBurnSens == true)&&(unit.Global.OutSelOil==true))||((UseFinal==true)&&(FinalIgnBurn==true)&&(unit.Global.OutSelOil==true))]]>
+				</condition>
+				<expr>
+					<![CDATA[0xfffd5d00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[((UseFinal==false)&&(FireBurnSens == true)&&(unit.Global.OutSelOil==false))||((UseFinal==true)&&(FinalIgnBurn==true)&&(unit.Global.OutSelOil==false))]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffffff00]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xffbababa]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<object access-modifier="private" name="Blinker_1" display-name="Blinker_1" uuid="19e9cf0d-3124-46cc-83ef-4fb7d220ee97" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006" ver="4">
+			<designed target="Period" value="1000" ver="4"/>
+			<designed target="Active" value="false" ver="4"/>
+			<designed target="PenColor" value="0xffffffff" ver="4"/>
+			<designed target="BrushColor" value="0xffff0000" ver="4"/>
+			<designed target="FontColor" value="4278190080" ver="4"/>
+			<do-trace access-modifier="private" target="Active" ver="4">
+				<body>
+					<![CDATA[((AlarmBurner>=7)&&(AlarmBurner<=18))||(AlarmGerm==true)]]>
+				</body>
+			</do-trace>
+		</object>
+		<designed target="HoleSize" value="0" ver="4"/>
+	</object>
+	<object access-modifier="private" name="Number" display-name="Number" uuid="ee03b672-87e4-4744-a595-80c18d1aa7e2" base-type="notifying_uint1" base-type-id="fed14c54-414c-56bd-549a-8d761c4d6200" ver="3"/>
+	<object access-modifier="private" name="hereOPCSource" display-name="hereOPCSource" uuid="166e2521-93ac-4561-98e2-726e2459af39" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+		<designed target="Active" value="false" ver="4"/>
+		<designed target="UpdateRate" value="0" ver="4"/>
+		<designed target="ReAdvise" value="0" ver="4"/>
+		<init target="ParentSource" ver="4" ref="initOPCSource"/>
+		<init target="Path" ver="4" ref="initPath"/>
+	</object>
+	<object access-modifier="private" name="KKS" display-name="KKS" uuid="4f60455c-7bbf-4c64-94e6-659ff77d2303" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="KKS"/>
+	</object>
+	<object access-modifier="private" name="NAME" display-name="NAME" uuid="36f39400-b484-4346-ad84-82e70741fa86" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="NAME"/>
+	</object>
+	<object access-modifier="private" name="FireBurnDef" display-name="FireBurnDef" uuid="ffc9f739-a3e9-4fa8-80c3-f8fd2915b09b" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="FireBurnDef"/>
+	</object>
+	<object access-modifier="private" name="FireBurnSens" display-name="FireBurnSens" uuid="c75edd6b-315b-489e-9e9e-9e5a9fd1f886" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="FireBurnSens"/>
+	</object>
+	<param access-modifier="private" name="initOPCSource" display-name="initOPCSource" uuid="85970de9-f3ef-493d-8f68-82e1f0f78160" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" base-const="true" base-ref="true" ver="4"/>
+	<param access-modifier="private" name="initPath" display-name="initPath" uuid="b0a78005-2fa3-4cc8-90fb-5bdf50c1975e" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+	<object access-modifier="private" name="FireIgnSens" display-name="FireIgnSens" uuid="e87cffdb-5ad3-4b42-9deb-fa95b7e4ff5e" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="FireIgnSens"/>
+	</object>
+	<object access-modifier="private" name="FireIgnStart" display-name="FireIgnStart" uuid="5c9102bf-e4ed-4921-b305-7edae1ea79e2" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="FireIgnStart"/>
+	</object>
+	<do-trace access-modifier="private" target="Tooltip" ver="4">
+		<body>
+			<![CDATA[NAME]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="AlarmBurner" display-name="AlarmBurner" uuid="514ba132-b6e7-4a87-8b48-d308ede2bc3b" base-type="OpcItemInt2" base-type-id="01786030-8d4e-41cb-a7fb-fbaa0e344f13" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<do-trace access-modifier="private" target="Path" ver="4">
+			<body>
+				<![CDATA["ROOT.ALARMS.Горелка "+Str.ToString(Number)+".AlarmBurner"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="AlarmGerm" display-name="AlarmGerm" uuid="4f828e43-edd2-49ec-9227-26919be4e68c" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<do-trace access-modifier="private" target="Path" ver="4">
+			<body>
+				<![CDATA["ROOT.ALARMS.Горелка "+Str.ToString(Number)+".AlarmGerm"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Start" display-name="Start" uuid="75c9627b-9c00-4e31-843d-175f9afb6444" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Path" ver="4" value="Start"/>
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+	</object>
+	<object access-modifier="private" name="ArmStart" display-name="ArmStart" uuid="c2dac57c-389a-413a-87db-b9b9162dab80" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="ArmStart"/>
+	</object>
+	<object access-modifier="private" name="FinalIgnBurn" display-name="FinalIgnBurn" uuid="7e3bc375-7c6e-4d42-b3a8-9cc60a9d85cf" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="FinalIgnBurn"/>
+	</object>
+	<object access-modifier="private" name="UseFinal" display-name="UseFinal" uuid="9c68dbc5-c93a-49b8-8c99-9d104e25b07a" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+</type>
+

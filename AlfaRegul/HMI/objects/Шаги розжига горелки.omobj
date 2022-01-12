@@ -1,0 +1,154 @@
+<type access-modifier="private" name="Шаги розжига горелки" display-name="Шаги розжига горелки" uuid="96551cb5-0c76-4fc4-bfb1-6dada5c5b6b4" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="4">
+	<designed target="X" value="0" ver="4"/>
+	<designed target="Y" value="0" ver="4"/>
+	<designed target="ZValue" value="0" ver="4"/>
+	<designed target="Rotation" value="0" ver="4"/>
+	<designed target="Scale" value="1" ver="4"/>
+	<designed target="Visible" value="true" ver="4"/>
+	<designed target="Opacity" value="1" ver="4"/>
+	<designed target="Enabled" value="true" ver="4"/>
+	<designed target="Tooltip" value="" ver="4"/>
+	<designed target="Width" value="210" ver="4"/>
+	<designed target="Height" value="380" ver="4"/>
+	<designed target="PenColor" value="4278190080" ver="4"/>
+	<designed target="PenStyle" value="0" ver="4"/>
+	<designed target="PenWidth" value="1" ver="4"/>
+	<designed target="BrushColor" value="4293980400" ver="4"/>
+	<designed target="BrushStyle" value="1" ver="4"/>
+	<designed target="WindowX" value="0" ver="4"/>
+	<designed target="WindowY" value="0" ver="4"/>
+	<designed target="WindowWidth" value="210" ver="4"/>
+	<designed target="WindowHeight" value="380" ver="4"/>
+	<designed target="WindowCaption" value="Шаги розжига горелки" ver="4"/>
+	<designed target="ShowWindowCaption" value="true" ver="4"/>
+	<designed target="ShowWindowMinimize" value="false" ver="4"/>
+	<designed target="ShowWindowMaximize" value="false" ver="4"/>
+	<designed target="ShowWindowClose" value="true" ver="4"/>
+	<designed target="AlwaysOnTop" value="false" ver="4"/>
+	<designed target="WindowSizeMode" value="0" ver="4"/>
+	<designed target="WindowBorderStyle" value="2" ver="4"/>
+	<designed target="WindowState" value="0" ver="4"/>
+	<designed target="WindowScalingMode" value="0" ver="4"/>
+	<designed target="MonitorNumber" value="0" ver="4"/>
+	<designed target="WindowPosition" value="4" ver="4"/>
+	<designed target="WindowCloseMode" value="0" ver="4"/>
+	<object access-modifier="private" name="Step" display-name="Step" uuid="34a3524a-eba1-4711-8bbe-88574c983085" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4" cardinal="19">
+		<designed target="X" value="0" ver="4"/>
+		<designed target="Y" value="0" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="210" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="RoundingRadius" value="0" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="1" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="BrushColor" value="0xffeeeeee" ver="4"/>
+		<designed target="BrushStyle" value="1" ver="4"/>
+		<object access-modifier="private" name="txt" display-name="txt" uuid="20ea9d8a-2767-4520-b0ae-f3d48de8cbfc" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+			<designed target="X" value="5" ver="4"/>
+			<designed target="Y" value="0" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="390" ver="4"/>
+			<designed target="Height" value="20" ver="4"/>
+			<designed target="Text" value="ШАГИ" ver="4"/>
+			<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+			<designed target="FontColor" value="4278190080" ver="4"/>
+			<designed target="TextAlignment" value="129" ver="4"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[me.Index==nStep]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff55ff7f]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xffeeeeee]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Initializer" display-name="Initializer" uuid="ff5f1fca-1dec-4641-aa32-02b0f1a7b2dc" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="4">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Initialized">
+			<body kind="om">
+				<![CDATA[Step[0].txt.Text="НИЧЕГО НЕ ДЕЛАЕМ";
+Step[1].txt.Text="ИСХОДНОЕ";
+Step[2].txt.Text="ПОДАЧА ИСКРЫ";
+Step[3].txt.Text="РОЗЖИГ ЗАПАЛЬНИКА";
+Step[4].txt.Text="РОЗЖИГ ГОРЕЛКИ";
+Step[5].txt.Text="СТАБИЛИЗАЦИЯ";
+Step[6].txt.Text="РОЗЖИГ ЗАВЕРШЕН";
+Step[7].txt.Text="ДЕФЕКТ ФАКЕЛА ЗАП.";
+Step[8].txt.Text="ДЕФЕКТ ФАКЕЛА ГОР.";
+Step[9].txt.Text="ФАКЕЛ ЗАПАЛЬНИКА";
+Step[10].txt.Text="ФАКЕЛ ГОРЕЛКИ";
+Step[11].txt.Text="Ргаза НИЖЕ НОРМЫ";
+Step[12].txt.Text="Ргаза ВЫШЕ НОРМЫ";
+Step[13].txt.Text="Рвозд. НИЖЕ НОРМЫ";
+Step[14].txt.Text="ОТКЛЮЧЕНИЕ ВЕНТИЛЯТОРА";
+Step[15].txt.Text="ОТКЛЮЧЕНИЕ КЛАП.БЕЗ.";
+Step[16].txt.Text="ОТКЛЮЧЕНИЕ КЛАП.ЗАП.";
+Step[17].txt.Text="ОТКЛЮЧЕНИЕ КЛАП.I.";
+Step[18].txt.Text="ОТКЛЮЧЕНИЕ КЛАП.II.";
+i: uint1 = 0;
+while (i<19)
+{
+	Step[i].Y =Step.Y + i*Step.Height;
+	i += 1;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="nStep" display-name="nStep" uuid="ab41791d-6837-4305-87cd-4a97c0d6b167" base-type="OpcItemInt4" base-type-id="c8220066-9348-4b3e-a68e-d8ac76d47db1" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<do-trace access-modifier="private" target="Path" ver="4">
+			<body>
+				<![CDATA["ROOT.GAS.GROUP"+Str.ToString(GroupNum)+".burn"+Str.ToString(BurnNum)+".Burn.nBurn"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="BurnNum" display-name="BurnNum" uuid="0e316b09-0b41-4aa8-98a3-fa7ccfea3f17" base-type="notifying_int4" base-type-id="5ccca629-a45d-46c8-a56c-83ecde8126f7" ver="4"/>
+	<object access-modifier="private" name="GroupNum" display-name="GroupNum" uuid="ebb0502e-5801-496d-8df7-4a561b28c1ee" base-type="notifying_int4" base-type-id="5ccca629-a45d-46c8-a56c-83ecde8126f7" ver="4"/>
+	<object access-modifier="private" name="refData" display-name="refData" uuid="1abb3eee-c04c-4541-8821-a81c1a581e54" base-type="Растопочная группа" base-type-id="d3f1f963-b301-412f-98d0-b5913d770cf5" base-const="true" base-ref="true" ver="4"/>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Opened">
+		<body kind="om">
+			<![CDATA[if (BurnNum==1)
+	refData.ControlPanel.ControlButtonsburn1.ProgressBarIgn.isOpenedBurnSteps=true;
+if (BurnNum==2)
+	refData.ControlPanel.ControlButtonsburn2.ProgressBarIgn.isOpenedBurnSteps=true;
+if (BurnNum==3)
+	refData.ControlPanel.ControlButtonsburn3.ProgressBarIgn.isOpenedBurnSteps=true;]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="Closed">
+		<body kind="om">
+			<![CDATA[if (BurnNum==1)
+	refData.ControlPanel.ControlButtonsburn1.ProgressBarIgn.isOpenedBurnSteps=false;
+if (BurnNum==2)
+	refData.ControlPanel.ControlButtonsburn2.ProgressBarIgn.isOpenedBurnSteps=false;
+if (BurnNum==3)
+	refData.ControlPanel.ControlButtonsburn3.ProgressBarIgn.isOpenedBurnSteps=false;]]>
+		</body>
+	</do-on>
+	<do-trace access-modifier="private" target="WindowCaption" ver="4">
+		<body>
+			<![CDATA["Шаги розжига горелки "+Str.ToString(unit.Global.Group[GroupNum-1].burn[BurnNum-1].Number.Value)]]>
+		</body>
+	</do-trace>
+</type>
+

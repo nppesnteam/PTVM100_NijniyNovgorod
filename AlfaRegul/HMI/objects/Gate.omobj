@@ -1,0 +1,339 @@
+<type access-modifier="private" name="Gate" display-name="Gate" uuid="412146cb-dc7b-472f-be3b-e66aa672ce43" base-type="crane" base-type-id="a41f6a47-a3c4-4aed-b634-50f79381fb31" ver="3">
+	<object access-modifier="private" name="Line" display-name="Line" uuid="3e0e7403-e87f-4dd4-a736-38e5bec4e54a" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="3">
+		<designed target="X" value="0" ver="3"/>
+		<designed target="Y" value="10" ver="3"/>
+		<designed target="ZValue" value="0" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<designed target="Scale" value="1" ver="3"/>
+		<designed target="Visible" value="true" ver="3"/>
+		<designed target="Opacity" value="1" ver="3"/>
+		<designed target="Enabled" value="true" ver="3"/>
+		<designed target="Tooltip" value="" ver="3"/>
+		<designed target="Width" value="9" ver="3"/>
+		<designed target="Height" value="0" ver="3"/>
+		<designed target="PenColor" value="0xff888888" ver="3"/>
+		<designed target="PenStyle" value="1" ver="3"/>
+		<designed target="PenWidth" value="1" ver="3"/>
+		<designed target="BrushColor" value="0xff000000" ver="3"/>
+		<designed target="BrushStyle" value="0" ver="3"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="03cf3dd4-256d-48ac-87e5-34c2404567a8" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="0" ver="3"/>
+			<designed target="Y" value="0" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="f51312fb-84a9-46e6-b9f0-ebb41d06983a" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="9" ver="3"/>
+			<designed target="Y" value="0" ver="3"/>
+		</object>
+		<do-trace access-modifier="private" target="PenColor" ver="3">
+			<body>
+				<![CDATA[Color]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="BrushColor" ver="3">
+			<body>
+				<![CDATA[Color]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Ellipse" display-name="Ellipse" uuid="bf243844-3eb9-4679-861a-df23d846a2e8" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="3">
+		<designed target="X" value="-10" ver="3"/>
+		<designed target="Y" value="5" ver="3"/>
+		<designed target="ZValue" value="0" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<designed target="Scale" value="1" ver="3"/>
+		<designed target="Visible" value="true" ver="3"/>
+		<designed target="Opacity" value="1" ver="3"/>
+		<designed target="Enabled" value="true" ver="3"/>
+		<designed target="Tooltip" value="" ver="3"/>
+		<designed target="Width" value="10" ver="3"/>
+		<designed target="Height" value="10" ver="3"/>
+		<designed target="PenColor" value="0xff888888" ver="3"/>
+		<designed target="PenStyle" value="1" ver="3"/>
+		<designed target="PenWidth" value="1" ver="3"/>
+		<designed target="BrushColor" value="0xff000000" ver="3"/>
+		<designed target="BrushStyle" value="1" ver="3"/>
+		<designed target="PieAngle" value="360" ver="3"/>
+		<designed target="PieAngleStart" value="360" ver="3"/>
+		<object access-modifier="private" name="txtSign" display-name="txtSign" uuid="47728e3a-8056-463d-bd89-ca89689b9be0" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="3">
+			<designed target="X" value="1" ver="3"/>
+			<designed target="Y" value="0" ver="3"/>
+			<designed target="ZValue" value="0" ver="3"/>
+			<designed target="Rotation" value="90" ver="3"/>
+			<designed target="Scale" value="1" ver="3"/>
+			<designed target="Visible" value="true" ver="3"/>
+			<designed target="Opacity" value="1" ver="3"/>
+			<designed target="Enabled" value="true" ver="3"/>
+			<designed target="Tooltip" value="" ver="3"/>
+			<designed target="Width" value="10" ver="3"/>
+			<designed target="Height" value="10" ver="3"/>
+			<designed target="Text" value="~" ver="3"/>
+			<designed target="Font" value="Times New Roman,10,-1,5,75,0,0,0,0,0,Bold" ver="3"/>
+			<designed target="FontColor" value="0xffffffff" ver="3"/>
+			<designed target="TextAlignment" value="132" ver="3"/>
+		</object>
+		<do-trace access-modifier="private" target="PenColor" ver="3">
+			<body>
+				<![CDATA[Color]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="BrushColor" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[(OutH == true) && (OutL == false)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[(OutH == false) && (OutL == true)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffffff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[(OutH == true) && (OutL == true)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[(OutH == false) && (OutL == false)]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<designed target="X" value="0" ver="3"/>
+	<designed target="Y" value="0" ver="3"/>
+	<designed target="Rotation" value="0" ver="3"/>
+	<object access-modifier="private" name="hereOPCSource" display-name="hereOPCSource" uuid="e50a07a6-d551-4f85-9e40-1d2473d5c17d" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+		<designed target="Active" value="false" ver="4"/>
+		<designed target="UpdateRate" value="0" ver="4"/>
+		<designed target="ReAdvise" value="0" ver="4"/>
+		<init target="ParentSource" ver="4" ref="initOPCSource"/>
+		<init target="Path" ver="4" ref="initPath"/>
+	</object>
+	<param access-modifier="private" name="initOPCSource" display-name="initOPCSource" uuid="6d12a48e-d6d4-4ef5-a3c3-81338e39816a" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" base-const="true" base-ref="true" ver="4"/>
+	<param access-modifier="private" name="initPath" display-name="initPath" uuid="a6b1616d-c542-4335-b0d2-f89c56d5eaa6" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+	<object access-modifier="private" name="KKS" display-name="KKS" uuid="49f4bac7-d3bd-4fdd-bb72-c4cff8257399" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="KKS"/>
+	</object>
+	<object access-modifier="private" name="NAME" display-name="NAME" uuid="92e99436-d440-4bd7-97e1-c9ceef388cec" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="NAME"/>
+	</object>
+	<object access-modifier="private" name="High" display-name="High" uuid="47db58e7-79ac-4805-83ab-d38ce39e9e3f" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="High"/>
+	</object>
+	<object access-modifier="private" name="Low" display-name="Low" uuid="1e389c9b-72ff-4f4a-8c63-e10660135938" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="Low"/>
+	</object>
+	<object access-modifier="private" name="Mid" display-name="Mid" uuid="c48c2b3a-268a-4673-bdf4-5a20317bfa56" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="Mid"/>
+	</object>
+	<object access-modifier="private" name="OutH" display-name="OutH" uuid="3f0382bf-3db7-4805-9981-c78b07d86569" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Path" ver="4" value="OutH"/>
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+	</object>
+	<object access-modifier="private" name="OutL" display-name="OutL" uuid="4435644c-bcb0-45e4-a621-1bf5a70d7e15" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Path" ver="4" value="OutL"/>
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+	</object>
+	<do-trace access-modifier="private" target="FillTop" ver="4">
+		<body>
+			<![CDATA[NoL||Err]]>
+		</body>
+	</do-trace>
+	<do-trace access-modifier="private" target="FillBot" ver="4">
+		<body>
+			<![CDATA[High||Err]]>
+		</body>
+	</do-trace>
+	<do-trace access-modifier="private" target="Tooltip" ver="4">
+		<body>
+			<![CDATA[NAME]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="Divider" display-name="Divider" uuid="6ee358c5-7f84-45ad-8e89-4dc30c4cbcc3" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="3">
+		<designed target="X" value="23" ver="3"/>
+		<designed target="Y" value="0" ver="3"/>
+		<designed target="ZValue" value="0" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<designed target="Scale" value="1" ver="3"/>
+		<designed target="Visible" value="true" ver="3"/>
+		<designed target="Opacity" value="1" ver="3"/>
+		<designed target="Enabled" value="true" ver="3"/>
+		<designed target="Tooltip" value="" ver="3"/>
+		<designed target="Width" value="10" ver="3"/>
+		<designed target="Height" value="20" ver="3"/>
+		<designed target="RoundingRadius" value="0" ver="3"/>
+		<designed target="PenColor" value="0xff888888" ver="3"/>
+		<designed target="PenStyle" value="1" ver="3"/>
+		<designed target="PenWidth" value="1" ver="3"/>
+		<designed target="BrushColor" value="0xff787878" ver="3"/>
+		<designed target="BrushStyle" value="1" ver="3"/>
+		<do-trace access-modifier="private" target="PenColor" ver="3">
+			<body>
+				<![CDATA[Color]]>
+			</body>
+		</do-trace>
+		<object access-modifier="private" name="Open" display-name="Open" uuid="58a02a25-4d9d-4271-8f7f-7483a7ead241" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
+			<designed target="X" value="0" ver="4"/>
+			<designed target="Y" value="10" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="10" ver="4"/>
+			<designed target="Height" value="10" ver="4"/>
+			<designed target="PenColor" value="0xff00ff00" ver="4"/>
+			<designed target="PenStyle" value="1" ver="4"/>
+			<designed target="PenWidth" value="1" ver="4"/>
+			<designed target="BrushColor" value="0xff00ff00" ver="4"/>
+			<designed target="BrushStyle" value="1" ver="4"/>
+			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="91154b55-8ed4-495e-92a7-5353f8e1f788" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+				<designed target="X" value="0" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+			</object>
+			<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="b6e1605e-1f97-4ec6-abc8-be191202f7c7" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+				<designed target="X" value="5" ver="4"/>
+				<designed target="Y" value="-10" ver="4"/>
+			</object>
+			<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="f86d1f81-d4d7-4452-a3e5-baaf4def53d6" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+				<designed target="X" value="10" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+			</object>
+			<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="c6cb2b8e-6d4d-4b0d-ab2d-defdd21b2a40" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+				<designed target="X" value="0" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+			</object>
+			<do-trace access-modifier="private" target="Visible" ver="4">
+				<body>
+					<![CDATA[InH]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Close" display-name="Close" uuid="7783b813-9d14-48e1-b72c-8085211fbd6a" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
+			<designed target="X" value="0" ver="4"/>
+			<designed target="Y" value="10" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="10" ver="4"/>
+			<designed target="Height" value="10" ver="4"/>
+			<designed target="PenColor" value="0xff00ff00" ver="4"/>
+			<designed target="PenStyle" value="1" ver="4"/>
+			<designed target="PenWidth" value="1" ver="4"/>
+			<designed target="BrushColor" value="0xff00ff00" ver="4"/>
+			<designed target="BrushStyle" value="1" ver="4"/>
+			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="c2a42bb6-9a53-4f9c-bf1a-04543ef42273" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+				<designed target="X" value="0" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+			</object>
+			<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="759f0068-9ee2-4d0c-bd9a-eef62f5edefb" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+				<designed target="X" value="5" ver="4"/>
+				<designed target="Y" value="10" ver="4"/>
+			</object>
+			<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="b89569c9-c236-4042-9893-058217024fae" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+				<designed target="X" value="10" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+			</object>
+			<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="0aa966c3-5fdd-4927-b6a3-4e678d64a302" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+				<designed target="X" value="0" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+			</object>
+			<do-trace access-modifier="private" target="Visible" ver="4">
+				<body>
+					<![CDATA[InL]]>
+				</body>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="NoL" display-name="NoL" uuid="18cb8155-5e35-48ca-8dfd-c9137dc695c1" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+	<do-trace access-modifier="private" target="NoL" ver="4">
+		<body>
+			<![CDATA[High||Mid]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="Err" display-name="Err" uuid="a9055cdc-7900-4806-a1f2-32f339649cb5" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="Err"/>
+	</object>
+	<do-trace access-modifier="private" target="Alarm" ver="4">
+		<body>
+			<![CDATA[Err]]>
+		</body>
+	</do-trace>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
+		<body kind="om">
+			<![CDATA[mX = TypeConvert.ToFloat(ScreenX(MouseX, MouseY));
+mY = TypeConvert.ToFloat(ScreenY(MouseX, MouseY));
+OpenModuleWindow.Invoke();]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="mX" display-name="mX" uuid="b56cc8dd-766d-488c-89e6-09456abaac1b" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
+	<object access-modifier="private" name="mY" display-name="mY" uuid="74fe4054-ecc9-4820-a272-140782e78455" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
+	<object access-modifier="private" name="OpenModuleWindow" display-name="OpenModuleWindow" uuid="5debd702-3af9-4355-9274-0cb3c18e30f4" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4" cardinal="1">
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="InvokeTrigger" value="false" ver="4"/>
+		<do-trace access-modifier="private" target="Enabled" ver="4">
+			<body>
+				<![CDATA[!isOpenedModule]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-action="open-new" form-by-id="false">
+			<object access-modifier="private" uuid="a428767a-c665-42da-ad06-bfe707ba30af" base-type="Задвижка" base-type-id="59f13389-349d-4b37-8d6e-5c9ed352abbc" ver="4">
+				<init target="WindowX" ver="4">
+					<expr>
+						<![CDATA[mX]]>
+					</expr>
+				</init>
+				<init target="WindowY" ver="4">
+					<expr>
+						<![CDATA[mY]]>
+					</expr>
+				</init>
+				<designed target="WindowCaption" value="Задвижка" ver="4"/>
+				<init target="refData" ver="4" ref="here"/>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="isOpenedModule" display-name="isOpenedModule" uuid="33cf63b9-44d7-4c0b-bec8-d8093905c7c6" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+	<object access-modifier="private" name="InH" display-name="InH" uuid="5bafa208-54ae-4de6-8638-fea84f5c7de0" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="InH"/>
+	</object>
+	<object access-modifier="private" name="InL" display-name="InL" uuid="3c78cc2b-4815-4a9a-acba-f718c2b75d33" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="InL"/>
+	</object>
+	<object access-modifier="private" name="OutStop" display-name="OutStop" uuid="d09c3e25-1fed-4a15-9f53-ff4945922408" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="OutStop"/>
+	</object>
+</type>
+

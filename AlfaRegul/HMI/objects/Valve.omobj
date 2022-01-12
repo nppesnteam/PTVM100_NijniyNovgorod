@@ -1,0 +1,128 @@
+<type access-modifier="private" name="Valve" display-name="Valve" uuid="98113973-9854-4dd1-9221-2cfccad5aaa0" base-type="crane" base-type-id="a41f6a47-a3c4-4aed-b634-50f79381fb31" ver="3">
+	<designed target="X" value="0" ver="3"/>
+	<designed target="Y" value="0" ver="3"/>
+	<designed target="Rotation" value="0" ver="3"/>
+	<object access-modifier="private" name="Line" display-name="Line" uuid="1a51d411-11c6-4c7e-b4ac-06f266c6ea65" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="3">
+		<designed target="X" value="0" ver="3"/>
+		<designed target="Y" value="10" ver="3"/>
+		<designed target="ZValue" value="0" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<designed target="Scale" value="1" ver="3"/>
+		<designed target="Visible" value="true" ver="3"/>
+		<designed target="Opacity" value="1" ver="3"/>
+		<designed target="Enabled" value="true" ver="3"/>
+		<designed target="Tooltip" value="" ver="3"/>
+		<designed target="Width" value="9" ver="3"/>
+		<designed target="Height" value="0" ver="3"/>
+		<designed target="PenColor" value="0xff888888" ver="3"/>
+		<designed target="PenStyle" value="1" ver="3"/>
+		<designed target="PenWidth" value="1" ver="3"/>
+		<designed target="BrushColor" value="0xff000000" ver="3"/>
+		<designed target="BrushStyle" value="0" ver="3"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="79cdd27d-6f27-429d-a5fa-d0ca7deaee27" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="0" ver="3"/>
+			<designed target="Y" value="0" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="ca62c570-896a-4026-a95e-7f7bc245b69e" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="9" ver="3"/>
+			<designed target="Y" value="0" ver="3"/>
+		</object>
+		<do-trace access-modifier="private" target="PenColor" ver="3">
+			<body>
+				<![CDATA[Color]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Rectangle" display-name="Rectangle" uuid="998e44f7-1fbf-44ec-bcc1-9146102c015e" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="3">
+		<designed target="X" value="-5" ver="3"/>
+		<designed target="Y" value="7.5" ver="3"/>
+		<designed target="ZValue" value="0" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<designed target="Scale" value="1" ver="3"/>
+		<designed target="Visible" value="true" ver="3"/>
+		<designed target="Opacity" value="1" ver="3"/>
+		<designed target="Enabled" value="true" ver="3"/>
+		<designed target="Tooltip" value="" ver="3"/>
+		<designed target="Width" value="5" ver="3"/>
+		<designed target="Height" value="5" ver="3"/>
+		<designed target="RoundingRadius" value="0" ver="3"/>
+		<designed target="PenColor" value="0xff888888" ver="3"/>
+		<designed target="PenStyle" value="1" ver="3"/>
+		<designed target="PenWidth" value="1" ver="3"/>
+		<designed target="BrushColor" value="0xff00ff00" ver="3"/>
+		<designed target="BrushStyle" value="0" ver="3"/>
+		<do-trace access-modifier="private" target="BrushStyle" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[OutH == true]]>
+				</condition>
+				<expr>
+					<![CDATA[1]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[OutH == false]]>
+				</condition>
+				<expr>
+					<![CDATA[0]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
+		<do-trace access-modifier="private" target="PenColor" ver="3">
+			<body>
+				<![CDATA[Color]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="hereOPCSource" display-name="hereOPCSource" uuid="f81c2fd2-9704-4e31-be19-45012a62da62" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+		<designed target="Active" value="false" ver="4"/>
+		<designed target="UpdateRate" value="0" ver="4"/>
+		<designed target="ReAdvise" value="0" ver="4"/>
+		<init target="ParentSource" ver="4" ref="initOPCSource"/>
+		<init target="Path" ver="4" ref="initPath"/>
+	</object>
+	<object access-modifier="private" name="KKS" display-name="KKS" uuid="09c9a0e5-5b3c-4c6c-9873-1694e0109c01" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="KKS"/>
+	</object>
+	<object access-modifier="private" name="NAME" display-name="NAME" uuid="dd64909a-603f-4a40-a5a5-4cce230dce32" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="NAME"/>
+	</object>
+	<object access-modifier="private" name="InH" display-name="InH" uuid="ab64e94e-0a1b-4946-a579-d47bc28a8d34" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="InpH"/>
+	</object>
+	<object access-modifier="private" name="OutH" display-name="OutH" uuid="40969526-5b90-4938-84ff-762d801379f1" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Path" ver="4" value="OutH"/>
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+	</object>
+	<param access-modifier="private" name="initOPCSource" display-name="initOPCSource" uuid="f782396b-6efc-4aa6-a379-e5665d68ecdf" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" base-const="true" base-ref="true" ver="4"/>
+	<param access-modifier="private" name="initPath" display-name="initPath" uuid="de652cd9-2704-482a-a603-f57cf3f966c2" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+	<do-trace access-modifier="private" target="FillTop" ver="4">
+		<body>
+			<![CDATA[InH]]>
+		</body>
+	</do-trace>
+	<do-trace access-modifier="private" target="FillBot" ver="4">
+		<body>
+			<![CDATA[InH]]>
+		</body>
+	</do-trace>
+	<do-trace access-modifier="private" target="Tooltip" ver="4">
+		<body>
+			<![CDATA[NAME]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="Err" display-name="Err" uuid="1bbde4a6-1d64-4bfb-b013-ee9d853abb22" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="Err"/>
+	</object>
+	<do-trace access-modifier="private" target="Alarm" ver="4">
+		<body>
+			<![CDATA[Err]]>
+		</body>
+	</do-trace>
+</type>
+

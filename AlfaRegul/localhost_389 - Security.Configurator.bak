@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<Configuration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Applications>
+    <Application Name="Alpha.Security" IsSystem="true">
+      <Tokens>
+        <Token Type="String" Name="AttempsTimeOut" Description="Таймаут блокировки при превышении количества неуспешных попыток входа, мин">
+          <Rights />
+        </Token>
+        <Token Type="Boolean" Name="ConfigurationAccess" Description="Редактирование конфигурации">
+          <Rights>
+            <Right xsi:type="RightOfBoolean" Id="cb1bd90d-fb9c-4153-afcc-69cc2fc94cad" Allow="true" Deny="false">
+              <Subjects>
+                <Subject>alpha:90017ba6-bd5e-4c05-aba9-817604258758</Subject>
+                <Subject>alpha:7061c631-84cf-47d3-aa5f-cb2b176e225b</Subject>
+              </Subjects>
+            </Right>
+          </Rights>
+        </Token>
+        <Token Type="Boolean" Name="EditSettings" Description="Изменение настроек">
+          <Rights>
+            <Right xsi:type="RightOfBoolean" Id="ff86f643-a8f0-473c-a841-b05ba8eb38c8" Allow="true" Deny="false">
+              <Subjects>
+                <Subject>alpha:90017ba6-bd5e-4c05-aba9-817604258758</Subject>
+                <Subject>alpha:7061c631-84cf-47d3-aa5f-cb2b176e225b</Subject>
+              </Subjects>
+            </Right>
+          </Rights>
+        </Token>
+        <Token Type="Boolean" Name="InteractiveLogon" Description="Интерактивный вход">
+          <Rights />
+        </Token>
+        <Token Type="String" Name="MaxAttempsCount" Description="Количество неуспешных попыток входа до временной блокировки, шт">
+          <Rights />
+        </Token>
+        <Token Type="String" Name="MaxIdleTime" Description="Максимальное время бездействия, мин">
+          <Rights />
+        </Token>
+        <Token Type="String" Name="PasswordAge" Description="Срок действия пароля, дней">
+          <Rights />
+        </Token>
+        <Token Type="String" Name="PasswordComplexity" Description="Сложность пароля">
+          <Rights>
+            <Right xsi:type="RightOfString" Id="47fc8004-1e1c-42cf-ade6-f1b59979cf36" Allow="1" Deny="">
+              <Subjects>
+                <Subject>alpha:7061c631-84cf-47d3-aa5f-cb2b176e225b</Subject>
+                <Subject>alpha:8143dcbb-b5d1-488e-9ce7-2399fcd6d0fa</Subject>
+                <Subject>alpha:90017ba6-bd5e-4c05-aba9-817604258758</Subject>
+              </Subjects>
+            </Right>
+          </Rights>
+        </Token>
+        <Token Type="String" Name="PasswordMinLength" Description="Минимальная длина пароля">
+          <Rights>
+            <Right xsi:type="RightOfString" Id="8c1b5b99-6401-46b6-8840-ae94da4ea048" Allow="7" Deny="">
+              <Subjects>
+                <Subject>alpha:8143dcbb-b5d1-488e-9ce7-2399fcd6d0fa</Subject>
+                <Subject>alpha:90017ba6-bd5e-4c05-aba9-817604258758</Subject>
+                <Subject>alpha:7061c631-84cf-47d3-aa5f-cb2b176e225b</Subject>
+              </Subjects>
+            </Right>
+          </Rights>
+        </Token>
+        <Token Type="String" Name="PasswordNotifyForChange" Description="Уведомление о смене пароля, дней">
+          <Rights />
+        </Token>
+        <Token Type="String" Name="PasswordsInHistory" Description="Количество паролей в истории">
+          <Rights>
+            <Right xsi:type="RightOfString" Id="d2814db5-86f4-4f53-beb3-3d1463f9541b" Allow="4" Deny="">
+              <Subjects>
+                <Subject>alpha:7061c631-84cf-47d3-aa5f-cb2b176e225b</Subject>
+                <Subject>alpha:8143dcbb-b5d1-488e-9ce7-2399fcd6d0fa</Subject>
+                <Subject>alpha:90017ba6-bd5e-4c05-aba9-817604258758</Subject>
+              </Subjects>
+            </Right>
+          </Rights>
+        </Token>
+        <Token Type="String" Name="SessionDurationLimit" Description="Максимальное время сессии, мин">
+          <Rights />
+        </Token>
+        <Token Type="Boolean" Name="ViewConfiguration" Description="Просмотр конфигурации">
+          <Rights>
+            <Right xsi:type="RightOfBoolean" Id="e2aff875-4e2b-4c2d-9e9b-a8c48d705198" Allow="true" Deny="false">
+              <Subjects>
+                <Subject>alpha:90017ba6-bd5e-4c05-aba9-817604258758</Subject>
+                <Subject>alpha:7061c631-84cf-47d3-aa5f-cb2b176e225b</Subject>
+              </Subjects>
+            </Right>
+          </Rights>
+        </Token>
+        <Token Type="Boolean" Name="WinKeysShortcutAccess" Description="Доступ к сочетаниям клавиш windows">
+          <Rights>
+            <Right xsi:type="RightOfBoolean" Id="cdebd632-ca6d-44db-ac4f-310ca6449061" Allow="true" Deny="false">
+              <Subjects>
+                <Subject>alpha:90017ba6-bd5e-4c05-aba9-817604258758</Subject>
+                <Subject>alpha:7061c631-84cf-47d3-aa5f-cb2b176e225b</Subject>
+              </Subjects>
+            </Right>
+            <Right xsi:type="RightOfBoolean" Id="25a4cefa-67c8-49a0-8cac-b76cfd2a18b7" Allow="false" Deny="true">
+              <Subjects>
+                <Subject>alpha:8143dcbb-b5d1-488e-9ce7-2399fcd6d0fa</Subject>
+              </Subjects>
+            </Right>
+          </Rights>
+        </Token>
+      </Tokens>
+      <Roles />
+    </Application>
+    <Application Name="HMI" IsSystem="false">
+      <Tokens>
+        <Token Type="Boolean" Name="AllowAllWindows" Description="Разрешение на вход во все окна">
+          <Rights>
+            <Right xsi:type="RightOfBoolean" Id="38ba2ab9-43e4-412a-9bdd-44889c9858d2" Allow="true" Deny="false">
+              <Subjects>
+                <Subject>alpha:2c6c79ae-f457-47d9-a96c-40da449c3172</Subject>
+              </Subjects>
+            </Right>
+          </Rights>
+        </Token>
+        <Token Type="Boolean" Name="AllowSettingsChange" Description="Разрешение на изменение настроечных параметров">
+          <Rights>
+            <Right xsi:type="RightOfBoolean" Id="c65254d8-41d7-4eca-8656-c9eec9ae9f77" Allow="true" Deny="false">
+              <Subjects>
+                <Subject>alpha:559d67df-eec1-43ab-b529-5106099489d1</Subject>
+                <Subject>alpha:2c6c79ae-f457-47d9-a96c-40da449c3172</Subject>
+              </Subjects>
+            </Right>
+            <Right xsi:type="RightOfBoolean" Id="422454e6-bbbe-45c2-a7bd-511abeb92d32" Allow="false" Deny="true">
+              <Subjects>
+                <Subject>alpha:8ce14502-61f1-4c21-88b2-88b7595ba846</Subject>
+              </Subjects>
+            </Right>
+          </Rights>
+        </Token>
+      </Tokens>
+      <Roles />
+    </Application>
+  </Applications>
+  <Groups>
+    <Group Id="alpha:559d67df-eec1-43ab-b529-5106099489d1" GroupType="0" SymbolicId="Administrators" Name="Administrators" GroupDisabled="false">
+      <Members>
+        <Member>alpha:90017ba6-bd5e-4c05-aba9-817604258758</Member>
+      </Members>
+    </Group>
+    <Group Id="alpha:8ce14502-61f1-4c21-88b2-88b7595ba846" GroupType="0" SymbolicId="Operators" Name="Operators" GroupDisabled="false">
+      <Members>
+        <Member>alpha:8143dcbb-b5d1-488e-9ce7-2399fcd6d0fa</Member>
+      </Members>
+    </Group>
+    <Group Id="alpha:2c6c79ae-f457-47d9-a96c-40da449c3172" GroupType="0" SymbolicId="Developers" Name="Developers" GroupDisabled="false">
+      <Members>
+        <Member>alpha:7061c631-84cf-47d3-aa5f-cb2b176e225b</Member>
+      </Members>
+    </Group>
+  </Groups>
+  <Users>
+    <User Id="alpha:90017ba6-bd5e-4c05-aba9-817604258758" AccountType="0" SymbolicId="cn=Manager,dc=maxcrc,dc=com" Surname="Administrator" DisplayName="Администратор" Password="{SSHA}DonzNSesikOEkz8IOOY9A47nRU1+Ic+fc3tOMA==" ForcePasswordChange="false" AccountDisabled="false" />
+    <User Id="alpha:7061c631-84cf-47d3-aa5f-cb2b176e225b" AccountType="0" SymbolicId="Developer" Surname="Developer" DisplayName="Разработчик" Password="{SSHA}DKhs85d2JDnBjwgysKdE+ju8EH3HEgKWwUdieA==" ForcePasswordChange="false" AccountDisabled="false" />
+    <User Id="alpha:8143dcbb-b5d1-488e-9ce7-2399fcd6d0fa" AccountType="0" SymbolicId="Operator" Surname="Operator" DisplayName="Оператор" Password="{SSHA}zXTIJFfxD1K+lo38BloiuLBCgJaoIzomNupBcg==" ForcePasswordChange="false" AccountDisabled="false" />
+  </Users>
+  <WorkStations />
+  <WorkPlaces />
+</Configuration>

@@ -1,0 +1,617 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Преснецова Светлана Олеговна</Author>
+  <LastAuthor>Admin</LastAuthor>
+  <Created>2020-06-04T03:39:48Z</Created>
+  <LastSaved>2021-12-02T00:30:52Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>11985</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:CharSet="204" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Font ss:FontName="Calibri" x:CharSet="204" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000" ss:Bold="1"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Font ss:FontName="Calibri" x:CharSet="204" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000" ss:Bold="1"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Tree">
+  <Table ss:ExpandedColumnCount="5" ss:ExpandedRowCount="86" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Column ss:Width="447.75"/>
+   <Column ss:Width="51"/>
+   <Column ss:AutoFitWidth="0" ss:Width="242.25"/>
+   <Column ss:StyleID="s62" ss:Width="107.25"/>
+   <Column ss:Width="332.25"/>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s64">
+    <Cell><Data ss:Type="String">Путь в дереве и имя сигнала</Data></Cell>
+    <Cell><Data ss:Type="String">Прототип</Data></Cell>
+    <Cell><Data ss:Type="String">OPC Тег</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Единицы измерения</Data></Cell>
+    <Cell><Data ss:Type="String">Описание сигнала</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Газ\Давление газа после задвижки</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_0.AI1.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа после задвижки</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Газ\Давление газа после стабилизатора давления</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_0.AI2.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа после стабилизатора давления</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Газ\Расход газа после стабилизатора давления</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.GAS.OtherData.FGasBeforeFlap.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">т/час</Data></Cell>
+    <Cell><Data ss:Type="String">Расход газа после стабилизатора давления</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Газ\Температура газа перед диафрагмой расходомера</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_0.AI4.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">°С</Data></Cell>
+    <Cell><Data ss:Type="String">Температура газа перед диафрагмой расходомера</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Газ\Давление газа после регулирующей заслонки</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_0.AI5.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа после регулирующей заслонки</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Температура возд. в воздухов. перед котлом</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_0.AI6.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">°С</Data></Cell>
+    <Cell><Data ss:Type="String">Температура возд. в воздухов. перед котлом</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №10\Давление газа между ПЗК горелки №10</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_0.AI7.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа между ПЗК горелки №10</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №10\Давление газа перед горелкой №10</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_0.AI8.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа перед горелкой №10</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №10\Давление воздуха перед горелкой №10</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_0.AI9.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">мм. вод. ст.</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воздуха перед горелкой №10</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №1\Давление газа между ПЗК горелки №1</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_0.AI10.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа между ПЗК горелки №1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №1\Давление газа перед горелкой №1</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_0.AI11.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа перед горелкой №1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №1\Давление воздуха перед горелкой №1</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_0.AI12.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">мм. вод. ст.</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воздуха перед горелкой №1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №8\Давление газа между ПЗК горелки №8</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_0.AI13.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа между ПЗК горелки №8</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №8\Давление газа перед горелкой №8</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_0.AI14.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа перед горелкой №8</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №8\Давление воздуха перед горелкой №8</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_0.AI15.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">мм. вод. ст.</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воздуха перед горелкой №8</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №5\Давление газа между ПЗК горелки №5</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_1.AI1.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа между ПЗК горелки №5</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №5\Давление газа перед горелкой №5</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_1.AI2.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа перед горелкой №5</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №5\Давление воздуха перед горелкой №5</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_1.AI3.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">мм. вод. ст.</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воздуха перед горелкой №5</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №2\Давление газа между ПЗК горелки №2</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_1.AI4.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа между ПЗК горелки №2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №2\Давление газа перед горелкой №2</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_1.AI5.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа перед горелкой №2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №2\Давление воздуха перед горелкой №2</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_1.AI6.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">мм. вод. ст.</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воздуха перед горелкой №2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №9\Давление газа между ПЗК горелки №9</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_1.AI7.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа между ПЗК горелки №9</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №9\Давление газа перед горелкой №9</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_1.AI8.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа перед горелкой №9</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №9\Давление воздуха перед горелкой №9</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_1.AI9.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">мм. вод. ст.</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воздуха перед горелкой №9</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №3\Давление газа между ПЗК горелки №3</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_1.AI11.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа между ПЗК горелки №3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №3\Давление газа перед горелкой №3</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_1.AI12.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа перед горелкой №3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №3\Давление воздуха перед горелкой №3</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_1.AI13.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">мм. вод. ст.</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воздуха перед горелкой №3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №12\Давление газа между ПЗК горелки №12</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_1.AI14.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа между ПЗК горелки №12</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №12\Давление газа перед горелкой №12</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_1.AI15.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа перед горелкой №12</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №12\Давление воздуха перед горелкой №12</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_1.AI16.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">мм. вод. ст.</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воздуха перед горелкой №12</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №7\Давление газа между ПЗК горелки №7</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_2.AI1.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа между ПЗК горелки №7</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №7\Давление газа перед горелкой №7</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_2.AI2.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа перед горелкой №7</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №7\Давление воздуха перед горелкой №7</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_2.AI3.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">мм. вод. ст.</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воздуха перед горелкой №7</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №6\Давление газа между ПЗК горелки №6</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_2.AI5.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа между ПЗК горелки №6</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №6\Давление газа перед горелкой №6</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_2.AI6.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа перед горелкой №6</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №6\Давление воздуха перед горелкой №6</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_2.AI7.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">мм. вод. ст.</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воздуха перед горелкой №6</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №11\Давление газа между ПЗК горелки №11</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_2.AI8.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа между ПЗК горелки №11</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №11\Давление газа перед горелкой №11</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_2.AI9.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа перед горелкой №11</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №11\Давление воздуха перед горелкой №11</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_2.AI10.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">мм. вод. ст.</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воздуха перед горелкой №11</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №4\Давление газа между ПЗК горелки №4</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_2.AI11.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа между ПЗК горелки №4</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №4\Давление газа перед горелкой №4</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_2.AI12.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа перед горелкой №4</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №4\Давление воздуха перед горелкой №4</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_2.AI13.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">мм. вод. ст.</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воздуха перед горелкой №4</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Вода\Температура воды до котла</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_2.AI15.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">°С</Data></Cell>
+    <Cell><Data ss:Type="String">Температура воды до котла</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Вода\Давление воды до котла</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_2.AI16.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воды до котла</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Вода\Расход воды после котла(датчик 1)</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.WATER.FWaterOut1.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">т/час</Data></Cell>
+    <Cell><Data ss:Type="String">Расход воды после котла(датчик 1)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Вода\Температура воды после котла(датчик 1)</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_3.AI2.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">°С</Data></Cell>
+    <Cell><Data ss:Type="String">Температура воды после котла(датчик 1)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Вода\Температура воды после котла(датчик 2)</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_3.AI3.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">°С</Data></Cell>
+    <Cell><Data ss:Type="String">Температура воды после котла(датчик 2)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Вода\Давление воды после котла(датчик 1)</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_3.AI4.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воды после котла(датчик 1)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Вода\Давление воды после котла(датчик 2)</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_3.AI5.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воды после котла(датчик 2)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Вода\Расход воды после котла(датчик 2)</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.WATER.FWaterOut2.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">т/час</Data></Cell>
+    <Cell><Data ss:Type="String">Расход воды после котла(датчик 2)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Температура уходящих газов</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_3.AI7.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">°С</Data></Cell>
+    <Cell><Data ss:Type="String">Температура уходящих газов</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Разрежение воздуха</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_3.AI8.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">мм. вод. ст.</Data></Cell>
+    <Cell><Data ss:Type="String">Разрежение воздуха</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Датчик содержания кислорода</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_3.AI9.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Содержание кислорода</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Газ\Датчик положения МЭО регулирующей заслонки газа</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_3.AI10.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки газа</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\ДТ\Датчик положения МЭО регулирующей заслонки ДТ</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_3.AI11.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки ДТ</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №10\Датчик положения МЭО регулирующей заслонки газа горелки 10</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_3.AI12.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки газа горелки 10</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №10\Датчик положения МЭО регулирующей заслонки возд. горелки 10</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_3.AI13.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки возд. горелки 10</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №1\Датчик положения МЭО регулирующей заслонки газа горелки 1</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_3.AI14.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки газа горелки 1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №1\Датчик положения МЭО регулирующей заслонки возд. горелки 1</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_3.AI15.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки возд. горелки 1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №8\Датчик положения МЭО регулирующей заслонки газа горелки 8</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_3.AI16.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки газа горелки 8</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №8\Датчик положения МЭО регулирующей заслонки возд. горелки 8</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_4.AI1.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки возд. горелки 8</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №5\Датчик положения МЭО регулирующей заслонки газа горелки 5</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_4.AI2.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки газа горелки 5</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №5\Датчик положения МЭО регулирующей заслонки возд. горелки 5</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_4.AI3.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки возд. горелки 5</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №2\Датчик положения МЭО регулирующей заслонки газа горелки 2</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_4.AI4.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки газа горелки 2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №2\Датчик положения МЭО регулирующей заслонки возд. горелки 2</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_4.AI5.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки возд. горелки 2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №9\Датчик положения МЭО регулирующей заслонки газа горелки 9</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_4.AI6.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки газа горелки 9</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №9\Датчик положения МЭО регулирующей заслонки возд. горелки 9</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_4.AI7.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки возд. горелки 9</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №3\Датчик положения МЭО регулирующей заслонки газа горелки 3</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_4.AI8.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки газа горелки 3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №3\Датчик положения МЭО регулирующей заслонки возд. горелки 3</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_4.AI9.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки возд. горелки 3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №12\Датчик положения МЭО регулирующей заслонки газа горелки 12</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_4.AI10.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки газа горелки 12</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №12\Датчик положения МЭО регулирующей заслонки возд. горелки 12</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_4.AI11.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки возд. горелки 12</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №7\Датчик положения МЭО регулирующей заслонки газа горелки 7</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_4.AI12.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки газа горелки 7</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №7\Датчик положения МЭО регулирующей заслонки возд. горелки 7</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_4.AI13.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки возд. горелки 7</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №6\Датчик положения МЭО регулирующей заслонки газа горелки 6</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_4.AI14.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки газа горелки 6</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №6\Датчик положения МЭО регулирующей заслонки возд. горелки 6</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_4.AI15.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки возд. горелки 6</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №11\Датчик положения МЭО регулирующей заслонки газа горелки 11</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_4.AI16.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки газа горелки 11</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №11\Датчик положения МЭО регулирующей заслонки возд. горелки 11</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_5.AI1.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки возд. горелки 11</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №4\Датчик положения МЭО регулирующей заслонки газа горелки 4</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_5.AI2.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки газа горелки 4</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Горелка №4\Датчик положения МЭО регулирующей заслонки возд. горелки 4</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_5.AI3.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки возд. горелки 4</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Датчик положения МЭО регулир. заслонки разрежения</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_5.AI4.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Датчик положения МЭО регулир. заслонки разрежения</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\ДТ\Температура ДТ перед котлом</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_5.AI5.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">°С</Data></Cell>
+    <Cell><Data ss:Type="String">Температура дизтоплива перед котлом</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\ДТ\Расход ДТ</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.MAZUT.OtherData.FMazutIn.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">т/час</Data></Cell>
+    <Cell><Data ss:Type="String">Расход дизтоплива</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\ДТ\Давление ДТ перед котлом после ПЗК</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_5.AI7.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление дизтоплива перед котлом после ПЗК</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\ДТ\Давление ДТ перед котлом после регулятора</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.DIAG.AI.AI_16_011_5.AI8.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кгс/см²</Data></Cell>
+    <Cell><Data ss:Type="String">Давление дизтоплива перед котлом после регулятора</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Теплопроизводительность котла</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.BOILER.PowerBoiler</Data></Cell>
+    <Cell><Data ss:Type="String">Гкал</Data></Cell>
+    <Cell><Data ss:Type="String">Теплопроизводительность котла</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Zoom>85</Zoom>
+   <Selected/>
+   <TopRowVisible>33</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>54</ActiveRow>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Лист2">
+  <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="1" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Row ss:AutoFitHeight="0"/>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

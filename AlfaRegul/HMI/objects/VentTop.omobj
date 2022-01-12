@@ -1,0 +1,190 @@
+<type access-modifier="private" name="VentTop" display-name="VentTop" uuid="c50df17d-e1a0-4f27-9be4-f55a0d8eed22" base-type="Dummy" base-type-id="e4b644cf-f3a8-4d11-82a0-6acc23748e14" ver="3">
+	<designed target="X" value="0" ver="3"/>
+	<designed target="Y" value="0" ver="3"/>
+	<designed target="ZValue" value="0" ver="3"/>
+	<designed target="Rotation" value="0" ver="3"/>
+	<designed target="Scale" value="1.5" ver="3"/>
+	<designed target="Visible" value="true" ver="3"/>
+	<designed target="Opacity" value="1" ver="3"/>
+	<designed target="Enabled" value="true" ver="3"/>
+	<designed target="Tooltip" value="" ver="3"/>
+	<object access-modifier="private" name="Rectangle_1" display-name="Rectangle_1" uuid="b389a685-4927-415a-925c-9702e74fd7e8" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="3">
+		<designed target="X" value="-2" ver="3"/>
+		<designed target="Y" value="10" ver="3"/>
+		<designed target="ZValue" value="0" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<designed target="Scale" value="1" ver="3"/>
+		<designed target="Visible" value="true" ver="3"/>
+		<designed target="Opacity" value="1" ver="3"/>
+		<designed target="Enabled" value="true" ver="3"/>
+		<designed target="Tooltip" value="" ver="3"/>
+		<designed target="Width" value="14" ver="3"/>
+		<designed target="Height" value="19.9167" ver="3"/>
+		<designed target="RoundingRadius" value="0" ver="3"/>
+		<designed target="PenColor" value="4278190080" ver="3"/>
+		<designed target="PenStyle" value="0" ver="3"/>
+		<designed target="PenWidth" value="0" ver="3"/>
+		<designed target="BrushColor" value="0xff00aaff" ver="3"/>
+		<designed target="BrushStyle" value="1" ver="3"/>
+		<object access-modifier="private" name="Blinker_1" display-name="Blinker_1" uuid="21b54735-7307-46a9-bc65-658a15a1208b" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006" ver="4">
+			<designed target="Period" value="1000" ver="4"/>
+			<designed target="Active" value="false" ver="4"/>
+			<designed target="PenColor" value="4278190080" ver="4"/>
+			<designed target="BrushColor" value="0xffff0000" ver="4"/>
+			<designed target="FontColor" value="4278190080" ver="4"/>
+			<do-trace access-modifier="private" target="Active" ver="4">
+				<body>
+					<![CDATA[FanAlarm]]>
+				</body>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="Ellipse_1" display-name="Ellipse_1" uuid="9dac25df-6fa0-40e1-b631-e206727cc90c" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="3">
+		<designed target="X" value="-10" ver="3"/>
+		<designed target="Y" value="0" ver="3"/>
+		<designed target="ZValue" value="0" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<designed target="Scale" value="1" ver="3"/>
+		<designed target="Visible" value="true" ver="3"/>
+		<designed target="Opacity" value="1" ver="3"/>
+		<designed target="Enabled" value="true" ver="3"/>
+		<designed target="Tooltip" value="" ver="3"/>
+		<designed target="Width" value="20" ver="3"/>
+		<designed target="Height" value="20" ver="3"/>
+		<designed target="PenColor" value="0xff00aaff" ver="3"/>
+		<designed target="PenStyle" value="1" ver="3"/>
+		<designed target="PenWidth" value="4" ver="3"/>
+		<designed target="BrushColor" value="0xff000000" ver="3"/>
+		<designed target="BrushStyle" value="1" ver="3"/>
+		<designed target="PieAngle" value="360" ver="3"/>
+		<designed target="PieAngleStart" value="360" ver="3"/>
+		<object access-modifier="private" name="Image_1" display-name="Image_1" uuid="43961394-c20f-4c02-9c5d-b3a32c8e4107" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
+			<designed target="X" value="2.5" ver="4"/>
+			<designed target="Y" value="2.5" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="90" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="15" ver="4"/>
+			<designed target="Height" value="15" ver="4"/>
+			<designed target="PenColor" value="4278190080" ver="4"/>
+			<designed target="PenStyle" value="0" ver="4"/>
+			<designed target="PenWidth" value="1" ver="4"/>
+			<designed target="ImageFile" value="vent.png" ver="4"/>
+			<designed target="Active" value="true" ver="4"/>
+			<designed target="CurrentFrameNumber" value="0" ver="4"/>
+			<designed target="Speed" value="1" ver="4"/>
+			<object access-modifier="private" name="Ellipse_1" display-name="Ellipse_1" uuid="ebcd70cf-1170-42eb-aaf2-3f7486cf06c8" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="4">
+				<designed target="X" value="6" ver="4"/>
+				<designed target="Y" value="6" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="3" ver="4"/>
+				<designed target="Height" value="3" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="0" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xff000000" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<designed target="PieAngle" value="360" ver="4"/>
+				<designed target="PieAngleStart" value="360" ver="4"/>
+				<do-trace access-modifier="private" target="BrushColor" ver="4">
+					<conditional-expr>
+						<condition>
+							<![CDATA[OutOn == true]]>
+						</condition>
+						<expr>
+							<![CDATA[0xff00ff00]]>
+						</expr>
+					</conditional-expr>
+					<conditional-expr>
+						<condition>
+							<![CDATA[OutOn == false]]>
+						</condition>
+						<expr>
+							<![CDATA[0xff000000]]>
+						</expr>
+					</conditional-expr>
+				</do-trace>
+			</object>
+		</object>
+		<object access-modifier="private" name="Blinker_1" display-name="Blinker_1" uuid="c6527087-d448-4e5b-abb4-bd011de60bb3" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006" ver="4">
+			<designed target="Period" value="1000" ver="4"/>
+			<designed target="Active" value="false" ver="4"/>
+			<designed target="PenColor" value="0xffff0000" ver="4"/>
+			<designed target="BrushColor" value="0xff000000" ver="4"/>
+			<designed target="FontColor" value="0xff000000" ver="4"/>
+			<do-trace access-modifier="private" target="Active" ver="4">
+				<body>
+					<![CDATA[FanAlarm]]>
+				</body>
+			</do-trace>
+		</object>
+	</object>
+	<object access-modifier="private" name="Timer_1" display-name="Timer_1" uuid="0f7bf105-31bc-44c9-b524-e55a7ec95df7" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="4">
+		<designed target="Period" value="7" ver="4"/>
+		<designed target="Active" value="false" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnTimer">
+			<body kind="om">
+				<![CDATA[Ellipse_1.Image_1.Rotation -= 1;
+if (Ellipse_1.Image_1.Rotation <= -360)
+{
+	Ellipse_1.Image_1.Rotation = 0;
+}]]>
+			</body>
+		</do-on>
+		<do-trace access-modifier="private" target="Active" ver="4">
+			<body>
+				<![CDATA[InOn]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="hereOPCSource" display-name="hereOPCSource" uuid="53845184-7f93-4925-9b5e-f73048951bfa" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+		<designed target="Active" value="false" ver="4"/>
+		<designed target="UpdateRate" value="0" ver="4"/>
+		<designed target="ReAdvise" value="0" ver="4"/>
+		<init target="ParentSource" ver="4" ref="initOPCSource"/>
+		<init target="Path" ver="4" ref="initPath"/>
+	</object>
+	<object access-modifier="private" name="KKS" display-name="KKS" uuid="5447c93d-445e-4057-9435-51b2ef9e343b" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="KKS"/>
+	</object>
+	<object access-modifier="private" name="NAME" display-name="NAME" uuid="9c9888b8-a018-437b-99f4-814ff5c55866" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="NAME"/>
+	</object>
+	<object access-modifier="private" name="InOn" display-name="InOn" uuid="d225fa5c-41c3-4216-94ab-762ea55523fc" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="InOn"/>
+	</object>
+	<object access-modifier="private" name="OutOn" display-name="OutOn" uuid="41742224-bf2b-41e7-bbce-90ce8ff9030e" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="OutOn"/>
+	</object>
+	<param access-modifier="private" name="initOPCSource" display-name="initOPCSource" uuid="645acd36-c425-463f-8211-e8f725f56743" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" base-const="true" base-ref="true" ver="4"/>
+	<param access-modifier="private" name="initPath" display-name="initPath" uuid="303a4d67-cf42-4779-a140-4ba6ac92885a" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+	<object access-modifier="private" name="FanAlarm" display-name="FanAlarm" uuid="fb1840ee-a213-4289-b90a-5b4f005493cb" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<do-trace access-modifier="private" target="Path" ver="4">
+			<body>
+				<![CDATA["ROOT.ALARMS.Горелка "+BurnNumber+".AlarmFan"]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="BurnNumber" display-name="BurnNumber" uuid="39fd6496-fbbd-4dfd-8980-f65a5471dd48" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="4"/>
+	<do-trace access-modifier="private" target="Tooltip" ver="4">
+		<body>
+			<![CDATA[NAME]]>
+		</body>
+	</do-trace>
+</type>
+

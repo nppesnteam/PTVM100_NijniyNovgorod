@@ -1,0 +1,98 @@
+<type access-modifier="private" name="Диалог закрытия" display-name="Диалог закрытия" uuid="c1ad94bc-6700-4cc2-a3fa-56946e080ae0" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="4">
+	<designed target="X" value="0" ver="4"/>
+	<designed target="Y" value="0" ver="4"/>
+	<designed target="ZValue" value="0" ver="4"/>
+	<designed target="Rotation" value="0" ver="4"/>
+	<designed target="Scale" value="1" ver="4"/>
+	<designed target="Visible" value="true" ver="4"/>
+	<designed target="Opacity" value="1" ver="4"/>
+	<designed target="Enabled" value="true" ver="4"/>
+	<designed target="Tooltip" value="" ver="4"/>
+	<designed target="Width" value="250" ver="4"/>
+	<designed target="Height" value="75" ver="4"/>
+	<designed target="PenColor" value="4278190080" ver="4"/>
+	<designed target="PenStyle" value="0" ver="4"/>
+	<designed target="PenWidth" value="1" ver="4"/>
+	<designed target="BrushColor" value="4293980400" ver="4"/>
+	<designed target="BrushStyle" value="1" ver="4"/>
+	<designed target="WindowX" value="0" ver="4"/>
+	<designed target="WindowY" value="0" ver="4"/>
+	<designed target="WindowWidth" value="250" ver="4"/>
+	<designed target="WindowHeight" value="75" ver="4"/>
+	<designed target="WindowCaption" value="MainForm" ver="4"/>
+	<designed target="ShowWindowCaption" value="false" ver="4"/>
+	<designed target="ShowWindowMinimize" value="false" ver="4"/>
+	<designed target="ShowWindowMaximize" value="false" ver="4"/>
+	<designed target="ShowWindowClose" value="true" ver="4"/>
+	<designed target="AlwaysOnTop" value="false" ver="4"/>
+	<designed target="WindowSizeMode" value="0" ver="4"/>
+	<designed target="WindowBorderStyle" value="2" ver="4"/>
+	<designed target="WindowState" value="0" ver="4"/>
+	<designed target="WindowScalingMode" value="0" ver="4"/>
+	<designed target="MonitorNumber" value="0" ver="4"/>
+	<designed target="WindowPosition" value="4" ver="4"/>
+	<designed target="WindowCloseMode" value="0" ver="4"/>
+	<object access-modifier="private" name="txt" display-name="txt" uuid="37b10085-930c-432c-a718-8a6f980cd9d3" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+		<designed target="X" value="5" ver="4"/>
+		<designed target="Y" value="5" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="240" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="Text" value="Закрыть программу?" ver="4"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+		<designed target="FontColor" value="4278190080" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+	</object>
+	<object access-modifier="private" name="btnYes" display-name="btnYes" uuid="6fd13b59-7a14-41ae-bb5b-ac589889c47c" base-type="SystemButton" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="4">
+		<designed target="X" value="25" ver="4"/>
+		<designed target="Y" value="40" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="75" ver="4"/>
+		<designed target="Height" value="23" ver="4"/>
+		<designed target="Checkable" value="false" ver="4"/>
+		<designed target="Text" value="Да" ver="4"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0" ver="4"/>
+		<designed target="FontColor" value="4278190080" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[refMain.Close();]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="btnNo" display-name="btnNo" uuid="c372d1e0-10cc-438c-b10d-a0fc217d9526" base-type="SystemButton" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="4">
+		<designed target="X" value="150" ver="4"/>
+		<designed target="Y" value="40" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="75" ver="4"/>
+		<designed target="Height" value="23" ver="4"/>
+		<designed target="Checkable" value="false" ver="4"/>
+		<designed target="Text" value="Нет" ver="4"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0" ver="4"/>
+		<designed target="FontColor" value="4278190080" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="ButtonPressed">
+			<body kind="om">
+				<![CDATA[here.Close();]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="refMain" display-name="refMain" uuid="108297df-4619-40e6-af3b-72b368b0aebb" base-type="MainForm" base-type-id="c9cad641-8960-46db-9523-43c92084d4a1" base-const="true" base-ref="true" ver="4"/>
+</type>
+

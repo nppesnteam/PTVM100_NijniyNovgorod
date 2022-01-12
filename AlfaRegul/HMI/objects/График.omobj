@@ -1,0 +1,138 @@
+<type access-modifier="private" name="График" display-name="График" uuid="0146db6e-1d42-4856-9e94-7e6c5518dc7b" base-type="Form" base-type-id="ffaf5544-6200-45f4-87ec-9dd24558a9d5" ver="4">
+	<designed target="X" value="0" ver="4"/>
+	<designed target="Y" value="0" ver="4"/>
+	<designed target="ZValue" value="0" ver="4"/>
+	<designed target="Rotation" value="0" ver="4"/>
+	<designed target="Scale" value="1" ver="4"/>
+	<designed target="Visible" value="true" ver="4"/>
+	<designed target="Opacity" value="1" ver="4"/>
+	<designed target="Enabled" value="true" ver="4"/>
+	<designed target="Tooltip" value="" ver="4"/>
+	<designed target="Width" value="1360" ver="4"/>
+	<designed target="Height" value="600" ver="4"/>
+	<designed target="PenColor" value="4278190080" ver="4"/>
+	<designed target="PenStyle" value="0" ver="4"/>
+	<designed target="PenWidth" value="1" ver="4"/>
+	<designed target="BrushColor" value="4293980400" ver="4"/>
+	<designed target="BrushStyle" value="1" ver="4"/>
+	<designed target="WindowX" value="0" ver="4"/>
+	<designed target="WindowY" value="0" ver="4"/>
+	<designed target="WindowWidth" value="1360" ver="4"/>
+	<designed target="WindowHeight" value="600" ver="4"/>
+	<designed target="WindowCaption" value="График" ver="4"/>
+	<designed target="ShowWindowCaption" value="true" ver="4"/>
+	<designed target="ShowWindowMinimize" value="true" ver="4"/>
+	<designed target="ShowWindowMaximize" value="false" ver="4"/>
+	<designed target="ShowWindowClose" value="true" ver="4"/>
+	<designed target="AlwaysOnTop" value="false" ver="4"/>
+	<designed target="WindowSizeMode" value="0" ver="4"/>
+	<designed target="WindowBorderStyle" value="1" ver="4"/>
+	<designed target="WindowState" value="0" ver="4"/>
+	<designed target="WindowScalingMode" value="0" ver="4"/>
+	<designed target="MonitorNumber" value="0" ver="4"/>
+	<designed target="WindowPosition" value="0" ver="4"/>
+	<designed target="WindowCloseMode" value="0" ver="4"/>
+	<object access-modifier="private" name="Trends" display-name="Trends" uuid="dd0a58f1-ab74-471f-972d-f65623507910" base-type="TrendsAxControl" base-type-id="f6fdc6e3-5677-49b3-9540-ed718f10a8c3" ver="4">
+		<designed target="X" value="0" ver="4"/>
+		<designed target="Y" value="0" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Width" value="1360" ver="4"/>
+		<designed target="Height" value="600" ver="4"/>
+		<designed target="ConfigurationFolder" value="" ver="4"/>
+		<designed target="ActiveMode" value="0" ver="4"/>
+		<designed target="Item" value="" ver="4"/>
+		<designed target="ShowDataPoints" value="true" ver="4"/>
+		<designed target="ShowMarkerPoints" value="false" ver="4"/>
+		<designed target="ShowMarkerLabels" value="true" ver="4"/>
+		<designed target="ShowSources" value="true" ver="4"/>
+		<designed target="ShowLegend" value="true" ver="4"/>
+		<designed target="GlobalRanges" value="true" ver="4"/>
+		<designed target="LowRange" value="-10000" ver="4"/>
+		<designed target="HighRange" value="10000" ver="4"/>
+		<designed target="AutoRange" value="true" ver="4"/>
+		<designed target="AlwaysOnTop" value="false" ver="4"/>
+		<designed target="YAxisPrecision" value="2" ver="4"/>
+		<designed target="ShowToolbar" value="true" ver="4"/>
+		<designed target="WindowsFixed" value="false" ver="4"/>
+		<designed target="IsFullAccessAllowed" value="false" ver="4"/>
+		<designed target="FileSystemSafeMode" value="true" ver="4"/>
+		<designed target="GUIModificationAvailable" value="false" ver="4"/>
+		<designed target="SignalsModificationAvailable" value="true" ver="4"/>
+		<designed target="SurfaceModificationAvailable" value="true" ver="4"/>
+		<do-trace access-modifier="private" target="Width" ver="4">
+			<body>
+				<![CDATA[TrendsWidth]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Height" ver="4">
+			<body>
+				<![CDATA[TrendsHeight]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="IsFullAccessAllowed" ver="4">
+			<body>
+				<![CDATA[unit.Security.AllowSettingsChange.Value]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="OPCTag_1" display-name="OPCTag_1" uuid="6d5dc35f-9920-4a7f-b21d-3af28f6d3337" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="4"/>
+	<object access-modifier="private" name="OPCTag_2" display-name="OPCTag_2" uuid="873cc7b8-1e15-4e10-8adb-6aeba3fa9564" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="4"/>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Opened">
+		<body kind="om">
+			<![CDATA[if (OPCTag_1 != "")
+{
+	Trends.AddItem(OPCTag_1,EU_1,Description_1);
+}
+if (OPCTag_2 != "")
+{
+	Trends.AddItem(OPCTag_2,EU_2,Description_2);
+}]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="EU_1" display-name="EU_1" uuid="17e5e72e-e51a-4e09-930b-1c6d91e41e07" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="4"/>
+	<object access-modifier="private" name="EU_2" display-name="EU_2" uuid="e9cbb93c-e279-4bc6-8308-38e9824f80fb" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="4"/>
+	<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="4" event="WindowSizeChanged">
+		<body kind="om">
+			<![CDATA[here.Width = here.WindowWidth;
+here.Height = here.WindowHeight;
+TrendsWidth = here.WindowWidth;
+TrendsHeight = here.WindowHeight;]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="Description_1" display-name="Description_1" uuid="ec98f18b-129c-4617-802d-cef16627ef0d" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="4"/>
+	<object access-modifier="private" name="Description_2" display-name="Description_2" uuid="6fa3cc2a-cbfb-4e8d-9316-a5dac98e0d62" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="4"/>
+	<object access-modifier="private" name="refMainForm" display-name="refMainForm" uuid="5780075d-8aad-44cd-9056-14c9c665bd47" base-type="MainForm" base-type-id="c9cad641-8960-46db-9523-43c92084d4a1" base-const="true" base-ref="true" ver="4"/>
+	<object access-modifier="private" name="refFlap" display-name="refFlap" uuid="4685a1d5-fd9e-45b8-ad51-84c9d89a11d6" base-type="Заслонка (настройка)" base-type-id="46596f56-4b79-42f7-80dd-b3b26b02ca90" base-const="true" base-ref="true" ver="4"/>
+	<object access-modifier="private" name="refDouble" display-name="refDouble" uuid="f6ce98ba-1f65-40b0-b013-58ee764a1ffb" base-type="2 датчика" base-type-id="a104b692-57e6-4ab3-bea4-4df08bf16447" base-const="true" base-ref="true" ver="4"/>
+	<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="4" event="Opened">
+		<body kind="om">
+			<![CDATA[if (FromWhere=="MainForm")
+{
+	refMainForm.RightPanel.MainFramesButtons.isOpenedTrends=true;
+}
+if (FromWhere=="Double")
+{
+	refDouble.refData.isOpenedTrends=true;
+}
+if (FromWhere=="Flap")
+{
+	refFlap.isOpenedTrends=true;
+}]]>
+		</body>
+	</do-on>
+	<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="4" event="Closed">
+		<body kind="om">
+			<![CDATA[if (FromWhere=="MainForm")
+	refMainForm.RightPanel.MainFramesButtons.isOpenedTrends=false;
+if (FromWhere=="Double")
+	refDouble.refData.isOpenedTrends=false;
+if (FromWhere=="Flap")
+	refFlap.isOpenedTrends=false;]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="FromWhere" display-name="FromWhere" uuid="1ca225a5-6786-4714-859f-62925867a486" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="4"/>
+	<object access-modifier="private" name="TrendsWidth" display-name="TrendsWidth" uuid="80b3ef28-236a-44df-ad5b-b6f1a6c9bd28" base-type="notifying_float8" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="4"/>
+	<object access-modifier="private" name="TrendsHeight" display-name="TrendsHeight" uuid="69d7fec9-b7e9-42f4-a4d8-784b868dd5a3" base-type="notifying_float8" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="4"/>
+</type>
+

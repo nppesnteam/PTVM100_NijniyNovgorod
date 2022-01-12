@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<omx xmlns="system" migration="21" xmlns:dp="automation.deployment" xmlns:ct="automation.control" xmlns:r="automation.reference" xmlns:a="automation" xmlns:opc="automation.opc" xmlns:eth="automation.ethernet" xmlns:srv="server">
+  <link-unit name="System" uuid="b10bc0ab-5f52-4136-8429-339a5a11f156" target="Om.System" />
+  <link-unit name="Server" uuid="1f7f6b33-22c3-4acc-ac5a-b1af6e38b944" target="Om.Server" />
+  <dp:domain name="Domain" uuid="8b7f931d-0c52-490c-91b2-3b74e8d3d377" address="Node_Domain">
+    <dp:domain-node name="NOTEBOOK" uuid="205e4e33-a46a-486c-bed1-0659c5f2932d">
+      <eth:ethernet-adapter name="EthernetAdapter" address="127.0.0.1" network="Local" />
+      <eth:ethernet-adapter name="EthernetAdapter1" uuid="972821bf-6d4b-4a40-ab90-51d558d261ba" address="192.168.56.1" network="Ethernet1" />
+      <srv:historian name="Historian" uuid="7be10cfe-9d0b-4a5c-9dbd-c0c607d5a982">
+        <srv:historian-database name="DB_History" alias="DB_History" />
+        <historian-database name="DB_Events" xmlns="server" usage="events" alias="DB_Events" />
+      </srv:historian>
+      <srv:io-server name="AlphaServer" uuid="1851f6d2-bfb3-423b-bc56-8f454469e176">
+        <srv:opcda-server name="DaServer" uuid="877c545c-d1d5-4626-a0c1-98ceecd2bddf" />
+        <srv:opcaeserver-module name="AeServer" uuid="09cb15f3-c67f-4a47-a5cb-3948931505b4" />
+        <srv:hda-server name="HdaServer" uuid="3da180b9-84bb-449c-8085-af8aab937fa1" />
+        <srv:history-module name="HistoryModule" uuid="4f36f4c4-d434-4187-b6ae-74bf86c27c9b">
+          <srv:historian-database-link database="Historian.DB_Events" />
+          <srv:historian-database-link database="Historian.DB_History" />
+        </srv:history-module>
+        <srv:opcua-module name="UaServer" uuid="9b09f94b-f0e8-4dd8-97c6-0bbc4c763147" />
+        <srv:opcua-client name="OpcUaClient" uuid="2ce6c5cf-6ab0-479f-8a66-9b5f21c45738">
+          <srv:opcua-server-link server="PLC.Runtime.OpcUaServer" security-mode="none" sampling-interval="500" />
+        </srv:opcua-client>
+        <dp:host module="IOS_App.AppModule" />
+        <dp:ref-to module="PLC.Runtime.PLC_App.AppModule" />
+      </srv:io-server>
+    </dp:domain-node>
+    <eth:ethernet-net name="Local" />
+    <ethernet-net name="Ethernet1" xmlns="automation.ethernet" />
+    <dp:computer name="PLC" uuid="8a9720b5-cc7b-4275-8be1-5cff550a35f2">
+      <eth:ethernet-adapter name="EthernetAdapter" address="192.168.56.27" network="Ethernet1" />
+      <dp:external-runtime name="Runtime" uuid="ca84ac37-dd76-40f6-8765-24a2d6bcf4f5">
+        <dp:application-object name="PLC_App" uuid="8d9beb07-0316-49fa-a1bf-d3e05e4f9f50">
+          <dp:exec-module name="AppModule" uuid="5eeff558-b604-4936-bf1f-69d6f5257aa5">
+            <dp:object ref="PLC_App" />
+          </dp:exec-module>
+          <ct:object name="ROOT" uuid="df72ea23-ba96-4f36-9a48-b8a416e48470">
+            <ct:object name="AI" uuid="b87ecd23-d89e-488f-96eb-d4f7ea17f830">
+              <ct:object name="AI1" uuid="44feda44-3b11-440c-a1c0-37d1b14b807a" base-type="Types.AI.PLC_View" aspect="Aspects.PLC_Aspect" />
+            </ct:object>
+          </ct:object>
+          <opc:opcua-link-map name="OpcUaAddressMap" uuid="3f0b1b6f-a62c-40d2-b679-fa959e3cd4c7" file="OPCUA_MAP.xml" />
+        </dp:application-object>
+        <dp:host module="PLC_App.AppModule" replicate="false">
+          <dp:deliver-with adapter="OpcUaServer" />
+        </dp:host>
+        <opc:opcua-server name="OpcUaServer" uuid="2cf86c2a-f319-4add-9221-d2a8e4c5b575" tag-map="PLC_App.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48010" />
+      </dp:external-runtime>
+    </dp:computer>
+    <dp:application-object name="IOS_App" uuid="28985c17-7d18-4cac-b712-ec3f38d5543e">
+      <dp:exec-module name="AppModule" uuid="83464f57-c692-4349-8b1f-76ac1cba9228">
+        <dp:object ref="IOS_App" />
+      </dp:exec-module>
+      <ct:object name="ROOT" uuid="2966e0c3-d943-4948-baae-aa2605b4dcc7" aspect="Aspects.IOS_Aspect" original="PLC.Runtime.PLC_App.ROOT">
+        <ct:object name="AI" uuid="75e482ad-f652-4ae1-bd0a-9f418eb29315" aspect="Aspects.IOS_Aspect" original="PLC.Runtime.PLC_App.ROOT.AI">
+          <ct:object name="AI1" uuid="328b1fd5-6129-42c2-a2d4-eca065cf49b4" original="PLC.Runtime.PLC_App.ROOT.AI.AI1" base-type="Types.AI.IOS_View" aspect="Aspects.IOS_Aspect">
+            <r:init-ref ref="_PLC_View" target="PLC.Runtime.PLC_App.ROOT.AI.AI1" />
+          </ct:object>
+        </ct:object>
+      </ct:object>
+    </dp:application-object>
+  </dp:domain>
+  <link-unit name="PLC" uuid="6021b6d8-5c9a-4a46-aef5-70a539193387" target="Om.PLC" />
+  <namespace name="Aspects" uuid="cf848c6a-b437-4af5-8011-0895f044ac26">
+    <a:aspect name="PLC_Aspect" />
+    <a:aspect name="IOS_Aspect" />
+  </namespace>
+  <namespace name="Types" xmlns="system" uuid="f4b1b109-6b5a-41cf-86e7-6351ad7105f6">
+    <ct:type name="AI" uuid="052eb6e7-546c-480c-8672-8c9256ca17d0">
+      <ct:type name="PLC_View" uuid="ffb133e9-0b9b-472b-b152-693590b6012b" original="AI" aspect="Aspects.PLC_Aspect">
+        <ct:parameter name="bPaswOK" uuid="e4f0318f-41a9-4233-a9e0-8b02292b08a6" type="bool" />
+      </ct:type>
+      <type name="IOS_View" xmlns="automation.control" uuid="cb7ef9d8-afe3-4ca3-b6df-24003d1aba5e" aspect="Aspects.IOS_Aspect" original="AI">
+        <r:ref name="_PLC_View" uuid="c7da65a6-0832-4f4d-be89-da5add5edc83" type="PLC_View" aspected="false" />
+        <parameter name="rbPaswOK" uuid="f8b7c789-5016-485e-b28f-62730d4e4b90" direction="out" type="bool" />
+        <bind source="_PLC_View.bPaswOK" target="rbPaswOK" />
+        <parameter name="wbPaswOK" direction="in" type="bool" xmlns="automation.control" uuid="feb30b88-2286-4168-928c-56bf35e816e8">
+          <attribute type="unit.System.Attributes.InitialValue" value="false" xmlns="system" />
+        </parameter>
+        <bind source="wbPaswOK" target="_PLC_View.bPaswOK" />
+      </type>
+    </ct:type>
+  </namespace>
+</omx>

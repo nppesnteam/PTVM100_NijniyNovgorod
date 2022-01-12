@@ -1,0 +1,656 @@
+<type access-modifier="private" name="FlapWithSettings" display-name="FlapWithSettings" uuid="4cc80454-f0cf-4879-8e38-2c16930c7fae" base-type="crane" base-type-id="a41f6a47-a3c4-4aed-b634-50f79381fb31" ver="3">
+	<designed target="X" value="0" ver="3"/>
+	<designed target="Y" value="0" ver="3"/>
+	<designed target="Rotation" value="0" ver="3"/>
+	<object access-modifier="private" name="ValueContainer" display-name="ValueContainer" uuid="55a454e3-f17e-4da4-b31a-6cfc7bea0146" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="3">
+		<designed target="X" value="36" ver="3"/>
+		<designed target="Y" value="5" ver="3"/>
+		<designed target="ZValue" value="0" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<designed target="Scale" value="1" ver="3"/>
+		<designed target="Visible" value="true" ver="3"/>
+		<designed target="Opacity" value="1" ver="3"/>
+		<designed target="Enabled" value="true" ver="3"/>
+		<designed target="Tooltip" value="" ver="3"/>
+		<designed target="Width" value="24" ver="3"/>
+		<designed target="Height" value="10" ver="3"/>
+		<designed target="RoundingRadius" value="0" ver="3"/>
+		<designed target="PenColor" value="0xffd9d9d9" ver="3"/>
+		<designed target="PenStyle" value="1" ver="3"/>
+		<designed target="PenWidth" value="0.5" ver="3"/>
+		<designed target="BrushColor" value="0xff787878" ver="3"/>
+		<designed target="BrushStyle" value="1" ver="3"/>
+		<object access-modifier="private" name="txtValue" display-name="txtValue" uuid="c318a962-de75-48e3-b4a3-cc44764922bf" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="3">
+			<designed target="X" value="0" ver="3"/>
+			<designed target="Y" value="-0.5" ver="3"/>
+			<designed target="ZValue" value="0" ver="3"/>
+			<designed target="Rotation" value="0" ver="3"/>
+			<designed target="Scale" value="1" ver="3"/>
+			<designed target="Visible" value="true" ver="3"/>
+			<designed target="Opacity" value="1" ver="3"/>
+			<designed target="Enabled" value="true" ver="3"/>
+			<designed target="Tooltip" value="" ver="3"/>
+			<designed target="Width" value="24" ver="3"/>
+			<designed target="Height" value="10" ver="3"/>
+			<designed target="Text" value="0" ver="3"/>
+			<designed target="Font" value="MS Shell Dlg 2,8,-1,5,50,0,0,0,0,0,Regular" ver="3"/>
+			<designed target="FontColor" value="0xff00ff00" ver="3"/>
+			<designed target="TextAlignment" value="132" ver="3"/>
+			<do-trace access-modifier="private" target="Text" ver="4">
+				<body>
+					<![CDATA[OutpuValue.OutValue]]>
+				</body>
+			</do-trace>
+		</object>
+		<do-trace access-modifier="private" target="Rotation" ver="4">
+			<body>
+				<![CDATA[ValueContainerGrad]]>
+			</body>
+		</do-trace>
+		<object access-modifier="private" name="OutpuValue" display-name="OutpuValue" uuid="2d33b97a-3c94-4504-8f1c-222d564cda36" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="4">
+			<designed target="InValue" value="" ver="4"/>
+			<do-trace access-modifier="private" target="InValue" ver="4">
+				<body>
+					<![CDATA[VALUE]]>
+				</body>
+			</do-trace>
+			<init target="Format" ver="4" ref="Format1"/>
+		</object>
+		<object access-modifier="private" name="Format1" display-name="Format1" uuid="7dc8c767-6dcb-4f9e-9788-4bb0b8b6561a" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
+			<designed target="DigitsCount" value="0" ver="4"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Triangle" display-name="Triangle" uuid="995a9483-3ef3-4b09-9d7f-a5a82d8e1548" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="3">
+		<designed target="X" value="1" ver="3"/>
+		<designed target="Y" value="3" ver="3"/>
+		<designed target="ZValue" value="0" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<designed target="Scale" value="1" ver="3"/>
+		<designed target="Visible" value="true" ver="3"/>
+		<designed target="Opacity" value="1" ver="3"/>
+		<designed target="Enabled" value="true" ver="3"/>
+		<designed target="Tooltip" value="" ver="3"/>
+		<designed target="Width" value="7" ver="3"/>
+		<designed target="Height" value="14" ver="3"/>
+		<designed target="PenColor" value="0xff888888" ver="3"/>
+		<designed target="PenStyle" value="1" ver="3"/>
+		<designed target="PenWidth" value="1" ver="3"/>
+		<designed target="BrushColor" value="0xff000000" ver="3"/>
+		<designed target="BrushStyle" value="1" ver="3"/>
+		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="5747b59f-8f25-44b3-ba0d-be3977ec52c4" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="0" ver="3"/>
+			<designed target="Y" value="0" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="604872b3-2ca2-4f0f-a8db-95d01f1c8fad" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="0" ver="3"/>
+			<designed target="Y" value="14" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="6d4a15de-6137-4b4a-9240-1a000c34b4de" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="-7" ver="3"/>
+			<designed target="Y" value="7" ver="3"/>
+		</object>
+		<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="a74360aa-23f5-4dc6-9e48-e830d93b1594" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
+			<designed target="X" value="0" ver="3"/>
+			<designed target="Y" value="0" ver="3"/>
+		</object>
+		<do-trace access-modifier="private" target="BrushColor" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[outStrMode=="РУЧНОЙ"]]>
+				</condition>
+				<expr>
+					<![CDATA[0xffff0000]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[outStrMode=="АВТОМАТ"]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xff000000]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ValueContainerGrad" display-name="ValueContainerGrad" uuid="1871a0a0-6a97-4510-80b2-aea09c3deaaf" base-type="notifying_float8" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="4"/>
+	<param access-modifier="private" name="initOPCSource" display-name="initOPCSource" uuid="d4150797-4627-4e82-9ea7-73f3647cdebf" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" base-const="true" base-ref="true" ver="4"/>
+	<param access-modifier="private" name="initPath" display-name="initPath" uuid="bd9d1332-d762-4ff8-b2b6-d749ba261a84" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+	<object access-modifier="private" name="hereOPCSource" display-name="hereOPCSource" uuid="8cde904c-d8a9-49e5-9ae5-0f6fd163a7c9" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+		<designed target="Active" value="false" ver="4"/>
+		<designed target="UpdateRate" value="0" ver="4"/>
+		<designed target="ReAdvise" value="0" ver="4"/>
+		<init target="ParentSource" ver="4" ref="initOPCSource"/>
+		<init target="Path" ver="4" ref="initPath"/>
+	</object>
+	<object access-modifier="private" name="KKS" display-name="KKS" uuid="129ee4c5-a817-4b75-a905-9d0bcab5cc3b" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="KKS"/>
+	</object>
+	<object access-modifier="private" name="NAME" display-name="NAME" uuid="889d1cdb-a0eb-4474-8b7d-0187ed415dd1" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="NAME"/>
+	</object>
+	<object access-modifier="private" name="Low" display-name="Low" uuid="5082461c-8bea-4452-ae45-dfd3908ea767" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="Low"/>
+	</object>
+	<object access-modifier="private" name="High" display-name="High" uuid="80341cbf-32a5-49d1-9a4f-f8eddf671ac9" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="High"/>
+	</object>
+	<object access-modifier="private" name="Mid" display-name="Mid" uuid="c2951477-139d-4f16-8c1d-27db379fdea8" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="Mid"/>
+	</object>
+	<object access-modifier="private" name="OutOutH" display-name="OutOutH" uuid="351d6bca-689e-41fe-847f-d372ed13d667" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="OutOutH"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[if (me.Value == true)
+{
+	readOn=false;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="OutOutL" display-name="OutOutL" uuid="e290885b-a7be-435e-829c-fec3365e1159" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="OutOutL"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[if (me.Value == true)
+{
+	readOn=false;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="VALUE" display-name="VALUE" uuid="6fdfe306-d687-45bf-981a-26cb8423c95e" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="Posit"/>
+	</object>
+	<object access-modifier="private" name="mX" display-name="mX" uuid="2ad7d552-fa1c-4778-b6ab-c62c4588f3cd" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
+	<object access-modifier="private" name="mY" display-name="mY" uuid="04852895-6f3b-410a-bef3-40d98149c756" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
+	<object access-modifier="private" name="OpenModuleWindow" display-name="OpenModuleWindow" uuid="5eb509bd-95a5-4ba1-a071-57936775d173" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4" cardinal="1">
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="InvokeTrigger" value="false" ver="4"/>
+		<do-trace access-modifier="private" target="Enabled" ver="4">
+			<body>
+				<![CDATA[!isOpenedModule]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-action="open-new" form-by-id="false">
+			<object access-modifier="private" uuid="0dbb1d62-181f-4109-a52b-dc3368798e6f" base-type="Заслонка" base-type-id="d5ad689c-b93f-45e5-a8a5-5d7dd4c15e5b" ver="4">
+				<designed target="ShowWindowCaption" value="true" ver="4"/>
+				<designed target="ShowWindowMinimize" value="false" ver="4"/>
+				<designed target="WindowCaption" value="Заслонка" ver="4"/>
+				<designed target="ShowWindowMaximize" value="false" ver="4"/>
+				<designed target="WindowBorderStyle" value="2" ver="4"/>
+				<init target="WindowCaption" ver="4">
+					<expr>
+						<![CDATA[KKS]]>
+					</expr>
+				</init>
+				<init target="refData" ver="4" ref="here"/>
+				<init target="WindowX" ver="4">
+					<expr>
+						<![CDATA[mX]]>
+					</expr>
+				</init>
+				<init target="WindowY" ver="4">
+					<expr>
+						<![CDATA[mY]]>
+					</expr>
+				</init>
+				<init target="hereTask" ver="4">
+					<expr>
+						<![CDATA[outTASK]]>
+					</expr>
+				</init>
+			</object>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="isOpenedModule" display-name="isOpenedModule" uuid="0e8a00c7-7e97-428f-8368-e8742a082ec7" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
+		<body kind="om">
+			<![CDATA[mX = TypeConvert.ToFloat(ScreenX(MouseX, MouseY));
+mY = TypeConvert.ToFloat(ScreenY(MouseX, MouseY));
+OpenModuleWindow.Invoke();]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="PARAM" display-name="PARAM" uuid="10d1876c-6fac-4e69-8956-a7ffe4a2d017" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="Param"/>
+	</object>
+	<object access-modifier="private" name="outTASK" display-name="outTASK" uuid="2cd901af-326a-4d02-9881-5b5d7e75305a" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="OutfSetPgCollect"/>
+	</object>
+	<object access-modifier="private" name="inTASK" display-name="inTASK" uuid="b8e491f9-2adc-4c2d-b1fe-62cec49326d0" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="InfSetPgCollect"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[if (SetChanged==true)
+{
+	unit.Global.ShowMSG("Настройка \""+me.Description+"\" объекта \""+NAME.ValueAsString+"\" изменена на "+me.ValueAsString+".",2);
+	SetChanged=false;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="outSETL" display-name="outSETL" uuid="5c23a92d-031e-4fc7-a4c5-90fd9a1f661b" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="OutfSetL"/>
+	</object>
+	<object access-modifier="private" name="inSETL" display-name="inSETL" uuid="4b343cc8-4b8f-4b2a-9a4a-14add06593fb" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="InfSetL"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[if (SetChanged==true)
+{
+	unit.Global.ShowMSG("Настройка \""+me.Description+"\" объекта \""+NAME.ValueAsString+"\" изменена на "+me.ValueAsString+".",2);
+	SetChanged=false;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="outSETH" display-name="outSETH" uuid="d89032e8-66fe-4760-8558-7f454aa0d524" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="OutfSetH"/>
+	</object>
+	<object access-modifier="private" name="inSETH" display-name="inSETH" uuid="f5249a78-acd9-4f2e-98b5-2082f6dc4f87" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="InfSetH"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[if (SetChanged==true)
+{
+	unit.Global.ShowMSG("Настройка \""+me.Description+"\" объекта \""+NAME.ValueAsString+"\" изменена на "+me.ValueAsString+".",2);
+	SetChanged=false;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="outTFillIn" display-name="outTFillIn" uuid="1537bf6d-83af-4a81-9ca5-b01f62857261" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="OutTFillIn"/>
+	</object>
+	<object access-modifier="private" name="inTFillIn" display-name="inTFillIn" uuid="1fd1ac38-80a1-4533-ba48-66b3babc03c8" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="InTFillIn"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[if (SetChanged==true)
+{
+	unit.Global.ShowMSG("Настройка \""+me.Description+"\" объекта \""+NAME.ValueAsString+"\" изменена на "+me.ValueAsString+".",2);
+	SetChanged=false;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="outFDead" display-name="outFDead" uuid="837f0f32-62cb-4e30-bcd0-a699e27c5a99" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="OutfDead"/>
+	</object>
+	<object access-modifier="private" name="inFDead" display-name="inFDead" uuid="1c8e5c92-d167-490f-b70e-d0737287d688" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="InFDead"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[if (SetChanged==true)
+{
+	unit.Global.ShowMSG("Настройка \""+me.Description+"\" объекта \""+NAME.ValueAsString+"\" изменена на "+me.ValueAsString+".",2);
+	SetChanged=false;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="outfKp" display-name="outfKp" uuid="b332628c-8647-4212-8c03-192646dda9ed" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="outfKp"/>
+	</object>
+	<object access-modifier="private" name="infKp" display-name="infKp" uuid="76075e32-f090-481a-85e7-fea7c5c1ffaa" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="infKp"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[if (SetChanged==true)
+{
+	unit.Global.ShowMSG("Настройка \""+me.Description+"\" объекта \""+NAME.ValueAsString+"\" изменена на "+me.ValueAsString+".",2);
+	SetChanged=false;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="outfTi" display-name="outfTi" uuid="a73f77a3-b764-4d6c-8f88-4caa5898a889" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="outfTi"/>
+	</object>
+	<object access-modifier="private" name="infTi" display-name="infTi" uuid="95912b8f-43bc-45cc-9ba4-74cf7cbb3466" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="infTi"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[if (SetChanged==true)
+{
+	unit.Global.ShowMSG("Настройка \""+me.Description+"\" объекта \""+NAME.ValueAsString+"\" изменена на "+me.ValueAsString+".",2);
+	SetChanged=false;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="outfTd" display-name="outfTd" uuid="72abd5ca-3d7c-40d6-b775-22d0fb563a44" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="outfTd"/>
+	</object>
+	<object access-modifier="private" name="infTd" display-name="infTd" uuid="7b0f1da9-61c3-4cf6-9812-42ee049266d8" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="infTd"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[if (SetChanged==true)
+{
+	unit.Global.ShowMSG("Настройка \""+me.Description+"\" объекта \""+NAME.ValueAsString+"\" изменена на "+me.ValueAsString+".",2);
+	SetChanged=false;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="outfTm" display-name="outfTm" uuid="820009a4-af54-42de-9f75-e4088ad9f694" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="outfTm"/>
+	</object>
+	<object access-modifier="private" name="infTm" display-name="infTm" uuid="76ea78f3-f697-4160-9413-55b49f23e9b2" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="infTm"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[if (SetChanged==true)
+{
+	unit.Global.ShowMSG("Настройка \""+me.Description+"\" объекта \""+NAME.ValueAsString+"\" изменена на "+me.ValueAsString+".",2);
+	SetChanged=false;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="outfTmin" display-name="outfTmin" uuid="0e7d3156-a5eb-4178-b772-fda1ab09af58" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="outfTmin"/>
+	</object>
+	<object access-modifier="private" name="infTmin" display-name="infTmin" uuid="b1d1345e-bac1-48fe-a971-96a9f197b1d1" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="infTmin"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[if (SetChanged==true)
+{
+	unit.Global.ShowMSG("Настройка \""+me.Description+"\" объекта \""+NAME.ValueAsString+"\" изменена на "+me.ValueAsString+".",2);
+	SetChanged=false;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="outStrMode" display-name="outStrMode" uuid="6efa1317-3063-4087-a616-867eaf4cdd81" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="OutMan_On"/>
+	</object>
+	<object access-modifier="private" name="InOutH" display-name="InOutH" uuid="f142264d-b229-4338-aca4-506fc3b1c998" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="InOutH"/>
+	</object>
+	<object access-modifier="private" name="InOutL" display-name="InOutL" uuid="6158b42a-1993-4a7e-96c7-16f80ae90f05" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="InOutL"/>
+	</object>
+	<object access-modifier="private" name="OpenSettingsWindow" display-name="OpenSettingsWindow" uuid="71c65a52-d489-4a3a-af5e-bc04c641069f" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4" cardinal="1">
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="InvokeTrigger" value="false" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-action="open-new" form-by-id="false">
+			<object access-modifier="private" uuid="90099a85-0319-4aba-a00b-86375f086339" base-type="Заслонка (настройка)" base-type-id="46596f56-4b79-42f7-80dd-b3b26b02ca90" ver="4">
+				<init target="refData" ver="4" ref="here"/>
+				<init target="WindowX" ver="4">
+					<expr>
+						<![CDATA[posX]]>
+					</expr>
+				</init>
+				<init target="WindowY" ver="4">
+					<expr>
+						<![CDATA[posY]]>
+					</expr>
+				</init>
+			</object>
+		</do-on>
+		<do-trace access-modifier="private" target="Enabled" ver="4">
+			<body>
+				<![CDATA[!isOpenedSettings]]>
+			</body>
+		</do-trace>
+	</object>
+	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="MouseRightClick">
+		<body kind="om">
+			<![CDATA[mX = TypeConvert.ToFloat(ScreenX(MouseX, MouseY));
+mY = TypeConvert.ToFloat(ScreenY(MouseX, MouseY));
+if (mX+402>1920)
+{
+	posX=mX-(410-(1920-mX));
+}
+else
+{
+	posX=mX;
+}
+if (mY+460>1080)
+{
+	posY=mY-(460-(1080-mY));
+}
+else
+{
+	posY=mY;
+}
+OpenSettingsWindow.Invoke();]]>
+		</body>
+	</do-on>
+	<object access-modifier="private" name="isOpenedSettings" display-name="isOpenedSettings" uuid="d23dbc6c-69f4-4353-864e-dfafa483b3ba" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+	<object access-modifier="private" name="step" display-name="step" uuid="a3e682fa-666e-4db2-b8e5-53647bf3afa4" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
+	<object access-modifier="private" name="MisAlign" display-name="MisAlign" uuid="e69a541d-f400-4991-9365-025318978d72" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="MisAlign"/>
+	</object>
+	<object access-modifier="private" name="posX" display-name="posX" uuid="c54d35c4-625d-4a1a-8665-d0c71b78eafa" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
+	<object access-modifier="private" name="posY" display-name="posY" uuid="991965d0-3512-4967-835b-9514415b19f6" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
+	<object access-modifier="private" name="TimerCount" display-name="TimerCount" uuid="03efe82a-a8ba-49d9-ba00-671edc926b9c" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="4">
+		<designed target="Period" value="1000" ver="4"/>
+		<designed target="Active" value="true" ver="4"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnTimer">
+			<body kind="om">
+				<![CDATA[OnCount-=On1s[counter];
+On1s[counter]=0;
+if (readOn == false)
+{
+	On1s[counter]=1;
+	readOn = true;
+}
+OnCount+=On1s[counter];
+counter+=1;
+if (counter == 60)
+{
+	counter=0;
+}
+]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="OnCount" display-name="OnCount" uuid="c2136232-9f80-4481-bae3-5f4cde992bb3" base-type="notifying_uint8" base-type-id="2e6d6c20-2489-49e1-9d5f-fe68a21b43df" ver="4"/>
+	<object access-modifier="private" name="On1s" display-name="On1s" uuid="3cdc3bc8-2aef-41ed-b4d4-89a2367e9df3" base-type="notifying_uint1" base-type-id="fed14c54-414c-56bd-549a-8d761c4d6200" ver="4" cardinal="60"/>
+	<object access-modifier="private" name="readOn" display-name="readOn" uuid="b79294c6-74a5-4f6b-8383-91b39505c439" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+	<object access-modifier="private" name="counter" display-name="counter" uuid="5130fb74-16fd-4624-af0d-257e4127f45f" base-type="notifying_uint1" base-type-id="fed14c54-414c-56bd-549a-8d761c4d6200" ver="4"/>
+	<init target="counter" ver="4" value="0"/>
+	<init target="On1s" ver="4" value="0"/>
+	<init target="readOn" ver="4" value="true"/>
+	<init target="OnCount" ver="4" value="0"/>
+	<do-trace access-modifier="private" target="Tooltip" ver="4">
+		<body>
+			<![CDATA[NAME]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="EU" display-name="EU" uuid="93e9e5e7-1e94-4d8a-93a8-c06c90ba1d11" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="EU"/>
+	</object>
+	<param access-modifier="private" name="initPathForGraph" display-name="initPathForGraph" uuid="f1178f24-5328-4bc7-8bf7-75b785cbd9e9" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+	<object access-modifier="private" name="hereOPCSourceForGraph" display-name="hereOPCSourceForGraph" uuid="e7bfda9d-afeb-4b5d-9a77-594f903aa481" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+		<designed target="Active" value="false" ver="4"/>
+		<designed target="UpdateRate" value="0" ver="4"/>
+		<designed target="ReAdvise" value="0" ver="4"/>
+		<init target="ParentSource" ver="4" ref="initOPCSource"/>
+		<init target="Path" ver="4" ref="initPathForGraph"/>
+	</object>
+	<object access-modifier="private" name="NAMEForGraph" display-name="NAMEForGraph" uuid="6eadc41a-1db1-40ce-ae64-df57e003882c" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+		<init target="Path" ver="4" value="NAME"/>
+		<init target="Source" ver="4" ref="hereOPCSourceForGraph"/>
+	</object>
+	<object access-modifier="private" name="VALUEForGraph" display-name="VALUEForGraph" uuid="420cfdc5-5d08-4224-9dd0-e3d8b0c04096" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSourceForGraph"/>
+		<init target="Path" ver="4" value="VALUE"/>
+	</object>
+	<object access-modifier="private" name="EUForGraph" display-name="EUForGraph" uuid="b816e030-b818-4ab0-ab79-53b78e38357f" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+		<init target="Path" ver="4" value="EU"/>
+		<init target="Source" ver="4" ref="hereOPCSourceForGraph"/>
+	</object>
+	<object access-modifier="private" name="Divider" display-name="Divider" uuid="a6c632d8-772c-44a0-a7a6-2e18be8d4683" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="3">
+		<designed target="X" value="23" ver="3"/>
+		<designed target="Y" value="0" ver="3"/>
+		<designed target="ZValue" value="0" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<designed target="Scale" value="1" ver="3"/>
+		<designed target="Visible" value="true" ver="3"/>
+		<designed target="Opacity" value="1" ver="3"/>
+		<designed target="Enabled" value="true" ver="3"/>
+		<designed target="Tooltip" value="" ver="3"/>
+		<designed target="Width" value="10" ver="3"/>
+		<designed target="Height" value="20" ver="3"/>
+		<designed target="RoundingRadius" value="0" ver="3"/>
+		<designed target="PenColor" value="0xff888888" ver="3"/>
+		<designed target="PenStyle" value="1" ver="3"/>
+		<designed target="PenWidth" value="1" ver="3"/>
+		<designed target="BrushColor" value="0xff787878" ver="3"/>
+		<designed target="BrushStyle" value="1" ver="3"/>
+		<do-trace access-modifier="private" target="PenColor" ver="3">
+			<body>
+				<![CDATA[Color]]>
+			</body>
+		</do-trace>
+		<object access-modifier="private" name="Open" display-name="Open" uuid="3697a645-3cb3-4ff3-bc07-a7e42efe1cf9" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
+			<designed target="X" value="0" ver="4"/>
+			<designed target="Y" value="10" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="10" ver="4"/>
+			<designed target="Height" value="10" ver="4"/>
+			<designed target="PenColor" value="0xff00ff00" ver="4"/>
+			<designed target="PenStyle" value="1" ver="4"/>
+			<designed target="PenWidth" value="1" ver="4"/>
+			<designed target="BrushColor" value="0xff00ff00" ver="4"/>
+			<designed target="BrushStyle" value="1" ver="4"/>
+			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="34e1b4a7-c95a-4fb3-b4aa-56a56bc17a97" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+				<designed target="X" value="0" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+			</object>
+			<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="2dbd5d2e-ace4-4957-b7e3-09bc3b00e9ff" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+				<designed target="X" value="5" ver="4"/>
+				<designed target="Y" value="-10" ver="4"/>
+			</object>
+			<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="883c8472-29bf-490b-b672-ad7658dfdab0" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+				<designed target="X" value="10" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+			</object>
+			<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="d4770f0d-10b5-46c6-b573-ec4f0aa59a08" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+				<designed target="X" value="0" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+			</object>
+			<do-trace access-modifier="private" target="Visible" ver="4">
+				<body>
+					<![CDATA[OutOutH]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="Close" display-name="Close" uuid="c0cd9d33-1c67-493b-9630-f9ba7e65908d" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
+			<designed target="X" value="0" ver="4"/>
+			<designed target="Y" value="10" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="10" ver="4"/>
+			<designed target="Height" value="10" ver="4"/>
+			<designed target="PenColor" value="0xff00ff00" ver="4"/>
+			<designed target="PenStyle" value="1" ver="4"/>
+			<designed target="PenWidth" value="1" ver="4"/>
+			<designed target="BrushColor" value="0xff00ff00" ver="4"/>
+			<designed target="BrushStyle" value="1" ver="4"/>
+			<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="dd84fd17-af6b-4199-b09a-0299ceb148b7" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+				<designed target="X" value="0" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+			</object>
+			<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="aea66b93-caf7-4a70-8fbd-fead08f54cc6" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+				<designed target="X" value="5" ver="4"/>
+				<designed target="Y" value="10" ver="4"/>
+			</object>
+			<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="302ac798-5de1-40d2-ac40-69f686e07098" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+				<designed target="X" value="10" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+			</object>
+			<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="3135ed0c-b6f2-4a6b-8972-3fd8c86bb0dd" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+				<designed target="X" value="0" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+			</object>
+			<do-trace access-modifier="private" target="Visible" ver="4">
+				<body>
+					<![CDATA[OutOutL]]>
+				</body>
+			</do-trace>
+		</object>
+	</object>
+	<do-trace access-modifier="private" target="FillBot" ver="4">
+		<body>
+			<![CDATA[High||Err]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="NoL" display-name="NoL" uuid="3d47ebdc-7d5d-4c67-925e-50fde8c2d3b1" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+	<do-trace access-modifier="private" target="NoL" ver="4">
+		<body>
+			<![CDATA[High||Mid]]>
+		</body>
+	</do-trace>
+	<do-trace access-modifier="private" target="FillTop" ver="4">
+		<body>
+			<![CDATA[NoL||Err]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="Err" display-name="Err" uuid="98eeb8f6-cef4-43e7-a79d-f7cf64d405ed" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="Err"/>
+	</object>
+	<do-trace access-modifier="private" target="Alarm" ver="4">
+		<body>
+			<![CDATA[Err]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="SetChanged" display-name="SetChanged" uuid="0295633f-82d1-43a7-a70b-349ae6b232a6" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+</type>
+
