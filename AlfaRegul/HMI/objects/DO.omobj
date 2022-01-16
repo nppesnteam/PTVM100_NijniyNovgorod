@@ -94,26 +94,18 @@ OpenModuleWindow.Invoke();]]>
 				<![CDATA[i: uint1 = 0;
 while(i<32)
 {
-	VALUE[i].Path = "DO"+Str.ToString(i+1)+".H";
-	VALUEImit[i].Path = "DO"+Str.ToString(i+1)+".H";
-	NAME[i].Path = "DO"+Str.ToString(i+1)+".NAME";
-	KKS[i].Path = "DO"+Str.ToString(i+1)+".KKS";
+	VALUE[i].Path = "Channel"+Str.ToString(i+1)+".H";
+	VALUEImit[i].Path = "Channel"+Str.ToString(i+1)+".Imit";
+	NAME[i].Path = "Channel"+Str.ToString(i+1)+".NAME";
+	KKS[i].Path = "Channel"+Str.ToString(i+1)+".KKS";
 	i += 1;
 }]]>
 			</body>
 		</do-on>
 	</object>
 	<object access-modifier="private" name="VALUEImit" display-name="VALUEImit" uuid="7f12bd54-318a-4ac9-b7a0-43f70f664b5d" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4" cardinal="32">
-		<init target="Source" ver="4" ref="hereOpcSourceImit"/>
+		<init target="Source" ver="4" ref="hereOpcSource"/>
 	</object>
-	<object access-modifier="private" name="hereOpcSourceImit" display-name="hereOpcSourceImit" uuid="d9850e54-db46-40d7-83a2-258ad342ec56" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
-		<designed target="Active" value="false" ver="4"/>
-		<designed target="UpdateRate" value="0" ver="4"/>
-		<designed target="ReAdvise" value="0" ver="4"/>
-		<init target="ParentSource" ver="4" ref="initOpcSource"/>
-		<init target="Path" ver="4" ref="initPathImit"/>
-	</object>
-	<param access-modifier="private" name="initPathImit" display-name="initPathImit" uuid="a246aa4f-a9da-4371-a9b7-1e95d1e286e1" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
 	<object access-modifier="private" name="OutFreeCtrl" display-name="OutFreeCtrl" uuid="58a61c13-d63f-4004-aee0-b0399e5ffd28" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4" cardinal="1">
 		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
 		<init target="Path" ver="4" value="ROOT.BOILER.OutFreeCtrlDO"/>

@@ -93,24 +93,24 @@ OpenModuleWindow.Invoke();]]>
 				<![CDATA[i: uint1 = 0;
 while(i<16)
 {
-	VALUE[i].Path = "AI"+Str.ToString(i+1)+".VALUE";
-	NAME[i].Path = "AI"+Str.ToString(i+1)+".NAME";
-	KKS[i].Path = "AI"+Str.ToString(i+1)+".KKS";
-	EU[i].Path = "AI"+Str.ToString(i+1)+".EU";	
-	InPerefMin[i].Path = "AI"+Str.ToString(i+1)+".InPerefMin";
-	InPerefMax[i].Path = "AI"+Str.ToString(i+1)+".InPerefMax";
-	InScaleMin[i].Path = "AI"+Str.ToString(i+1)+".InScaleMin";
-	InScaleMax[i].Path = "AI"+Str.ToString(i+1)+".InScaleMax";
-	InTFil[i].Path = "AI"+Str.ToString(i+1)+".InTFil";
-	InConvers[i].Path = "AI"+Str.ToString(i+1)+".InConvers";
-	InFDead[i].Path = "AI"+Str.ToString(i+1)+".InFDead";
-	OutPerefMin[i].Path = "AI"+Str.ToString(i+1)+".OutPerefMin";
-	OutPerefMax[i].Path = "AI"+Str.ToString(i+1)+".OutPerefMax";
-	OutScaleMin[i].Path = "AI"+Str.ToString(i+1)+".OutScaleMin";
-	OutScaleMax[i].Path = "AI"+Str.ToString(i+1)+".OutScaleMax";
-	OutTFil[i].Path = "AI"+Str.ToString(i+1)+".OutTFil";
-	OutConvers[i].Path = "AI"+Str.ToString(i+1)+".OutConvers";
-	OutFDead[i].Path = "AI"+Str.ToString(i+1)+".OutFDead";
+	VALUE[i].Path = "Channel"+Str.ToString(i+1)+".VALUE";
+	NAME[i].Path = "Channel"+Str.ToString(i+1)+".NAME";
+	KKS[i].Path = "Channel"+Str.ToString(i+1)+".KKS";
+	EU[i].Path = "Channel"+Str.ToString(i+1)+".EU";	
+	InPerefMin[i].Path = "Channel"+Str.ToString(i+1)+".InPerefMin";
+	InPerefMax[i].Path = "Channel"+Str.ToString(i+1)+".InPerefMax";
+	InScaleMin[i].Path = "Channel"+Str.ToString(i+1)+".InScaleMin";
+	InScaleMax[i].Path = "Channel"+Str.ToString(i+1)+".InScaleMax";
+	InTFil[i].Path = "Channel"+Str.ToString(i+1)+".InTFil";
+	InConvers[i].Path = "Channel"+Str.ToString(i+1)+".InConvers";
+	InFDead[i].Path = "Channel"+Str.ToString(i+1)+".InFDead";
+	OutPerefMin[i].Path = "Channel"+Str.ToString(i+1)+".OutPerefMin";
+	OutPerefMax[i].Path = "Channel"+Str.ToString(i+1)+".OutPerefMax";
+	OutScaleMin[i].Path = "Channel"+Str.ToString(i+1)+".OutScaleMin";
+	OutScaleMax[i].Path = "Channel"+Str.ToString(i+1)+".OutScaleMax";
+	OutTFil[i].Path = "Channel"+Str.ToString(i+1)+".OutTFil";
+	OutConvers[i].Path = "Channel"+Str.ToString(i+1)+".OutConvers";
+	OutFDead[i].Path = "Channel"+Str.ToString(i+1)+".OutFDead";
 	i += 1;
 }]]>
 			</body>

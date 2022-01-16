@@ -21,9 +21,9 @@
 	<designed target="WindowHeight" value="960" ver="3"/>
 	<designed target="WindowCaption" value="DiagForm" ver="3"/>
 	<designed target="ShowWindowCaption" value="true" ver="3"/>
-	<designed target="ShowWindowMinimize" value="true" ver="3"/>
-	<designed target="ShowWindowMaximize" value="true" ver="3"/>
-	<designed target="ShowWindowClose" value="true" ver="3"/>
+	<designed target="ShowWindowMinimize" value="false" ver="3"/>
+	<designed target="ShowWindowMaximize" value="false" ver="3"/>
+	<designed target="ShowWindowClose" value="false" ver="3"/>
 	<designed target="AlwaysOnTop" value="false" ver="3"/>
 	<designed target="WindowSizeMode" value="0" ver="3"/>
 	<designed target="WindowBorderStyle" value="0" ver="3"/>
@@ -32,617 +32,6 @@
 	<designed target="MonitorNumber" value="0" ver="3"/>
 	<designed target="WindowPosition" value="0" ver="3"/>
 	<designed target="WindowCloseMode" value="0" ver="3"/>
-	<object access-modifier="private" name="Crate_1" display-name="Crate_1" uuid="cb73005d-2ebc-449c-a3bb-71af5e733db3" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
-		<designed target="X" value="-1132" ver="4"/>
-		<designed target="Y" value="-382" ver="4"/>
-		<designed target="ZValue" value="0" ver="4"/>
-		<designed target="Rotation" value="0" ver="4"/>
-		<designed target="Scale" value="0.3" ver="4"/>
-		<designed target="Visible" value="true" ver="4"/>
-		<designed target="Opacity" value="1" ver="4"/>
-		<designed target="Enabled" value="true" ver="4"/>
-		<designed target="Tooltip" value="" ver="4"/>
-		<designed target="Width" value="3650" ver="4"/>
-		<designed target="Height" value="1175" ver="4"/>
-		<designed target="PenColor" value="4278190080" ver="4"/>
-		<designed target="PenStyle" value="0" ver="4"/>
-		<designed target="PenWidth" value="1" ver="4"/>
-		<designed target="BrushColor" value="4278190080" ver="4"/>
-		<designed target="BrushStyle" value="0" ver="4"/>
-		<designed target="OverrideScaling" value="false" ver="4"/>
-		<designed target="ShowScrollBars" value="true" ver="4"/>
-		<designed target="MoveByMouse" value="false" ver="4"/>
-		<object access-modifier="private" name="ST_02_012" display-name="ST_02_012" uuid="8cb6f6cc-3542-418e-8e1e-b361d4dec119" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
-			<designed target="X" value="0" ver="4"/>
-			<designed target="Y" value="144" ver="4"/>
-			<designed target="ZValue" value="0" ver="4"/>
-			<designed target="Rotation" value="0" ver="4"/>
-			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="true" ver="4"/>
-			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="true" ver="4"/>
-			<designed target="Tooltip" value="" ver="4"/>
-			<designed target="Width" value="276" ver="4"/>
-			<designed target="Height" value="887" ver="4"/>
-			<designed target="PenColor" value="4278190080" ver="4"/>
-			<designed target="PenStyle" value="0" ver="4"/>
-			<designed target="PenWidth" value="1" ver="4"/>
-			<designed target="ImageFile" value="ST_02_012.png" ver="4"/>
-			<designed target="Active" value="true" ver="4"/>
-			<designed target="CurrentFrameNumber" value="0" ver="4"/>
-			<designed target="Speed" value="1" ver="4"/>
-		</object>
-		<object access-modifier="private" name="PP_00_011_0" display-name="PP_00_011_0" uuid="d270c72e-ec0d-4fa5-bff9-210f43002539" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
-			<designed target="X" value="270" ver="4"/>
-			<designed target="Y" value="0" ver="4"/>
-			<designed target="ZValue" value="0" ver="4"/>
-			<designed target="Rotation" value="0" ver="4"/>
-			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="true" ver="4"/>
-			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="true" ver="4"/>
-			<designed target="Tooltip" value="" ver="4"/>
-			<designed target="Width" value="260" ver="4"/>
-			<designed target="Height" value="1174" ver="4"/>
-			<designed target="PenColor" value="4278190080" ver="4"/>
-			<designed target="PenStyle" value="0" ver="4"/>
-			<designed target="PenWidth" value="1" ver="4"/>
-			<designed target="ImageFile" value="PP_00_011.png" ver="4"/>
-			<designed target="Active" value="true" ver="4"/>
-			<designed target="CurrentFrameNumber" value="0" ver="4"/>
-			<designed target="Speed" value="1" ver="4"/>
-		</object>
-		<object access-modifier="private" name="CU_00_071_0" display-name="CU_00_071_0" uuid="2e85aa85-e96c-472a-8ff6-5f39c077bf35" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
-			<designed target="X" value="520" ver="4"/>
-			<designed target="Y" value="0" ver="4"/>
-			<designed target="ZValue" value="0" ver="4"/>
-			<designed target="Rotation" value="0" ver="4"/>
-			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="true" ver="4"/>
-			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="true" ver="4"/>
-			<designed target="Tooltip" value="" ver="4"/>
-			<designed target="Width" value="518" ver="4"/>
-			<designed target="Height" value="1174" ver="4"/>
-			<designed target="PenColor" value="4278190080" ver="4"/>
-			<designed target="PenStyle" value="0" ver="4"/>
-			<designed target="PenWidth" value="1" ver="4"/>
-			<designed target="ImageFile" value="CU_00_071.png" ver="4"/>
-			<designed target="Active" value="true" ver="4"/>
-			<designed target="CurrentFrameNumber" value="0" ver="4"/>
-			<designed target="Speed" value="1" ver="4"/>
-			<object access-modifier="private" name="rectState" display-name="rectState" uuid="0e41c7c1-2281-4f8c-81a2-bfd649fe63a0" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
-				<designed target="X" value="20" ver="4"/>
-				<designed target="Y" value="400" ver="4"/>
-				<designed target="ZValue" value="0" ver="4"/>
-				<designed target="Rotation" value="0" ver="4"/>
-				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="true" ver="4"/>
-				<designed target="Opacity" value="1" ver="4"/>
-				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="Tooltip" value="" ver="4"/>
-				<designed target="Width" value="225" ver="4"/>
-				<designed target="Height" value="50" ver="4"/>
-				<designed target="RoundingRadius" value="0" ver="4"/>
-				<designed target="PenColor" value="4278190080" ver="4"/>
-				<designed target="PenStyle" value="1" ver="4"/>
-				<designed target="PenWidth" value="1" ver="4"/>
-				<designed target="BrushColor" value="0xffacacac" ver="4"/>
-				<designed target="BrushStyle" value="1" ver="4"/>
-				<object access-modifier="private" name="txtState" display-name="txtState" uuid="f23c7402-6220-41ba-81b5-85ac8f7e9dba" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
-					<designed target="X" value="0" ver="4"/>
-					<designed target="Y" value="0" ver="4"/>
-					<designed target="ZValue" value="0" ver="4"/>
-					<designed target="Rotation" value="0" ver="4"/>
-					<designed target="Scale" value="1" ver="4"/>
-					<designed target="Visible" value="true" ver="4"/>
-					<designed target="Opacity" value="1" ver="4"/>
-					<designed target="Enabled" value="true" ver="4"/>
-					<designed target="Tooltip" value="" ver="4"/>
-					<designed target="Width" value="225" ver="4"/>
-					<designed target="Height" value="50" ver="4"/>
-					<designed target="Text" value="Статус" ver="4"/>
-					<designed target="Font" value="Arial,28,-1,5,75,0,0,0,0,0,Narrow Bold" ver="4"/>
-					<designed target="FontColor" value="4278190080" ver="4"/>
-					<designed target="TextAlignment" value="132" ver="4"/>
-					<do-trace access-modifier="private" target="Text" ver="4">
-						<conditional-expr>
-							<condition>
-								<![CDATA[CPU1_MAIN == true]]>
-							</condition>
-							<expr>
-								<![CDATA["Активный"]]>
-							</expr>
-						</conditional-expr>
-						<conditional-expr>
-							<condition>
-								<![CDATA[CPU1_MAIN == false]]>
-							</condition>
-							<expr>
-								<![CDATA["Резервный"]]>
-							</expr>
-						</conditional-expr>
-					</do-trace>
-				</object>
-				<do-trace access-modifier="private" target="BrushColor" ver="4">
-					<conditional-expr>
-						<condition>
-							<![CDATA[CPU1_MAIN == false]]>
-						</condition>
-						<expr>
-							<![CDATA[0xffacacac]]>
-						</expr>
-					</conditional-expr>
-					<conditional-expr>
-						<condition>
-							<![CDATA[CPU1_MAIN == true]]>
-						</condition>
-						<expr>
-							<![CDATA[0xff00ff00]]>
-						</expr>
-					</conditional-expr>
-				</do-trace>
-			</object>
-		</object>
-		<object access-modifier="private" name="CU_00_071_1" display-name="CU_00_071_1" uuid="f1189199-1372-46d9-a37e-1f72eabef01f" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
-			<designed target="X" value="1032" ver="4"/>
-			<designed target="Y" value="0" ver="4"/>
-			<designed target="ZValue" value="0" ver="4"/>
-			<designed target="Rotation" value="0" ver="4"/>
-			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="true" ver="4"/>
-			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="true" ver="4"/>
-			<designed target="Tooltip" value="" ver="4"/>
-			<designed target="Width" value="518" ver="4"/>
-			<designed target="Height" value="1174" ver="4"/>
-			<designed target="PenColor" value="4278190080" ver="4"/>
-			<designed target="PenStyle" value="0" ver="4"/>
-			<designed target="PenWidth" value="1" ver="4"/>
-			<designed target="ImageFile" value="CU_00_071.png" ver="4"/>
-			<designed target="Active" value="true" ver="4"/>
-			<designed target="CurrentFrameNumber" value="0" ver="4"/>
-			<designed target="Speed" value="1" ver="4"/>
-			<object access-modifier="private" name="rectState" display-name="rectState" uuid="6c4abaa2-cd66-4170-8822-8a4bca678dd5" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
-				<designed target="X" value="20" ver="4"/>
-				<designed target="Y" value="400" ver="4"/>
-				<designed target="ZValue" value="0" ver="4"/>
-				<designed target="Rotation" value="0" ver="4"/>
-				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="true" ver="4"/>
-				<designed target="Opacity" value="1" ver="4"/>
-				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="Tooltip" value="" ver="4"/>
-				<designed target="Width" value="225" ver="4"/>
-				<designed target="Height" value="50" ver="4"/>
-				<designed target="RoundingRadius" value="0" ver="4"/>
-				<designed target="PenColor" value="4278190080" ver="4"/>
-				<designed target="PenStyle" value="1" ver="4"/>
-				<designed target="PenWidth" value="1" ver="4"/>
-				<designed target="BrushColor" value="0xffacacac" ver="4"/>
-				<designed target="BrushStyle" value="1" ver="4"/>
-				<object access-modifier="private" name="txtState" display-name="txtState" uuid="ce4b8dcc-f9ba-43e7-93e5-75c78bb41881" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
-					<designed target="X" value="0" ver="4"/>
-					<designed target="Y" value="0" ver="4"/>
-					<designed target="ZValue" value="0" ver="4"/>
-					<designed target="Rotation" value="0" ver="4"/>
-					<designed target="Scale" value="1" ver="4"/>
-					<designed target="Visible" value="true" ver="4"/>
-					<designed target="Opacity" value="1" ver="4"/>
-					<designed target="Enabled" value="true" ver="4"/>
-					<designed target="Tooltip" value="" ver="4"/>
-					<designed target="Width" value="225" ver="4"/>
-					<designed target="Height" value="50" ver="4"/>
-					<designed target="Text" value="Статус" ver="4"/>
-					<designed target="Font" value="Arial,28,-1,5,75,0,0,0,0,0,Narrow Bold" ver="4"/>
-					<designed target="FontColor" value="4278190080" ver="4"/>
-					<designed target="TextAlignment" value="132" ver="4"/>
-					<do-trace access-modifier="private" target="Text" ver="4">
-						<conditional-expr>
-							<condition>
-								<![CDATA[CPU1_MAIN == false]]>
-							</condition>
-							<expr>
-								<![CDATA["Активный"]]>
-							</expr>
-						</conditional-expr>
-						<conditional-expr>
-							<condition>
-								<![CDATA[CPU1_MAIN == true]]>
-							</condition>
-							<expr>
-								<![CDATA["Резервный"]]>
-							</expr>
-						</conditional-expr>
-					</do-trace>
-				</object>
-				<do-trace access-modifier="private" target="BrushColor" ver="4">
-					<conditional-expr>
-						<condition>
-							<![CDATA[CPU1_MAIN == true]]>
-						</condition>
-						<expr>
-							<![CDATA[0xffacacac]]>
-						</expr>
-					</conditional-expr>
-					<conditional-expr>
-						<condition>
-							<![CDATA[CPU1_MAIN == false]]>
-						</condition>
-						<expr>
-							<![CDATA[0xff00ff00]]>
-						</expr>
-					</conditional-expr>
-				</do-trace>
-			</object>
-		</object>
-		<object access-modifier="private" name="AI_16_011_0" display-name="AI_16_011_0" uuid="851e3727-68ad-4183-af08-5c38689397ba" base-type="AI" base-type-id="9b579fb6-d797-4d72-89ea-5c3e6e63a0f4" ver="4">
-			<designed target="X" value="1545" ver="4"/>
-			<designed target="Y" value="0" ver="4"/>
-			<designed target="ZValue" value="0" ver="4"/>
-			<designed target="Rotation" value="0" ver="4"/>
-			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="true" ver="4"/>
-			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="true" ver="4"/>
-			<designed target="Tooltip" value="" ver="4"/>
-			<init target="initOpcSource" ver="4" ref="unit.Connections.OpcSource"/>
-			<init target="initPath" ver="4" value="ROOT.DIAG.AI.AI_16_011_0"/>
-		</object>
-		<object access-modifier="private" name="AI_16_011_1" display-name="AI_16_011_1" uuid="48a66a06-7b49-4cec-a006-389777a4dd24" base-type="AI" base-type-id="9b579fb6-d797-4d72-89ea-5c3e6e63a0f4" ver="4">
-			<designed target="X" value="1805" ver="4"/>
-			<designed target="Y" value="0" ver="4"/>
-			<designed target="ZValue" value="0" ver="4"/>
-			<designed target="Rotation" value="0" ver="4"/>
-			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="true" ver="4"/>
-			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="true" ver="4"/>
-			<designed target="Tooltip" value="" ver="4"/>
-			<init target="initPath" ver="4" value="ROOT.DIAG.AI.AI_16_011_1"/>
-			<init target="initOpcSource" ver="4" ref="unit.Connections.OpcSource"/>
-		</object>
-		<object access-modifier="private" name="AI_16_011_2" display-name="AI_16_011_2" uuid="32fcbd6e-5144-4cb7-9318-102e4de378f2" base-type="AI" base-type-id="9b579fb6-d797-4d72-89ea-5c3e6e63a0f4" ver="4">
-			<designed target="X" value="2065" ver="4"/>
-			<designed target="Y" value="0" ver="4"/>
-			<designed target="ZValue" value="0" ver="4"/>
-			<designed target="Rotation" value="0" ver="4"/>
-			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="true" ver="4"/>
-			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="true" ver="4"/>
-			<designed target="Tooltip" value="" ver="4"/>
-			<init target="initPath" ver="4" value="ROOT.DIAG.AI.AI_16_011_2"/>
-			<init target="initOpcSource" ver="4" ref="unit.Connections.OpcSource"/>
-		</object>
-		<object access-modifier="private" name="AI_16_011_3" display-name="AI_16_011_3" uuid="eaf414a0-bf41-4339-9a4c-ed33c0a02d39" base-type="AI" base-type-id="9b579fb6-d797-4d72-89ea-5c3e6e63a0f4" ver="4">
-			<designed target="X" value="2325" ver="4"/>
-			<designed target="Y" value="0" ver="4"/>
-			<designed target="ZValue" value="0" ver="4"/>
-			<designed target="Rotation" value="0" ver="4"/>
-			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="true" ver="4"/>
-			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="true" ver="4"/>
-			<designed target="Tooltip" value="" ver="4"/>
-			<init target="initPath" ver="4" value="ROOT.DIAG.AI.AI_16_011_3"/>
-			<init target="initOpcSource" ver="4" ref="unit.Connections.OpcSource"/>
-		</object>
-		<object access-modifier="private" name="AI_16_011_4" display-name="AI_16_011_4" uuid="80f759c2-10e3-4779-8607-12e1b0a47ea7" base-type="AI" base-type-id="9b579fb6-d797-4d72-89ea-5c3e6e63a0f4" ver="4">
-			<designed target="X" value="2585" ver="4"/>
-			<designed target="Y" value="0" ver="4"/>
-			<designed target="ZValue" value="0" ver="4"/>
-			<designed target="Rotation" value="0" ver="4"/>
-			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="true" ver="4"/>
-			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="true" ver="4"/>
-			<designed target="Tooltip" value="" ver="4"/>
-			<init target="initPath" ver="4" value="ROOT.DIAG.AI.AI_16_011_4"/>
-			<init target="initOpcSource" ver="4" ref="unit.Connections.OpcSource"/>
-		</object>
-		<object access-modifier="private" name="AI_16_011_5" display-name="AI_16_011_5" uuid="d33608a0-010d-4ff0-b21d-296e9a6cc77b" base-type="AI" base-type-id="9b579fb6-d797-4d72-89ea-5c3e6e63a0f4" ver="4">
-			<designed target="X" value="2845" ver="4"/>
-			<designed target="Y" value="0" ver="4"/>
-			<designed target="ZValue" value="0" ver="4"/>
-			<designed target="Rotation" value="0" ver="4"/>
-			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="true" ver="4"/>
-			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="true" ver="4"/>
-			<designed target="Tooltip" value="" ver="4"/>
-			<init target="initPath" ver="4" value="ROOT.DIAG.AI.AI_16_011_5"/>
-			<init target="initOpcSource" ver="4" ref="unit.Connections.OpcSource"/>
-		</object>
-		<object access-modifier="private" name="PP_00_011_1" display-name="PP_00_011_1" uuid="740f8248-361b-4964-891b-f095f2bfa282" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
-			<designed target="X" value="3105" ver="4"/>
-			<designed target="Y" value="0" ver="4"/>
-			<designed target="ZValue" value="0" ver="4"/>
-			<designed target="Rotation" value="0" ver="4"/>
-			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="true" ver="4"/>
-			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="true" ver="4"/>
-			<designed target="Tooltip" value="" ver="4"/>
-			<designed target="Width" value="260" ver="4"/>
-			<designed target="Height" value="1174" ver="4"/>
-			<designed target="PenColor" value="4278190080" ver="4"/>
-			<designed target="PenStyle" value="0" ver="4"/>
-			<designed target="PenWidth" value="1" ver="4"/>
-			<designed target="ImageFile" value="PP_00_011.png" ver="4"/>
-			<designed target="Active" value="true" ver="4"/>
-			<designed target="CurrentFrameNumber" value="0" ver="4"/>
-			<designed target="Speed" value="1" ver="4"/>
-		</object>
-		<object access-modifier="private" name="ST_02_022" display-name="ST_02_022" uuid="f360ec05-38ed-4366-94a7-eb7226f709c5" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
-			<designed target="X" value="3355" ver="4"/>
-			<designed target="Y" value="144" ver="4"/>
-			<designed target="ZValue" value="0" ver="4"/>
-			<designed target="Rotation" value="0" ver="4"/>
-			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="true" ver="4"/>
-			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="true" ver="4"/>
-			<designed target="Tooltip" value="" ver="4"/>
-			<designed target="Width" value="275" ver="4"/>
-			<designed target="Height" value="886" ver="4"/>
-			<designed target="PenColor" value="4278190080" ver="4"/>
-			<designed target="PenStyle" value="0" ver="4"/>
-			<designed target="PenWidth" value="1" ver="4"/>
-			<designed target="ImageFile" value="ST_02_022.png" ver="4"/>
-			<designed target="Active" value="true" ver="4"/>
-			<designed target="CurrentFrameNumber" value="0" ver="4"/>
-			<designed target="Speed" value="1" ver="4"/>
-		</object>
-	</object>
-	<object access-modifier="private" name="Crate_2" display-name="Crate_2" uuid="e62172b1-7b28-496e-86ce-446c838a3ed4" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
-		<designed target="X" value="-1257" ver="4"/>
-		<designed target="Y" value="-20.5" ver="4"/>
-		<designed target="ZValue" value="0" ver="4"/>
-		<designed target="Rotation" value="0" ver="4"/>
-		<designed target="Scale" value="0.3" ver="4"/>
-		<designed target="Visible" value="true" ver="4"/>
-		<designed target="Opacity" value="1" ver="4"/>
-		<designed target="Enabled" value="true" ver="4"/>
-		<designed target="Tooltip" value="" ver="4"/>
-		<designed target="Width" value="3900" ver="4"/>
-		<designed target="Height" value="1175" ver="4"/>
-		<designed target="PenColor" value="4278190080" ver="4"/>
-		<designed target="PenStyle" value="0" ver="4"/>
-		<designed target="PenWidth" value="1" ver="4"/>
-		<designed target="BrushColor" value="4278190080" ver="4"/>
-		<designed target="BrushStyle" value="0" ver="4"/>
-		<designed target="OverrideScaling" value="false" ver="4"/>
-		<designed target="ShowScrollBars" value="true" ver="4"/>
-		<designed target="MoveByMouse" value="false" ver="4"/>
-		<object access-modifier="private" name="ST_02_012" display-name="ST_02_012" uuid="68b67ae3-80e2-4f14-b5f0-cf03d0c584a3" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
-			<designed target="X" value="0" ver="4"/>
-			<designed target="Y" value="144" ver="4"/>
-			<designed target="ZValue" value="0" ver="4"/>
-			<designed target="Rotation" value="0" ver="4"/>
-			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="true" ver="4"/>
-			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="true" ver="4"/>
-			<designed target="Tooltip" value="" ver="4"/>
-			<designed target="Width" value="276" ver="4"/>
-			<designed target="Height" value="887" ver="4"/>
-			<designed target="PenColor" value="4278190080" ver="4"/>
-			<designed target="PenStyle" value="0" ver="4"/>
-			<designed target="PenWidth" value="1" ver="4"/>
-			<designed target="ImageFile" value="ST_02_012.png" ver="4"/>
-			<designed target="Active" value="true" ver="4"/>
-			<designed target="CurrentFrameNumber" value="0" ver="4"/>
-			<designed target="Speed" value="1" ver="4"/>
-		</object>
-		<object access-modifier="private" name="PP_00_011_0" display-name="PP_00_011_0" uuid="f6b2d8ed-44dd-4d1d-afc8-4cca2244cd22" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
-			<designed target="X" value="270" ver="4"/>
-			<designed target="Y" value="0" ver="4"/>
-			<designed target="ZValue" value="0" ver="4"/>
-			<designed target="Rotation" value="0" ver="4"/>
-			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="true" ver="4"/>
-			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="true" ver="4"/>
-			<designed target="Tooltip" value="" ver="4"/>
-			<designed target="Width" value="260" ver="4"/>
-			<designed target="Height" value="1174" ver="4"/>
-			<designed target="PenColor" value="4278190080" ver="4"/>
-			<designed target="PenStyle" value="0" ver="4"/>
-			<designed target="PenWidth" value="1" ver="4"/>
-			<designed target="ImageFile" value="PP_00_011.png" ver="4"/>
-			<designed target="Active" value="true" ver="4"/>
-			<designed target="CurrentFrameNumber" value="0" ver="4"/>
-			<designed target="Speed" value="1" ver="4"/>
-		</object>
-		<object access-modifier="private" name="DI_32_011_0" display-name="DI_32_011_0" uuid="af6927da-ed48-49bb-b9a5-c24a70498ac0" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
-			<designed target="X" value="520" ver="4"/>
-			<designed target="Y" value="0" ver="4"/>
-			<designed target="ZValue" value="0" ver="4"/>
-			<designed target="Rotation" value="0" ver="4"/>
-			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="true" ver="4"/>
-			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="true" ver="4"/>
-			<designed target="Tooltip" value="" ver="4"/>
-			<init target="initOpcSource" ver="4" ref="unit.Connections.OpcSource"/>
-			<init target="initPath" ver="4" value="ROOT.DIAG.DI.DI_32_011_1"/>
-		</object>
-		<object access-modifier="private" name="DI_32_011_1" display-name="DI_32_011_1" uuid="c123ffe3-7a3b-4076-906c-49ec8c002fb4" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
-			<designed target="X" value="779" ver="4"/>
-			<designed target="Y" value="0" ver="4"/>
-			<designed target="ZValue" value="0" ver="4"/>
-			<designed target="Rotation" value="0" ver="4"/>
-			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="true" ver="4"/>
-			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="true" ver="4"/>
-			<designed target="Tooltip" value="" ver="4"/>
-			<init target="initOpcSource" ver="4" ref="unit.Connections.OpcSource"/>
-			<init target="initPath" ver="4" value="ROOT.DIAG.DI.DI_32_011_2"/>
-		</object>
-		<object access-modifier="private" name="DI_32_011_2" display-name="DI_32_011_2" uuid="8e3f4061-f85b-477d-94be-0866d8efd23e" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
-			<designed target="X" value="1039" ver="4"/>
-			<designed target="Y" value="0" ver="4"/>
-			<designed target="ZValue" value="0" ver="4"/>
-			<designed target="Rotation" value="0" ver="4"/>
-			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="true" ver="4"/>
-			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="true" ver="4"/>
-			<designed target="Tooltip" value="" ver="4"/>
-			<init target="initOpcSource" ver="4" ref="unit.Connections.OpcSource"/>
-			<init target="initPath" ver="4" value="ROOT.DIAG.DI.DI_32_011_3"/>
-		</object>
-		<object access-modifier="private" name="DI_32_011_3" display-name="DI_32_011_3" uuid="60526cd6-30e8-4d74-be3f-690fcb752f54" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
-			<designed target="X" value="1299" ver="4"/>
-			<designed target="Y" value="0" ver="4"/>
-			<designed target="ZValue" value="0" ver="4"/>
-			<designed target="Rotation" value="0" ver="4"/>
-			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="true" ver="4"/>
-			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="true" ver="4"/>
-			<designed target="Tooltip" value="" ver="4"/>
-			<init target="initOpcSource" ver="4" ref="unit.Connections.OpcSource"/>
-			<init target="initPath" ver="4" value="ROOT.DIAG.DI.DI_32_011_4"/>
-		</object>
-		<object access-modifier="private" name="DI_32_011_4" display-name="DI_32_011_4" uuid="af3eeae4-d2b7-41ca-b64d-3b20ca38c722" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
-			<designed target="X" value="1559" ver="4"/>
-			<designed target="Y" value="0" ver="4"/>
-			<designed target="ZValue" value="0" ver="4"/>
-			<designed target="Rotation" value="0" ver="4"/>
-			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="true" ver="4"/>
-			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="true" ver="4"/>
-			<designed target="Tooltip" value="" ver="4"/>
-			<init target="initOpcSource" ver="4" ref="unit.Connections.OpcSource"/>
-			<init target="initPath" ver="4" value="ROOT.DIAG.DI.DI_32_011_5"/>
-		</object>
-		<object access-modifier="private" name="DI_32_011_5" display-name="DI_32_011_5" uuid="fe76e56d-efd0-4d1b-bbb9-5bd8348d03e2" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
-			<designed target="X" value="1819" ver="4"/>
-			<designed target="Y" value="0" ver="4"/>
-			<designed target="ZValue" value="0" ver="4"/>
-			<designed target="Rotation" value="0" ver="4"/>
-			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="true" ver="4"/>
-			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="true" ver="4"/>
-			<designed target="Tooltip" value="" ver="4"/>
-			<init target="initOpcSource" ver="4" ref="unit.Connections.OpcSource"/>
-			<init target="initPath" ver="4" value="ROOT.DIAG.DI.DI_32_011_6"/>
-		</object>
-		<object access-modifier="private" name="DI_32_011_6" display-name="DI_32_011_6" uuid="387f6b90-6dfc-4754-8a27-769792e7b2f7" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
-			<designed target="X" value="2079" ver="4"/>
-			<designed target="Y" value="0" ver="4"/>
-			<designed target="ZValue" value="0" ver="4"/>
-			<designed target="Rotation" value="0" ver="4"/>
-			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="true" ver="4"/>
-			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="true" ver="4"/>
-			<designed target="Tooltip" value="" ver="4"/>
-			<init target="initOpcSource" ver="4" ref="unit.Connections.OpcSource"/>
-			<init target="initPath" ver="4" value="ROOT.DIAG.DI.DI_32_011_7"/>
-		</object>
-		<object access-modifier="private" name="DO_32_011_0" display-name="DO_32_011_0" uuid="896b280f-d33f-4a27-95be-c3327f30914c" base-type="DO" base-type-id="2015126c-643d-42f1-a2e1-ba13979bf8d0" ver="4">
-			<designed target="X" value="2339" ver="4"/>
-			<designed target="Y" value="0" ver="4"/>
-			<designed target="ZValue" value="0" ver="4"/>
-			<designed target="Rotation" value="0" ver="4"/>
-			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="true" ver="4"/>
-			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="true" ver="4"/>
-			<designed target="Tooltip" value="" ver="4"/>
-			<init target="initOpcSource" ver="4" ref="unit.Connections.OpcSource"/>
-			<init target="initPath" ver="4" value="ROOT.DIAG.DO.DO_32_011_1"/>
-			<init target="initPathImit" ver="4" value="ROOT.DIAG.DOImit.DO_32_011_1"/>
-		</object>
-		<object access-modifier="private" name="DO_32_011_1" display-name="DO_32_011_1" uuid="b73a5f3a-f35e-4e37-95d6-d36ce0c51304" base-type="DO" base-type-id="2015126c-643d-42f1-a2e1-ba13979bf8d0" ver="4">
-			<designed target="X" value="2599" ver="4"/>
-			<designed target="Y" value="0" ver="4"/>
-			<designed target="ZValue" value="0" ver="4"/>
-			<designed target="Rotation" value="0" ver="4"/>
-			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="true" ver="4"/>
-			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="true" ver="4"/>
-			<designed target="Tooltip" value="" ver="4"/>
-			<init target="initOpcSource" ver="4" ref="unit.Connections.OpcSource"/>
-			<init target="initPath" ver="4" value="ROOT.DIAG.DO.DO_32_011_2"/>
-			<init target="initPathImit" ver="4" value="ROOT.DIAG.DOImit.DO_32_011_2"/>
-		</object>
-		<object access-modifier="private" name="DO_32_011_2" display-name="DO_32_011_2" uuid="e3b261ef-2ca4-4e36-a32e-476937649ab9" base-type="DO" base-type-id="2015126c-643d-42f1-a2e1-ba13979bf8d0" ver="4">
-			<designed target="X" value="2859" ver="4"/>
-			<designed target="Y" value="0" ver="4"/>
-			<designed target="ZValue" value="0" ver="4"/>
-			<designed target="Rotation" value="0" ver="4"/>
-			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="true" ver="4"/>
-			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="true" ver="4"/>
-			<designed target="Tooltip" value="" ver="4"/>
-			<init target="initOpcSource" ver="4" ref="unit.Connections.OpcSource"/>
-			<init target="initPath" ver="4" value="ROOT.DIAG.DO.DO_32_011_3"/>
-			<init target="initPathImit" ver="4" value="ROOT.DIAG.DOImit.DO_32_011_3"/>
-		</object>
-		<object access-modifier="private" name="DO_32_011_3" display-name="DO_32_011_3" uuid="9671a2f7-be63-4dfe-8703-2dddc2606c39" base-type="DO" base-type-id="2015126c-643d-42f1-a2e1-ba13979bf8d0" ver="4">
-			<designed target="X" value="3119" ver="4"/>
-			<designed target="Y" value="0" ver="4"/>
-			<designed target="ZValue" value="0" ver="4"/>
-			<designed target="Rotation" value="0" ver="4"/>
-			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="true" ver="4"/>
-			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="true" ver="4"/>
-			<designed target="Tooltip" value="" ver="4"/>
-			<init target="initOpcSource" ver="4" ref="unit.Connections.OpcSource"/>
-			<init target="initPath" ver="4" value="ROOT.DIAG.DO.DO_32_011_4"/>
-			<init target="initPathImit" ver="4" value="ROOT.DIAG.DOImit.DO_32_011_4"/>
-		</object>
-		<object access-modifier="private" name="PP_00_011_1" display-name="PP_00_011_1" uuid="e17ea88d-9913-4333-83bf-27ec00f35c2a" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
-			<designed target="X" value="3379" ver="4"/>
-			<designed target="Y" value="0" ver="4"/>
-			<designed target="ZValue" value="0" ver="4"/>
-			<designed target="Rotation" value="0" ver="4"/>
-			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="true" ver="4"/>
-			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="true" ver="4"/>
-			<designed target="Tooltip" value="" ver="4"/>
-			<designed target="Width" value="260" ver="4"/>
-			<designed target="Height" value="1174" ver="4"/>
-			<designed target="PenColor" value="4278190080" ver="4"/>
-			<designed target="PenStyle" value="0" ver="4"/>
-			<designed target="PenWidth" value="1" ver="4"/>
-			<designed target="ImageFile" value="PP_00_011.png" ver="4"/>
-			<designed target="Active" value="true" ver="4"/>
-			<designed target="CurrentFrameNumber" value="0" ver="4"/>
-			<designed target="Speed" value="1" ver="4"/>
-		</object>
-		<object access-modifier="private" name="ST_02_022" display-name="ST_02_022" uuid="311ad0a4-9a4c-4b1d-956f-7ad7896c6832" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
-			<designed target="X" value="3629" ver="4"/>
-			<designed target="Y" value="144" ver="4"/>
-			<designed target="ZValue" value="0" ver="4"/>
-			<designed target="Rotation" value="0" ver="4"/>
-			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="true" ver="4"/>
-			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="true" ver="4"/>
-			<designed target="Tooltip" value="" ver="4"/>
-			<designed target="Width" value="275" ver="4"/>
-			<designed target="Height" value="886" ver="4"/>
-			<designed target="PenColor" value="4278190080" ver="4"/>
-			<designed target="PenStyle" value="0" ver="4"/>
-			<designed target="PenWidth" value="1" ver="4"/>
-			<designed target="ImageFile" value="ST_02_022.png" ver="4"/>
-			<designed target="Active" value="true" ver="4"/>
-			<designed target="CurrentFrameNumber" value="0" ver="4"/>
-			<designed target="Speed" value="1" ver="4"/>
-		</object>
-	</object>
 	<object access-modifier="private" name="CPU1_MAIN" display-name="CPU1_MAIN" uuid="37a2f472-c5a4-4bbe-bfc5-48bf85838380" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
 		<init target="Path" ver="4" value="ROOT.DIAG.Server.CPU1_MAIN"/>
@@ -652,5 +41,959 @@
 			<![CDATA[unit.Global.ActiveMainFrame = "Диагностика";]]>
 		</body>
 	</do-on>
+	<object access-modifier="private" name="Main" display-name="Main" uuid="7f47dad6-a971-433b-baa8-066b6913246b" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
+		<designed target="X" value="-30" ver="4"/>
+		<designed target="Y" value="-680" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="0.3" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="1795" ver="4"/>
+		<designed target="Height" value="2365" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="0" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="BrushColor" value="4278190080" ver="4"/>
+		<designed target="BrushStyle" value="0" ver="4"/>
+		<designed target="OverrideScaling" value="false" ver="4"/>
+		<designed target="ShowScrollBars" value="true" ver="4"/>
+		<designed target="MoveByMouse" value="false" ver="4"/>
+		<object access-modifier="private" name="Crate_1" display-name="Crate_1" uuid="d40844e6-9171-4f82-8038-9612d5f213cb" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
+			<designed target="X" value="0" ver="4"/>
+			<designed target="Y" value="0" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="1795" ver="4"/>
+			<designed target="Height" value="1165" ver="4"/>
+			<designed target="PenColor" value="4278190080" ver="4"/>
+			<designed target="PenStyle" value="0" ver="4"/>
+			<designed target="PenWidth" value="1" ver="4"/>
+			<designed target="BrushColor" value="4278190080" ver="4"/>
+			<designed target="BrushStyle" value="0" ver="4"/>
+			<designed target="OverrideScaling" value="false" ver="4"/>
+			<designed target="ShowScrollBars" value="true" ver="4"/>
+			<designed target="MoveByMouse" value="false" ver="4"/>
+			<object access-modifier="private" name="PP_00_011_0" display-name="PP_00_011_0" uuid="946bc86b-9695-4922-98c3-e62c7b346ef1" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
+				<designed target="X" value="0" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="260" ver="4"/>
+				<designed target="Height" value="1174" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="0" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="ImageFile" value="PP_00_011.png" ver="4"/>
+				<designed target="Active" value="true" ver="4"/>
+				<designed target="CurrentFrameNumber" value="0" ver="4"/>
+				<designed target="Speed" value="1" ver="4"/>
+			</object>
+			<object access-modifier="private" name="CU_00_071_0" display-name="CU_00_071_0" uuid="5d2e2cd5-3454-4d94-b305-d65d5a9379f1" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
+				<designed target="X" value="252" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="518" ver="4"/>
+				<designed target="Height" value="1174" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="0" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="ImageFile" value="CU_00_071.png" ver="4"/>
+				<designed target="Active" value="true" ver="4"/>
+				<designed target="CurrentFrameNumber" value="0" ver="4"/>
+				<designed target="Speed" value="1" ver="4"/>
+				<object access-modifier="private" name="rectState" display-name="rectState" uuid="2ef05efa-9550-4feb-8e70-e6f422032200" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+					<designed target="X" value="20" ver="4"/>
+					<designed target="Y" value="400" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="225" ver="4"/>
+					<designed target="Height" value="50" ver="4"/>
+					<designed target="RoundingRadius" value="0" ver="4"/>
+					<designed target="PenColor" value="4278190080" ver="4"/>
+					<designed target="PenStyle" value="1" ver="4"/>
+					<designed target="PenWidth" value="1" ver="4"/>
+					<designed target="BrushColor" value="0xffacacac" ver="4"/>
+					<designed target="BrushStyle" value="1" ver="4"/>
+					<object access-modifier="private" name="txtState" display-name="txtState" uuid="a5a7e47e-cde4-4ea5-8e90-77fd511e290b" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+						<designed target="X" value="0" ver="4"/>
+						<designed target="Y" value="0" ver="4"/>
+						<designed target="ZValue" value="0" ver="4"/>
+						<designed target="Rotation" value="0" ver="4"/>
+						<designed target="Scale" value="1" ver="4"/>
+						<designed target="Visible" value="true" ver="4"/>
+						<designed target="Opacity" value="1" ver="4"/>
+						<designed target="Enabled" value="true" ver="4"/>
+						<designed target="Tooltip" value="" ver="4"/>
+						<designed target="Width" value="225" ver="4"/>
+						<designed target="Height" value="50" ver="4"/>
+						<designed target="Text" value="Статус" ver="4"/>
+						<designed target="Font" value="Arial,28,-1,5,75,0,0,0,0,0,Narrow Bold" ver="4"/>
+						<designed target="FontColor" value="4278190080" ver="4"/>
+						<designed target="TextAlignment" value="132" ver="4"/>
+						<do-trace access-modifier="private" target="Text" ver="4">
+							<conditional-expr>
+								<condition>
+									<![CDATA[CPU1_MAIN == true]]>
+								</condition>
+								<expr>
+									<![CDATA["Активный"]]>
+								</expr>
+							</conditional-expr>
+							<conditional-expr>
+								<condition>
+									<![CDATA[CPU1_MAIN == false]]>
+								</condition>
+								<expr>
+									<![CDATA["Резервный"]]>
+								</expr>
+							</conditional-expr>
+						</do-trace>
+					</object>
+					<do-trace access-modifier="private" target="BrushColor" ver="4">
+						<conditional-expr>
+							<condition>
+								<![CDATA[CPU1_MAIN == false]]>
+							</condition>
+							<expr>
+								<![CDATA[0xffacacac]]>
+							</expr>
+						</conditional-expr>
+						<conditional-expr>
+							<condition>
+								<![CDATA[CPU1_MAIN == true]]>
+							</condition>
+							<expr>
+								<![CDATA[0xff00ff00]]>
+							</expr>
+						</conditional-expr>
+					</do-trace>
+				</object>
+			</object>
+			<object access-modifier="private" name="CU_00_071_1" display-name="CU_00_071_1" uuid="da4954a8-15ae-4434-9ee8-c0ab21ca6b00" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
+				<designed target="X" value="765" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="518" ver="4"/>
+				<designed target="Height" value="1174" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="0" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="ImageFile" value="CU_00_071.png" ver="4"/>
+				<designed target="Active" value="true" ver="4"/>
+				<designed target="CurrentFrameNumber" value="0" ver="4"/>
+				<designed target="Speed" value="1" ver="4"/>
+				<object access-modifier="private" name="rectState" display-name="rectState" uuid="839b3ef4-c76c-4d67-b7a8-2ccb1d1ae918" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+					<designed target="X" value="20" ver="4"/>
+					<designed target="Y" value="400" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="225" ver="4"/>
+					<designed target="Height" value="50" ver="4"/>
+					<designed target="RoundingRadius" value="0" ver="4"/>
+					<designed target="PenColor" value="4278190080" ver="4"/>
+					<designed target="PenStyle" value="1" ver="4"/>
+					<designed target="PenWidth" value="1" ver="4"/>
+					<designed target="BrushColor" value="0xffacacac" ver="4"/>
+					<designed target="BrushStyle" value="1" ver="4"/>
+					<object access-modifier="private" name="txtState" display-name="txtState" uuid="69de63ee-8adf-49f3-8196-0c084bce704d" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+						<designed target="X" value="0" ver="4"/>
+						<designed target="Y" value="0" ver="4"/>
+						<designed target="ZValue" value="0" ver="4"/>
+						<designed target="Rotation" value="0" ver="4"/>
+						<designed target="Scale" value="1" ver="4"/>
+						<designed target="Visible" value="true" ver="4"/>
+						<designed target="Opacity" value="1" ver="4"/>
+						<designed target="Enabled" value="true" ver="4"/>
+						<designed target="Tooltip" value="" ver="4"/>
+						<designed target="Width" value="225" ver="4"/>
+						<designed target="Height" value="50" ver="4"/>
+						<designed target="Text" value="Статус" ver="4"/>
+						<designed target="Font" value="Arial,28,-1,5,75,0,0,0,0,0,Narrow Bold" ver="4"/>
+						<designed target="FontColor" value="4278190080" ver="4"/>
+						<designed target="TextAlignment" value="132" ver="4"/>
+						<do-trace access-modifier="private" target="Text" ver="4">
+							<conditional-expr>
+								<condition>
+									<![CDATA[CPU1_MAIN == false]]>
+								</condition>
+								<expr>
+									<![CDATA["Активный"]]>
+								</expr>
+							</conditional-expr>
+							<conditional-expr>
+								<condition>
+									<![CDATA[CPU1_MAIN == true]]>
+								</condition>
+								<expr>
+									<![CDATA["Резервный"]]>
+								</expr>
+							</conditional-expr>
+						</do-trace>
+					</object>
+					<do-trace access-modifier="private" target="BrushColor" ver="4">
+						<conditional-expr>
+							<condition>
+								<![CDATA[CPU1_MAIN == true]]>
+							</condition>
+							<expr>
+								<![CDATA[0xffacacac]]>
+							</expr>
+						</conditional-expr>
+						<conditional-expr>
+							<condition>
+								<![CDATA[CPU1_MAIN == false]]>
+							</condition>
+							<expr>
+								<![CDATA[0xff00ff00]]>
+							</expr>
+						</conditional-expr>
+					</do-trace>
+				</object>
+			</object>
+			<object access-modifier="private" name="AI_16_011_0" display-name="AI_16_011_0" uuid="aa114a2e-982e-4c88-a2cb-0243007318b8" base-type="AI" base-type-id="9b579fb6-d797-4d72-89ea-5c3e6e63a0f4" ver="4">
+				<designed target="X" value="1277" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<init target="initPath" ver="4" value="AI.Module1"/>
+				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+			</object>
+			<object access-modifier="private" name="AI_16_011_1" display-name="AI_16_011_1" uuid="5428e05c-74eb-41bc-af59-0368bee34f6e" base-type="AI" base-type-id="9b579fb6-d797-4d72-89ea-5c3e6e63a0f4" ver="4">
+				<designed target="X" value="1535" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<init target="initPath" ver="4" value="AI.Module2"/>
+				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+			</object>
+		</object>
+		<object access-modifier="private" name="Crate_2" display-name="Crate_2" uuid="b5958491-229c-4a65-a98f-500cfe861c67" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
+			<designed target="X" value="122.5" ver="4"/>
+			<designed target="Y" value="1200" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="1550" ver="4"/>
+			<designed target="Height" value="1165" ver="4"/>
+			<designed target="PenColor" value="4278190080" ver="4"/>
+			<designed target="PenStyle" value="0" ver="4"/>
+			<designed target="PenWidth" value="1" ver="4"/>
+			<designed target="BrushColor" value="4278190080" ver="4"/>
+			<designed target="BrushStyle" value="0" ver="4"/>
+			<designed target="OverrideScaling" value="false" ver="4"/>
+			<designed target="ShowScrollBars" value="true" ver="4"/>
+			<designed target="MoveByMouse" value="false" ver="4"/>
+			<object access-modifier="private" name="PP_00_011_0" display-name="PP_00_011_0" uuid="358a1f85-0805-4fde-9517-ac3ac2235126" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
+				<designed target="X" value="0" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="260" ver="4"/>
+				<designed target="Height" value="1174" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="0" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="ImageFile" value="PP_00_011.png" ver="4"/>
+				<designed target="Active" value="true" ver="4"/>
+				<designed target="CurrentFrameNumber" value="0" ver="4"/>
+				<designed target="Speed" value="1" ver="4"/>
+			</object>
+			<object access-modifier="private" name="DI_32_011_0" display-name="DI_32_011_0" uuid="3dc7b752-13e0-4705-a2ab-95a87de3450d" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
+				<designed target="X" value="250" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<init target="initPath" ver="4" value="DI.Module1"/>
+				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+			</object>
+			<object access-modifier="private" name="DI_32_011_1" display-name="DI_32_011_1" uuid="9924a8f0-c9a5-436d-aa5e-c6ad8a683049" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
+				<designed target="X" value="510" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<init target="initPath" ver="4" value="DI.Module2"/>
+				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+			</object>
+			<object access-modifier="private" name="DI_32_011_2" display-name="DI_32_011_2" uuid="074ee9cd-5d29-4a45-8e9a-74732b432bb1" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
+				<designed target="X" value="770" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<init target="initPath" ver="4" value="DI.Module3"/>
+				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+			</object>
+			<object access-modifier="private" name="DO_32_011_0" display-name="DO_32_011_0" uuid="8405210b-aa89-4126-89a0-34f623720234" base-type="DO" base-type-id="2015126c-643d-42f1-a2e1-ba13979bf8d0" ver="4">
+				<designed target="X" value="1030" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<init target="initPath" ver="4" value="DO.Module1"/>
+				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+			</object>
+			<object access-modifier="private" name="DO_32_011_1" display-name="DO_32_011_1" uuid="13775516-91f8-46b4-8fc0-fb0e5185f584" base-type="DO" base-type-id="2015126c-643d-42f1-a2e1-ba13979bf8d0" ver="4">
+				<designed target="X" value="1290" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<init target="initPath" ver="4" value="DO.Module2"/>
+				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+			</object>
+		</object>
+		<object access-modifier="private" name="OpcSource" display-name="OpcSource" uuid="17ab28e9-b85b-4c83-84a6-8353c1e390b4" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+			<designed target="Active" value="false" ver="4"/>
+			<designed target="UpdateRate" value="0" ver="4"/>
+			<designed target="ReAdvise" value="0" ver="4"/>
+			<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
+			<init target="Path" ver="4" value="ROOT.DIAG.MAIN"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Group_1" display-name="Group_1" uuid="5ea92ac1-5376-414b-9404-0facebbb424c" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
+		<designed target="X" value="-400" ver="4"/>
+		<designed target="Y" value="-300" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="0.3" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="1290" ver="4"/>
+		<designed target="Height" value="1165" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="0" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="BrushColor" value="4278190080" ver="4"/>
+		<designed target="BrushStyle" value="0" ver="4"/>
+		<designed target="OverrideScaling" value="false" ver="4"/>
+		<designed target="ShowScrollBars" value="true" ver="4"/>
+		<designed target="MoveByMouse" value="false" ver="4"/>
+		<object access-modifier="private" name="Crate_1" display-name="Crate_1" uuid="6a97873d-2023-4a73-aa74-542e0159ca03" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
+			<designed target="X" value="0" ver="4"/>
+			<designed target="Y" value="0" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="1290" ver="4"/>
+			<designed target="Height" value="1165" ver="4"/>
+			<designed target="PenColor" value="4278190080" ver="4"/>
+			<designed target="PenStyle" value="0" ver="4"/>
+			<designed target="PenWidth" value="1" ver="4"/>
+			<designed target="BrushColor" value="4278190080" ver="4"/>
+			<designed target="BrushStyle" value="0" ver="4"/>
+			<designed target="OverrideScaling" value="false" ver="4"/>
+			<designed target="ShowScrollBars" value="true" ver="4"/>
+			<designed target="MoveByMouse" value="false" ver="4"/>
+			<object access-modifier="private" name="PP_00_011_0" display-name="PP_00_011_0" uuid="1be807f1-ba43-400f-a9dc-f4029e53081e" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
+				<designed target="X" value="0" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="260" ver="4"/>
+				<designed target="Height" value="1174" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="0" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="ImageFile" value="PP_00_011.png" ver="4"/>
+				<designed target="Active" value="true" ver="4"/>
+				<designed target="CurrentFrameNumber" value="0" ver="4"/>
+				<designed target="Speed" value="1" ver="4"/>
+			</object>
+			<object access-modifier="private" name="AI_16_011_0" display-name="AI_16_011_0" uuid="6b5a2456-d713-4065-8796-59e2cb10eda7" base-type="AI" base-type-id="9b579fb6-d797-4d72-89ea-5c3e6e63a0f4" ver="4">
+				<designed target="X" value="250" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<init target="initPath" ver="4" value="AI.Module1"/>
+				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+			</object>
+			<object access-modifier="private" name="DI_32_011_0" display-name="DI_32_011_0" uuid="5e939798-54d9-4539-89ba-9c4876d4de7f" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
+				<designed target="X" value="510" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<init target="initPath" ver="4" value="DI.Module1"/>
+				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+			</object>
+			<object access-modifier="private" name="DI_32_011_1" display-name="DI_32_011_1" uuid="7abacbdf-5e1f-448d-be9f-bc553f498993" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
+				<designed target="X" value="770" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<init target="initPath" ver="4" value="DI.Module2"/>
+				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+			</object>
+			<object access-modifier="private" name="DO_32_011_0" display-name="DO_32_011_0" uuid="bf77415f-c32b-41e3-9863-2ae961a5ff42" base-type="DO" base-type-id="2015126c-643d-42f1-a2e1-ba13979bf8d0" ver="4">
+				<designed target="X" value="1030" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<init target="initPath" ver="4" value="DO.Module1"/>
+				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+			</object>
+		</object>
+		<object access-modifier="private" name="OpcSource" display-name="OpcSource" uuid="e3edb3ae-f55b-4c1b-a44a-12cdcc5e8ef0" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+			<designed target="Active" value="false" ver="4"/>
+			<designed target="UpdateRate" value="0" ver="4"/>
+			<designed target="ReAdvise" value="0" ver="4"/>
+			<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
+			<init target="Path" ver="4" value="ROOT.DIAG.Group1"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Group_2" display-name="Group_2" uuid="22d3ac6d-215b-43cb-9b6d-b9181b7df2ef" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
+		<designed target="X" value="-400" ver="4"/>
+		<designed target="Y" value="100" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="0.3" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="1290" ver="4"/>
+		<designed target="Height" value="1165" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="0" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="BrushColor" value="4278190080" ver="4"/>
+		<designed target="BrushStyle" value="0" ver="4"/>
+		<designed target="OverrideScaling" value="false" ver="4"/>
+		<designed target="ShowScrollBars" value="true" ver="4"/>
+		<designed target="MoveByMouse" value="false" ver="4"/>
+		<object access-modifier="private" name="Crate_1" display-name="Crate_1" uuid="d0d16bb7-c4b9-4591-a5b6-e389d6f32052" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
+			<designed target="X" value="0" ver="4"/>
+			<designed target="Y" value="0" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="1290" ver="4"/>
+			<designed target="Height" value="1165" ver="4"/>
+			<designed target="PenColor" value="4278190080" ver="4"/>
+			<designed target="PenStyle" value="0" ver="4"/>
+			<designed target="PenWidth" value="1" ver="4"/>
+			<designed target="BrushColor" value="4278190080" ver="4"/>
+			<designed target="BrushStyle" value="0" ver="4"/>
+			<designed target="OverrideScaling" value="false" ver="4"/>
+			<designed target="ShowScrollBars" value="true" ver="4"/>
+			<designed target="MoveByMouse" value="false" ver="4"/>
+			<object access-modifier="private" name="PP_00_011_0" display-name="PP_00_011_0" uuid="ba23162b-977b-495c-8d50-9429739c7dd7" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
+				<designed target="X" value="0" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="260" ver="4"/>
+				<designed target="Height" value="1174" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="0" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="ImageFile" value="PP_00_011.png" ver="4"/>
+				<designed target="Active" value="true" ver="4"/>
+				<designed target="CurrentFrameNumber" value="0" ver="4"/>
+				<designed target="Speed" value="1" ver="4"/>
+			</object>
+			<object access-modifier="private" name="AI_16_011_0" display-name="AI_16_011_0" uuid="82b1c754-ce4c-4f89-bd9f-fc5131eb2620" base-type="AI" base-type-id="9b579fb6-d797-4d72-89ea-5c3e6e63a0f4" ver="4">
+				<designed target="X" value="250" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<init target="initPath" ver="4" value="AI.Module1"/>
+				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+			</object>
+			<object access-modifier="private" name="DI_32_011_0" display-name="DI_32_011_0" uuid="62cc90ce-92e5-424a-a279-eb83c9e624ab" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
+				<designed target="X" value="510" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<init target="initPath" ver="4" value="DI.Module1"/>
+				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+			</object>
+			<object access-modifier="private" name="DI_32_011_1" display-name="DI_32_011_1" uuid="b2ca1315-ed14-40e6-b0cd-38d9cd238d5c" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
+				<designed target="X" value="770" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<init target="initPath" ver="4" value="DI.Module2"/>
+				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+			</object>
+			<object access-modifier="private" name="DO_32_011_0" display-name="DO_32_011_0" uuid="bf5a5550-848f-476d-99cb-b08a8b04fbb3" base-type="DO" base-type-id="2015126c-643d-42f1-a2e1-ba13979bf8d0" ver="4">
+				<designed target="X" value="1030" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<init target="initPath" ver="4" value="DO.Module1"/>
+				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+			</object>
+		</object>
+		<object access-modifier="private" name="OpcSource" display-name="OpcSource" uuid="6532c2fb-b243-42fa-94a5-f9ce36f3bdc1" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+			<designed target="Active" value="false" ver="4"/>
+			<designed target="UpdateRate" value="0" ver="4"/>
+			<designed target="ReAdvise" value="0" ver="4"/>
+			<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
+			<init target="Path" ver="4" value="ROOT.DIAG.Group2"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Group_3" display-name="Group_3" uuid="ed04cccf-5c46-4a3f-97af-2be380aed642" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
+		<designed target="X" value="830" ver="4"/>
+		<designed target="Y" value="-300" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="0.3" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="1290" ver="4"/>
+		<designed target="Height" value="1165" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="0" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="BrushColor" value="4278190080" ver="4"/>
+		<designed target="BrushStyle" value="0" ver="4"/>
+		<designed target="OverrideScaling" value="false" ver="4"/>
+		<designed target="ShowScrollBars" value="true" ver="4"/>
+		<designed target="MoveByMouse" value="false" ver="4"/>
+		<object access-modifier="private" name="Crate_1" display-name="Crate_1" uuid="d1a14ff3-6dbb-488d-8ca7-b6753f45b7bb" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
+			<designed target="X" value="0" ver="4"/>
+			<designed target="Y" value="0" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="1290" ver="4"/>
+			<designed target="Height" value="1165" ver="4"/>
+			<designed target="PenColor" value="4278190080" ver="4"/>
+			<designed target="PenStyle" value="0" ver="4"/>
+			<designed target="PenWidth" value="1" ver="4"/>
+			<designed target="BrushColor" value="4278190080" ver="4"/>
+			<designed target="BrushStyle" value="0" ver="4"/>
+			<designed target="OverrideScaling" value="false" ver="4"/>
+			<designed target="ShowScrollBars" value="true" ver="4"/>
+			<designed target="MoveByMouse" value="false" ver="4"/>
+			<object access-modifier="private" name="PP_00_011_0" display-name="PP_00_011_0" uuid="f27673dc-44b1-4e52-95ae-3eb0dc7e9f10" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
+				<designed target="X" value="0" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="260" ver="4"/>
+				<designed target="Height" value="1174" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="0" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="ImageFile" value="PP_00_011.png" ver="4"/>
+				<designed target="Active" value="true" ver="4"/>
+				<designed target="CurrentFrameNumber" value="0" ver="4"/>
+				<designed target="Speed" value="1" ver="4"/>
+			</object>
+			<object access-modifier="private" name="AI_16_011_0" display-name="AI_16_011_0" uuid="355eed47-b052-4c76-bfc6-f0ab1c5b56f5" base-type="AI" base-type-id="9b579fb6-d797-4d72-89ea-5c3e6e63a0f4" ver="4">
+				<designed target="X" value="250" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<init target="initPath" ver="4" value="AI.Module1"/>
+				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+			</object>
+			<object access-modifier="private" name="DI_32_011_0" display-name="DI_32_011_0" uuid="d9f0f02d-df9a-4aec-b8ff-471c5200d684" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
+				<designed target="X" value="510" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<init target="initPath" ver="4" value="DI.Module1"/>
+				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+			</object>
+			<object access-modifier="private" name="DI_32_011_1" display-name="DI_32_011_1" uuid="c65928ea-9321-4fe6-93f5-650ae055a05e" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
+				<designed target="X" value="770" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<init target="initPath" ver="4" value="DI.Module2"/>
+				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+			</object>
+			<object access-modifier="private" name="DO_32_011_0" display-name="DO_32_011_0" uuid="2ccf9a1f-9776-4f96-95f7-42635bf956eb" base-type="DO" base-type-id="2015126c-643d-42f1-a2e1-ba13979bf8d0" ver="4">
+				<designed target="X" value="1030" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<init target="initPath" ver="4" value="DO.Module1"/>
+				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+			</object>
+		</object>
+		<object access-modifier="private" name="OpcSource" display-name="OpcSource" uuid="e12ca4bf-660f-4a71-aec8-8124cebe1e31" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+			<designed target="Active" value="false" ver="4"/>
+			<designed target="UpdateRate" value="0" ver="4"/>
+			<designed target="ReAdvise" value="0" ver="4"/>
+			<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
+			<init target="Path" ver="4" value="ROOT.DIAG.Group3"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="Group_4" display-name="Group_4" uuid="d86fca1f-4275-4b0d-a1b9-f7ba2cb96d25" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
+		<designed target="X" value="830" ver="4"/>
+		<designed target="Y" value="100" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="0.3" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="1290" ver="4"/>
+		<designed target="Height" value="1165" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="0" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="BrushColor" value="4278190080" ver="4"/>
+		<designed target="BrushStyle" value="0" ver="4"/>
+		<designed target="OverrideScaling" value="false" ver="4"/>
+		<designed target="ShowScrollBars" value="true" ver="4"/>
+		<designed target="MoveByMouse" value="false" ver="4"/>
+		<object access-modifier="private" name="Crate_1" display-name="Crate_1" uuid="6811ea6d-7052-42ac-9595-637ad80173d9" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
+			<designed target="X" value="0" ver="4"/>
+			<designed target="Y" value="0" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="1290" ver="4"/>
+			<designed target="Height" value="1165" ver="4"/>
+			<designed target="PenColor" value="4278190080" ver="4"/>
+			<designed target="PenStyle" value="0" ver="4"/>
+			<designed target="PenWidth" value="1" ver="4"/>
+			<designed target="BrushColor" value="4278190080" ver="4"/>
+			<designed target="BrushStyle" value="0" ver="4"/>
+			<designed target="OverrideScaling" value="false" ver="4"/>
+			<designed target="ShowScrollBars" value="true" ver="4"/>
+			<designed target="MoveByMouse" value="false" ver="4"/>
+			<object access-modifier="private" name="PP_00_011_0" display-name="PP_00_011_0" uuid="b820e536-4fae-4673-b63a-f6d37eed347f" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
+				<designed target="X" value="0" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="260" ver="4"/>
+				<designed target="Height" value="1174" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="0" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="ImageFile" value="PP_00_011.png" ver="4"/>
+				<designed target="Active" value="true" ver="4"/>
+				<designed target="CurrentFrameNumber" value="0" ver="4"/>
+				<designed target="Speed" value="1" ver="4"/>
+			</object>
+			<object access-modifier="private" name="AI_16_011_0" display-name="AI_16_011_0" uuid="22f10525-ab39-4fb8-9fed-8d1edb65303c" base-type="AI" base-type-id="9b579fb6-d797-4d72-89ea-5c3e6e63a0f4" ver="4">
+				<designed target="X" value="250" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<init target="initPath" ver="4" value="AI.Module1"/>
+				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+			</object>
+			<object access-modifier="private" name="DI_32_011_0" display-name="DI_32_011_0" uuid="f6ead668-166d-42be-a80d-060eb598ad46" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
+				<designed target="X" value="510" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<init target="initPath" ver="4" value="DI.Module1"/>
+				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+			</object>
+			<object access-modifier="private" name="DI_32_011_1" display-name="DI_32_011_1" uuid="fafa77eb-8a00-4e74-8f08-30b0278db107" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
+				<designed target="X" value="770" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<init target="initPath" ver="4" value="DI.Module2"/>
+				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+			</object>
+			<object access-modifier="private" name="DO_32_011_0" display-name="DO_32_011_0" uuid="28d9cd0d-c94b-43e8-b987-f887f892af26" base-type="DO" base-type-id="2015126c-643d-42f1-a2e1-ba13979bf8d0" ver="4">
+				<designed target="X" value="1030" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<init target="initPath" ver="4" value="DO.Module1"/>
+				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+			</object>
+		</object>
+		<object access-modifier="private" name="OpcSource" display-name="OpcSource" uuid="3aa047bb-0ae7-4c29-817b-2d4a7a90eb2a" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+			<designed target="Active" value="false" ver="4"/>
+			<designed target="UpdateRate" value="0" ver="4"/>
+			<designed target="ReAdvise" value="0" ver="4"/>
+			<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
+			<init target="Path" ver="4" value="ROOT.DIAG.Group4"/>
+		</object>
+	</object>
+	<object access-modifier="private" name="txtMain" display-name="txtMain" uuid="0b03708b-9d5e-4b8a-b69b-0ab5c9f29f33" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+		<designed target="X" value="832.5" ver="4"/>
+		<designed target="Y" value="90" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="70" ver="4"/>
+		<designed target="Height" value="30" ver="4"/>
+		<designed target="Text" value="ШУК" ver="4"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+		<designed target="FontColor" value="0xff000000" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+	</object>
+	<object access-modifier="private" name="txtGroup_1" display-name="txtGroup_1" uuid="4adb839a-0bd2-4450-83ba-2f2998cd6770" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+		<designed target="X" value="195" ver="4"/>
+		<designed target="Y" value="60" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="100" ver="4"/>
+		<designed target="Height" value="30" ver="4"/>
+		<designed target="Text" value="ШУГ 1" ver="4"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+		<designed target="FontColor" value="0xff000000" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+	</object>
+	<object access-modifier="private" name="txtGroup_2" display-name="txtGroup_2" uuid="c519344d-aef1-4e6c-a4b2-e8026a9b5eee" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+		<designed target="X" value="195" ver="4"/>
+		<designed target="Y" value="880" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="100" ver="4"/>
+		<designed target="Height" value="30" ver="4"/>
+		<designed target="Text" value="ШУГ 2" ver="4"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+		<designed target="FontColor" value="0xff000000" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+	</object>
+	<object access-modifier="private" name="txtGroup_3" display-name="txtGroup_3" uuid="038fc07e-d249-470e-b43a-5582e97225a0" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+		<designed target="X" value="1425" ver="4"/>
+		<designed target="Y" value="60" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="100" ver="4"/>
+		<designed target="Height" value="30" ver="4"/>
+		<designed target="Text" value="ШУГ 3" ver="4"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+		<designed target="FontColor" value="0xff000000" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+	</object>
+	<object access-modifier="private" name="txtGroup_4" display-name="txtGroup_4" uuid="2df4f494-3d0f-4363-9d37-8da0f923e834" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+		<designed target="X" value="1425" ver="4"/>
+		<designed target="Y" value="880" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="100" ver="4"/>
+		<designed target="Height" value="30" ver="4"/>
+		<designed target="Text" value="ШУГ 4" ver="4"/>
+		<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+		<designed target="FontColor" value="0xff000000" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+	</object>
 </type>
 

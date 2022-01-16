@@ -171,7 +171,7 @@
 		<designed target="BrushColor" value="4278190080" ver="4"/>
 		<designed target="BrushStyle" value="1" ver="4"/>
 	</object>
-	<object access-modifier="private" name="triangleTop" display-name="triangleTop" uuid="8063eb4f-d6b7-4f0b-b4d0-f8e8fd85cb97" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="3" cardinal="2">
+	<object access-modifier="private" name="triangleTop" display-name="triangleTop" uuid="8063eb4f-d6b7-4f0b-b4d0-f8e8fd85cb97" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="3" cardinal="1">
 		<designed target="X" value="0" ver="3"/>
 		<designed target="Y" value="0" ver="3"/>
 		<designed target="ZValue" value="0" ver="3"/>
@@ -204,33 +204,20 @@
 			<designed target="X" value="0" ver="3"/>
 			<designed target="Y" value="0" ver="3"/>
 		</object>
-		<do-trace access-modifier="private" target="BrushStyle" ver="4">
+		<do-trace access-modifier="private" target="BrushColor" ver="4">
 			<conditional-expr>
 				<condition>
 					<![CDATA[FillTop == true]]>
 				</condition>
 				<expr>
-					<![CDATA[1]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[FillTop == false]]>
-				</condition>
-				<expr>
-					<![CDATA[0]]>
+					<![CDATA[Color]]>
 				</expr>
 			</conditional-expr>
 			<default-expr>
 				<expr>
-					<![CDATA[1]]>
+					<![CDATA[0xff000000]]>
 				</expr>
 			</default-expr>
-		</do-trace>
-		<do-trace access-modifier="private" target="BrushColor" ver="3">
-			<body>
-				<![CDATA[Color]]>
-			</body>
 		</do-trace>
 		<do-trace access-modifier="private" target="PenColor" ver="3">
 			<body>
@@ -283,33 +270,20 @@
 			<designed target="X" value="0" ver="3"/>
 			<designed target="Y" value="0" ver="3"/>
 		</object>
-		<do-trace access-modifier="private" target="BrushStyle" ver="4">
+		<do-trace access-modifier="private" target="BrushColor" ver="4">
 			<conditional-expr>
 				<condition>
 					<![CDATA[FillBot == true]]>
 				</condition>
 				<expr>
-					<![CDATA[1]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[FillBot == false]]>
-				</condition>
-				<expr>
-					<![CDATA[0]]>
+					<![CDATA[Color]]>
 				</expr>
 			</conditional-expr>
 			<default-expr>
 				<expr>
-					<![CDATA[1]]>
+					<![CDATA[0xff000000]]>
 				</expr>
 			</default-expr>
-		</do-trace>
-		<do-trace access-modifier="private" target="BrushColor" ver="3">
-			<body>
-				<![CDATA[Color]]>
-			</body>
 		</do-trace>
 		<do-trace access-modifier="private" target="PenColor" ver="3">
 			<body>

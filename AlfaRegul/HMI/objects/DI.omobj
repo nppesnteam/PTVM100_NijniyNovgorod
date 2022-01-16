@@ -94,11 +94,11 @@ OpenModuleWindow.Invoke();]]>
 				<![CDATA[i: uint1 = 0;
 while(i<32)
 {
-	VALUE[i].Path = "DI"+Str.ToString(i+1)+".H";
-	NAME[i].Path = "DI"+Str.ToString(i+1)+".NAME";
-	KKS[i].Path = "DI"+Str.ToString(i+1)+".KKS";
-	InInvert[i].Path = "DI"+Str.ToString(i+1)+".InInvert";
-	OutInvert[i].Path = "DI"+Str.ToString(i+1)+".OutInvert";
+	VALUE[i].Path = "Channel"+Str.ToString(i+1)+".H";
+	NAME[i].Path = "Channel"+Str.ToString(i+1)+".NAME";
+	KKS[i].Path = "Channel"+Str.ToString(i+1)+".KKS";
+	InInvert[i].Path = "Channel"+Str.ToString(i+1)+".InInvert";
+	OutInvert[i].Path = "Channel"+Str.ToString(i+1)+".OutInvert";
 	i += 1;
 }]]>
 			</body>

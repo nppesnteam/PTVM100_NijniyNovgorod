@@ -21,7 +21,7 @@
 		<designed target="Tooltip" value="" ver="3"/>
 		<designed target="Width" value="20" ver="3"/>
 		<designed target="Height" value="67" ver="3"/>
-		<designed target="PenColor" value="0xffffaa00" ver="3"/>
+		<designed target="PenColor" value="0xffc65a02" ver="3"/>
 		<designed target="PenStyle" value="1" ver="3"/>
 		<designed target="PenWidth" value="1" ver="3"/>
 		<designed target="BrushColor" value="0xffffffff" ver="3"/>
@@ -72,11 +72,6 @@
 					<![CDATA[0xff000000]]>
 				</expr>
 			</conditional-expr>
-		</do-trace>
-		<do-trace access-modifier="private" target="HasGas" ver="4">
-			<body>
-				<![CDATA[TubeO2In.HasGas&&RefFlapO2.NoL]]>
-			</body>
 		</do-trace>
 	</object>
 	<object access-modifier="private" name="TubeGasAfterValves" display-name="TubeGasAfterValves" uuid="ea42bc27-f2aa-47fc-8230-e10dcf2b46b4" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
@@ -257,11 +252,6 @@
 				</expr>
 			</conditional-expr>
 		</do-trace>
-		<do-trace access-modifier="private" target="HasGas" ver="4">
-			<body>
-				<![CDATA[TubeO2In.HasGas&&RefFlapO2.NoL]]>
-			</body>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="TubeO2In" display-name="TubeO2In" uuid="3496c463-9c30-4dbd-a7d5-a034c19deb1a" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="3">
 		<designed target="X" value="-62" ver="3"/>
@@ -318,11 +308,6 @@
 					<![CDATA[0xff000000]]>
 				</expr>
 			</conditional-expr>
-		</do-trace>
-		<do-trace access-modifier="private" target="HasGas" ver="4">
-			<body>
-				<![CDATA[RefVent.InOn]]>
-			</body>
 		</do-trace>
 	</object>
 	<object access-modifier="private" name="burner" display-name="burner" uuid="6220092f-1a9a-4107-8a15-f1b3b2bbd22e" base-type="burner" base-type-id="f51dcd8c-5858-405d-a8d6-c95eca82779c" ver="3">
@@ -402,6 +387,14 @@
 			</conditional-expr>
 		</do-trace>
 	</object>
+	<object access-modifier="private" name="ValveIgn" display-name="ValveIgn" uuid="8372f0cb-74e0-4557-821b-39529b958b0c" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
+		<designed target="X" value="26" ver="4"/>
+		<designed target="Y" value="70" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<init target="Color" ver="4" value="0xffffff00"/>
+		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
+		<init target="initPath" ver="4" value="ValveIgn"/>
+	</object>
 	<object access-modifier="private" name="Valve2" display-name="Valve2" uuid="05408477-0e70-42b7-8154-c87f10790e4e" base-type="valveEM" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="3">
 		<designed target="X" value="-2" ver="3"/>
 		<designed target="Y" value="70" ver="3"/>
@@ -409,35 +402,6 @@
 		<init target="Color" ver="3" value="0xffffff00"/>
 		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
 		<init target="initPath" ver="4" value="ValveII"/>
-	</object>
-	<object access-modifier="private" name="FlapO2" display-name="FlapO2" uuid="8c396192-f1db-41be-9dba-34a45fe306f2" base-type="flap" base-type-id="a3e73327-f733-446d-ac01-918439e55f3f" ver="3">
-		<designed target="X" value="-70" ver="3"/>
-		<designed target="Y" value="120" ver="3"/>
-		<designed target="Rotation" value="0" ver="3"/>
-		<init target="Color" ver="3" value="0xff00aaff"/>
-		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
-		<init target="initPath" ver="4" value="FlapO2"/>
-	</object>
-	<object access-modifier="private" name="PO2" display-name="PO2" uuid="c3fd26d2-4340-4e08-8a00-4fc0b2be91fc" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
-		<designed target="X" value="-92" ver="4"/>
-		<designed target="Y" value="165" ver="4"/>
-		<designed target="Rotation" value="0" ver="4"/>
-		<designed target="Scale" value="1.2" ver="4"/>
-		<init target="EUTextColor" ver="4" value="0xff00aaff"/>
-		<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
-		<init target="VALUEBrushType" ver="4" value="1"/>
-		<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
-		<init target="EUBrushType" ver="4" value="1"/>
-		<init target="PenType" ver="4" value="1"/>
-		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
-		<init target="initPath" ver="4" value="PO2"/>
-		<init target="InBurner" ver="4" value="true"/>
-		<init target="initName" ver="4" value="PO2"/>
-		<do-trace access-modifier="private" target="BurnValPath" ver="4">
-			<body>
-				<![CDATA["GROUP"+Str.ToString(Group)+"."+here.InitPath+".Burn"]]>
-			</body>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="FlapGas" display-name="FlapGas" uuid="1941c4b2-8d7e-4600-a4a5-c0256639c120" base-type="flap" base-type-id="a3e73327-f733-446d-ac01-918439e55f3f" ver="4">
 		<designed target="X" value="-2" ver="4"/>
@@ -447,6 +411,34 @@
 		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
 		<init target="initPath" ver="4" value="FlapGas"/>
 		<init target="HavePositSens" ver="4" value="true"/>
+	</object>
+	<object access-modifier="private" name="FlapOil" display-name="FlapOil" uuid="ffc027db-3594-40fa-9bd4-48059dfb847d" base-type="flap" base-type-id="a3e73327-f733-446d-ac01-918439e55f3f" ver="3">
+		<designed target="X" value="-43" ver="3"/>
+		<designed target="Y" value="70" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<init target="Color" ver="3" value="0xffc65a02"/>
+		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
+		<init target="initPath" ver="4" value="FlapO2"/>
+	</object>
+	<object access-modifier="private" name="Vent" display-name="Vent" uuid="07b0a3a8-fbac-417d-8ae5-66f43bab8cd1" base-type="engineTop" base-type-id="c50df17d-e1a0-4f27-9be4-f55a0d8eed22" ver="4">
+		<designed target="X" value="-67" ver="4"/>
+		<designed target="Y" value="64" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
+		<init target="initPath" ver="4" value="Fan"/>
+		<do-trace access-modifier="private" target="BurnNumber" ver="4">
+			<body>
+				<![CDATA[Str.ToString(here.BurnNumber)]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="FlapO2" display-name="FlapO2" uuid="8c396192-f1db-41be-9dba-34a45fe306f2" base-type="flap" base-type-id="a3e73327-f733-446d-ac01-918439e55f3f" ver="3">
+		<designed target="X" value="-70" ver="3"/>
+		<designed target="Y" value="120" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<init target="Color" ver="3" value="0xff00aaff"/>
+		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
+		<init target="initPath" ver="4" value="FlapO2"/>
 	</object>
 	<object access-modifier="private" name="PGas" display-name="PGas" uuid="915205b6-8767-4328-928a-1af2dd1a0eb8" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 		<designed target="X" value="12" ver="4"/>
@@ -469,14 +461,6 @@
 			</body>
 		</do-trace>
 	</object>
-	<object access-modifier="private" name="FlapOil" display-name="FlapOil" uuid="ffc027db-3594-40fa-9bd4-48059dfb847d" base-type="flap" base-type-id="a3e73327-f733-446d-ac01-918439e55f3f" ver="3">
-		<designed target="X" value="-43" ver="3"/>
-		<designed target="Y" value="70" ver="3"/>
-		<designed target="Rotation" value="0" ver="3"/>
-		<init target="Color" ver="3" value="0xff00aaff"/>
-		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
-		<init target="initPath" ver="4" value="FlapO2"/>
-	</object>
 	<object access-modifier="private" name="POil" display-name="POil" uuid="d48ec9ef-e344-4c6c-bc8f-652893480d83" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 		<designed target="X" value="-60" ver="4"/>
 		<designed target="Y" value="230" ver="4"/>
@@ -494,18 +478,27 @@
 				<![CDATA["GROUP"+Str.ToString(Group)+"."+here.InitPath+".Burn"]]>
 			</body>
 		</do-trace>
-		<init target="EUTextColor" ver="4" value="0xffffaa00"/>
+		<init target="EUTextColor" ver="4" value="0xffc65a02"/>
 		<init target="initPath" ver="4" value="POil"/>
 	</object>
-	<object access-modifier="private" name="Vent" display-name="Vent" uuid="07b0a3a8-fbac-417d-8ae5-66f43bab8cd1" base-type="engineTop" base-type-id="c50df17d-e1a0-4f27-9be4-f55a0d8eed22" ver="4">
-		<designed target="X" value="-67" ver="4"/>
-		<designed target="Y" value="64" ver="4"/>
+	<object access-modifier="private" name="PO2" display-name="PO2" uuid="c3fd26d2-4340-4e08-8a00-4fc0b2be91fc" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
+		<designed target="X" value="-92" ver="4"/>
+		<designed target="Y" value="165" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1.2" ver="4"/>
+		<init target="EUTextColor" ver="4" value="0xff00aaff"/>
+		<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+		<init target="VALUEBrushType" ver="4" value="1"/>
+		<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
+		<init target="EUBrushType" ver="4" value="1"/>
+		<init target="PenType" ver="4" value="1"/>
 		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
-		<init target="initPath" ver="4" value="Fan"/>
-		<do-trace access-modifier="private" target="BurnNumber" ver="4">
+		<init target="initPath" ver="4" value="PO2"/>
+		<init target="InBurner" ver="4" value="true"/>
+		<init target="initName" ver="4" value="PO2"/>
+		<do-trace access-modifier="private" target="BurnValPath" ver="4">
 			<body>
-				<![CDATA[Str.ToString(here.BurnNumber)]]>
+				<![CDATA["GROUP"+Str.ToString(Group)+"."+here.InitPath+".Burn"]]>
 			</body>
 		</do-trace>
 	</object>
@@ -707,26 +700,7 @@
 	</object>
 	<object access-modifier="private" name="BurnerHasGas" display-name="BurnerHasGas" uuid="f74ece4e-74a7-4941-91be-e4c3f3978746" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
 	<object access-modifier="private" name="IgnHasGas" display-name="IgnHasGas" uuid="bb78d2b3-d4df-4933-848b-22731e56a590" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
-	<object access-modifier="private" name="RefValve1" display-name="RefValve1" uuid="0b895fc3-1ec6-44f6-9fb8-63f351387e63" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" base-const="true" base-ref="true" ver="4"/>
-	<object access-modifier="private" name="RefValve2" display-name="RefValve2" uuid="d7b79202-2804-4683-8497-f06f814ae3be" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" base-const="true" base-ref="true" ver="4"/>
-	<object access-modifier="private" name="RefValveSafety" display-name="RefValveSafety" uuid="57823d51-0c10-454e-bd6b-daca5df9e85c" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" base-const="true" base-ref="true" ver="4"/>
-	<object access-modifier="private" name="RefFlapO2" display-name="RefFlapO2" uuid="0911623e-2fd0-4e3b-99ed-2f837b08bf26" base-type="flap" base-type-id="a3e73327-f733-446d-ac01-918439e55f3f" base-const="true" base-ref="true" ver="4"/>
-	<object access-modifier="private" name="RefFlapGas" display-name="RefFlapGas" uuid="04fa4fb0-d3bc-4042-8815-f2907e462f55" base-type="flap" base-type-id="a3e73327-f733-446d-ac01-918439e55f3f" base-const="true" base-ref="true" ver="4"/>
-	<object access-modifier="private" name="RefVent" display-name="RefVent" uuid="72c5ad93-4cf1-4319-8387-d37477aae419" base-type="engineTop" base-type-id="c50df17d-e1a0-4f27-9be4-f55a0d8eed22" base-const="true" base-ref="true" ver="4"/>
-	<object access-modifier="private" name="RefValveIgn" display-name="RefValveIgn" uuid="244c704f-6b53-4d93-ab66-82cf1460afee" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" base-const="true" base-ref="true" ver="4"/>
-	<init target="RefValve2" ver="4" ref="Valve2"/>
-	<init target="RefFlapO2" ver="4" ref="FlapO2"/>
-	<init target="RefFlapGas" ver="4" ref="FlapGas"/>
-	<init target="RefVent" ver="4" ref="Vent"/>
 	<object access-modifier="private" name="Group" display-name="Group" uuid="7d909eff-da69-4941-9f06-c71abc89c5ab" base-type="notifying_int1" base-type-id="cc2bf8ea-3898-4228-bc8f-71a7738f0c62" ver="4"/>
 	<object access-modifier="private" name="InitPath" display-name="InitPath" uuid="9a5dc97f-a2e0-4282-876e-14ac62aa3e69" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="4"/>
-	<object access-modifier="private" name="ValveIgn" display-name="ValveIgn" uuid="8372f0cb-74e0-4557-821b-39529b958b0c" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
-		<designed target="X" value="26" ver="4"/>
-		<designed target="Y" value="70" ver="4"/>
-		<designed target="Rotation" value="0" ver="4"/>
-		<init target="Color" ver="4" value="0xffffff00"/>
-		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
-		<init target="initPath" ver="4" value="ValveIgn"/>
-	</object>
 </type>
 

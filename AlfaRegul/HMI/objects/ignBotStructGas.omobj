@@ -21,7 +21,7 @@
 		<designed target="Tooltip" value="" ver="3"/>
 		<designed target="Width" value="20" ver="3"/>
 		<designed target="Height" value="74" ver="3"/>
-		<designed target="PenColor" value="0xffffaa00" ver="3"/>
+		<designed target="PenColor" value="0xffc65a02" ver="3"/>
 		<designed target="PenStyle" value="1" ver="3"/>
 		<designed target="PenWidth" value="1" ver="3"/>
 		<designed target="BrushColor" value="0xffffffff" ver="3"/>
@@ -721,7 +721,7 @@
 		<designed target="X" value="-43.0643" ver="3"/>
 		<designed target="Y" value="140" ver="3"/>
 		<designed target="Rotation" value="0" ver="3"/>
-		<init target="Color" ver="3" value="0xff00aaff"/>
+		<init target="Color" ver="3" value="0xffc65a02"/>
 		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
 		<init target="initPath" ver="4" value="FlapO2"/>
 	</object>
@@ -742,7 +742,7 @@
 				<![CDATA["GROUP"+Str.ToString(Group)+"."+here.InitPath+".Burn"]]>
 			</body>
 		</do-trace>
-		<init target="EUTextColor" ver="4" value="0xffffaa00"/>
+		<init target="EUTextColor" ver="4" value="0xffc65a02"/>
 		<init target="initPath" ver="4" value="POil"/>
 	</object>
 </type>
