@@ -28,7 +28,7 @@
 		<designed target="CurrentFrameNumber" value="0" ver="4"/>
 		<designed target="Speed" value="1" ver="4"/>
 	</object>
-	<object access-modifier="private" name="OpenModuleWindow" display-name="OpenModuleWindow" uuid="59e60c38-0519-45f2-9b06-ff9158452252" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4" cardinal="18">
+	<object access-modifier="private" name="OpenModuleWindow" display-name="OpenModuleWindow" uuid="59e60c38-0519-45f2-9b06-ff9158452252" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4" cardinal="1">
 		<designed target="Enabled" value="true" ver="4"/>
 		<designed target="InvokeTrigger" value="false" ver="4"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-action="open-new" form-by-id="false">
@@ -63,7 +63,11 @@
 mY = TypeConvert.ToFloat(ScreenY(MouseX, MouseY));
 if (mX+700>1920)
 {
-	mX = TypeConvert.ToInt4(mX-(710-(1920-mX)));
+	mX = TypeConvert.ToInt4(1920-710);
+}
+if (mY+370>1080)
+{
+	mY = TypeConvert.ToInt4(1080-370);
 }
 OpenModuleWindow.Invoke();]]>
 		</body>

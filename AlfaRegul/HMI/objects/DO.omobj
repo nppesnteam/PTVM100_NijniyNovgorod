@@ -28,7 +28,7 @@
 		<designed target="CurrentFrameNumber" value="0" ver="4"/>
 		<designed target="Speed" value="1" ver="4"/>
 	</object>
-	<object access-modifier="private" name="OpenModuleWindow" display-name="OpenModuleWindow" uuid="ca8cfddb-eeb0-4964-90e2-36a7142d885f" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4" cardinal="18">
+	<object access-modifier="private" name="OpenModuleWindow" display-name="OpenModuleWindow" uuid="ca8cfddb-eeb0-4964-90e2-36a7142d885f" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4" cardinal="1">
 		<designed target="Enabled" value="true" ver="4"/>
 		<designed target="InvokeTrigger" value="false" ver="4"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-action="open-new" form-by-id="false">
