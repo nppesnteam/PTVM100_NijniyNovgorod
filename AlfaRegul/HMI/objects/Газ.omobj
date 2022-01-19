@@ -205,15 +205,19 @@
 				<designed target="Y" value="420" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xff888888"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="FlapA"/>
 			</object>
 			<object access-modifier="private" name="FlapSmoke2" display-name="FlapSmoke2" uuid="b2317af0-f74b-4194-91da-63d12d631502" base-type="FlapWithSettings" base-type-id="4cc80454-f0cf-4879-8e38-2c16930c7fae" ver="4">
 				<designed target="X" value="196" ver="4"/>
 				<designed target="Y" value="420" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xff888888"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="FlapB"/>
 			</object>
 			<object access-modifier="private" name="SSmoke" display-name="SSmoke" uuid="d678be86-c04a-4580-b5b6-fdb60dddb3d3" base-type="Sens" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
-				<designed target="X" value="96" ver="4"/>
+				<designed target="X" value="87" ver="4"/>
 				<designed target="Y" value="493" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xff888888"/>
@@ -222,9 +226,11 @@
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
 				<init target="PenType" ver="4" value="1"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="S"/>
 			</object>
 			<object access-modifier="private" name="O2Smoke" display-name="O2Smoke" uuid="84377af6-26af-4a3d-b305-099022792554" base-type="Sens" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
-				<designed target="X" value="96" ver="4"/>
+				<designed target="X" value="87" ver="4"/>
 				<designed target="Y" value="360" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xff888888"/>
@@ -233,9 +239,11 @@
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
 				<init target="PenType" ver="4" value="1"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="O2"/>
 			</object>
 			<object access-modifier="private" name="TSmoke" display-name="TSmoke" uuid="f8197db5-0cd7-4062-b03e-702e17b7471f" base-type="Sens" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
-				<designed target="X" value="96" ver="4"/>
+				<designed target="X" value="87" ver="4"/>
 				<designed target="Y" value="340" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xff888888"/>
@@ -244,6 +252,8 @@
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
 				<init target="PenType" ver="4" value="1"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="T"/>
 			</object>
 			<object access-modifier="private" name="Pipe" display-name="Pipe" uuid="fa0bdd6c-0344-4f72-9946-8408165d5ba8" base-type="Pipe" base-type-id="ba0d9c85-7751-4117-ab7b-4b140f9c8af8" ver="4">
 				<designed target="X" value="180" ver="4"/>
@@ -269,6 +279,13 @@
 				<designed target="Active" value="true" ver="4"/>
 				<designed target="CurrentFrameNumber" value="0" ver="4"/>
 				<designed target="Speed" value="1" ver="4"/>
+			</object>
+			<object access-modifier="private" name="OpcSource" display-name="OpcSource" uuid="84343517-310d-4d83-8e3a-199d8c341ee3" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+				<designed target="Active" value="false" ver="4"/>
+				<designed target="UpdateRate" value="0" ver="4"/>
+				<designed target="ReAdvise" value="0" ver="4"/>
+				<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
+				<init target="Path" ver="4" value="ROOT.Smoke"/>
 			</object>
 		</object>
 		<object access-modifier="private" name="rectBoiler" display-name="rectBoiler" uuid="4b7106b3-b999-4d33-8d80-7bec2cdf5043" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
@@ -504,45 +521,30 @@
 				<designed target="X" value="100" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<do-trace access-modifier="private" target="BurnNumber" ver="4">
-					<body>
-						<![CDATA[unit.Global.Group[Group-1].burn[0].Number.Value]]>
-					</body>
-				</do-trace>
 				<init target="InitOpcSource" ver="4" ref="OPCSource"/>
 				<do-trace access-modifier="private" target="Group" ver="4">
 					<body>
 						<![CDATA[parent.Group]]>
 					</body>
 				</do-trace>
-				<init target="InitPath" ver="4" value="burn1"/>
+				<init target="InitPath" ver="4" value="Burn1"/>
 			</object>
 			<object access-modifier="private" name="burn2" display-name="burn2" uuid="7e76f36e-e884-45ae-bf49-9ea2b370f1d5" base-type="burnTopStruct" base-type-id="db217da3-5b19-4c08-9357-c27589892127" ver="4">
 				<designed target="X" value="250" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<do-trace access-modifier="private" target="BurnNumber" ver="4">
-					<body>
-						<![CDATA[unit.Global.Group[Group-1].burn[1].Number.Value]]>
-					</body>
-				</do-trace>
 				<init target="InitOpcSource" ver="4" ref="OPCSource"/>
 				<do-trace access-modifier="private" target="Group" ver="4">
 					<body>
 						<![CDATA[parent.Group]]>
 					</body>
 				</do-trace>
-				<init target="InitPath" ver="4" value="burn2"/>
+				<init target="InitPath" ver="4" value="Burn2"/>
 			</object>
 			<object access-modifier="private" name="burn3" display-name="burn3" uuid="abf22ed9-b067-49b2-8628-ea8d8d481d13" base-type="ignTopStruct" base-type-id="f4c86c1f-2d49-4b68-b807-72500ee8461a" ver="4">
 				<designed target="X" value="400" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<do-trace access-modifier="private" target="BurnNumber" ver="4">
-					<body>
-						<![CDATA[unit.Global.Group[Group-1].burn[2].Number.Value]]>
-					</body>
-				</do-trace>
 				<init target="InitOpcSource" ver="4" ref="OPCSource"/>
 				<do-trace access-modifier="private" target="IgnHasGas" ver="4">
 					<body>
@@ -554,49 +556,54 @@
 						<![CDATA[parent.Group]]>
 					</body>
 				</do-trace>
-				<init target="InitPath" ver="4" value="burn3"/>
+				<init target="InitPath" ver="4" value="BurnIgn"/>
 			</object>
 			<object access-modifier="private" name="OPCSource" display-name="OPCSource" uuid="f4f87823-8987-431b-9008-cb0acdc9c309" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
 				<designed target="Active" value="false" ver="4"/>
 				<designed target="UpdateRate" value="0" ver="4"/>
 				<designed target="ReAdvise" value="0" ver="4"/>
 				<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
-				<init target="Path" ver="4" value="ROOT.GAS.GROUP2"/>
+				<do-trace access-modifier="private" target="Path" ver="4">
+					<body>
+						<![CDATA["ROOT.Group"+Str.ToString(Group)]]>
+					</body>
+				</do-trace>
 			</object>
 			<object access-modifier="private" name="burn4" display-name="burn4" uuid="7e17c879-b981-4ce7-9d5b-9ecc29ca6ed3" base-type="burnTopStruct" base-type-id="db217da3-5b19-4c08-9357-c27589892127" ver="4">
 				<designed target="X" value="550" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<do-trace access-modifier="private" target="BurnNumber" ver="4">
-					<body>
-						<![CDATA[unit.Global.Group[Group-1].burn[1].Number.Value]]>
-					</body>
-				</do-trace>
 				<init target="InitOpcSource" ver="4" ref="OPCSource"/>
 				<do-trace access-modifier="private" target="Group" ver="4">
 					<body>
 						<![CDATA[parent.Group]]>
 					</body>
 				</do-trace>
-				<init target="InitPath" ver="4" value="burn2"/>
+				<init target="InitPath" ver="4" value="burn3"/>
 			</object>
 			<object access-modifier="private" name="Valve1" display-name="Valve1" uuid="538f7fae-6def-479a-89a1-230463179235" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="398" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
+				<init target="initOPCSource" ver="4" ref="OPCSource"/>
+				<init target="initPath" ver="4" value="Valve1"/>
 			</object>
 			<object access-modifier="private" name="ValveDensity" display-name="ValveDensity" uuid="377c7491-bf28-4b60-9dfe-ed7d7da4e1d7" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="548" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
+				<init target="initOPCSource" ver="4" ref="OPCSource"/>
+				<init target="initPath" ver="4" value="ValveDensity"/>
 			</object>
 			<object access-modifier="private" name="ValveSecurity" display-name="ValveSecurity" uuid="9fc17c48-2057-48b6-80f1-60fa92925f25" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="578" ver="4"/>
 				<designed target="Y" value="26.3" ver="4"/>
 				<designed target="Rotation" value="90" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
+				<init target="initOPCSource" ver="4" ref="OPCSource"/>
+				<init target="initPath" ver="4" value="ValveSecurity"/>
 			</object>
 			<object access-modifier="private" name="PBetween" display-name="PBetween" uuid="bc73b792-76a7-4cb1-bed3-d1ccde033c01" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 				<designed target="X" value="430" ver="4"/>
@@ -608,6 +615,8 @@
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
 				<init target="PenType" ver="4" value="1"/>
+				<init target="initOPCSource" ver="4" ref="OPCSource"/>
+				<init target="initPath" ver="4" value="PBetween"/>
 			</object>
 		</object>
 		<object access-modifier="private" name="Group2" display-name="Group2" uuid="e76d8d6c-a9f1-46f3-b5fa-4486be6990f7" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="3">
@@ -824,28 +833,18 @@
 				<designed target="X" value="100" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<do-trace access-modifier="private" target="BurnNumber" ver="4">
-					<body>
-						<![CDATA[unit.Global.Group[Group-1].burn[1].Number.Value]]>
-					</body>
-				</do-trace>
 				<init target="InitOpcSource" ver="4" ref="OPCSource"/>
 				<do-trace access-modifier="private" target="Group" ver="4">
 					<body>
 						<![CDATA[parent.Group]]>
 					</body>
 				</do-trace>
-				<init target="InitPath" ver="4" value="burn2"/>
+				<init target="InitPath" ver="4" value="Burn1"/>
 			</object>
 			<object access-modifier="private" name="burn2" display-name="burn2" uuid="1fe49933-685a-47e4-9f91-0921148c40e9" base-type="ignTopStruct" base-type-id="f4c86c1f-2d49-4b68-b807-72500ee8461a" ver="4">
 				<designed target="X" value="250" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<do-trace access-modifier="private" target="BurnNumber" ver="4">
-					<body>
-						<![CDATA[unit.Global.Group[Group-1].burn[0].Number.Value]]>
-					</body>
-				</do-trace>
 				<init target="InitOpcSource" ver="4" ref="OPCSource"/>
 				<do-trace access-modifier="private" target="IgnHasGas" ver="4">
 					<body>
@@ -857,66 +856,66 @@
 						<![CDATA[parent.Group]]>
 					</body>
 				</do-trace>
-				<init target="InitPath" ver="4" value="burn1"/>
+				<init target="InitPath" ver="4" value="BurnIgn"/>
 			</object>
 			<object access-modifier="private" name="burn3" display-name="burn3" uuid="238f9d22-84d0-46e2-88fe-b52485f20b87" base-type="burnTopStruct" base-type-id="db217da3-5b19-4c08-9357-c27589892127" ver="4">
 				<designed target="X" value="400" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<do-trace access-modifier="private" target="BurnNumber" ver="4">
-					<body>
-						<![CDATA[unit.Global.Group[Group-1].burn[1].Number.Value]]>
-					</body>
-				</do-trace>
 				<init target="InitOpcSource" ver="4" ref="OPCSource"/>
 				<do-trace access-modifier="private" target="Group" ver="4">
 					<body>
 						<![CDATA[parent.Group]]>
 					</body>
 				</do-trace>
-				<init target="InitPath" ver="4" value="burn2"/>
+				<init target="InitPath" ver="4" value="Burn2"/>
 			</object>
 			<object access-modifier="private" name="burn4" display-name="burn4" uuid="1e3dbd14-d9aa-4c92-824b-ad9806d967d8" base-type="burnTopStruct" base-type-id="db217da3-5b19-4c08-9357-c27589892127" ver="4">
 				<designed target="X" value="550" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<do-trace access-modifier="private" target="BurnNumber" ver="4">
-					<body>
-						<![CDATA[unit.Global.Group[Group-1].burn[2].Number.Value]]>
-					</body>
-				</do-trace>
 				<init target="InitOpcSource" ver="4" ref="OPCSource"/>
 				<do-trace access-modifier="private" target="Group" ver="4">
 					<body>
 						<![CDATA[parent.Group]]>
 					</body>
 				</do-trace>
-				<init target="InitPath" ver="4" value="burn3"/>
+				<init target="InitPath" ver="4" value="Burn3"/>
 			</object>
 			<object access-modifier="private" name="OPCSource" display-name="OPCSource" uuid="582dee4b-cd0a-472c-808c-d5f5a03a7f61" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
 				<designed target="Active" value="true" ver="4"/>
 				<designed target="UpdateRate" value="0" ver="4"/>
 				<designed target="ReAdvise" value="0" ver="4"/>
 				<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
-				<init target="Path" ver="4" value="ROOT.GAS.GROUP1"/>
+				<do-trace access-modifier="private" target="Path" ver="4">
+					<body>
+						<![CDATA["ROOT.Group"+Str.ToString(Group)]]>
+					</body>
+				</do-trace>
 			</object>
 			<object access-modifier="private" name="Valve1" display-name="Valve1" uuid="6ab5c839-1aa8-41e0-841c-eee78383500f" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="248" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
+				<init target="initOPCSource" ver="4" ref="OPCSource"/>
+				<init target="initPath" ver="4" value="Valve1"/>
 			</object>
 			<object access-modifier="private" name="ValveDensity" display-name="ValveDensity" uuid="f50cc7f2-85e9-4996-9881-230ffb86e091" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="548" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
+				<init target="initOPCSource" ver="4" ref="OPCSource"/>
+				<init target="initPath" ver="4" value="ValveDensity"/>
 			</object>
 			<object access-modifier="private" name="ValveSecurity" display-name="ValveSecurity" uuid="2e6cb29a-0645-4ad6-9f12-3e7770b7c997" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="578" ver="4"/>
 				<designed target="Y" value="26.3" ver="4"/>
 				<designed target="Rotation" value="90" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
+				<init target="initOPCSource" ver="4" ref="OPCSource"/>
+				<init target="initPath" ver="4" value="ValveSecurity"/>
 			</object>
 			<object access-modifier="private" name="PBetween" display-name="PBetween" uuid="174ca7a6-a82e-478e-91dd-03bd861d220d" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 				<designed target="X" value="280" ver="4"/>
@@ -928,6 +927,8 @@
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
 				<init target="PenType" ver="4" value="1"/>
+				<init target="initOPCSource" ver="4" ref="OPCSource"/>
+				<init target="initPath" ver="4" value="PBetween"/>
 			</object>
 		</object>
 		<object access-modifier="private" name="Group3" display-name="Group3" uuid="08981b97-cfef-432c-a42e-5824f7bffd7e" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="3">
@@ -1144,45 +1145,30 @@
 				<designed target="X" value="100" ver="4"/>
 				<designed target="Y" value="14" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<do-trace access-modifier="private" target="BurnNumber" ver="4">
-					<body>
-						<![CDATA[unit.Global.Group[Group-1].burn[0].Number.Value]]>
-					</body>
-				</do-trace>
 				<init target="InitOpcSource" ver="4" ref="OPCSource"/>
 				<do-trace access-modifier="private" target="Group" ver="4">
 					<body>
 						<![CDATA[parent.Group]]>
 					</body>
 				</do-trace>
-				<init target="InitPath" ver="4" value="burn1"/>
+				<init target="InitPath" ver="4" value="Burn1"/>
 			</object>
 			<object access-modifier="private" name="burn2" display-name="burn2" uuid="e69a71e6-7ebf-4281-8698-e69c626ff2f9" base-type="burnBotStruct" base-type-id="786ccf73-d011-47bb-b5ef-884fac70c28a" ver="4">
 				<designed target="X" value="250" ver="4"/>
 				<designed target="Y" value="14" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<do-trace access-modifier="private" target="BurnNumber" ver="4">
-					<body>
-						<![CDATA[unit.Global.Group[Group-1].burn[1].Number.Value]]>
-					</body>
-				</do-trace>
 				<init target="InitOpcSource" ver="4" ref="OPCSource"/>
 				<do-trace access-modifier="private" target="Group" ver="4">
 					<body>
 						<![CDATA[parent.Group]]>
 					</body>
 				</do-trace>
-				<init target="InitPath" ver="4" value="burn2"/>
+				<init target="InitPath" ver="4" value="Burn2"/>
 			</object>
 			<object access-modifier="private" name="burn3" display-name="burn3" uuid="63f063b4-9333-4b5d-a7ba-ecbf5da12fd6" base-type="ignBotStruct" base-type-id="77bbc896-40d4-4ab3-8953-e4843c938e7a" ver="4">
 				<designed target="X" value="400" ver="4"/>
 				<designed target="Y" value="14" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<do-trace access-modifier="private" target="BurnNumber" ver="4">
-					<body>
-						<![CDATA[unit.Global.Group[Group-1].burn[2].Number.Value]]>
-					</body>
-				</do-trace>
 				<init target="InitOpcSource" ver="4" ref="OPCSource"/>
 				<do-trace access-modifier="private" target="IgnHasGas" ver="4">
 					<body>
@@ -1194,49 +1180,54 @@
 						<![CDATA[parent.Group]]>
 					</body>
 				</do-trace>
-				<init target="InitPath" ver="4" value="burn3"/>
+				<init target="InitPath" ver="4" value="BurnIgn"/>
 			</object>
 			<object access-modifier="private" name="OPCSource" display-name="OPCSource" uuid="98d80ab4-6b77-412d-add9-d2f62836783d" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
 				<designed target="Active" value="false" ver="4"/>
 				<designed target="UpdateRate" value="0" ver="4"/>
 				<designed target="ReAdvise" value="0" ver="4"/>
 				<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
-				<init target="Path" ver="4" value="ROOT.GAS.GROUP3"/>
+				<do-trace access-modifier="private" target="Path" ver="4">
+					<body>
+						<![CDATA["ROOT.Group"+Str.ToString(Group)]]>
+					</body>
+				</do-trace>
 			</object>
 			<object access-modifier="private" name="burn4" display-name="burn4" uuid="d8824042-afce-4e04-896a-5c4d34e4e151" base-type="burnBotStruct" base-type-id="786ccf73-d011-47bb-b5ef-884fac70c28a" ver="4">
 				<designed target="X" value="550" ver="4"/>
 				<designed target="Y" value="14" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<do-trace access-modifier="private" target="BurnNumber" ver="4">
-					<body>
-						<![CDATA[unit.Global.Group[Group-1].burn[1].Number.Value]]>
-					</body>
-				</do-trace>
 				<init target="InitOpcSource" ver="4" ref="OPCSource"/>
 				<do-trace access-modifier="private" target="Group" ver="4">
 					<body>
 						<![CDATA[parent.Group]]>
 					</body>
 				</do-trace>
-				<init target="InitPath" ver="4" value="burn2"/>
+				<init target="InitPath" ver="4" value="burn3"/>
 			</object>
 			<object access-modifier="private" name="Valve1" display-name="Valve1" uuid="cd1c82c5-16bb-46e5-8085-f5481c1e46a3" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="398" ver="4"/>
 				<designed target="Y" value="224" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
+				<init target="initOPCSource" ver="4" ref="OPCSource"/>
+				<init target="initPath" ver="4" value="Valve1"/>
 			</object>
 			<object access-modifier="private" name="ValveDensity" display-name="ValveDensity" uuid="80541c08-b17e-4a28-b721-8bf4934163a2" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="548" ver="4"/>
 				<designed target="Y" value="224" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
+				<init target="initOPCSource" ver="4" ref="OPCSource"/>
+				<init target="initPath" ver="4" value="ValveDensity"/>
 			</object>
 			<object access-modifier="private" name="ValveSecurity" display-name="ValveSecurity" uuid="e4c2e57e-1268-4ff3-b177-db07fc3a0445" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="578" ver="4"/>
 				<designed target="Y" value="194.3" ver="4"/>
 				<designed target="Rotation" value="90" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
+				<init target="initOPCSource" ver="4" ref="OPCSource"/>
+				<init target="initPath" ver="4" value="ValveSecurity"/>
 			</object>
 			<object access-modifier="private" name="PBetween" display-name="PBetween" uuid="cb2a827f-c42b-459d-ba25-9e1ccd2054ab" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 				<designed target="X" value="430" ver="4"/>
@@ -1248,6 +1239,8 @@
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
 				<init target="PenType" ver="4" value="1"/>
+				<init target="initOPCSource" ver="4" ref="OPCSource"/>
+				<init target="initPath" ver="4" value="PBetween"/>
 			</object>
 		</object>
 		<object access-modifier="private" name="Group4" display-name="Group4" uuid="722f4e00-9139-49bd-9447-228bded5b27c" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="3">
@@ -1464,28 +1457,18 @@
 				<designed target="X" value="100" ver="4"/>
 				<designed target="Y" value="14" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<do-trace access-modifier="private" target="BurnNumber" ver="4">
-					<body>
-						<![CDATA[unit.Global.Group[Group-1].burn[1].Number.Value]]>
-					</body>
-				</do-trace>
 				<init target="InitOpcSource" ver="4" ref="OPCSource"/>
 				<do-trace access-modifier="private" target="Group" ver="4">
 					<body>
 						<![CDATA[parent.Group]]>
 					</body>
 				</do-trace>
-				<init target="InitPath" ver="4" value="burn2"/>
+				<init target="InitPath" ver="4" value="Burn1"/>
 			</object>
 			<object access-modifier="private" name="burn2" display-name="burn2" uuid="1dfe7997-4d4a-404e-9cf5-de855ce03c19" base-type="ignBotStruct" base-type-id="77bbc896-40d4-4ab3-8953-e4843c938e7a" ver="4">
 				<designed target="X" value="250" ver="4"/>
 				<designed target="Y" value="14" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<do-trace access-modifier="private" target="BurnNumber" ver="4">
-					<body>
-						<![CDATA[unit.Global.Group[Group-1].burn[0].Number.Value]]>
-					</body>
-				</do-trace>
 				<init target="InitOpcSource" ver="4" ref="OPCSource"/>
 				<do-trace access-modifier="private" target="IgnHasGas" ver="4">
 					<body>
@@ -1497,66 +1480,66 @@
 						<![CDATA[parent.Group]]>
 					</body>
 				</do-trace>
-				<init target="InitPath" ver="4" value="burn1"/>
+				<init target="InitPath" ver="4" value="BurnIgn"/>
 			</object>
 			<object access-modifier="private" name="burn3" display-name="burn3" uuid="0fed8e6a-4b6d-4a57-adb4-96aba9ee8500" base-type="burnBotStruct" base-type-id="786ccf73-d011-47bb-b5ef-884fac70c28a" ver="4">
 				<designed target="X" value="400" ver="4"/>
 				<designed target="Y" value="14" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<do-trace access-modifier="private" target="BurnNumber" ver="4">
-					<body>
-						<![CDATA[unit.Global.Group[Group-1].burn[1].Number.Value]]>
-					</body>
-				</do-trace>
 				<init target="InitOpcSource" ver="4" ref="OPCSource"/>
 				<do-trace access-modifier="private" target="Group" ver="4">
 					<body>
 						<![CDATA[parent.Group]]>
 					</body>
 				</do-trace>
-				<init target="InitPath" ver="4" value="burn2"/>
+				<init target="InitPath" ver="4" value="Burn2"/>
 			</object>
 			<object access-modifier="private" name="burn4" display-name="burn4" uuid="00aea3c6-5f15-4ad6-9be8-14e506b8b68a" base-type="burnBotStruct" base-type-id="786ccf73-d011-47bb-b5ef-884fac70c28a" ver="4">
 				<designed target="X" value="550" ver="4"/>
 				<designed target="Y" value="14" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<do-trace access-modifier="private" target="BurnNumber" ver="4">
-					<body>
-						<![CDATA[unit.Global.Group[Group-1].burn[2].Number.Value]]>
-					</body>
-				</do-trace>
 				<init target="InitOpcSource" ver="4" ref="OPCSource"/>
 				<do-trace access-modifier="private" target="Group" ver="4">
 					<body>
 						<![CDATA[parent.Group]]>
 					</body>
 				</do-trace>
-				<init target="InitPath" ver="4" value="burn3"/>
+				<init target="InitPath" ver="4" value="Burn3"/>
 			</object>
 			<object access-modifier="private" name="OPCSource" display-name="OPCSource" uuid="a80582e3-2a0b-4eb1-8815-0489676484db" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
 				<designed target="Active" value="false" ver="4"/>
 				<designed target="UpdateRate" value="0" ver="4"/>
 				<designed target="ReAdvise" value="0" ver="4"/>
 				<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
-				<init target="Path" ver="4" value="ROOT.GAS.GROUP4"/>
+				<do-trace access-modifier="private" target="Path" ver="4">
+					<body>
+						<![CDATA["ROOT.Group"+Str.ToString(Group)]]>
+					</body>
+				</do-trace>
 			</object>
 			<object access-modifier="private" name="Valve1" display-name="Valve1" uuid="ea1912a3-17f3-4dac-bdf0-d802eaac5b5f" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="248" ver="4"/>
 				<designed target="Y" value="224" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
+				<init target="initOPCSource" ver="4" ref="OPCSource"/>
+				<init target="initPath" ver="4" value="Valve1"/>
 			</object>
 			<object access-modifier="private" name="ValveDensity" display-name="ValveDensity" uuid="13f4696d-512e-4227-8d1b-c7b6d0917b42" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="548" ver="4"/>
 				<designed target="Y" value="224" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
+				<init target="initOPCSource" ver="4" ref="OPCSource"/>
+				<init target="initPath" ver="4" value="ValveDensity"/>
 			</object>
 			<object access-modifier="private" name="ValveSecurity" display-name="ValveSecurity" uuid="07870348-b1a0-4e03-b6b1-9280ef5e9cdf" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="578" ver="4"/>
 				<designed target="Y" value="194.3" ver="4"/>
 				<designed target="Rotation" value="90" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
+				<init target="initOPCSource" ver="4" ref="OPCSource"/>
+				<init target="initPath" ver="4" value="ValveSecurity"/>
 			</object>
 			<object access-modifier="private" name="PBetween" display-name="PBetween" uuid="2c0bef40-2e48-43c6-8c71-04f8863c90f1" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 				<designed target="X" value="280" ver="4"/>
@@ -1568,11 +1551,13 @@
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
 				<init target="PenType" ver="4" value="1"/>
+				<init target="initOPCSource" ver="4" ref="OPCSource"/>
+				<init target="initPath" ver="4" value="PBetween"/>
 			</object>
 		</object>
 		<object access-modifier="private" name="BoilerWork" display-name="BoilerWork" uuid="fd187a35-7df0-4ead-8a82-b2ffff1477a5" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 			<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
-			<init target="Path" ver="4" value="ROOT.BOILER.BoilerInWork"/>
+			<init target="Path" ver="4" value="ROOT.Boiler.BoilerInWork"/>
 		</object>
 		<object access-modifier="private" name="Water" display-name="Water" uuid="6dc32c29-95b1-4eca-a8a2-cf51a26c89a9" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
 			<designed target="X" value="80" ver="4"/>
@@ -1986,18 +1971,24 @@
 				<designed target="Y" value="101" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xff00aa00"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="GateIn"/>
 			</object>
 			<object access-modifier="private" name="GateWaterOut" display-name="GateWaterOut" uuid="f0947ba5-1d0b-4965-9035-42fd5bab8c51" base-type="gate" base-type-id="412146cb-dc7b-472f-be3b-e66aa672ce43" ver="4">
 				<designed target="X" value="611" ver="4"/>
 				<designed target="Y" value="101" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xff00aa00"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="GateOut"/>
 			</object>
 			<object access-modifier="private" name="GateWaterBypass" display-name="GateWaterBypass" uuid="174c852d-089e-441a-b3c8-9200c59fa7d1" base-type="gate" base-type-id="412146cb-dc7b-472f-be3b-e66aa672ce43" ver="4">
 				<designed target="X" value="463.5" ver="4"/>
 				<designed target="Y" value="74.5" ver="4"/>
 				<designed target="Rotation" value="90" ver="4"/>
 				<init target="Color" ver="4" value="0xff00aa00"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="GateBypass"/>
 			</object>
 			<object access-modifier="private" name="ArrowWaterIn" display-name="ArrowWaterIn" uuid="aacd07a2-59af-4e1e-9a62-196a5726f923" base-type="arrow" base-type-id="bd45c7e6-c41b-44ca-a8f9-0542667feb49" ver="4">
 				<designed target="X" value="323" ver="4"/>
@@ -2023,6 +2014,8 @@
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
 				<init target="PenType" ver="4" value="1"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="PIn"/>
 			</object>
 			<object access-modifier="private" name="TWaterIn" display-name="TWaterIn" uuid="0c24adc1-71d1-45cd-9451-6227eab21afe" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 				<designed target="X" value="150" ver="4"/>
@@ -2034,6 +2027,8 @@
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
 				<init target="PenType" ver="4" value="1"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="TIn"/>
 			</object>
 			<object access-modifier="private" name="FWaterIn" display-name="FWaterIn" uuid="32b17bc7-6f58-441e-a59e-44c428534d03" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 				<designed target="X" value="60" ver="4"/>
@@ -2045,16 +2040,26 @@
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
 				<init target="PenType" ver="4" value="1"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="F"/>
 			</object>
 			<object access-modifier="private" name="PWaterOut" display-name="PWaterOut" uuid="7ce5cd5f-ca40-403b-bd05-70f0e411381e" base-type="rectangleWithFooter" base-type-id="f0efb2b9-b2c2-4ae5-9828-4b87079c3c46" ver="4">
 				<designed target="X" value="670" ver="4"/>
 				<designed target="Y" value="105" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="POut"/>
+				<init target="EUColor" ver="4" value="0xff00aa00"/>
+				<init target="VALUETxtColor" ver="4" value="0xff00ff00"/>
 			</object>
 			<object access-modifier="private" name="TWaterOut" display-name="TWaterOut" uuid="908a4632-d66d-48ec-8109-62cea0016b85" base-type="rectangleWithFooter" base-type-id="f0efb2b9-b2c2-4ae5-9828-4b87079c3c46" ver="4">
 				<designed target="X" value="770" ver="4"/>
 				<designed target="Y" value="105" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="TOut"/>
+				<init target="EUColor" ver="4" value="0xff00aa00"/>
+				<init target="VALUETxtColor" ver="4" value="0xff00ff00"/>
 			</object>
 			<object access-modifier="private" name="TxtWaterIn" display-name="TxtWaterIn" uuid="30e9163b-3e57-4e4c-ab3c-538e7df9f098" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
 				<designed target="X" value="180" ver="4"/>
@@ -2091,6 +2096,13 @@
 				<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
 				<designed target="FontColor" value="0xffffffff" ver="4"/>
 				<designed target="TextAlignment" value="132" ver="4"/>
+			</object>
+			<object access-modifier="private" name="OpcSource" display-name="OpcSource" uuid="352f1cb1-5495-48cd-ade6-16ef8936360b" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+				<designed target="Active" value="false" ver="4"/>
+				<designed target="UpdateRate" value="0" ver="4"/>
+				<designed target="ReAdvise" value="0" ver="4"/>
+				<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
+				<init target="Path" ver="4" value="ROOT.Water"/>
 			</object>
 		</object>
 		<object access-modifier="private" name="Oil" display-name="Oil" uuid="e53fbfe2-4738-49e5-b24d-dc7bbae7f1a8" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
@@ -2550,18 +2562,24 @@
 				<designed target="Y" value="460" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffc65a02"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="Flap"/>
 			</object>
 			<object access-modifier="private" name="ValveOil" display-name="ValveOil" uuid="910a5e3f-aa06-4254-8286-97741b40fbe2" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="18" ver="4"/>
 				<designed target="Y" value="520" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffc65a02"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="Valve"/>
 			</object>
 			<object access-modifier="private" name="GateOil" display-name="GateOil" uuid="d5d3cff0-2d62-4b3e-8af6-7e1c4ecca7dc" base-type="gate" base-type-id="412146cb-dc7b-472f-be3b-e66aa672ce43" ver="4">
 				<designed target="X" value="18" ver="4"/>
 				<designed target="Y" value="640" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffc65a02"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="Gate"/>
 			</object>
 			<object access-modifier="private" name="ArrowOilIn" display-name="ArrowOilIn" uuid="fc3caf2b-39d1-433d-8f64-90418b8c32bc" base-type="arrow" base-type-id="bd45c7e6-c41b-44ca-a8f9-0542667feb49" ver="4">
 				<designed target="X" value="20" ver="4"/>
@@ -2597,6 +2615,8 @@
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
 				<init target="PenType" ver="4" value="1"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="PAfterFlap"/>
 			</object>
 			<object access-modifier="private" name="POilAfterGate" display-name="POilAfterGate" uuid="3e030847-6d62-4422-be2a-7b242105dac7" base-type="Sens" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 				<designed target="X" value="45" ver="4"/>
@@ -2608,6 +2628,8 @@
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
 				<init target="PenType" ver="4" value="1"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="PBeforeFlap"/>
 			</object>
 			<object access-modifier="private" name="TOilAfterGate" display-name="TOilAfterGate" uuid="08cfca75-ddec-45c9-ad14-0abc0369d680" base-type="Sens" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 				<designed target="X" value="45" ver="4"/>
@@ -2619,6 +2641,8 @@
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
 				<init target="PenType" ver="4" value="1"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="T"/>
 			</object>
 			<object access-modifier="private" name="FOilAfterGate" display-name="FOilAfterGate" uuid="b8538d40-3149-41bc-8b59-ca04df1a7a6f" base-type="Sens" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 				<designed target="X" value="45" ver="4"/>
@@ -2630,6 +2654,15 @@
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
 				<init target="PenType" ver="4" value="1"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="F"/>
+			</object>
+			<object access-modifier="private" name="OpcSource" display-name="OpcSource" uuid="2fc18020-41db-4413-abc2-02ccea97c593" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+				<designed target="Active" value="false" ver="4"/>
+				<designed target="UpdateRate" value="0" ver="4"/>
+				<designed target="ReAdvise" value="0" ver="4"/>
+				<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
+				<init target="Path" ver="4" value="ROOT.Oil"/>
 			</object>
 		</object>
 		<object access-modifier="private" name="Gas" display-name="Gas" uuid="815b0cbd-5a6f-48c3-a8c3-d2d57d088733" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
@@ -3103,44 +3136,60 @@
 				<designed target="Y" value="640" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="Gate1"/>
 			</object>
 			<object access-modifier="private" name="GateGas2" display-name="GateGas2" uuid="192ece50-61a6-4813-9d8c-a80d5b927bc9" base-type="gate" base-type-id="412146cb-dc7b-472f-be3b-e66aa672ce43" ver="4">
 				<designed target="X" value="1130" ver="4"/>
 				<designed target="Y" value="590" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="Gate2"/>
 			</object>
 			<object access-modifier="private" name="FlapGas" display-name="FlapGas" uuid="b1dc5378-060b-4734-9a40-b9c7d64dd436" base-type="FlapWithSettings" base-type-id="4cc80454-f0cf-4879-8e38-2c16930c7fae" ver="4">
 				<designed target="X" value="1130" ver="4"/>
 				<designed target="Y" value="480" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="Flap"/>
 			</object>
 			<object access-modifier="private" name="ValveGas" display-name="ValveGas" uuid="3ac07459-e1c8-42b7-9377-759811aa5a9d" base-type="Valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="1130" ver="4"/>
 				<designed target="Y" value="420" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="ValveAfterFlap"/>
 			</object>
 			<object access-modifier="private" name="ValveBlowTop" display-name="ValveBlowTop" uuid="e1ea1fac-039d-4526-9247-f8288e765ace" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="112" ver="4"/>
 				<designed target="Y" value="33.3" ver="4"/>
 				<designed target="Rotation" value="90" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="ValveBlowTop"/>
 			</object>
 			<object access-modifier="private" name="ValveBlowBot" display-name="ValveBlowBot" uuid="44b79b86-1650-4b56-a78c-7c4f68a54e4b" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="112" ver="4"/>
 				<designed target="Y" value="690.3" ver="4"/>
 				<designed target="Rotation" value="90" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="ValveBlowBot"/>
 			</object>
 			<object access-modifier="private" name="PGasAfterFlap" display-name="PGasAfterFlap" uuid="309544b9-9281-47e0-86e8-42629047663e" base-type="rectangleWithFooter" base-type-id="f0efb2b9-b2c2-4ae5-9828-4b87079c3c46" ver="4">
-				<designed target="X" value="1065" ver="4"/>
+				<designed target="X" value="1058.3" ver="4"/>
 				<designed target="Y" value="450" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="PAfterFlap"/>
+				<init target="EUColor" ver="4" value="0xff00aa00"/>
+				<init target="VALUETxtColor" ver="4" value="0xff00ff00"/>
 			</object>
 			<object access-modifier="private" name="TGasAfterGate" display-name="TGasAfterGate" uuid="3a11bb3c-7b40-4803-b3fa-99acd17b1725" base-type="Sens" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
-				<designed target="X" value="1075" ver="4"/>
+				<designed target="X" value="1066" ver="4"/>
 				<designed target="Y" value="518" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xffffff00"/>
@@ -3149,9 +3198,11 @@
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
 				<init target="PenType" ver="4" value="1"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="T"/>
 			</object>
 			<object access-modifier="private" name="PGasAfterGate" display-name="PGasAfterGate" uuid="5b0ba830-d5a6-4708-b339-0e67d0dbba4e" base-type="Sens" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
-				<designed target="X" value="1075" ver="4"/>
+				<designed target="X" value="1066" ver="4"/>
 				<designed target="Y" value="538" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xffffff00"/>
@@ -3160,9 +3211,11 @@
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
 				<init target="PenType" ver="4" value="1"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="PBeforeFlap"/>
 			</object>
 			<object access-modifier="private" name="FGasAfterGate" display-name="FGasAfterGate" uuid="4ab212dd-cd4c-4d4b-89c0-0e2d3504b8fa" base-type="Sens" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
-				<designed target="X" value="1075" ver="4"/>
+				<designed target="X" value="1066" ver="4"/>
 				<designed target="Y" value="558" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xffffff00"/>
@@ -3171,6 +3224,8 @@
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
 				<init target="PenType" ver="4" value="1"/>
+				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="initPath" ver="4" value="F"/>
 			</object>
 			<object access-modifier="private" name="ArrowGasIn" display-name="ArrowGasIn" uuid="2bcfd3b4-aef2-4eb7-a3cd-4c2aebe581ee" base-type="arrow" base-type-id="bd45c7e6-c41b-44ca-a8f9-0542667feb49" ver="4">
 				<designed target="X" value="1132" ver="4"/>
@@ -3195,6 +3250,13 @@
 				<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
 				<designed target="FontColor" value="0xffffffff" ver="4"/>
 				<designed target="TextAlignment" value="132" ver="4"/>
+			</object>
+			<object access-modifier="private" name="OpcSource" display-name="OpcSource" uuid="8036a8ec-151f-4e20-9060-94620c8344a9" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+				<designed target="Active" value="false" ver="4"/>
+				<designed target="UpdateRate" value="0" ver="4"/>
+				<designed target="ReAdvise" value="0" ver="4"/>
+				<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
+				<init target="Path" ver="4" value="ROOT.Gas"/>
 			</object>
 		</object>
 	</object>

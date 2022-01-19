@@ -145,10 +145,5 @@ if (BurnNum==3)
 	refData.ControlPanel.ControlButtonsburn3.ProgressBarIgn.isOpenedBurnSteps=false;]]>
 		</body>
 	</do-on>
-	<do-trace access-modifier="private" target="WindowCaption" ver="4">
-		<body>
-			<![CDATA["Шаги розжига горелки "+Str.ToString(unit.Global.Group[GroupNum-1].burn[BurnNum-1].Number.Value)]]>
-		</body>
-	</do-trace>
 </type>
 

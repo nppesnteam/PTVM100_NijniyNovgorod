@@ -8,7 +8,6 @@
 	<designed target="Opacity" value="1" ver="4"/>
 	<designed target="Enabled" value="true" ver="4"/>
 	<designed target="Tooltip" value="" ver="4"/>
-	<object access-modifier="private" name="BurnNumber" display-name="BurnNumber" uuid="0d7048a1-fdae-43b0-9e58-92024702df3c" base-type="notifying_int1" base-type-id="cc2bf8ea-3898-4228-bc8f-71a7738f0c62" ver="4"/>
 	<object access-modifier="private" name="TubeOIl" display-name="TubeOIl" uuid="d330e698-4688-4b4f-af7b-d8e0874daddf" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="3">
 		<designed target="X" value="-15" ver="3"/>
 		<designed target="Y" value="154" ver="3"/>
@@ -257,11 +256,6 @@
 		<designed target="X" value="-33" ver="3"/>
 		<designed target="Y" value="150" ver="3"/>
 		<designed target="Rotation" value="0" ver="3"/>
-		<do-trace access-modifier="private" target="Number" ver="4">
-			<body>
-				<![CDATA[BurnNumber]]>
-			</body>
-		</do-trace>
 		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
 		<init target="initPath" ver="4" value="Burn"/>
 		<init target="UseFinal" ver="4" value="true"/>
@@ -290,7 +284,7 @@
 		<init target="initPath" ver="4" value="Fan"/>
 		<do-trace access-modifier="private" target="BurnNumber" ver="4">
 			<body>
-				<![CDATA[Str.ToString(here.BurnNumber)]]>
+				<![CDATA[Str.ToString(here.burner.BurnNumber)]]>
 			</body>
 		</do-trace>
 	</object>
@@ -306,7 +300,7 @@
 		<designed target="X" value="12" ver="4"/>
 		<designed target="Y" value="230" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
-		<designed target="Scale" value="1.2" ver="4"/>
+		<designed target="Scale" value="1.1" ver="4"/>
 		<init target="EUTextColor" ver="4" value="0xffffff00"/>
 		<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
 		<init target="VALUEBrushType" ver="4" value="1"/>
@@ -314,7 +308,7 @@
 		<init target="EUBrushType" ver="4" value="1"/>
 		<init target="PenType" ver="4" value="1"/>
 		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
-		<init target="initPath" ver="4" value="PGasBefore"/>
+		<init target="initPath" ver="4" value="PGas"/>
 		<init target="InBurner" ver="4" value="true"/>
 		<init target="initName" ver="4" value="PGas"/>
 		<do-trace access-modifier="private" target="BurnValPath" ver="4">
@@ -325,7 +319,7 @@
 	</object>
 	<object access-modifier="private" name="POil" display-name="POil" uuid="23b8aa61-8097-4beb-87e6-27ad86bb3204" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 		<designed target="X" value="-60" ver="4"/>
-		<designed target="Y" value="230.5" ver="4"/>
+		<designed target="Y" value="230" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
 		<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
@@ -342,12 +336,13 @@
 		</do-trace>
 		<init target="EUTextColor" ver="4" value="0xffc65a02"/>
 		<init target="initPath" ver="4" value="POil"/>
+		<designed target="Scale" value="1.1" ver="4"/>
 	</object>
 	<object access-modifier="private" name="PO2" display-name="PO2" uuid="65df98ad-24fa-4b07-abce-f307c1899b69" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
-		<designed target="X" value="-92" ver="4"/>
-		<designed target="Y" value="165.5" ver="4"/>
+		<designed target="X" value="-95" ver="4"/>
+		<designed target="Y" value="165" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
-		<designed target="Scale" value="1.2" ver="4"/>
+		<designed target="Scale" value="1.1" ver="4"/>
 		<init target="EUTextColor" ver="4" value="0xff00aaff"/>
 		<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
 		<init target="VALUEBrushType" ver="4" value="1"/>

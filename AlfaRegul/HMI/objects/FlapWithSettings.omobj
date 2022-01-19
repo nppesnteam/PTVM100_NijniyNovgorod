@@ -628,7 +628,7 @@ if (counter == 60)
 	</object>
 	<do-trace access-modifier="private" target="FillBot" ver="4">
 		<body>
-			<![CDATA[High||Err]]>
+			<![CDATA[High]]>
 		</body>
 	</do-trace>
 	<object access-modifier="private" name="NoL" display-name="NoL" uuid="3d47ebdc-7d5d-4c67-925e-50fde8c2d3b1" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
@@ -639,7 +639,7 @@ if (counter == 60)
 	</do-trace>
 	<do-trace access-modifier="private" target="FillTop" ver="4">
 		<body>
-			<![CDATA[NoL||Err]]>
+			<![CDATA[NoL]]>
 		</body>
 	</do-trace>
 	<object access-modifier="private" name="Err" display-name="Err" uuid="98eeb8f6-cef4-43e7-a79d-f7cf64d405ed" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">

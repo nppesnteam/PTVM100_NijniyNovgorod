@@ -66,21 +66,6 @@
 				<![CDATA[refData.VALUE]]>
 			</body>
 		</do-trace>
-		<do-trace access-modifier="private" target="LowValue" ver="4">
-			<body>
-				<![CDATA[refData.AL_1]]>
-			</body>
-		</do-trace>
-		<do-trace access-modifier="private" target="HighValue" ver="4">
-			<body>
-				<![CDATA[refData.AH_1]]>
-			</body>
-		</do-trace>
-		<do-trace access-modifier="private" target="MaxLimit" ver="4">
-			<body>
-				<![CDATA[refData.AH_1*1.1]]>
-			</body>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="mark" display-name="mark" uuid="49b922dd-bf08-48c6-9a53-8fd8ccea4964" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4" cardinal="51">
 		<designed target="X" value="145" ver="4"/>
@@ -190,16 +175,11 @@ refData.isOpened = true;]]>
 			<designed target="TextAlignment" value="129" ver="4"/>
 			<do-trace access-modifier="private" target="Text" ver="4">
 				<body>
-					<![CDATA[refData.NAME_1]]>
+					<![CDATA[refData.NAME]]>
 				</body>
 			</do-trace>
 		</object>
 	</object>
-	<do-trace access-modifier="private" target="WindowCaption" ver="4">
-		<body>
-			<![CDATA[refData.KKS_1 +", "+ refData.KKS_2]]>
-		</body>
-	</do-trace>
 	<object access-modifier="private" name="sensor_1" display-name="sensor_1" uuid="bbf2f613-3f10-42e0-8e18-05125a7cbd6e" base-type="sensor" base-type-id="7d6aa5f1-44ff-4cfe-a668-21207cda0486" ver="4">
 		<designed target="X" value="5" ver="4"/>
 		<designed target="Y" value="59" ver="4"/>
@@ -239,7 +219,7 @@ refData.isOpened = true;]]>
 		</do-trace>
 		<do-trace access-modifier="private" target="ALIAS" ver="4">
 			<body>
-				<![CDATA[refData.ALIAS_1]]>
+				<![CDATA[refData.ALIAS]]>
 			</body>
 		</do-trace>
 	</object>
@@ -281,7 +261,7 @@ refData.isOpened = true;]]>
 		</do-trace>
 		<do-trace access-modifier="private" target="ALIAS" ver="4">
 			<body>
-				<![CDATA[refData.ALIAS_2]]>
+				<![CDATA[refData.ALIAS]]>
 			</body>
 		</do-trace>
 	</object>
@@ -646,28 +626,28 @@ if (refData.outiSel == 1)
 						<![CDATA[here.refData.VALUE_2.Tag]]>
 					</expr>
 				</init>
+				<init target="refDouble" ver="4" ref="here"/>
+				<init target="FromWhere" ver="4" value="Double"/>
 				<init target="EU_1" ver="4">
 					<expr>
-						<![CDATA[here.refData.EU_1]]>
+						<![CDATA[here.refData.EU]]>
 					</expr>
 				</init>
 				<init target="EU_2" ver="4">
 					<expr>
-						<![CDATA[here.refData.EU_2]]>
+						<![CDATA[here.refData.EU]]>
 					</expr>
 				</init>
 				<init target="Description_1" ver="4">
 					<expr>
-						<![CDATA[here.refData.NAME_1]]>
+						<![CDATA[here.refData.NAME]]>
 					</expr>
 				</init>
 				<init target="Description_2" ver="4">
 					<expr>
-						<![CDATA[here.refData.NAME_2]]>
+						<![CDATA[here.refData.NAME]]>
 					</expr>
 				</init>
-				<init target="refDouble" ver="4" ref="here"/>
-				<init target="FromWhere" ver="4" value="Double"/>
 			</object>
 		</do-on>
 		<do-trace access-modifier="private" target="Enabled" ver="4">
@@ -684,7 +664,7 @@ if (refData.outiSel == 1)
 				<do-trace access-modifier="private" target="DigitsCount" ver="4">
 					<conditional-expr>
 						<condition>
-							<![CDATA[refData.ALIAS_1=="P"]]>
+							<![CDATA[refData.ALIAS=="P"]]>
 						</condition>
 						<expr>
 							<![CDATA[2]]>
@@ -692,7 +672,7 @@ if (refData.outiSel == 1)
 					</conditional-expr>
 					<conditional-expr>
 						<condition>
-							<![CDATA[refData.ALIAS_1=="T"]]>
+							<![CDATA[refData.ALIAS=="T"]]>
 						</condition>
 						<expr>
 							<![CDATA[1]]>
@@ -700,7 +680,7 @@ if (refData.outiSel == 1)
 					</conditional-expr>
 					<conditional-expr>
 						<condition>
-							<![CDATA[refData.ALIAS_1=="F"]]>
+							<![CDATA[refData.ALIAS=="F"]]>
 						</condition>
 						<expr>
 							<![CDATA[1]]>

@@ -35,7 +35,7 @@
 	<object access-modifier="private" name="refData" display-name="refData" uuid="e94e91b1-6c9d-4c2a-bace-7cdd5ed748a7" base-type="rectangleWithFooter" base-type-id="f0efb2b9-b2c2-4ae5-9828-4b87079c3c46" base-const="true" base-ref="true" ver="4"/>
 	<do-trace access-modifier="private" target="WindowCaption" ver="4">
 		<body>
-			<![CDATA[refData.NAME_1]]>
+			<![CDATA[refData.NAME]]>
 		</body>
 	</do-trace>
 	<object access-modifier="private" name="btnNorm" display-name="btnNorm" uuid="af421bc9-e497-4d8e-a608-6272812f9a43" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
@@ -392,7 +392,7 @@ refData.isOpenedProtCheck=false;]]>
 		<designed target="TextAlignment" value="132" ver="4"/>
 		<do-trace access-modifier="private" target="Text" ver="4">
 			<body>
-				<![CDATA[refData.EU_1]]>
+				<![CDATA[refData.EU]]>
 			</body>
 		</do-trace>
 	</object>

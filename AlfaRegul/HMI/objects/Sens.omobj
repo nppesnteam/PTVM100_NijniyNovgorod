@@ -110,7 +110,7 @@
 		<designed target="Opacity" value="1" ver="3"/>
 		<designed target="Enabled" value="true" ver="3"/>
 		<designed target="Tooltip" value="" ver="3"/>
-		<designed target="Width" value="37" ver="3"/>
+		<designed target="Width" value="45" ver="3"/>
 		<designed target="Height" value="13" ver="3"/>
 		<designed target="RoundingRadius" value="0" ver="3"/>
 		<designed target="PenColor" value="0xffbfbfbf" ver="3"/>
@@ -128,10 +128,10 @@
 			<designed target="Opacity" value="1" ver="3"/>
 			<designed target="Enabled" value="true" ver="3"/>
 			<designed target="Tooltip" value="" ver="3"/>
-			<designed target="Width" value="37" ver="3"/>
+			<designed target="Width" value="45" ver="3"/>
 			<designed target="Height" value="13" ver="3"/>
 			<designed target="Text" value="0,0" ver="3"/>
-			<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Narrow Bold" ver="3"/>
+			<designed target="Font" value="Arial,9,-1,5,75,0,0,0,0,0,Narrow Bold" ver="3"/>
 			<designed target="FontColor" value="0xff00ff00" ver="3"/>
 			<designed target="TextAlignment" value="132" ver="3"/>
 			<do-trace access-modifier="private" target="Text" ver="4">
@@ -248,8 +248,13 @@
 	</object>
 	<object access-modifier="private" name="CorrectValue" display-name="CorrectValue" uuid="4d2d079f-4dc6-498d-927c-9497cb9a8a8f" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="4">
 		<designed target="InValue" value="" ver="4"/>
+		<do-trace access-modifier="private" target="InValue" ver="4">
+			<body>
+				<![CDATA[VALUE]]>
+			</body>
+		</do-trace>
 		<init target="Format" ver="4">
-			<object access-modifier="private" uuid="2a2337c5-8bcb-49f1-8073-95406267a35c" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
+			<object access-modifier="private" uuid="3ab52b29-581a-446a-b3a7-a4282236392a" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
 				<designed target="DigitsCount" value="0" ver="4"/>
 				<do-trace access-modifier="private" target="DigitsCount" ver="4">
 					<conditional-expr>
@@ -276,14 +281,14 @@
 							<![CDATA[1]]>
 						</expr>
 					</conditional-expr>
+					<default-expr>
+						<expr>
+							<![CDATA[0]]>
+						</expr>
+					</default-expr>
 				</do-trace>
 			</object>
 		</init>
-		<do-trace access-modifier="private" target="InValue" ver="4">
-			<body>
-				<![CDATA[VALUE]]>
-			</body>
-		</do-trace>
 	</object>
 	<do-trace access-modifier="private" target="Tooltip" ver="4">
 		<body>
@@ -796,5 +801,9 @@ fETSignalH=0;]]>
 		</body>
 	</do-trace>
 	<object access-modifier="private" name="BurnValPath" display-name="BurnValPath" uuid="740c43b3-4ce4-43af-9ce0-0771f84d4f34" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="4"/>
+	<object access-modifier="private" name="DIGITS" display-name="DIGITS" uuid="7c4a6473-823e-4311-b1f5-ac34844b721a" base-type="OpcItemUInt1" base-type-id="2caf434b-d488-4ada-a929-0585b21616c5" ver="4">
+		<init target="Source" ver="4" ref="here.hereOPCSource"/>
+		<init target="Path" ver="4" value="DIGITS"/>
+	</object>
 </type>
 

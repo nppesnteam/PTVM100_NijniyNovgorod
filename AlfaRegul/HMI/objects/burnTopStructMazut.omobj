@@ -252,11 +252,6 @@
 		<designed target="X" value="-33" ver="3"/>
 		<designed target="Y" value="150" ver="3"/>
 		<designed target="Rotation" value="0" ver="3"/>
-		<do-trace access-modifier="private" target="Number" ver="4">
-			<body>
-				<![CDATA[BurnNumber]]>
-			</body>
-		</do-trace>
 		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
 		<init target="initPath" ver="4" value="Burn"/>
 		<init target="UseFinal" ver="4" value="true"/>

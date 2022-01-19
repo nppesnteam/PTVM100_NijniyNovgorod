@@ -593,7 +593,7 @@
 			<designed target="Enabled" value="true" ver="3"/>
 			<designed target="Tooltip" value="" ver="3"/>
 			<designed target="Width" value="200" ver="3"/>
-			<designed target="Height" value="238" ver="3"/>
+			<designed target="Height" value="194" ver="3"/>
 			<designed target="PenColor" value="4278190080" ver="3"/>
 			<designed target="PenStyle" value="1" ver="3"/>
 			<designed target="PenWidth" value="1" ver="3"/>
@@ -670,6 +670,7 @@
 						<![CDATA[unit.Global.AuthOK]]>
 					</body>
 				</do-trace>
+				<designed target="Checked" value="false" ver="4"/>
 			</object>
 			<object access-modifier="private" name="btnGasFrame" display-name="btnGasFrame" uuid="b23c531c-e52b-40af-b5a6-5a45ccd94302" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="3">
 				<designed target="X" value="5" ver="3"/>
@@ -723,109 +724,11 @@
 						<![CDATA[unit.Global.AuthOK]]>
 					</body>
 				</do-trace>
-			</object>
-			<object access-modifier="private" name="btnMazutFrame" display-name="btnMazutFrame" uuid="4624c447-cc97-4740-8e1f-56f42776a765" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="3">
-				<designed target="X" value="5" ver="3"/>
-				<designed target="Y" value="100" ver="3"/>
-				<designed target="ZValue" value="0" ver="3"/>
-				<designed target="Rotation" value="0" ver="3"/>
-				<designed target="Scale" value="1" ver="3"/>
-				<designed target="Visible" value="true" ver="3"/>
-				<designed target="Opacity" value="1" ver="3"/>
-				<designed target="Enabled" value="true" ver="3"/>
-				<designed target="Tooltip" value="" ver="3"/>
-				<designed target="Width" value="190" ver="3"/>
-				<designed target="Height" value="40" ver="3"/>
-				<designed target="Checkable" value="false" ver="3"/>
-				<designed target="Text" value="Общая мнемосхема.
-ДИЗЕЛЬНОЕ ТОПЛИВО" ver="3"/>
-				<designed target="TextAlignment" value="132" ver="3"/>
-				<designed target="Font" value="Times New Roman,12,-1,5,50,0,0,0,0,0,Regular" ver="3"/>
-				<designed target="FontColor" value="4278190080" ver="3"/>
-				<designed target="OnClickFontColor" value="4278190080" ver="3"/>
-				<designed target="OnHoverFontColor" value="4278190080" ver="3"/>
-				<designed target="DisabledFontColor" value="4278190080" ver="3"/>
-				<designed target="BrushColor" value="0xfff0f0f0" ver="3"/>
-				<designed target="BrushStyle" value="1" ver="3"/>
-				<designed target="OnClickBrushColor" value="4288716960" ver="3"/>
-				<designed target="OnClickBrushStyle" value="1" ver="3"/>
-				<designed target="OnHoverBrushColor" value="4294967295" ver="3"/>
-				<designed target="OnHoverBrushStyle" value="1" ver="3"/>
-				<designed target="DisabledBrushColor" value="4288716960" ver="3"/>
-				<designed target="DisabledBrushStyle" value="1" ver="3"/>
-				<designed target="PenColor" value="4278190080" ver="3"/>
-				<designed target="PenStyle" value="1" ver="3"/>
-				<designed target="PenWidth" value="1" ver="3"/>
-				<designed target="OnClickPenColor" value="4278190080" ver="3"/>
-				<designed target="OnClickPenStyle" value="1" ver="3"/>
-				<designed target="OnClickPenWidth" value="1" ver="3"/>
-				<designed target="OnHoverPenColor" value="4278190080" ver="3"/>
-				<designed target="OnHoverPenStyle" value="1" ver="3"/>
-				<designed target="OnHoverPenWidth" value="1" ver="3"/>
-				<designed target="DisabledPenColor" value="4288716960" ver="3"/>
-				<designed target="DisabledPenStyle" value="1" ver="3"/>
-				<designed target="DisabledPenWidth" value="1" ver="3"/>
-				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick" frame-link="MainFrame" form-action="open-in-frame" form-by-id="false">
-					<object access-modifier="private" uuid="2c70d499-7f46-437c-9e5e-beb501bdfd89" base-type="Мазут" base-type-id="b733a3d3-6749-411e-9bad-21c99df4552f" ver="4"/>
-				</do-on>
-				<do-trace access-modifier="private" target="Enabled" ver="4">
-					<body>
-						<![CDATA[unit.Global.AuthOK]]>
-					</body>
-				</do-trace>
-			</object>
-			<object access-modifier="private" name="btnASRFrame" display-name="btnASRFrame" uuid="a54c65e2-4354-4aa8-9ecb-c6eb5256df98" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="3">
-				<designed target="X" value="5" ver="3"/>
-				<designed target="Y" value="145" ver="3"/>
-				<designed target="ZValue" value="0" ver="3"/>
-				<designed target="Rotation" value="0" ver="3"/>
-				<designed target="Scale" value="1" ver="3"/>
-				<designed target="Visible" value="false" ver="3"/>
-				<designed target="Opacity" value="1" ver="3"/>
-				<designed target="Enabled" value="true" ver="3"/>
-				<designed target="Tooltip" value="" ver="3"/>
-				<designed target="Width" value="190" ver="3"/>
-				<designed target="Height" value="40" ver="3"/>
-				<designed target="Checkable" value="false" ver="3"/>
-				<designed target="Text" value="АСР, параметры" ver="3"/>
-				<designed target="TextAlignment" value="132" ver="3"/>
-				<designed target="Font" value="Times New Roman,12,-1,5,50,0,0,0,0,0,Regular" ver="3"/>
-				<designed target="FontColor" value="4278190080" ver="3"/>
-				<designed target="OnClickFontColor" value="4278190080" ver="3"/>
-				<designed target="OnHoverFontColor" value="4278190080" ver="3"/>
-				<designed target="DisabledFontColor" value="4278190080" ver="3"/>
-				<designed target="BrushColor" value="0xfff0f0f0" ver="3"/>
-				<designed target="BrushStyle" value="1" ver="3"/>
-				<designed target="OnClickBrushColor" value="4288716960" ver="3"/>
-				<designed target="OnClickBrushStyle" value="1" ver="3"/>
-				<designed target="OnHoverBrushColor" value="4294967295" ver="3"/>
-				<designed target="OnHoverBrushStyle" value="1" ver="3"/>
-				<designed target="DisabledBrushColor" value="4288716960" ver="3"/>
-				<designed target="DisabledBrushStyle" value="1" ver="3"/>
-				<designed target="PenColor" value="4278190080" ver="3"/>
-				<designed target="PenStyle" value="1" ver="3"/>
-				<designed target="PenWidth" value="1" ver="3"/>
-				<designed target="OnClickPenColor" value="4278190080" ver="3"/>
-				<designed target="OnClickPenStyle" value="1" ver="3"/>
-				<designed target="OnClickPenWidth" value="1" ver="3"/>
-				<designed target="OnHoverPenColor" value="4278190080" ver="3"/>
-				<designed target="OnHoverPenStyle" value="1" ver="3"/>
-				<designed target="OnHoverPenWidth" value="1" ver="3"/>
-				<designed target="DisabledPenColor" value="4288716960" ver="3"/>
-				<designed target="DisabledPenStyle" value="1" ver="3"/>
-				<designed target="DisabledPenWidth" value="1" ver="3"/>
-				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick" frame-link="MainFrame" form-action="open-in-frame" form-by-id="false">
-					<object access-modifier="private" uuid="7dc671d1-913e-4d8b-b4dd-b45c63bd2336" base-type="АСР общекотловая" base-type-id="b5230101-3d1b-45d5-82c7-0ab7ee321537" ver="4"/>
-				</do-on>
-				<do-trace access-modifier="private" target="Enabled" ver="4">
-					<body>
-						<![CDATA[unit.Global.AuthOK]]>
-					</body>
-				</do-trace>
+				<designed target="Checked" value="false" ver="4"/>
 			</object>
 			<object access-modifier="private" name="btnTSFrame" display-name="btnTSFrame" uuid="28cb1171-9cc3-43f7-ba55-dbf68a462618" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="3">
 				<designed target="X" value="5" ver="3"/>
-				<designed target="Y" value="145" ver="3"/>
+				<designed target="Y" value="100" ver="3"/>
 				<designed target="ZValue" value="0" ver="3"/>
 				<designed target="Rotation" value="0" ver="3"/>
 				<designed target="Scale" value="1" ver="3"/>
@@ -871,10 +774,11 @@
 						<![CDATA[unit.Global.AuthOK]]>
 					</body>
 				</do-trace>
+				<designed target="Checked" value="false" ver="4"/>
 			</object>
 			<object access-modifier="private" name="btnGraphics" display-name="btnGraphics" uuid="9d584bcd-7199-41c9-b199-fdb52b067c7d" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="3">
 				<designed target="X" value="5" ver="3"/>
-				<designed target="Y" value="190" ver="3"/>
+				<designed target="Y" value="145" ver="3"/>
 				<designed target="ZValue" value="0" ver="3"/>
 				<designed target="Rotation" value="0" ver="3"/>
 				<designed target="Scale" value="1" ver="3"/>
@@ -940,10 +844,11 @@ else
 OpenTrendsWindow.Invoke();]]>
 					</body>
 				</do-on>
+				<designed target="Checked" value="false" ver="4"/>
 			</object>
 			<object access-modifier="private" name="divider2" display-name="divider2" uuid="ff01f6c3-e208-4cfd-a09b-6bb62beba498" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
 				<designed target="X" value="5" ver="4"/>
-				<designed target="Y" value="234" ver="4"/>
+				<designed target="Y" value="189" ver="4"/>
 				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<designed target="Scale" value="1" ver="4"/>
@@ -1905,9 +1810,10 @@ OpenGroup.Invoke();]]>
 							<![CDATA[unit.Global.AuthOK]]>
 						</body>
 					</do-trace>
+					<designed target="Checked" value="false" ver="4"/>
 				</object>
 				<object access-modifier="private" name="Group" display-name="Group" uuid="635dab8a-e348-4faf-8d5b-6bb30a447b58" base-type="notifying_uint1" base-type-id="fed14c54-414c-56bd-549a-8d761c4d6200" ver="4"/>
-				<init target="Group" ver="4" value="0"/>
+				<init target="Group" ver="4" value="1"/>
 			</object>
 			<object access-modifier="private" name="IgnitionGroup2" display-name="IgnitionGroup2" uuid="055a666e-4656-4eac-9784-d77ae45e6c4d" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="3">
 				<designed target="X" value="5" ver="3"/>
@@ -1981,9 +1887,10 @@ OpenGroup.Invoke();]]>
 							<![CDATA[unit.Global.AuthOK]]>
 						</body>
 					</do-trace>
+					<designed target="Checked" value="false" ver="4"/>
 				</object>
 				<object access-modifier="private" name="Group" display-name="Group" uuid="9f967f6c-f92b-4711-963e-8fe6373e118b" base-type="notifying_uint1" base-type-id="fed14c54-414c-56bd-549a-8d761c4d6200" ver="4"/>
-				<init target="Group" ver="4" value="1"/>
+				<init target="Group" ver="4" value="2"/>
 			</object>
 			<object access-modifier="private" name="IgnitionGroup3" display-name="IgnitionGroup3" uuid="33804266-2150-48bd-9b15-236aa0eefee3" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="3">
 				<designed target="X" value="5" ver="3"/>
@@ -2057,9 +1964,10 @@ OpenGroup.Invoke();]]>
 							<![CDATA[unit.Global.AuthOK]]>
 						</body>
 					</do-trace>
+					<designed target="Checked" value="false" ver="4"/>
 				</object>
 				<object access-modifier="private" name="Group" display-name="Group" uuid="af0abda6-1ce8-468c-a0e7-61a330ae5d38" base-type="notifying_uint1" base-type-id="fed14c54-414c-56bd-549a-8d761c4d6200" ver="4"/>
-				<init target="Group" ver="4" value="2"/>
+				<init target="Group" ver="4" value="3"/>
 			</object>
 			<object access-modifier="private" name="IgnitionGroup4" display-name="IgnitionGroup4" uuid="f165c9e8-d254-4c34-a1a2-454561023ca9" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="3">
 				<designed target="X" value="5" ver="3"/>
@@ -2136,7 +2044,7 @@ OpenGroup.Invoke();]]>
 					<designed target="Checked" value="false" ver="4"/>
 				</object>
 				<object access-modifier="private" name="Group" display-name="Group" uuid="50964cd6-d898-4c5d-ada4-9c9b7327a878" base-type="notifying_uint1" base-type-id="fed14c54-414c-56bd-549a-8d761c4d6200" ver="4"/>
-				<init target="Group" ver="4" value="3"/>
+				<init target="Group" ver="4" value="4"/>
 			</object>
 			<object access-modifier="private" name="divider1" display-name="divider1" uuid="8048dec0-093a-4d42-8ab4-8bb3a0584978" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
 				<designed target="X" value="5" ver="4"/>
@@ -2256,13 +2164,6 @@ TimeStamp = DateTime.Now();]]>
 		<designed target="InvokeTrigger" value="false" ver="4"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" frame-link="MainFrame" form-action="open-in-frame" form-by-id="false">
 			<object access-modifier="private" uuid="7e94e084-e12e-45ad-a190-4dd430a79260" base-type="Растопочная группа" base-type-id="d3f1f963-b301-412f-98d0-b5913d770cf5" ver="4"/>
-		</do-on>
-	</object>
-	<object access-modifier="private" name="OpenGroupBlock" display-name="OpenGroupBlock" uuid="e9c81377-0fe7-4086-907e-d61c0e9d6ab0" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4">
-		<designed target="Enabled" value="true" ver="4"/>
-		<designed target="InvokeTrigger" value="false" ver="4"/>
-		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" frame-link="MainFrame" form-action="open-in-frame" form-by-id="false">
-			<object access-modifier="private" uuid="8353c1fe-62da-41ea-9c2e-ef6823e85783" base-type="Блокировки группы" base-type-id="aca6ebb1-816c-4d57-a5db-a9ae831bd84c" ver="4"/>
 		</do-on>
 	</object>
 	<do-on access-modifier="private" name="Handler_4" display-name="Handler_4" ver="4" event="Closed">

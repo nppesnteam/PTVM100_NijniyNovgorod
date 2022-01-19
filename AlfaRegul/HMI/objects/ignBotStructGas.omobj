@@ -8,7 +8,6 @@
 	<designed target="Opacity" value="1" ver="4"/>
 	<designed target="Enabled" value="true" ver="4"/>
 	<designed target="Tooltip" value="" ver="4"/>
-	<object access-modifier="private" name="BurnNumber" display-name="BurnNumber" uuid="eb89f1e1-3198-4e9e-8a11-416c3cb610f1" base-type="notifying_int1" base-type-id="cc2bf8ea-3898-4228-bc8f-71a7738f0c62" ver="4"/>
 	<object access-modifier="private" name="TubeOIl" display-name="TubeOIl" uuid="88489198-f812-41fe-b9ca-513389fe7ec9" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="3">
 		<designed target="X" value="-15" ver="3"/>
 		<designed target="Y" value="156" ver="3"/>
@@ -72,11 +71,6 @@
 					<![CDATA[0xff000000]]>
 				</expr>
 			</conditional-expr>
-		</do-trace>
-		<do-trace access-modifier="private" target="HasGas" ver="4">
-			<body>
-				<![CDATA[TubeO2In.HasGas&&RefFlapO2.NoL]]>
-			</body>
 		</do-trace>
 	</object>
 	<object access-modifier="private" name="TubeGasAfterValves" display-name="TubeGasAfterValves" uuid="b44bc168-a788-4c7a-b416-03365068c442" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
@@ -249,11 +243,6 @@
 				</expr>
 			</conditional-expr>
 		</do-trace>
-		<do-trace access-modifier="private" target="HasGas" ver="4">
-			<body>
-				<![CDATA[RefVent.InOn]]>
-			</body>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="TubeO2AfterFlap" display-name="TubeO2AfterFlap" uuid="9fe15a0a-e5a9-4d9a-9437-166df4879ea2" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
 		<designed target="X" value="-62" ver="4"/>
@@ -319,21 +308,11 @@
 				</expr>
 			</conditional-expr>
 		</do-trace>
-		<do-trace access-modifier="private" target="HasGas" ver="4">
-			<body>
-				<![CDATA[TubeO2In.HasGas&&RefFlapO2.NoL]]>
-			</body>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="burner" display-name="burner" uuid="a3fe467b-b09f-42a5-be83-02ef4cf1f752" base-type="burner" base-type-id="f51dcd8c-5858-405d-a8d6-c95eca82779c" ver="3">
 		<designed target="X" value="-33" ver="3"/>
 		<designed target="Y" value="10" ver="3"/>
 		<designed target="Rotation" value="0" ver="3"/>
-		<do-trace access-modifier="private" target="Number" ver="4">
-			<body>
-				<![CDATA[BurnNumber]]>
-			</body>
-		</do-trace>
 		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
 		<init target="initPath" ver="4" value="Burn"/>
 	</object>
@@ -426,15 +405,15 @@
 		<init target="initPath" ver="4" value="Fan"/>
 		<do-trace access-modifier="private" target="BurnNumber" ver="4">
 			<body>
-				<![CDATA[Str.ToString(here.BurnNumber)]]>
+				<![CDATA[Str.ToString(here.burner.BurnNumber)]]>
 			</body>
 		</do-trace>
 	</object>
 	<object access-modifier="private" name="PO2" display-name="PO2" uuid="b70fcc74-424c-4e38-b955-4fc905773b3c" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
-		<designed target="X" value="-92" ver="4"/>
+		<designed target="X" value="-95" ver="4"/>
 		<designed target="Y" value="53" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
-		<designed target="Scale" value="1.2" ver="4"/>
+		<designed target="Scale" value="1.1" ver="4"/>
 		<init target="EUTextColor" ver="4" value="0xff00aaff"/>
 		<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
 		<init target="VALUEBrushType" ver="4" value="1"/>
@@ -460,11 +439,11 @@
 		<init target="initPath" ver="4" value="FlapGas"/>
 		<init target="HavePositSens" ver="4" value="true"/>
 	</object>
-	<object access-modifier="private" name="PGasBefore" display-name="PGasBefore" uuid="0664ac2b-290d-41d3-a31e-30f56d8185a7" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
+	<object access-modifier="private" name="PGas" display-name="PGas" uuid="0664ac2b-290d-41d3-a31e-30f56d8185a7" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 		<designed target="X" value="12" ver="4"/>
 		<designed target="Y" value="-10" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
-		<designed target="Scale" value="1.2" ver="4"/>
+		<designed target="Scale" value="1.1" ver="4"/>
 		<init target="EUTextColor" ver="4" value="0xffffff00"/>
 		<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
 		<init target="VALUEBrushType" ver="4" value="1"/>
@@ -472,7 +451,7 @@
 		<init target="EUBrushType" ver="4" value="1"/>
 		<init target="PenType" ver="4" value="1"/>
 		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
-		<init target="initPath" ver="4" value="PGasBefore"/>
+		<init target="initPath" ver="4" value="PGas"/>
 		<init target="InBurner" ver="4" value="true"/>
 		<init target="initName" ver="4" value="PGas"/>
 		<do-trace access-modifier="private" target="BurnValPath" ver="4">
@@ -679,17 +658,6 @@
 	<param access-modifier="private" name="InitOpcSource" display-name="InitOpcSource" uuid="5366e690-4042-4b8b-9e01-1338c52f2388" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" base-const="true" base-ref="true" ver="4"/>
 	<object access-modifier="private" name="BurnerHasGas" display-name="BurnerHasGas" uuid="dbf5250d-a1e3-4cb8-9ab7-91e30d807ba0" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
 	<object access-modifier="private" name="IgnHasGas" display-name="IgnHasGas" uuid="03b9b79b-cf02-4e75-85d1-6988e19706d2" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
-	<object access-modifier="private" name="RefValve1" display-name="RefValve1" uuid="39dc1bc9-ccb3-4b3e-b273-b0a8978a370d" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" base-const="true" base-ref="true" ver="4"/>
-	<object access-modifier="private" name="RefValve2" display-name="RefValve2" uuid="85d25409-03f9-43f3-899b-71126db9c6df" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" base-const="true" base-ref="true" ver="4"/>
-	<object access-modifier="private" name="RefValveSafety" display-name="RefValveSafety" uuid="66f7b183-8161-4946-838e-c761360c762b" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" base-const="true" base-ref="true" ver="4"/>
-	<object access-modifier="private" name="RefFlapO2" display-name="RefFlapO2" uuid="94ba1d91-8393-4e0c-a592-c4c820d6ad2e" base-type="flap" base-type-id="a3e73327-f733-446d-ac01-918439e55f3f" base-const="true" base-ref="true" ver="4"/>
-	<object access-modifier="private" name="RefFlapGas" display-name="RefFlapGas" uuid="c077895b-353f-4e97-adb0-df4a9e15bdb9" base-type="flap" base-type-id="a3e73327-f733-446d-ac01-918439e55f3f" base-const="true" base-ref="true" ver="4"/>
-	<object access-modifier="private" name="RefVent" display-name="RefVent" uuid="c3b68b4e-192a-4103-96b7-76de531eaea8" base-type="engineBot" base-type-id="a00c4573-b767-4f41-aaae-cb23aa87c8a6" base-const="true" base-ref="true" ver="4"/>
-	<object access-modifier="private" name="RefValveIgn" display-name="RefValveIgn" uuid="f4c9ac93-3b40-4fa5-bb6b-69e35e8e5345" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" base-const="true" base-ref="true" ver="4"/>
-	<init target="RefValve2" ver="4" ref="ПЗК-2"/>
-	<init target="RefFlapO2" ver="4" ref="ШВ"/>
-	<init target="RefFlapGas" ver="4" ref="ГЗ"/>
-	<init target="RefVent" ver="4" ref="ВГ"/>
 	<object access-modifier="private" name="Group" display-name="Group" uuid="ca83d9f2-453c-4dc4-87f2-b163934329bb" base-type="notifying_int1" base-type-id="cc2bf8ea-3898-4228-bc8f-71a7738f0c62" ver="4"/>
 	<object access-modifier="private" name="InitPath" display-name="InitPath" uuid="ca36d563-0ef2-4af7-9807-afcf2e273a87" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="4"/>
 	<object access-modifier="private" name="КЗ" display-name="КЗ" uuid="93cd2b43-fea3-4a93-a18e-f77730facd29" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
@@ -744,6 +712,7 @@
 		</do-trace>
 		<init target="EUTextColor" ver="4" value="0xffc65a02"/>
 		<init target="initPath" ver="4" value="POil"/>
+		<designed target="Scale" value="1.1" ver="4"/>
 	</object>
 </type>
 

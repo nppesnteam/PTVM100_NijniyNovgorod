@@ -38,17 +38,7 @@
 	<object access-modifier="private" name="GroupsInit" display-name="GroupsInit" uuid="3a4ca7f4-5162-4e56-ba2a-577ee6e31b2d" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="4">
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Initialized">
 			<body kind="om">
-				<![CDATA[//инициализация номеров горелок
-Group[0].burn[0].Number = 7; Group[0].burn[1].Number = 12; Group[0].burn[2].Number = 3;
-Group[1].burn[0].Number = 4; Group[1].burn[1].Number = 11; Group[1].burn[2].Number = 6;
-Group[2].burn[0].Number = 10; Group[2].burn[1].Number = 1; Group[2].burn[2].Number = 8;
-Group[3].burn[0].Number = 5; Group[3].burn[1].Number = 2; Group[3].burn[2].Number = 9;
-Group[0].ign = 1;
-Group[1].ign = 3;
-Group[2].ign = 3;
-Group[3].ign = 1;
-
-//инициализация последовательности розжига
+				<![CDATA[//инициализация последовательности розжига
 IgnSequence.Clear();
 IgnSequence.AddItem("5,6,7,8");
 IgnSequence.AddItem("5,6,8,7");

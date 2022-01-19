@@ -62,9 +62,9 @@
 				<designed target="Font" value="MS Shell Dlg 2,12,-1,5,75,0,0,0,0,0,Bold" ver="3"/>
 				<designed target="FontColor" value="4278190080" ver="3"/>
 				<designed target="TextAlignment" value="132" ver="3"/>
-				<do-trace access-modifier="private" target="Text" ver="3">
+				<do-trace access-modifier="private" target="Text" ver="4">
 					<body>
-						<![CDATA[Number]]>
+						<![CDATA[BurnNumber]]>
 					</body>
 				</do-trace>
 			</object>
@@ -149,7 +149,6 @@
 		</object>
 		<designed target="HoleSize" value="0" ver="4"/>
 	</object>
-	<object access-modifier="private" name="Number" display-name="Number" uuid="ee03b672-87e4-4744-a595-80c18d1aa7e2" base-type="notifying_uint1" base-type-id="fed14c54-414c-56bd-549a-8d761c4d6200" ver="3"/>
 	<object access-modifier="private" name="hereOPCSource" display-name="hereOPCSource" uuid="166e2521-93ac-4561-98e2-726e2459af39" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
 		<designed target="Active" value="false" ver="4"/>
 		<designed target="UpdateRate" value="0" ver="4"/>
@@ -190,19 +189,9 @@
 	</do-trace>
 	<object access-modifier="private" name="AlarmBurner" display-name="AlarmBurner" uuid="514ba132-b6e7-4a87-8b48-d308ede2bc3b" base-type="OpcItemInt2" base-type-id="01786030-8d4e-41cb-a7fb-fbaa0e344f13" ver="4">
 		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
-		<do-trace access-modifier="private" target="Path" ver="4">
-			<body>
-				<![CDATA["ROOT.ALARMS.Горелка "+Str.ToString(Number)+".AlarmBurner"]]>
-			</body>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="AlarmGerm" display-name="AlarmGerm" uuid="4f828e43-edd2-49ec-9227-26919be4e68c" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
-		<do-trace access-modifier="private" target="Path" ver="4">
-			<body>
-				<![CDATA["ROOT.ALARMS.Горелка "+Str.ToString(Number)+".AlarmGerm"]]>
-			</body>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="Start" display-name="Start" uuid="75c9627b-9c00-4e31-843d-175f9afb6444" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Path" ver="4" value="Start"/>
@@ -217,5 +206,9 @@
 		<init target="Path" ver="4" value="FinalIgnBurn"/>
 	</object>
 	<object access-modifier="private" name="UseFinal" display-name="UseFinal" uuid="9c68dbc5-c93a-49b8-8c99-9d104e25b07a" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+	<object access-modifier="private" name="BurnNumber" display-name="BurnNumber" uuid="fb339dba-5b4b-42da-bc7b-5c4f94b83e31" base-type="OpcItemUInt1" base-type-id="2caf434b-d488-4ada-a929-0585b21616c5" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="BurnNumber"/>
+	</object>
 </type>
 

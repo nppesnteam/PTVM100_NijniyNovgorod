@@ -3,7 +3,7 @@
 	<designed target="Y" value="0" ver="3"/>
 	<designed target="ZValue" value="0" ver="3"/>
 	<designed target="Rotation" value="0" ver="3"/>
-	<designed target="Scale" value="1" ver="3"/>
+	<designed target="Scale" value="1.2" ver="3"/>
 	<designed target="Visible" value="true" ver="3"/>
 	<designed target="Opacity" value="1" ver="3"/>
 	<designed target="Enabled" value="true" ver="3"/>
@@ -45,7 +45,7 @@
 			<designed target="TextAlignment" value="132" ver="3"/>
 			<do-trace access-modifier="private" target="Text" ver="4">
 				<body>
-					<![CDATA[ALIAS_1]]>
+					<![CDATA[ALIAS]]>
 				</body>
 			</do-trace>
 			<do-trace access-modifier="private" target="FontColor" ver="3">
@@ -67,7 +67,7 @@
 			<designed target="Width" value="47" ver="3"/>
 			<designed target="Height" value="15" ver="3"/>
 			<designed target="Text" value="0,0" ver="3"/>
-			<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0,Narrow Bold" ver="3"/>
+			<designed target="Font" value="Arial,9,-1,5,75,0,0,0,0,0,Narrow Bold" ver="3"/>
 			<designed target="FontColor" value="0xff00ff00" ver="3"/>
 			<designed target="TextAlignment" value="132" ver="3"/>
 			<do-trace access-modifier="private" target="Text" ver="4">
@@ -266,100 +266,26 @@
 		</object>
 	</object>
 	<object access-modifier="private" name="VALUETxtColor" display-name="VALUETxtColor" uuid="069540b3-2810-4e91-be61-3bf351937b82" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="4"/>
-	<object access-modifier="private" name="hereOPCSource_1" display-name="hereOPCSource_1" uuid="0d48a1bf-523f-4584-bc4b-39d025775df3" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
-		<designed target="Active" value="false" ver="4"/>
-		<designed target="UpdateRate" value="0" ver="4"/>
-		<designed target="ReAdvise" value="0" ver="4"/>
-		<init target="ParentSource" ver="4" ref="initOPCSource"/>
-		<init target="Path" ver="4" ref="initPath_1"/>
-	</object>
 	<param access-modifier="private" name="initOPCSource" display-name="initOPCSource" uuid="22b5fe73-ae3f-451c-a960-79b04885894b" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" base-const="true" base-ref="true" ver="4"/>
-	<param access-modifier="private" name="initPath_1" display-name="initPath_1" uuid="a735e069-270f-4ecc-9860-9465ab750eda" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
-	<object access-modifier="private" name="KKS_1" display-name="KKS_1" uuid="b4c0d228-3964-4ca6-9ccc-af11569ffdc7" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_1"/>
-		<init target="Path" ver="4" value="KKS"/>
-	</object>
-	<object access-modifier="private" name="NAME_1" display-name="NAME_1" uuid="cb4e3a3c-3042-4ee5-9f55-631386d51eaa" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+	<object access-modifier="private" name="NAME" display-name="NAME" uuid="cb4e3a3c-3042-4ee5-9f55-631386d51eaa" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
 		<init target="Path" ver="4" value="NAME"/>
+		<init target="Source" ver="4" ref="hereOPCSource"/>
 	</object>
-	<object access-modifier="private" name="EU_1" display-name="EU_1" uuid="c9d49f68-5a01-4bce-b495-5343aeeae657" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+	<object access-modifier="private" name="EU" display-name="EU" uuid="c9d49f68-5a01-4bce-b495-5343aeeae657" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
 		<init target="Path" ver="4" value="EU"/>
+		<init target="Source" ver="4" ref="hereOPCSource"/>
 	</object>
-	<object access-modifier="private" name="ALIAS_1" display-name="ALIAS_1" uuid="0921fcf2-f269-4731-bdf9-60c539544ade" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_1"/>
+	<object access-modifier="private" name="ALIAS" display-name="ALIAS" uuid="0921fcf2-f269-4731-bdf9-60c539544ade" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
 		<init target="Path" ver="4" value="ALIAS"/>
+		<init target="Source" ver="4" ref="hereOPCSource"/>
 	</object>
 	<object access-modifier="private" name="VALUE_1" display-name="VALUE_1" uuid="18370f32-5508-45f9-8de7-3ae97a5f571e" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_1"/>
-		<init target="Path" ver="4" value="VALUE"/>
-	</object>
-	<object access-modifier="private" name="AH_1" display-name="AH_1" uuid="5dc57d1b-f1f4-421d-9d40-88ff94fad836" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
-		<init target="Path" ver="4">
-			<expr>
-				<![CDATA[initPathAlarm_H]]>
-			</expr>
-		</init>
-	</object>
-	<object access-modifier="private" name="AL_1" display-name="AL_1" uuid="480a2d1d-57f4-4f00-92ae-ce5be195a28e" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
-		<init target="Path" ver="4">
-			<expr>
-				<![CDATA[initPathAlarm_L]]>
-			</expr>
-		</init>
-	</object>
-	<object access-modifier="private" name="BH_1" display-name="BH_1" uuid="4bd5a3a5-9c1f-4563-a194-055fb0f5e776" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_1"/>
-		<init target="Path" ver="4" value="BH"/>
-	</object>
-	<object access-modifier="private" name="BL_1" display-name="BL_1" uuid="f6a707e2-6abb-470f-91fc-c094cddb2a7f" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_1"/>
-		<init target="Path" ver="4" value="BL"/>
-	</object>
-	<object access-modifier="private" name="hereOPCSource_2" display-name="hereOPCSource_2" uuid="d40c721f-59f2-4061-bfa1-0410f7be4d81" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
-		<designed target="Active" value="false" ver="4"/>
-		<designed target="UpdateRate" value="0" ver="4"/>
-		<designed target="ReAdvise" value="0" ver="4"/>
-		<init target="ParentSource" ver="4" ref="initOPCSource"/>
-		<init target="Path" ver="4" ref="initPath_2"/>
-	</object>
-	<param access-modifier="private" name="initPath_2" display-name="initPath_2" uuid="2be2effe-40c7-414a-a21b-f4a2d0d2c505" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
-	<object access-modifier="private" name="KKS_2" display-name="KKS_2" uuid="80546d83-a8a6-4ed5-84d8-22d691bf2d72" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
-		<init target="Path" ver="4" value="KKS"/>
-		<init target="Source" ver="4" ref="hereOPCSource_2"/>
-	</object>
-	<object access-modifier="private" name="NAME_2" display-name="NAME_2" uuid="badf7d60-797e-49e1-be5c-438574e0d132" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
-		<init target="Path" ver="4" value="NAME"/>
-		<init target="Source" ver="4" ref="hereOPCSource_2"/>
-	</object>
-	<object access-modifier="private" name="EU_2" display-name="EU_2" uuid="f59c7be3-3e78-4bc2-8552-c0a71c9122b9" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
-		<init target="Path" ver="4" value="EU"/>
-		<init target="Source" ver="4" ref="hereOPCSource_2"/>
-	</object>
-	<object access-modifier="private" name="ALIAS_2" display-name="ALIAS_2" uuid="afbe288c-ffa3-446e-a58e-6cdba885288a" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
-		<init target="Path" ver="4" value="ALIAS"/>
-		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+		<init target="Path" ver="4" value="VALUE1"/>
+		<init target="Source" ver="4" ref="hereOPCSource"/>
 	</object>
 	<object access-modifier="private" name="VALUE_2" display-name="VALUE_2" uuid="eb0a01bc-4960-4d99-859a-568fc94c9c0f" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_2"/>
-		<init target="Path" ver="4" value="VALUE"/>
-	</object>
-	<object access-modifier="private" name="AH_2" display-name="AH_2" uuid="fa1a0046-fc29-42ca-9a10-a4ecf0ee8b56" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
-	</object>
-	<object access-modifier="private" name="AL_2" display-name="AL_2" uuid="f5598b52-ad18-4b36-bc1e-099ddbf8d5ff" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
-	</object>
-	<object access-modifier="private" name="BH_2" display-name="BH_2" uuid="beeabf4b-eb70-4de0-906b-8c4db81ba85f" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Path" ver="4" value="BH"/>
-		<init target="Source" ver="4" ref="hereOPCSource_2"/>
-	</object>
-	<object access-modifier="private" name="BL_2" display-name="BL_2" uuid="19fd9230-1c5e-42e2-a6bb-6822c2cca336" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Path" ver="4" value="BL"/>
-		<init target="Source" ver="4" ref="hereOPCSource_2"/>
+		<init target="Path" ver="4" value="VALUE2"/>
+		<init target="Source" ver="4" ref="hereOPCSource"/>
 	</object>
 	<object access-modifier="private" name="OpenModuleWindow" display-name="OpenModuleWindow" uuid="f1c3bc4d-1d13-4903-b418-2343c6381f48" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4" cardinal="1">
 		<designed target="Enabled" value="true" ver="4"/>
@@ -451,35 +377,6 @@ else
 		<init target="ParentSource" ver="4" ref="initOPCSource"/>
 		<init target="Path" ver="4" ref="initPath"/>
 	</object>
-	<object access-modifier="private" name="VALUE" display-name="VALUE" uuid="f5cf38bb-368c-408a-9e1d-ab06473add46" base-type="notifying_float4" base-type-id="bb7d05ee-cbf0-4c44-8740-1905239c8ead" ver="4"/>
-	<do-trace access-modifier="private" target="VALUE" ver="4">
-		<conditional-expr>
-			<condition>
-				<![CDATA[outiSel == 0]]>
-			</condition>
-			<expr>
-				<![CDATA[(VALUE_1 + VALUE_2)/2]]>
-			</expr>
-		</conditional-expr>
-		<conditional-expr>
-			<condition>
-				<![CDATA[outiSel == 1]]>
-			</condition>
-			<expr>
-				<![CDATA[VALUE_1]]>
-			</expr>
-		</conditional-expr>
-		<conditional-expr>
-			<condition>
-				<![CDATA[outiSel == 2]]>
-			</condition>
-			<expr>
-				<![CDATA[VALUE_2]]>
-			</expr>
-		</conditional-expr>
-	</do-trace>
-	<object access-modifier="private" name="MAN_ON" display-name="MAN_ON" uuid="85d14b5e-56c6-4ed4-9431-ce5ceb009085" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
-	<init target="MAN_ON" ver="4" value="false"/>
 	<object access-modifier="private" name="OpenContextWindow" display-name="OpenContextWindow" uuid="7705de43-eb54-466c-b525-9efb5c409a5c" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4" cardinal="1">
 		<designed target="Enabled" value="true" ver="4"/>
 		<designed target="InvokeTrigger" value="false" ver="4"/>
@@ -527,11 +424,6 @@ else
 						<![CDATA[posY]]>
 					</expr>
 				</init>
-				<init target="EU_2" ver="4">
-					<expr>
-						<![CDATA[here.EU_2]]>
-					</expr>
-				</init>
 				<init target="OPCTag_2" ver="4">
 					<expr>
 						<![CDATA[here.VALUE_2.Tag]]>
@@ -544,17 +436,22 @@ else
 				</init>
 				<init target="EU_1" ver="4">
 					<expr>
-						<![CDATA[here.EU_1]]>
+						<![CDATA[here.EU]]>
+					</expr>
+				</init>
+				<init target="EU_2" ver="4">
+					<expr>
+						<![CDATA[here.EU]]>
 					</expr>
 				</init>
 				<init target="Description_1" ver="4">
 					<expr>
-						<![CDATA[here.NAME_1 + " (датчик 1)"]]>
+						<![CDATA[here.NAME + " (датчик 1)"]]>
 					</expr>
 				</init>
 				<init target="Description_2" ver="4">
 					<expr>
-						<![CDATA[here.NAME_2 + " (датчик 2)"]]>
+						<![CDATA[here.NAME + " (датчик 2)"]]>
 					</expr>
 				</init>
 			</object>
@@ -595,173 +492,9 @@ else
 	</object>
 	<do-trace access-modifier="private" target="Tooltip" ver="4">
 		<body>
-			<![CDATA[NAME_1 + ", " + EU_1]]>
+			<![CDATA[NAME + ", " + EU]]>
 		</body>
 	</do-trace>
-	<object access-modifier="private" name="EH_1" display-name="EH_1" uuid="88e8973d-16bb-4f76-a506-91be1a64c7c5" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_1"/>
-		<init target="Path" ver="4" value="EH"/>
-	</object>
-	<object access-modifier="private" name="EH_2" display-name="EH_2" uuid="1a60250f-d4c8-4096-980d-ecb405ea4b94" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_2"/>
-		<init target="Path" ver="4" value="EH"/>
-	</object>
-	<object access-modifier="private" name="WH_1" display-name="WH_1" uuid="59420506-decc-47ba-a36a-09b4c43386fe" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_1"/>
-		<init target="Path" ver="4" value="WH"/>
-	</object>
-	<object access-modifier="private" name="WH_2" display-name="WH_2" uuid="86e4dbee-e086-4128-8086-454bed8bbe2d" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_2"/>
-		<init target="Path" ver="4" value="WH"/>
-	</object>
-	<object access-modifier="private" name="EL_1" display-name="EL_1" uuid="6cb0469d-8502-4a8c-b41a-94d7995d0472" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_1"/>
-		<init target="Path" ver="4" value="EL"/>
-	</object>
-	<object access-modifier="private" name="EL_2" display-name="EL_2" uuid="dd2f0ff3-0753-4a65-afab-3a96d12fc6c6" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_2"/>
-		<init target="Path" ver="4" value="EL"/>
-	</object>
-	<object access-modifier="private" name="WL_1" display-name="WL_1" uuid="968459f6-4bbe-4558-b908-dcbe35428b49" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_1"/>
-		<init target="Path" ver="4" value="WL"/>
-	</object>
-	<object access-modifier="private" name="WL_2" display-name="WL_2" uuid="b6b24413-81b3-4d6a-9a9d-2a8a91e7d295" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_2"/>
-		<init target="Path" ver="4" value="WL"/>
-	</object>
-	<object access-modifier="private" name="OWL_1" display-name="OWL_1" uuid="b4aa6f57-3f8c-4332-9557-f36c71302d1e" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_1"/>
-		<init target="Path" ver="4" value="OWL"/>
-	</object>
-	<object access-modifier="private" name="OWL_2" display-name="OWL_2" uuid="8ec3c82f-06f0-43a0-945e-1b2e35dba19b" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_2"/>
-		<init target="Path" ver="4" value="OWL"/>
-	</object>
-	<object access-modifier="private" name="OWH_1" display-name="OWH_1" uuid="b0d57829-a987-4428-b07b-c3fe2cc2696b" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_1"/>
-		<init target="Path" ver="4" value="OWH"/>
-	</object>
-	<object access-modifier="private" name="OWH_2" display-name="OWH_2" uuid="29c547fa-7fb3-4274-b295-f85490c75fea" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_2"/>
-		<init target="Path" ver="4" value="OWH"/>
-	</object>
-	<object access-modifier="private" name="OEL_1" display-name="OEL_1" uuid="b790a200-17dd-4433-abf1-ebb9ee6a3882" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_1"/>
-		<init target="Path" ver="4" value="OEL"/>
-	</object>
-	<object access-modifier="private" name="OEL_2" display-name="OEL_2" uuid="57380add-45dd-4d68-9e4a-3ce86877f633" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_2"/>
-		<init target="Path" ver="4" value="OEL"/>
-	</object>
-	<object access-modifier="private" name="OEH_1" display-name="OEH_1" uuid="8d42a81f-d806-4fc8-af35-23e7e7bf8fec" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_1"/>
-		<init target="Path" ver="4" value="OEH"/>
-	</object>
-	<object access-modifier="private" name="OEH_2" display-name="OEH_2" uuid="9ef72eb3-956f-4745-804d-b2e0cfc7d151" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_2"/>
-		<init target="Path" ver="4" value="OEH"/>
-	</object>
-	<object access-modifier="private" name="OL_1" display-name="OL_1" uuid="bb80c543-544c-4ada-a53b-7879ecd7d3a0" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_1"/>
-		<init target="Path" ver="4" value="OL"/>
-		<init target="Value" ver="4" value="true"/>
-	</object>
-	<object access-modifier="private" name="OL_2" display-name="OL_2" uuid="471c4e6b-27e7-4298-9efd-d1360f627ef7" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_2"/>
-		<init target="Path" ver="4" value="OL"/>
-		<init target="Value" ver="4" value="true"/>
-	</object>
-	<object access-modifier="private" name="OH_1" display-name="OH_1" uuid="81573ac9-3517-49e9-b44e-f4a9464315b1" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_1"/>
-		<init target="Path" ver="4" value="OH"/>
-		<init target="Value" ver="4" value="true"/>
-	</object>
-	<object access-modifier="private" name="OH_2" display-name="OH_2" uuid="765cb700-562a-4aa2-a4d4-97f682282b4d" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_2"/>
-		<init target="Path" ver="4" value="OH"/>
-		<init target="Value" ver="4" value="true"/>
-	</object>
-	<object access-modifier="private" name="inAH_1" display-name="inAH_1" uuid="2ada2e28-e44a-4f9b-ad1f-1f737417df3c" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Path" ver="4" value="inAH"/>
-		<init target="Source" ver="4" ref="hereOPCSource_1"/>
-	</object>
-	<object access-modifier="private" name="inAL_1" display-name="inAL_1" uuid="fb21e6c5-9781-47fa-a6df-d4cbd5b93d68" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Path" ver="4" value="inAL"/>
-		<init target="Source" ver="4" ref="hereOPCSource_1"/>
-	</object>
-	<object access-modifier="private" name="inFTdead_1" display-name="inFTdead_1" uuid="21c30e51-fae8-484c-986e-b6b058663436" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Path" ver="4" value="inFTdead"/>
-		<init target="Source" ver="4" ref="hereOPCSource_1"/>
-	</object>
-	<object access-modifier="private" name="inFdead_1" display-name="inFdead_1" uuid="629a1f06-294d-4c57-accb-933a7f18fcb4" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Path" ver="4" value="inFdead"/>
-		<init target="Source" ver="4" ref="hereOPCSource_1"/>
-	</object>
-	<object access-modifier="private" name="AWH_1" display-name="AWH_1" uuid="5dff3661-de8c-4057-9059-69d85be11327" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_1"/>
-		<init target="Path" ver="4" value="AWH"/>
-	</object>
-	<object access-modifier="private" name="AWL_1" display-name="AWL_1" uuid="a7d8415b-7440-4855-b4dd-2cbf49e02b54" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_1"/>
-		<init target="Path" ver="4" value="AWL"/>
-	</object>
-	<object access-modifier="private" name="AEH_1" display-name="AEH_1" uuid="3693883b-fd83-47e0-8f9d-985576641160" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_1"/>
-		<init target="Path" ver="4" value="AEH"/>
-	</object>
-	<object access-modifier="private" name="AEL_1" display-name="AEL_1" uuid="a237d643-d1dc-468c-a8d1-2a41e3beba9f" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_1"/>
-		<init target="Path" ver="4" value="AEL"/>
-	</object>
-	<object access-modifier="private" name="inAH_2" display-name="inAH_2" uuid="65faf580-0106-464d-8888-f8a38e667dcf" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Path" ver="4" value="inAH"/>
-		<init target="Source" ver="4" ref="hereOPCSource_2"/>
-	</object>
-	<object access-modifier="private" name="inAL_2" display-name="inAL_2" uuid="d65c270f-073b-4fef-a4b8-5928c4530ab3" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Path" ver="4" value="inAL"/>
-		<init target="Source" ver="4" ref="hereOPCSource_2"/>
-	</object>
-	<object access-modifier="private" name="inFTdead_2" display-name="inFTdead_2" uuid="ae99821b-a1c4-4285-a5f1-b5e8490962b5" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Path" ver="4" value="inFTdead"/>
-		<init target="Source" ver="4" ref="hereOPCSource_2"/>
-	</object>
-	<object access-modifier="private" name="inFdead_2" display-name="inFdead_2" uuid="391b6869-fb50-4b7f-9fce-9ed805f9eee5" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Path" ver="4" value="inFdead"/>
-		<init target="Source" ver="4" ref="hereOPCSource_2"/>
-	</object>
-	<object access-modifier="private" name="AWH_2" display-name="AWH_2" uuid="c7c95ce8-1c2c-4785-9849-409eb803c1cf" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Path" ver="4" value="AWH"/>
-		<init target="Source" ver="4" ref="hereOPCSource_2"/>
-	</object>
-	<object access-modifier="private" name="AWL_2" display-name="AWL_2" uuid="737c0285-2fbf-44e6-861c-be7b3d0771e5" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Path" ver="4" value="AWL"/>
-		<init target="Source" ver="4" ref="hereOPCSource_2"/>
-	</object>
-	<object access-modifier="private" name="AEH_2" display-name="AEH_2" uuid="ca8d0873-607d-4214-bf88-43e18b27d0e0" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Path" ver="4" value="AEH"/>
-		<init target="Source" ver="4" ref="hereOPCSource_2"/>
-	</object>
-	<object access-modifier="private" name="AEL_2" display-name="AEL_2" uuid="6eb809c1-88de-4489-a2b1-15b05557ceac" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Path" ver="4" value="AEL"/>
-		<init target="Source" ver="4" ref="hereOPCSource_2"/>
-	</object>
-	<object access-modifier="private" name="outFTdead_1" display-name="outFTdead_1" uuid="ba34633c-95d8-4efe-a81e-a8aa13680955" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_1"/>
-		<init target="Path" ver="4" value="outFTdead"/>
-	</object>
-	<object access-modifier="private" name="outFdead_1" display-name="outFdead_1" uuid="4d5715cf-0898-42a2-8d88-12b050147fdd" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource_1"/>
-		<init target="Path" ver="4" value="outFdead"/>
-	</object>
-	<object access-modifier="private" name="outFTdead_2" display-name="outFTdead_2" uuid="fc727128-fa22-442b-9db4-f26119c8ed6e" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Path" ver="4" value="outFTdead"/>
-		<init target="Source" ver="4" ref="hereOPCSource_2"/>
-	</object>
-	<object access-modifier="private" name="outFdead_2" display-name="outFdead_2" uuid="5b8025cf-2662-4c71-98dd-235722eff37f" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Path" ver="4" value="outFdead"/>
-		<init target="Source" ver="4" ref="hereOPCSource_2"/>
-	</object>
 	<object access-modifier="private" name="CorrectValue" display-name="CorrectValue" uuid="10299d62-7f9f-44fd-8cc6-fcf35ea5bf0c" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="4">
 		<designed target="InValue" value="" ver="4"/>
 		<init target="Format" ver="4">
@@ -770,7 +503,7 @@ else
 				<do-trace access-modifier="private" target="DigitsCount" ver="4">
 					<conditional-expr>
 						<condition>
-							<![CDATA[ALIAS_1=="P"]]>
+							<![CDATA[ALIAS=="P"]]>
 						</condition>
 						<expr>
 							<![CDATA[2]]>
@@ -778,7 +511,7 @@ else
 					</conditional-expr>
 					<conditional-expr>
 						<condition>
-							<![CDATA[ALIAS_1=="T"]]>
+							<![CDATA[ALIAS=="T"]]>
 						</condition>
 						<expr>
 							<![CDATA[1]]>
@@ -786,23 +519,26 @@ else
 					</conditional-expr>
 					<conditional-expr>
 						<condition>
-							<![CDATA[ALIAS_1=="F"]]>
+							<![CDATA[ALIAS=="F"]]>
 						</condition>
 						<expr>
 							<![CDATA[1]]>
 						</expr>
 					</conditional-expr>
+					<default-expr>
+						<expr>
+							<![CDATA[0]]>
+						</expr>
+					</default-expr>
 				</do-trace>
 			</object>
 		</init>
 		<do-trace access-modifier="private" target="InValue" ver="4">
 			<body>
-				<![CDATA[VALUE]]>
+				<![CDATA[(VALUE_1+VALUE_2)/2]]>
 			</body>
 		</do-trace>
 	</object>
-	<param access-modifier="private" name="initPathAlarm_H" display-name="initPathAlarm_H" uuid="949af09b-8da8-475e-95bd-05d2d6f35245" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
-	<param access-modifier="private" name="initPathAlarm_L" display-name="initPathAlarm_L" uuid="d3dc3327-abaa-47f1-9f79-c7bfc510fc54" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
 	<object access-modifier="private" name="ETSignalL" display-name="ETSignalL" uuid="a5660b7e-f678-4c69-8769-84e5a0922e4e" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="4">
 		<designed target="Period" value="1" ver="4"/>
 		<designed target="Active" value="false" ver="4"/>
@@ -903,7 +639,7 @@ else
 		<do-trace access-modifier="private" target="Path" ver="4">
 			<conditional-expr>
 				<condition>
-					<![CDATA[TWatOut1<120&&TWatOut2<120&&ALIAS_1=="P"]]>
+					<![CDATA[TWatOut1<120&&TWatOut2<120&&ALIAS=="P"]]>
 				</condition>
 				<expr>
 					<![CDATA["Out"+initName+"L120"]]>
@@ -911,7 +647,7 @@ else
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[TWatOut1>=120&&TWatOut1<130&&TWatOut2>=120&&TWatOut2<130&&ALIAS_1=="P"]]>
+					<![CDATA[TWatOut1>=120&&TWatOut1<130&&TWatOut2>=120&&TWatOut2<130&&ALIAS=="P"]]>
 				</condition>
 				<expr>
 					<![CDATA["Out"+initName+"L120130"]]>
@@ -919,7 +655,7 @@ else
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[TWatOut1>=130&&TWatOut2>=130&&ALIAS_1=="P"]]>
+					<![CDATA[TWatOut1>=130&&TWatOut2>=130&&ALIAS=="P"]]>
 				</condition>
 				<expr>
 					<![CDATA["Out"+initName+"L130"]]>
@@ -957,7 +693,7 @@ else
 		<do-trace access-modifier="private" target="Path" ver="4">
 			<conditional-expr>
 				<condition>
-					<![CDATA[TWatOut1<120&&TWatOut2<120&&ALIAS_1=="P"]]>
+					<![CDATA[TWatOut1<120&&TWatOut2<120&&ALIAS=="P"]]>
 				</condition>
 				<expr>
 					<![CDATA["Out"+initName+"L120"]]>
@@ -965,7 +701,7 @@ else
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[TWatOut1>=120&&TWatOut1<130&&TWatOut2>=120&&TWatOut2<130&&ALIAS_1=="P"]]>
+					<![CDATA[TWatOut1>=120&&TWatOut1<130&&TWatOut2>=120&&TWatOut2<130&&ALIAS=="P"]]>
 				</condition>
 				<expr>
 					<![CDATA["Out"+initName+"L120130"]]>
@@ -973,7 +709,7 @@ else
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[TWatOut1>=130&&TWatOut2>=130&&ALIAS_1=="P"]]>
+					<![CDATA[TWatOut1>=130&&TWatOut2>=130&&ALIAS=="P"]]>
 				</condition>
 				<expr>
 					<![CDATA["Out"+initName+"L130"]]>
@@ -1027,7 +763,7 @@ else
 		<do-trace access-modifier="private" target="Path" ver="4">
 			<conditional-expr>
 				<condition>
-					<![CDATA[TWatOut1<120&&TWatOut2<120&&ALIAS_1=="P"]]>
+					<![CDATA[TWatOut1<120&&TWatOut2<120&&ALIAS=="P"]]>
 				</condition>
 				<expr>
 					<![CDATA["ROOT.ALARMS.OtherAlarms.Alarm"+initName+"L120"]]>
@@ -1035,7 +771,7 @@ else
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[TWatOut1>=120&&TWatOut1<130&&TWatOut2>=120&&TWatOut2<130&&ALIAS_1=="P"]]>
+					<![CDATA[TWatOut1>=120&&TWatOut1<130&&TWatOut2>=120&&TWatOut2<130&&ALIAS=="P"]]>
 				</condition>
 				<expr>
 					<![CDATA["ROOT.ALARMS.OtherAlarms.Alarm"+initName+"L120130"]]>
@@ -1043,7 +779,7 @@ else
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[TWatOut1>=130&&TWatOut2>=130&&ALIAS_1=="P"]]>
+					<![CDATA[TWatOut1>=130&&TWatOut2>=130&&ALIAS=="P"]]>
 				</condition>
 				<expr>
 					<![CDATA["ROOT.ALARMS.OtherAlarms.Alarm"+initName+"L130"]]>
@@ -1067,7 +803,7 @@ else
 		<do-trace access-modifier="private" target="Path" ver="4">
 			<conditional-expr>
 				<condition>
-					<![CDATA[TWatOut1<120&&TWatOut2<120&&ALIAS_1=="P"]]>
+					<![CDATA[TWatOut1<120&&TWatOut2<120&&ALIAS=="P"]]>
 				</condition>
 				<expr>
 					<![CDATA["ROOT.ALARMS.Signal.Alarm"+initName+"L120"]]>
@@ -1075,7 +811,7 @@ else
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[TWatOut1>=120&&TWatOut1<130&&TWatOut2>=120&&TWatOut2<130&&ALIAS_1=="P"]]>
+					<![CDATA[TWatOut1>=120&&TWatOut1<130&&TWatOut2>=120&&TWatOut2<130&&ALIAS=="P"]]>
 				</condition>
 				<expr>
 					<![CDATA["ROOT.ALARMS.Signal.Alarm"+initName+"L120130"]]>
@@ -1083,7 +819,7 @@ else
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[TWatOut1>=130&&TWatOut2>=130&&ALIAS_1=="P"]]>
+					<![CDATA[TWatOut1>=130&&TWatOut2>=130&&ALIAS=="P"]]>
 				</condition>
 				<expr>
 					<![CDATA["ROOT.ALARMS.Signal.Alarm"+initName+"L130"]]>
@@ -1255,7 +991,7 @@ if (me.Value&&isOpenedProtCheck&&unit.Global.OutCheckProt)
 		<do-trace access-modifier="private" target="Path" ver="4">
 			<conditional-expr>
 				<condition>
-					<![CDATA[TWatOut1<120&&TWatOut2<120&&ALIAS_1=="P"]]>
+					<![CDATA[TWatOut1<120&&TWatOut2<120&&ALIAS=="P"]]>
 				</condition>
 				<expr>
 					<![CDATA["In"+initName+"L120"]]>
@@ -1263,7 +999,7 @@ if (me.Value&&isOpenedProtCheck&&unit.Global.OutCheckProt)
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[TWatOut1>=120&&TWatOut1<130&&TWatOut2>=120&&TWatOut2<130&&ALIAS_1=="P"]]>
+					<![CDATA[TWatOut1>=120&&TWatOut1<130&&TWatOut2>=120&&TWatOut2<130&&ALIAS=="P"]]>
 				</condition>
 				<expr>
 					<![CDATA["In"+initName+"L120130"]]>
@@ -1271,7 +1007,7 @@ if (me.Value&&isOpenedProtCheck&&unit.Global.OutCheckProt)
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[TWatOut1>=130&&TWatOut2>=130&&ALIAS_1=="P"]]>
+					<![CDATA[TWatOut1>=130&&TWatOut2>=130&&ALIAS=="P"]]>
 				</condition>
 				<expr>
 					<![CDATA["In"+initName+"L130"]]>
@@ -1297,7 +1033,7 @@ if (me.Value&&isOpenedProtCheck&&unit.Global.OutCheckProt)
 		<do-trace access-modifier="private" target="Path" ver="4">
 			<conditional-expr>
 				<condition>
-					<![CDATA[TWatOut1<120&&TWatOut2<120&&ALIAS_1=="P"]]>
+					<![CDATA[TWatOut1<120&&TWatOut2<120&&ALIAS=="P"]]>
 				</condition>
 				<expr>
 					<![CDATA["In"+initName+"L120"]]>
@@ -1305,7 +1041,7 @@ if (me.Value&&isOpenedProtCheck&&unit.Global.OutCheckProt)
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[TWatOut1>=120&&TWatOut1<130&&TWatOut2>=120&&TWatOut2<130&&ALIAS_1=="P"]]>
+					<![CDATA[TWatOut1>=120&&TWatOut1<130&&TWatOut2>=120&&TWatOut2<130&&ALIAS=="P"]]>
 				</condition>
 				<expr>
 					<![CDATA["In"+initName+"L120130"]]>
@@ -1313,7 +1049,7 @@ if (me.Value&&isOpenedProtCheck&&unit.Global.OutCheckProt)
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[TWatOut1>=130&&TWatOut2>=130&&ALIAS_1=="P"]]>
+					<![CDATA[TWatOut1>=130&&TWatOut2>=130&&ALIAS=="P"]]>
 				</condition>
 				<expr>
 					<![CDATA["In"+initName+"L130"]]>
@@ -1336,30 +1072,9 @@ if (me.Value&&isOpenedProtCheck&&unit.Global.OutCheckProt)
 			<object access-modifier="private" uuid="2a2337c5-8bcb-49f1-8073-95406267a35c" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
 				<designed target="DigitsCount" value="0" ver="4"/>
 				<do-trace access-modifier="private" target="DigitsCount" ver="4">
-					<conditional-expr>
-						<condition>
-							<![CDATA[ALIAS_1=="P"]]>
-						</condition>
-						<expr>
-							<![CDATA[2]]>
-						</expr>
-					</conditional-expr>
-					<conditional-expr>
-						<condition>
-							<![CDATA[ALIAS_1=="T"]]>
-						</condition>
-						<expr>
-							<![CDATA[1]]>
-						</expr>
-					</conditional-expr>
-					<conditional-expr>
-						<condition>
-							<![CDATA[ALIAS_1=="F"]]>
-						</condition>
-						<expr>
-							<![CDATA[1]]>
-						</expr>
-					</conditional-expr>
+					<body>
+						<![CDATA[DIGITS]]>
+					</body>
 				</do-trace>
 			</object>
 		</init>
@@ -1375,30 +1090,9 @@ if (me.Value&&isOpenedProtCheck&&unit.Global.OutCheckProt)
 			<object access-modifier="private" uuid="2a2337c5-8bcb-49f1-8073-95406267a35c" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
 				<designed target="DigitsCount" value="0" ver="4"/>
 				<do-trace access-modifier="private" target="DigitsCount" ver="4">
-					<conditional-expr>
-						<condition>
-							<![CDATA[ALIAS_1=="P"]]>
-						</condition>
-						<expr>
-							<![CDATA[2]]>
-						</expr>
-					</conditional-expr>
-					<conditional-expr>
-						<condition>
-							<![CDATA[ALIAS_1=="T"]]>
-						</condition>
-						<expr>
-							<![CDATA[1]]>
-						</expr>
-					</conditional-expr>
-					<conditional-expr>
-						<condition>
-							<![CDATA[ALIAS_1=="F"]]>
-						</condition>
-						<expr>
-							<![CDATA[1]]>
-						</expr>
-					</conditional-expr>
+					<body>
+						<![CDATA[DIGITS]]>
+					</body>
 				</do-trace>
 			</object>
 		</init>
@@ -1407,14 +1101,6 @@ if (me.Value&&isOpenedProtCheck&&unit.Global.OutCheckProt)
 				<![CDATA[VALUE_2]]>
 			</body>
 		</do-trace>
-	</object>
-	<object access-modifier="private" name="TWatOut1" display-name="TWatOut1" uuid="34942c5d-9e1a-46bb-9600-45fda296b261" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
-		<init target="Path" ver="4" value="ROOT.WATER.TWaterOut1.VALUE"/>
-	</object>
-	<object access-modifier="private" name="TWatOut2" display-name="TWatOut2" uuid="669740ae-6d47-4b50-9707-7173147c8bc1" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
-		<init target="Path" ver="4" value="ROOT.WATER.TWaterOut2.VALUE"/>
 	</object>
 	<object access-modifier="private" name="initName" display-name="initName" uuid="ac631674-9e5a-4ef9-b50e-a34aaeebb1a6" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="4"/>
 	<do-trace access-modifier="private" target="Signal" ver="4">
@@ -1484,5 +1170,12 @@ else
 OpenProtCheckWindow.Invoke();]]>
 		</body>
 	</do-on>
+	<object access-modifier="private" name="DIGITS" display-name="DIGITS" uuid="4d1907f2-1881-4080-b21f-3ca3d85a9ac2" base-type="OpcItemInt2" base-type-id="01786030-8d4e-41cb-a7fb-fbaa0e344f13" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="DIGITS"/>
+	</object>
+	<object access-modifier="private" name="VALUE" display-name="VALUE" uuid="0e13a963-5ed4-4d20-b54c-e19cec83f468" base-type="notifying_float4" base-type-id="bb7d05ee-cbf0-4c44-8740-1905239c8ead" ver="4"/>
+	<object access-modifier="private" name="TWatOut1" display-name="TWatOut1" uuid="ae904249-045a-4cb7-8982-4cb4f8913299" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4"/>
+	<object access-modifier="private" name="TWatOut2" display-name="TWatOut2" uuid="73b10ae7-4c42-4732-8bd0-ec604e887bec" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4"/>
 </type>
 

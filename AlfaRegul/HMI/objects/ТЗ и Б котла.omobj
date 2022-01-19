@@ -794,8 +794,6 @@ t_inPGColH = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outPGColH));]]>
 					<init target="EUColor" ver="4" value="0xff00aa00"/>
 					<init target="VALUETxtColor" ver="4" value="0xff00ff00"/>
 					<init target="initOPCSource" ver="4" ref="unit.Connections.OpcSource"/>
-					<init target="initPath_1" ver="4" value="ROOT.WATER.TWaterOut1"/>
-					<init target="initPath_2" ver="4" value="ROOT.WATER.TWaterOut2"/>
 					<init target="initPath" ver="4" value="ROOT.WATER.StSelMainT"/>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseRightClick">
 						<body kind="om">
@@ -820,8 +818,6 @@ else
 OpenRegulSettings.Invoke();*/]]>
 						</body>
 					</do-on>
-					<init target="initPathAlarm_H" ver="4" value="ROOT.PROTECTS.BoilerSignal.OutTWatOutH"/>
-					<init target="initPathAlarm_L" ver="4" value=""/>
 					<init target="initName" ver="4" value="TWatOut"/>
 					<designed target="Scale" value="1.2" ver="4"/>
 				</object>
@@ -1045,10 +1041,6 @@ t_inTWatOutH = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outTWatOutH));]]>
 					<init target="initPath" ver="4" value="ROOT.WATER.StSelMainF"/>
 					<init target="VALUETxtColor" ver="4" value="0xff00ff00"/>
 					<init target="EUColor" ver="4" value="0xff00aa00"/>
-					<init target="initPath_2" ver="4" value="ROOT.WATER.FWaterOut2"/>
-					<init target="initPath_1" ver="4" value="ROOT.WATER.FWaterOut1"/>
-					<init target="initPathAlarm_H" ver="4" value=""/>
-					<init target="initPathAlarm_L" ver="4" value="ROOT.PROTECTS.BoilerSignal.OutQWatOutL"/>
 					<init target="initName" ver="4" value="QWatOut"/>
 				</object>
 			</object>
@@ -1716,10 +1708,7 @@ t_inPWatH = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outPWatH));]]>
 					<init target="EUColor" ver="4" value="0xff00aa00"/>
 					<init target="VALUETxtColor" ver="4" value="0xff00ff00"/>
 					<init target="initOPCSource" ver="4" ref="unit.Connections.OpcSource"/>
-					<init target="initPath_1" ver="4" value="ROOT.WATER.PWaterOut1"/>
-					<init target="initPath_2" ver="4" value="ROOT.WATER.PWaterOut2"/>
 					<init target="initPath" ver="4" value="ROOT.WATER.StSelMainP"/>
-					<init target="initPathAlarm_H" ver="4" value="ROOT.PROTECTS.BoilerSignal.OutPWatOutH"/>
 					<init target="initName" ver="4" value="PWatOut"/>
 					<designed target="Scale" value="1.2" ver="4"/>
 				</object>
@@ -2146,7 +2135,7 @@ t_inPOilL = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outPOilL));]]>
 			<designed target="UpdateRate" value="0" ver="4"/>
 			<designed target="ReAdvise" value="0" ver="4"/>
 			<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
-			<init target="Path" ver="4" value="ROOT.PROTECTS.BoilerTime"/>
+			<init target="Path" ver="4" value="ROOT.AlarmsValue.DelAlarmsBoiler"/>
 		</object>
 		<object access-modifier="private" name="t_inPGColL" display-name="t_inPGColL" uuid="c9009db3-f921-4fb0-9c3d-5c86dcc141be" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 			<init target="Path" ver="4" value="InPGasCollL"/>
@@ -4610,7 +4599,7 @@ inPreTSmoke = TypeConvert.ToFloat(Str.ToDouble(me.Text,outPreTSmoke));]]>
 			<designed target="UpdateRate" value="0" ver="4"/>
 			<designed target="ReAdvise" value="0" ver="4"/>
 			<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
-			<init target="Path" ver="4" value="ROOT.PROTECTS.BoilerVal"/>
+			<init target="Path" ver="4" value="ROOT.AlarmsValue.ProtectsValueBoiler"/>
 		</object>
 		<object access-modifier="private" name="inPGColL" display-name="inPGColL" uuid="f4f86808-0bc9-4a5a-af9d-820156e1df5b" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 			<init target="Path" ver="4" value="InPGasCollL"/>
@@ -4681,7 +4670,7 @@ inPreTSmoke = TypeConvert.ToFloat(Str.ToDouble(me.Text,outPreTSmoke));]]>
 			<designed target="UpdateRate" value="0" ver="4"/>
 			<designed target="ReAdvise" value="0" ver="4"/>
 			<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
-			<init target="Path" ver="4" value="ROOT.PROTECTS.BoilerSignal"/>
+			<init target="Path" ver="4" value="ROOT.AlarmsValue.SignalValueBoiler"/>
 		</object>
 		<object access-modifier="private" name="inPrePGColL" display-name="inPrePGColL" uuid="0965e2fa-267f-4e93-aa21-b41dad68468a" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 			<init target="Source" ver="4" ref="BoilerValueSignal"/>
@@ -6923,14 +6912,14 @@ t_inDelPO2 = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outDelPO2));]]>
 			<designed target="UpdateRate" value="0" ver="4"/>
 			<designed target="ReAdvise" value="0" ver="4"/>
 			<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
-			<init target="Path" ver="4" value="ROOT.PROTECTS.BurnVal"/>
+			<init target="Path" ver="4" value="ROOT.AlarmsValue.ProtectsValueBurn"/>
 		</object>
 		<object access-modifier="private" name="BurnTime" display-name="BurnTime" uuid="57d190b4-f653-4528-9ae8-e2a2c873a733" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
 			<designed target="Active" value="false" ver="4"/>
 			<designed target="UpdateRate" value="0" ver="4"/>
 			<designed target="ReAdvise" value="0" ver="4"/>
 			<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
-			<init target="Path" ver="4" value="ROOT.PROTECTS.BurnTime"/>
+			<init target="Path" ver="4" value="ROOT.AlarmsValue.DelAlarmsBurn"/>
 		</object>
 		<object access-modifier="private" name="InImpDel" display-name="InImpDel" uuid="617c994f-e77c-4668-bc47-268e87435463" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 			<init target="Source" ver="4" ref="BurnVal"/>
@@ -8850,7 +8839,7 @@ t_inStab = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outStab));]]>
 			<designed target="UpdateRate" value="0" ver="4"/>
 			<designed target="ReAdvise" value="0" ver="4"/>
 			<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
-			<init target="Path" ver="4" value="ROOT.PROTECTS.TimeProcesses"/>
+			<init target="Path" ver="4" value="ROOT.AlarmsValue.TimeProcesses"/>
 		</object>
 		<object access-modifier="private" name="t_inBurn" display-name="t_inBurn" uuid="4ae1b124-8179-4116-a710-9ce78b6ff09c" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 			<init target="Source" ver="4" ref="TimeProc"/>
@@ -9964,7 +9953,7 @@ inRegimeP_12 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_12));]]>
 			<designed target="UpdateRate" value="0" ver="4"/>
 			<designed target="ReAdvise" value="0" ver="4"/>
 			<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
-			<init target="Path" ver="4" value="ROOT.BOILER"/>
+			<init target="Path" ver="4" value="ROOT.Regime"/>
 		</object>
 		<object access-modifier="private" name="inRegimeP_4" display-name="inRegimeP_4" uuid="a8d9aac2-6e64-4e59-b48c-efa3bbd9a171" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 			<init target="Source" ver="4" ref="OPCRegimeMap"/>
@@ -10002,6 +9991,22 @@ inRegimeP_12 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_12));]]>
 			<init target="Source" ver="4" ref="OPCRegimeMap"/>
 			<init target="Path" ver="4" value="InRegimeP12"/>
 		</object>
+		<object access-modifier="private" name="inRegimeP_13" display-name="inRegimeP_13" uuid="8c96cac4-8454-45eb-bf12-496841977820" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="InRegimeP13"/>
+		</object>
+		<object access-modifier="private" name="inRegimeP_14" display-name="inRegimeP_14" uuid="797cadaa-f792-4fda-bcfd-3999c684012a" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="InRegimeP14"/>
+		</object>
+		<object access-modifier="private" name="inRegimeP_15" display-name="inRegimeP_15" uuid="43d5b6ef-c5b0-49e2-b25b-0da828fa9ec8" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="InRegimeP15"/>
+		</object>
+		<object access-modifier="private" name="inRegimeP_16" display-name="inRegimeP_16" uuid="febad667-c254-472b-abb7-2c583240ba24" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="InRegimeP16"/>
+		</object>
 		<object access-modifier="private" name="outRegimeP_4" display-name="outRegimeP_4" uuid="44f73339-1ff6-421c-a1a7-21d7471b2e8b" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 			<init target="Source" ver="4" ref="OPCRegimeMap"/>
 			<init target="Path" ver="4" value="OutRegimeP4"/>
@@ -10037,6 +10042,22 @@ inRegimeP_12 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_12));]]>
 		<object access-modifier="private" name="outRegimeP_12" display-name="outRegimeP_12" uuid="aabbe779-cfd0-4804-8c73-097121c0c366" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 			<init target="Source" ver="4" ref="OPCRegimeMap"/>
 			<init target="Path" ver="4" value="OutRegimeP12"/>
+		</object>
+		<object access-modifier="private" name="outRegimeP_13" display-name="outRegimeP_13" uuid="37a17f9c-e6aa-4733-b36b-01a40e3ecfe8" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="OutRegimeP13"/>
+		</object>
+		<object access-modifier="private" name="outRegimeP_14" display-name="outRegimeP_14" uuid="1e9ea46b-4eef-4c1b-a190-fb33463786fe" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="OutRegimeP14"/>
+		</object>
+		<object access-modifier="private" name="outRegimeP_15" display-name="outRegimeP_15" uuid="73e2df7f-6214-4fd5-ad0a-cdfcd903f68a" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="OutRegimeP15"/>
+		</object>
+		<object access-modifier="private" name="outRegimeP_16" display-name="outRegimeP_16" uuid="8264864e-55bb-426a-b45f-b39ed57a60a7" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="OutRegimeP16"/>
 		</object>
 	</object>
 	<object access-modifier="private" name="IgnFlapOpen" display-name="IgnFlapOpen" uuid="85634e3c-082e-41d5-afc7-632b09b7866a" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
@@ -10235,7 +10256,7 @@ inRegimeP_12 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_12));]]>
 					<designed target="Tooltip" value="" ver="4"/>
 					<designed target="Width" value="60" ver="4"/>
 					<designed target="Height" value="20" ver="4"/>
-					<designed target="Text" value="5" ver="4"/>
+					<designed target="Text" value="3" ver="4"/>
 					<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0,Narrow Bold" ver="4"/>
 					<designed target="FontColor" value="4278190080" ver="4"/>
 					<designed target="TextAlignment" value="132" ver="4"/>
@@ -10277,7 +10298,7 @@ inRegimeP_12 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_12));]]>
 					<designed target="TextAlignment" value="132" ver="4"/>
 					<do-trace access-modifier="private" target="Text" ver="4">
 						<body>
-							<![CDATA[OutOpenGIgn_5]]>
+							<![CDATA[OutOpenGIgn_1]]>
 						</body>
 					</do-trace>
 					<designed target="HideInput" value="false" ver="4"/>
@@ -10286,7 +10307,7 @@ inRegimeP_12 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_12));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-InOpenGIgn_5 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_5));]]>
+InOpenGIgn_1 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_1));]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -10337,7 +10358,7 @@ InOpenGIgn_5 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_5));]]>
 					<designed target="TextAlignment" value="132" ver="4"/>
 					<do-trace access-modifier="private" target="Text" ver="4">
 						<body>
-							<![CDATA[OutOpenAIgn_5]]>
+							<![CDATA[OutOpenAIgn_1]]>
 						</body>
 					</do-trace>
 					<designed target="HideInput" value="false" ver="4"/>
@@ -10346,7 +10367,7 @@ InOpenGIgn_5 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_5));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-InOpenAIgn_5 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_5));]]>
+InOpenAIgn_1 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_1));]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -10452,7 +10473,7 @@ InOpenAIgn_5 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_5));]]>
 					<designed target="TextAlignment" value="132" ver="4"/>
 					<do-trace access-modifier="private" target="Text" ver="4">
 						<body>
-							<![CDATA[OutOpenGIgn_6]]>
+							<![CDATA[OutOpenGIgn_2]]>
 						</body>
 					</do-trace>
 					<designed target="HideInput" value="false" ver="4"/>
@@ -10461,7 +10482,7 @@ InOpenAIgn_5 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_5));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-InOpenGIgn_6 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_6));]]>
+InOpenGIgn_2 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_2));]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -10512,7 +10533,7 @@ InOpenGIgn_6 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_6));]]>
 					<designed target="TextAlignment" value="132" ver="4"/>
 					<do-trace access-modifier="private" target="Text" ver="4">
 						<body>
-							<![CDATA[OutOpenAIgn_6]]>
+							<![CDATA[OutOpenAIgn_2]]>
 						</body>
 					</do-trace>
 					<designed target="HideInput" value="false" ver="4"/>
@@ -10521,7 +10542,7 @@ InOpenGIgn_6 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_6));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-InOpenAIgn_6 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_6));]]>
+InOpenAIgn_2 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_2));]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -10585,7 +10606,7 @@ InOpenAIgn_6 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_6));]]>
 					<designed target="Tooltip" value="" ver="4"/>
 					<designed target="Width" value="60" ver="4"/>
 					<designed target="Height" value="20" ver="4"/>
-					<designed target="Text" value="7" ver="4"/>
+					<designed target="Text" value="11" ver="4"/>
 					<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0,Narrow Bold" ver="4"/>
 					<designed target="FontColor" value="4278190080" ver="4"/>
 					<designed target="TextAlignment" value="132" ver="4"/>
@@ -10627,7 +10648,7 @@ InOpenAIgn_6 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_6));]]>
 					<designed target="TextAlignment" value="132" ver="4"/>
 					<do-trace access-modifier="private" target="Text" ver="4">
 						<body>
-							<![CDATA[OutOpenGIgn_7]]>
+							<![CDATA[OutOpenGIgn_3]]>
 						</body>
 					</do-trace>
 					<designed target="HideInput" value="false" ver="4"/>
@@ -10636,7 +10657,7 @@ InOpenAIgn_6 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_6));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-InOpenGIgn_7 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_7));]]>
+InOpenGIgn_3 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_3));]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -10687,7 +10708,7 @@ InOpenGIgn_7 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_7));]]>
 					<designed target="TextAlignment" value="132" ver="4"/>
 					<do-trace access-modifier="private" target="Text" ver="4">
 						<body>
-							<![CDATA[OutOpenAIgn_7]]>
+							<![CDATA[OutOpenAIgn_3]]>
 						</body>
 					</do-trace>
 					<designed target="HideInput" value="false" ver="4"/>
@@ -10696,7 +10717,7 @@ InOpenGIgn_7 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_7));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-InOpenAIgn_7 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_7));]]>
+InOpenAIgn_3 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_3));]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -10760,7 +10781,7 @@ InOpenAIgn_7 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_7));]]>
 					<designed target="Tooltip" value="" ver="4"/>
 					<designed target="Width" value="60" ver="4"/>
 					<designed target="Height" value="20" ver="4"/>
-					<designed target="Text" value="8" ver="4"/>
+					<designed target="Text" value="14" ver="4"/>
 					<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0,Narrow Bold" ver="4"/>
 					<designed target="FontColor" value="4278190080" ver="4"/>
 					<designed target="TextAlignment" value="132" ver="4"/>
@@ -10802,7 +10823,7 @@ InOpenAIgn_7 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_7));]]>
 					<designed target="TextAlignment" value="132" ver="4"/>
 					<do-trace access-modifier="private" target="Text" ver="4">
 						<body>
-							<![CDATA[OutOpenGIgn_8]]>
+							<![CDATA[OutOpenGIgn_4]]>
 						</body>
 					</do-trace>
 					<designed target="HideInput" value="false" ver="4"/>
@@ -10811,7 +10832,7 @@ InOpenAIgn_7 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_7));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-InOpenGIgn_8 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_8));]]>
+InOpenGIgn_4 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_4));]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -10862,7 +10883,7 @@ InOpenGIgn_8 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_8));]]>
 					<designed target="TextAlignment" value="132" ver="4"/>
 					<do-trace access-modifier="private" target="Text" ver="4">
 						<body>
-							<![CDATA[OutOpenAIgn_8]]>
+							<![CDATA[OutOpenAIgn_4]]>
 						</body>
 					</do-trace>
 					<designed target="HideInput" value="false" ver="4"/>
@@ -10871,7 +10892,7 @@ InOpenGIgn_8 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_8));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-InOpenAIgn_8 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_8));]]>
+InOpenAIgn_4 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_4));]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -10894,69 +10915,69 @@ InOpenAIgn_8 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_8));]]>
 			<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
 			<init target="Path" ver="4" value="ROOT.PROTECTS.TimeProcesses"/>
 		</object>
-		<object access-modifier="private" name="InOpenGIgn_5" display-name="InOpenGIgn_5" uuid="9307c11a-ab85-4455-a2c5-13ff9fb6387f" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<object access-modifier="private" name="InOpenGIgn_1" display-name="InOpenGIgn_1" uuid="9307c11a-ab85-4455-a2c5-13ff9fb6387f" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 			<init target="Source" ver="4" ref="OpcSource"/>
-			<init target="Path" ver="4" value="IntOpenGIgn5"/>
+			<init target="Path" ver="4" value="IntOpenGIgn1"/>
 		</object>
-		<object access-modifier="private" name="OutOpenGIgn_5" display-name="OutOpenGIgn_5" uuid="c501f3dd-9119-4776-b184-a961f120963c" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<object access-modifier="private" name="OutOpenGIgn_1" display-name="OutOpenGIgn_1" uuid="c501f3dd-9119-4776-b184-a961f120963c" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 			<init target="Source" ver="4" ref="OpcSource"/>
-			<init target="Path" ver="4" value="OuttOpenGIgn5"/>
+			<init target="Path" ver="4" value="OuttOpenGIgn1"/>
 		</object>
-		<object access-modifier="private" name="InOpenAIgn_5" display-name="InOpenAIgn_5" uuid="7a17d168-a2c5-4799-b855-91e4d1de4656" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<object access-modifier="private" name="InOpenAIgn_1" display-name="InOpenAIgn_1" uuid="7a17d168-a2c5-4799-b855-91e4d1de4656" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 			<init target="Source" ver="4" ref="OpcSource"/>
-			<init target="Path" ver="4" value="IntOpenAIgn5"/>
+			<init target="Path" ver="4" value="IntOpenAIgn1"/>
 		</object>
-		<object access-modifier="private" name="OutOpenAIgn_5" display-name="OutOpenAIgn_5" uuid="54db15dc-0ce9-4409-9445-6d951edc5099" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<object access-modifier="private" name="OutOpenAIgn_1" display-name="OutOpenAIgn_1" uuid="54db15dc-0ce9-4409-9445-6d951edc5099" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 			<init target="Source" ver="4" ref="OpcSource"/>
-			<init target="Path" ver="4" value="OuttOpenAIgn5"/>
+			<init target="Path" ver="4" value="OuttOpenAIgn1"/>
 		</object>
-		<object access-modifier="private" name="InOpenGIgn_6" display-name="InOpenGIgn_6" uuid="0fc52a43-3bb7-478f-af11-8ba184be6668" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<object access-modifier="private" name="InOpenGIgn_2" display-name="InOpenGIgn_2" uuid="0fc52a43-3bb7-478f-af11-8ba184be6668" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 			<init target="Source" ver="4" ref="OpcSource"/>
-			<init target="Path" ver="4" value="IntOpenGIgn6"/>
+			<init target="Path" ver="4" value="IntOpenGIgn2"/>
 		</object>
-		<object access-modifier="private" name="OutOpenGIgn_6" display-name="OutOpenGIgn_6" uuid="a1112eec-acb9-418c-85b1-fab9a34596b3" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<object access-modifier="private" name="OutOpenGIgn_2" display-name="OutOpenGIgn_2" uuid="a1112eec-acb9-418c-85b1-fab9a34596b3" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 			<init target="Source" ver="4" ref="OpcSource"/>
-			<init target="Path" ver="4" value="OuttOpenGIgn6"/>
+			<init target="Path" ver="4" value="OuttOpenGIgn2"/>
 		</object>
-		<object access-modifier="private" name="InOpenAIgn_6" display-name="InOpenAIgn_6" uuid="c3c791c7-0786-4d36-87e9-f37f842d2379" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<object access-modifier="private" name="InOpenAIgn_2" display-name="InOpenAIgn_2" uuid="c3c791c7-0786-4d36-87e9-f37f842d2379" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 			<init target="Source" ver="4" ref="OpcSource"/>
-			<init target="Path" ver="4" value="IntOpenAIgn6"/>
+			<init target="Path" ver="4" value="IntOpenAIgn2"/>
 		</object>
-		<object access-modifier="private" name="OutOpenAIgn_6" display-name="OutOpenAIgn_6" uuid="286e1396-f40a-45f0-968e-b58bf5e4f290" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<object access-modifier="private" name="OutOpenAIgn_2" display-name="OutOpenAIgn_2" uuid="286e1396-f40a-45f0-968e-b58bf5e4f290" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 			<init target="Source" ver="4" ref="OpcSource"/>
-			<init target="Path" ver="4" value="OuttOpenAIgn6"/>
+			<init target="Path" ver="4" value="OuttOpenAIgn2"/>
 		</object>
-		<object access-modifier="private" name="InOpenGIgn_7" display-name="InOpenGIgn_7" uuid="8747ca62-0fd3-4c3f-8b10-42978ded10dd" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<object access-modifier="private" name="InOpenGIgn_3" display-name="InOpenGIgn_3" uuid="8747ca62-0fd3-4c3f-8b10-42978ded10dd" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 			<init target="Source" ver="4" ref="OpcSource"/>
-			<init target="Path" ver="4" value="IntOpenGIgn7"/>
+			<init target="Path" ver="4" value="IntOpenGIgn3"/>
 		</object>
-		<object access-modifier="private" name="OutOpenGIgn_7" display-name="OutOpenGIgn_7" uuid="2d31e022-6a1e-4b4d-b804-4ea11d43e354" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<object access-modifier="private" name="OutOpenGIgn_3" display-name="OutOpenGIgn_3" uuid="2d31e022-6a1e-4b4d-b804-4ea11d43e354" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 			<init target="Source" ver="4" ref="OpcSource"/>
-			<init target="Path" ver="4" value="OuttOpenGIgn7"/>
+			<init target="Path" ver="4" value="OuttOpenGIgn3"/>
 		</object>
-		<object access-modifier="private" name="InOpenAIgn_7" display-name="InOpenAIgn_7" uuid="e91c7372-ee11-4c40-a4df-1427b4fc4493" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<object access-modifier="private" name="InOpenAIgn_3" display-name="InOpenAIgn_3" uuid="e91c7372-ee11-4c40-a4df-1427b4fc4493" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 			<init target="Source" ver="4" ref="OpcSource"/>
-			<init target="Path" ver="4" value="IntOpenAIgn7"/>
+			<init target="Path" ver="4" value="IntOpenAIgn3"/>
 		</object>
-		<object access-modifier="private" name="OutOpenAIgn_7" display-name="OutOpenAIgn_7" uuid="8d107e06-f291-43ed-9b76-4ac6576c910c" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<object access-modifier="private" name="OutOpenAIgn_3" display-name="OutOpenAIgn_3" uuid="8d107e06-f291-43ed-9b76-4ac6576c910c" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 			<init target="Source" ver="4" ref="OpcSource"/>
-			<init target="Path" ver="4" value="OuttOpenAIgn7"/>
+			<init target="Path" ver="4" value="OuttOpenAIgn3"/>
 		</object>
-		<object access-modifier="private" name="InOpenGIgn_8" display-name="InOpenGIgn_8" uuid="445b480f-b49c-4b92-821f-4e1b95aa3f36" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<object access-modifier="private" name="InOpenGIgn_4" display-name="InOpenGIgn_4" uuid="445b480f-b49c-4b92-821f-4e1b95aa3f36" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 			<init target="Source" ver="4" ref="OpcSource"/>
-			<init target="Path" ver="4" value="IntOpenGIgn8"/>
+			<init target="Path" ver="4" value="IntOpenGIgn4"/>
 		</object>
-		<object access-modifier="private" name="OutOpenGIgn_8" display-name="OutOpenGIgn_8" uuid="768946fb-2f59-4e4b-ab3e-a61de86ee5aa" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<object access-modifier="private" name="OutOpenGIgn_4" display-name="OutOpenGIgn_4" uuid="768946fb-2f59-4e4b-ab3e-a61de86ee5aa" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 			<init target="Source" ver="4" ref="OpcSource"/>
-			<init target="Path" ver="4" value="OuttOpenGIgn8"/>
+			<init target="Path" ver="4" value="OuttOpenGIgn4"/>
 		</object>
-		<object access-modifier="private" name="InOpenAIgn_8" display-name="InOpenAIgn_8" uuid="bc27742c-fe11-4acd-9994-3f58a349ff1c" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<object access-modifier="private" name="InOpenAIgn_4" display-name="InOpenAIgn_4" uuid="bc27742c-fe11-4acd-9994-3f58a349ff1c" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 			<init target="Source" ver="4" ref="OpcSource"/>
-			<init target="Path" ver="4" value="IntOpenAIgn8"/>
+			<init target="Path" ver="4" value="IntOpenAIgn4"/>
 		</object>
-		<object access-modifier="private" name="OutOpenAIgn_8" display-name="OutOpenAIgn_8" uuid="d4e5b72f-16c7-4074-8bf1-824bd7daeb90" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<object access-modifier="private" name="OutOpenAIgn_4" display-name="OutOpenAIgn_4" uuid="d4e5b72f-16c7-4074-8bf1-824bd7daeb90" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 			<init target="Source" ver="4" ref="OpcSource"/>
-			<init target="Path" ver="4" value="OuttOpenAIgn8"/>
+			<init target="Path" ver="4" value="OuttOpenAIgn4"/>
 		</object>
 	</object>
 	<object access-modifier="private" name="txtOpenBeforeIgn" display-name="txtOpenBeforeIgn" uuid="ec7d336f-dcf7-424f-b620-d07530303327" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
