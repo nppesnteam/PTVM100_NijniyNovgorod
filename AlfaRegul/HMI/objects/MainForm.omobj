@@ -685,8 +685,7 @@
 				<designed target="Width" value="190" ver="3"/>
 				<designed target="Height" value="40" ver="3"/>
 				<designed target="Checkable" value="false" ver="3"/>
-				<designed target="Text" value="Общая мнемосхема.
-ГАЗ" ver="3"/>
+				<designed target="Text" value="Общая мнемосхема" ver="3"/>
 				<designed target="TextAlignment" value="132" ver="3"/>
 				<designed target="Font" value="Times New Roman,12,-1,5,50,0,0,0,0,0,Regular" ver="3"/>
 				<designed target="FontColor" value="4278190080" ver="3"/>
@@ -717,6 +716,7 @@
 					<object access-modifier="private" uuid="d437977b-fdd7-448c-9a4e-024011eea16c" base-type="Газ" base-type-id="f51061bd-0db8-43c4-a53c-77c2e4c09e04" ver="3">
 						<designed target="WindowCloseMode" value="0" ver="4"/>
 						<designed target="WindowPosition" value="0" ver="4"/>
+						<designed target="WindowCaption" value="Общая мнемосхема" ver="4"/>
 					</object>
 				</do-on>
 				<do-trace access-modifier="private" target="Enabled" ver="4">
@@ -1713,9 +1713,6 @@ InNoGerm=false;]]>
 			<object access-modifier="private" name="InDeblockGate" display-name="InDeblockGate" uuid="dd6eb539-5a83-4a4c-a87d-21f7e2f885f2" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 				<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
 				<init target="Path" ver="4" value="ROOT.BOILER.InDeblockGate"/>
-			</object>
-			<object access-modifier="private" name="LayoutWeight_1" display-name="LayoutWeight_1" uuid="177c5c00-1066-4b8f-a90f-a9101c198ad4" base-type="LayoutWeight" base-type-id="8f3d975c-9645-4288-9406-a8dda0527008" ver="4">
-				<designed target="Weight" value="1.6" ver="4"/>
 			</object>
 		</object>
 		<object access-modifier="private" name="IgnitionGroups" display-name="IgnitionGroups" uuid="1830182b-e324-4414-a053-aee9dc5b12a2" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="3">

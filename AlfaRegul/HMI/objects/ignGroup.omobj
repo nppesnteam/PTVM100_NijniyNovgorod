@@ -9,7 +9,7 @@
 	<designed target="Enabled" value="true" ver="4"/>
 	<designed target="Tooltip" value="" ver="4"/>
 	<object access-modifier="private" name="TubeGasAfterValves" display-name="TubeGasAfterValves" uuid="1921ee17-fc2a-43f8-a44c-87a438f659b8" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
-		<designed target="X" value="138" ver="4"/>
+		<designed target="X" value="139" ver="4"/>
 		<designed target="Y" value="-2" ver="4"/>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
@@ -18,7 +18,7 @@
 		<designed target="Opacity" value="1" ver="4"/>
 		<designed target="Enabled" value="true" ver="4"/>
 		<designed target="Tooltip" value="" ver="4"/>
-		<designed target="Width" value="31" ver="4"/>
+		<designed target="Width" value="30" ver="4"/>
 		<designed target="Height" value="4" ver="4"/>
 		<designed target="PenColor" value="0xffffff00" ver="4"/>
 		<designed target="PenStyle" value="1" ver="4"/>
@@ -30,11 +30,11 @@
 			<designed target="Y" value="0" ver="4"/>
 		</object>
 		<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="4a17fa3e-921c-44c0-af0c-d118167b4334" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
-			<designed target="X" value="31" ver="4"/>
+			<designed target="X" value="30" ver="4"/>
 			<designed target="Y" value="0" ver="4"/>
 		</object>
 		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="9e08ec06-a2db-4ca5-84ab-cefa8a4a953f" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
-			<designed target="X" value="31" ver="4"/>
+			<designed target="X" value="30" ver="4"/>
 			<designed target="Y" value="4" ver="4"/>
 		</object>
 		<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="95585a04-b65f-4e30-889b-650de3d0d75b" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
@@ -354,11 +354,11 @@
 			<designed target="Y" value="32.5" ver="4"/>
 		</object>
 		<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="662d3cc6-9203-4760-8832-acc3f0fe8717" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
-			<designed target="X" value="-110" ver="4"/>
+			<designed target="X" value="-109" ver="4"/>
 			<designed target="Y" value="32.5" ver="4"/>
 		</object>
 		<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="9b48efda-caae-4f83-96c1-3446b36a7e95" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
-			<designed target="X" value="-110" ver="4"/>
+			<designed target="X" value="-109" ver="4"/>
 			<designed target="Y" value="36.5" ver="4"/>
 		</object>
 		<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="380373b2-89ac-48c0-a724-4e23b324c7d1" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
@@ -394,7 +394,7 @@
 		</do-trace>
 	</object>
 	<object access-modifier="private" name="Valve2" display-name="Valve2" uuid="60f30151-e386-4f94-8565-5271341d9ce7" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
-		<designed target="X" value="120" ver="4"/>
+		<designed target="X" value="121" ver="4"/>
 		<designed target="Y" value="-11.7" ver="4"/>
 		<designed target="Rotation" value="90" ver="4"/>
 		<init target="Color" ver="4" value="0xffffff00"/>
@@ -442,7 +442,7 @@
 		<init target="initName" ver="4" value="PGas"/>
 		<do-trace access-modifier="private" target="BurnValPath" ver="4">
 			<body>
-				<![CDATA["GROUP"+Str.ToString(Group+1)+"."+"burn" + Str.ToString(burnN)+".Burn"]]>
+				<![CDATA["GROUP"+Str.ToString(Group)+".BurnIgn" +".Burn"]]>
 			</body>
 		</do-trace>
 	</object>
@@ -462,7 +462,7 @@
 		<init target="initName" ver="4" value="PO2"/>
 		<do-trace access-modifier="private" target="BurnValPath" ver="4">
 			<body>
-				<![CDATA["GROUP"+Str.ToString(Group+1)+"."+"burn" + Str.ToString(burnN)+".Burn"]]>
+				<![CDATA["GROUP"+Str.ToString(Group)+".burnIgn"+".Burn"]]>
 			</body>
 		</do-trace>
 	</object>
@@ -473,14 +473,13 @@
 		<init target="ParentSource" ver="4" ref="initOPCSource"/>
 		<do-trace access-modifier="private" target="Path" ver="4">
 			<body>
-				<![CDATA["burn" + Str.ToString(burnN)]]>
+				<![CDATA[InitPath]]>
 			</body>
 		</do-trace>
 	</object>
 	<param access-modifier="private" name="initOPCSource" display-name="initOPCSource" uuid="3c7826f4-d3f3-422d-9c6a-bbfd16375794" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" base-const="true" base-ref="true" ver="4"/>
-	<object access-modifier="private" name="burnN" display-name="burnN" uuid="9553acd3-b488-4580-b784-6d3c2571ddfd" base-type="notifying_uint1" base-type-id="fed14c54-414c-56bd-549a-8d761c4d6200" ver="4"/>
 	<object access-modifier="private" name="ValveIgn" display-name="ValveIgn" uuid="b58009fc-6441-4363-921c-ddc3ceafbe0a" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
-		<designed target="X" value="120" ver="4"/>
+		<designed target="X" value="121" ver="4"/>
 		<designed target="Y" value="32.3" ver="4"/>
 		<designed target="Rotation" value="90" ver="4"/>
 		<init target="Color" ver="4" value="0xffffff00"/>
@@ -505,7 +504,7 @@
 		<init target="initName" ver="4" value="PO2"/>
 		<do-trace access-modifier="private" target="BurnValPath" ver="4">
 			<body>
-				<![CDATA["GROUP"+Str.ToString(Group+1)+"."+"burn" + Str.ToString(burnN)+".Burn"]]>
+				<![CDATA["GROUP"+Str.ToString(Group)+".burnIgn"+".Burn"]]>
 			</body>
 		</do-trace>
 	</object>
@@ -513,10 +512,16 @@
 		<designed target="X" value="350" ver="3"/>
 		<designed target="Y" value="9" ver="3"/>
 		<designed target="Rotation" value="90" ver="3"/>
-		<init target="Color" ver="3" value="0xff00aaff"/>
+		<init target="Color" ver="3" value="0xffc65a02"/>
 		<init target="ValueContainerGrad" ver="4" value="270"/>
 		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
 		<init target="initPath" ver="4" value="FlapOil"/>
 	</object>
+	<do-trace access-modifier="private" target="BurnNumber" ver="4">
+		<body>
+			<![CDATA[burner.BurnNumber]]>
+		</body>
+	</do-trace>
+	<object access-modifier="private" name="InitPath" display-name="InitPath" uuid="96b78179-2ad4-49f9-83d9-06d934ee7c7f" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="4"/>
 </type>
 

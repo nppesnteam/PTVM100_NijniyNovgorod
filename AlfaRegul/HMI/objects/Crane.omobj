@@ -236,21 +236,6 @@
 				</body>
 			</do-trace>
 		</object>
-		<do-trace access-modifier="private" target="BrushStyle" ver="4">
-			<conditional-expr>
-				<condition>
-					<![CDATA[FillTop]]>
-				</condition>
-				<expr>
-					<![CDATA[1]]>
-				</expr>
-			</conditional-expr>
-			<default-expr>
-				<expr>
-					<![CDATA[0]]>
-				</expr>
-			</default-expr>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="triangleBot" display-name="triangleBot" uuid="59e94edc-7718-4eac-b287-5e480c1fcc54" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="3">
 		<designed target="X" value="0" ver="3"/>
@@ -317,21 +302,6 @@
 				</body>
 			</do-trace>
 		</object>
-		<do-trace access-modifier="private" target="BrushStyle" ver="4">
-			<conditional-expr>
-				<condition>
-					<![CDATA[FillBot]]>
-				</condition>
-				<expr>
-					<![CDATA[1]]>
-				</expr>
-			</conditional-expr>
-			<default-expr>
-				<expr>
-					<![CDATA[0]]>
-				</expr>
-			</default-expr>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="FillTop" display-name="FillTop" uuid="e7231460-1a66-444c-b509-80070b9430bd" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="3"/>
 	<object access-modifier="private" name="Color" display-name="Color" uuid="e226b047-4032-4080-88a7-c57ff99d75c2" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="3"/>
