@@ -80,7 +80,7 @@
   </computer>
   <external-runtime Id="ca84ac37-dd76-40f6-8765-24a2d6bcf4f5" OffsetX="0" OffsetY="0" Scale="0.8" SnapToGrid="false">
     <application-object Id="8d9beb07-0316-49fa-a1bf-d3e05e4f9f50" Left="195.15" Top="26" Width="134.44" Height="98" />
-    <opcua-server Id="2cf86c2a-f319-4add-9221-d2a8e4c5b575" Left="1358.39" Top="26" Width="171.61" Height="58.59" />
+    <opcua-server Id="2cf86c2a-f319-4add-9221-d2a8e4c5b575" Left="1324.39" Top="26" Width="171.61" Height="58.59" />
   </external-runtime>
   <application-object Id="8d9beb07-0316-49fa-a1bf-d3e05e4f9f50" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
     <exec-module Id="5eeff558-b604-4936-bf1f-69d6f5257aa5" Left="66" Top="29.3260617828368" Width="119.213333333333" Height="85" />
@@ -131,9 +131,9 @@
   <socket Id="35e30f5a-1b51-417f-91d9-0d8eff25f6e1" OffsetX="0" OffsetY="0" Scale="1" />
   <opcua-client Id="2ce6c5cf-6ab0-479f-8a66-9b5f21c45738" OffsetX="0" OffsetY="0" Scale="0.8" SnapToGrid="false" />
   <domain-node Id="5c501410-d8c6-4207-b464-de8db5742447" OffsetX="0" OffsetY="0" Scale="0.64" SnapToGrid="false">
-    <ethernet-adapter Id="c3d0d997-aeef-4fc1-b6bb-2bb4adacdf73" Left="1120.00666666667" Top="328.060687599182" Width="159.993333333333" Height="45.63" />
+    <ethernet-adapter Id="c3d0d997-aeef-4fc1-b6bb-2bb4adacdf73" Left="363.75666666667" Top="224.935687599182" Width="159.993333333333" Height="45.63" />
     <io-server Id="e9409a7b-e053-4d2c-bfc2-5d9d16110d9d" Left="50" Top="50" Width="193.083333333333" Height="168" />
-    <historian Id="c799a40b-48e2-43da-b2b6-7b2380f90845" Left="311" Top="296.1" Width="217.5" Height="88.7500000000001" />
+    <historian Id="c799a40b-48e2-43da-b2b6-7b2380f90845" Left="287.5625" Top="58.6" Width="139.72" Height="84" />
   </domain-node>
   <domain-node Id="e82dac4e-1a72-485a-b222-c0e683cd7837" OffsetX="0" OffsetY="0" Scale="0.8" SnapToGrid="false">
     <ethernet-adapter Id="42c5727e-3794-4cca-8ba1-fc7e0870bd8a" Left="1120.00666666667" Top="328.060687599182" Width="159.993333333333" Height="45.63" />
@@ -644,12 +644,12 @@
     <object Id="29325031-4947-4e57-b093-7d2914c27c5d" Left="66" Top="1496" Width="351.766666666667" Height="187.26" />
     <object Id="3562fe3e-aee1-49b1-ab73-dc2a1e63c629" Left="438.766666666667" Top="1496" Width="351.766666666667" Height="187.26" />
   </object>
-  <io-server Id="e9409a7b-e053-4d2c-bfc2-5d9d16110d9d" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+  <io-server Id="e9409a7b-e053-4d2c-bfc2-5d9d16110d9d" OffsetX="245.910000000006" OffsetY="0" Scale="1" SnapToGrid="false">
     <opcda-server Id="9cbe5ab0-8f7b-49b3-a4fe-1cc3ce45b47b" Left="1151.00333333333" Top="26" Width="116.906666666667" Height="36.63" />
     <opcaeserver-module Id="1f82ced1-bdc4-4659-a894-0d1543cc61be" Left="1152.88333333333" Top="103.63" Width="115.026666666667" Height="36.63" />
     <hda-server Id="cc8af7e1-4651-4ae1-a98a-263629768424" Left="1143.19333333333" Top="181.26" Width="124.716666666667" Height="36.63" />
     <opcua-module Id="a8b82e1f-0f20-4843-bfae-d6fdad88aa50" Left="1151.15666666667" Top="258.89" Width="116.753333333333" Height="36.63" />
-    <history-module Id="b1d93501-49c0-4062-9cb5-f13f8cef2c42" Left="276.943333333333" Top="353.284962638855" Width="189.913333333333" Height="100.63" />
+    <history-module Id="b1d93501-49c0-4062-9cb5-f13f8cef2c42" Left="276.943333333333" Top="353.284962638855" Width="224.676666666667" Height="152.63" />
     <opcua-client Id="93826dc2-a48e-4092-975b-af251935e9c6" Left="24" Top="26" Width="210.943333333333" Height="99.63" />
     <host Id="dp:host[3]" Left="928.46" Top="26" Width="172.733333333333" Height="24" />
     <ref-to Id="dp:ref-to[4]" Left="555.693333333333" Top="26" Width="259.436666666667" Height="85" />
@@ -3750,10 +3750,10 @@
     <init-ref Id="r:init-ref[0]" Left="173.213333333333" Top="567.63" Width="50" Height="22" />
   </object>
   <io-server Id="fc7d9667-b8af-4c2c-8f14-a31880db0d7b" OffsetX="0" OffsetY="0" Scale="0.8" SnapToGrid="false">
-    <opcda-server Id="9cab6703-3c95-44da-9733-285a34c8afeb" Left="1089.09333333333" Top="26" Width="116.906666666667" Height="36.63" />
-    <opcaeserver-module Id="44b3904d-21f0-4332-8e64-003a629bc2f5" Left="1090.97333333333" Top="103.63" Width="115.026666666667" Height="36.63" />
-    <hda-server Id="70438a9d-1e7a-4e0e-8c13-2766737ffba3" Left="1081.28333333333" Top="181.26" Width="124.716666666667" Height="36.63" />
-    <opcua-module Id="e5774c1b-2fb7-43af-8d1f-80a5e4625849" Left="1089.24666666667" Top="258.89" Width="116.753333333333" Height="36.63" />
+    <opcda-server Id="9cab6703-3c95-44da-9733-285a34c8afeb" Left="1036.04333333333" Top="26" Width="116.906666666667" Height="36.63" />
+    <opcaeserver-module Id="44b3904d-21f0-4332-8e64-003a629bc2f5" Left="1037.92333333333" Top="103.63" Width="115.026666666667" Height="36.63" />
+    <hda-server Id="70438a9d-1e7a-4e0e-8c13-2766737ffba3" Left="1028.23333333333" Top="181.26" Width="124.716666666667" Height="36.63" />
+    <opcua-module Id="e5774c1b-2fb7-43af-8d1f-80a5e4625849" Left="1036.19666666667" Top="258.89" Width="116.753333333333" Height="36.63" />
     <history-module Id="eaa7911f-c69b-4add-a7fe-9204327446e0" Left="311.943333333333" Top="357.434962638855" Width="189.913333333333" Height="100.63" />
     <opcua-client Id="5ff14074-2a53-463c-abb5-596674c35b67" Left="24" Top="26" Width="245.943333333333" Height="128.38" />
     <host Id="dp:host[6]" Left="813.5" Top="26" Width="172.733333333333" Height="24" />
@@ -4934,4 +4934,20 @@
     <parameter Id="3c12b8f8-527b-4582-af9b-53f996eb72c6" Left="1144.66835297902" Top="728" Width="99.3316470209758" Height="22" />
   </type>
   <object Id="48e5fdf8-2534-4f93-b049-b863c78e0bae" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false" />
+  <object Id="7b5a287e-fa3d-405f-8a67-c01302d89751" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <object Id="26ab9b80-6c1d-44e2-b01f-ef0148d224be" Left="66" Top="26" Width="258.556666666667" Height="266.63" />
+    <object Id="a32f93af-7383-4355-a80e-46da2866c499" Left="344.556666666667" Top="26" Width="263.196666666667" Height="178.63" />
+    <object Id="3f8d0809-0197-47e4-a668-82407522b5e0" Left="627.753333333333" Top="26" Width="269.493333333333" Height="222.63" />
+    <object Id="a9be70f2-3e5b-487e-9d54-82b20b83bf1a" Left="344.556666666667" Top="216" Width="254.366666666667" Height="200.63" />
+    <object Id="4fd23c4a-4bd9-4031-8924-06e572490607" Left="618.923333333333" Top="266" Width="274.066666666667" Height="90.63" />
+    <object Id="64870cb5-6aab-4cd3-a204-6f75afd395e9" Left="618.923333333333" Top="376" Width="289.113333333333" Height="803.26" />
+    <object Id="bd3ee7f8-433e-427d-bb7c-0e40e4c22ee6" Left="66" Top="436" Width="300.333333333333" Height="178.63" />
+    <object Id="cf20f149-c97a-487c-8410-7f6a9aa7bbeb" Left="66" Top="626" Width="277.186666666667" Height="222.63" />
+    <object Id="7ca14747-be52-4ffc-a388-840df09f17d3" Left="66" Top="866" Width="273.73" Height="156.63" />
+    <object Id="3cff39f7-3275-4ec3-a257-919b7528d39d" Left="66" Top="1036" Width="277.186666666667" Height="222.63" />
+    <object Id="4eb73205-4ccd-4c6c-b8c2-ce86edd22567" Left="363.186666666667" Top="1196" Width="277.186666666667" Height="222.63" />
+    <object Id="7fa06f23-0df2-40a0-8a88-f0c447f25dd4" Left="660.373333333333" Top="1196" Width="277.186666666667" Height="222.63" />
+    <object Id="35a14ef5-f808-45e8-a917-9696ae479459" Left="66" Top="1276" Width="277.123333333333" Height="341.26" />
+    <object Id="16858c60-a81f-4659-80c9-d8aa6fa624b0" Left="363.123333333333" Top="1436" Width="303.49" Height="671.26" />
+  </object>
 </Diagrams>

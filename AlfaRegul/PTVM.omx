@@ -4003,7 +4003,7 @@
             <object name="IgnSequence" uuid="48e5fdf8-2534-4f93-b049-b863c78e0bae" base-type="Types.IgnSequence.PLC_View" aspect="Aspects.PLC_Aspect" />
           </object>
         </dp:application-object>
-        <opc:opcua-server name="OpcUaServer" uuid="2cf86c2a-f319-4add-9221-d2a8e4c5b575" tag-map="PLC_App.OpcUaAddressMap" endpoint-name="regul_ua_server" port="48010" />
+        <opc:opcua-server name="OpcUaServer" uuid="2cf86c2a-f319-4add-9221-d2a8e4c5b575" tag-map="PLC_App.OpcUaAddressMap" endpoint-name="regul_ua_server" port="4840" />
       </dp:external-runtime>
     </dp:computer>
     <dp:application-object name="IOS_App" uuid="28985c17-7d18-4cac-b712-ec3f38d5543e">
@@ -6710,7 +6710,7 @@
         </ct:object>
       </ct:object>
     </dp:application-object>
-    <dp:domain-node name="AlfaServer1" uuid="5c501410-d8c6-4207-b464-de8db5742447">
+    <dp:domain-node name="ARM1" uuid="5c501410-d8c6-4207-b464-de8db5742447" address="ARM1">
       <eth:ethernet-adapter name="EthernetAdapter" uuid="c3d0d997-aeef-4fc1-b6bb-2bb4adacdf73" address="192.168.1.221" network="Ethernet1" />
       <io-server name="AlphaServer" xmlns="server" uuid="e9409a7b-e053-4d2c-bfc2-5d9d16110d9d">
         <opcda-server name="DaServer" uuid="9cbe5ab0-8f7b-49b3-a4fe-1cc3ce45b47b" />
@@ -6722,9 +6722,11 @@
         <history-module name="HistoryModule" xmlns="server" uuid="b1d93501-49c0-4062-9cb5-f13f8cef2c42" logging-required="false" active="true">
           <historian-database-link database="Historian.DB_EVENTS" queue-alias="DB_EVENTS" />
           <historian-database-link database="Historian.DB_HISTORY" queue-alias="DB_HISTORY" />
+          <historian-database-link database="ARM2.Historian.DB_EVENTS" />
+          <historian-database-link database="ARM2.Historian.DB_HISTORY" />
         </history-module>
         <opcua-client name="OpcUaClient" xmlns="server" uuid="93826dc2-a48e-4092-975b-af251935e9c6">
-          <opcua-server-link server="PLC.Runtime.OpcUaServer" security-mode="sign-and-encript" sampling-interval="200" update-rate="200" write-only-to-active-server="false" write-on-connect="true" can-suspended-server-be-active="true" control-signal-id-type="string" active-server-timeout="1000" notification-queue-size="0" max-nodes-per-browse="0" max-nodes-per-write="0" max-nodes-per-read="0" max-monitored-items-per-call="0" authorization-mode="LoginPassword" login="Admin" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-value="6" control-signal-id="Application.GVL.iIsStateActive">
+          <opcua-server-link server="PLC.Runtime.OpcUaServer" security-mode="none" sampling-interval="200" update-rate="200" write-only-to-active-server="true" write-on-connect="true" can-suspended-server-be-active="true" control-signal-id-type="string" active-server-timeout="1000" notification-queue-size="0" max-nodes-per-browse="0" max-nodes-per-write="0" max-nodes-per-read="0" max-monitored-items-per-call="0" authorization-mode="Anonymous" login="Admin" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-value="6" control-signal-id="Application.GVL.iIsStateActive" session-timeout="10000" standby-mode="request-data">
             <property name="password" xmlns="system">asQsx6tsDfDsFOznG65G0YVk7Fp8W9/xygDuTTJSseo/ibKqg+TtbTqHxZqWq/ScVjM6Z4iERCVYqagaG22RnPbgQRubYZpRuk8dUyE+/0TeacDdtw6tvRrWyXHFzfZ8xue+1a2xd1x9GcL9Y0/0VxSRM3viREyAdaEEfgwK0Ys</property>
           </opcua-server-link>
         </opcua-client>
@@ -6734,20 +6736,20 @@
         <historian-database name="DB_HISTORY" alias="DB_HISTORY" usage="values" uuid="80e7f860-d1c2-45d7-97da-07b828138a13" />
       </historian>
     </dp:domain-node>
-    <dp:domain-node name="AlfaServer2" uuid="e82dac4e-1a72-485a-b222-c0e683cd7837" address="AlfaServer2">
+    <dp:domain-node name="ARM2" uuid="e82dac4e-1a72-485a-b222-c0e683cd7837" address="ARM2">
       <eth:ethernet-adapter name="EthernetAdapter" uuid="42c5727e-3794-4cca-8ba1-fc7e0870bd8a" address="192.168.1.222" network="Ethernet1" />
       <historian name="Historian" xmlns="server" uuid="d0f62c50-357e-4eb6-a4af-1160712ecd0d">
         <historian-database name="DB_EVENTS" usage="events" alias="DB_EVENTS" uuid="a785adbc-e9e9-4eed-850b-e53efaddbc9b" />
         <historian-database name="DB_HISTORY" alias="DB_HISTORY" usage="values" uuid="eb98321c-10a8-4c4f-b242-46286c861c17" />
       </historian>
-      <srv:duplicate-server name="AlphaServer" uuid="3456e0f6-a36a-48d7-83af-982de3533505" server="AlfaServer1.AlphaServer" />
+      <srv:duplicate-server name="AlphaServer" uuid="3456e0f6-a36a-48d7-83af-982de3533505" server="ARM1.AlphaServer" />
     </dp:domain-node>
     <dp:computer name="PLC_R" uuid="26ed9175-9b68-43d0-9d46-399261f0b732">
       <eth:ethernet-adapter name="EthernetAdapter" uuid="3d64d9ae-cc81-4b0a-aa96-79ad7cab3588" address="192.168.1.212" network="Ethernet1" />
       <dp:external-redundant-runtime name="RedundantRuntime" uuid="13d8579a-7888-4de8-bcc6-cde985f3e076" runtime="PLC.Runtime" />
     </dp:computer>
-    <domain-node name="NOTEBOOK" xmlns="automation.deployment" uuid="fc4a160d-b1fb-494f-a3e5-5edfba0792a3" address="NOTEBOOK">
-      <ethernet-adapter name="EthernetAdapter" address="192.168.1.80" xmlns="automation.ethernet" uuid="43b6d289-b2d7-47ae-86dd-c8ac9a3aaad4" network="Ethernet1" />
+    <domain-node name="NOTEBOOK" xmlns="automation.deployment" uuid="fc4a160d-b1fb-494f-a3e5-5edfba0792a3">
+      <ethernet-adapter name="EthernetAdapter" address="192.168.1.101" xmlns="automation.ethernet" uuid="43b6d289-b2d7-47ae-86dd-c8ac9a3aaad4" network="Ethernet1" />
       <io-server name="AlphaServer" xmlns="server" uuid="fc7d9667-b8af-4c2c-8f14-a31880db0d7b">
         <opcda-server name="DaServer" uuid="9cab6703-3c95-44da-9733-285a34c8afeb" />
         <opcaeserver-module name="AeServer" uuid="44b3904d-21f0-4332-8e64-003a629bc2f5" />
@@ -6758,7 +6760,7 @@
           <historian-database-link database="Historian.DB_HISTORY" queue-alias="DB_HISTORY" />
         </history-module>
         <opcua-client name="OpcUaClient" xmlns="server" uuid="5ff14074-2a53-463c-abb5-596674c35b67">
-          <opcua-server-link server="PLC.Runtime.OpcUaServer" security-mode="sign-and-encript" sampling-interval="200" update-rate="200" write-only-to-active-server="false" write-on-connect="true" can-suspended-server-be-active="true" control-signal-id-type="string" active-server-timeout="1000" notification-queue-size="0" max-nodes-per-browse="0" max-nodes-per-write="0" max-nodes-per-read="0" max-monitored-items-per-call="0" authorization-mode="LoginPassword" login="Admin" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-value="6" control-signal-id="Application.GVL.iIsStateActive">
+          <opcua-server-link server="PLC.Runtime.OpcUaServer" security-mode="none" sampling-interval="200" update-rate="200" write-only-to-active-server="false" write-on-connect="true" can-suspended-server-be-active="true" control-signal-id-type="string" active-server-timeout="1000" notification-queue-size="0" max-nodes-per-browse="0" max-nodes-per-write="0" max-nodes-per-read="0" max-monitored-items-per-call="0" authorization-mode="Anonymous" login="Admin" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-value="6" control-signal-id="Application.GVL.iIsStateActive">
             <property name="password" xmlns="system">YPIZsRsIpuSGQVmogiE0/8D1DS8NmppIHGhcIBTsAeafSoRRyqwuSimGYN5mEjlsfGHxMYzqJwysOOhOWqIYUB+3Ujr8pKjH/Wg2WHhaaDT4YZ6EPJfhZvtvw1jLXEt/Zr92K6SBpX1l6mfqR8EKwrAU+wrxTsTeVm2sz3AyKO0</property>
           </opcua-server-link>
         </opcua-client>
@@ -6769,7 +6771,7 @@
         <historian-database name="DB_EVENTS" usage="events" alias="DB_EVENTS" uuid="873c9372-58bc-4b05-a68f-03d45a7ef90f" />
         <historian-database name="DB_HISTORY" alias="DB_HISTORY" usage="values" uuid="5615f9f9-c792-4fb4-b609-a188f4a4dfda" />
       </historian>
-      <ethernet-adapter name="EthernetAdapter1" address="192.168.56.101" network="Ethernet2" xmlns="automation.ethernet" uuid="25c48836-510a-4f95-a50c-6f4a3e14f931" />
+      <ethernet-adapter name="EthernetAdapter1" address="192.168.56.1" network="Ethernet2" xmlns="automation.ethernet" uuid="25c48836-510a-4f95-a50c-6f4a3e14f931" />
     </domain-node>
     <ethernet-net name="Ethernet2" xmlns="automation.ethernet" uuid="6945cc8d-6a1a-4470-bc7a-38ece276f274" />
     <computer name="PLC_Test" xmlns="automation.deployment" uuid="c0ae5d81-9c40-4837-93e3-19f0bd594e8e">

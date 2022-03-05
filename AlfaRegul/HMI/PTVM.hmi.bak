@@ -1,0 +1,70 @@
+<unit uuid="bf909b15-ceeb-4b44-845a-3d932ccfae9f" name="PTVM" display-name="PTVM" description="" ver="3" main-form-id="c9cad641-8960-46db-9523-43c92084d4a1">
+	<object file="MainForm.omobj" filter=""/>
+	<object file="Диагностика ПТК.omobj" filter="Основные окна"/>
+	<object file="Общая мнемосхема.omobj" filter="Основные окна"/>
+	<object file="ТЗ и Б котла.omobj" filter="Основные окна"/>
+	<object file="Burner.omobj" filter="Elements"/>
+	<object file="VentTop.omobj" filter="Elements"/>
+	<object file="Crane.omobj" filter="Elements"/>
+	<object file="Pipe.omobj" filter="Elements"/>
+	<object file="rectangleWide.omobj" filter="Elements"/>
+	<object file="Sens.omobj" filter="Elements"/>
+	<object file="SensDouble.omobj" filter="Elements"/>
+	<object file="Flap.omobj" filter="Elements"/>
+	<object file="Valve.omobj" filter="Elements"/>
+	<object file="Gate.omobj" filter="Elements"/>
+	<object file="Arrow.omobj" filter="Elements"/>
+	<object file="burnTopStructGas.omobj" filter="Gas"/>
+	<object file="burnBotStructGas.omobj" filter="Gas"/>
+	<object file="ignBotStructGas.omobj" filter="Gas"/>
+	<object file="ignTopStructGas.omobj" filter="Gas"/>
+	<object file="VentBot.omobj" filter="Elements"/>
+	<object file="ignBotStructMazut.omobj" filter="Mazut"/>
+	<object file="ignTopStructMazut.omobj" filter="Mazut"/>
+	<object file="burnBotStructMazut.omobj" filter="Mazut"/>
+	<object file="burnTopStructMazut.omobj" filter="Mazut"/>
+	<object file="Растопочная группа.omobj" filter="Основные окна"/>
+	<object file="Global.omobj" filter=""/>
+	<object file="burnGroup.omobj" filter="Group"/>
+	<object file="ignGroup.omobj" filter="Group"/>
+	<object file="Модуль аналоговый (AI).omobj" filter="Всплывающие окна"/>
+	<object file="Connections.omobj" filter=""/>
+	<object file="AI.omobj" filter="Elements"/>
+	<object file="Модуль дискретный (DI).omobj" filter="Всплывающие окна"/>
+	<object file="DI.omobj" filter="Elements"/>
+	<object file="DO.omobj" filter="Elements"/>
+	<object file="Модуль дискретный (DO).omobj" filter="Всплывающие окна"/>
+	<object file="2 датчика.omobj" filter="Всплывающие окна"/>
+	<object file="sensor.omobj" filter="Elements"/>
+	<object file="Заслонка.omobj" filter="Всплывающие окна"/>
+	<object file="Заслонка (параметры).omobj" filter="Всплывающие окна"/>
+	<object file="Заслонка (настройки).omobj" filter="Всплывающие окна"/>
+	<object file="FlapWithSettings.omobj" filter="Elements"/>
+	<object file="Контекстное меню (2 датчика).omobj" filter="Всплывающие окна"/>
+	<object file="График.omobj" filter="Всплывающие окна"/>
+	<object file="2 датчика (настройка).omobj" filter="Всплывающие окна"/>
+	<object file="ФГУ розжига.omobj" filter="Всплывающие окна"/>
+	<object file="Алармы.omobj" filter="Основные окна"/>
+	<object file="Security.omobj" filter=""/>
+	<object file="Авторизация.omobj" filter="Всплывающие окна"/>
+	<object file="Ошибка.omobj" filter="Всплывающие окна"/>
+	<object file="Смена пароля.omobj" filter="Всплывающие окна"/>
+	<object file="Успех.omobj" filter="Всплывающие окна"/>
+	<object file="Регулятор температуры.omobj" filter="Всплывающие окна"/>
+	<object file="Задвижка.omobj" filter="Всплывающие окна"/>
+	<object file="Аналоговый датчик (настройка).omobj" filter="Всплывающие окна"/>
+	<object file="Шаги проверки герметичности.omobj" filter="Всплывающие окна"/>
+	<object file="Шаги вентиляции.omobj" filter="Всплывающие окна"/>
+	<object file="Шаги проверки задвижки газа.omobj" filter="Всплывающие окна"/>
+	<object file="Шаги подготовки к растопке.omobj" filter="Всплывающие окна"/>
+	<object file="Диалог закрытия.omobj" filter="Всплывающие окна"/>
+	<object file="Диалог розжига.omobj" filter="Всплывающие окна"/>
+	<object file="Диалог останова.omobj" filter="Всплывающие окна"/>
+	<object file="Ручное управление вентиляторами.omobj" filter="Всплывающие окна"/>
+	<object file="Шаги розжига горелки.omobj" filter="Всплывающие окна"/>
+	<object file="Шаги проверки задвижки дизтоплива.omobj" filter="Всплывающие окна"/>
+	<object file="Аналоговый датчик (смена уставки).omobj" filter="Всплывающие окна"/>
+	<object file="Аналоговый датчик (смена уставки с сигнализацией).omobj" filter="Всплывающие окна"/>
+	<object file="Сдвоенный датчик (смена уставки).omobj" filter="Всплывающие окна"/>
+</unit>
+

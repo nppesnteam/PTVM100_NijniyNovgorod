@@ -54,7 +54,7 @@
 		<do-trace access-modifier="private" target="BrushStyle" ver="4">
 			<conditional-expr>
 				<condition>
-					<![CDATA[OutH == true]]>
+					<![CDATA[InH == true]]>
 				</condition>
 				<expr>
 					<![CDATA[1]]>
@@ -62,7 +62,7 @@
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[OutH == false]]>
+					<![CDATA[InH == false]]>
 				</condition>
 				<expr>
 					<![CDATA[0]]>
@@ -92,7 +92,7 @@
 	</object>
 	<object access-modifier="private" name="InH" display-name="InH" uuid="ab64e94e-0a1b-4946-a579-d47bc28a8d34" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="InpH"/>
+		<init target="Path" ver="4" value="InH"/>
 	</object>
 	<object access-modifier="private" name="OutH" display-name="OutH" uuid="40969526-5b90-4938-84ff-762d801379f1" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Path" ver="4" value="OutH"/>
@@ -102,12 +102,12 @@
 	<param access-modifier="private" name="initPath" display-name="initPath" uuid="de652cd9-2704-482a-a603-f57cf3f966c2" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
 	<do-trace access-modifier="private" target="FillTop" ver="4">
 		<body>
-			<![CDATA[InH]]>
+			<![CDATA[OutH]]>
 		</body>
 	</do-trace>
 	<do-trace access-modifier="private" target="FillBot" ver="4">
 		<body>
-			<![CDATA[InH]]>
+			<![CDATA[OutH]]>
 		</body>
 	</do-trace>
 	<do-trace access-modifier="private" target="Tooltip" ver="4">
