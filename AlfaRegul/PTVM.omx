@@ -9914,13 +9914,6 @@
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
-                <object name="POil" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="26a03f45-ddc2-40e0-a4f2-b26037dabb1e">
-                  <attribute type="Attributes.EU" value="кПа" xmlns="system" />
-                  <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
-                  <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление рез. топлива перед горелкой" />
-                  <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
-                </object>
                 <object name="ManCtrl" base-type="Types.ManFanCtrl.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="7166358e-7cf1-4d7c-964f-f390ba433053" />
               </object>
               <object name="Valve1" uuid="c03a6731-a2c3-4bae-81c8-cb628669e559" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect">
@@ -9976,13 +9969,6 @@
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
-                <object name="POil" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="9aee637b-91c8-467b-84e9-32c2d9472370">
-                  <attribute type="Attributes.EU" value="кПа" xmlns="system" />
-                  <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
-                  <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление рез. топлива перед горелкой" />
-                  <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
-                </object>
                 <object name="ManCtrl" base-type="Types.ManFanCtrl.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="dd8657b6-9934-4d38-95c9-2cfccf923b3d" />
               </object>
               <object name="Burn2" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="753b182a-3470-44eb-a723-06ef33a96fce">
@@ -10023,13 +10009,6 @@
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
-                <object name="POil" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="902978c4-bc7c-4a6c-ab99-22360b5b3b56">
-                  <attribute type="Attributes.EU" value="кПа" xmlns="system" />
-                  <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
-                  <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление рез. топлива перед горелкой" />
-                  <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
-                </object>
                 <object name="ManCtrl" base-type="Types.ManFanCtrl.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="41c379c5-0638-4ca4-a92a-f7ad8233a32c" />
               </object>
               <object name="Burn3" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="c1051e7a-84ed-437e-ba2e-5a5785868a5f">
@@ -10069,13 +10048,6 @@
                   <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
-                </object>
-                <object name="POil" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="f001fd36-80df-4e83-bc5b-0cdcd7d0255f">
-                  <attribute type="Attributes.EU" value="кПа" xmlns="system" />
-                  <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
-                  <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление рез. топлива перед горелкой" />
-                  <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="ManCtrl" base-type="Types.ManFanCtrl.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="69e5961a-ba17-4736-817f-7e0eb7f56c50" />
               </object>
@@ -10161,13 +10133,6 @@
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
-                <object name="POil" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="fddc8223-cb7e-4ce0-a466-703aa090a17b">
-                  <attribute type="Attributes.EU" value="кПа" xmlns="system" />
-                  <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
-                  <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление рез. топлива перед горелкой" />
-                  <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
-                </object>
                 <object name="ManCtrl" base-type="Types.ManFanCtrl.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="da02952f-10f1-4d5e-b435-79c450062129" />
               </object>
               <object name="Valve1" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="86f856c0-2e95-4cd9-87da-d7248e3d14e6">
@@ -10223,13 +10188,6 @@
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
-                <object name="POil" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="492da0f9-9a6e-42e1-af24-1c0e80a36cab">
-                  <attribute type="Attributes.EU" value="кПа" xmlns="system" />
-                  <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
-                  <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление рез. топлива перед горелкой" />
-                  <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
-                </object>
                 <object name="ManCtrl" base-type="Types.ManFanCtrl.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="ca69bfcd-8eef-4e32-a2d7-f3d17cd9d480" />
               </object>
               <object name="Burn2" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="39f97881-99d1-4c7b-bb0b-cf34bbdf7524">
@@ -10270,13 +10228,6 @@
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
-                <object name="POil" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="9faf6750-5a92-4d2b-ae7b-6a178077c440">
-                  <attribute type="Attributes.EU" value="кПа" xmlns="system" />
-                  <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
-                  <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление рез. топлива перед горелкой" />
-                  <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
-                </object>
                 <object name="ManCtrl" base-type="Types.ManFanCtrl.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="f5ea9b2b-7130-407c-8da6-b53e384733d6" />
               </object>
               <object name="Burn3" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="598e408c-f1de-4dc4-acbd-ca57a3d86415">
@@ -10316,13 +10267,6 @@
                   <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
-                </object>
-                <object name="POil" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="eb971e72-90cc-4d89-9da9-8b3af5459817">
-                  <attribute type="Attributes.EU" value="кПа" xmlns="system" />
-                  <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
-                  <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление рез. топлива перед горелкой" />
-                  <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="ManCtrl" base-type="Types.ManFanCtrl.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="8f53f7c5-0643-42c2-8ba0-ca7f58790e86" />
               </object>
@@ -10374,13 +10318,6 @@
                   <attribute type="unit.System.Attributes.Description" xmlns="system" value="Заслонка рез. топлива перед горелкой" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
-                </object>
-                <object name="POil" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="4fe72ca2-0122-479d-bc18-1e4eda3a18cd">
-                  <attribute type="Attributes.EU" value="кПа" xmlns="system" />
-                  <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
-                  <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление рез. топлива перед горелкой" />
-                  <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="ManCtrl" base-type="Types.ManFanCtrl.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="da5e952a-9870-46a2-9574-45f66831dbc6" />
               </object>
@@ -10437,13 +10374,6 @@
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
-                <object name="POil" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="d0407b6b-8bfc-477f-8c4d-bf4200ca3bf2">
-                  <attribute type="Attributes.EU" value="кПа" xmlns="system" />
-                  <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
-                  <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление рез. топлива перед горелкой" />
-                  <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
-                </object>
                 <object name="ManCtrl" base-type="Types.ManFanCtrl.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="adcca8aa-22e5-4783-8aaf-1a2583402651" />
               </object>
               <object name="Burn2" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="14a5dffd-24a9-449d-981e-8562d6713d24">
@@ -10484,13 +10414,6 @@
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
-                <object name="POil" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="dfc889ad-96e9-42ea-88c4-de38151aa113">
-                  <attribute type="Attributes.EU" value="кПа" xmlns="system" />
-                  <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
-                  <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление рез. топлива перед горелкой" />
-                  <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
-                </object>
                 <object name="ManCtrl" base-type="Types.ManFanCtrl.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="17be3f80-ba8c-4467-8327-5e78dc60017e" />
               </object>
               <object name="Burn3" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="330045da-28a5-48cb-b1a4-2fa3781ea8cb">
@@ -10530,13 +10453,6 @@
                   <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
-                </object>
-                <object name="POil" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="a7e108e6-5c50-4778-9a48-eb9bccf9268a">
-                  <attribute type="Attributes.EU" value="кПа" xmlns="system" />
-                  <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
-                  <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление рез. топлива перед горелкой" />
-                  <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="ManCtrl" base-type="Types.ManFanCtrl.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="cf5ce202-ab60-47cc-8c63-4552dce87ccc" />
               </object>
@@ -10588,13 +10504,6 @@
                   <attribute type="unit.System.Attributes.Description" xmlns="system" value="Заслонка рез. топлива перед горелкой" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
-                </object>
-                <object name="POil" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="02a663c5-d327-4408-9386-9278a08f243c">
-                  <attribute type="Attributes.EU" value="кПа" xmlns="system" />
-                  <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
-                  <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление рез. топлива перед горелкой" />
-                  <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="ManCtrl" base-type="Types.ManFanCtrl.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="fd7f518a-7f17-4533-9f4b-54f3ba54726e" />
               </object>
@@ -10651,13 +10560,6 @@
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
-                <object name="POil" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="ab04fdfb-328b-43fe-8f75-a5aaf6d5c676">
-                  <attribute type="Attributes.EU" value="кПа" xmlns="system" />
-                  <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
-                  <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление рез. топлива перед горелкой" />
-                  <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
-                </object>
                 <object name="ManCtrl" base-type="Types.ManFanCtrl.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="007097e7-417d-48c5-aa4d-066490b43531" />
               </object>
               <object name="Burn2" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="4d279b98-1549-481c-bcf5-8e1188b18466">
@@ -10698,13 +10600,6 @@
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
-                <object name="POil" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="54b37d62-149c-4194-9d53-d2b0451567d6">
-                  <attribute type="Attributes.EU" value="кПа" xmlns="system" />
-                  <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
-                  <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление рез. топлива перед горелкой" />
-                  <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
-                </object>
                 <object name="ManCtrl" base-type="Types.ManFanCtrl.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="8bc9e16c-d073-4a5e-935b-ec27689cc027" />
               </object>
               <object name="Burn3" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="b9cdbdc5-8898-4b23-b8ea-4da3417f657e">
@@ -10744,13 +10639,6 @@
                   <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
-                </object>
-                <object name="POil" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="34b40aa8-1be2-45d7-a3eb-53ac6bccdca4">
-                  <attribute type="Attributes.EU" value="кПа" xmlns="system" />
-                  <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
-                  <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление рез. топлива перед горелкой" />
-                  <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="ManCtrl" base-type="Types.ManFanCtrl.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="01674003-04d7-4f1c-aece-4f44a3d432c3" />
               </object>
@@ -14158,7 +14046,6 @@ AlarmPGasCollH=(PGasCollH)||(_PLC_View.AlarmPGasCollHigh);*/</property>
         <parameter name="BoilerInWork" type="bool" direction="out" xmlns="automation.control" uuid="40642955-7bb3-42b6-b41c-72be1157b12c" />
         <parameter name="AlarmBoilerStop" uuid="3fc784d8-32e0-4da8-9333-d09b653b00af" type="bool" direction="out" />
         <parameter name="nVent" direction="out" type="int32" xmlns="automation.control" uuid="b9fed464-a15e-4382-bc05-e8f1a6d244e3" />
-        <parameter name="nGerm" direction="out" type="int32" xmlns="automation.control" uuid="70d0909b-1e9d-4cf7-8a50-3e0cfa05a6ce" />
         <parameter name="nBlow" direction="out" type="int32" xmlns="automation.control" uuid="0709cdb1-5ee3-4993-b811-9a63344e7d75" />
         <parameter name="NoVent" type="bool" direction="in-out" xmlns="automation.control" uuid="b791aaf7-4773-41df-810d-592937f49411" />
         <parameter name="NoGerm" type="bool" direction="in-out" xmlns="automation.control" uuid="4dffe16a-178f-4f06-ae17-685f9fc0a163" />
@@ -14176,6 +14063,12 @@ AlarmPGasCollH=(PGasCollH)||(_PLC_View.AlarmPGasCollHigh);*/</property>
         <parameter name="CheckProtLeftTime" direction="out" type="int32" xmlns="automation.control" uuid="1a3d762f-64aa-46b3-8d8b-735f0c781aec" />
         <parameter name="DeblockGate" type="bool" direction="in-out" xmlns="automation.control" uuid="8a23364d-4d72-4141-aaca-d77a81256dc4" />
         <parameter name="ManCtrlFan" type="bool" direction="in-out" xmlns="automation.control" uuid="2aaea544-33a5-4692-8f93-df2d9291d9aa" />
+        <socket name="nGerm" uuid="891e49d6-5a74-49e4-b524-63e135240ceb" direction="out">
+          <socket-parameter name="Group1" uuid="809713d7-adf5-409a-b93a-22a750076f11" type="int32" />
+          <socket-parameter name="Group2" type="int32" xmlns="automation.control" uuid="5c1c23e1-8788-4dcf-b656-5d699d6effa8" />
+          <socket-parameter name="Group3" type="int32" xmlns="automation.control" uuid="f3fca9ea-1dd4-47b5-9acc-40b92262e1b5" />
+          <socket-parameter name="Group4" type="int32" xmlns="automation.control" uuid="bc2d0054-b6c0-466b-90de-76168f47fabf" />
+        </socket>
       </type>
       <type name="IOS_View" xmlns="automation.control" aspect="Aspects.IOS_Aspect" original="Boiler" uuid="75814766-5317-4871-870a-b481b5f2198d">
         <ref name="_PLC_View" type="PLC_View" xmlns="automation.reference" uuid="c7683099-3278-4c6f-80ff-7887581b9e66" />
@@ -14229,8 +14122,6 @@ AlarmPGasCollH=(PGasCollH)||(_PLC_View.AlarmPGasCollHigh);*/</property>
         <bind source="_PLC_View.AlarmBoilerStop" target="AlarmBoilerStop" />
         <parameter name="nVent" uuid="22c5ba22-5a5f-4c6a-928c-923a156ff2b7" direction="out" type="int32" />
         <bind source="_PLC_View.nVent" target="nVent" />
-        <parameter name="nGerm" uuid="ab13d177-b19c-41d2-bdd1-f18fc6de5d1a" direction="out" type="int32" />
-        <bind source="_PLC_View.nGerm" target="nGerm" />
         <parameter name="nBlow" uuid="cd32930f-4868-4771-bf84-775a7282d6e9" direction="out" type="int32" />
         <bind source="_PLC_View.nBlow" target="nBlow" />
         <parameter name="OutNoVent" uuid="fcc3f3e7-ec41-492f-9166-557c97e41f12" direction="out" type="bool">
@@ -14337,6 +14228,13 @@ AlarmPGasCollH=(PGasCollH)||(_PLC_View.AlarmPGasCollHigh);*/</property>
         <bind source="InManCtrlFan" target="_PLC_View.ManCtrlFan" />
         <parameter name="OutManCtrlFan" uuid="0ebeba1d-5e1a-47ea-84f3-8e257a9dfff3" direction="out" type="bool" />
         <bind source="_PLC_View.ManCtrlFan" target="OutManCtrlFan" />
+        <socket name="nGerm" uuid="db5a3c65-edec-4e13-9892-ba7ba56f2b6d" direction="out">
+          <socket-parameter name="Group1" uuid="6f7493ff-6e5d-4185-8a68-3984e07d33ef" type="int32" />
+          <socket-parameter name="Group2" uuid="e88f2e92-50b4-4b66-9b6f-1455d7f2014e" type="int32" />
+          <socket-parameter name="Group3" uuid="54c3b617-3c95-4f35-a8ea-1580106bccb4" type="int32" />
+          <socket-parameter name="Group4" uuid="3dc54b9c-a327-450f-8d76-a0a8ae593b51" type="int32" />
+        </socket>
+        <socket-bind source="_PLC_View.nGerm" target="nGerm" />
       </type>
     </type>
     <type name="DelAlarmsBoiler" xmlns="automation.control" uuid="7bf32a59-7c25-4527-868a-f68a8101e433">
