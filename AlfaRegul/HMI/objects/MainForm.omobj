@@ -1632,7 +1632,7 @@ else
 			</object>
 			<object access-modifier="private" name="InManCtrl" display-name="InManCtrl" uuid="f0b8de24-3784-492e-a031-dad143f5f611" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4" cardinal="1">
 				<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
-				<init target="Path" ver="4" value="ROOT.ManFanCtrl.InManCtrlFan"/>
+				<init target="Path" ver="4" value="ROOT.Boiler.InManCtrlFan"/>
 			</object>
 			<object access-modifier="private" name="BoilerWork" display-name="BoilerWork" uuid="6420ec81-6b03-4a28-bf04-a7a0cf58aa12" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 				<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
@@ -1656,7 +1656,7 @@ else
 			</object>
 			<object access-modifier="private" name="OutManCtrl" display-name="OutManCtrl" uuid="16a7b6a9-17d5-464c-884d-5f268e1a61a8" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4" cardinal="1">
 				<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
-				<init target="Path" ver="4" value="ROOT.ManFanCtrl.OutManCtrlFan"/>
+				<init target="Path" ver="4" value="ROOT.Boiler.OutManCtrlFan"/>
 			</object>
 			<object access-modifier="private" name="SecurityContext" display-name="SecurityContext" uuid="28dc86e7-f459-42a5-97d9-b9b1b8128c20" base-type="SecurityContext" base-type-id="d9cb0fff-b70a-4e2d-833d-3f73cf74e0dd" ver="4">
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="CurrentUserChanged">

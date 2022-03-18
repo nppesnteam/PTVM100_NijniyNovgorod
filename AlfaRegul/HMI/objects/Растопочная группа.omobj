@@ -390,12 +390,15 @@ if (unit.Global.Group[Group].ign == 3)
 			</object>
 			<object access-modifier="private" name="IgnStart" display-name="IgnStart" uuid="3e7bfad7-e992-4ca1-a8e1-897967abcad7" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 				<init target="Path" ver="4" value="Burn1.Burn.ArmStart"/>
+				<init target="Source" ver="4" ref="Scheme.Group.OpcSource"/>
 			</object>
 			<object access-modifier="private" name="BurnStatus" display-name="BurnStatus" uuid="25c947a2-050e-4f22-8632-d78f6f9a96d3" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
 				<init target="Path" ver="4" value="Burn1.Burn.BurnStatus"/>
+				<init target="Source" ver="4" ref="Scheme.Group.OpcSource"/>
 			</object>
 			<object access-modifier="private" name="IgnProgress" display-name="IgnProgress" uuid="490c7dcd-99c8-4c1f-97be-79fe09e5b711" base-type="OpcItemInt4" base-type-id="c8220066-9348-4b3e-a68e-d8ac76d47db1" ver="4">
 				<init target="Path" ver="4" value="Burn1.Burn.IgnProgress"/>
+				<init target="Source" ver="4" ref="Scheme.Group.OpcSource"/>
 			</object>
 			<object access-modifier="private" name="ProgressBarIgn" display-name="ProgressBarIgn" uuid="4fdb859b-50f6-4384-9747-be032d636310" base-type="ProgressBar" base-type-id="a5193173-0399-4840-95f8-2e9958e4e74e" ver="4">
 				<designed target="X" value="321" ver="4"/>
@@ -782,12 +785,15 @@ OpenBurnSteps.Invoke();]]>
 			</object>
 			<object access-modifier="private" name="IgnStart" display-name="IgnStart" uuid="5375011a-eed0-413c-a0c6-508c6e2777f0" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 				<init target="Path" ver="4" value="Burn2.Burn.ArmStart"/>
+				<init target="Source" ver="4" ref="Scheme.Group.OpcSource"/>
 			</object>
 			<object access-modifier="private" name="BurnStatus" display-name="BurnStatus" uuid="476b95bc-2f17-4117-9c1f-dc920965fb2c" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
 				<init target="Path" ver="4" value="Burn2.Burn.BurnStatus"/>
+				<init target="Source" ver="4" ref="Scheme.Group.OpcSource"/>
 			</object>
 			<object access-modifier="private" name="IgnProgress" display-name="IgnProgress" uuid="4603d474-8bd4-4f80-b52d-d36388bae071" base-type="OpcItemInt4" base-type-id="c8220066-9348-4b3e-a68e-d8ac76d47db1" ver="4">
 				<init target="Path" ver="4" value="Burn2.Burn.IgnProgress"/>
+				<init target="Source" ver="4" ref="Scheme.Group.OpcSource"/>
 			</object>
 			<object access-modifier="private" name="StopBurn" display-name="StopBurn" uuid="8ba20d34-2268-4bcd-8b02-b76bc82a1dab" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4">
 				<designed target="Enabled" value="true" ver="4"/>
@@ -1060,12 +1066,15 @@ OpenBurnSteps.Invoke();]]>
 			</object>
 			<object access-modifier="private" name="IgnStart" display-name="IgnStart" uuid="45af4a3f-4c10-4df8-9da6-435a02e85146" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 				<init target="Path" ver="4" value="Burn3.Burn.ArmStart"/>
+				<init target="Source" ver="4" ref="Scheme.Group.OpcSource"/>
 			</object>
 			<object access-modifier="private" name="BurnStatus" display-name="BurnStatus" uuid="ce122bd8-be0d-4a1b-a20d-8744aed8475b" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
 				<init target="Path" ver="4" value="Burn3.Burn.BurnStatus"/>
+				<init target="Source" ver="4" ref="Scheme.Group.OpcSource"/>
 			</object>
 			<object access-modifier="private" name="IgnProgress" display-name="IgnProgress" uuid="634e15d5-ec57-45f6-a13b-e67c2e2602d3" base-type="OpcItemInt4" base-type-id="c8220066-9348-4b3e-a68e-d8ac76d47db1" ver="4">
 				<init target="Path" ver="4" value="Burn3.Burn.IgnProgress"/>
+				<init target="Source" ver="4" ref="Scheme.Group.OpcSource"/>
 			</object>
 			<object access-modifier="private" name="StopBurn" display-name="StopBurn" uuid="0711434e-c5f5-436f-a64f-006f44a1ea42" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4">
 				<designed target="Enabled" value="true" ver="4"/>
@@ -1351,13 +1360,16 @@ OpenBurnSteps.Invoke();]]>
 				<object access-modifier="private" name="isOpenedBurnSteps" display-name="isOpenedBurnSteps" uuid="67b46b6e-41db-43fc-95a3-908112320f1e" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
 			</object>
 			<object access-modifier="private" name="IgnStart" display-name="IgnStart" uuid="12b8706a-db4b-4b33-91d9-fc5f4fc75e8c" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-				<init target="Path" ver="4" value="Burn3.Burn.ArmStart"/>
+				<init target="Path" ver="4" value="Burn4.Burn.ArmStart"/>
+				<init target="Source" ver="4" ref="Scheme.Group.OpcSource"/>
 			</object>
 			<object access-modifier="private" name="BurnStatus" display-name="BurnStatus" uuid="b4f3e206-8734-4aa2-9d1d-68cac942919e" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
-				<init target="Path" ver="4" value="Burn3.Burn.BurnStatus"/>
+				<init target="Path" ver="4" value="Burn4.Burn.BurnStatus"/>
+				<init target="Source" ver="4" ref="Scheme.Group.OpcSource"/>
 			</object>
 			<object access-modifier="private" name="IgnProgress" display-name="IgnProgress" uuid="f29266a6-4bf8-4562-8432-c850552412e2" base-type="OpcItemInt4" base-type-id="c8220066-9348-4b3e-a68e-d8ac76d47db1" ver="4">
-				<init target="Path" ver="4" value="Burn3.Burn.IgnProgress"/>
+				<init target="Path" ver="4" value="Burn4.Burn.IgnProgress"/>
+				<init target="Source" ver="4" ref="Scheme.Group.OpcSource"/>
 			</object>
 			<object access-modifier="private" name="StopBurn" display-name="StopBurn" uuid="35b7b619-879e-44fd-88f0-2f69657e13c8" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4">
 				<designed target="Enabled" value="true" ver="4"/>
@@ -1399,7 +1411,10 @@ OpenBurnSteps.Invoke();]]>
 				</do-on>
 			</object>
 		</object>
-		<object access-modifier="private" name="ArmStartAllow" display-name="ArmStartAllow" uuid="f52fd2e6-1489-4044-9981-2add95790e65" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4"/>
+		<object access-modifier="private" name="ArmStartAllow" display-name="ArmStartAllow" uuid="f52fd2e6-1489-4044-9981-2add95790e65" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+			<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+			<init target="Path" ver="4" value="ROOT.Boiler.ArmStartAllow"/>
+		</object>
 	</object>
 	<object access-modifier="private" name="Scheme" display-name="Scheme" uuid="14da8969-9cae-4c5a-b505-8a9e61159fca" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
 		<designed target="X" value="20" ver="4"/>
@@ -2616,7 +2631,6 @@ OpenBurnSteps.Invoke();]]>
 					</body>
 				</do-trace>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
-				<init target="InitPath" ver="4" value="burn2"/>
 				<do-trace access-modifier="private" target="Y" ver="4">
 					<conditional-expr>
 						<condition>
@@ -2629,6 +2643,21 @@ OpenBurnSteps.Invoke();]]>
 					<default-expr>
 						<expr>
 							<![CDATA[392]]>
+						</expr>
+					</default-expr>
+				</do-trace>
+				<do-trace access-modifier="private" target="InitPath" ver="4">
+					<conditional-expr>
+						<condition>
+							<![CDATA[Group%2==0]]>
+						</condition>
+						<expr>
+							<![CDATA["burn3"]]>
+						</expr>
+					</conditional-expr>
+					<default-expr>
+						<expr>
+							<![CDATA["burn2"]]>
 						</expr>
 					</default-expr>
 				</do-trace>
@@ -2658,7 +2687,21 @@ OpenBurnSteps.Invoke();]]>
 					</body>
 				</do-trace>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
-				<init target="InitPath" ver="4" value="burnIgn"/>
+				<do-trace access-modifier="private" target="InitPath" ver="4">
+					<conditional-expr>
+						<condition>
+							<![CDATA[Group%2==0]]>
+						</condition>
+						<expr>
+							<![CDATA["burn2"]]>
+						</expr>
+					</conditional-expr>
+					<default-expr>
+						<expr>
+							<![CDATA["burn3"]]>
+						</expr>
+					</default-expr>
+				</do-trace>
 			</object>
 			<object access-modifier="private" name="burn4" display-name="burn4" uuid="3207e8f5-a5ad-4581-9f7a-019c183d7332" base-type="burnGroup" base-type-id="fd973e8a-d8c8-4b96-8763-069ba372be39" ver="4">
 				<designed target="X" value="1" ver="4"/>
@@ -2670,7 +2713,7 @@ OpenBurnSteps.Invoke();]]>
 					</body>
 				</do-trace>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
-				<init target="InitPath" ver="4" value="burn3"/>
+				<init target="InitPath" ver="4" value="burn4"/>
 			</object>
 			<object access-modifier="private" name="txtGroup" display-name="txtGroup" uuid="4366a9e4-a4e7-480d-b878-00582392e75e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
 				<designed target="X" value="145" ver="4"/>

@@ -327,22 +327,6 @@
 	</object>
 	<object access-modifier="private" name="BurnerHasGas" display-name="BurnerHasGas" uuid="c045be87-0cf2-4afd-a8ee-49b51afad1d2" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
 	<object access-modifier="private" name="Group" display-name="Group" uuid="fef55887-775e-4991-9585-708af6b1e582" base-type="notifying_int1" base-type-id="cc2bf8ea-3898-4228-bc8f-71a7738f0c62" ver="4"/>
-	<object access-modifier="private" name="POil" display-name="POil" uuid="02176dc5-45a4-4f9b-83df-bd395ec9f6d0" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
-		<designed target="X" value="296" ver="4"/>
-		<designed target="Y" value="-40" ver="4"/>
-		<designed target="Rotation" value="0" ver="4"/>
-		<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
-		<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
-		<init target="VALUEBrushType" ver="4" value="1"/>
-		<init target="EUBrushType" ver="4" value="1"/>
-		<init target="PenType" ver="4" value="1"/>
-		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
-		<init target="InBurner" ver="4" value="true"/>
-		<init target="initName" ver="4" value="POil"/>
-		<init target="EUTextColor" ver="4" value="0xffc65a02"/>
-		<init target="initPath" ver="4" value="POil"/>
-		<designed target="Scale" value="1.2" ver="4"/>
-	</object>
 	<do-trace access-modifier="private" target="BurnNumber" ver="4">
 		<body>
 			<![CDATA[burner.BurnNumber]]>
