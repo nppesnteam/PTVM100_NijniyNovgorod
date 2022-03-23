@@ -46,24 +46,6 @@
 			<designed target="Y" value="0" ver="4"/>
 		</object>
 		<object access-modifier="private" name="HasGas" display-name="HasGas" uuid="0ca9489b-92d9-4e6e-b11c-02f55a80647e" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
-		<do-trace access-modifier="private" target="BrushColor" ver="4">
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==true]]>
-				</condition>
-				<expr>
-					<![CDATA[0xffffff00]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==false]]>
-				</condition>
-				<expr>
-					<![CDATA[0xff000000]]>
-				</expr>
-			</conditional-expr>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="TubeGasAfterFlap" display-name="TubeGasAfterFlap" uuid="08906051-bd38-4f10-b5a1-5e411f2a79c5" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
 		<designed target="X" value="188" ver="4"/>
@@ -103,24 +85,6 @@
 			<designed target="Y" value="0" ver="4"/>
 		</object>
 		<object access-modifier="private" name="HasGas" display-name="HasGas" uuid="3658f60e-8f77-45af-a826-273bd97ad84b" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
-		<do-trace access-modifier="private" target="BrushColor" ver="4">
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==true]]>
-				</condition>
-				<expr>
-					<![CDATA[0xffffff00]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==false]]>
-				</condition>
-				<expr>
-					<![CDATA[0xff000000]]>
-				</expr>
-			</conditional-expr>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="TubeO2In" display-name="TubeO2In" uuid="2fb2ec7b-a6a4-4a1b-8a5d-4d41df39e334" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
 		<designed target="X" value="389" ver="4"/>
@@ -160,24 +124,6 @@
 			<designed target="Y" value="0" ver="4"/>
 		</object>
 		<object access-modifier="private" name="HasGas" display-name="HasGas" uuid="70fdeb61-ac38-435b-9f44-9086ec7bee0a" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
-		<do-trace access-modifier="private" target="BrushColor" ver="4">
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==true]]>
-				</condition>
-				<expr>
-					<![CDATA[0xff00aaff]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==false]]>
-				</condition>
-				<expr>
-					<![CDATA[0xff000000]]>
-				</expr>
-			</conditional-expr>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="TubeO2AfterFlap" display-name="TubeO2AfterFlap" uuid="95d437d5-b79d-4804-bc7e-f748605b0e77" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
 		<designed target="X" value="289" ver="4"/>
@@ -225,24 +171,6 @@
 			<designed target="Y" value="0" ver="4"/>
 		</object>
 		<object access-modifier="private" name="HasGas" display-name="HasGas" uuid="cceafc43-c19a-4ecf-980c-e003e2751716" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
-		<do-trace access-modifier="private" target="BrushColor" ver="4">
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==true]]>
-				</condition>
-				<expr>
-					<![CDATA[0xff00aaff]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==false]]>
-				</condition>
-				<expr>
-					<![CDATA[0xff000000]]>
-				</expr>
-			</conditional-expr>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="TubeOil" display-name="TubeOil" uuid="04edc918-8521-4b05-97ac-22a80c51a7a3" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
 		<designed target="X" value="298" ver="4"/>
@@ -282,24 +210,6 @@
 			<designed target="Y" value="0" ver="4"/>
 		</object>
 		<object access-modifier="private" name="HasGas" display-name="HasGas" uuid="f59d4c92-e735-4c3c-b753-389f4fcf0ef9" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
-		<do-trace access-modifier="private" target="BrushColor" ver="4">
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==true]]>
-				</condition>
-				<expr>
-					<![CDATA[0xffffff00]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==false]]>
-				</condition>
-				<expr>
-					<![CDATA[0xff000000]]>
-				</expr>
-			</conditional-expr>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="burner" display-name="burner" uuid="58c74889-0d21-4613-8212-de8f10a5f1f6" base-type="burner" base-type-id="f51dcd8c-5858-405d-a8d6-c95eca82779c" ver="3">
 		<designed target="X" value="227" ver="3"/>
@@ -338,7 +248,7 @@
 		<designed target="Opacity" value="1" ver="4"/>
 		<designed target="Enabled" value="true" ver="4"/>
 		<designed target="Tooltip" value="" ver="4"/>
-		<designed target="Width" value="113" ver="4"/>
+		<designed target="Width" value="112" ver="4"/>
 		<designed target="Height" value="36.5" ver="4"/>
 		<designed target="PenColor" value="0xffffff00" ver="4"/>
 		<designed target="PenStyle" value="1" ver="4"/>
@@ -374,24 +284,6 @@
 			<designed target="Y" value="0" ver="4"/>
 		</object>
 		<object access-modifier="private" name="HasGas" display-name="HasGas" uuid="a1a75204-2019-4340-ac32-522093d98293" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
-		<do-trace access-modifier="private" target="BrushColor" ver="4">
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==true]]>
-				</condition>
-				<expr>
-					<![CDATA[0xffffff00]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==false]]>
-				</condition>
-				<expr>
-					<![CDATA[0xff000000]]>
-				</expr>
-			</conditional-expr>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="Valve2" display-name="Valve2" uuid="60f30151-e386-4f94-8565-5271341d9ce7" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 		<designed target="X" value="121" ver="4"/>

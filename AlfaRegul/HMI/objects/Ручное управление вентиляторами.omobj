@@ -718,6 +718,11 @@ while (i<16)
 	OutODamperDn[i].Path="ROOT.Group"+String.ToString(i/4+1)+".Burn"+String.ToString(i%4+1)+".ManCtrlOil.OutDn";
 	VentCtrl.Row_1[i].Y=VentCtrl.Row_1.Y+VentCtrl.Row_1.Height*i;
 	VentCtrl.Row_1[i].Column_1.txt.Text=Str.ToString(i+1);
+	if (!(i==2||i==5||i==10||i==13))
+	{
+		VentCtrl.Row_1[i].Column_5.Visible=false;
+		VentCtrl.Row_1[i].Column_6.Visible=false;
+	}
 	i+=1;
 }]]>
 			</body>

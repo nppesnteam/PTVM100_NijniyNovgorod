@@ -47,24 +47,6 @@
 			<designed target="Y" value="0" ver="4"/>
 		</object>
 		<object access-modifier="private" name="HasGas" display-name="HasGas" uuid="2beb85d7-7765-4c40-a1c0-3d357b4da82b" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
-		<do-trace access-modifier="private" target="BrushColor" ver="4">
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==true]]>
-				</condition>
-				<expr>
-					<![CDATA[0xffffff00]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==false]]>
-				</condition>
-				<expr>
-					<![CDATA[0xff000000]]>
-				</expr>
-			</conditional-expr>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="TubeO2In" display-name="TubeO2In" uuid="2e0a0fa0-c61d-4447-af53-5205d7b16e2a" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
 		<designed target="X" value="389" ver="4"/>
@@ -104,24 +86,6 @@
 			<designed target="Y" value="0" ver="4"/>
 		</object>
 		<object access-modifier="private" name="HasGas" display-name="HasGas" uuid="950236df-9494-4f8b-9de3-d0643992667c" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
-		<do-trace access-modifier="private" target="BrushColor" ver="4">
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==true]]>
-				</condition>
-				<expr>
-					<![CDATA[0xff00aaff]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==false]]>
-				</condition>
-				<expr>
-					<![CDATA[0xff000000]]>
-				</expr>
-			</conditional-expr>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="TubeO2AfterFlap" display-name="TubeO2AfterFlap" uuid="5e4b272f-f50c-443a-9238-0251fb1d6d5a" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
 		<designed target="X" value="289" ver="4"/>
@@ -169,24 +133,6 @@
 			<designed target="Y" value="0" ver="4"/>
 		</object>
 		<object access-modifier="private" name="HasGas" display-name="HasGas" uuid="cfa2ce1c-0498-4a67-a429-d92b779478d0" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
-		<do-trace access-modifier="private" target="BrushColor" ver="4">
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==true]]>
-				</condition>
-				<expr>
-					<![CDATA[0xff00aaff]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==false]]>
-				</condition>
-				<expr>
-					<![CDATA[0xff000000]]>
-				</expr>
-			</conditional-expr>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="TubeOil" display-name="TubeOil" uuid="f6e12849-813e-4a0b-b5c3-fa8e7454cadd" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
 		<designed target="X" value="298" ver="4"/>
@@ -226,24 +172,6 @@
 			<designed target="Y" value="0" ver="4"/>
 		</object>
 		<object access-modifier="private" name="HasGas" display-name="HasGas" uuid="283c8136-8aaf-4c57-a4e9-98fdf46f451a" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
-		<do-trace access-modifier="private" target="BrushColor" ver="4">
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==true]]>
-				</condition>
-				<expr>
-					<![CDATA[0xffffff00]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==false]]>
-				</condition>
-				<expr>
-					<![CDATA[0xff000000]]>
-				</expr>
-			</conditional-expr>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="burner" display-name="burner" uuid="a19fac4a-e4df-45f1-b0aa-f132930df4a0" base-type="burner" base-type-id="f51dcd8c-5858-405d-a8d6-c95eca82779c" ver="3">
 		<designed target="X" value="227" ver="3"/>

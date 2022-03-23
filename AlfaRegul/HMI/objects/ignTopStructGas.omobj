@@ -20,10 +20,10 @@
 		<designed target="Tooltip" value="" ver="3"/>
 		<designed target="Width" value="20" ver="3"/>
 		<designed target="Height" value="67" ver="3"/>
-		<designed target="PenColor" value="0xffc65a02" ver="3"/>
+		<designed target="PenColor" value="0xffffaa00" ver="3"/>
 		<designed target="PenStyle" value="1" ver="3"/>
 		<designed target="PenWidth" value="1" ver="3"/>
-		<designed target="BrushColor" value="0xffffffff" ver="3"/>
+		<designed target="BrushColor" value="0xffc65a02" ver="3"/>
 		<designed target="BrushStyle" value="1" ver="3"/>
 		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="0e411354-2f65-487f-8e23-6a9b4d045361" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
 			<designed target="X" value="0" ver="3"/>
@@ -54,24 +54,6 @@
 			<designed target="Y" value="0" ver="3"/>
 		</object>
 		<object access-modifier="private" name="HasGas" display-name="HasGas" uuid="26bfc92a-e2d6-4583-aa70-cbb97cc3898e" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
-		<do-trace access-modifier="private" target="BrushColor" ver="4">
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==true]]>
-				</condition>
-				<expr>
-					<![CDATA[0xff00aaff]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==false]]>
-				</condition>
-				<expr>
-					<![CDATA[0xff000000]]>
-				</expr>
-			</conditional-expr>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="TubeGasAfterValves" display-name="TubeGasAfterValves" uuid="ea42bc27-f2aa-47fc-8230-e10dcf2b46b4" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
 		<designed target="X" value="6" ver="4"/>
@@ -85,10 +67,10 @@
 		<designed target="Tooltip" value="" ver="4"/>
 		<designed target="Width" value="4" ver="4"/>
 		<designed target="Height" value="30" ver="4"/>
-		<designed target="PenColor" value="0xffffff00" ver="4"/>
+		<designed target="PenColor" value="0xffffc800" ver="4"/>
 		<designed target="PenStyle" value="1" ver="4"/>
 		<designed target="PenWidth" value="1" ver="4"/>
-		<designed target="BrushColor" value="0xffffffff" ver="4"/>
+		<designed target="BrushColor" value="0xffffff00" ver="4"/>
 		<designed target="BrushStyle" value="1" ver="4"/>
 		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="eb1c8cd1-b6a2-4470-b6c6-fb3b804911b9" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
 			<designed target="X" value="0" ver="4"/>
@@ -111,24 +93,6 @@
 			<designed target="Y" value="0" ver="4"/>
 		</object>
 		<object access-modifier="private" name="HasGas" display-name="HasGas" uuid="6ece4e5f-61ef-47db-805b-01589b115126" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
-		<do-trace access-modifier="private" target="BrushColor" ver="4">
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==true]]>
-				</condition>
-				<expr>
-					<![CDATA[0xffffff00]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==false]]>
-				</condition>
-				<expr>
-					<![CDATA[0xff000000]]>
-				</expr>
-			</conditional-expr>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="TubeGasAfterFlap" display-name="TubeGasAfterFlap" uuid="cf87db05-555f-488b-ba8f-2a227454a1ef" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
 		<designed target="X" value="6" ver="4"/>
@@ -142,10 +106,10 @@
 		<designed target="Tooltip" value="" ver="4"/>
 		<designed target="Width" value="4" ver="4"/>
 		<designed target="Height" value="15" ver="4"/>
-		<designed target="PenColor" value="0xffffff00" ver="4"/>
+		<designed target="PenColor" value="0xffffc800" ver="4"/>
 		<designed target="PenStyle" value="1" ver="4"/>
 		<designed target="PenWidth" value="1" ver="4"/>
-		<designed target="BrushColor" value="0xffffffff" ver="4"/>
+		<designed target="BrushColor" value="0xffffff00" ver="4"/>
 		<designed target="BrushStyle" value="1" ver="4"/>
 		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="95e06ff2-45e2-44fd-8f47-5de499757b01" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
 			<designed target="X" value="0" ver="4"/>
@@ -168,24 +132,6 @@
 			<designed target="Y" value="0" ver="4"/>
 		</object>
 		<object access-modifier="private" name="HasGas" display-name="HasGas" uuid="7666a5e7-f059-4279-af10-b3fae3daa90e" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
-		<do-trace access-modifier="private" target="BrushColor" ver="4">
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==true]]>
-				</condition>
-				<expr>
-					<![CDATA[0xffffff00]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==false]]>
-				</condition>
-				<expr>
-					<![CDATA[0xff000000]]>
-				</expr>
-			</conditional-expr>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="TubeO2AfterFlap" display-name="TubeO2AfterFlap" uuid="8f69261c-e487-47ba-b2e8-d8ea2a0cf620" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="3">
 		<designed target="X" value="-18" ver="3"/>
@@ -202,7 +148,7 @@
 		<designed target="PenColor" value="0xff00aaff" ver="3"/>
 		<designed target="PenStyle" value="1" ver="3"/>
 		<designed target="PenWidth" value="1" ver="3"/>
-		<designed target="BrushColor" value="0xffffffff" ver="3"/>
+		<designed target="BrushColor" value="0xff00ffff" ver="3"/>
 		<designed target="BrushStyle" value="1" ver="3"/>
 		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="b966e0d8-0818-43ca-b64a-9828a853b9e0" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
 			<designed target="X" value="0" ver="3"/>
@@ -233,24 +179,6 @@
 			<designed target="Y" value="0" ver="3"/>
 		</object>
 		<object access-modifier="private" name="HasGas" display-name="HasGas" uuid="c32c51af-3596-4ca8-9573-9db77ae590c3" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
-		<do-trace access-modifier="private" target="BrushColor" ver="4">
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==true]]>
-				</condition>
-				<expr>
-					<![CDATA[0xff00aaff]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==false]]>
-				</condition>
-				<expr>
-					<![CDATA[0xff000000]]>
-				</expr>
-			</conditional-expr>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="TubeO2In" display-name="TubeO2In" uuid="3496c463-9c30-4dbd-a7d5-a034c19deb1a" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="3">
 		<designed target="X" value="-62" ver="3"/>
@@ -267,7 +195,7 @@
 		<designed target="PenColor" value="0xff00aaff" ver="3"/>
 		<designed target="PenStyle" value="1" ver="3"/>
 		<designed target="PenWidth" value="1" ver="3"/>
-		<designed target="BrushColor" value="0xffffffff" ver="3"/>
+		<designed target="BrushColor" value="0xff00ffff" ver="3"/>
 		<designed target="BrushStyle" value="1" ver="3"/>
 		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="4964dc93-79b4-46f3-ad71-b93d9f6a89cc" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="3">
 			<designed target="X" value="0" ver="3"/>
@@ -290,24 +218,6 @@
 			<designed target="Y" value="0" ver="3"/>
 		</object>
 		<object access-modifier="private" name="HasGas" display-name="HasGas" uuid="0896e834-6075-454f-a1da-afa760305745" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
-		<do-trace access-modifier="private" target="BrushColor" ver="4">
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==true]]>
-				</condition>
-				<expr>
-					<![CDATA[0xff00aaff]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==false]]>
-				</condition>
-				<expr>
-					<![CDATA[0xff000000]]>
-				</expr>
-			</conditional-expr>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="burner" display-name="burner" uuid="6220092f-1a9a-4107-8a15-f1b3b2bbd22e" base-type="burner" base-type-id="f51dcd8c-5858-405d-a8d6-c95eca82779c" ver="3">
 		<designed target="X" value="-33" ver="3"/>
@@ -328,10 +238,10 @@
 		<designed target="Tooltip" value="" ver="4"/>
 		<designed target="Width" value="24" ver="4"/>
 		<designed target="Height" value="90" ver="4"/>
-		<designed target="PenColor" value="0xffffff00" ver="4"/>
+		<designed target="PenColor" value="0xffffc800" ver="4"/>
 		<designed target="PenStyle" value="1" ver="4"/>
 		<designed target="PenWidth" value="1" ver="4"/>
-		<designed target="BrushColor" value="0xffffffff" ver="4"/>
+		<designed target="BrushColor" value="0xffffff00" ver="4"/>
 		<designed target="BrushStyle" value="1" ver="4"/>
 		<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="bd0e7823-a01b-453b-b381-f22424db4170" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
 			<designed target="X" value="0" ver="4"/>
@@ -362,24 +272,6 @@
 			<designed target="Y" value="0" ver="4"/>
 		</object>
 		<object access-modifier="private" name="HasGas" display-name="HasGas" uuid="55e259aa-5620-4a37-8fde-bbf8621ef5da" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
-		<do-trace access-modifier="private" target="BrushColor" ver="4">
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==true]]>
-				</condition>
-				<expr>
-					<![CDATA[0xffffff00]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[HasGas==false]]>
-				</condition>
-				<expr>
-					<![CDATA[0xff000000]]>
-				</expr>
-			</conditional-expr>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="ValveIgn" display-name="ValveIgn" uuid="8372f0cb-74e0-4557-821b-39529b958b0c" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 		<designed target="X" value="26" ver="4"/>

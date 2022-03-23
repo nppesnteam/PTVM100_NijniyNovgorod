@@ -108,6 +108,7 @@ while(i<16)
 	InTFil[i].Path = "Channel"+Str.ToString(i+1)+".InTFil";
 	InConvers[i].Path = "Channel"+Str.ToString(i+1)+".InConvers";
 	InFDead[i].Path = "Channel"+Str.ToString(i+1)+".InFDead";
+	InMask[i].Path = "Channel"+Str.ToString(i+1)+".InMask";
 	OutPerefMin[i].Path = "Channel"+Str.ToString(i+1)+".OutPerefMin";
 	OutPerefMax[i].Path = "Channel"+Str.ToString(i+1)+".OutPerefMax";
 	OutScaleMin[i].Path = "Channel"+Str.ToString(i+1)+".OutScaleMin";
@@ -115,6 +116,11 @@ while(i<16)
 	OutTFil[i].Path = "Channel"+Str.ToString(i+1)+".OutTFil";
 	OutConvers[i].Path = "Channel"+Str.ToString(i+1)+".OutConvers";
 	OutFDead[i].Path = "Channel"+Str.ToString(i+1)+".OutFDead";
+	OutMask[i].Path = "Channel"+Str.ToString(i+1)+".OutMask";
+	OutDiscard[i].Path = "Channel"+Str.ToString(i+1)+".STATUS_BITS.Discarded";
+	OutLElec[i].Path = "Channel"+Str.ToString(i+1)+".STATUS_BITS.LowerElectrical";
+	OutHElec[i].Path = "Channel"+Str.ToString(i+1)+".STATUS_BITS.UpperElectrical";
+	OutElectr[i].Path = "Channel"+Str.ToString(i+1)+".ELECTROVALUE";
 	i += 1;
 }]]>
 			</body>
@@ -160,6 +166,24 @@ while(i<16)
 		<init target="Source" ver="4" ref="hereOpcSource"/>
 	</object>
 	<object access-modifier="private" name="OutFDead" display-name="OutFDead" uuid="5cbf6a2c-854f-47ed-9f3b-442a8510c16e" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+	<object access-modifier="private" name="OutDiscard" display-name="OutDiscard" uuid="22604ed3-f6a0-4633-b819-0ea4be013044" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+	<object access-modifier="private" name="OutLElec" display-name="OutLElec" uuid="c54d6ea1-875c-4947-b466-d61a7c0c83df" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+	<object access-modifier="private" name="OutHElec" display-name="OutHElec" uuid="5bf8fb7b-5860-4095-a430-3fc60a84577b" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+	<object access-modifier="private" name="InMask" display-name="InMask" uuid="c25cc0dd-57d8-4b11-86e0-e579854c0134" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+	<object access-modifier="private" name="OutMask" display-name="OutMask" uuid="4155e536-635e-45fc-a913-6145e1025b0c" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+	<object access-modifier="private" name="OutElectr" display-name="OutElectr" uuid="03fc199f-538f-407e-992a-164cc8398ff3" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4" cardinal="16">
 		<init target="Source" ver="4" ref="hereOpcSource"/>
 	</object>
 </type>
