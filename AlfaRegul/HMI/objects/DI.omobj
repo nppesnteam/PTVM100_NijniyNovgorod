@@ -94,11 +94,12 @@ OpenModuleWindow.Invoke();]]>
 				<![CDATA[i: uint1 = 0;
 while(i<32)
 {
-	VALUE[i].Path = "Channel"+Str.ToString(i+1)+".H";
+	VALUE[i].Path = "Channel"+Str.ToString(i+1)+".HProg";
 	NAME[i].Path = "Channel"+Str.ToString(i+1)+".NAME";
 	KKS[i].Path = "Channel"+Str.ToString(i+1)+".KKS";
 	InInvert[i].Path = "Channel"+Str.ToString(i+1)+".InInvert";
 	OutInvert[i].Path = "Channel"+Str.ToString(i+1)+".OutInvert";
+	OutReal[i].Path = "Channel"+Str.ToString(i+1)+".H";
 	i += 1;
 }]]>
 			</body>
@@ -108,6 +109,9 @@ while(i<32)
 		<init target="Source" ver="4" ref="hereOpcSource"/>
 	</object>
 	<object access-modifier="private" name="OutInvert" display-name="OutInvert" uuid="d2e9f645-537c-458b-a7df-ea8e1829d340" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4" cardinal="32">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+	</object>
+	<object access-modifier="private" name="OutReal" display-name="OutReal" uuid="a02bcd64-14f7-4bd1-a0e2-b7e9b987148b" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4" cardinal="32">
 		<init target="Source" ver="4" ref="hereOpcSource"/>
 	</object>
 </type>

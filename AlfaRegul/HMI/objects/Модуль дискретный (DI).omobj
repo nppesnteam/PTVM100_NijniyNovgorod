@@ -78,7 +78,7 @@ refDI.isOpened = true;]]>
 		<designed target="Opacity" value="1" ver="4"/>
 		<designed target="Enabled" value="true" ver="4"/>
 		<designed target="Tooltip" value="" ver="4"/>
-		<designed target="Width" value="700" ver="4"/>
+		<designed target="Width" value="840" ver="4"/>
 		<designed target="Height" value="20" ver="4"/>
 		<designed target="RoundingRadius" value="0" ver="4"/>
 		<designed target="PenColor" value="4278190080" ver="4"/>
@@ -266,6 +266,42 @@ refDI.isOpened = true;]]>
 				<designed target="TextAlignment" value="132" ver="4"/>
 			</object>
 		</object>
+		<object access-modifier="private" name="Column_6" display-name="Column_6" uuid="b972645e-7de0-4051-8a36-60b511041299" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+			<designed target="X" value="750" ver="4"/>
+			<designed target="Y" value="0" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="90" ver="4"/>
+			<designed target="Height" value="20" ver="4"/>
+			<designed target="RoundingRadius" value="0" ver="4"/>
+			<designed target="PenColor" value="4278190080" ver="4"/>
+			<designed target="PenStyle" value="1" ver="4"/>
+			<designed target="PenWidth" value="1" ver="4"/>
+			<designed target="BrushColor" value="4278190080" ver="4"/>
+			<designed target="BrushStyle" value="0" ver="4"/>
+			<object access-modifier="private" name="txt" display-name="txt" uuid="bd9866be-eda3-4fbe-a972-b34e96d152fb" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+				<designed target="X" value="10" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="70" ver="4"/>
+				<designed target="Height" value="20" ver="4"/>
+				<designed target="Text" value="Канал" ver="4"/>
+				<designed target="Font" value="Arial,8,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
+				<designed target="FontColor" value="4278190080" ver="4"/>
+				<designed target="TextAlignment" value="132" ver="4"/>
+			</object>
+		</object>
 	</object>
 	<object access-modifier="private" name="Row" display-name="Row" uuid="c78bbee8-0bad-4227-8508-1e0e468da540" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4" cardinal="32">
 		<designed target="X" value="0" ver="4"/>
@@ -277,7 +313,7 @@ refDI.isOpened = true;]]>
 		<designed target="Opacity" value="1" ver="4"/>
 		<designed target="Enabled" value="true" ver="4"/>
 		<designed target="Tooltip" value="" ver="4"/>
-		<designed target="Width" value="700" ver="4"/>
+		<designed target="Width" value="840" ver="4"/>
 		<designed target="Height" value="20" ver="4"/>
 		<designed target="RoundingRadius" value="0" ver="4"/>
 		<designed target="PenColor" value="4278190080" ver="4"/>
@@ -444,6 +480,25 @@ else
 				</body>
 			</do-on>
 		</object>
+		<object access-modifier="private" name="Column_6" display-name="Column_6" uuid="b81213ad-aba4-42e3-be99-4cb825c4a3aa" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+			<designed target="X" value="750" ver="4"/>
+			<designed target="Y" value="0" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="90" ver="4"/>
+			<designed target="Height" value="20" ver="4"/>
+			<designed target="RoundingRadius" value="0" ver="4"/>
+			<designed target="PenColor" value="4278190080" ver="4"/>
+			<designed target="PenStyle" value="1" ver="4"/>
+			<designed target="PenWidth" value="1" ver="4"/>
+			<designed target="BrushColor" value="0xff484848" ver="4"/>
+			<designed target="BrushStyle" value="1" ver="4"/>
+		</object>
 	</object>
 	<object access-modifier="private" name="Timer" display-name="Timer" uuid="c76867de-3aab-4896-a6c4-2a73fabc1852" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="4">
 		<designed target="Period" value="50" ver="4"/>
@@ -469,6 +524,14 @@ while (i<32)
 	{ 
 		Row[i].Column_5.BrushColor = 0xff484848;
 	}
+	if (refDI.OutReal[i])
+	{
+		Row[i].Column_6.BrushColor = 0xff55ff00;
+	}
+	else
+	{ 
+		Row[i].Column_6.BrushColor = 0xff484848;
+	}
 	i += 1;
 };]]>
 			</body>
@@ -479,19 +542,35 @@ while (i<32)
 			</body>
 		</do-trace>
 	</object>
-	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="Opened">
-		<body kind="om">
-			<![CDATA[if (unit.Security.AllowSettingsChange.Value==true)
-{
-	here.Width=750;
-	here.WindowWidth=750;
-}
-else
-{
-	here.Width=700;
-	here.WindowWidth=700;
-}]]>
-		</body>
-	</do-on>
+	<do-trace access-modifier="private" target="Width" ver="4">
+		<conditional-expr>
+			<condition>
+				<![CDATA[unit.Security.AllowSettingsChange.Value]]>
+			</condition>
+			<expr>
+				<![CDATA[840]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[700]]>
+			</expr>
+		</default-expr>
+	</do-trace>
+	<do-trace access-modifier="private" target="WindowWidth" ver="4">
+		<conditional-expr>
+			<condition>
+				<![CDATA[unit.Security.AllowSettingsChange.Value]]>
+			</condition>
+			<expr>
+				<![CDATA[840]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[700]]>
+			</expr>
+		</default-expr>
+	</do-trace>
 </type>
 

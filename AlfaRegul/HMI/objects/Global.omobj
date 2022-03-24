@@ -40,22 +40,22 @@
 			<body kind="om">
 				<![CDATA[//инициализация последовательности розжига
 IgnSequence.Clear();
-IgnSequence.AddItem("5,6,7,8");
-IgnSequence.AddItem("5,6,8,7");
-IgnSequence.AddItem("5,7,6,8");
-IgnSequence.AddItem("5,7,8,6");
-IgnSequence.AddItem("6,5,7,8");
-IgnSequence.AddItem("6,5,8,7");
-IgnSequence.AddItem("6,8,5,7");
-IgnSequence.AddItem("6,8,7,5");
-IgnSequence.AddItem("7,8,5,6");
-IgnSequence.AddItem("7,8,6,5");
-IgnSequence.AddItem("7,5,6,8");
-IgnSequence.AddItem("7,5,7,6");
-IgnSequence.AddItem("8,7,5,6");
-IgnSequence.AddItem("8,7,6,5");
-IgnSequence.AddItem("8,6,5,7");
-IgnSequence.AddItem("8,6,7,5");]]>
+IgnSequence.AddItem("3,11,14,6");
+IgnSequence.AddItem("3,14,11,6");
+IgnSequence.AddItem("3,14,6,11");
+IgnSequence.AddItem("3,11,6,14");
+IgnSequence.AddItem("6,14,11,3");
+IgnSequence.AddItem("6,11,14,3");
+IgnSequence.AddItem("6,11,3,14");
+IgnSequence.AddItem("6,14,3,11");
+IgnSequence.AddItem("11,3,6,14");
+IgnSequence.AddItem("11,6,3,14");
+IgnSequence.AddItem("11,6,14,3");
+IgnSequence.AddItem("11,3,14,6");
+IgnSequence.AddItem("14,3,6,11");
+IgnSequence.AddItem("14,6,3,11");
+IgnSequence.AddItem("14,6,11,3");
+IgnSequence.AddItem("14,3,11,6");]]>
 			</body>
 		</do-on>
 	</object>
@@ -81,14 +81,14 @@ if (unit.Security.SecurityContextHMI.CurrentUser!="Гость")
 		<designed target="Active" value="false" ver="4"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnTimer">
 			<body kind="om">
-				<![CDATA[if (String.ToInt4(String.SubString(IgnSequence.Text, counter*2, 1),0)==5)
-	Ign5=true;
+				<![CDATA[if (String.ToInt4(String.SubString(IgnSequence.Text, counter*2, 1),0)==3)
+	Ign3=true;
 if (String.ToInt4(String.SubString(IgnSequence.Text, counter*2, 1),0)==6)
 	Ign6=true;
-	if (String.ToInt4(String.SubString(IgnSequence.Text, counter*2, 1),0)==7)
-	Ign7=true;
-	if (String.ToInt4(String.SubString(IgnSequence.Text, counter*2, 1),0)==8)
-	Ign8=true;
+	if (String.ToInt4(String.SubString(IgnSequence.Text, counter*2, 1),0)==11)
+	Ign11=true;
+	if (String.ToInt4(String.SubString(IgnSequence.Text, counter*2, 1),0)==14)
+	Ign14=true;
 if (counter<3)
 	counter=counter+1;
 else
@@ -105,91 +105,115 @@ else
 		<designed target="Active" value="false" ver="4"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnTimer">
 			<body kind="om">
-				<![CDATA[if (OutSelOil==false)
-{
-if (StopCounter==0)
-{
-	Burn3=false;
-	Burn4=false;
-	Burn9=false;
-	Burn10=false;
-	StopCounter=StopCounter+1;
-} else {
-if (StopCounter==1)
+				<![CDATA[if (StopCounter==0)
 {
 	Burn1=false;
-	Burn2=false;
-	Burn11=false;
-	Burn12=false;
+	Burn9=false;
+	Burn8=false;
+	Burn16=false;
 	StopCounter=StopCounter+1;
-} else {
-if (StopCounter==2)
+}
+else
 {
-	Ign5=false;
-	Ign6=false;
-	Ign7=false;
-	Ign8=false;
-	StopCounter=0;
-	me.Active=false;
-}}}} else {
-	Ign5=false;
-	Ign6=false;
-	Ign7=false;
-	Ign8=false;
-	StopCounter=0;
-	me.Active=false;
+	if (StopCounter==1)
+	{
+		Burn2=false;
+		Burn10=false;
+		Burn7=false;
+		Burn15=false;
+		StopCounter=StopCounter+1;
+	}
+	else
+	{
+		if (StopCounter==2)
+		{
+			Burn4=false;
+			Burn12=false;
+			Burn5=false;
+			Burn13=false;
+			StopCounter=StopCounter+1;
+		}
+		else
+		{
+			if (StopCounter==3)
+			{
+				Ign3=false;
+				Ign6=false;
+				Ign11=false;
+				Ign14=false;
+				StopCounter=0;
+				me.Active=false;
+			}
+		}
+	}
 }]]>
 			</body>
 		</do-on>
 	</object>
 	<object access-modifier="private" name="Burn1" display-name="Burn1" uuid="9aa451f6-d72d-40c8-9f71-22586e6117fd" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
-		<init target="Path" ver="4" value="ROOT.GAS.GROUP3.burn2.Burn.ArmStart"/>
+		<init target="Path" ver="4" value="ROOT.Group1.Burn1.Burn.ArmStart"/>
 	</object>
 	<object access-modifier="private" name="Burn2" display-name="Burn2" uuid="0806cb9d-a64d-4a37-87f7-8474bc1a8a4a" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
-		<init target="Path" ver="4" value="ROOT.GAS.GROUP4.burn2.Burn.ArmStart"/>
+		<init target="Path" ver="4" value="ROOT.Group1.Burn2.Burn.ArmStart"/>
 	</object>
-	<object access-modifier="private" name="Burn3" display-name="Burn3" uuid="c0961365-6751-4d72-b6e4-7de0a4da4771" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+	<object access-modifier="private" name="Burn4" display-name="Burn4" uuid="c0961365-6751-4d72-b6e4-7de0a4da4771" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
-		<init target="Path" ver="4" value="ROOT.GAS.GROUP1.burn3.Burn.ArmStart"/>
+		<init target="Path" ver="4" value="ROOT.Group1.Burn4.Burn.ArmStart"/>
 	</object>
-	<object access-modifier="private" name="Burn4" display-name="Burn4" uuid="94af7e02-d32b-41b3-800d-8ae5a51e7c2d" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+	<object access-modifier="private" name="Burn5" display-name="Burn5" uuid="94af7e02-d32b-41b3-800d-8ae5a51e7c2d" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
-		<init target="Path" ver="4" value="ROOT.GAS.GROUP2.burn1.Burn.ArmStart"/>
+		<init target="Path" ver="4" value="ROOT.Group2.Burn1.Burn.ArmStart"/>
 	</object>
-	<object access-modifier="private" name="Burn9" display-name="Burn9" uuid="cc7bf71b-f70e-440d-8163-096784e2b127" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+	<object access-modifier="private" name="Burn7" display-name="Burn7" uuid="cc7bf71b-f70e-440d-8163-096784e2b127" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
-		<init target="Path" ver="4" value="ROOT.GAS.GROUP4.burn3.Burn.ArmStart"/>
+		<init target="Path" ver="4" value="ROOT.Group2.Burn3.Burn.ArmStart"/>
 	</object>
-	<object access-modifier="private" name="Burn10" display-name="Burn10" uuid="2d09ba61-5f56-4c72-ac60-c96ce4611e32" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+	<object access-modifier="private" name="Burn8" display-name="Burn8" uuid="2d09ba61-5f56-4c72-ac60-c96ce4611e32" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
-		<init target="Path" ver="4" value="ROOT.GAS.GROUP3.burn1.Burn.ArmStart"/>
+		<init target="Path" ver="4" value="ROOT.Group2.Burn4.Burn.ArmStart"/>
 	</object>
-	<object access-modifier="private" name="Burn11" display-name="Burn11" uuid="a55a4082-a997-44f0-a242-e73f4dc038ef" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+	<object access-modifier="private" name="Burn9" display-name="Burn9" uuid="a55a4082-a997-44f0-a242-e73f4dc038ef" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
-		<init target="Path" ver="4" value="ROOT.GAS.GROUP2.burn2.Burn.ArmStart"/>
+		<init target="Path" ver="4" value="ROOT.Group3.Burn1.Burn.ArmStart"/>
 	</object>
-	<object access-modifier="private" name="Burn12" display-name="Burn12" uuid="763bc350-f6cb-4905-8aaa-eb5649b0e9eb" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+	<object access-modifier="private" name="Burn10" display-name="Burn10" uuid="763bc350-f6cb-4905-8aaa-eb5649b0e9eb" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
-		<init target="Path" ver="4" value="ROOT.GAS.GROUP1.burn2.Burn.ArmStart"/>
+		<init target="Path" ver="4" value="ROOT.Group3.Burn2.Burn.ArmStart"/>
+	</object>
+	<object access-modifier="private" name="Burn12" display-name="Burn12" uuid="debba81d-3b34-4bea-9889-0fc6f6ec7b77" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.Group3.Burn4.Burn.ArmStart"/>
+	</object>
+	<object access-modifier="private" name="Burn13" display-name="Burn13" uuid="ddfb1242-0723-4d15-b9f8-ba4f97302569" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.Group4.Burn1.Burn.ArmStart"/>
+	</object>
+	<object access-modifier="private" name="Burn15" display-name="Burn15" uuid="f9f84313-bb5f-41c7-aa01-4fad1b8cde54" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.Group4.Burn3.Burn.ArmStart"/>
+	</object>
+	<object access-modifier="private" name="Burn16" display-name="Burn16" uuid="c7bf1614-1055-4fb3-997f-645dbf532bda" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.Group4.Burn4.Burn.ArmStart"/>
 	</object>
 	<object access-modifier="private" name="StopCounter" display-name="StopCounter" uuid="9f60704b-838b-41c7-a18a-6be7999d7f52" base-type="notifying_int4" base-type-id="5ccca629-a45d-46c8-a56c-83ecde8126f7" ver="4"/>
-	<object access-modifier="private" name="Ign5" display-name="Ign5" uuid="f17712ad-a8a4-42c6-9d51-992928965a5d" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+	<object access-modifier="private" name="Ign3" display-name="Ign3" uuid="f17712ad-a8a4-42c6-9d51-992928965a5d" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
-		<init target="Path" ver="4" value="ROOT.GAS.GROUP4.burn1.Burn.ArmStart"/>
+		<init target="Path" ver="4" value="ROOT.Group1.Burn3.Burn.ArmStart"/>
 	</object>
 	<object access-modifier="private" name="Ign6" display-name="Ign6" uuid="2cb86660-1d7c-401d-b5e7-81b05ea2b765" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
-		<init target="Path" ver="4" value="ROOT.GAS.GROUP2.burn3.Burn.ArmStart"/>
+		<init target="Path" ver="4" value="ROOT.Group2.Burn2.Burn.ArmStart"/>
 	</object>
-	<object access-modifier="private" name="Ign7" display-name="Ign7" uuid="819c6126-b85c-4461-906d-9310511c9dd1" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+	<object access-modifier="private" name="Ign11" display-name="Ign11" uuid="819c6126-b85c-4461-906d-9310511c9dd1" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
-		<init target="Path" ver="4" value="ROOT.GAS.GROUP1.burn1.Burn.ArmStart"/>
+		<init target="Path" ver="4" value="ROOT.Group3.Burn3.Burn.ArmStart"/>
 	</object>
-	<object access-modifier="private" name="Ign8" display-name="Ign8" uuid="a4e2654f-862b-470e-aced-5573a1b53b1f" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+	<object access-modifier="private" name="Ign14" display-name="Ign14" uuid="a4e2654f-862b-470e-aced-5573a1b53b1f" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
-		<init target="Path" ver="4" value="ROOT.GAS.GROUP3.burn3.Burn.ArmStart"/>
+		<init target="Path" ver="4" value="ROOT.Group4.Burn2.Burn.ArmStart"/>
 	</object>
 	<object access-modifier="private" name="hereOpcSource" display-name="hereOpcSource" uuid="3efaf9b3-66e9-4f91-84bf-a0ca7d2fa88a" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
 		<designed target="Active" value="false" ver="4"/>

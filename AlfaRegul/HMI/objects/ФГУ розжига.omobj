@@ -9,7 +9,7 @@
 	<designed target="Enabled" value="true" ver="4"/>
 	<designed target="Tooltip" value="" ver="4"/>
 	<designed target="Width" value="300" ver="4"/>
-	<designed target="Height" value="250" ver="4"/>
+	<designed target="Height" value="155" ver="4"/>
 	<designed target="PenColor" value="4278190080" ver="4"/>
 	<designed target="PenStyle" value="0" ver="4"/>
 	<designed target="PenWidth" value="1" ver="4"/>
@@ -18,7 +18,7 @@
 	<designed target="WindowX" value="0" ver="4"/>
 	<designed target="WindowY" value="0" ver="4"/>
 	<designed target="WindowWidth" value="300" ver="4"/>
-	<designed target="WindowHeight" value="250" ver="4"/>
+	<designed target="WindowHeight" value="155" ver="4"/>
 	<designed target="WindowCaption" value="ФГУ РОЗЖИГА" ver="4"/>
 	<designed target="ShowWindowCaption" value="true" ver="4"/>
 	<designed target="ShowWindowMinimize" value="false" ver="4"/>
@@ -214,7 +214,10 @@
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="SelectedChanged">
 			<body kind="om">
 				<![CDATA[if ((OutSelSequence!=me.SelectedIndex)&&(me.SelectedIndex!=-1))
-	InSelSequence=TypeConvert.ToInt2(me.SelectedIndex);]]>
+{
+	InSelSequence=TypeConvert.ToInt2(me.SelectedIndex);
+	bSel[SelectedIndex]=true;
+}]]>
 			</body>
 		</do-on>
 	</object>
@@ -342,22 +345,22 @@
 	<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Opened">
 		<body kind="om">
 			<![CDATA[IgnSequence.Clear();
-IgnSequence.AddItem("5,6,7,8");
-IgnSequence.AddItem("5,6,8,7");
-IgnSequence.AddItem("5,7,6,8");
-IgnSequence.AddItem("5,7,8,6");
-IgnSequence.AddItem("6,5,7,8");
-IgnSequence.AddItem("6,5,8,7");
-IgnSequence.AddItem("6,8,5,7");
-IgnSequence.AddItem("6,8,7,5");
-IgnSequence.AddItem("7,8,5,6");
-IgnSequence.AddItem("7,8,6,5");
-IgnSequence.AddItem("7,5,6,8");
-IgnSequence.AddItem("7,5,7,6");
-IgnSequence.AddItem("8,7,5,6");
-IgnSequence.AddItem("8,7,6,5");
-IgnSequence.AddItem("8,6,5,7");
-IgnSequence.AddItem("8,6,7,5");
+IgnSequence.AddItem("3,11,14,6");
+IgnSequence.AddItem("3,14,11,6");
+IgnSequence.AddItem("3,14,6,11");
+IgnSequence.AddItem("3,11,6,14");
+IgnSequence.AddItem("6,14,11,3");
+IgnSequence.AddItem("6,11,14,3");
+IgnSequence.AddItem("6,11,3,14");
+IgnSequence.AddItem("6,14,3,11");
+IgnSequence.AddItem("11,3,6,14");
+IgnSequence.AddItem("11,6,3,14");
+IgnSequence.AddItem("11,6,14,3");
+IgnSequence.AddItem("11,3,14,6");
+IgnSequence.AddItem("14,3,6,11");
+IgnSequence.AddItem("14,6,3,11");
+IgnSequence.AddItem("14,6,11,3");
+IgnSequence.AddItem("14,3,11,6");
 IgnSequence.SelectedIndex=OutSelSequence;
 unit.Global.isFGUOpened=true;]]>
 		</body>
@@ -601,6 +604,37 @@ unit.Global.isFGUOpened=true;]]>
 	<object access-modifier="private" name="BoilerWork" display-name="BoilerWork" uuid="2a209cea-9e32-4f19-ae09-b87bbfc6a1ce" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
 		<init target="Path" ver="4" value="ROOT.BOILER.BoilerInWork"/>
+	</object>
+	<object access-modifier="private" name="iNum_1" display-name="iNum_1" uuid="1640b409-0116-4e5f-85a6-571cd5836302" base-type="OpcItemInt2" base-type-id="01786030-8d4e-41cb-a7fb-fbaa0e344f13" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+	</object>
+	<object access-modifier="private" name="iNum_2" display-name="iNum_2" uuid="3bedda97-f9a2-442f-a18a-7e8f883bf0f5" base-type="OpcItemInt2" base-type-id="01786030-8d4e-41cb-a7fb-fbaa0e344f13" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+	</object>
+	<object access-modifier="private" name="iNum_3" display-name="iNum_3" uuid="53dbe720-7feb-4821-9bd3-e27d5db1c4ce" base-type="OpcItemInt2" base-type-id="01786030-8d4e-41cb-a7fb-fbaa0e344f13" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+	</object>
+	<object access-modifier="private" name="iNum_4" display-name="iNum_4" uuid="4c039f8b-ddb0-4a6f-aeae-24078df6cbf9" base-type="OpcItemInt2" base-type-id="01786030-8d4e-41cb-a7fb-fbaa0e344f13" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+	</object>
+	<object access-modifier="private" name="Initializer" display-name="Initializer" uuid="034e29ac-db9d-412f-8ef2-84722c7110a9" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="4">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Initialized">
+			<body kind="om">
+				<![CDATA[i: uint1 = 0;
+while(i<16)
+{
+	iNum_1[i].Path="ROOT.IgnSequence.Sequence"+String.ToString(i+1)+".Ign1";
+	iNum_2[i].Path="ROOT.IgnSequence.Sequence"+String.ToString(i+1)+".Ign2";
+	iNum_3[i].Path="ROOT.IgnSequence.Sequence"+String.ToString(i+1)+".Ign3";
+	iNum_4[i].Path="ROOT.IgnSequence.Sequence"+String.ToString(i+1)+".Ign4";
+	bSel[i].Path="ROOT.IgnSequence.Sequence"+String.ToString(i+1)+".InbSel";
+	i+=1;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="bSel" display-name="bSel" uuid="4bff7b72-347e-4296-898d-6698e5d68ca2" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4" cardinal="16">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
 	</object>
 </type>
 

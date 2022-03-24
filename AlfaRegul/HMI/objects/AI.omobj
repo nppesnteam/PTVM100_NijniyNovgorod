@@ -44,6 +44,7 @@
 					</expr>
 				</init>
 				<init target="refAI" ver="4" ref="here"/>
+				<designed target="ShowWindowMinimize" value="false" ver="4"/>
 			</object>
 		</do-on>
 		<do-trace access-modifier="private" target="Enabled" ver="4">
@@ -61,9 +62,17 @@
 		<body kind="om">
 			<![CDATA[mX = TypeConvert.ToFloat(ScreenX(MouseX, MouseY));
 mY = TypeConvert.ToFloat(ScreenY(MouseX, MouseY));
-if (mX+700>1920)
+if (unit.Security.AllowSettingsChange.Value)
+	if (mX+850>1920)
+	{
+		mX = TypeConvert.ToInt4(1920-860);
+	}
+else
 {
-	mX = TypeConvert.ToInt4(1920-710);
+	if (mX+700>1920)
+	{
+		mX = TypeConvert.ToInt4(1920-710);
+	}
 }
 if (mY+370>1080)
 {

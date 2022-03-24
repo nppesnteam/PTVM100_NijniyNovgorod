@@ -294,6 +294,18 @@
     <nodeId>Application.GVL.IsDefaultPlc</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Server.sRedMode</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PLC_PRG.wsModeDescription</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Server.iRedMode</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PLC_PRG.mode</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel1.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -310,6 +322,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[0].bMask_0</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel1.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fPE301</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel2.VALUE</node-path>
@@ -330,6 +348,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[0].bMask_1</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel2.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fPE302</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel3.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -346,6 +370,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[0].bMask_2</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel3.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fTE303</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel4.VALUE</node-path>
@@ -366,6 +396,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[0].bMask_3</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel4.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fPE304</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel5.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -382,6 +418,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[0].bMask_4</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel5.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fPE305</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel6.VALUE</node-path>
@@ -402,6 +444,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[0].bMask_5</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel6.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fPE306</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel7.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -418,6 +466,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[0].bMask_6</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel7.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fTE307</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel8.VALUE</node-path>
@@ -438,6 +492,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[0].bMask_7</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel8.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fPE308</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel9.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -454,6 +514,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[0].bMask_8</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel9.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fPE309</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel10.VALUE</node-path>
@@ -474,6 +540,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[0].bMask_9</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel10.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fTE310</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel11.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -490,6 +562,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[0].bMask_10</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel11.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fQE311</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel12.VALUE</node-path>
@@ -510,6 +588,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[0].bMask_11</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel12.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fPE312</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel13.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -526,6 +610,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[0].bMask_12</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel13.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fPE313</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel14.VALUE</node-path>
@@ -546,6 +636,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[0].bMask_13</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel14.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fTE314</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel15.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -562,6 +658,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[0].bMask_14</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel15.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fPE315</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel16.VALUE</node-path>
@@ -582,6 +684,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[0].bMask_15</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel16.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fREZ316</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel1.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -598,6 +706,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[1].bMask_0</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel1.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fTE317</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel2.VALUE</node-path>
@@ -618,6 +732,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[1].bMask_1</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel2.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fTE318</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel3.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -634,6 +754,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[1].bMask_2</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel3.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fPE319</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel4.VALUE</node-path>
@@ -654,6 +780,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[1].bMask_3</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel4.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fPE320</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel5.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -670,6 +802,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[1].bMask_4</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel5.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fBE321</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel6.VALUE</node-path>
@@ -690,6 +828,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[1].bMask_5</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel6.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fAM322</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel7.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -706,6 +850,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[1].bMask_6</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel7.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fAM323</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel8.VALUE</node-path>
@@ -726,6 +876,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[1].bMask_7</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel8.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fAM324</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel9.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -742,6 +898,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[1].bMask_8</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel9.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fAM325</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel10.VALUE</node-path>
@@ -762,6 +924,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[1].bMask_9</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel10.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fREZ326</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel11.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -778,6 +946,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[1].bMask_10</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel11.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fREZ327</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel12.VALUE</node-path>
@@ -798,6 +972,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[1].bMask_11</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel12.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fREZ328</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel13.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -814,6 +994,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[1].bMask_12</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel13.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fREZ329</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel14.VALUE</node-path>
@@ -834,6 +1020,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[1].bMask_13</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel14.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fREZ330</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel15.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -852,6 +1044,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[1].bMask_14</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel15.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fREZ331</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel16.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -868,6 +1066,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[1].bMask_15</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel16.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fREZ332</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.DI.Module1.Channel1.Invert</node-path>
@@ -1904,6 +2108,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[2].bMask_0</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel1.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fAM301</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel2.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -1920,6 +2130,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[2].bMask_1</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel2.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fPE302</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel3.VALUE</node-path>
@@ -1940,6 +2156,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[2].bMask_2</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel3.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fPE303</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel4.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -1956,6 +2178,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[2].bMask_3</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel4.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fPE304</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel5.VALUE</node-path>
@@ -1976,6 +2204,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[2].bMask_4</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel5.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fPE305</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel6.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -1992,6 +2226,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[2].bMask_5</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel6.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fPE306</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel7.VALUE</node-path>
@@ -2012,6 +2252,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[2].bMask_6</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel7.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fPE307</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel8.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -2028,6 +2274,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[2].bMask_7</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel8.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fPE308</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel9.VALUE</node-path>
@@ -2048,6 +2300,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[2].bMask_8</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel9.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fPE309</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel10.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -2064,6 +2322,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[2].bMask_9</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel10.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fPE310</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel11.VALUE</node-path>
@@ -2084,6 +2348,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[2].bMask_10</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel11.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fREZ311</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel12.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -2100,6 +2370,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[2].bMask_11</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel12.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fREZ312</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel13.VALUE</node-path>
@@ -2120,6 +2396,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[2].bMask_12</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel13.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fREZ313</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel14.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -2136,6 +2418,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[2].bMask_13</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel14.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fREZ314</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel15.VALUE</node-path>
@@ -2156,6 +2444,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[2].bMask_14</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel15.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fREZ315</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel16.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -2172,6 +2466,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[2].bMask_15</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel16.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fREZ316</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.DI.Module1.Channel1.Invert</node-path>
@@ -2803,6 +3103,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[3].bMask_0</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel1.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fAM301</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel2.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -2819,6 +3125,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[3].bMask_1</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel2.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fPE302</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel3.VALUE</node-path>
@@ -2839,6 +3151,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[3].bMask_2</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel3.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fPE303</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel4.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -2855,6 +3173,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[3].bMask_3</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel4.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fPE304</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel5.VALUE</node-path>
@@ -2875,6 +3199,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[3].bMask_4</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel5.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fPE305</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel6.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -2891,6 +3221,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[3].bMask_5</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel6.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fPE306</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel7.VALUE</node-path>
@@ -2911,6 +3247,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[3].bMask_6</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel7.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fPE307</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel8.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -2927,6 +3269,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[3].bMask_7</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel8.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fPE308</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel9.VALUE</node-path>
@@ -2947,6 +3295,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[3].bMask_8</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel9.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fPE309</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel10.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -2963,6 +3317,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[3].bMask_9</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel10.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fPE310</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel11.VALUE</node-path>
@@ -2983,6 +3343,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[3].bMask_10</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel11.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fREZ311</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel12.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -2999,6 +3365,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[3].bMask_11</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel12.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fREZ312</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel13.VALUE</node-path>
@@ -3019,6 +3391,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[3].bMask_12</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel13.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fREZ313</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel14.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -3035,6 +3413,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[3].bMask_13</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel14.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fREZ314</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel15.VALUE</node-path>
@@ -3055,6 +3439,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[3].bMask_14</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel15.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fREZ315</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel16.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -3071,6 +3461,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[3].bMask_15</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel16.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fREZ316</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.DI.Module1.Channel1.Invert</node-path>
@@ -3702,6 +4098,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[4].bMask_0</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel1.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fAM301</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel2.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -3718,6 +4120,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[4].bMask_1</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel2.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fPE302</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel3.VALUE</node-path>
@@ -3738,6 +4146,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[4].bMask_2</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel3.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fPE303</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel4.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -3754,6 +4168,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[4].bMask_3</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel4.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fPE304</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel5.VALUE</node-path>
@@ -3774,6 +4194,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[4].bMask_4</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel5.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fPE305</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel6.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -3790,6 +4216,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[4].bMask_5</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel6.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fPE306</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel7.VALUE</node-path>
@@ -3810,6 +4242,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[4].bMask_6</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel7.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fPE307</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel8.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -3826,6 +4264,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[4].bMask_7</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel8.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fPE308</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel9.VALUE</node-path>
@@ -3846,6 +4290,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[4].bMask_8</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel9.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fPE309</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel10.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -3862,6 +4312,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[4].bMask_9</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel10.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fPE310</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel11.VALUE</node-path>
@@ -3882,6 +4338,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[4].bMask_10</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel11.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fREZ311</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel12.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -3898,6 +4360,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[4].bMask_11</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel12.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fREZ312</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel13.VALUE</node-path>
@@ -3918,6 +4386,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[4].bMask_12</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel13.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fREZ313</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel14.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -3934,6 +4408,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[4].bMask_13</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel14.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fREZ314</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel15.VALUE</node-path>
@@ -3954,6 +4434,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[4].bMask_14</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel15.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fREZ315</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel16.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -3970,6 +4456,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[4].bMask_15</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel16.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fREZ316</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.DI.Module1.Channel1.Invert</node-path>
@@ -4601,6 +5093,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[5].bMask_0</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel1.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fAM301</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel2.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -4617,6 +5115,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[5].bMask_1</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel2.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fPE302</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel3.VALUE</node-path>
@@ -4637,6 +5141,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[5].bMask_2</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel3.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fPE303</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel4.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -4653,6 +5163,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[5].bMask_3</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel4.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fPE304</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel5.VALUE</node-path>
@@ -4673,6 +5189,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[5].bMask_4</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel5.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fPE305</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel6.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -4689,6 +5211,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[5].bMask_5</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel6.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fPE306</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel7.VALUE</node-path>
@@ -4709,6 +5237,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[5].bMask_6</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel7.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fPE307</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel8.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -4725,6 +5259,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[5].bMask_7</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel8.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fPE308</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel9.VALUE</node-path>
@@ -4745,6 +5285,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[5].bMask_8</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel9.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fPE309</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel10.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -4761,6 +5307,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[5].bMask_9</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel10.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fPE310</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel11.VALUE</node-path>
@@ -4781,6 +5333,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[5].bMask_10</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel11.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fREZ311</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel12.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -4797,6 +5355,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[5].bMask_11</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel12.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fREZ312</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel13.VALUE</node-path>
@@ -4817,6 +5381,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[5].bMask_12</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel13.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fREZ313</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel14.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -4833,6 +5403,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[5].bMask_13</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel14.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fREZ314</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel15.VALUE</node-path>
@@ -4853,6 +5429,12 @@
     <nodeId>Application.PersistentVars.arstMaskAnalInp[5].bMask_14</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel15.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fREZ315</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel16.VALUE</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -4869,6 +5451,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstMaskAnalInp[5].bMask_15</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel16.ELECTROVALUE</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fREZ316</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.DI.Module1.Channel1.Invert</node-path>
@@ -10324,579 +10912,655 @@
     <arrayposition>3</arrayposition>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel1.ELECTROVALUE</node-path>
+    <node-path>ROOT.BurnStartSequence.BurnStep1</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fPE301</nodeId>
+    <nodeId>Application.GVL.arQueueIgnBurn</nodeId>
+    <arrayposition>0</arrayposition>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel2.ELECTROVALUE</node-path>
+    <node-path>ROOT.BurnStartSequence.BurnStep2</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fPE302</nodeId>
+    <nodeId>Application.GVL.arQueueIgnBurn</nodeId>
+    <arrayposition>1</arrayposition>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel3.ELECTROVALUE</node-path>
+    <node-path>ROOT.BurnStartSequence.BurnStep3</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fTE303</nodeId>
+    <nodeId>Application.GVL.arQueueIgnBurn</nodeId>
+    <arrayposition>2</arrayposition>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel4.ELECTROVALUE</node-path>
+    <node-path>ROOT.BurnStartSequence.BurnStep4</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fPE304</nodeId>
+    <nodeId>Application.GVL.arQueueIgnBurn</nodeId>
+    <arrayposition>3</arrayposition>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel5.ELECTROVALUE</node-path>
+    <node-path>ROOT.BurnStartSequence.BurnStep5</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fPE305</nodeId>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[5].iNum</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel6.ELECTROVALUE</node-path>
+    <node-path>ROOT.BurnStartSequence.BurnStep6</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fPE306</nodeId>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[6].iNum</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel7.ELECTROVALUE</node-path>
+    <node-path>ROOT.BurnStartSequence.BurnStep7</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fTE307</nodeId>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[7].iNum</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel8.ELECTROVALUE</node-path>
+    <node-path>ROOT.BurnStartSequence.BurnStep8</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fPE308</nodeId>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[8].iNum</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel9.ELECTROVALUE</node-path>
+    <node-path>ROOT.BurnStartSequence.Err5</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fPE309</nodeId>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[5].bEr</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel10.ELECTROVALUE</node-path>
+    <node-path>ROOT.BurnStartSequence.Err6</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fTE310</nodeId>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[6].bEr</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel11.ELECTROVALUE</node-path>
+    <node-path>ROOT.BurnStartSequence.Err7</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fQE311</nodeId>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[7].bEr</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel12.ELECTROVALUE</node-path>
+    <node-path>ROOT.BurnStartSequence.Err8</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fPE312</nodeId>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[8].bEr</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel13.ELECTROVALUE</node-path>
+    <node-path>ROOT.BurnStartSequence.BurnStep9</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fPE313</nodeId>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[9].iNum</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel14.ELECTROVALUE</node-path>
+    <node-path>ROOT.BurnStartSequence.BurnStep10</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fTE314</nodeId>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[10].iNum</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel15.ELECTROVALUE</node-path>
+    <node-path>ROOT.BurnStartSequence.BurnStep11</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fPE315</nodeId>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[11].iNum</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel16.ELECTROVALUE</node-path>
+    <node-path>ROOT.BurnStartSequence.BurnStep12</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_1.fREZ316</nodeId>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[12].iNum</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel1.ELECTROVALUE</node-path>
+    <node-path>ROOT.BurnStartSequence.BurnStep13</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fTE317</nodeId>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[13].iNum</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel2.ELECTROVALUE</node-path>
+    <node-path>ROOT.BurnStartSequence.BurnStep14</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fTE318</nodeId>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[14].iNum</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel3.ELECTROVALUE</node-path>
+    <node-path>ROOT.BurnStartSequence.BurnStep15</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fPE319</nodeId>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[15].iNum</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel4.ELECTROVALUE</node-path>
+    <node-path>ROOT.BurnStartSequence.BurnStep16</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fPE320</nodeId>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[16].iNum</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel5.ELECTROVALUE</node-path>
+    <node-path>ROOT.BurnStartSequence.Err9</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fBE321</nodeId>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[9].bEr</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel6.ELECTROVALUE</node-path>
+    <node-path>ROOT.BurnStartSequence.Err10</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fAM322</nodeId>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[10].bEr</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel7.ELECTROVALUE</node-path>
+    <node-path>ROOT.BurnStartSequence.Err11</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fAM323</nodeId>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[11].bEr</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel8.ELECTROVALUE</node-path>
+    <node-path>ROOT.BurnStartSequence.Err12</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fAM324</nodeId>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[12].bEr</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel9.ELECTROVALUE</node-path>
+    <node-path>ROOT.BurnStartSequence.Err13</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fAM325</nodeId>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[13].bEr</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel10.ELECTROVALUE</node-path>
+    <node-path>ROOT.BurnStartSequence.Err14</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fREZ326</nodeId>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[14].bEr</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel11.ELECTROVALUE</node-path>
+    <node-path>ROOT.BurnStartSequence.Err15</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fREZ327</nodeId>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[15].bEr</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel12.ELECTROVALUE</node-path>
+    <node-path>ROOT.BurnStartSequence.Err16</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fREZ328</nodeId>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[16].bEr</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel13.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence1.Ign1</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fREZ329</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[1].iNum_1</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel14.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence1.Ign2</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fREZ330</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[1].iNum_2</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel15.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence1.Ign3</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fREZ331</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[1].iNum_3</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel16.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence1.Ign4</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stMainAi2_2.fREZ332</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[1].iNum_4</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel1.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence1.bSel</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fAM301</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[1].bSel</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel2.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence2.Ign1</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fPE302</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[2].iNum_1</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel3.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence2.Ign2</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fPE303</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[2].iNum_2</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel4.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence2.Ign3</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fPE304</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[2].iNum_3</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel5.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence2.Ign4</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fPE305</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[2].iNum_4</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel6.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence2.bSel</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fPE306</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[2].bSel</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel7.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence3.Ign1</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fPE307</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[3].iNum_1</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel8.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence3.Ign2</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fPE308</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[3].iNum_2</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel9.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence3.Ign3</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fPE309</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[3].iNum_3</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel10.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence3.Ign4</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fPE310</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[3].iNum_4</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel11.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence3.bSel</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fREZ311</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[3].bSel</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel12.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence4.Ign1</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fREZ312</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[4].iNum_1</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel13.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence4.Ign2</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fREZ313</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[4].iNum_2</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel14.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence4.Ign3</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fREZ314</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[4].iNum_3</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel15.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence4.Ign4</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fREZ315</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[4].iNum_4</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel16.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence4.bSel</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIAi2_1.fREZ316</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[4].bSel</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel1.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence5.Ign1</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fAM301</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[5].iNum_1</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel2.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence5.Ign2</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fPE302</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[5].iNum_2</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel3.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence5.Ign3</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fPE303</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[5].iNum_3</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel4.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence5.Ign4</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fPE304</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[5].iNum_4</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel5.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence5.bSel</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fPE305</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[5].bSel</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel6.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence6.Ign1</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fPE306</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[6].iNum_1</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel7.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence6.Ign2</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fPE307</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[6].iNum_2</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel8.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence6.Ign3</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fPE308</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[6].iNum_3</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel9.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence6.Ign4</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fPE309</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[6].iNum_4</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel10.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence6.bSel</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fPE310</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[6].bSel</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel11.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence7.Ign1</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fREZ311</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[7].iNum_1</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel12.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence7.Ign2</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fREZ312</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[7].iNum_2</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel13.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence7.Ign3</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fREZ313</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[7].iNum_3</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel14.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence7.Ign4</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fREZ314</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[7].iNum_4</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel15.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence7.bSel</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fREZ315</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[7].bSel</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel16.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence8.Ign1</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIAi2_1.fREZ316</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[8].iNum_1</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel1.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence8.Ign2</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fAM301</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[8].iNum_2</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel2.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence8.Ign3</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fPE302</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[8].iNum_3</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel3.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence8.Ign4</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fPE303</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[8].iNum_4</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel4.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence8.bSel</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fPE304</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[8].bSel</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel5.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence9.Ign1</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fPE305</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[9].iNum_1</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel6.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence9.Ign2</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fPE306</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[9].iNum_2</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel7.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence9.Ign3</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fPE307</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[9].iNum_3</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel8.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence9.Ign4</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fPE308</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[9].iNum_4</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel9.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence9.bSel</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fPE309</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[9].bSel</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel10.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence10.Ign1</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fPE310</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[10].iNum_1</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel11.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence10.Ign2</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fREZ311</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[10].iNum_2</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel12.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence10.Ign3</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fREZ312</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[10].iNum_3</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel13.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence10.Ign4</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fREZ313</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[10].iNum_4</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel14.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence10.bSel</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fREZ314</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[10].bSel</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel15.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence11.Ign1</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fREZ315</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[11].iNum_1</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel16.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence11.Ign2</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIIIAi2_1.fREZ316</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[11].iNum_2</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel1.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence11.Ign3</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fAM301</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[11].iNum_3</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel2.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence11.Ign4</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fPE302</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[11].iNum_4</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel3.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence11.bSel</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fPE303</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[11].bSel</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel4.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence12.Ign1</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fPE304</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[12].iNum_1</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel5.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence12.Ign2</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fPE305</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[12].iNum_2</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel6.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence12.Ign3</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fPE306</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[12].iNum_3</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel7.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence12.Ign4</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fPE307</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[12].iNum_4</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel8.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence12.bSel</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fPE308</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[12].bSel</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel9.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence13.Ign1</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fPE309</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[13].iNum_1</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel10.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence13.Ign2</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fPE310</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[13].iNum_2</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel11.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence13.Ign3</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fREZ311</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[13].iNum_3</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel12.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence13.Ign4</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fREZ312</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[13].iNum_4</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel13.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence13.bSel</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fREZ313</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[13].bSel</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel14.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence14.Ign1</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fREZ314</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[14].iNum_1</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel15.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence14.Ign2</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fREZ315</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[14].iNum_2</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel16.ELECTROVALUE</node-path>
+    <node-path>ROOT.IgnSequence.Sequence14.Ign3</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllAiSensor.stSlaveIVAi2_1.fREZ316</nodeId>
+    <nodeId>Application.PersistentVars.stSelectionSequene[14].iNum_3</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.IgnSequence.Sequence14.Ign4</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.stSelectionSequene[14].iNum_4</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.IgnSequence.Sequence14.bSel</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.stSelectionSequene[14].bSel</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.IgnSequence.Sequence15.Ign1</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.stSelectionSequene[15].iNum_1</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.IgnSequence.Sequence15.Ign2</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.stSelectionSequene[15].iNum_2</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.IgnSequence.Sequence15.Ign3</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.stSelectionSequene[15].iNum_3</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.IgnSequence.Sequence15.Ign4</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.stSelectionSequene[15].iNum_4</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.IgnSequence.Sequence15.bSel</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.stSelectionSequene[15].bSel</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.IgnSequence.Sequence16.Ign1</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.stSelectionSequene[16].iNum_1</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.IgnSequence.Sequence16.Ign2</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.stSelectionSequene[16].iNum_2</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.IgnSequence.Sequence16.Ign3</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.stSelectionSequene[16].iNum_3</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.IgnSequence.Sequence16.Ign4</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.stSelectionSequene[16].iNum_4</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.IgnSequence.Sequence16.bSel</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.stSelectionSequene[16].bSel</nodeId>
   </item>
 </root>

@@ -7011,28 +7011,28 @@
                     <object name="Channel6" aspect="Aspects.PLC_Aspect" base-type="Types.AI.PLC_View" xmlns="automation.control" uuid="3319f670-d08d-4af8-b86b-806bb8fcf8ae">
                       <attribute type="Attributes.ALIAS" value=" " xmlns="system" />
                       <attribute type="Attributes.DIGITS" value="0" xmlns="system" />
-                      <attribute type="Attributes.EU" value="  " xmlns="system" />
+                      <attribute type="Attributes.EU" value="%" xmlns="system" />
                       <attribute type="unit.System.Attributes.Title" value="1N460MA01" xmlns="system" />
                       <attribute type="unit.System.Attributes.Description" value="Датчик положения МЭО регулирующей заслонки газа" xmlns="system" />
                     </object>
                     <object name="Channel7" aspect="Aspects.PLC_Aspect" base-type="Types.AI.PLC_View" xmlns="automation.control" uuid="ac35a8c0-8660-49e9-a3c3-16635646b8af">
                       <attribute type="Attributes.ALIAS" value=" " xmlns="system" />
                       <attribute type="Attributes.DIGITS" value="0" xmlns="system" />
-                      <attribute type="Attributes.EU" value=" " xmlns="system" />
+                      <attribute type="Attributes.EU" value="%" xmlns="system" />
                       <attribute type="unit.System.Attributes.Title" value="1N815MA01" xmlns="system" />
                       <attribute type="unit.System.Attributes.Description" value="Датчик положения МЭО регулирующей заслонки резервного топлива" xmlns="system" />
                     </object>
                     <object name="Channel8" aspect="Aspects.PLC_Aspect" base-type="Types.AI.PLC_View" xmlns="automation.control" uuid="2279e068-e626-431f-8268-65084341c515">
                       <attribute type="Attributes.ALIAS" value=" " xmlns="system" />
                       <attribute type="Attributes.DIGITS" value="0" xmlns="system" />
-                      <attribute type="Attributes.EU" value=" " xmlns="system" />
+                      <attribute type="Attributes.EU" value="%" xmlns="system" />
                       <attribute type="unit.System.Attributes.Title" value="1N400MA01" xmlns="system" />
                       <attribute type="unit.System.Attributes.Description" value="Датчик положения МЭО регулирующей заслонки разрежения А" xmlns="system" />
                     </object>
                     <object name="Channel9" aspect="Aspects.PLC_Aspect" base-type="Types.AI.PLC_View" xmlns="automation.control" uuid="4ace515e-d599-426f-962b-8940d27178b8">
                       <attribute type="Attributes.ALIAS" value=" " xmlns="system" />
                       <attribute type="Attributes.DIGITS" value="0" xmlns="system" />
-                      <attribute type="Attributes.EU" value=" " xmlns="system" />
+                      <attribute type="Attributes.EU" value="%" xmlns="system" />
                       <attribute type="unit.System.Attributes.Title" value="1N400MA02" xmlns="system" />
                       <attribute type="unit.System.Attributes.Description" value="Датчик положения МЭО регулирующей заслонки разрежения В" xmlns="system" />
                     </object>
@@ -10847,6 +10847,25 @@
                 <attribute type="unit.System.Attributes.Description" value="Давление фиксированное между ПЗК группы горелок" xmlns="system" />
               </object>
             </object>
+            <object name="BurnStartSequence" uuid="42dbbc9a-6bdd-4c7b-80eb-d304821c7f31" base-type="Types.BurnSequence.PLC_View" aspect="Aspects.PLC_Aspect" />
+            <object name="IgnSequence" uuid="65b78f12-c5a7-4c13-9bea-b332f9d34eea">
+              <object name="Sequence1" uuid="846510fc-a3f3-4a59-a97b-026f2aa4e9ed" base-type="Types.IgnSequence.PLC_View" aspect="Aspects.PLC_Aspect" />
+              <object name="Sequence2" base-type="Types.IgnSequence.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="915526b6-2365-4956-81a5-642e98e60d47" />
+              <object name="Sequence3" base-type="Types.IgnSequence.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="8394b1c5-31a6-4494-ba10-b369c97e9563" />
+              <object name="Sequence4" base-type="Types.IgnSequence.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="32e5dfd0-716e-4a4b-8930-ca63831cfa45" />
+              <object name="Sequence5" base-type="Types.IgnSequence.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="f28f31bc-1520-46aa-96e4-c3f447ab90dc" />
+              <object name="Sequence6" base-type="Types.IgnSequence.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="db9caf5f-4983-45b8-91a7-cbb4ecbe0863" />
+              <object name="Sequence7" base-type="Types.IgnSequence.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="8ecca007-851e-4cd8-8a04-cde713ddadb6" />
+              <object name="Sequence8" base-type="Types.IgnSequence.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="e430bd16-271f-475f-b91c-4988f172bc2d" />
+              <object name="Sequence9" base-type="Types.IgnSequence.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="f0b5476e-4907-4f1f-bf6b-66fd2501de31" />
+              <object name="Sequence10" base-type="Types.IgnSequence.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="3904de53-0c55-4359-8107-292903b228f0" />
+              <object name="Sequence11" base-type="Types.IgnSequence.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="a87fceae-e49f-46f6-ac2e-9ebc750c1daf" />
+              <object name="Sequence12" base-type="Types.IgnSequence.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="0128f324-c6b6-4373-8a3d-655ade9334d6" />
+              <object name="Sequence13" base-type="Types.IgnSequence.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="23013245-7a1b-4353-8d01-bfa785852c30" />
+              <object name="Sequence14" base-type="Types.IgnSequence.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="ff7b9bdf-9f76-4830-b5e4-558173c1ac72" />
+              <object name="Sequence15" base-type="Types.IgnSequence.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="e6cc3bdc-5100-497f-8288-218cd9ed3387" />
+              <object name="Sequence16" base-type="Types.IgnSequence.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="08fadc58-8243-466c-876f-b27a3a172ef2" />
+            </object>
           </object>
         </application-object>
         <opcua-server name="OpcUaServer" tag-map="PLC_App.OpcUaAddressMap" endpoint-name="regul_ua_server" port="4840" xmlns="automation.opc" uuid="a70f9f03-d20e-483f-b37e-37befa79388b" />
@@ -12747,108 +12766,108 @@ Channel32.HProg=Math.TestBit(StateProg.State,31);</property>
                 </handler>
               </ct:object>
             </ct:object>
-            <ct:object name="DO" uuid="73aaccf1-18a2-427f-8b58-e3a25eddf90a" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO" aspect="Aspects.IOS_Aspect">
-              <ct:object name="Module1" uuid="b6934122-c8df-47cc-8d38-cb98040987e6" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1" aspect="Aspects.IOS_Aspect">
-                <ct:object name="Channel1" uuid="ab853e8d-12ef-47d5-a958-96cc81566d87" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel1" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+            <ct:object name="DO" uuid="a10b1042-066c-4895-b8dc-b70bccd92fa5" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO" aspect="Aspects.IOS_Aspect">
+              <ct:object name="Module1" uuid="30672b01-72ce-4e04-94bf-101d455cd419" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel1" uuid="c64f68f0-e47c-41b1-9444-7ff06a07f6c5" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel1" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel1" />
                 </ct:object>
-                <ct:object name="Channel2" uuid="6fdb2f52-c010-478a-b62e-337b4b53dfc8" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel2" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel2" uuid="cad1bad9-452a-4a70-a6e0-f824e6c56d38" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel2" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel2" />
                 </ct:object>
-                <ct:object name="Channel3" uuid="49ab9a46-bfa2-48c8-8747-11f26145b1fd" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel3" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel3" uuid="8f9bd8b7-16de-4147-9be8-38ba2618e24d" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel3" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel3" />
                 </ct:object>
-                <ct:object name="Channel4" uuid="7b8917d4-96a3-400a-87a6-783a88725c96" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel4" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel4" uuid="6e6d0324-5b99-4e7d-81ea-d6f0c099a669" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel4" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel4" />
                 </ct:object>
-                <ct:object name="Channel5" uuid="1d48036d-f9b8-4a77-a060-2204f814ec22" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel5" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel5" uuid="5e934262-1373-477a-9c7c-a0063485ad0c" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel5" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel5" />
                 </ct:object>
-                <ct:object name="Channel6" uuid="a9bb15d1-5431-4f1d-bc82-340aaf5b77c9" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel6" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel6" uuid="d9df7e6e-e238-4863-a975-0afd49adafd3" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel6" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel6" />
                 </ct:object>
-                <ct:object name="Channel7" uuid="3ae94cde-c2e8-4d16-93a4-f38d94206f44" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel7" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel7" uuid="0404f4a4-8ed9-442d-9f48-44df7a388c84" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel7" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel7" />
                 </ct:object>
-                <ct:object name="Channel8" uuid="5253a794-35ed-4d5c-a6a1-0a563e4dd136" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel8" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel8" uuid="1af88253-41bc-419b-9b57-b38ba97e83d3" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel8" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel8" />
                 </ct:object>
-                <ct:object name="Channel9" uuid="cad51649-aa41-45bf-b5c3-8e5eeb9f0f99" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel9" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel9" uuid="5df8f4cd-103f-4faf-baba-6147ef7ddb61" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel9" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel9" />
                 </ct:object>
-                <ct:object name="Channel10" uuid="5fc300d1-fbd2-42f2-94c1-af6c18c2f0d6" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel10" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel10" uuid="81923e39-a2b3-44c1-b715-41f22c5ee3fe" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel10" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel10" />
                 </ct:object>
-                <ct:object name="Channel11" uuid="90047bd1-e580-4ffb-a109-faa693302343" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel11" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel11" uuid="e8cb846f-b128-4219-99c2-262a46bae087" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel11" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel11" />
                 </ct:object>
-                <ct:object name="Channel12" uuid="f8d27941-fff3-4ada-82e0-0954b1bca960" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel12" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel12" uuid="c91eeb73-c095-44d6-aa06-8c29b23aaf47" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel12" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel12" />
                 </ct:object>
-                <ct:object name="Channel13" uuid="afb152fe-0474-46d1-a28c-86307bb2756b" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel13" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel13" uuid="14aceabb-3b92-42d6-a88c-542bcdb8aa26" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel13" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel13" />
                 </ct:object>
-                <ct:object name="Channel14" uuid="b3991304-4801-448f-9f90-6ffe2370d001" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel14" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel14" uuid="c7accc24-3ed3-44c7-94b4-b8bed9a786d6" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel14" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel14" />
                 </ct:object>
-                <ct:object name="Channel15" uuid="69333dfa-cbe1-4d7b-ac64-5369d46cda5e" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel15" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel15" uuid="a6fc0346-4980-4442-95a6-99dc2f6985f8" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel15" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel15" />
                 </ct:object>
-                <ct:object name="Channel16" uuid="716ac2c7-0165-4513-a7e5-00421c4e29d7" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel16" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel16" uuid="6d3d9f91-b8ba-4586-9fb8-cc148210137b" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel16" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel16" />
                 </ct:object>
-                <ct:object name="Channel17" uuid="31c1e80a-fdbf-4bbd-b061-92bc59474fb4" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel17" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel17" uuid="c66882dd-4699-4b68-b9d2-62a34477c3f9" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel17" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel17" />
                 </ct:object>
-                <ct:object name="Channel18" uuid="8ea00eeb-0fcc-4a33-a215-d6c4e3ba78f6" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel18" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel18" uuid="6779ed8f-9c07-4925-8e63-f3ce6eda9afd" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel18" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel18" />
                 </ct:object>
-                <ct:object name="Channel19" uuid="995f11e9-d7d3-420c-9d95-6435c9a05da1" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel19" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel19" uuid="b2955e90-279a-466e-8760-1823894f3316" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel19" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel19" />
                 </ct:object>
-                <ct:object name="Channel20" uuid="27b64eb1-9e92-41bc-824b-f98bf8882db1" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel20" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel20" uuid="aa50c982-077c-484a-9cd5-c6c1e6e63809" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel20" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel20" />
                 </ct:object>
-                <ct:object name="Channel21" uuid="0411e9b4-76fb-44dc-aac3-85670017c650" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel21" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel21" uuid="8a9d7a0a-4ab1-4588-8980-cf072beba68b" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel21" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel21" />
                 </ct:object>
-                <ct:object name="Channel22" uuid="88b1f956-3305-4036-a790-dfd30d00ae79" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel22" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel22" uuid="a7f936ab-b111-41e2-8722-35ebf63d4550" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel22" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel22" />
                 </ct:object>
-                <ct:object name="Channel23" uuid="939b2c0c-29e7-4004-a4a6-ed386e6a276c" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel23" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel23" uuid="e02aebfb-4d4d-4362-bab7-c975a6888651" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel23" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel23" />
                 </ct:object>
-                <ct:object name="Channel24" uuid="0d46c610-b2b8-480c-a20d-6ead2a8b6352" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel24" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel24" uuid="7b831765-968d-4033-af15-565db33abad6" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel24" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel24" />
                 </ct:object>
-                <ct:object name="Channel25" uuid="a31e7211-ffa5-4f67-be81-f0f068599271" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel25" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel25" uuid="7a23a23d-3976-4bfc-912d-51a0691f40ea" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel25" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel25" />
                 </ct:object>
-                <ct:object name="Channel26" uuid="881d3838-83b3-4b2d-92af-fcaba935f86e" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel26" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel26" uuid="38d5c8d7-4f50-4f57-8b7b-2fdb8cebda36" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel26" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel26" />
                 </ct:object>
-                <ct:object name="Channel27" uuid="b86869c3-063f-4856-82b7-955c65e1c34c" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel27" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel27" uuid="2492bf01-aac8-42a3-a4dc-d2e4b41b1f9d" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel27" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel27" />
                 </ct:object>
-                <ct:object name="Channel28" uuid="b6f28d3f-0d50-4be6-bcf9-b749f038122c" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel28" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel28" uuid="3fe498e3-8098-474f-b3bc-4f5c57fe775c" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel28" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel28" />
                 </ct:object>
-                <ct:object name="Channel29" uuid="5690c747-ca41-4ac2-95ab-fca31d69a876" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel29" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel29" uuid="119652a4-4d07-4539-bf98-34e554885a3d" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel29" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel29" />
                 </ct:object>
-                <ct:object name="Channel30" uuid="647888af-2dd8-4767-b509-3de935efbab4" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel30" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel30" uuid="8b4ef6a6-de89-46b3-bd67-2ea392acdcc6" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel30" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel30" />
                 </ct:object>
-                <ct:object name="Channel31" uuid="dcb28459-1ad9-4399-a04f-76fefb025375" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel31" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel31" uuid="26ad84af-dd4c-410e-b2ca-7d1a9ac82b1a" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel31" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel31" />
                 </ct:object>
-                <ct:object name="Channel32" uuid="c7c50e5b-db3b-464b-a10f-a2ba29460c8e" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel32" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel32" uuid="482a66cb-7488-4381-a03f-8ec0c93cf7a0" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel32" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.Channel32" />
                 </ct:object>
-                <object name="State" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.State" base-type="Types.dwState.IOS_View" aspect="Aspects.IOS_Aspect" xmlns="automation.control" uuid="f6a3810b-6938-4fb6-b0f9-84f3793a5df8">
-                  <init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group1.DO.Module1.State" xmlns="automation.reference" />
-                </object>
-                <handler name="StateUnpack" xmlns="automation.control" uuid="e545e2b8-1396-423c-a791-ca380e616996">
+                <ct:object name="State" uuid="488e935e-dbc9-4abf-a36a-21055d094a13" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.State" base-type="Types.dwState.IOS_View" aspect="Aspects.IOS_Aspect">
+                  <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group2.DO.Module1.State" />
+                </ct:object>
+                <handler name="StateUnpack" xmlns="automation.control" uuid="f53fec90-785b-4012-b95d-830eeed323a8">
                   <property name="source-code" xmlns="system">Channel1.H=Math.TestBit(State.State,0);
 Channel2.H=Math.TestBit(State.State,1);
 Channel3.H=Math.TestBit(State.State,2);
@@ -13289,108 +13308,108 @@ Channel32.HProg=Math.TestBit(StateProg.State,31);</property>
                 </handler>
               </ct:object>
             </ct:object>
-            <ct:object name="DO" uuid="0096cb51-c778-4f8f-85b8-a7fdbd5b9a1e" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO" aspect="Aspects.IOS_Aspect">
-              <ct:object name="Module1" uuid="51aacaa3-eb70-4fc3-adb0-076190dffb7c" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1" aspect="Aspects.IOS_Aspect">
-                <ct:object name="Channel1" uuid="2ef66069-7543-4efc-8630-eaa270107c9d" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel1" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+            <ct:object name="DO" uuid="5c3895e4-168e-4d61-88c2-824217e0ce92" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO" aspect="Aspects.IOS_Aspect">
+              <ct:object name="Module1" uuid="915d5b55-f12f-4e6e-9625-d787bb1bbb21" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel1" uuid="5bd72449-789e-4f2a-a3ac-5d943040b1f0" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel1" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel1" />
                 </ct:object>
-                <ct:object name="Channel2" uuid="eb850f21-8f76-48d0-a061-ff8dd2a8f74f" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel2" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel2" uuid="3c71212c-43f8-4e8b-ad12-1af4831ff106" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel2" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel2" />
                 </ct:object>
-                <ct:object name="Channel3" uuid="88f148e2-713b-4001-b562-a4c6a577e246" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel3" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel3" uuid="1702cd10-4b68-4785-aeb0-7f736f894d9c" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel3" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel3" />
                 </ct:object>
-                <ct:object name="Channel4" uuid="e55d4c08-2690-458c-8930-0f30c06badf1" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel4" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel4" uuid="8ed7af31-58e5-429d-bb8e-8f1d78ae9815" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel4" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel4" />
                 </ct:object>
-                <ct:object name="Channel5" uuid="124dc990-2f0e-4816-842c-a6900e1a9339" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel5" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel5" uuid="6e542cb6-5603-4f8a-8989-f4b30748af6c" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel5" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel5" />
                 </ct:object>
-                <ct:object name="Channel6" uuid="5d885e4d-4af0-4167-bd7f-7f330c592e9d" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel6" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel6" uuid="8265d884-21c1-4cbd-82b2-251ba1a43846" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel6" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel6" />
                 </ct:object>
-                <ct:object name="Channel7" uuid="f543a205-977b-4284-8058-8b6e63235d42" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel7" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel7" uuid="a361a257-0a0c-4cba-aa20-89d3af20ae5a" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel7" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel7" />
                 </ct:object>
-                <ct:object name="Channel8" uuid="75811915-272d-42d2-9ef6-7df6b435922b" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel8" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel8" uuid="6eb20eb5-b50b-4a17-bf6a-bb4530b034a5" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel8" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel8" />
                 </ct:object>
-                <ct:object name="Channel9" uuid="072e7f30-b2a9-41af-bc7c-b6e575d4fcca" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel9" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel9" uuid="d878667e-e07a-4ce3-9d3b-187f5b4ff17c" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel9" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel9" />
                 </ct:object>
-                <ct:object name="Channel10" uuid="2f5ccb10-053c-4574-921a-042ea8e9a4a2" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel10" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel10" uuid="ec0b65f6-69d3-448a-9f5c-200ee5b3415f" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel10" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel10" />
                 </ct:object>
-                <ct:object name="Channel11" uuid="dfae59e4-b8eb-459b-bfee-77d1fe3c336c" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel11" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel11" uuid="8062818c-2ac0-4465-97d8-02c1816d5b16" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel11" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel11" />
                 </ct:object>
-                <ct:object name="Channel12" uuid="e1f24b35-ca8c-4453-b31f-1ead7b0ce91b" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel12" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel12" uuid="f780d4c1-fd3b-4786-a749-e45d17a6063f" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel12" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel12" />
                 </ct:object>
-                <ct:object name="Channel13" uuid="d406266d-93db-4a06-9b50-fd9061b6516b" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel13" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel13" uuid="bdf9fa97-15a9-4677-b5b5-678f967aef3a" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel13" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel13" />
                 </ct:object>
-                <ct:object name="Channel14" uuid="e14e6e8a-5908-422a-8e8a-95cb6395357a" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel14" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel14" uuid="23fc8c44-b5fe-4822-814f-9e888652dd28" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel14" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel14" />
                 </ct:object>
-                <ct:object name="Channel15" uuid="b391ebab-6555-4084-95ef-a0923b73b585" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel15" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel15" uuid="c07dba91-2316-46e1-8a9c-ed10bf35a6b8" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel15" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel15" />
                 </ct:object>
-                <ct:object name="Channel16" uuid="cd1c308d-ace2-4fcb-8242-fd00d590ef3c" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel16" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel16" uuid="619b5168-f71f-4372-9761-2286bc521026" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel16" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel16" />
                 </ct:object>
-                <ct:object name="Channel17" uuid="d193d4f4-3838-44bf-839f-cbc6e8380474" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel17" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel17" uuid="954c0599-2028-4fb1-9992-d492c81ec341" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel17" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel17" />
                 </ct:object>
-                <ct:object name="Channel18" uuid="8fc7ccbc-248b-4dc0-87de-1ee916380eba" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel18" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel18" uuid="b470e3de-089a-43e7-b63b-f6a2efad3e7b" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel18" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel18" />
                 </ct:object>
-                <ct:object name="Channel19" uuid="b568ae2c-4081-4b9d-81d4-18687c50d85f" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel19" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel19" uuid="2006a615-d857-47c3-9cd9-76403927d7b9" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel19" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel19" />
                 </ct:object>
-                <ct:object name="Channel20" uuid="fb77d5f1-2cf7-49c1-a8b2-b22ce3c35920" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel20" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel20" uuid="9c921f08-94d4-4fbe-8f10-cbfaaba46c3a" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel20" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel20" />
                 </ct:object>
-                <ct:object name="Channel21" uuid="da0d637e-4afb-4133-bb39-a7b65d629b3c" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel21" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel21" uuid="d0cc3d85-f34a-4d77-a9b4-2e068489d1ed" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel21" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel21" />
                 </ct:object>
-                <ct:object name="Channel22" uuid="8844a62a-8412-43d0-8019-90323daf5784" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel22" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel22" uuid="58384c64-1603-46e0-9ff8-41d3e27ffe42" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel22" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel22" />
                 </ct:object>
-                <ct:object name="Channel23" uuid="87f9d4bf-3092-483f-bd77-584f33b167d6" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel23" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel23" uuid="074a4896-3800-499b-904d-a0a9c8ec9320" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel23" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel23" />
                 </ct:object>
-                <ct:object name="Channel24" uuid="39e931f3-fbdf-40e4-8d3e-5b42b21f7a66" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel24" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel24" uuid="b1602ee7-df09-4e72-94ad-b07f555714f4" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel24" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel24" />
                 </ct:object>
-                <ct:object name="Channel25" uuid="f9e278c9-c06c-464e-af6e-8a8d5a77fd28" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel25" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel25" uuid="42414036-627c-405f-877b-2081508d61cf" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel25" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel25" />
                 </ct:object>
-                <ct:object name="Channel26" uuid="6e00e31e-7cfd-4ed7-bc13-6de23913e6ee" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel26" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel26" uuid="a91235ce-82e5-4b1d-95a2-caf2a770c8c6" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel26" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel26" />
                 </ct:object>
-                <ct:object name="Channel27" uuid="6f6d3048-35dd-447f-8f4e-70d475ca45ba" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel27" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel27" uuid="aae1ba00-918c-4987-8b1d-f18d6ffe400d" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel27" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel27" />
                 </ct:object>
-                <ct:object name="Channel28" uuid="17f792a6-7733-43b1-9626-de4625286d1e" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel28" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel28" uuid="d2f86930-91fb-42db-ae00-78ec6bc08103" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel28" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel28" />
                 </ct:object>
-                <ct:object name="Channel29" uuid="fdd6042f-026c-4254-8135-9a47303c018e" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel29" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel29" uuid="78b26f1c-7f7e-42a1-b360-385b6a7bf5e1" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel29" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel29" />
                 </ct:object>
-                <ct:object name="Channel30" uuid="a433bf4a-035c-408a-94fb-0aa4b7a40461" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel30" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel30" uuid="f22f7023-7847-49df-b1dd-8281fa210325" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel30" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel30" />
                 </ct:object>
-                <ct:object name="Channel31" uuid="d2f0fc86-0baf-45be-8c30-fab10a658cda" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel31" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel31" uuid="17f9e36d-d6f8-4f7a-a97d-554dd728bb68" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel31" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel31" />
                 </ct:object>
-                <ct:object name="Channel32" uuid="cc8e0d4b-3e14-41c3-adad-b2a012c49901" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel32" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel32" uuid="05a04261-4726-4d6f-9c62-72f1512b52d5" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel32" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.Channel32" />
                 </ct:object>
-                <object name="State" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.State" base-type="Types.dwState.IOS_View" aspect="Aspects.IOS_Aspect" xmlns="automation.control" uuid="7db0a895-d86d-40e0-8ce7-77558f2ee93d">
-                  <init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group1.DO.Module1.State" xmlns="automation.reference" />
-                </object>
-                <handler name="StateUnpack" xmlns="automation.control" uuid="f58017cf-e9c9-4406-91f3-7963a6a50372">
+                <ct:object name="State" uuid="23e45ecc-7d8c-4d1a-8ac9-c7e200156280" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.State" base-type="Types.dwState.IOS_View" aspect="Aspects.IOS_Aspect">
+                  <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group3.DO.Module1.State" />
+                </ct:object>
+                <handler name="StateUnpack" xmlns="automation.control" uuid="a9f251b8-e16d-41c3-8c64-f8c2c961fe4a">
                   <property name="source-code" xmlns="system">Channel1.H=Math.TestBit(State.State,0);
 Channel2.H=Math.TestBit(State.State,1);
 Channel3.H=Math.TestBit(State.State,2);
@@ -13831,108 +13850,108 @@ Channel32.HProg=Math.TestBit(StateProg.State,31);</property>
                 </handler>
               </ct:object>
             </ct:object>
-            <ct:object name="DO" uuid="40a918b7-fcce-4dd5-b2cb-20708bd16cf4" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO" aspect="Aspects.IOS_Aspect">
-              <ct:object name="Module1" uuid="807b4278-7d86-4773-a29b-b07a79789d9b" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1" aspect="Aspects.IOS_Aspect">
-                <ct:object name="Channel1" uuid="743bfdfc-e4ef-463b-acf9-fe2714a1d6f1" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel1" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+            <ct:object name="DO" uuid="5236cd0b-2e6e-4208-a806-9e2b30acfed2" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO" aspect="Aspects.IOS_Aspect">
+              <ct:object name="Module1" uuid="2e84b432-7df0-4962-85d0-beb2e6149492" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel1" uuid="3698d617-5f8d-42f0-bace-fdea8a5a727f" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel1" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel1" />
                 </ct:object>
-                <ct:object name="Channel2" uuid="5e029103-f4f6-4d56-85be-9261d9f14373" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel2" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel2" uuid="d20fea89-70ea-45a2-99d1-b5264bd3122e" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel2" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel2" />
                 </ct:object>
-                <ct:object name="Channel3" uuid="f658f2d9-a2ab-4f83-9eb0-7469f3c51b60" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel3" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel3" uuid="a6ee64e0-b38f-45bf-9e0c-655b9c62e90c" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel3" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel3" />
                 </ct:object>
-                <ct:object name="Channel4" uuid="6137188b-20ac-4e5b-811d-dbe3b5230de7" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel4" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel4" uuid="4caa12d8-74ff-41f6-8f76-36c4fdbafa4c" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel4" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel4" />
                 </ct:object>
-                <ct:object name="Channel5" uuid="fd7f4627-04ec-4810-b5e4-ff099541e800" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel5" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel5" uuid="bf9730c4-c4af-422f-95b8-8093d65fbf1b" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel5" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel5" />
                 </ct:object>
-                <ct:object name="Channel6" uuid="0dda0a87-6138-4086-bd63-e8afaaa103e0" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel6" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel6" uuid="1721e11a-f541-4eb1-8a88-89de186e3fc4" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel6" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel6" />
                 </ct:object>
-                <ct:object name="Channel7" uuid="a68b4e76-28b4-4efa-951b-c2104eb85217" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel7" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel7" uuid="475408df-bef4-48f7-afd5-ad7ffba5f343" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel7" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel7" />
                 </ct:object>
-                <ct:object name="Channel8" uuid="e1c940f8-3e71-47b1-9752-d091a1647b71" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel8" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel8" uuid="715c6886-db4e-46b1-ad6f-f159677fc8c1" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel8" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel8" />
                 </ct:object>
-                <ct:object name="Channel9" uuid="3fcd3d9f-2e41-4f12-aad2-2e74582a45db" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel9" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel9" uuid="ea054bf1-ba9b-4a15-9e0f-17f9c9dbfdfe" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel9" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel9" />
                 </ct:object>
-                <ct:object name="Channel10" uuid="37936ae9-9b57-408a-a799-45776578a4bd" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel10" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel10" uuid="5f966349-0249-48a2-a1fd-68db5f5318fa" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel10" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel10" />
                 </ct:object>
-                <ct:object name="Channel11" uuid="fa0c3c47-300b-4ece-ba69-8412ac8d04df" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel11" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel11" uuid="2de33973-683d-49bc-b180-1f16b1c614c9" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel11" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel11" />
                 </ct:object>
-                <ct:object name="Channel12" uuid="5e7daedc-eb03-48d6-9280-16ea1e4d1f1e" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel12" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel12" uuid="b8660c6b-f699-43f2-a986-eb1498ff50f1" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel12" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel12" />
                 </ct:object>
-                <ct:object name="Channel13" uuid="f5e40e55-9efb-4185-80cf-29943a27bd02" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel13" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel13" uuid="3ec2b067-d7ce-4247-ba16-a60192cef0a1" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel13" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel13" />
                 </ct:object>
-                <ct:object name="Channel14" uuid="429147fc-2013-40d8-b0a4-4ebcd371affc" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel14" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel14" uuid="05767b97-cbf9-4aca-88b2-f1ffa582f78a" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel14" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel14" />
                 </ct:object>
-                <ct:object name="Channel15" uuid="62beb944-5c98-49c4-b905-9dc0f0378118" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel15" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel15" uuid="b64afaff-6f50-4866-8ac3-a4fad243e477" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel15" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel15" />
                 </ct:object>
-                <ct:object name="Channel16" uuid="241a49f9-9d73-416e-80cc-2af1c1d189a6" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel16" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel16" uuid="4f154515-0093-4208-8780-255b1a7bfd4d" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel16" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel16" />
                 </ct:object>
-                <ct:object name="Channel17" uuid="8528ef80-2ba7-46b1-b29e-b92c08292554" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel17" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel17" uuid="08d443f7-85e1-4205-aed8-922dd3baf4fd" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel17" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel17" />
                 </ct:object>
-                <ct:object name="Channel18" uuid="73266f8e-e664-4733-b2ec-8db55ee70098" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel18" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel18" uuid="db62983b-5d02-42a0-b72e-07cd96c539f0" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel18" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel18" />
                 </ct:object>
-                <ct:object name="Channel19" uuid="7d5a6231-3920-4dde-a7f5-b451235750af" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel19" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel19" uuid="08e9603d-69ad-4d24-9445-4fdcd24352e6" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel19" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel19" />
                 </ct:object>
-                <ct:object name="Channel20" uuid="7bf2d633-0a1d-42a1-aec7-0ac82609596b" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel20" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel20" uuid="2643a72e-2946-4612-a04b-66c4c9fafdf3" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel20" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel20" />
                 </ct:object>
-                <ct:object name="Channel21" uuid="228de06e-753a-41b7-9e46-62227edc40e5" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel21" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel21" uuid="b23fa804-5911-4472-a6ac-c10f3fbc4af0" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel21" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel21" />
                 </ct:object>
-                <ct:object name="Channel22" uuid="628033e0-9169-4b47-aea0-6494cbc63545" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel22" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel22" uuid="fca9178b-f539-4a88-b91c-82712356472e" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel22" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel22" />
                 </ct:object>
-                <ct:object name="Channel23" uuid="e5aeed14-e0c7-43d8-9b63-8bad96d523cc" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel23" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel23" uuid="c9e39780-0d68-41d2-841d-d5ec9f446dfa" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel23" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel23" />
                 </ct:object>
-                <ct:object name="Channel24" uuid="a25bb779-03d4-4d63-9ae8-66d7b8549175" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel24" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel24" uuid="88af6c2b-edd0-47ee-81c1-296f63d1063b" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel24" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel24" />
                 </ct:object>
-                <ct:object name="Channel25" uuid="5b981ddc-18d1-420a-8cde-ab1959878021" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel25" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel25" uuid="194f9eb3-df35-4575-b557-b5d813d24135" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel25" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel25" />
                 </ct:object>
-                <ct:object name="Channel26" uuid="a84bde47-0a4b-4cd3-a023-e2c83c2b8a55" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel26" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel26" uuid="e4e9795a-0bbc-4a93-b9c0-4556df142b44" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel26" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel26" />
                 </ct:object>
-                <ct:object name="Channel27" uuid="e434cb08-b800-4d76-b815-ed644b26797e" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel27" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel27" uuid="8ffd18c5-3d24-454d-8dfb-edcea25ad223" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel27" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel27" />
                 </ct:object>
-                <ct:object name="Channel28" uuid="f2af67b3-be08-4be7-aeb3-8f1fb24123ee" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel28" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel28" uuid="7cfd6d89-2480-4dae-b551-bec893957487" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel28" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel28" />
                 </ct:object>
-                <ct:object name="Channel29" uuid="170d313b-106b-4a84-a8c9-bb0f4c994447" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel29" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel29" uuid="4b631e29-a6f5-422c-baeb-cea7abc85c62" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel29" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel29" />
                 </ct:object>
-                <ct:object name="Channel30" uuid="256a8555-a7a8-4757-a349-8431cd834acc" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel30" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel30" uuid="20380cb8-d172-4c3f-8c03-aba00b6fdb3c" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel30" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel30" />
                 </ct:object>
-                <ct:object name="Channel31" uuid="205f67f9-30f2-469f-8626-c99f575bf879" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel31" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel31" uuid="6f276109-d218-4a0f-97bb-a1c716ec2ba8" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel31" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel31" />
                 </ct:object>
-                <ct:object name="Channel32" uuid="fdb8915d-57d2-4c06-97b3-64c6f4a67e2f" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel32" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
+                <ct:object name="Channel32" uuid="2bc88acb-eb7c-40aa-a839-9161df0d1259" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel32" base-type="Types.DO.IOS_View" aspect="Aspects.IOS_Aspect">
                   <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.Channel32" />
                 </ct:object>
-                <object name="State" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.State" base-type="Types.dwState.IOS_View" aspect="Aspects.IOS_Aspect" xmlns="automation.control" uuid="c000dcef-29d7-440d-a44d-84a21d9b6977">
-                  <init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group1.DO.Module1.State" xmlns="automation.reference" />
-                </object>
-                <handler name="StateUnpack" xmlns="automation.control" uuid="41b376db-6f2d-47bb-bb35-49f9bb1a83e0">
+                <ct:object name="State" uuid="c21d3c3d-f4dc-46ec-920f-f399ff76b59f" original="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.State" base-type="Types.dwState.IOS_View" aspect="Aspects.IOS_Aspect">
+                  <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Diag.Group4.DO.Module1.State" />
+                </ct:object>
+                <handler name="StateUnpack" xmlns="automation.control" uuid="4e339b2f-a6d6-4ac1-9337-3a58c3a27c1c">
                   <property name="source-code" xmlns="system">Channel1.H=Math.TestBit(State.State,0);
 Channel2.H=Math.TestBit(State.State,1);
 Channel3.H=Math.TestBit(State.State,2);
@@ -14690,6 +14709,59 @@ Channel32.H=Math.TestBit(State.State,31);</property>
             <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.Group4.PGasFix" />
           </ct:object>
         </ct:object>
+        <ct:object name="IgnSequence" uuid="5bf2173e-d9df-4899-90f6-4e968914b685" original="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence" aspect="Aspects.IOS_Aspect">
+          <ct:object name="Sequence1" uuid="96061875-805a-47ca-80f8-28e64709f823" original="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence1" base-type="Types.IgnSequence.IOS_View" aspect="Aspects.IOS_Aspect">
+            <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence1" />
+          </ct:object>
+          <ct:object name="Sequence2" uuid="0cf33148-bf73-407b-becd-7c81b6cce71b" original="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence2" base-type="Types.IgnSequence.IOS_View" aspect="Aspects.IOS_Aspect">
+            <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence2" />
+          </ct:object>
+          <ct:object name="Sequence3" uuid="7dfd92c0-bb6c-4d38-b34b-c859584b4cef" original="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence3" base-type="Types.IgnSequence.IOS_View" aspect="Aspects.IOS_Aspect">
+            <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence3" />
+          </ct:object>
+          <ct:object name="Sequence4" uuid="14d18146-bb75-4a6c-a724-9e9ef37f5220" original="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence4" base-type="Types.IgnSequence.IOS_View" aspect="Aspects.IOS_Aspect">
+            <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence4" />
+          </ct:object>
+          <ct:object name="Sequence5" uuid="18228af1-2240-443a-98fe-9f008ce17df6" original="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence5" base-type="Types.IgnSequence.IOS_View" aspect="Aspects.IOS_Aspect">
+            <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence5" />
+          </ct:object>
+          <ct:object name="Sequence6" uuid="77cdfb19-b586-4eae-8ec1-58b5a171804c" original="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence6" base-type="Types.IgnSequence.IOS_View" aspect="Aspects.IOS_Aspect">
+            <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence6" />
+          </ct:object>
+          <ct:object name="Sequence7" uuid="f7ee2f22-dc0e-4f9b-a4b8-db0ec7f721c6" original="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence7" base-type="Types.IgnSequence.IOS_View" aspect="Aspects.IOS_Aspect">
+            <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence7" />
+          </ct:object>
+          <ct:object name="Sequence8" uuid="0472b4a0-3e29-4d4e-9a95-030af8f77af2" original="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence8" base-type="Types.IgnSequence.IOS_View" aspect="Aspects.IOS_Aspect">
+            <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence8" />
+          </ct:object>
+          <ct:object name="Sequence9" uuid="f8135593-422c-425b-94a6-4d8891b5ddbd" original="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence9" base-type="Types.IgnSequence.IOS_View" aspect="Aspects.IOS_Aspect">
+            <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence9" />
+          </ct:object>
+          <ct:object name="Sequence10" uuid="1be921b7-9bca-475e-9878-65d66541c296" original="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence10" base-type="Types.IgnSequence.IOS_View" aspect="Aspects.IOS_Aspect">
+            <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence10" />
+          </ct:object>
+          <ct:object name="Sequence11" uuid="95507234-96fe-41b3-90d1-d1e8fa4f6575" original="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence11" base-type="Types.IgnSequence.IOS_View" aspect="Aspects.IOS_Aspect">
+            <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence11" />
+          </ct:object>
+          <ct:object name="Sequence12" uuid="ac0a2c00-3d97-459d-bed8-dc5f8c525532" original="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence12" base-type="Types.IgnSequence.IOS_View" aspect="Aspects.IOS_Aspect">
+            <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence12" />
+          </ct:object>
+          <ct:object name="Sequence13" uuid="64ef612e-12f2-4ff8-a609-096a4372699a" original="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence13" base-type="Types.IgnSequence.IOS_View" aspect="Aspects.IOS_Aspect">
+            <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence13" />
+          </ct:object>
+          <ct:object name="Sequence14" uuid="31ed42d5-5ea2-41c0-8ff1-55a1025f624b" original="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence14" base-type="Types.IgnSequence.IOS_View" aspect="Aspects.IOS_Aspect">
+            <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence14" />
+          </ct:object>
+          <ct:object name="Sequence15" uuid="4c23e34c-004d-487d-8b52-8fb343852d84" original="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence15" base-type="Types.IgnSequence.IOS_View" aspect="Aspects.IOS_Aspect">
+            <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence15" />
+          </ct:object>
+          <ct:object name="Sequence16" uuid="08edd07a-486c-476f-909d-b4c79c16809f" original="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence16" base-type="Types.IgnSequence.IOS_View" aspect="Aspects.IOS_Aspect">
+            <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.IgnSequence.Sequence16" />
+          </ct:object>
+        </ct:object>
+        <ct:object name="BurnStartSequence" uuid="885705d4-294a-41dc-8526-601727fa2c7e" original="PLC_Test.Runtime.PLC_App.ROOT.BurnStartSequence" base-type="Types.BurnSequence.IOS_View" aspect="Aspects.IOS_Aspect">
+          <r:init-ref ref="_PLC_View" target="PLC_Test.Runtime.PLC_App.ROOT.BurnStartSequence" />
+        </ct:object>
       </ct:object>
     </application-object>
   </dp:domain>
@@ -14708,7 +14780,8 @@ Channel32.H=Math.TestBit(State.State,31);</property>
         <attribute type="unit.System.Attributes.Description" value="Описание" />
         <ct:parameter name="VALUE" uuid="d1ad7c27-bb4d-4998-96bb-5473b5824af0" type="float32" direction="out" />
         <ct:parameter name="STATUS" uuid="4ba1d733-08be-433e-83d4-fae16ea017db" type="uint8" direction="out" />
-        <parameter name="MASK" type="bool" direction="out" xmlns="automation.control" uuid="89fcba83-2123-400c-8e09-aa230745efff" />
+        <parameter name="MASK" type="bool" direction="in-out" xmlns="automation.control" uuid="89fcba83-2123-400c-8e09-aa230745efff" />
+        <parameter name="ELECTROVALUE" type="float32" direction="out" xmlns="automation.control" uuid="5564148c-eebe-4592-bb68-d578f08d084f" />
       </ct:type>
       <type name="IOS_View" xmlns="automation.control" uuid="cb7ef9d8-afe3-4ca3-b6df-24003d1aba5e" aspect="Aspects.IOS_Aspect" original="AI">
         <parameter name="NAME" uuid="245fbd30-70a0-4576-8ec4-206bd7f923bd" type="string" direction="out">
@@ -14756,6 +14829,12 @@ STATUS_BITS.LowerElectrical = Math.TestBit(STATUS,4);</property>
         </handler>
         <parameter name="STATUS" uuid="f72b3b82-e3c4-4c4a-b7c1-2ad6e8a46ef9" direction="out" type="uint8" />
         <bind source="_PLC_View.STATUS" target="STATUS" />
+        <parameter name="OutMASK" uuid="cf7ec64c-e9f9-4d91-84dd-bd9988e9749a" direction="out" type="bool" />
+        <bind source="_PLC_View.MASK" target="OutMASK" />
+        <parameter name="ELECTROVALUE" uuid="1a9ff29c-0f95-4c0c-b005-14a01b2deff1" direction="out" type="float32" />
+        <bind source="_PLC_View.ELECTROVALUE" target="ELECTROVALUE" />
+        <parameter name="InMASK" uuid="1c740c65-f16a-43d9-adaf-94eb6b0a0608" direction="in" type="bool" />
+        <bind source="InMASK" target="_PLC_View.MASK" />
       </type>
     </ct:type>
     <type name="DI" xmlns="automation.control" uuid="45069495-4b73-4d84-9de0-ac0ec969af37">
@@ -15149,6 +15228,8 @@ STATUS_BITS.LowerElectrical = Math.TestBit(STATUS,4);</property>
     <ct:type name="Server" uuid="3aa8c6c9-ef7f-4a77-8db7-7364db6ee3be">
       <ct:type name="PLC_VIEW" uuid="24db8100-129a-4cf2-ab0f-7231f0933903" original="Server" aspect="Aspects.PLC_Aspect">
         <ct:parameter name="CPU1_MAIN" uuid="9d13d1a6-feb7-4ea6-94fc-dd1d671398ed" type="bool" direction="out" />
+        <parameter name="sRedMode" type="string" direction="out" xmlns="automation.control" uuid="f409d022-527e-4839-8ef2-21de9bf411ac" />
+        <parameter name="iRedMode" type="int32" direction="out" xmlns="automation.control" uuid="8649e51a-e96e-4a71-b058-c31f9e79dd3e" />
       </ct:type>
       <ct:type name="IOS_VIEW" uuid="1446c95d-df2f-47fb-8987-5ca1d65d5001" original="Server" aspect="Aspects.IOS_Aspect">
         <r:ref name="_PLC_VIEW" uuid="f735e255-6e5a-42c0-afe8-88e0a0a72055" type="PLC_VIEW" />
@@ -15158,9 +15239,9 @@ STATUS_BITS.LowerElectrical = Math.TestBit(STATUS,4);</property>
           </attribute>
         </ct:parameter>
         <ct:bind source="_PLC_VIEW.CPU1_MAIN" target="CPU1_MAIN" />
-        <ct:parameter name="ConnectionOK" uuid="9be72079-3598-4b8f-8d39-1e39a3a8146c" type="bool" direction="in-out">
+        <ct:parameter name="ConnectionOK" uuid="9be72079-3598-4b8f-8d39-1e39a3a8146c" type="bool" direction="out">
           <attribute type="unit.Server.Attributes.Alarm">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"Severity":1,"Type":2},{"AckStrategy":1,"IsEnabled":true,"Message":"Потеряно соединение с ПЛК","Severity":668,"Sound":"Trevoga1.wav","Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"Severity":1,"Type":2},{"AckStrategy":1,"IsEnabled":true,"Message":"Потеряно соединение с ПЛК","Severity":668,"Sound":"alarm.wav","Type":3}],"Type":2}}</property>
           </attribute>
         </ct:parameter>
         <ct:handler name="Handler" uuid="996373b4-416c-4b28-a34a-5d4b8ef7bd88">
@@ -15170,6 +15251,10 @@ STATUS_BITS.LowerElectrical = Math.TestBit(STATUS,4);</property>
 else
 	ConnectionOK.Value=true;</property>
         </ct:handler>
+        <ct:parameter name="sRedMode" uuid="20806405-dabb-4ee4-8d29-6b2f37685007" direction="out" type="string" />
+        <ct:bind source="_PLC_VIEW.sRedMode" target="sRedMode" />
+        <ct:parameter name="iRedMode" uuid="a0d28edc-0725-4672-8cb2-949972284790" direction="out" type="int32" />
+        <ct:bind source="_PLC_VIEW.iRedMode" target="iRedMode" />
       </ct:type>
     </ct:type>
     <type name="AnalogSens" xmlns="automation.control" uuid="472a2108-ef3b-486c-8894-777b87414be3">
@@ -16330,117 +16415,26 @@ AlarmTSmokeH=(TSmokeH)||(_PLC_View.AlarmTSmoke);*/</property>
         <attribute type="unit.System.Attributes.Title" xmlns="system" value="NAME" />
         <attribute type="unit.System.Attributes.Description" value="KKS" xmlns="system" />
         <attribute type="Attributes.EU" value="ЕИ" xmlns="system" />
-        <parameter name="BurnStep1" direction="out" type="int16" uuid="7debf938-e06b-4418-87f3-296f40c0a2bd" />
-        <parameter name="BurnStep2" direction="out" type="int16" xmlns="automation.control" uuid="fac2dac1-d537-416a-964f-ccc62d890d79" />
-        <parameter name="BurnStep3" direction="out" type="int16" xmlns="automation.control" uuid="82674161-6cdf-49a6-ad27-aded4e925b41" />
-        <parameter name="BurnStep4" direction="out" type="int16" xmlns="automation.control" uuid="15f8884c-e608-4877-bc94-6523c07fd0b9" />
-        <parameter name="BurnStep5" direction="in-out" type="int16" xmlns="automation.control" uuid="1e97a72f-10b6-49f8-803d-81a7ff6a9e68" />
-        <parameter name="BurnStep6" direction="in-out" type="int16" xmlns="automation.control" uuid="ac1714f5-2918-4694-a60e-4ca2f3b1ff2e" />
-        <parameter name="BurnStep7" direction="in-out" type="int16" xmlns="automation.control" uuid="9c2dd186-7dd5-44e8-903f-daa3abb4244b" />
-        <parameter name="BurnStep8" direction="in-out" type="int16" xmlns="automation.control" uuid="96b880b2-9468-427b-9dfc-8390c8d78564" />
-        <parameter name="Err5" direction="out" type="bool" xmlns="automation.control" uuid="7bfc1785-f04d-4823-a051-a44da7e49b26" />
-        <parameter name="Err6" direction="out" type="bool" xmlns="automation.control" uuid="87cab5c7-3987-4333-ba4e-e19233370557" />
-        <parameter name="Err7" direction="out" type="bool" xmlns="automation.control" uuid="934282b6-0c5d-4dd7-89ac-f3d28b22339c" />
-        <parameter name="Err8" direction="out" type="bool" xmlns="automation.control" uuid="a18a0f68-110f-4af4-919c-2be94dbe42d9" />
-        <parameter name="BurnStep9" direction="in-out" type="int16" xmlns="automation.control" uuid="35667752-7cbf-433c-afe3-67609edcf10a" />
-        <parameter name="BurnStep10" direction="in-out" type="int16" xmlns="automation.control" uuid="ac91d8b2-3775-4fb5-9743-084e99e2085f" />
-        <parameter name="BurnStep11" direction="in-out" type="int16" xmlns="automation.control" uuid="a1311df4-8d82-41b6-90c5-7446b7d65053" />
-        <parameter name="BurnStep12" direction="in-out" type="int16" xmlns="automation.control" uuid="76132f0c-43bd-4bfc-b718-e63005a1909f" />
-        <parameter name="BurnStep13" direction="in-out" type="int16" xmlns="automation.control" uuid="0e563d7e-94f2-4b32-a973-9439eacb4106" />
-        <parameter name="BurnStep14" direction="in-out" type="int16" xmlns="automation.control" uuid="c92bd050-ed21-47d8-af7c-419066b03c4d" />
-        <parameter name="BurnStep15" direction="in-out" type="int16" xmlns="automation.control" uuid="118fd3dd-5679-4d08-828e-dcaf5748ea37" />
-        <parameter name="BurnStep16" direction="in-out" type="int16" xmlns="automation.control" uuid="cd42d939-c5e1-4738-bfb1-b994718f4fe2" />
-        <parameter name="Err9" direction="out" type="bool" xmlns="automation.control" uuid="0575b22c-2a61-4e6b-9a27-9b0d02954c3a" />
-        <parameter name="Err10" direction="out" type="bool" xmlns="automation.control" uuid="dd44b9df-8b32-48b2-a78d-d9ba486559cc" />
-        <parameter name="Err11" direction="out" type="bool" xmlns="automation.control" uuid="89ba313b-7e7d-4b0a-ac5b-3ac990fe9188" />
-        <parameter name="Err12" direction="out" type="bool" xmlns="automation.control" uuid="2ec9f021-81d8-4382-a9e3-a80bc215e2c2" />
-        <parameter name="Err13" direction="out" type="bool" xmlns="automation.control" uuid="b4970c76-14a4-46ef-b913-e74e7fa554ca" />
-        <parameter name="Err14" direction="out" type="bool" xmlns="automation.control" uuid="be1f204a-3493-4972-b799-dfe4fb81f827" />
-        <parameter name="Err15" direction="out" type="bool" xmlns="automation.control" uuid="00acd651-8c17-41de-9e40-f82126cd05ea" />
-        <parameter name="Err16" direction="out" type="bool" xmlns="automation.control" uuid="ecbe526a-003d-40d3-a6f7-e38fc56f1423" />
+        <parameter name="Ign1" direction="out" type="int16" uuid="7debf938-e06b-4418-87f3-296f40c0a2bd" />
+        <parameter name="Ign2" direction="out" type="int16" xmlns="automation.control" uuid="fac2dac1-d537-416a-964f-ccc62d890d79" />
+        <parameter name="Ign3" direction="out" type="int16" xmlns="automation.control" uuid="82674161-6cdf-49a6-ad27-aded4e925b41" />
+        <parameter name="Ign4" direction="out" type="int16" xmlns="automation.control" uuid="15f8884c-e608-4877-bc94-6523c07fd0b9" />
+        <parameter name="bSel" direction="in-out" type="bool" xmlns="automation.control" uuid="ecbe526a-003d-40d3-a6f7-e38fc56f1423" />
       </type>
       <type name="IOS_View" xmlns="automation.control" aspect="Aspects.IOS_Aspect" original="IgnSequence" uuid="2bf58444-1d70-4710-95bd-abdaf2770899">
         <ref name="_PLC_View" type="PLC_View" xmlns="automation.reference" uuid="16af79e8-9ae5-48f7-ae28-9730dfc77336" />
-        <parameter name="BurnStep1" uuid="8de9f07e-80c8-4779-9586-83170b3185c8" direction="out" type="int16" />
-        <bind source="_PLC_View.BurnStep1" target="BurnStep1" />
-        <parameter name="BurnStep2" uuid="f77211c5-c592-45c4-beb0-589b11d020ea" direction="out" type="int16" />
-        <bind source="_PLC_View.BurnStep2" target="BurnStep2" />
-        <parameter name="BurnStep3" uuid="f28a3a95-2c55-4e57-8847-3aa0dc306c24" direction="out" type="int16" />
-        <bind source="_PLC_View.BurnStep3" target="BurnStep3" />
-        <parameter name="BurnStep4" uuid="9ca44bf1-f4d1-4cb5-8c66-9e1ec2c588b6" direction="out" type="int16" />
-        <bind source="_PLC_View.BurnStep4" target="BurnStep4" />
-        <parameter name="InBurnStep5" uuid="781b6f28-df1e-4e04-b5bc-98ea22231a1a" direction="in" type="int16" />
-        <bind source="InBurnStep5" target="_PLC_View.BurnStep5" />
-        <parameter name="OutBurnStep5" uuid="4e381c84-e09b-4f18-8021-3c658acdd443" direction="out" type="int16" />
-        <bind source="_PLC_View.BurnStep5" target="OutBurnStep5" />
-        <parameter name="InBurnStep6" uuid="28d8f39f-afb5-497d-b944-4dbe75ffe245" direction="in" type="int16" />
-        <bind source="InBurnStep6" target="_PLC_View.BurnStep6" />
-        <parameter name="OutBurnStep6" uuid="763955df-ed76-45a1-8e64-637848957f7f" direction="out" type="int16" />
-        <bind source="_PLC_View.BurnStep6" target="OutBurnStep6" />
-        <parameter name="InBurnStep7" uuid="48930e26-81c8-41db-a97e-36d1788b7bd9" direction="in" type="int16" />
-        <bind source="InBurnStep7" target="_PLC_View.BurnStep7" />
-        <parameter name="OutBurnStep7" uuid="1b87eacc-de39-4d53-9232-c9288760ee0f" direction="out" type="int16" />
-        <bind source="_PLC_View.BurnStep7" target="OutBurnStep7" />
-        <parameter name="InBurnStep8" uuid="e9e6b417-7ef2-4517-8864-ded6bfe1f7cf" direction="in" type="int16" />
-        <bind source="InBurnStep8" target="_PLC_View.BurnStep8" />
-        <parameter name="OutBurnStep8" uuid="c8547ad5-76e2-49d6-83f5-d1f039372dc8" direction="out" type="int16" />
-        <bind source="_PLC_View.BurnStep8" target="OutBurnStep8" />
-        <parameter name="Err5" uuid="2c3ce9a5-b68d-49d8-8fa9-2bf0f1a88c75" direction="out" type="bool" />
-        <bind source="_PLC_View.Err5" target="Err5" />
-        <parameter name="Err6" uuid="8e99622c-7453-4c4a-9b11-d974dd4a0e73" direction="out" type="bool" />
-        <bind source="_PLC_View.Err6" target="Err6" />
-        <parameter name="Err7" uuid="e5709908-3c3a-415b-8dd1-9e879b33a4cc" direction="out" type="bool" />
-        <bind source="_PLC_View.Err7" target="Err7" />
-        <parameter name="Err8" uuid="240f0f7a-aa9f-4ec6-a1c4-03a245fac5f5" direction="out" type="bool" />
-        <bind source="_PLC_View.Err8" target="Err8" />
-        <parameter name="InBurnStep9" uuid="18adefbb-b319-4f6e-883c-bc49f4582930" direction="in" type="int16" />
-        <bind source="InBurnStep9" target="_PLC_View.BurnStep9" />
-        <parameter name="OutBurnStep9" uuid="baf8e727-be1d-40d4-9dc1-95a6ab4b99b8" direction="out" type="int16" />
-        <bind source="_PLC_View.BurnStep9" target="OutBurnStep9" />
-        <parameter name="InBurnStep10" uuid="8b228f22-f50e-4da7-b38d-3251d181cb8f" direction="in" type="int16" />
-        <bind source="InBurnStep10" target="_PLC_View.BurnStep10" />
-        <parameter name="OutBurnStep10" uuid="10fb1de9-beb5-4adc-8418-a267c39a9369" direction="out" type="int16" />
-        <bind source="_PLC_View.BurnStep10" target="OutBurnStep10" />
-        <parameter name="InBurnStep11" uuid="258c3a96-70ea-44d7-81f4-cc421f31a02f" direction="in" type="int16" />
-        <bind source="InBurnStep11" target="_PLC_View.BurnStep11" />
-        <parameter name="OutBurnStep11" uuid="022b10ed-00ae-440e-9987-2b39525feed4" direction="out" type="int16" />
-        <bind source="_PLC_View.BurnStep11" target="OutBurnStep11" />
-        <parameter name="InBurnStep12" uuid="eb2c97b6-5cf9-4b74-889f-6488dcf999a5" direction="in" type="int16" />
-        <bind source="InBurnStep12" target="_PLC_View.BurnStep12" />
-        <parameter name="OutBurnStep12" uuid="85e51829-81f3-4ae9-be23-77b6aac2b1c4" direction="out" type="int16" />
-        <bind source="_PLC_View.BurnStep12" target="OutBurnStep12" />
-        <parameter name="InBurnStep13" uuid="5525c664-51ed-4dee-b132-7cdc0babf8a4" direction="in" type="int16" />
-        <bind source="InBurnStep13" target="_PLC_View.BurnStep13" />
-        <parameter name="OutBurnStep13" uuid="2ae17afb-b588-4ef8-a744-2e03d46fae49" direction="out" type="int16" />
-        <bind source="_PLC_View.BurnStep13" target="OutBurnStep13" />
-        <parameter name="InBurnStep14" uuid="a9f44cb5-81ff-420f-a5c0-0408a15e7221" direction="in" type="int16" />
-        <bind source="InBurnStep14" target="_PLC_View.BurnStep14" />
-        <parameter name="OutBurnStep14" uuid="efdc2306-1a0c-4989-97de-bd594ac9c928" direction="out" type="int16" />
-        <bind source="_PLC_View.BurnStep14" target="OutBurnStep14" />
-        <parameter name="InBurnStep15" uuid="ef92b90f-e7c2-4dae-868f-c48238fa80c5" direction="in" type="int16" />
-        <bind source="InBurnStep15" target="_PLC_View.BurnStep15" />
-        <parameter name="OutBurnStep15" uuid="f7856895-83ef-4308-90d5-45e95cfce011" direction="out" type="int16" />
-        <bind source="_PLC_View.BurnStep15" target="OutBurnStep15" />
-        <parameter name="InBurnStep16" uuid="a7d2bdaf-5a4b-4a13-b381-f0e58d5a3a6b" direction="in" type="int16" />
-        <bind source="InBurnStep16" target="_PLC_View.BurnStep16" />
-        <parameter name="OutBurnStep16" uuid="76755c4a-ee8c-4061-9575-982812de7037" direction="out" type="int16" />
-        <bind source="_PLC_View.BurnStep16" target="OutBurnStep16" />
-        <parameter name="Err9" uuid="8dc8c68f-5d28-431d-bfb4-9d8070ba5f0b" direction="out" type="bool" />
-        <bind source="_PLC_View.Err9" target="Err9" />
-        <parameter name="Err10" uuid="c0aea1f5-19cf-43fa-9802-d1a12d839e97" direction="out" type="bool" />
-        <bind source="_PLC_View.Err10" target="Err10" />
-        <parameter name="Err11" uuid="5e9e3a32-430d-4c82-a127-5f40e6f73451" direction="out" type="bool" />
-        <bind source="_PLC_View.Err11" target="Err11" />
-        <parameter name="Err12" uuid="726d74c9-ddec-4f0f-aeb7-8c4ecd312dbd" direction="out" type="bool" />
-        <bind source="_PLC_View.Err12" target="Err12" />
-        <parameter name="Err13" uuid="b6a4a652-ebf5-4c27-aec8-b86cac378e7d" direction="out" type="bool" />
-        <bind source="_PLC_View.Err13" target="Err13" />
-        <parameter name="Err14" uuid="106531f8-af01-46c0-a4b5-5c218de3363a" direction="out" type="bool" />
-        <bind source="_PLC_View.Err14" target="Err14" />
-        <parameter name="Err15" uuid="7b70c957-78e6-4f85-bd51-40a0a32e895a" direction="out" type="bool" />
-        <bind source="_PLC_View.Err15" target="Err15" />
-        <parameter name="Err16" uuid="3c12b8f8-527b-4582-af9b-53f996eb72c6" direction="out" type="bool" />
-        <bind source="_PLC_View.Err16" target="Err16" />
+        <parameter name="Ign1" uuid="177af243-b8fd-450d-9555-6d2dc250f664" direction="out" type="int16" />
+        <bind source="_PLC_View.Ign1" target="Ign1" />
+        <parameter name="Ign2" uuid="b83c4728-c94b-4af3-9c74-da24b250bb96" direction="out" type="int16" />
+        <bind source="_PLC_View.Ign2" target="Ign2" />
+        <parameter name="Ign3" uuid="9bf6fd77-4a81-458d-8cbe-19d1440292a6" direction="out" type="int16" />
+        <bind source="_PLC_View.Ign3" target="Ign3" />
+        <parameter name="Ign4" uuid="c0b5e60f-4777-4396-9b5f-07c7ab7a2ed4" direction="out" type="int16" />
+        <bind source="_PLC_View.Ign4" target="Ign4" />
+        <parameter name="OutbSel" uuid="9dd39a3e-d1d7-40b4-a67b-324f8e3b9304" direction="out" type="bool" />
+        <bind source="_PLC_View.bSel" target="OutbSel" />
+        <parameter name="InbSel" uuid="34755ea3-92ee-448d-bd55-c269ec8b6e86" direction="in" type="bool" />
+        <bind source="InbSel" target="_PLC_View.bSel" />
       </type>
     </type>
     <type name="ProtectsValueBoiler" xmlns="automation.control" uuid="8495ca47-22d7-498c-ac73-d537e568ca6e">
@@ -16630,6 +16624,124 @@ AlarmTSmokeH=(TSmokeH)||(_PLC_View.AlarmTSmoke);*/</property>
         <ref name="_PLC_View" type="PLC_View" xmlns="automation.reference" uuid="37ed4f84-f512-4947-9d22-9b436f6ae50a" />
         <parameter name="State" uuid="2ba25896-a2cb-4919-959b-88386ebe1746" direction="out" type="uint32" />
         <bind source="_PLC_View.State" target="State" />
+      </type>
+    </type>
+    <type name="BurnSequence" xmlns="automation.control" uuid="105b5d9b-ad9a-44bf-b195-318a6691bf6b">
+      <type name="PLC_View" original="BurnSequence" aspect="Aspects.PLC_Aspect" uuid="f48ba257-c028-434f-83e9-5abc28397a3a">
+        <attribute type="unit.System.Attributes.Title" xmlns="system" value="NAME" />
+        <attribute type="unit.System.Attributes.Description" value="KKS" xmlns="system" />
+        <attribute type="Attributes.EU" value="ЕИ" xmlns="system" />
+        <parameter name="BurnStep1" direction="out" type="int16" uuid="58157714-a0cd-4ac1-9f32-fedf6d071ef5" />
+        <parameter name="BurnStep2" direction="out" type="int16" xmlns="automation.control" uuid="994773ac-b599-466b-8d16-d99b18dbeab7" />
+        <parameter name="BurnStep3" direction="out" type="int16" xmlns="automation.control" uuid="49b88514-ddd4-41d2-a286-1ba431812231" />
+        <parameter name="BurnStep4" direction="out" type="int16" xmlns="automation.control" uuid="264486cf-2b19-4ba0-a32c-b60aeeafac3c" />
+        <parameter name="BurnStep5" direction="in-out" type="int16" xmlns="automation.control" uuid="68554f2a-c709-4060-aa3a-72ee2ffbd2fa" />
+        <parameter name="BurnStep6" direction="in-out" type="int16" xmlns="automation.control" uuid="818ce0dd-e264-44fd-859f-da41991eb124" />
+        <parameter name="BurnStep7" direction="in-out" type="int16" xmlns="automation.control" uuid="2c31306d-ec91-437b-8015-8f329132bf42" />
+        <parameter name="BurnStep8" direction="in-out" type="int16" xmlns="automation.control" uuid="03d875ce-c61c-466e-9e15-f600e73bf3b1" />
+        <parameter name="Err5" direction="out" type="bool" xmlns="automation.control" uuid="66aed6a7-7464-4096-8051-0a804e5fd2a4" />
+        <parameter name="Err6" direction="out" type="bool" xmlns="automation.control" uuid="a56bcd5d-7fb1-4d03-b970-f854a72fa27c" />
+        <parameter name="Err7" direction="out" type="bool" xmlns="automation.control" uuid="af4f6035-1dbe-4b62-9ee8-f2b5a37ad795" />
+        <parameter name="Err8" direction="out" type="bool" xmlns="automation.control" uuid="ac5b3163-01a8-44c9-956b-be55e6e323f8" />
+        <parameter name="BurnStep9" direction="in-out" type="int16" xmlns="automation.control" uuid="a6c7cee9-c8e5-4801-a7ca-1b9282ce3f5c" />
+        <parameter name="BurnStep10" direction="in-out" type="int16" xmlns="automation.control" uuid="1a3e6f08-b667-4a52-85e7-274518a20bfc" />
+        <parameter name="BurnStep11" direction="in-out" type="int16" xmlns="automation.control" uuid="713fa290-0948-4001-bd89-810f30e0e692" />
+        <parameter name="BurnStep12" direction="in-out" type="int16" xmlns="automation.control" uuid="c87fe3ae-1511-4a50-a8f4-06f5121451a6" />
+        <parameter name="BurnStep13" direction="in-out" type="int16" xmlns="automation.control" uuid="d1275d9d-128a-4dcc-a4e5-0568dc6f686c" />
+        <parameter name="BurnStep14" direction="in-out" type="int16" xmlns="automation.control" uuid="5abd188e-4b29-41b8-a952-7dabda23e53f" />
+        <parameter name="BurnStep15" direction="in-out" type="int16" xmlns="automation.control" uuid="c0b2049f-d333-40a0-9794-f297e3301af9" />
+        <parameter name="BurnStep16" direction="in-out" type="int16" xmlns="automation.control" uuid="5bb5add6-544a-44a7-b726-cae29d81a1c6" />
+        <parameter name="Err9" direction="out" type="bool" xmlns="automation.control" uuid="30382ae0-59c9-4583-abdb-268ff71f21e3" />
+        <parameter name="Err10" direction="out" type="bool" xmlns="automation.control" uuid="f3286ba8-79dc-40e0-aa3b-4c1696f3f423" />
+        <parameter name="Err11" direction="out" type="bool" xmlns="automation.control" uuid="3007d8c3-14d5-4239-b944-c8beee62ed04" />
+        <parameter name="Err12" direction="out" type="bool" xmlns="automation.control" uuid="d1398a22-b073-411d-9dba-2f6583bceab6" />
+        <parameter name="Err13" direction="out" type="bool" xmlns="automation.control" uuid="3592134a-12d8-4a5f-a6ed-2f8a5ba6498c" />
+        <parameter name="Err14" direction="out" type="bool" xmlns="automation.control" uuid="ad109b16-7e72-446e-bfb1-7aad7150af07" />
+        <parameter name="Err15" direction="out" type="bool" xmlns="automation.control" uuid="5a4cc741-3d03-4104-8323-cd2574562e20" />
+        <parameter name="Err16" direction="out" type="bool" xmlns="automation.control" uuid="63b9602e-2bc5-471c-8adc-cec60b1ceb4d" />
+      </type>
+      <type name="IOS_View" xmlns="automation.control" aspect="Aspects.IOS_Aspect" original="BurnSequence" uuid="5938a01e-5cae-4a29-9d62-55a84f80f05b">
+        <ref name="_PLC_View" type="PLC_View" xmlns="automation.reference" uuid="4af494c2-48b0-4d9f-93ab-7301aa828eb4" />
+        <parameter name="BurnStep1" direction="out" type="int16" uuid="14360d2e-3e68-4765-8a90-81230ce10b20" />
+        <bind source="_PLC_View.BurnStep1" target="BurnStep1" />
+        <parameter name="BurnStep2" direction="out" type="int16" uuid="1258a087-23a4-45d7-931d-a970ca838874" />
+        <bind source="_PLC_View.BurnStep2" target="BurnStep2" />
+        <parameter name="BurnStep3" direction="out" type="int16" uuid="f99aa071-4381-48d7-8b52-af7857e212eb" />
+        <bind source="_PLC_View.BurnStep3" target="BurnStep3" />
+        <parameter name="BurnStep4" direction="out" type="int16" uuid="9a290094-09d0-4196-92c1-2cd8233a63b6" />
+        <bind source="_PLC_View.BurnStep4" target="BurnStep4" />
+        <parameter name="InBurnStep5" direction="in" type="int16" uuid="60dff329-7538-4e2d-9fe0-24229040d634" />
+        <bind source="InBurnStep5" target="_PLC_View.BurnStep5" />
+        <parameter name="OutBurnStep5" direction="out" type="int16" uuid="f0e4af26-349b-408d-ad22-eb720fa6ed52" />
+        <bind source="_PLC_View.BurnStep5" target="OutBurnStep5" />
+        <parameter name="InBurnStep6" direction="in" type="int16" uuid="60149426-743c-4583-b338-496bd6fd81c5" />
+        <bind source="InBurnStep6" target="_PLC_View.BurnStep6" />
+        <parameter name="OutBurnStep6" direction="out" type="int16" uuid="94d370fa-c85a-4fd7-84d4-91a67f18833e" />
+        <bind source="_PLC_View.BurnStep6" target="OutBurnStep6" />
+        <parameter name="InBurnStep7" direction="in" type="int16" uuid="2eddd8cf-75e2-4d7f-84f2-ebe666f0c49a" />
+        <bind source="InBurnStep7" target="_PLC_View.BurnStep7" />
+        <parameter name="OutBurnStep7" direction="out" type="int16" uuid="b58761ad-554b-41c7-9e3f-4cdcddee627d" />
+        <bind source="_PLC_View.BurnStep7" target="OutBurnStep7" />
+        <parameter name="InBurnStep8" direction="in" type="int16" uuid="6834f086-3b0c-44e4-8172-9cea975bf31c" />
+        <bind source="InBurnStep8" target="_PLC_View.BurnStep8" />
+        <parameter name="OutBurnStep8" direction="out" type="int16" uuid="1802e93d-70f1-46c5-af67-7c6338148a51" />
+        <bind source="_PLC_View.BurnStep8" target="OutBurnStep8" />
+        <parameter name="Err5" direction="out" type="bool" uuid="e8019ff1-bcef-4a4b-b24c-084dc96b9463" />
+        <bind source="_PLC_View.Err5" target="Err5" />
+        <parameter name="Err6" direction="out" type="bool" uuid="67c6b287-6103-4b36-874a-8f073618e4fa" />
+        <bind source="_PLC_View.Err6" target="Err6" />
+        <parameter name="Err7" direction="out" type="bool" uuid="a8fa1828-02c6-47b7-a580-f8016902d10f" />
+        <bind source="_PLC_View.Err7" target="Err7" />
+        <parameter name="Err8" direction="out" type="bool" uuid="a2bcfe37-8541-47b1-ba43-2e270cfcb7d3" />
+        <bind source="_PLC_View.Err8" target="Err8" />
+        <parameter name="InBurnStep9" direction="in" type="int16" uuid="a588b058-eed1-46aa-81c8-aeffb6a0b7fc" />
+        <bind source="InBurnStep9" target="_PLC_View.BurnStep9" />
+        <parameter name="OutBurnStep9" direction="out" type="int16" uuid="613587ae-6ba8-4a7c-b0bd-6dbe636014f1" />
+        <bind source="_PLC_View.BurnStep9" target="OutBurnStep9" />
+        <parameter name="InBurnStep10" direction="in" type="int16" uuid="037243c8-1802-4ca1-95b4-5ae7d7d8db9e" />
+        <bind source="InBurnStep10" target="_PLC_View.BurnStep10" />
+        <parameter name="OutBurnStep10" direction="out" type="int16" uuid="b0b3ec4e-1c3b-4f2c-afa6-e8e338279b0d" />
+        <bind source="_PLC_View.BurnStep10" target="OutBurnStep10" />
+        <parameter name="InBurnStep11" direction="in" type="int16" uuid="37cf3627-b09a-4a2a-87d2-8d9f2555a68a" />
+        <bind source="InBurnStep11" target="_PLC_View.BurnStep11" />
+        <parameter name="OutBurnStep11" direction="out" type="int16" uuid="04fe422d-1e2e-4b25-a41d-8b8333db3e54" />
+        <bind source="_PLC_View.BurnStep11" target="OutBurnStep11" />
+        <parameter name="InBurnStep12" direction="in" type="int16" uuid="b9867295-933f-4fa2-bec1-990b93c17664" />
+        <bind source="InBurnStep12" target="_PLC_View.BurnStep12" />
+        <parameter name="OutBurnStep12" direction="out" type="int16" uuid="12ab1eed-e7b1-413a-a0b0-ca3ddc519489" />
+        <bind source="_PLC_View.BurnStep12" target="OutBurnStep12" />
+        <parameter name="InBurnStep13" direction="in" type="int16" uuid="faa012e6-bd61-451d-9dee-885994c53037" />
+        <bind source="InBurnStep13" target="_PLC_View.BurnStep13" />
+        <parameter name="OutBurnStep13" direction="out" type="int16" uuid="fc40fed8-169d-4a4d-9795-1c8ce083ad3d" />
+        <bind source="_PLC_View.BurnStep13" target="OutBurnStep13" />
+        <parameter name="InBurnStep14" direction="in" type="int16" uuid="609669a2-8bf3-4bbe-870b-63d3014e444f" />
+        <bind source="InBurnStep14" target="_PLC_View.BurnStep14" />
+        <parameter name="OutBurnStep14" direction="out" type="int16" uuid="31878bb0-1389-4b46-a7bf-3c716ee11a15" />
+        <bind source="_PLC_View.BurnStep14" target="OutBurnStep14" />
+        <parameter name="InBurnStep15" direction="in" type="int16" uuid="b57dc131-9a91-4fd2-b0ef-5f140206cf26" />
+        <bind source="InBurnStep15" target="_PLC_View.BurnStep15" />
+        <parameter name="OutBurnStep15" direction="out" type="int16" uuid="2973bc90-8abd-4020-bd77-326ac2ae6b23" />
+        <bind source="_PLC_View.BurnStep15" target="OutBurnStep15" />
+        <parameter name="InBurnStep16" direction="in" type="int16" uuid="e12d9999-f70f-4860-a023-89f2c3cb07d7" />
+        <bind source="InBurnStep16" target="_PLC_View.BurnStep16" />
+        <parameter name="OutBurnStep16" direction="out" type="int16" uuid="f1a90594-8dfb-4059-af46-a1e4d3659a8e" />
+        <bind source="_PLC_View.BurnStep16" target="OutBurnStep16" />
+        <parameter name="Err9" direction="out" type="bool" uuid="1fd7ca1d-d8ae-41d5-aa97-842a1844c751" />
+        <bind source="_PLC_View.Err9" target="Err9" />
+        <parameter name="Err10" direction="out" type="bool" uuid="bc3698c4-d592-4f25-9202-6143cab00bea" />
+        <bind source="_PLC_View.Err10" target="Err10" />
+        <parameter name="Err11" direction="out" type="bool" uuid="097f9bca-7302-462b-baab-42a42412c30e" />
+        <bind source="_PLC_View.Err11" target="Err11" />
+        <parameter name="Err12" direction="out" type="bool" uuid="a445ef65-8201-4816-8650-0a3d3ac8d0f4" />
+        <bind source="_PLC_View.Err12" target="Err12" />
+        <parameter name="Err13" direction="out" type="bool" uuid="0c4d69ba-39ab-4e3f-9f14-51e4c7e85ed2" />
+        <bind source="_PLC_View.Err13" target="Err13" />
+        <parameter name="Err14" direction="out" type="bool" uuid="689ccb45-5363-4067-a96a-26796ce29152" />
+        <bind source="_PLC_View.Err14" target="Err14" />
+        <parameter name="Err15" direction="out" type="bool" uuid="f85ef3f1-5468-4671-a28e-289adf9dad93" />
+        <bind source="_PLC_View.Err15" target="Err15" />
+        <parameter name="Err16" direction="out" type="bool" uuid="6ac45d4b-033a-473e-a70b-13fcd5da604a" />
+        <bind source="_PLC_View.Err16" target="Err16" />
       </type>
     </type>
   </namespace>

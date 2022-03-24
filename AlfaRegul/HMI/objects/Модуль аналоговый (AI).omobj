@@ -8,7 +8,7 @@
 	<designed target="Opacity" value="1" ver="4"/>
 	<designed target="Enabled" value="true" ver="4"/>
 	<designed target="Tooltip" value="" ver="4"/>
-	<designed target="Width" value="850" ver="4"/>
+	<designed target="Width" value="700" ver="4"/>
 	<designed target="Height" value="340" ver="4"/>
 	<designed target="PenColor" value="4278190080" ver="4"/>
 	<designed target="PenStyle" value="0" ver="4"/>
@@ -17,7 +17,7 @@
 	<designed target="BrushStyle" value="1" ver="4"/>
 	<designed target="WindowX" value="0" ver="4"/>
 	<designed target="WindowY" value="0" ver="4"/>
-	<designed target="WindowWidth" value="850" ver="4"/>
+	<designed target="WindowWidth" value="700" ver="4"/>
 	<designed target="WindowHeight" value="340" ver="4"/>
 	<designed target="WindowCaption" value="AI" ver="4"/>
 	<designed target="ShowWindowCaption" value="true" ver="4"/>
@@ -813,19 +813,35 @@ while (i<16)
 			</body>
 		</do-trace>
 	</object>
-	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="Opened">
-		<body kind="om">
-			<![CDATA[/*if (unit.Security.AllowSettingsChange.Value==true)
-{
-	here.Width=720;
-	here.WindowWidth=720;
-}
-else
-{
-	here.Width=700;
-	here.WindowWidth=700;
-}*/]]>
-		</body>
-	</do-on>
+	<do-trace access-modifier="private" target="Width" ver="4">
+		<conditional-expr>
+			<condition>
+				<![CDATA[unit.Security.AllowSettingsChange.Value]]>
+			</condition>
+			<expr>
+				<![CDATA[850]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[700]]>
+			</expr>
+		</default-expr>
+	</do-trace>
+	<do-trace access-modifier="private" target="WindowWidth" ver="4">
+		<conditional-expr>
+			<condition>
+				<![CDATA[unit.Security.AllowSettingsChange.Value]]>
+			</condition>
+			<expr>
+				<![CDATA[850]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[700]]>
+			</expr>
+		</default-expr>
+	</do-trace>
 </type>
 

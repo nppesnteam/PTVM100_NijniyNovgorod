@@ -5806,7 +5806,7 @@ OpenSteps.Invoke();]]>
 					<designed target="ReadOnly" value="false" ver="4"/>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[if (me.Text=="3"||me.Text=="6"||me.Text=="11"||me.Text=="14")
+							<![CDATA[if (me.Text=="3"||me.Text=="6"||me.Text=="11"||me.Text=="14"||String.ToInt4(me.Text,OutBurnStep[Index])<1||String.ToInt4(me.Text,OutBurnStep[Index])>16)
 {
 	me.Text=OutBurnStep[Index].ValueAsString;
 }
@@ -5831,6 +5831,11 @@ SwapWork.Active=true;]]>
 								<![CDATA[0xff000000]]>
 							</expr>
 						</conditional-expr>
+					</do-trace>
+					<do-trace access-modifier="private" target="Text" ver="4">
+						<body>
+							<![CDATA[String.ToString(OutBurnStep[Index])]]>
+						</body>
 					</do-trace>
 				</object>
 			</object>
@@ -5864,7 +5869,7 @@ arStepBurn[0].Value=me.Value;]]>
 			<designed target="UpdateRate" value="0" ver="4"/>
 			<designed target="ReAdvise" value="0" ver="4"/>
 			<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
-			<init target="Path" ver="4" value="ROOT.IgnSequence"/>
+			<init target="Path" ver="4" value="ROOT.BurnStartSequence"/>
 		</object>
 		<object access-modifier="private" name="SwapWork" display-name="SwapWork" uuid="9c4126e6-2e71-4b0b-91ee-1b3b1f777af2" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="4">
 			<designed target="Period" value="1" ver="4"/>
@@ -5906,12 +5911,12 @@ while (i<12)
 					<![CDATA[i: uint1=0;
 while (i<12)
 {
-	InBurnStep[i].Path="InBurnStep"+String.ToString(i+1);
-	OutBurnStep[i].Path="OutBurnStep"+String.ToString(i+1);
-	Err[i].Path="Err"+String.ToString(i+1);
+	InBurnStep[i].Path="InBurnStep"+String.ToString(i+5);
+	OutBurnStep[i].Path="OutBurnStep"+String.ToString(i+5);
+	Err[i].Path="Err"+String.ToString(i+5);
 	Row_5[i].Y=Row_5.Y+i*Row_5.Height;
 	Row_5[i].Column_1.txt.Text=String.ToString(i+5);
-	Row_5[i].Column_2.TextEdit_1.Text=String.ToString(OutBurnStep[i]);
+	Row_5[i].Column_2.TextEdit_1.Text=OutBurnStep[i].ValueAsString;
 	i+=1;
 }]]>
 				</body>
