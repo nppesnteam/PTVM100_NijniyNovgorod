@@ -197,9 +197,9 @@
 		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
 		<init target="initPath" ver="4" value="FlapO2"/>
 	</object>
-	<object access-modifier="private" name="FlapOil" display-name="FlapOil" uuid="b09434ec-a654-48b8-8657-e0576ac302a5" base-type="flap" base-type-id="a3e73327-f733-446d-ac01-918439e55f3f" ver="3">
-		<designed target="X" value="350" ver="3"/>
-		<designed target="Y" value="9.1" ver="3"/>
+	<object access-modifier="private" name="FlapOil" display-name="FlapOil" uuid="b09434ec-a654-48b8-8657-e0576ac302a5" base-type="Flap+Mode" base-type-id="b78f6792-0d3a-4088-980d-276c0d3138ee" ver="3">
+		<designed target="X" value="353" ver="3"/>
+		<designed target="Y" value="5.8" ver="3"/>
 		<designed target="Rotation" value="90" ver="3"/>
 		<init target="Color" ver="3" value="0xffc65a02"/>
 		<init target="ValueContainerGrad" ver="4" value="270"/>

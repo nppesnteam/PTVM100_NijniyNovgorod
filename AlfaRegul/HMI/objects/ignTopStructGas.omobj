@@ -298,7 +298,7 @@
 		<init target="initPath" ver="4" value="FlapGas"/>
 		<init target="HavePositSens" ver="4" value="true"/>
 	</object>
-	<object access-modifier="private" name="FlapOil" display-name="FlapOil" uuid="ffc027db-3594-40fa-9bd4-48059dfb847d" base-type="flap" base-type-id="a3e73327-f733-446d-ac01-918439e55f3f" ver="3">
+	<object access-modifier="private" name="FlapOil" display-name="FlapOil" uuid="ffc027db-3594-40fa-9bd4-48059dfb847d" base-type="Flap+Mode" base-type-id="b78f6792-0d3a-4088-980d-276c0d3138ee" ver="3">
 		<designed target="X" value="-43" ver="3"/>
 		<designed target="Y" value="70" ver="3"/>
 		<designed target="Rotation" value="0" ver="3"/>
@@ -311,7 +311,7 @@
 		<designed target="Y" value="64" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
-		<init target="initPath" ver="4" value="Fan"/>
+		<init target="initPath" ver="4" value="Vent"/>
 		<do-trace access-modifier="private" target="BurnNumber" ver="4">
 			<body>
 				<![CDATA[Str.ToString(here.burner.BurnNumber)]]>

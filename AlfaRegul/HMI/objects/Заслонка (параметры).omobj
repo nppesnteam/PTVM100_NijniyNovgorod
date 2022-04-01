@@ -412,18 +412,18 @@
 		<do-trace access-modifier="private" target="Enabled" ver="4">
 			<conditional-expr>
 				<condition>
-					<![CDATA[refData.outStrMode == "РУЧНОЙ"]]>
+					<![CDATA[refData.OutAutoMode]]>
 				</condition>
 				<expr>
-					<![CDATA[true]]>
+					<![CDATA[false]]>
 				</expr>
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[refData.outStrMode == "АВТОМАТ"]]>
+					<![CDATA[!refData.OutAutoMode]]>
 				</condition>
 				<expr>
-					<![CDATA[false]]>
+					<![CDATA[true]]>
 				</expr>
 			</conditional-expr>
 		</do-trace>
@@ -438,6 +438,7 @@ refData.InOutL=true;]]>
 				<![CDATA[unit.Global.ShowMSG("Нажатие на кнопку \""+me.Text+"\" объекта \""+refData.NAME+"\".", 2);]]>
 			</body>
 		</do-on>
+		<designed target="Checked" value="false" ver="4"/>
 	</object>
 	<object access-modifier="private" name="btnOpen" display-name="btnOpen" uuid="d7b7dae5-1e06-4f0a-a1c2-601452c49cb1" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
 		<designed target="X" value="317" ver="4"/>
@@ -482,18 +483,18 @@ refData.InOutL=true;]]>
 		<do-trace access-modifier="private" target="Enabled" ver="4">
 			<conditional-expr>
 				<condition>
-					<![CDATA[refData.outStrMode == "РУЧНОЙ"]]>
+					<![CDATA[refData.OutAutoMode]]>
 				</condition>
 				<expr>
-					<![CDATA[true]]>
+					<![CDATA[false]]>
 				</expr>
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[refData.outStrMode == "АВТОМАТ"]]>
+					<![CDATA[!refData.OutAutoMode]]>
 				</condition>
 				<expr>
-					<![CDATA[false]]>
+					<![CDATA[true]]>
 				</expr>
 			</conditional-expr>
 		</do-trace>
@@ -508,6 +509,7 @@ refData.InOutH=true;]]>
 				<![CDATA[unit.Global.ShowMSG("Нажатие на кнопку \""+me.Text+"\" объекта \""+refData.NAME+"\".", 2);]]>
 			</body>
 		</do-on>
+		<designed target="Checked" value="false" ver="4"/>
 	</object>
 	<object access-modifier="private" name="btnStop" display-name="btnStop" uuid="2634ef56-583b-4ca7-9822-a004602626e8" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
 		<designed target="X" value="232" ver="4"/>
@@ -552,18 +554,18 @@ refData.InOutH=true;]]>
 		<do-trace access-modifier="private" target="Enabled" ver="4">
 			<conditional-expr>
 				<condition>
-					<![CDATA[refData.outStrMode == "РУЧНОЙ"]]>
+					<![CDATA[refData.OutAutoMode]]>
 				</condition>
 				<expr>
-					<![CDATA[true]]>
+					<![CDATA[false]]>
 				</expr>
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[refData.outStrMode == "АВТОМАТ"]]>
+					<![CDATA[!refData.OutAutoMode]]>
 				</condition>
 				<expr>
-					<![CDATA[false]]>
+					<![CDATA[true]]>
 				</expr>
 			</conditional-expr>
 		</do-trace>
@@ -578,6 +580,7 @@ refData.InOutL=false;]]>
 				<![CDATA[unit.Global.ShowMSG("Нажатие на кнопку \""+me.Text+"\" объекта \""+refData.NAME+"\".", 2);]]>
 			</body>
 		</do-on>
+		<designed target="Checked" value="false" ver="4"/>
 	</object>
 	<object access-modifier="private" name="rectStatus" display-name="rectStatus" uuid="28fc3dc5-658d-4673-a1dd-7206356d39b9" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
 		<designed target="X" value="0" ver="4"/>
@@ -926,9 +929,22 @@ OpenTrends.Invoke();]]>
 		<designed target="FontColor" value="4278190080" ver="4"/>
 		<designed target="TextAlignment" value="129" ver="4"/>
 		<do-trace access-modifier="private" target="Text" ver="4">
-			<body>
-				<![CDATA[refData.outStrMode]]>
-			</body>
+			<conditional-expr>
+				<condition>
+					<![CDATA[refData.OutAutoMode]]>
+				</condition>
+				<expr>
+					<![CDATA["АВТОМАТ"]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[!refData.OutAutoMode]]>
+				</condition>
+				<expr>
+					<![CDATA["РУЧНОЙ"]]>
+				</expr>
+			</conditional-expr>
 		</do-trace>
 	</object>
 	<object access-modifier="private" name="txtPosit" display-name="txtPosit" uuid="fa0a1e4e-c734-46e9-b4f4-ccd43e07b1b5" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">

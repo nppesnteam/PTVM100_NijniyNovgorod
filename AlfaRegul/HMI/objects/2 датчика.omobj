@@ -662,30 +662,9 @@ if (refData.outiSel == 1)
 			<object access-modifier="private" uuid="2a2337c5-8bcb-49f1-8073-95406267a35c" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
 				<designed target="DigitsCount" value="0" ver="4"/>
 				<do-trace access-modifier="private" target="DigitsCount" ver="4">
-					<conditional-expr>
-						<condition>
-							<![CDATA[refData.ALIAS=="P"]]>
-						</condition>
-						<expr>
-							<![CDATA[2]]>
-						</expr>
-					</conditional-expr>
-					<conditional-expr>
-						<condition>
-							<![CDATA[refData.ALIAS=="T"]]>
-						</condition>
-						<expr>
-							<![CDATA[1]]>
-						</expr>
-					</conditional-expr>
-					<conditional-expr>
-						<condition>
-							<![CDATA[refData.ALIAS=="F"]]>
-						</condition>
-						<expr>
-							<![CDATA[1]]>
-						</expr>
-					</conditional-expr>
+					<body>
+						<![CDATA[refData.DIGITS]]>
+					</body>
 				</do-trace>
 			</object>
 		</init>

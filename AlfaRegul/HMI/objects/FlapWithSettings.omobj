@@ -96,7 +96,7 @@
 		<do-trace access-modifier="private" target="BrushColor" ver="4">
 			<conditional-expr>
 				<condition>
-					<![CDATA[outStrMode=="РУЧНОЙ"]]>
+					<![CDATA[!OutAutoMode]]>
 				</condition>
 				<expr>
 					<![CDATA[0xffff0000]]>
@@ -104,7 +104,7 @@
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[outStrMode=="АВТОМАТ"]]>
+					<![CDATA[OutAutoMode]]>
 				</condition>
 				<expr>
 					<![CDATA[0xff00ff00]]>
@@ -398,10 +398,6 @@ OpenModuleWindow.Invoke();]]>
 			</body>
 		</do-on>
 	</object>
-	<object access-modifier="private" name="outStrMode" display-name="outStrMode" uuid="6efa1317-3063-4087-a616-867eaf4cdd81" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="OutMan_On"/>
-	</object>
 	<object access-modifier="private" name="InOutH" display-name="InOutH" uuid="f142264d-b229-4338-aca4-506fc3b1c998" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
 		<init target="Path" ver="4" value="InOutH"/>
@@ -652,5 +648,9 @@ if (counter == 60)
 		</body>
 	</do-trace>
 	<object access-modifier="private" name="SetChanged" display-name="SetChanged" uuid="0295633f-82d1-43a7-a70b-349ae6b232a6" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+	<object access-modifier="private" name="OutAutoMode" display-name="OutAutoMode" uuid="01c6bfb3-8d64-495c-b972-ebe5ddfbe94a" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="Auto"/>
+	</object>
 </type>
 

@@ -920,7 +920,7 @@ refData.inTASK = hereTask;]]>
 		<do-trace access-modifier="private" target="Enabled" ver="4">
 			<conditional-expr>
 				<condition>
-					<![CDATA[refData.outStrMode == "АВТОМАТ"]]>
+					<![CDATA[refData.OutAutoMode]]>
 				</condition>
 				<expr>
 					<![CDATA[false]]>
@@ -928,7 +928,7 @@ refData.inTASK = hereTask;]]>
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[refData.outStrMode == "РУЧНОЙ"]]>
+					<![CDATA[!refData.OutAutoMode]]>
 				</condition>
 				<expr>
 					<![CDATA[true]]>
@@ -945,6 +945,7 @@ refData.inTASK = hereTask;]]>
 				<![CDATA[refData.InOutL = false;]]>
 			</body>
 		</do-on>
+		<designed target="Checked" value="false" ver="4"/>
 	</object>
 	<object access-modifier="private" name="btnUp" display-name="btnUp" uuid="98d352f8-8883-4d1a-ac76-20e43d73941c" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
 		<designed target="X" value="168" ver="4"/>
@@ -1125,7 +1126,7 @@ refData.inTASK = hereTask;]]>
 		<do-trace access-modifier="private" target="Enabled" ver="4">
 			<conditional-expr>
 				<condition>
-					<![CDATA[refData.outStrMode == "АВТОМАТ"]]>
+					<![CDATA[refData.OutAutoMode]]>
 				</condition>
 				<expr>
 					<![CDATA[false]]>
@@ -1133,7 +1134,7 @@ refData.inTASK = hereTask;]]>
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[refData.outStrMode == "РУЧНОЙ"]]>
+					<![CDATA[!refData.OutAutoMode]]>
 				</condition>
 				<expr>
 					<![CDATA[true]]>
@@ -1150,6 +1151,7 @@ refData.inTASK = hereTask;]]>
 				<![CDATA[refData.InOutH = false;]]>
 			</body>
 		</do-on>
+		<designed target="Checked" value="false" ver="4"/>
 	</object>
 	<object access-modifier="private" name="taskInc" display-name="taskInc" uuid="85f4ed72-85b8-4f63-ad8c-901bf4cccbae" base-type="Timer" base-type-id="72ba7cd4-549e-41f2-923c-2431b91f349a" ver="4">
 		<designed target="Period" value="250" ver="4"/>
@@ -1273,7 +1275,7 @@ if (me.Period>50)
 		<do-trace access-modifier="private" target="BrushStyle" ver="4">
 			<conditional-expr>
 				<condition>
-					<![CDATA[refData.outStrMode == "АВТОМАТ"]]>
+					<![CDATA[refData.OutAutoMode]]>
 				</condition>
 				<expr>
 					<![CDATA[1]]>
@@ -1281,7 +1283,7 @@ if (me.Period>50)
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[refData.outStrMode == "РУЧНОЙ"]]>
+					<![CDATA[!refData.OutAutoMode]]>
 				</condition>
 				<expr>
 					<![CDATA[0]]>
@@ -1327,7 +1329,7 @@ if (me.Period>50)
 		<do-trace access-modifier="private" target="BrushStyle" ver="4">
 			<conditional-expr>
 				<condition>
-					<![CDATA[refData.outStrMode == "АВТОМАТ"]]>
+					<![CDATA[refData.OutAutoMode]]>
 				</condition>
 				<expr>
 					<![CDATA[0]]>
@@ -1335,7 +1337,7 @@ if (me.Period>50)
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[refData.outStrMode == "РУЧНОЙ"]]>
+					<![CDATA[!refData.OutAutoMode]]>
 				</condition>
 				<expr>
 					<![CDATA[1]]>

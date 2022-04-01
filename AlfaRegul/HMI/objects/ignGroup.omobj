@@ -381,9 +381,9 @@
 	<object access-modifier="private" name="BurnerHasGas" display-name="BurnerHasGas" uuid="528146af-3706-435d-9d72-bc08a661ff64" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
 	<object access-modifier="private" name="IgnHasGas" display-name="IgnHasGas" uuid="7a179622-093d-4821-ac6f-d29a1fa92d5d" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
 	<object access-modifier="private" name="Group" display-name="Group" uuid="f3a6e364-68bf-4b2d-9f90-4e43db3d9716" base-type="notifying_int1" base-type-id="cc2bf8ea-3898-4228-bc8f-71a7738f0c62" ver="4"/>
-	<object access-modifier="private" name="FlapOil" display-name="FlapOil" uuid="08678c3b-9028-45ef-b7c6-62374cceb186" base-type="flap" base-type-id="a3e73327-f733-446d-ac01-918439e55f3f" ver="3">
-		<designed target="X" value="350" ver="3"/>
-		<designed target="Y" value="9" ver="3"/>
+	<object access-modifier="private" name="FlapOil" display-name="FlapOil" uuid="08678c3b-9028-45ef-b7c6-62374cceb186" base-type="Flap+Mode" base-type-id="b78f6792-0d3a-4088-980d-276c0d3138ee" ver="3">
+		<designed target="X" value="353" ver="3"/>
+		<designed target="Y" value="5.8" ver="3"/>
 		<designed target="Rotation" value="90" ver="3"/>
 		<init target="Color" ver="3" value="0xffc65a02"/>
 		<init target="ValueContainerGrad" ver="4" value="270"/>

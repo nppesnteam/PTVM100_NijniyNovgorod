@@ -42,19 +42,31 @@
     <nodeId>Application.GVL.stGaz2Boiler.bPowerGate_1</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Gas.Gate1.Open</node-path>
+    <node-path>ROOT.Gas.Gate1.OutOpen</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stGaz2Boiler.bCtrlUpGate_1</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Gas.Gate1.OutClose</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stGaz2Boiler.bCtrlDnGate_1</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Gas.Gate1.InOpen</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.ST_Virtual_Key.bOpGate_1</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Gas.Gate1.Close</node-path>
+    <node-path>ROOT.Gas.Gate1.InClose</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.ST_Virtual_Key.bClGate_1</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Gas.Gate1.Stop</node-path>
+    <node-path>ROOT.Gas.Gate1.InStop</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.ST_Virtual_Key.bStopGate_1</nodeId>
@@ -69,7 +81,7 @@
     <node-path>ROOT.Gas.ValveBlowBot.OutH</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllDiInput.stMainDi2_4.bK35_135</nodeId>
+    <nodeId>Application.GVL.stAllDiInputProg.stMainDi2_4.bK35_135</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Gas.ValveBlowBot.Err</node-path>
@@ -87,7 +99,7 @@
     <node-path>ROOT.Gas.ValveAfterFlap.OutH</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllDiInput.stMainDi2_4.bK33_133</nodeId>
+    <nodeId>Application.GVL.stAllDiInputProg.stMainDi2_4.bK33_133</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Gas.ValveAfterFlap.Err</node-path>
@@ -105,7 +117,7 @@
     <node-path>ROOT.Gas.ValveBlowTop.OutH</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllDiInput.stMainDi2_4.bK34_134</nodeId>
+    <nodeId>Application.GVL.stAllDiInputProg.stMainDi2_4.bK34_134</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Gas.ValveBlowTop.Err</node-path>
@@ -216,13 +228,25 @@
     <nodeId>Application.GVL.stGaz2Boiler.bPowerDamper</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Gas.Flap.Open</node-path>
+    <node-path>ROOT.Gas.Flap.InOpen</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.ST_Virtual_Key.bUpManG</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Gas.Flap.InClose</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.ST_Virtual_Key.bDnManG</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Gas.Flap.OutOpen</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stGaz2Boiler.bCtrlUpDamper</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Gas.Flap.Close</node-path>
+    <node-path>ROOT.Gas.Flap.OutClose</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stGaz2Boiler.bCtrlDnDamper</nodeId>
@@ -270,19 +294,31 @@
     <nodeId>Application.GVL.stGaz2Boiler.bPowerGate_2</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Gas.Gate2.Open</node-path>
+    <node-path>ROOT.Gas.Gate2.OutOpen</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stGaz2Boiler.bCtrlUpGate_2</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Gas.Gate2.OutClose</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stGaz2Boiler.bCtrlDnGate_2</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Gas.Gate2.InOpen</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.ST_Virtual_Key.bOpGate_2</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Gas.Gate2.Close</node-path>
+    <node-path>ROOT.Gas.Gate2.InClose</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.ST_Virtual_Key.bClGate_2</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Gas.Gate2.Stop</node-path>
+    <node-path>ROOT.Gas.Gate2.InStop</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.ST_Virtual_Key.bStopGate_2</nodeId>
@@ -6130,19 +6166,31 @@
     <nodeId>Application.GVL.stWoter2Boiler.bPowerGate_In</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Water.GateIn.Open</node-path>
+    <node-path>ROOT.Water.GateIn.OutOpen</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stWoter2Boiler.bCtrlUpGate_In</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Water.GateIn.OutClose</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stWoter2Boiler.bCtrlDnGate_In</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Water.GateIn.InOpen</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.ST_Virtual_Key.bOpGate_4</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Water.GateIn.Close</node-path>
+    <node-path>ROOT.Water.GateIn.InClose</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.ST_Virtual_Key.bClGate_4</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Water.GateIn.Stop</node-path>
+    <node-path>ROOT.Water.GateIn.InStop</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.ST_Virtual_Key.bStopGate_4</nodeId>
@@ -6172,19 +6220,31 @@
     <nodeId>Application.GVL.stWoter2Boiler.bPowerGate_Out</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Water.GateOut.Open</node-path>
+    <node-path>ROOT.Water.GateOut.OutOpen</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stWoter2Boiler.bCtrlUpGate_Out</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Water.GateOut.OutClose</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stWoter2Boiler.bCtrlDnGate_Out</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Water.GateOut.InOpen</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.ST_Virtual_Key.bOpGate_5</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Water.GateOut.Close</node-path>
+    <node-path>ROOT.Water.GateOut.InClose</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.ST_Virtual_Key.bClGate_5</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Water.GateOut.Stop</node-path>
+    <node-path>ROOT.Water.GateOut.InStop</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.ST_Virtual_Key.bStopGate_5</nodeId>
@@ -6232,19 +6292,31 @@
     <nodeId>Application.GVL.stWoter2Boiler.bPowerGate_Byp</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Water.GateBypass.Open</node-path>
+    <node-path>ROOT.Water.GateBypass.OutOpen</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stWoter2Boiler.bCtrlUpGate_Byp</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Water.GateBypass.OutClose</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stWoter2Boiler.bCtrlDnGate_Byp</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Water.GateBypass.InOpen</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.ST_Virtual_Key.bOpGate_6</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Water.GateBypass.Close</node-path>
+    <node-path>ROOT.Water.GateBypass.InClose</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.ST_Virtual_Key.bClGate_6</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Water.GateBypass.Stop</node-path>
+    <node-path>ROOT.Water.GateBypass.InStop</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.ST_Virtual_Key.bStopGate_6</nodeId>
@@ -6298,19 +6370,31 @@
     <nodeId>Application.GVL.stOil2Boiler.bPowerGate</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Oil.Gate.Open</node-path>
+    <node-path>ROOT.Oil.Gate.OutOpen</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stOil2Boiler.bCtrlUpGate</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Oil.Gate.OutClose</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stOil2Boiler.bCtrlDnGate</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Oil.Gate.InOpen</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.ST_Virtual_Key.bOpGate_3</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Oil.Gate.Close</node-path>
+    <node-path>ROOT.Oil.Gate.InClose</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.ST_Virtual_Key.bClGate_3</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Oil.Gate.Stop</node-path>
+    <node-path>ROOT.Oil.Gate.InStop</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.ST_Virtual_Key.bStopGate_3</nodeId>
@@ -6325,7 +6409,7 @@
     <node-path>ROOT.Oil.Valve.OutH</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllDiInput.stMainDi2_4.bK36_136</nodeId>
+    <nodeId>Application.GVL.stAllDiInputProg.stMainDi2_4.bK36_136</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Oil.Valve.Err</node-path>
@@ -6436,13 +6520,25 @@
     <nodeId>Application.GVL.stOil2Boiler.bPowerDamper</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Oil.Flap.Open</node-path>
+    <node-path>ROOT.Oil.Flap.InOpen</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.ST_Virtual_Key.bUpManO</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Oil.Flap.InClose</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.ST_Virtual_Key.bDnManO</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Oil.Flap.OutOpen</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stOil2Boiler.bCtrlUpDamper</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Oil.Flap.Close</node-path>
+    <node-path>ROOT.Oil.Flap.OutClose</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stOil2Boiler.bCtrlDnDamper</nodeId>
@@ -7250,6 +7346,12 @@
     <nodeId>Application.GVL.stResultTruns2VisuBurn_I.stResultTruns2VisuBurnMain.bControlDnO</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn3.FlapOil.Auto</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stResultTruns2VisuBurn_I.stResultTruns2VisuBurnMain.bAutoO</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Group1.Burn3.ManCtrlGas.Up</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -7512,6 +7614,12 @@
     <nodeId>Application.GVL.stResultTruns2VisuBurn_I.arstResultTruns2VisuBurnWork[1].bControlDnO</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn1.FlapOil.Auto</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stResultTruns2VisuBurn_I.arstResultTruns2VisuBurnWork[1].bAutoO</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Group1.Burn1.ManCtrlAir.Up</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -7702,6 +7810,12 @@
     <nodeId>Application.GVL.stResultTruns2VisuBurn_I.arstResultTruns2VisuBurnWork[2].bControlDnO</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn2.FlapOil.Auto</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stResultTruns2VisuBurn_I.arstResultTruns2VisuBurnWork[2].bAutoO</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Group1.Burn2.ManCtrlAir.Up</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -7890,6 +8004,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stResultTruns2VisuBurn_I.arstResultTruns2VisuBurnWork[3].bControlDnO</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn4.FlapOil.Auto</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stResultTruns2VisuBurn_I.arstResultTruns2VisuBurnWork[3].bAutoO</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Group1.Burn4.ManCtrlAir.Up</node-path>
@@ -8084,13 +8204,25 @@
     <nodeId>Application.GVL.stDampersVac.bPowerDamperA</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Smoke.FlapA.Open</node-path>
+    <node-path>ROOT.Smoke.FlapA.InOpen</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.ST_Virtual_Key.bUpManV_A</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Smoke.FlapA.InClose</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.ST_Virtual_Key.bDnManV_A</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Smoke.FlapA.OutOpen</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stDampersVac.bCtrlUpDamperA</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Smoke.FlapA.Close</node-path>
+    <node-path>ROOT.Smoke.FlapA.OutClose</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stDampersVac.bCtrlDnDamperA</nodeId>
@@ -8198,13 +8330,25 @@
     <nodeId>Application.GVL.stDampersVac.bPowerDamperB</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Smoke.FlapB.Open</node-path>
+    <node-path>ROOT.Smoke.FlapB.InOpen</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.ST_Virtual_Key.bUpManV_B</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Smoke.FlapB.InClose</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.ST_Virtual_Key.bDnManV_B</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Smoke.FlapB.OutOpen</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stDampersVac.bCtrlUpDamperB</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Smoke.FlapB.Close</node-path>
+    <node-path>ROOT.Smoke.FlapB.OutClose</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stDampersVac.bCtrlDnDamperB</nodeId>
@@ -8531,6 +8675,12 @@
     <nodeId>Application.GVL.stResultTruns2VisuBurn_II.stResultTruns2VisuBurnMain.bControlDnO</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn2.FlapOil.Auto</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stResultTruns2VisuBurn_II.stResultTruns2VisuBurnMain.bAutoO</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Group2.Burn2.ManCtrlGas.Up</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -8733,6 +8883,12 @@
     <nodeId>Application.GVL.stResultTruns2VisuBurn_II.arstResultTruns2VisuBurnWork[2].bControlDnO</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn3.FlapOil.Auto</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stResultTruns2VisuBurn_II.arstResultTruns2VisuBurnWork[2].bAutoO</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Group2.Burn3.ManCtrlAir.Up</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -8923,6 +9079,12 @@
     <nodeId>Application.GVL.stResultTruns2VisuBurn_II.arstResultTruns2VisuBurnWork[3].bControlDnO</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn4.FlapOil.Auto</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stResultTruns2VisuBurn_II.arstResultTruns2VisuBurnWork[3].bAutoO</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Group2.Burn4.ManCtrlAir.Up</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -9111,6 +9273,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stResultTruns2VisuBurn_II.arstResultTruns2VisuBurnWork[1].bControlDnO</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn1.FlapOil.Auto</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stResultTruns2VisuBurn_II.arstResultTruns2VisuBurnWork[1.bAutoO</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Group2.Burn1.ManCtrlAir.Up</node-path>
@@ -9471,6 +9639,12 @@
     <nodeId>Application.GVL.stResultTruns2VisuBurn_III.stResultTruns2VisuBurnMain.bControlDnO</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn3.FlapOil.Auto</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stResultTruns2VisuBurn_III.stResultTruns2VisuBurnMain.bAutoO</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Group3.Burn3.ManCtrlGas.Up</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -9673,6 +9847,12 @@
     <nodeId>Application.GVL.stResultTruns2VisuBurn_III.arstResultTruns2VisuBurnWork[2].bControlDnO</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn2.FlapOil.Auto</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stResultTruns2VisuBurn_III.arstResultTruns2VisuBurnWork[2].bAutoO</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Group3.Burn2.ManCtrlAir.Up</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -9863,6 +10043,12 @@
     <nodeId>Application.GVL.stResultTruns2VisuBurn_III.arstResultTruns2VisuBurnWork[3].bControlDnO</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn4.FlapOil.Auto</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stResultTruns2VisuBurn_III.arstResultTruns2VisuBurnWork[3].bAutoO</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Group3.Burn4.ManCtrlAir.Up</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -10051,6 +10237,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stResultTruns2VisuBurn_III.arstResultTruns2VisuBurnWork[1].bControlDnO</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn1.FlapOil.Auto</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stResultTruns2VisuBurn_III.arstResultTruns2VisuBurnWork[1].bAutoO</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Group3.Burn1.ManCtrlAir.Up</node-path>
@@ -10411,6 +10603,12 @@
     <nodeId>Application.GVL.stResultTruns2VisuBurn_IV.stResultTruns2VisuBurnMain.bControlDnO</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn2.FlapOil.Auto</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stResultTruns2VisuBurn_IV.stResultTruns2VisuBurnMain.bAutoO</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Group4.Burn2.ManCtrlGas.Up</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -10613,6 +10811,12 @@
     <nodeId>Application.GVL.stResultTruns2VisuBurn_IV.arstResultTruns2VisuBurnWork[2].bControlDnO</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn3.FlapOil.Auto</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stResultTruns2VisuBurn_IV.arstResultTruns2VisuBurnWork[2].bAutoO</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Group4.Burn3.ManCtrlAir.Up</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -10803,6 +11007,12 @@
     <nodeId>Application.GVL.stResultTruns2VisuBurn_IV.arstResultTruns2VisuBurnWork[3].bControlDnO</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn4.FlapOil.Auto</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stResultTruns2VisuBurn_IV.arstResultTruns2VisuBurnWork[3].bAutoO</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Group4.Burn4.ManCtrlAir.Up</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -10991,6 +11201,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stResultTruns2VisuBurn_IV.arstResultTruns2VisuBurnWork[1].bControlDnO</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn1.FlapOil.Auto</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stResultTruns2VisuBurn_IV.arstResultTruns2VisuBurnWork[1].bAutoO</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Group4.Burn1.ManCtrlAir.Up</node-path>
