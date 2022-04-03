@@ -5,8 +5,8 @@
 	<designed target="Width" value="1720" ver="4"/>
 	<designed target="Height" value="960" ver="4"/>
 	<object access-modifier="private" name="Settings" display-name="Settings" uuid="e9306eb9-4f65-42bd-a283-f8ac86a0b901" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
-		<designed target="X" value="758" ver="4"/>
-		<designed target="Y" value="10" ver="4"/>
+		<designed target="X" value="896" ver="4"/>
+		<designed target="Y" value="302" ver="4"/>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="1" ver="4"/>
@@ -15,7 +15,7 @@
 		<designed target="Enabled" value="true" ver="4"/>
 		<designed target="Tooltip" value="" ver="4"/>
 		<designed target="Width" value="630" ver="4"/>
-		<designed target="Height" value="240" ver="4"/>
+		<designed target="Height" value="200" ver="4"/>
 		<designed target="PenColor" value="4278190080" ver="4"/>
 		<designed target="PenStyle" value="1" ver="4"/>
 		<designed target="PenWidth" value="1" ver="4"/>
@@ -187,7 +187,7 @@
 				</object>
 			</object>
 		</object>
-		<object access-modifier="private" name="Row_1" display-name="Row_1" uuid="bb558a83-50e4-4b21-ad83-2de99d72f562" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4" cardinal="10">
+		<object access-modifier="private" name="Row_1" display-name="Row_1" uuid="bb558a83-50e4-4b21-ad83-2de99d72f562" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4" cardinal="9">
 			<designed target="X" value="0" ver="4"/>
 			<designed target="Y" value="20" ver="4"/>
 			<designed target="ZValue" value="0" ver="4"/>
@@ -286,7 +286,11 @@
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-InSignal = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutSignal));]]>
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,OutSignal))<0)
+	InSignal=OutSignal;
+else
+	InSignal = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutSignal));
+me.Text=OutSignal.ValueAsString;]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="Text" ver="4">
@@ -301,7 +305,8 @@ InSignal = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutSignal));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" ("+Header.Column_2.txt.Text+")"+"\" изменена на "+me.Text+" "+Column_4.txt.Text+".",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" ("+Header.Column_2.txt.Text+")"+"\" изменена на "+me.Text+" "+Column_4.txt.Text+".",2);]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="Visible" ver="4">
@@ -366,7 +371,11 @@ InSignal = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutSignal));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-InProtect = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutProtect));]]>
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,OutProtect))<0)
+	InProtect=OutProtect;
+else
+	InProtect = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutProtect));
+me.Text=OutProtect.ValueAsString;]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="Text" ver="4">
@@ -381,7 +390,8 @@ InProtect = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutProtect));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" ("+Header.Column_3.txt.Text+")"+"\" изменена на "+me.Text+" "+Column_4.txt.Text+".",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" ("+Header.Column_3.txt.Text+")"+"\" изменена на "+me.Text+" "+Column_4.txt.Text+".",2);]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="Visible" ver="4">
@@ -471,7 +481,7 @@ InProtect = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutProtect));]]>
 			<designed target="UpdateRate" value="0" ver="4"/>
 			<designed target="ReAdvise" value="0" ver="4"/>
 			<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
-			<init target="Path" ver="4" value="ROOT.AlarmsValue"/>
+			<init target="Path" ver="4" value="ROOT.AlarmsValue.ValueAlarmBoiler"/>
 		</object>
 		<object access-modifier="private" name="Initializer" display-name="Initializer" uuid="cc3e7818-335e-41a8-81c1-74bc7369a3f7" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="4">
 			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Initialized">
@@ -479,12 +489,12 @@ InProtect = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutProtect));]]>
 					<![CDATA[i: uint1=0;
 while (i<10)
 {
-	Row_1[i].Name.Path="Prot"+String.ToString(i)+".NAME";
-	Row_1[i].InProtect.Path="Prot"+String.ToString(i)+".InProtect";
-	Row_1[i].InSignal.Path="Prot"+String.ToString(i)+".InSignal";
-	Row_1[i].OutProtect.Path="Prot"+String.ToString(i)+".OutProtect";
-	Row_1[i].OutSignal.Path="Prot"+String.ToString(i)+".OutSignal";
-	Row_1[i].EU.Path="Prot"+String.ToString(i)+".EU";
+	Row_1[i].Name.Path="Prot"+String.ToString(i+1)+".NAME";
+	Row_1[i].InProtect.Path="Prot"+String.ToString(i+1)+".InProtect";
+	Row_1[i].InSignal.Path="Prot"+String.ToString(i+1)+".InSignal";
+	Row_1[i].OutProtect.Path="Prot"+String.ToString(i+1)+".OutProtect";
+	Row_1[i].OutSignal.Path="Prot"+String.ToString(i+1)+".OutSignal";
+	Row_1[i].EU.Path="Prot"+String.ToString(i+1)+".EU";
 	Row_1[i].Y=Row_1.Y+Row_1.Height*i;
 	i+=1;
 }]]>
@@ -521,8 +531,8 @@ while (i<10)
 	<designed target="WindowPosition" value="0" ver="4"/>
 	<designed target="WindowCloseMode" value="0" ver="4"/>
 	<object access-modifier="private" name="SettingsBurnVal" display-name="SettingsBurnVal" uuid="bb9ea9b8-714a-48fb-976b-ff8291f9d90f" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
-		<designed target="X" value="773" ver="4"/>
-		<designed target="Y" value="270" ver="4"/>
+		<designed target="X" value="911" ver="4"/>
+		<designed target="Y" value="562" ver="4"/>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="1" ver="4"/>
@@ -812,7 +822,8 @@ InPGasBurnL = TypeConvert.ToFloat(Str.ToDouble(me.Text,outPGasBurnL));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" изменена на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" изменена на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -963,7 +974,8 @@ InPGasBurnH = TypeConvert.ToFloat(Str.ToDouble(me.Text,outPGasBurnH));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" изменена на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" изменена на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -1114,7 +1126,8 @@ InPO2BurnL = TypeConvert.ToFloat(Str.ToDouble(me.Text,outPO2BurnL));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" изменена на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" изменена на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -1265,7 +1278,8 @@ InImpGas= TypeConvert.ToFloat(Str.ToDouble(me.Text,outImpGas));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" изменена на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -1416,7 +1430,8 @@ InImpO2 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outImpO2));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" изменена на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -1567,7 +1582,8 @@ InImpDel = TypeConvert.ToFloat(Str.ToDouble(me.Text,outImpDel));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" изменена на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" изменена на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -1718,7 +1734,8 @@ InPMin = TypeConvert.ToFloat(Str.ToDouble(me.Text,outPMin));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" изменена на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -1869,7 +1886,8 @@ InPMax = TypeConvert.ToFloat(Str.ToDouble(me.Text,outPMax));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" изменена на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -2020,7 +2038,8 @@ t_inDelValve = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outDelValve));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" изменен на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" изменена на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -2171,7 +2190,8 @@ t_inDelFire = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outDelFire));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" изменен на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" изменена на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -2322,7 +2342,8 @@ t_inDelFan = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outDelFan));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" изменен на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" изменена на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -2473,7 +2494,8 @@ t_inDelPGas = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outDelPGas));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" изменен на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" изменена на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -2624,7 +2646,8 @@ t_inDelPO2 = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outDelPO2));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" изменен на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" изменена на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -2750,8 +2773,8 @@ t_inDelPO2 = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outDelPO2));]]>
 		</object>
 	</object>
 	<object access-modifier="private" name="SettingsTimeProc" display-name="SettingsTimeProc" uuid="b5c86ec7-f1c7-4ef2-b023-76762bc23b51" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
-		<designed target="X" value="20" ver="4"/>
-		<designed target="Y" value="340" ver="4"/>
+		<designed target="X" value="56" ver="4"/>
+		<designed target="Y" value="494" ver="4"/>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="1" ver="4"/>
@@ -3031,7 +3054,11 @@ t_inDelPO2 = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outDelPO2));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-t_inVent = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outVent));]]>
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outVent))<0)
+	t_inVent=t_outVent;
+else
+	t_inVent = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outVent));
+me.Text=t_outVent.ValueAsString;]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -3041,7 +3068,8 @@ t_inVent = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outVent));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -3182,7 +3210,11 @@ t_inVent = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outVent));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-t_inSpark = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outSpark));]]>
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outSpark))<0)
+	t_inSpark=t_outSpark;
+else
+	t_inSpark = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outSpark));
+me.Text=t_outSpark.ValueAsString;]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -3192,7 +3224,8 @@ t_inSpark = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outSpark));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -3333,7 +3366,11 @@ t_inSpark = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outSpark));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-t_inIgnGas = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outIgnGas));]]>
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outIgnGas))<0)
+	t_inIgnGas=t_outIgnGas;
+else
+	t_inIgnGas = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outIgnGas));
+me.Text=t_outIgnGas.ValueAsString;]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -3343,7 +3380,8 @@ t_inIgnGas = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outIgnGas));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -3484,7 +3522,11 @@ t_inIgnGas = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outIgnGas));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-t_inIgnOil = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outIgnOil));]]>
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outIgnOil))<0)
+	t_inIgnOil=t_outIgnOil;
+else
+	t_inIgnOil = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outIgnOil));
+me.Text=t_outIgnOil.ValueAsString;]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -3494,7 +3536,8 @@ t_inIgnOil = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outIgnOil));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -3635,7 +3678,11 @@ t_inIgnOil = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outIgnOil));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-t_inBurn = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outBurn));]]>
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outBurn))<0)
+	t_inBurn=t_outBurn;
+else
+	t_inBurn = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outBurn));
+me.Text=t_outBurn.ValueAsString;]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -3645,7 +3692,8 @@ t_inBurn = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outBurn));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -3786,7 +3834,11 @@ t_inBurn = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outBurn));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-t_inFinal = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outFinal));]]>
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outFinal))<0)
+	t_inFinal=t_outFinal;
+else
+	t_inFinal = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outFinal));
+me.Text=t_outFinal.ValueAsString;]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -3796,7 +3848,8 @@ t_inFinal = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outFinal));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -3937,7 +3990,11 @@ t_inFinal = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outFinal));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-t_inHome = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outHome));]]>
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outHome))<0)
+	t_inHome=t_outHome;
+else
+	t_inHome = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outHome));
+me.Text=t_outHome.ValueAsString;]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -3947,7 +4004,8 @@ t_inHome = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outHome));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -4088,7 +4146,11 @@ t_inHome = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outHome));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-t_inFix = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outFix));]]>
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outFix))<0)
+	t_inFix=t_outFix;
+else
+	t_inFix = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outFix));
+me.Text=t_outFix.ValueAsString;]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -4098,7 +4160,8 @@ t_inFix = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outFix));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -4239,7 +4302,11 @@ t_inFix = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outFix));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-t_inPump = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outPump));]]>
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outPump))<0)
+	t_inPump=t_outPump;
+else
+	t_inPump = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outPump));
+me.Text=t_outPump.ValueAsString;]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -4249,7 +4316,8 @@ t_inPump = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outPump));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -4390,7 +4458,11 @@ t_inPump = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outPump));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-t_inCtrl = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outCtrl));]]>
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outCtrl))<0)
+	t_inCtrl=t_outCtrl;
+else
+	t_inCtrl = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outCtrl));
+me.Text=t_outCtrl.ValueAsString;]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -4400,7 +4472,8 @@ t_inCtrl = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outCtrl));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -4541,7 +4614,11 @@ t_inCtrl = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outCtrl));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-t_inStab = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outStab));]]>
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outStab))<0)
+	t_inStab=t_outStab;
+else
+	t_inStab = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outStab));
+me.Text=t_outStab.ValueAsString;]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -4551,7 +4628,8 @@ t_inStab = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outStab));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Column_2.txt.Text+".",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -4659,8 +4737,8 @@ t_inStab = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outStab));]]>
 		</body>
 	</do-on>
 	<object access-modifier="private" name="RegimeMap" display-name="RegimeMap" uuid="627db4ab-f7d2-4b9e-9aad-661882439b21" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
-		<designed target="X" value="872" ver="4"/>
-		<designed target="Y" value="570" ver="4"/>
+		<designed target="X" value="888" ver="4"/>
+		<designed target="Y" value="862" ver="4"/>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="1" ver="4"/>
@@ -4668,7 +4746,7 @@ t_inStab = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outStab));]]>
 		<designed target="Opacity" value="1" ver="4"/>
 		<designed target="Enabled" value="true" ver="4"/>
 		<designed target="Tooltip" value="" ver="4"/>
-		<designed target="Width" value="500" ver="4"/>
+		<designed target="Width" value="700" ver="4"/>
 		<designed target="Height" value="50" ver="4"/>
 		<designed target="PenColor" value="4278190080" ver="4"/>
 		<designed target="PenStyle" value="1" ver="4"/>
@@ -4688,7 +4766,7 @@ t_inStab = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outStab));]]>
 			<designed target="Opacity" value="1" ver="4"/>
 			<designed target="Enabled" value="true" ver="4"/>
 			<designed target="Tooltip" value="" ver="4"/>
-			<designed target="Width" value="500" ver="4"/>
+			<designed target="Width" value="700" ver="4"/>
 			<designed target="Height" value="30" ver="4"/>
 			<designed target="RoundingRadius" value="0" ver="4"/>
 			<designed target="PenColor" value="4278190080" ver="4"/>
@@ -5057,6 +5135,150 @@ t_inStab = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outStab));]]>
 					<designed target="TextAlignment" value="132" ver="4"/>
 				</object>
 			</object>
+			<object access-modifier="private" name="Column_11" display-name="Column_11" uuid="be9e9739-86ba-451b-b1fd-6084f78f6380" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="500" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="30" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffd3d3d3" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="0b379f2e-3b16-4d71-999d-cac900ccfa0d" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="30" ver="4"/>
+					<designed target="Text" value="13" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+				</object>
+			</object>
+			<object access-modifier="private" name="Column_12" display-name="Column_12" uuid="283d3599-9e10-4c27-a57f-da7d3d95954e" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="550" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="30" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffd3d3d3" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="451cad0d-836e-47db-b3cd-687050da6954" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="30" ver="4"/>
+					<designed target="Text" value="14" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+				</object>
+			</object>
+			<object access-modifier="private" name="Column_13" display-name="Column_13" uuid="65fecb6f-5e77-4f65-a961-98a4aa44d900" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="600" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="30" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffd3d3d3" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="95f07b61-633d-4714-bc12-1729fc206aad" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="30" ver="4"/>
+					<designed target="Text" value="15" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+				</object>
+			</object>
+			<object access-modifier="private" name="Column_14" display-name="Column_14" uuid="d60f92ca-e671-4060-b7e2-452e37c49178" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="650" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="30" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffd3d3d3" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="63f1c412-aa25-45f7-bab0-2da7a83c22f9" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="30" ver="4"/>
+					<designed target="Text" value="16" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+				</object>
+			</object>
 		</object>
 		<object access-modifier="private" name="Row_1" display-name="Row_1" uuid="707cd280-a67d-43d0-a703-da8204fb748c" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
 			<designed target="X" value="0" ver="4"/>
@@ -5068,7 +5290,7 @@ t_inStab = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outStab));]]>
 			<designed target="Opacity" value="1" ver="4"/>
 			<designed target="Enabled" value="true" ver="4"/>
 			<designed target="Tooltip" value="" ver="4"/>
-			<designed target="Width" value="500" ver="4"/>
+			<designed target="Width" value="700" ver="4"/>
 			<designed target="Height" value="20" ver="4"/>
 			<designed target="RoundingRadius" value="0" ver="4"/>
 			<designed target="PenColor" value="4278190080" ver="4"/>
@@ -5157,7 +5379,11 @@ t_inStab = TypeConvert.ToFloat(Str.ToDouble(me.Text,t_outStab));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-inRegimeP_4 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_4));]]>
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_4))<0)
+	inRegimeP_4=outRegimeP_4;
+else
+	inRegimeP_4 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_4));
+me.Text=outRegimeP_4.ValueAsString;]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -5167,7 +5393,8 @@ inRegimeP_4 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_4));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -5216,12 +5443,6 @@ inRegimeP_4 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_4));]]>
 							<![CDATA[outRegimeP_5]]>
 						</body>
 					</do-trace>
-					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
-						<body kind="om">
-							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-inRegimeP_5 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_5));]]>
-						</body>
-					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
 						<body>
 							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
@@ -5229,7 +5450,18 @@ inRegimeP_5 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_5));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
+						</body>
+					</do-on>
+					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_5))<0)
+	inRegimeP_5=outRegimeP_5;
+else
+	inRegimeP_5 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_5));
+me.Text=outRegimeP_5.ValueAsString;]]>
 						</body>
 					</do-on>
 				</object>
@@ -5281,7 +5513,11 @@ inRegimeP_5 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_5));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-inRegimeP_6 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_6));]]>
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_6))<0)
+	inRegimeP_6=outRegimeP_6;
+else
+	inRegimeP_6 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_6));
+me.Text=outRegimeP_6.ValueAsString;]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -5291,7 +5527,8 @@ inRegimeP_6 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_6));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -5343,7 +5580,11 @@ inRegimeP_6 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_6));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-inRegimeP_7 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_7));]]>
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_7))<0)
+	inRegimeP_7=outRegimeP_7;
+else
+	inRegimeP_7 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_7));
+me.Text=outRegimeP_7.ValueAsString;]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -5353,7 +5594,8 @@ inRegimeP_7 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_7));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -5405,7 +5647,11 @@ inRegimeP_7 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_7));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-inRegimeP_8 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_8));]]>
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_8))<0)
+	inRegimeP_8=outRegimeP_8;
+else
+	inRegimeP_8 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_8));
+me.Text=outRegimeP_8.ValueAsString;]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -5415,7 +5661,8 @@ inRegimeP_8 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_8));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -5467,7 +5714,11 @@ inRegimeP_8 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_8));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-inRegimeP_9 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_9));]]>
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_9))<0)
+	inRegimeP_9=outRegimeP_9;
+else
+	inRegimeP_9 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_9));
+me.Text=outRegimeP_9.ValueAsString;]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -5477,7 +5728,8 @@ inRegimeP_9 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_9));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -5529,7 +5781,11 @@ inRegimeP_9 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_9));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-inRegimeP_10 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_10));]]>
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_10))<0)
+	inRegimeP_10=outRegimeP_10;
+else
+	inRegimeP_10 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_10));
+me.Text=outRegimeP_10.ValueAsString;]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -5539,7 +5795,8 @@ inRegimeP_10 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_10));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -5591,7 +5848,11 @@ inRegimeP_10 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_10));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-inRegimeP_11 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_11));]]>
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_11))<0)
+	inRegimeP_11=outRegimeP_11;
+else
+	inRegimeP_11 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_11));
+me.Text=outRegimeP_11.ValueAsString;]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -5601,7 +5862,8 @@ inRegimeP_11 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_11));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -5653,7 +5915,11 @@ inRegimeP_11 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_11));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-inRegimeP_12 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_12));]]>
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_12))<0)
+	inRegimeP_12=outRegimeP_12;
+else
+	inRegimeP_12 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_12));
+me.Text=outRegimeP_12.ValueAsString;]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -5663,11 +5929,280 @@ inRegimeP_12 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_12));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
 						</body>
 					</do-on>
 				</object>
 				<object access-modifier="private" name="BurnCount" display-name="BurnCount" uuid="01eab607-cde7-487f-8026-b2e3ceb49498" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+				<init target="BurnCount" ver="4" value="12"/>
+			</object>
+			<object access-modifier="private" name="Column_11" display-name="Column_11" uuid="2f6b4664-c88e-4412-880e-210bb507602c" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="500" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="20" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffeeeeee" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="9f57db92-8610-4f32-a38b-b8a434cc2e5d" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="20" ver="4"/>
+					<designed target="Text" value="0.0" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+					<designed target="HideInput" value="false" ver="4"/>
+					<designed target="PlaceholderText" value="" ver="4"/>
+					<designed target="ReadOnly" value="false" ver="4"/>
+					<do-trace access-modifier="private" target="Text" ver="4">
+						<body>
+							<![CDATA[outRegimeP_13]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_13))<0)
+	inRegimeP_13=outRegimeP_13;
+else
+	inRegimeP_13 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_13));
+me.Text=outRegimeP_13.ValueAsString;]]>
+						</body>
+					</do-on>
+					<do-trace access-modifier="private" target="ReadOnly" ver="4">
+						<body>
+							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
+						</body>
+					</do-on>
+				</object>
+				<object access-modifier="private" name="BurnCount" display-name="BurnCount" uuid="3e642ae8-3aef-4e00-a0b1-1ae995dfd56b" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+				<init target="BurnCount" ver="4" value="12"/>
+			</object>
+			<object access-modifier="private" name="Column_12" display-name="Column_12" uuid="e0a2ab51-0a97-40b5-abee-900ad6146ac2" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="550" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="20" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffeeeeee" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="31c0186a-c318-4146-8829-26f06feb1234" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="20" ver="4"/>
+					<designed target="Text" value="0.0" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+					<designed target="HideInput" value="false" ver="4"/>
+					<designed target="PlaceholderText" value="" ver="4"/>
+					<designed target="ReadOnly" value="false" ver="4"/>
+					<do-trace access-modifier="private" target="Text" ver="4">
+						<body>
+							<![CDATA[outRegimeP_14]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_14))<0)
+	inRegimeP_14=outRegimeP_14;
+else
+	inRegimeP_14 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_14));
+me.Text=outRegimeP_14.ValueAsString;]]>
+						</body>
+					</do-on>
+					<do-trace access-modifier="private" target="ReadOnly" ver="4">
+						<body>
+							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
+						</body>
+					</do-on>
+				</object>
+				<object access-modifier="private" name="BurnCount" display-name="BurnCount" uuid="a04ad9ed-49d5-4489-81a4-f9a8566f33bb" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+				<init target="BurnCount" ver="4" value="12"/>
+			</object>
+			<object access-modifier="private" name="Column_13" display-name="Column_13" uuid="236897bd-9ca0-45fd-86fd-7c6da8eeb940" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="600" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="20" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffeeeeee" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="d60baced-b4e2-480d-b4f6-fe7238851f42" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="20" ver="4"/>
+					<designed target="Text" value="0.0" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+					<designed target="HideInput" value="false" ver="4"/>
+					<designed target="PlaceholderText" value="" ver="4"/>
+					<designed target="ReadOnly" value="false" ver="4"/>
+					<do-trace access-modifier="private" target="Text" ver="4">
+						<body>
+							<![CDATA[outRegimeP_15]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_15))<0)
+	inRegimeP_15=outRegimeP_15;
+else
+	inRegimeP_15 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_15));
+me.Text=outRegimeP_15.ValueAsString;]]>
+						</body>
+					</do-on>
+					<do-trace access-modifier="private" target="ReadOnly" ver="4">
+						<body>
+							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
+						</body>
+					</do-on>
+				</object>
+				<object access-modifier="private" name="BurnCount" display-name="BurnCount" uuid="e0250a29-d609-40c5-a8de-043779b6da15" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+				<init target="BurnCount" ver="4" value="12"/>
+			</object>
+			<object access-modifier="private" name="Column_14" display-name="Column_14" uuid="a83d2361-f062-4b37-ba54-8d4bdf42d647" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="650" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="20" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffeeeeee" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="e909ecba-3d83-4487-ad05-bd7281fd8b9b" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="20" ver="4"/>
+					<designed target="Text" value="0.0" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+					<designed target="HideInput" value="false" ver="4"/>
+					<designed target="PlaceholderText" value="" ver="4"/>
+					<designed target="ReadOnly" value="false" ver="4"/>
+					<do-trace access-modifier="private" target="Text" ver="4">
+						<body>
+							<![CDATA[outRegimeP_16]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_16))<0)
+	inRegimeP_16=outRegimeP_16;
+else
+	inRegimeP_16 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_16));
+me.Text=outRegimeP_16.ValueAsString;]]>
+						</body>
+					</do-on>
+					<do-trace access-modifier="private" target="ReadOnly" ver="4">
+						<body>
+							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
+						</body>
+					</do-on>
+				</object>
+				<object access-modifier="private" name="BurnCount" display-name="BurnCount" uuid="951db08f-e6ec-4783-99ea-cec9a549631d" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
 				<init target="BurnCount" ver="4" value="12"/>
 			</object>
 		</object>
@@ -5676,7 +6211,7 @@ inRegimeP_12 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_12));]]>
 			<designed target="UpdateRate" value="0" ver="4"/>
 			<designed target="ReAdvise" value="0" ver="4"/>
 			<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
-			<init target="Path" ver="4" value="ROOT.Regime"/>
+			<init target="Path" ver="4" value="ROOT.RegimeMap"/>
 		</object>
 		<object access-modifier="private" name="inRegimeP_4" display-name="inRegimeP_4" uuid="a8d9aac2-6e64-4e59-b48c-efa3bbd9a171" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 			<init target="Source" ver="4" ref="OPCRegimeMap"/>
@@ -5784,8 +6319,8 @@ inRegimeP_12 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_12));]]>
 		</object>
 	</object>
 	<object access-modifier="private" name="IgnFlapOpen" display-name="IgnFlapOpen" uuid="85634e3c-082e-41d5-afc7-632b09b7866a" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
-		<designed target="X" value="20" ver="4"/>
-		<designed target="Y" value="645" ver="4"/>
+		<designed target="X" value="56" ver="4"/>
+		<designed target="Y" value="799" ver="4"/>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="1" ver="4"/>
@@ -6030,7 +6565,11 @@ inRegimeP_12 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_12));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-InOpenGIgn_1 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_1));]]>
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_1))<0)
+	InOpenGIgn_1=OutOpenGIgn_1;
+else
+	InOpenGIgn_1 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_1));
+me.Text=OutOpenGIgn_1.ValueAsString;]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -6040,7 +6579,8 @@ InOpenGIgn_1 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_1));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_2.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_2.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -6090,7 +6630,11 @@ InOpenGIgn_1 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_1));]]>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-InOpenAIgn_1 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_1));]]>
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_1))<0)
+	InOpenAIgn_1=OutOpenAIgn_1;
+else
+	InOpenAIgn_1 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_1));
+me.Text=OutOpenAIgn_1.ValueAsString;]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -6100,7 +6644,8 @@ InOpenAIgn_1 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_1));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_3.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_2.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -6202,12 +6747,6 @@ InOpenAIgn_1 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_1));]]>
 					<designed target="HideInput" value="false" ver="4"/>
 					<designed target="PlaceholderText" value="" ver="4"/>
 					<designed target="ReadOnly" value="false" ver="4"/>
-					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
-						<body kind="om">
-							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-InOpenGIgn_2 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_2));]]>
-						</body>
-					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
 						<body>
 							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
@@ -6215,7 +6754,18 @@ InOpenGIgn_2 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_2));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_2.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_2.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
+						</body>
+					</do-on>
+					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_2))<0)
+	InOpenGIgn_2=OutOpenGIgn_2;
+else
+	InOpenGIgn_2 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_2));
+me.Text=OutOpenGIgn_2.ValueAsString;]]>
 						</body>
 					</do-on>
 				</object>
@@ -6262,12 +6812,6 @@ InOpenGIgn_2 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_2));]]>
 					<designed target="HideInput" value="false" ver="4"/>
 					<designed target="PlaceholderText" value="" ver="4"/>
 					<designed target="ReadOnly" value="false" ver="4"/>
-					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
-						<body kind="om">
-							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-InOpenAIgn_2 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_2));]]>
-						</body>
-					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
 						<body>
 							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
@@ -6275,7 +6819,18 @@ InOpenAIgn_2 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_2));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_3.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_2.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
+						</body>
+					</do-on>
+					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_2))<0)
+	InOpenAIgn_2=OutOpenAIgn_2;
+else
+	InOpenAIgn_2 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_2));
+me.Text=OutOpenAIgn_2.ValueAsString;]]>
 						</body>
 					</do-on>
 				</object>
@@ -6377,12 +6932,6 @@ InOpenAIgn_2 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_2));]]>
 					<designed target="HideInput" value="false" ver="4"/>
 					<designed target="PlaceholderText" value="" ver="4"/>
 					<designed target="ReadOnly" value="false" ver="4"/>
-					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
-						<body kind="om">
-							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-InOpenGIgn_3 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_3));]]>
-						</body>
-					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
 						<body>
 							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
@@ -6390,7 +6939,18 @@ InOpenGIgn_3 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_3));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_2.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_2.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
+						</body>
+					</do-on>
+					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_3))<0)
+	InOpenGIgn_3=OutOpenGIgn_3;
+else
+	InOpenGIgn_3 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_3));
+me.Text=OutOpenGIgn_3.ValueAsString;]]>
 						</body>
 					</do-on>
 				</object>
@@ -6437,12 +6997,6 @@ InOpenGIgn_3 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_3));]]>
 					<designed target="HideInput" value="false" ver="4"/>
 					<designed target="PlaceholderText" value="" ver="4"/>
 					<designed target="ReadOnly" value="false" ver="4"/>
-					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
-						<body kind="om">
-							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-InOpenAIgn_3 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_3));]]>
-						</body>
-					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
 						<body>
 							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
@@ -6450,7 +7004,18 @@ InOpenAIgn_3 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_3));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_3.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_2.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
+						</body>
+					</do-on>
+					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_3))<0)
+	InOpenAIgn_3=OutOpenAIgn_3;
+else
+	InOpenAIgn_3 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_3));
+me.Text=OutOpenAIgn_3.ValueAsString;]]>
 						</body>
 					</do-on>
 				</object>
@@ -6552,12 +7117,6 @@ InOpenAIgn_3 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_3));]]>
 					<designed target="HideInput" value="false" ver="4"/>
 					<designed target="PlaceholderText" value="" ver="4"/>
 					<designed target="ReadOnly" value="false" ver="4"/>
-					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
-						<body kind="om">
-							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-InOpenGIgn_4 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_4));]]>
-						</body>
-					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
 						<body>
 							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
@@ -6565,7 +7124,18 @@ InOpenGIgn_4 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_4));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_2.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_2.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
+						</body>
+					</do-on>
+					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_4))<0)
+	InOpenGIgn_4=OutOpenGIgn_4;
+else
+	InOpenGIgn_4 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_4));
+me.Text=OutOpenGIgn_4.ValueAsString;]]>
 						</body>
 					</do-on>
 				</object>
@@ -6612,12 +7182,6 @@ InOpenGIgn_4 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_4));]]>
 					<designed target="HideInput" value="false" ver="4"/>
 					<designed target="PlaceholderText" value="" ver="4"/>
 					<designed target="ReadOnly" value="false" ver="4"/>
-					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
-						<body kind="om">
-							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-InOpenAIgn_4 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_4));]]>
-						</body>
-					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
 						<body>
 							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
@@ -6625,7 +7189,18 @@ InOpenAIgn_4 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_4));]]>
 					</do-trace>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
-							<![CDATA[unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_3.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_2.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
+						</body>
+					</do-on>
+					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_4))<0)
+	InOpenAIgn_4=OutOpenAIgn_4;
+else
+	InOpenAIgn_4 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_4));
+me.Text=OutOpenAIgn_4.ValueAsString;]]>
 						</body>
 					</do-on>
 				</object>
@@ -6636,7 +7211,7 @@ InOpenAIgn_4 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_4));]]>
 			<designed target="UpdateRate" value="0" ver="4"/>
 			<designed target="ReAdvise" value="0" ver="4"/>
 			<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
-			<init target="Path" ver="4" value="ROOT.PROTECTS.TimeProcesses"/>
+			<init target="Path" ver="4" value="ROOT.AlarmsValue.TimeProcesses"/>
 		</object>
 		<object access-modifier="private" name="InOpenGIgn_1" display-name="InOpenGIgn_1" uuid="9307c11a-ab85-4455-a2c5-13ff9fb6387f" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 			<init target="Source" ver="4" ref="OpcSource"/>
@@ -6704,8 +7279,8 @@ InOpenAIgn_4 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_4));]]>
 		</object>
 	</object>
 	<object access-modifier="private" name="txtOpenBeforeIgn" display-name="txtOpenBeforeIgn" uuid="ec7d336f-dcf7-424f-b620-d07530303327" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
-		<designed target="X" value="33" ver="4"/>
-		<designed target="Y" value="614" ver="4"/>
+		<designed target="X" value="69" ver="4"/>
+		<designed target="Y" value="768" ver="4"/>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="1" ver="4"/>

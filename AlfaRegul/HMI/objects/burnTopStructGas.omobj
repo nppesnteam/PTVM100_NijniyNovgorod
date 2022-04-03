@@ -187,6 +187,11 @@
 		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
 		<init target="initPath" ver="4" value="Burn"/>
 		<init target="UseFinal" ver="4" value="true"/>
+		<do-trace access-modifier="private" target="Tooltip" ver="4">
+			<body kind="om">
+				<![CDATA[NAME+" "+here.BurnNumber]]>
+			</body>
+		</do-trace>
 	</object>
 	<object access-modifier="private" name="Valve2" display-name="Valve2" uuid="7802a225-8ead-45cf-91b6-27a61349d8e6" base-type="valveEM" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="3">
 		<designed target="X" value="-2" ver="3"/>
@@ -195,6 +200,11 @@
 		<init target="Color" ver="3" value="0xffffff00"/>
 		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
 		<init target="initPath" ver="4" value="ValveII"/>
+		<do-trace access-modifier="private" target="Tooltip" ver="4">
+			<body kind="om">
+				<![CDATA[NAME+" "+BurnNumber]]>
+			</body>
+		</do-trace>
 	</object>
 	<object access-modifier="private" name="FlapOil" display-name="FlapOil" uuid="f6ec5dc9-8a88-45bd-8dbf-7f04ab1cc866" base-type="Flap+Mode" base-type-id="b78f6792-0d3a-4088-980d-276c0d3138ee" ver="3">
 		<designed target="X" value="-43" ver="3"/>
@@ -203,6 +213,11 @@
 		<init target="Color" ver="3" value="0xffc65a02"/>
 		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
 		<init target="initPath" ver="4" value="FlapOil"/>
+		<do-trace access-modifier="private" target="Tooltip" ver="4">
+			<body kind="om">
+				<![CDATA[NAME+" "+BurnNumber]]>
+			</body>
+		</do-trace>
 	</object>
 	<object access-modifier="private" name="Vent" display-name="Vent" uuid="f7fcbbfd-a31b-452a-a674-77ff445f4338" base-type="engineTop" base-type-id="c50df17d-e1a0-4f27-9be4-f55a0d8eed22" ver="4">
 		<designed target="X" value="-67" ver="4"/>
@@ -215,6 +230,11 @@
 				<![CDATA[Str.ToString(here.burner.BurnNumber)]]>
 			</body>
 		</do-trace>
+		<do-trace access-modifier="private" target="Tooltip" ver="4">
+			<body kind="om">
+				<![CDATA[NAME+" "+BurnNumber]]>
+			</body>
+		</do-trace>
 	</object>
 	<object access-modifier="private" name="FlapO2" display-name="FlapO2" uuid="694f66c3-28c2-42a7-b804-956874bf7b40" base-type="flap" base-type-id="a3e73327-f733-446d-ac01-918439e55f3f" ver="3">
 		<designed target="X" value="-70" ver="3"/>
@@ -223,6 +243,11 @@
 		<init target="Color" ver="3" value="0xff00aaff"/>
 		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
 		<init target="initPath" ver="4" value="FlapO2"/>
+		<do-trace access-modifier="private" target="Tooltip" ver="4">
+			<body kind="om">
+				<![CDATA[NAME+" "+BurnNumber]]>
+			</body>
+		</do-trace>
 	</object>
 	<object access-modifier="private" name="PGas" display-name="PGas" uuid="d9b5e3f5-0687-4714-92e9-8f4c02efab3a" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 		<designed target="X" value="12" ver="4"/>
@@ -244,6 +269,11 @@
 				<![CDATA["GROUP"+Str.ToString(Group)+"."+here.InitPath+".Burn"]]>
 			</body>
 		</do-trace>
+		<do-trace access-modifier="private" target="Tooltip" ver="4">
+			<body kind="om">
+				<![CDATA[NAME+" "+BurnNumber+", "+EU]]>
+			</body>
+		</do-trace>
 	</object>
 	<object access-modifier="private" name="PO2" display-name="PO2" uuid="65df98ad-24fa-4b07-abce-f307c1899b69" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 		<designed target="X" value="-60" ver="4"/>
@@ -263,6 +293,11 @@
 		<do-trace access-modifier="private" target="BurnValPath" ver="4">
 			<body>
 				<![CDATA["GROUP"+Str.ToString(Group)+"."+here.InitPath+".Burn"]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="Tooltip" ver="4">
+			<body kind="om">
+				<![CDATA[NAME+" "+BurnNumber+", "+EU]]>
 			</body>
 		</do-trace>
 	</object>
@@ -332,5 +367,11 @@
 	<object access-modifier="private" name="BurnerHasGas" display-name="BurnerHasGas" uuid="bf225204-0011-4e20-a815-ae675f69d867" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
 	<object access-modifier="private" name="Group" display-name="Group" uuid="53d72577-7214-43c4-a2cf-c2b19276f39f" base-type="notifying_int1" base-type-id="cc2bf8ea-3898-4228-bc8f-71a7738f0c62" ver="4"/>
 	<object access-modifier="private" name="InitPath" display-name="InitPath" uuid="6ba14442-f965-4aee-9ab9-ae966cd4f4c1" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="4"/>
+	<object access-modifier="private" name="BurnNumber" display-name="BurnNumber" uuid="f5e4d54a-d3c8-4087-ba2b-9b66dcfe4ba0" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="4"/>
+	<do-trace access-modifier="private" target="BurnNumber" ver="4">
+		<body>
+			<![CDATA[burner.BurnNumber.ValueAsString]]>
+		</body>
+	</do-trace>
 </type>
 

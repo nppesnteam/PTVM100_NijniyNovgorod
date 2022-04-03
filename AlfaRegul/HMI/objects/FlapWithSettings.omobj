@@ -187,11 +187,7 @@
 		</do-trace>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-action="open-new" form-by-id="false">
 			<object access-modifier="private" uuid="0dbb1d62-181f-4109-a52b-dc3368798e6f" base-type="Заслонка" base-type-id="d5ad689c-b93f-45e5-a8a5-5d7dd4c15e5b" ver="4">
-				<designed target="ShowWindowCaption" value="true" ver="4"/>
-				<designed target="ShowWindowMinimize" value="false" ver="4"/>
 				<designed target="WindowCaption" value="Заслонка" ver="4"/>
-				<designed target="ShowWindowMaximize" value="false" ver="4"/>
-				<designed target="WindowBorderStyle" value="2" ver="4"/>
 				<init target="WindowCaption" ver="4">
 					<expr>
 						<![CDATA[KKS]]>

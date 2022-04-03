@@ -620,7 +620,6 @@
 			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-action="open-new" form-by-id="false">
 				<object access-modifier="private" uuid="897202c2-7bfc-47d3-820b-732effe169b5" base-type="Аналоговый датчик (настройка)" base-type-id="12693a19-4637-4c43-830f-30391def74ad" ver="4">
 					<init target="refWindAI" ver="4" ref="here"/>
-					<designed target="WindowCaption" value="Аналоговый датчик (настройки)" ver="4"/>
 					<init target="WindowX" ver="4">
 						<expr>
 							<![CDATA[posX]]>

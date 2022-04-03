@@ -257,35 +257,9 @@
 			<object access-modifier="private" uuid="3ab52b29-581a-446a-b3a7-a4282236392a" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
 				<designed target="DigitsCount" value="0" ver="4"/>
 				<do-trace access-modifier="private" target="DigitsCount" ver="4">
-					<conditional-expr>
-						<condition>
-							<![CDATA[ALIAS=="P"]]>
-						</condition>
-						<expr>
-							<![CDATA[2]]>
-						</expr>
-					</conditional-expr>
-					<conditional-expr>
-						<condition>
-							<![CDATA[ALIAS=="T"]]>
-						</condition>
-						<expr>
-							<![CDATA[1]]>
-						</expr>
-					</conditional-expr>
-					<conditional-expr>
-						<condition>
-							<![CDATA[ALIAS=="F"]]>
-						</condition>
-						<expr>
-							<![CDATA[1]]>
-						</expr>
-					</conditional-expr>
-					<default-expr>
-						<expr>
-							<![CDATA[0]]>
-						</expr>
-					</default-expr>
+					<body>
+						<![CDATA[DIGITS]]>
+					</body>
 				</do-trace>
 			</object>
 		</init>
@@ -589,7 +563,7 @@
 		</do-on>
 		<do-trace access-modifier="private" target="Enabled" ver="4">
 			<body>
-				<![CDATA[!isOpenedProtCheck&&HaveProt&&unit.Security.AllowSettingsChange.Value&&unit.Global.OutCheckProt]]>
+				<![CDATA[!isOpenedProtCheck&&HaveProt&&unit.Security.AllowSettingsChange.Value]]>
 			</body>
 		</do-trace>
 	</object>
@@ -633,7 +607,7 @@ OpenProtCheckWindow.Invoke();]]>
 	<object access-modifier="private" name="CorrectValueTimeSignalH" display-name="CorrectValueTimeSignalH" uuid="05dfd428-4206-46a4-8fe6-17975e467a92" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="4">
 		<designed target="InValue" value="" ver="4"/>
 		<init target="Format" ver="4">
-			<object access-modifier="private" uuid="2a2337c5-8bcb-49f1-8073-95406267a35c" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
+			<object access-modifier="private" uuid="94b885be-d380-4c96-9ca7-43e0560310dc" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
 				<designed target="DigitsCount" value="1" ver="4"/>
 			</object>
 		</init>
@@ -646,7 +620,7 @@ OpenProtCheckWindow.Invoke();]]>
 	<object access-modifier="private" name="CorrectValueTimeProtectL" display-name="CorrectValueTimeProtectL" uuid="59b38473-f57e-46be-9470-53c475ccd1f2" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="4">
 		<designed target="InValue" value="" ver="4"/>
 		<init target="Format" ver="4">
-			<object access-modifier="private" uuid="2a2337c5-8bcb-49f1-8073-95406267a35c" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
+			<object access-modifier="private" uuid="c1b2e011-8bf5-46cd-914d-7e68a5ab2f9f" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
 				<designed target="DigitsCount" value="1" ver="4"/>
 			</object>
 		</init>
@@ -659,7 +633,7 @@ OpenProtCheckWindow.Invoke();]]>
 	<object access-modifier="private" name="CorrectValueTimeProtectH" display-name="CorrectValueTimeProtectH" uuid="076cb3ef-3215-4892-8287-9a504da93308" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="4">
 		<designed target="InValue" value="" ver="4"/>
 		<init target="Format" ver="4">
-			<object access-modifier="private" uuid="2a2337c5-8bcb-49f1-8073-95406267a35c" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
+			<object access-modifier="private" uuid="e815cc92-b0a6-40cb-9b81-a467b7c67d06" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
 				<designed target="DigitsCount" value="1" ver="4"/>
 			</object>
 		</init>

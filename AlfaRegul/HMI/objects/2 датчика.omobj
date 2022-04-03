@@ -190,7 +190,6 @@ refData.isOpened = true;]]>
 			</body>
 		</do-trace>
 		<init target="inNumb" ver="4" value="1"/>
-		<designed target="Enabled" value="true" ver="4"/>
 		<do-trace access-modifier="private" target="Enabled" ver="4">
 			<conditional-expr>
 				<condition>
@@ -381,7 +380,7 @@ OpenTrendsWindow.Invoke();]]>
 				<designed target="TextAlignment" value="132" ver="4"/>
 				<do-trace access-modifier="private" target="Text" ver="4">
 					<body>
-						<![CDATA[CorrectValue.OutValue]]>
+						<![CDATA[refData.OutValue]]>
 					</body>
 				</do-trace>
 			</object>
@@ -605,7 +604,7 @@ if (refData.outiSel == 1)
 		<designed target="Enabled" value="true" ver="4"/>
 		<designed target="InvokeTrigger" value="false" ver="4"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-action="open-new" form-by-id="false">
-			<object access-modifier="private" uuid="d2ac226f-0abb-4bfd-b920-8d82ae8795c1" base-type="График" base-type-id="0146db6e-1d42-4856-9e94-7e6c5518dc7b" ver="4">
+			<object access-modifier="private" uuid="136c25eb-8229-45d8-87ac-fc7327e1d3fc" base-type="График" base-type-id="0146db6e-1d42-4856-9e94-7e6c5518dc7b" ver="4">
 				<init target="WindowX" ver="4">
 					<expr>
 						<![CDATA[posX]]>
@@ -659,7 +658,7 @@ if (refData.outiSel == 1)
 	<object access-modifier="private" name="CorrectValue" display-name="CorrectValue" uuid="e447fc4b-240a-46d1-a6f6-3e62645e6f94" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="4">
 		<designed target="InValue" value="" ver="4"/>
 		<init target="Format" ver="4">
-			<object access-modifier="private" uuid="2a2337c5-8bcb-49f1-8073-95406267a35c" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
+			<object access-modifier="private" uuid="65ec9171-71dc-480b-8725-3e23d8309eff" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
 				<designed target="DigitsCount" value="0" ver="4"/>
 				<do-trace access-modifier="private" target="DigitsCount" ver="4">
 					<body>

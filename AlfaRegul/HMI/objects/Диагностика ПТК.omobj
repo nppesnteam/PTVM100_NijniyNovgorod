@@ -32,10 +32,6 @@
 	<designed target="MonitorNumber" value="0" ver="3"/>
 	<designed target="WindowPosition" value="0" ver="3"/>
 	<designed target="WindowCloseMode" value="0" ver="3"/>
-	<object access-modifier="private" name="CPU1_MAIN" display-name="CPU1_MAIN" uuid="37a2f472-c5a4-4bbe-bfc5-48bf85838380" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
-		<init target="Path" ver="4" value="ROOT.DIAG.Server.CPU1_MAIN"/>
-	</object>
 	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="Opened">
 		<body kind="om">
 			<![CDATA[unit.Global.ActiveMainFrame = "Диагностика";]]>
@@ -130,8 +126,8 @@
 					<designed target="Opacity" value="1" ver="4"/>
 					<designed target="Enabled" value="true" ver="4"/>
 					<designed target="Tooltip" value="" ver="4"/>
-					<designed target="Width" value="225" ver="4"/>
-					<designed target="Height" value="50" ver="4"/>
+					<designed target="Width" value="475" ver="4"/>
+					<designed target="Height" value="100" ver="4"/>
 					<designed target="RoundingRadius" value="0" ver="4"/>
 					<designed target="PenColor" value="4278190080" ver="4"/>
 					<designed target="PenStyle" value="1" ver="4"/>
@@ -148,8 +144,8 @@
 						<designed target="Opacity" value="1" ver="4"/>
 						<designed target="Enabled" value="true" ver="4"/>
 						<designed target="Tooltip" value="" ver="4"/>
-						<designed target="Width" value="225" ver="4"/>
-						<designed target="Height" value="50" ver="4"/>
+						<designed target="Width" value="475" ver="4"/>
+						<designed target="Height" value="100" ver="4"/>
 						<designed target="Text" value="Статус" ver="4"/>
 						<designed target="Font" value="Arial,28,-1,5,75,0,0,0,0,0,Narrow Bold" ver="4"/>
 						<designed target="FontColor" value="4278190080" ver="4"/>
@@ -157,26 +153,39 @@
 						<do-trace access-modifier="private" target="Text" ver="4">
 							<conditional-expr>
 								<condition>
-									<![CDATA[CPU1_MAIN == true]]>
+									<![CDATA[(Port5_State||Port6_State)&&CPU1_MAIN&&iRedMode==5]]>
 								</condition>
 								<expr>
-									<![CDATA["Активный"]]>
+									<![CDATA["Ведущий"]]>
 								</expr>
 							</conditional-expr>
 							<conditional-expr>
 								<condition>
-									<![CDATA[CPU1_MAIN == false]]>
+									<![CDATA[(Port5_State||Port6_State)&&!CPU1_MAIN&&iRedMode==5]]>
 								</condition>
 								<expr>
-									<![CDATA["Резервный"]]>
+									<![CDATA["Ведомый"]]>
 								</expr>
 							</conditional-expr>
+							<conditional-expr>
+								<condition>
+									<![CDATA[(Port5_State||Port6_State)&&iRedMode!=5]]>
+								</condition>
+								<expr>
+									<![CDATA[sRedMode]]>
+								</expr>
+							</conditional-expr>
+							<default-expr>
+								<expr>
+									<![CDATA["Нет соединения"]]>
+								</expr>
+							</default-expr>
 						</do-trace>
 					</object>
 					<do-trace access-modifier="private" target="BrushColor" ver="4">
 						<conditional-expr>
 							<condition>
-								<![CDATA[CPU1_MAIN == false]]>
+								<![CDATA[(Port5_State||Port6_State)&&!CPU1_MAIN&&iRedMode==5]]>
 							</condition>
 							<expr>
 								<![CDATA[0xffacacac]]>
@@ -184,13 +193,179 @@
 						</conditional-expr>
 						<conditional-expr>
 							<condition>
-								<![CDATA[CPU1_MAIN == true]]>
+								<![CDATA[(Port5_State||Port6_State)&&CPU1_MAIN&&iRedMode==5]]>
 							</condition>
 							<expr>
 								<![CDATA[0xff00ff00]]>
 							</expr>
 						</conditional-expr>
+						<conditional-expr>
+							<condition>
+								<![CDATA[(Port5_State||Port6_State)&&!CPU1_MAIN&&iRedMode==4]]>
+							</condition>
+							<expr>
+								<![CDATA[0xff00ff00]]>
+							</expr>
+						</conditional-expr>
+						<default-expr>
+							<expr>
+								<![CDATA[0xffff6060]]>
+							</expr>
+						</default-expr>
 					</do-trace>
+				</object>
+				<object access-modifier="private" name="rectPort5_State" display-name="rectPort5_State" uuid="d32a6998-6d8c-43d5-9ef8-b110f3c02914" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+					<designed target="X" value="54" ver="4"/>
+					<designed target="Y" value="854" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="78" ver="4"/>
+					<designed target="Height" value="98" ver="4"/>
+					<designed target="RoundingRadius" value="0" ver="4"/>
+					<designed target="PenColor" value="4278190080" ver="4"/>
+					<designed target="PenStyle" value="1" ver="4"/>
+					<designed target="PenWidth" value="1" ver="4"/>
+					<designed target="BrushColor" value="0xffffffff" ver="4"/>
+					<designed target="BrushStyle" value="1" ver="4"/>
+					<do-trace access-modifier="private" target="BrushColor" ver="4">
+						<conditional-expr>
+							<condition>
+								<![CDATA[Port5_State]]>
+							</condition>
+							<expr>
+								<![CDATA[0xff00ff00]]>
+							</expr>
+						</conditional-expr>
+						<default-expr>
+							<expr>
+								<![CDATA[0xffff0000]]>
+							</expr>
+						</default-expr>
+					</do-trace>
+					<do-trace access-modifier="private" target="Tooltip" ver="4">
+						<body>
+							<![CDATA[Port5_IP]]>
+						</body>
+					</do-trace>
+				</object>
+				<object access-modifier="private" name="rectPort6_State" display-name="rectPort6_State" uuid="5eb9ebae-6405-4de0-a060-ba3a0f64347d" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+					<designed target="X" value="54" ver="4"/>
+					<designed target="Y" value="968" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="78" ver="4"/>
+					<designed target="Height" value="98" ver="4"/>
+					<designed target="RoundingRadius" value="0" ver="4"/>
+					<designed target="PenColor" value="4278190080" ver="4"/>
+					<designed target="PenStyle" value="1" ver="4"/>
+					<designed target="PenWidth" value="1" ver="4"/>
+					<designed target="BrushColor" value="0xffffffff" ver="4"/>
+					<designed target="BrushStyle" value="1" ver="4"/>
+					<do-trace access-modifier="private" target="Tooltip" ver="4">
+						<body>
+							<![CDATA[Port6_IP]]>
+						</body>
+					</do-trace>
+					<do-trace access-modifier="private" target="BrushColor" ver="4">
+						<conditional-expr>
+							<condition>
+								<![CDATA[Port6_State]]>
+							</condition>
+							<expr>
+								<![CDATA[0xff00ff00]]>
+							</expr>
+						</conditional-expr>
+						<default-expr>
+							<expr>
+								<![CDATA[0xffff0000]]>
+							</expr>
+						</default-expr>
+					</do-trace>
+				</object>
+				<object access-modifier="private" name="txtPort5_Ping" display-name="txtPort5_Ping" uuid="ce739a25-c69a-43f8-b73a-73a9a2d8b8af" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+					<designed target="X" value="138" ver="4"/>
+					<designed target="Y" value="882" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="100" ver="4"/>
+					<designed target="Height" value="42" ver="4"/>
+					<designed target="Text" value="Ping" ver="4"/>
+					<designed target="Font" value="Arial,20,-1,5,75,1,0,0,0,0,Полужирный Курсив" ver="4"/>
+					<designed target="FontColor" value="0xffffffff" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+					<do-trace access-modifier="private" target="Text" ver="4">
+						<body>
+							<![CDATA[Port5_Ping.ValueAsString + " МС"]]>
+						</body>
+					</do-trace>
+				</object>
+				<object access-modifier="private" name="txtPort6_Ping" display-name="txtPort6_Ping" uuid="0ead0dae-bf80-47c7-abc3-7b0b6d9d976b" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+					<designed target="X" value="138" ver="4"/>
+					<designed target="Y" value="996" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="100" ver="4"/>
+					<designed target="Height" value="42" ver="4"/>
+					<designed target="Text" value="Ping" ver="4"/>
+					<designed target="Font" value="Arial,20,-1,5,75,1,0,0,0,0,Полужирный Курсив" ver="4"/>
+					<designed target="FontColor" value="0xffffffff" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+					<do-trace access-modifier="private" target="Text" ver="4">
+						<body>
+							<![CDATA[Port6_Ping.ValueAsString  + " МС"]]>
+						</body>
+					</do-trace>
+				</object>
+				<object access-modifier="private" name="Port5_State" display-name="Port5_State" uuid="f5a52bf9-021f-4300-8dd4-3130da87ea91" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+					<init target="Source" ver="4" ref="hereOPCSource"/>
+					<init target="Path" ver="4" value="EthernetAdapter1.Ping.Status"/>
+				</object>
+				<object access-modifier="private" name="Port6_State" display-name="Port6_State" uuid="d12dd18e-2fb0-437d-8f61-2c2460f87e33" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+					<init target="Source" ver="4" ref="hereOPCSource"/>
+					<init target="Path" ver="4" value="EthernetAdapter2.Ping.Status"/>
+				</object>
+				<object access-modifier="private" name="Port5_IP" display-name="Port5_IP" uuid="eb243cc3-a55d-404a-9793-61421b638652" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+					<init target="Source" ver="4" ref="hereOPCSource"/>
+					<init target="Path" ver="4" value="EthernetAdapter1.Ping.IPaddress"/>
+				</object>
+				<object access-modifier="private" name="Port5_Ping" display-name="Port5_Ping" uuid="a65f9765-a21d-4b4c-a2db-e13bdd8b52f6" base-type="OpcItemUInt4" base-type-id="f388142f-bd99-4897-a6b3-8dbb46c49c74" ver="4">
+					<init target="Source" ver="4" ref="hereOPCSource"/>
+					<init target="Path" ver="4" value="EthernetAdapter1.Ping.RTTTime"/>
+				</object>
+				<object access-modifier="private" name="Port6_IP" display-name="Port6_IP" uuid="257f54e2-2114-4956-b572-942f4a19f9cc" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+					<init target="Source" ver="4" ref="hereOPCSource"/>
+					<init target="Path" ver="4" value="EthernetAdapter2.Ping.IPaddress"/>
+				</object>
+				<object access-modifier="private" name="Port6_Ping" display-name="Port6_Ping" uuid="4d33e053-de40-4d9b-8ae4-cc9c23a57f24" base-type="OpcItemUInt4" base-type-id="f388142f-bd99-4897-a6b3-8dbb46c49c74" ver="4">
+					<init target="Source" ver="4" ref="hereOPCSource"/>
+					<init target="Path" ver="4" value="EthernetAdapter2.Ping.RTTTime"/>
+				</object>
+				<object access-modifier="private" name="hereOPCSource" display-name="hereOPCSource" uuid="a3444349-1f0e-460e-a990-b1c67fd65c41" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+					<designed target="Active" value="false" ver="4"/>
+					<designed target="UpdateRate" value="0" ver="4"/>
+					<designed target="ReAdvise" value="0" ver="4"/>
+					<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
+					<init target="Path" ver="4" value="Service.Modules.NetDiag Module.Control.PLC"/>
 				</object>
 			</object>
 			<object access-modifier="private" name="CU_00_071_1" display-name="CU_00_071_1" uuid="da4954a8-15ae-4434-9ee8-c0ab21ca6b00" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
@@ -222,8 +397,8 @@
 					<designed target="Opacity" value="1" ver="4"/>
 					<designed target="Enabled" value="true" ver="4"/>
 					<designed target="Tooltip" value="" ver="4"/>
-					<designed target="Width" value="225" ver="4"/>
-					<designed target="Height" value="50" ver="4"/>
+					<designed target="Width" value="475" ver="4"/>
+					<designed target="Height" value="100" ver="4"/>
 					<designed target="RoundingRadius" value="0" ver="4"/>
 					<designed target="PenColor" value="4278190080" ver="4"/>
 					<designed target="PenStyle" value="1" ver="4"/>
@@ -240,8 +415,8 @@
 						<designed target="Opacity" value="1" ver="4"/>
 						<designed target="Enabled" value="true" ver="4"/>
 						<designed target="Tooltip" value="" ver="4"/>
-						<designed target="Width" value="225" ver="4"/>
-						<designed target="Height" value="50" ver="4"/>
+						<designed target="Width" value="475" ver="4"/>
+						<designed target="Height" value="100" ver="4"/>
 						<designed target="Text" value="Статус" ver="4"/>
 						<designed target="Font" value="Arial,28,-1,5,75,0,0,0,0,0,Narrow Bold" ver="4"/>
 						<designed target="FontColor" value="4278190080" ver="4"/>
@@ -249,26 +424,39 @@
 						<do-trace access-modifier="private" target="Text" ver="4">
 							<conditional-expr>
 								<condition>
-									<![CDATA[CPU1_MAIN == false]]>
+									<![CDATA[(Port5_State||Port6_State)&&CPU1_MAIN&&iRedMode==5]]>
 								</condition>
 								<expr>
-									<![CDATA["Активный"]]>
+									<![CDATA["Ведомый"]]>
 								</expr>
 							</conditional-expr>
 							<conditional-expr>
 								<condition>
-									<![CDATA[CPU1_MAIN == true]]>
+									<![CDATA[(Port5_State||Port6_State)&&!CPU1_MAIN&&iRedMode==5]]>
 								</condition>
 								<expr>
-									<![CDATA["Резервный"]]>
+									<![CDATA["Ведущий"]]>
 								</expr>
 							</conditional-expr>
+							<conditional-expr>
+								<condition>
+									<![CDATA[(Port5_State||Port6_State)&&iRedMode!=5]]>
+								</condition>
+								<expr>
+									<![CDATA[sRedMode]]>
+								</expr>
+							</conditional-expr>
+							<default-expr>
+								<expr>
+									<![CDATA["Нет соединения"]]>
+								</expr>
+							</default-expr>
 						</do-trace>
 					</object>
 					<do-trace access-modifier="private" target="BrushColor" ver="4">
 						<conditional-expr>
 							<condition>
-								<![CDATA[CPU1_MAIN == true]]>
+								<![CDATA[(Port5_State||Port6_State)&&CPU1_MAIN&&iRedMode==5]]>
 							</condition>
 							<expr>
 								<![CDATA[0xffacacac]]>
@@ -276,40 +464,198 @@
 						</conditional-expr>
 						<conditional-expr>
 							<condition>
-								<![CDATA[CPU1_MAIN == false]]>
+								<![CDATA[(Port5_State||Port6_State)&&!CPU1_MAIN&&(iRedMode==5||iRedMode==4)]]>
 							</condition>
 							<expr>
 								<![CDATA[0xff00ff00]]>
 							</expr>
 						</conditional-expr>
+						<default-expr>
+							<expr>
+								<![CDATA[0xffff6060]]>
+							</expr>
+						</default-expr>
+					</do-trace>
+				</object>
+				<object access-modifier="private" name="Port5_State" display-name="Port5_State" uuid="2f1ad84f-4c13-4abb-9b46-f3455dd6fc6f" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+					<init target="Source" ver="4" ref="hereOPCSource"/>
+					<init target="Path" ver="4" value="EthernetAdapter1.Ping.Status"/>
+				</object>
+				<object access-modifier="private" name="Port6_State" display-name="Port6_State" uuid="7693bdcd-de99-44f5-9ca5-23ff5e41a0f2" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+					<init target="Source" ver="4" ref="hereOPCSource"/>
+					<init target="Path" ver="4" value="EthernetAdapter2.Ping.Status"/>
+				</object>
+				<object access-modifier="private" name="Port5_IP" display-name="Port5_IP" uuid="fc929468-8a94-4abb-a7ae-272f980add65" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+					<init target="Source" ver="4" ref="hereOPCSource"/>
+					<init target="Path" ver="4" value="EthernetAdapter1.Ping.IPaddress"/>
+				</object>
+				<object access-modifier="private" name="Port5_Ping" display-name="Port5_Ping" uuid="aea1d753-75a9-474e-aa80-ac5a360c7b0f" base-type="OpcItemUInt4" base-type-id="f388142f-bd99-4897-a6b3-8dbb46c49c74" ver="4">
+					<init target="Source" ver="4" ref="hereOPCSource"/>
+					<init target="Path" ver="4" value="EthernetAdapter1.Ping.RTTTime"/>
+				</object>
+				<object access-modifier="private" name="Port6_IP" display-name="Port6_IP" uuid="898f11c7-6831-4dd2-9a9e-6d2861b1e650" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+					<init target="Source" ver="4" ref="hereOPCSource"/>
+					<init target="Path" ver="4" value="EthernetAdapter2.Ping.IPaddress"/>
+				</object>
+				<object access-modifier="private" name="Port6_Ping" display-name="Port6_Ping" uuid="cc2b8cae-21a9-4e86-8e5f-179e0624d179" base-type="OpcItemUInt4" base-type-id="f388142f-bd99-4897-a6b3-8dbb46c49c74" ver="4">
+					<init target="Source" ver="4" ref="hereOPCSource"/>
+					<init target="Path" ver="4" value="EthernetAdapter2.Ping.RTTTime"/>
+				</object>
+				<object access-modifier="private" name="hereOPCSource" display-name="hereOPCSource" uuid="4eeecc41-744d-4291-894f-2ef085fe88dc" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+					<designed target="Active" value="false" ver="4"/>
+					<designed target="UpdateRate" value="0" ver="4"/>
+					<designed target="ReAdvise" value="0" ver="4"/>
+					<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
+					<init target="Path" ver="4" value="Service.Modules.NetDiag Module.Control.PLC_R"/>
+				</object>
+				<object access-modifier="private" name="rectPort5_State" display-name="rectPort5_State" uuid="b7049b08-0c3e-4525-9935-c1d5f0d77267" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+					<designed target="X" value="54" ver="4"/>
+					<designed target="Y" value="854" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="78" ver="4"/>
+					<designed target="Height" value="98" ver="4"/>
+					<designed target="RoundingRadius" value="0" ver="4"/>
+					<designed target="PenColor" value="4278190080" ver="4"/>
+					<designed target="PenStyle" value="1" ver="4"/>
+					<designed target="PenWidth" value="1" ver="4"/>
+					<designed target="BrushColor" value="0xffffffff" ver="4"/>
+					<designed target="BrushStyle" value="1" ver="4"/>
+					<do-trace access-modifier="private" target="BrushColor" ver="4">
+						<conditional-expr>
+							<condition>
+								<![CDATA[Port5_State]]>
+							</condition>
+							<expr>
+								<![CDATA[0xff00ff00]]>
+							</expr>
+						</conditional-expr>
+						<default-expr>
+							<expr>
+								<![CDATA[0xffff0000]]>
+							</expr>
+						</default-expr>
+					</do-trace>
+					<do-trace access-modifier="private" target="Tooltip" ver="4">
+						<body>
+							<![CDATA[Port5_IP]]>
+						</body>
+					</do-trace>
+				</object>
+				<object access-modifier="private" name="rectPort6_State" display-name="rectPort6_State" uuid="a6fe8708-a1a6-4aa7-b7f2-3a32c18e9727" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+					<designed target="X" value="54" ver="4"/>
+					<designed target="Y" value="968" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="78" ver="4"/>
+					<designed target="Height" value="98" ver="4"/>
+					<designed target="RoundingRadius" value="0" ver="4"/>
+					<designed target="PenColor" value="4278190080" ver="4"/>
+					<designed target="PenStyle" value="1" ver="4"/>
+					<designed target="PenWidth" value="1" ver="4"/>
+					<designed target="BrushColor" value="0xffffffff" ver="4"/>
+					<designed target="BrushStyle" value="1" ver="4"/>
+					<do-trace access-modifier="private" target="Tooltip" ver="4">
+						<body>
+							<![CDATA[Port6_IP]]>
+						</body>
+					</do-trace>
+					<do-trace access-modifier="private" target="BrushColor" ver="4">
+						<conditional-expr>
+							<condition>
+								<![CDATA[Port6_State]]>
+							</condition>
+							<expr>
+								<![CDATA[0xff00ff00]]>
+							</expr>
+						</conditional-expr>
+						<default-expr>
+							<expr>
+								<![CDATA[0xffff0000]]>
+							</expr>
+						</default-expr>
+					</do-trace>
+				</object>
+				<object access-modifier="private" name="txtPort5_Ping" display-name="txtPort5_Ping" uuid="5d813eae-5436-4743-b1d6-db79690d5291" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+					<designed target="X" value="138" ver="4"/>
+					<designed target="Y" value="882" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="100" ver="4"/>
+					<designed target="Height" value="42" ver="4"/>
+					<designed target="Text" value="Ping" ver="4"/>
+					<designed target="Font" value="Arial,20,-1,5,75,1,0,0,0,0,Полужирный Курсив" ver="4"/>
+					<designed target="FontColor" value="0xffffffff" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+					<do-trace access-modifier="private" target="Text" ver="4">
+						<body>
+							<![CDATA[Port5_Ping.ValueAsString + " МС"]]>
+						</body>
+					</do-trace>
+				</object>
+				<object access-modifier="private" name="txtPort6_Ping" display-name="txtPort6_Ping" uuid="4a375cff-0d2c-4334-8467-9e59707b8195" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+					<designed target="X" value="138" ver="4"/>
+					<designed target="Y" value="996" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="100" ver="4"/>
+					<designed target="Height" value="42" ver="4"/>
+					<designed target="Text" value="Ping" ver="4"/>
+					<designed target="Font" value="Arial,20,-1,5,75,1,0,0,0,0,Полужирный Курсив" ver="4"/>
+					<designed target="FontColor" value="0xffffffff" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+					<do-trace access-modifier="private" target="Text" ver="4">
+						<body>
+							<![CDATA[Port6_Ping.ValueAsString + " МС"]]>
+						</body>
 					</do-trace>
 				</object>
 			</object>
 			<object access-modifier="private" name="AI_16_011_0" display-name="AI_16_011_0" uuid="aa114a2e-982e-4c88-a2cb-0243007318b8" base-type="AI" base-type-id="9b579fb6-d797-4d72-89ea-5c3e6e63a0f4" ver="4">
 				<designed target="X" value="1277" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
-				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="true" ver="4"/>
-				<designed target="Opacity" value="1" ver="4"/>
-				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="Tooltip" value="" ver="4"/>
 				<init target="initPath" ver="4" value="AI.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
 			</object>
 			<object access-modifier="private" name="AI_16_011_1" display-name="AI_16_011_1" uuid="5428e05c-74eb-41bc-af59-0368bee34f6e" base-type="AI" base-type-id="9b579fb6-d797-4d72-89ea-5c3e6e63a0f4" ver="4">
 				<designed target="X" value="1535" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
-				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="true" ver="4"/>
-				<designed target="Opacity" value="1" ver="4"/>
-				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="Tooltip" value="" ver="4"/>
 				<init target="initPath" ver="4" value="AI.Module2"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+			</object>
+			<object access-modifier="private" name="CPU1_MAIN" display-name="CPU1_MAIN" uuid="ec46c64a-7990-4e51-9a06-8be5a7b81004" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+				<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+				<init target="Path" ver="4" value="ROOT.DIAG.Server.CPU1_MAIN"/>
+			</object>
+			<object access-modifier="private" name="iRedMode" display-name="iRedMode" uuid="3b09b003-9d6e-4b00-b009-6c195d532fda" base-type="OpcItemInt4" base-type-id="c8220066-9348-4b3e-a68e-d8ac76d47db1" ver="4">
+				<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+				<init target="Path" ver="4" value="ROOT.Diag.Server.iRedMode"/>
+			</object>
+			<object access-modifier="private" name="sRedMode" display-name="sRedMode" uuid="a353e653-0c1f-41d3-878b-2e56f6d0b684" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+				<init target="Path" ver="4" value="ROOT.Diag.Server.sRedMode"/>
+				<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
 			</object>
 		</object>
 		<object access-modifier="private" name="Crate_2" display-name="Crate_2" uuid="b5958491-229c-4a65-a98f-500cfe861c67" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
@@ -355,65 +701,35 @@
 			<object access-modifier="private" name="DI_32_011_0" display-name="DI_32_011_0" uuid="3dc7b752-13e0-4705-a2ab-95a87de3450d" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
 				<designed target="X" value="250" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
-				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="true" ver="4"/>
-				<designed target="Opacity" value="1" ver="4"/>
-				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="Tooltip" value="" ver="4"/>
 				<init target="initPath" ver="4" value="DI.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
 			</object>
 			<object access-modifier="private" name="DI_32_011_1" display-name="DI_32_011_1" uuid="9924a8f0-c9a5-436d-aa5e-c6ad8a683049" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
 				<designed target="X" value="510" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
-				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="true" ver="4"/>
-				<designed target="Opacity" value="1" ver="4"/>
-				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="Tooltip" value="" ver="4"/>
 				<init target="initPath" ver="4" value="DI.Module2"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
 			</object>
 			<object access-modifier="private" name="DI_32_011_2" display-name="DI_32_011_2" uuid="074ee9cd-5d29-4a45-8e9a-74732b432bb1" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
 				<designed target="X" value="770" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
-				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="true" ver="4"/>
-				<designed target="Opacity" value="1" ver="4"/>
-				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="Tooltip" value="" ver="4"/>
 				<init target="initPath" ver="4" value="DI.Module3"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
 			</object>
 			<object access-modifier="private" name="DO_32_011_0" display-name="DO_32_011_0" uuid="8405210b-aa89-4126-89a0-34f623720234" base-type="DO" base-type-id="2015126c-643d-42f1-a2e1-ba13979bf8d0" ver="4">
 				<designed target="X" value="1030" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
-				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="true" ver="4"/>
-				<designed target="Opacity" value="1" ver="4"/>
-				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="Tooltip" value="" ver="4"/>
 				<init target="initPath" ver="4" value="DO.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
 			</object>
 			<object access-modifier="private" name="DO_32_011_1" display-name="DO_32_011_1" uuid="13775516-91f8-46b4-8fc0-fb0e5185f584" base-type="DO" base-type-id="2015126c-643d-42f1-a2e1-ba13979bf8d0" ver="4">
 				<designed target="X" value="1290" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
-				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="true" ver="4"/>
-				<designed target="Opacity" value="1" ver="4"/>
-				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="Tooltip" value="" ver="4"/>
 				<init target="initPath" ver="4" value="DO.Module2"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
 			</object>
@@ -489,52 +805,28 @@
 			<object access-modifier="private" name="AI_16_011_0" display-name="AI_16_011_0" uuid="6b5a2456-d713-4065-8796-59e2cb10eda7" base-type="AI" base-type-id="9b579fb6-d797-4d72-89ea-5c3e6e63a0f4" ver="4">
 				<designed target="X" value="250" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
-				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="true" ver="4"/>
-				<designed target="Opacity" value="1" ver="4"/>
-				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="Tooltip" value="" ver="4"/>
 				<init target="initPath" ver="4" value="AI.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
 			</object>
 			<object access-modifier="private" name="DI_32_011_0" display-name="DI_32_011_0" uuid="5e939798-54d9-4539-89ba-9c4876d4de7f" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
 				<designed target="X" value="510" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
-				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="true" ver="4"/>
-				<designed target="Opacity" value="1" ver="4"/>
-				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="Tooltip" value="" ver="4"/>
 				<init target="initPath" ver="4" value="DI.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
 			</object>
 			<object access-modifier="private" name="DI_32_011_1" display-name="DI_32_011_1" uuid="1e878ea8-2666-4cf0-bc58-634bd2caff2b" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
 				<designed target="X" value="770" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
-				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="true" ver="4"/>
-				<designed target="Opacity" value="1" ver="4"/>
-				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="Tooltip" value="" ver="4"/>
 				<init target="initPath" ver="4" value="DI.Module2"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
 			</object>
 			<object access-modifier="private" name="DO_32_011_0" display-name="DO_32_011_0" uuid="bf77415f-c32b-41e3-9863-2ae961a5ff42" base-type="DO" base-type-id="2015126c-643d-42f1-a2e1-ba13979bf8d0" ver="4">
 				<designed target="X" value="1030" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
-				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="true" ver="4"/>
-				<designed target="Opacity" value="1" ver="4"/>
-				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="Tooltip" value="" ver="4"/>
 				<init target="initPath" ver="4" value="DO.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
 			</object>
@@ -610,52 +902,28 @@
 			<object access-modifier="private" name="AI_16_011_0" display-name="AI_16_011_0" uuid="82b1c754-ce4c-4f89-bd9f-fc5131eb2620" base-type="AI" base-type-id="9b579fb6-d797-4d72-89ea-5c3e6e63a0f4" ver="4">
 				<designed target="X" value="250" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
-				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="true" ver="4"/>
-				<designed target="Opacity" value="1" ver="4"/>
-				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="Tooltip" value="" ver="4"/>
 				<init target="initPath" ver="4" value="AI.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
 			</object>
 			<object access-modifier="private" name="DI_32_011_0" display-name="DI_32_011_0" uuid="62cc90ce-92e5-424a-a279-eb83c9e624ab" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
 				<designed target="X" value="510" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
-				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="true" ver="4"/>
-				<designed target="Opacity" value="1" ver="4"/>
-				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="Tooltip" value="" ver="4"/>
 				<init target="initPath" ver="4" value="DI.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
 			</object>
 			<object access-modifier="private" name="DI_32_011_1" display-name="DI_32_011_1" uuid="b2ca1315-ed14-40e6-b0cd-38d9cd238d5c" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
 				<designed target="X" value="770" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
-				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="true" ver="4"/>
-				<designed target="Opacity" value="1" ver="4"/>
-				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="Tooltip" value="" ver="4"/>
 				<init target="initPath" ver="4" value="DI.Module2"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
 			</object>
 			<object access-modifier="private" name="DO_32_011_0" display-name="DO_32_011_0" uuid="bf5a5550-848f-476d-99cb-b08a8b04fbb3" base-type="DO" base-type-id="2015126c-643d-42f1-a2e1-ba13979bf8d0" ver="4">
 				<designed target="X" value="1030" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
-				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="true" ver="4"/>
-				<designed target="Opacity" value="1" ver="4"/>
-				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="Tooltip" value="" ver="4"/>
 				<init target="initPath" ver="4" value="DO.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
 			</object>
@@ -731,52 +999,28 @@
 			<object access-modifier="private" name="AI_16_011_0" display-name="AI_16_011_0" uuid="355eed47-b052-4c76-bfc6-f0ab1c5b56f5" base-type="AI" base-type-id="9b579fb6-d797-4d72-89ea-5c3e6e63a0f4" ver="4">
 				<designed target="X" value="250" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
-				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="true" ver="4"/>
-				<designed target="Opacity" value="1" ver="4"/>
-				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="Tooltip" value="" ver="4"/>
 				<init target="initPath" ver="4" value="AI.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
 			</object>
 			<object access-modifier="private" name="DI_32_011_0" display-name="DI_32_011_0" uuid="d9f0f02d-df9a-4aec-b8ff-471c5200d684" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
 				<designed target="X" value="510" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
-				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="true" ver="4"/>
-				<designed target="Opacity" value="1" ver="4"/>
-				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="Tooltip" value="" ver="4"/>
 				<init target="initPath" ver="4" value="DI.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
 			</object>
 			<object access-modifier="private" name="DI_32_011_1" display-name="DI_32_011_1" uuid="c65928ea-9321-4fe6-93f5-650ae055a05e" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
 				<designed target="X" value="770" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
-				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="true" ver="4"/>
-				<designed target="Opacity" value="1" ver="4"/>
-				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="Tooltip" value="" ver="4"/>
 				<init target="initPath" ver="4" value="DI.Module2"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
 			</object>
 			<object access-modifier="private" name="DO_32_011_0" display-name="DO_32_011_0" uuid="2ccf9a1f-9776-4f96-95f7-42635bf956eb" base-type="DO" base-type-id="2015126c-643d-42f1-a2e1-ba13979bf8d0" ver="4">
 				<designed target="X" value="1030" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
-				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="true" ver="4"/>
-				<designed target="Opacity" value="1" ver="4"/>
-				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="Tooltip" value="" ver="4"/>
 				<init target="initPath" ver="4" value="DO.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
 			</object>
@@ -852,52 +1096,28 @@
 			<object access-modifier="private" name="AI_16_011_0" display-name="AI_16_011_0" uuid="22f10525-ab39-4fb8-9fed-8d1edb65303c" base-type="AI" base-type-id="9b579fb6-d797-4d72-89ea-5c3e6e63a0f4" ver="4">
 				<designed target="X" value="250" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
-				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="true" ver="4"/>
-				<designed target="Opacity" value="1" ver="4"/>
-				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="Tooltip" value="" ver="4"/>
 				<init target="initPath" ver="4" value="AI.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
 			</object>
 			<object access-modifier="private" name="DI_32_011_0" display-name="DI_32_011_0" uuid="f6ead668-166d-42be-a80d-060eb598ad46" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
 				<designed target="X" value="510" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
-				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="true" ver="4"/>
-				<designed target="Opacity" value="1" ver="4"/>
-				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="Tooltip" value="" ver="4"/>
 				<init target="initPath" ver="4" value="DI.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
 			</object>
 			<object access-modifier="private" name="DI_32_011_1" display-name="DI_32_011_1" uuid="fafa77eb-8a00-4e74-8f08-30b0278db107" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
 				<designed target="X" value="770" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
-				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="true" ver="4"/>
-				<designed target="Opacity" value="1" ver="4"/>
-				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="Tooltip" value="" ver="4"/>
 				<init target="initPath" ver="4" value="DI.Module2"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
 			</object>
 			<object access-modifier="private" name="DO_32_011_0" display-name="DO_32_011_0" uuid="28d9cd0d-c94b-43e8-b987-f887f892af26" base-type="DO" base-type-id="2015126c-643d-42f1-a2e1-ba13979bf8d0" ver="4">
 				<designed target="X" value="1030" ver="4"/>
 				<designed target="Y" value="0" ver="4"/>
-				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
-				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="true" ver="4"/>
-				<designed target="Opacity" value="1" ver="4"/>
-				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="Tooltip" value="" ver="4"/>
 				<init target="initPath" ver="4" value="DO.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
 			</object>

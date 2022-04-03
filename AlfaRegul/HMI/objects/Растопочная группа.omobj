@@ -525,7 +525,7 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="Enabled" value="true" ver="4"/>
 				<designed target="InvokeTrigger" value="false" ver="4"/>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-by-id="false" form-action="open-dialog">
-					<object access-modifier="private" uuid="f36b522b-9b79-4b83-8342-b3dd7073c646" base-type="Диалог останова" base-type-id="9eff29d5-9015-4d45-b1e9-0f16f1be7649" ver="4">
+					<object access-modifier="private" uuid="ccac6155-2339-4ee3-9279-603404289e32" base-type="Диалог останова" base-type-id="9eff29d5-9015-4d45-b1e9-0f16f1be7649" ver="4">
 						<designed target="WindowX" value="835" ver="4"/>
 						<designed target="WindowY" value="502" ver="4"/>
 						<init target="refIgnStart" ver="4" ref="IgnStart"/>
@@ -751,7 +751,7 @@ OpenBurnSteps.Invoke();]]>
 					<designed target="Enabled" value="true" ver="4"/>
 					<designed target="InvokeTrigger" value="false" ver="4"/>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-action="open-new" form-by-id="false">
-						<object access-modifier="private" uuid="7f85fe2a-7566-471a-9c20-65cf9037e19b" base-type="Шаги розжига горелки" base-type-id="96551cb5-0c76-4fc4-bfb1-6dada5c5b6b4" ver="4">
+						<object access-modifier="private" uuid="32367289-2b95-4d52-a30c-a826ad550e1b" base-type="Шаги розжига горелки" base-type-id="96551cb5-0c76-4fc4-bfb1-6dada5c5b6b4" ver="4">
 							<init target="WindowX" ver="4">
 								<expr>
 									<![CDATA[posX]]>
@@ -799,7 +799,7 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="Enabled" value="true" ver="4"/>
 				<designed target="InvokeTrigger" value="false" ver="4"/>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-by-id="false" form-action="open-dialog">
-					<object access-modifier="private" uuid="f36b522b-9b79-4b83-8342-b3dd7073c646" base-type="Диалог останова" base-type-id="9eff29d5-9015-4d45-b1e9-0f16f1be7649" ver="4">
+					<object access-modifier="private" uuid="a1dbd7ad-e7c5-4b26-9625-73367e11f86d" base-type="Диалог останова" base-type-id="9eff29d5-9015-4d45-b1e9-0f16f1be7649" ver="4">
 						<designed target="WindowX" value="835" ver="4"/>
 						<designed target="WindowY" value="502" ver="4"/>
 						<init target="refIgnStart" ver="4" ref="IgnStart"/>
@@ -812,7 +812,7 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="Enabled" value="true" ver="4"/>
 				<designed target="InvokeTrigger" value="false" ver="4"/>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-by-id="false" form-action="open-dialog">
-					<object access-modifier="private" uuid="35924cbd-7909-49a2-9779-7b7d33803039" base-type="Диалог розжига" base-type-id="31e1022a-f2d9-46df-b7b6-de369e497b37" ver="4">
+					<object access-modifier="private" uuid="3e319d86-4190-447e-9ead-22ecb1ff7032" base-type="Диалог розжига" base-type-id="31e1022a-f2d9-46df-b7b6-de369e497b37" ver="4">
 						<designed target="WindowX" value="835" ver="4"/>
 						<designed target="WindowY" value="502" ver="4"/>
 						<init target="refIgnStart" ver="4" ref="IgnStart"/>
@@ -1032,7 +1032,7 @@ OpenBurnSteps.Invoke();]]>
 					<designed target="Enabled" value="true" ver="4"/>
 					<designed target="InvokeTrigger" value="false" ver="4"/>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-action="open-new" form-by-id="false">
-						<object access-modifier="private" uuid="7f85fe2a-7566-471a-9c20-65cf9037e19b" base-type="Шаги розжига горелки" base-type-id="96551cb5-0c76-4fc4-bfb1-6dada5c5b6b4" ver="4">
+						<object access-modifier="private" uuid="08d948d1-34e8-4386-8962-86f4334b27ef" base-type="Шаги розжига горелки" base-type-id="96551cb5-0c76-4fc4-bfb1-6dada5c5b6b4" ver="4">
 							<init target="WindowX" ver="4">
 								<expr>
 									<![CDATA[posX]]>
@@ -1080,7 +1080,7 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="Enabled" value="true" ver="4"/>
 				<designed target="InvokeTrigger" value="false" ver="4"/>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-by-id="false" form-action="open-dialog">
-					<object access-modifier="private" uuid="f36b522b-9b79-4b83-8342-b3dd7073c646" base-type="Диалог останова" base-type-id="9eff29d5-9015-4d45-b1e9-0f16f1be7649" ver="4">
+					<object access-modifier="private" uuid="6ca1a9db-59ef-49ee-89a2-55131f1da955" base-type="Диалог останова" base-type-id="9eff29d5-9015-4d45-b1e9-0f16f1be7649" ver="4">
 						<designed target="WindowX" value="835" ver="4"/>
 						<designed target="WindowY" value="502" ver="4"/>
 						<init target="refIgnStart" ver="4" ref="IgnStart"/>
@@ -1092,7 +1092,7 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="Enabled" value="true" ver="4"/>
 				<designed target="InvokeTrigger" value="false" ver="4"/>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-by-id="false" form-action="open-dialog">
-					<object access-modifier="private" uuid="f36b522b-9b79-4b83-8342-b3dd7073c646" base-type="Диалог останова" base-type-id="9eff29d5-9015-4d45-b1e9-0f16f1be7649" ver="4">
+					<object access-modifier="private" uuid="7c2960f3-7569-4953-9108-cde3c129f98b" base-type="Диалог останова" base-type-id="9eff29d5-9015-4d45-b1e9-0f16f1be7649" ver="4">
 						<designed target="WindowX" value="835" ver="4"/>
 						<designed target="WindowY" value="502" ver="4"/>
 						<init target="refIgnStart" ver="4" ref="IgnStart"/>
@@ -1107,7 +1107,7 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="Enabled" value="true" ver="4"/>
 				<designed target="InvokeTrigger" value="false" ver="4"/>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-by-id="false" form-action="open-dialog">
-					<object access-modifier="private" uuid="35924cbd-7909-49a2-9779-7b7d33803039" base-type="Диалог розжига" base-type-id="31e1022a-f2d9-46df-b7b6-de369e497b37" ver="4">
+					<object access-modifier="private" uuid="6c45f6ec-15f4-4cc0-9d8c-437134ac2eba" base-type="Диалог розжига" base-type-id="31e1022a-f2d9-46df-b7b6-de369e497b37" ver="4">
 						<designed target="WindowX" value="835" ver="4"/>
 						<designed target="WindowY" value="502" ver="4"/>
 						<init target="refIgnStart" ver="4" ref="IgnStart"/>
@@ -1327,7 +1327,7 @@ OpenBurnSteps.Invoke();]]>
 					<designed target="Enabled" value="true" ver="4"/>
 					<designed target="InvokeTrigger" value="false" ver="4"/>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-action="open-new" form-by-id="false">
-						<object access-modifier="private" uuid="7f85fe2a-7566-471a-9c20-65cf9037e19b" base-type="Шаги розжига горелки" base-type-id="96551cb5-0c76-4fc4-bfb1-6dada5c5b6b4" ver="4">
+						<object access-modifier="private" uuid="3ed72294-6d6b-4327-bac9-956e942ba1af" base-type="Шаги розжига горелки" base-type-id="96551cb5-0c76-4fc4-bfb1-6dada5c5b6b4" ver="4">
 							<init target="WindowX" ver="4">
 								<expr>
 									<![CDATA[posX]]>
@@ -1375,7 +1375,7 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="Enabled" value="true" ver="4"/>
 				<designed target="InvokeTrigger" value="false" ver="4"/>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-by-id="false" form-action="open-dialog">
-					<object access-modifier="private" uuid="f36b522b-9b79-4b83-8342-b3dd7073c646" base-type="Диалог останова" base-type-id="9eff29d5-9015-4d45-b1e9-0f16f1be7649" ver="4">
+					<object access-modifier="private" uuid="c08bc58e-54e8-4693-b962-f81decd73548" base-type="Диалог останова" base-type-id="9eff29d5-9015-4d45-b1e9-0f16f1be7649" ver="4">
 						<designed target="WindowX" value="835" ver="4"/>
 						<designed target="WindowY" value="502" ver="4"/>
 						<init target="refIgnStart" ver="4" ref="IgnStart"/>
@@ -1387,7 +1387,7 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="Enabled" value="true" ver="4"/>
 				<designed target="InvokeTrigger" value="false" ver="4"/>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-by-id="false" form-action="open-dialog">
-					<object access-modifier="private" uuid="f36b522b-9b79-4b83-8342-b3dd7073c646" base-type="Диалог останова" base-type-id="9eff29d5-9015-4d45-b1e9-0f16f1be7649" ver="4">
+					<object access-modifier="private" uuid="a897ab89-9160-4ac6-ac7a-65da50275719" base-type="Диалог останова" base-type-id="9eff29d5-9015-4d45-b1e9-0f16f1be7649" ver="4">
 						<designed target="WindowX" value="835" ver="4"/>
 						<designed target="WindowY" value="502" ver="4"/>
 						<init target="refIgnStart" ver="4" ref="IgnStart"/>
@@ -1402,7 +1402,7 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="Enabled" value="true" ver="4"/>
 				<designed target="InvokeTrigger" value="false" ver="4"/>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-by-id="false" form-action="open-dialog">
-					<object access-modifier="private" uuid="35924cbd-7909-49a2-9779-7b7d33803039" base-type="Диалог розжига" base-type-id="31e1022a-f2d9-46df-b7b6-de369e497b37" ver="4">
+					<object access-modifier="private" uuid="8851d9bb-1f21-4265-b647-300b727a4fa5" base-type="Диалог розжига" base-type-id="31e1022a-f2d9-46df-b7b6-de369e497b37" ver="4">
 						<designed target="WindowX" value="835" ver="4"/>
 						<designed target="WindowY" value="502" ver="4"/>
 						<init target="refIgnStart" ver="4" ref="IgnStart"/>

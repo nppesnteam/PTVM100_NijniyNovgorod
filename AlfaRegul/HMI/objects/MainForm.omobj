@@ -384,10 +384,7 @@
 				<designed target="DisabledPenWidth" value="1" ver="3"/>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick" form-by-id="false" form-action="open-dialog">
 					<object access-modifier="private" uuid="b963bbfc-0ae4-4b5e-944a-c65a85ac3df9" base-type="Авторизация" base-type-id="8a60d63d-91bf-4478-b291-580a00deec81" ver="4">
-						<designed target="ShowWindowMinimize" value="false" ver="4"/>
-						<designed target="ShowWindowMaximize" value="false" ver="4"/>
 						<designed target="WindowPosition" value="1" ver="4"/>
-						<designed target="WindowBorderStyle" value="2" ver="4"/>
 					</object>
 				</do-on>
 				<object access-modifier="private" name="Image_1" display-name="Image_1" uuid="5f5ab961-fd6b-4e38-bd5b-8a9c32074327" base-type="Image" base-type-id="5a6b2782-c728-4a42-8c02-1a83ef97e138" ver="4">
@@ -714,9 +711,7 @@
 				<designed target="DisabledPenWidth" value="1" ver="3"/>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="3" event="MouseClick" form-by-id="false" frame-link="here.MainFrame" form-action="open-in-frame">
 					<object access-modifier="private" uuid="d437977b-fdd7-448c-9a4e-024011eea16c" base-type="Газ" base-type-id="f51061bd-0db8-43c4-a53c-77c2e4c09e04" ver="3">
-						<designed target="WindowCloseMode" value="0" ver="4"/>
 						<designed target="WindowPosition" value="0" ver="4"/>
-						<designed target="WindowCaption" value="Общая мнемосхема" ver="4"/>
 					</object>
 				</do-on>
 				<do-trace access-modifier="private" target="Enabled" ver="4">
@@ -1295,7 +1290,7 @@ else
 			</object>
 			<object access-modifier="private" name="txtET" display-name="txtET" uuid="f3ac70b2-a892-4a5f-ba50-c8da147cfd18" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="3">
 				<designed target="X" value="125" ver="3"/>
-				<designed target="Y" value="175" ver="3"/>
+				<designed target="Y" value="177" ver="3"/>
 				<designed target="ZValue" value="0" ver="3"/>
 				<designed target="Rotation" value="0" ver="3"/>
 				<designed target="Scale" value="1" ver="3"/>
@@ -1325,158 +1320,9 @@ else
 					</body>
 				</do-trace>
 			</object>
-			<object access-modifier="private" name="btnCheckProt" display-name="btnCheckProt" uuid="107cacb9-a39a-4ac3-9b47-9e418eaa783e" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="3">
-				<designed target="X" value="3" ver="3"/>
-				<designed target="Y" value="110" ver="3"/>
-				<designed target="ZValue" value="0" ver="3"/>
-				<designed target="Rotation" value="0" ver="3"/>
-				<designed target="Scale" value="1" ver="3"/>
-				<designed target="Visible" value="true" ver="3"/>
-				<designed target="Opacity" value="1" ver="3"/>
-				<designed target="Enabled" value="true" ver="3"/>
-				<designed target="Tooltip" value="" ver="3"/>
-				<designed target="Width" value="90" ver="3"/>
-				<designed target="Height" value="57" ver="3"/>
-				<designed target="Checkable" value="false" ver="3"/>
-				<designed target="Text" value="Проверка
-защит" ver="3"/>
-				<designed target="TextAlignment" value="132" ver="3"/>
-				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="3"/>
-				<designed target="FontColor" value="4278190080" ver="3"/>
-				<designed target="OnClickFontColor" value="4278190080" ver="3"/>
-				<designed target="OnHoverFontColor" value="4278190080" ver="3"/>
-				<designed target="DisabledFontColor" value="4278190080" ver="3"/>
-				<designed target="BrushColor" value="0xfff0f0f0" ver="3"/>
-				<designed target="BrushStyle" value="1" ver="3"/>
-				<designed target="OnClickBrushColor" value="4288716960" ver="3"/>
-				<designed target="OnClickBrushStyle" value="1" ver="3"/>
-				<designed target="OnHoverBrushColor" value="0xffff9b9b" ver="3"/>
-				<designed target="OnHoverBrushStyle" value="1" ver="3"/>
-				<designed target="DisabledBrushColor" value="4288716960" ver="3"/>
-				<designed target="DisabledBrushStyle" value="1" ver="3"/>
-				<designed target="PenColor" value="4278190080" ver="3"/>
-				<designed target="PenStyle" value="1" ver="3"/>
-				<designed target="PenWidth" value="1" ver="3"/>
-				<designed target="OnClickPenColor" value="4278190080" ver="3"/>
-				<designed target="OnClickPenStyle" value="1" ver="3"/>
-				<designed target="OnClickPenWidth" value="1" ver="3"/>
-				<designed target="OnHoverPenColor" value="4278190080" ver="3"/>
-				<designed target="OnHoverPenStyle" value="1" ver="3"/>
-				<designed target="OnHoverPenWidth" value="1" ver="3"/>
-				<designed target="DisabledPenColor" value="4288716960" ver="3"/>
-				<designed target="DisabledPenStyle" value="1" ver="3"/>
-				<designed target="DisabledPenWidth" value="1" ver="3"/>
-				<do-trace access-modifier="private" target="Visible" ver="4">
-					<body>
-						<![CDATA[unit.Security.AllowSettingsChange.Value]]>
-					</body>
-				</do-trace>
-				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
-					<body kind="om">
-						<![CDATA[if (unit.Global.OutCheckProt==false)
-	unit.Global.InCheckProt=true;
-else
-	unit.Global.InCheckProt=false;]]>
-					</body>
-				</do-on>
-				<do-trace access-modifier="private" target="BrushColor" ver="4">
-					<conditional-expr>
-						<condition>
-							<![CDATA[unit.Global.OutCheckProt==true]]>
-						</condition>
-						<expr>
-							<![CDATA[0xffff0000]]>
-						</expr>
-					</conditional-expr>
-					<default-expr>
-						<expr>
-							<![CDATA[0xfff0f0f0]]>
-						</expr>
-					</default-expr>
-				</do-trace>
-				<do-trace access-modifier="private" target="Enabled" ver="4">
-					<body>
-						<![CDATA[unit.Security.AllowSettingsChange.Value]]>
-					</body>
-				</do-trace>
-				<designed target="Checked" value="false" ver="4"/>
-			</object>
-			<object access-modifier="private" name="txtCheckProtTime" display-name="txtCheckProtTime" uuid="c0a140ac-f3f0-4e5d-98ff-3f0a63666cfa" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="4">
-				<designed target="X" value="18" ver="4"/>
-				<designed target="Y" value="170" ver="4"/>
-				<designed target="ZValue" value="0" ver="4"/>
-				<designed target="Rotation" value="0" ver="4"/>
-				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="true" ver="4"/>
-				<designed target="Opacity" value="1" ver="4"/>
-				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="Tooltip" value="" ver="4"/>
-				<designed target="Width" value="60" ver="4"/>
-				<designed target="Height" value="22" ver="4"/>
-				<designed target="Text" value="0" ver="4"/>
-				<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0" ver="4"/>
-				<designed target="FontColor" value="4278190080" ver="4"/>
-				<designed target="TextAlignment" value="132" ver="4"/>
-				<designed target="HideInput" value="false" ver="4"/>
-				<designed target="PlaceholderText" value="" ver="4"/>
-				<designed target="ReadOnly" value="false" ver="4"/>
-				<do-trace access-modifier="private" target="ReadOnly" ver="4">
-					<body>
-						<![CDATA[unit.Global.OutCheckProt]]>
-					</body>
-				</do-trace>
-				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
-					<body kind="om">
-						<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-unit.Global.InCheckProtTime=TypeConvert.ToFloat(Str.ToDouble(me.Text,unit.Global.OutCheckProtTime));]]>
-					</body>
-				</do-on>
-				<do-trace access-modifier="private" target="Text" ver="4">
-					<body>
-						<![CDATA[unit.Global.LeftTime]]>
-					</body>
-				</do-trace>
-				<do-trace access-modifier="private" target="Visible" ver="4">
-					<body>
-						<![CDATA[unit.Security.AllowSettingsChange.Value]]>
-					</body>
-				</do-trace>
-				<do-trace access-modifier="private" target="Enabled" ver="4">
-					<body>
-						<![CDATA[unit.Security.AllowSettingsChange.Value]]>
-					</body>
-				</do-trace>
-				<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
-					<body kind="om">
-						<![CDATA[unit.Global.ShowMSG("Время проверки защит изменено на "+me.Text+" сек.",2);]]>
-					</body>
-				</do-on>
-			</object>
-			<object access-modifier="private" name="txtSec" display-name="txtSec" uuid="de097750-8946-4542-b98c-1baf4a9b0242" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="3">
-				<designed target="X" value="76" ver="3"/>
-				<designed target="Y" value="173.5" ver="3"/>
-				<designed target="ZValue" value="0" ver="3"/>
-				<designed target="Rotation" value="0" ver="3"/>
-				<designed target="Scale" value="1" ver="3"/>
-				<designed target="Visible" value="true" ver="3"/>
-				<designed target="Opacity" value="1" ver="3"/>
-				<designed target="Enabled" value="true" ver="3"/>
-				<designed target="Tooltip" value="" ver="3"/>
-				<designed target="Width" value="16.6667" ver="3"/>
-				<designed target="Height" value="15" ver="3"/>
-				<designed target="Text" value="c" ver="3"/>
-				<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Bold" ver="3"/>
-				<designed target="FontColor" value="0xff000000" ver="3"/>
-				<designed target="TextAlignment" value="132" ver="3"/>
-				<do-trace access-modifier="private" target="Visible" ver="4">
-					<body>
-						<![CDATA[unit.Security.AllowSettingsChange.Value]]>
-					</body>
-				</do-trace>
-			</object>
 			<object access-modifier="private" name="btnDeblock" display-name="btnDeblock" uuid="9b907ad0-c11b-44b9-b458-bf4c5efe03e0" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
-				<designed target="X" value="45" ver="4"/>
-				<designed target="Y" value="200" ver="4"/>
+				<designed target="X" value="3" ver="4"/>
+				<designed target="Y" value="110" ver="4"/>
 				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<designed target="Scale" value="1" ver="4"/>
@@ -1484,10 +1330,10 @@ unit.Global.InCheckProtTime=TypeConvert.ToFloat(Str.ToDouble(me.Text,unit.Global
 				<designed target="Opacity" value="1" ver="4"/>
 				<designed target="Enabled" value="true" ver="4"/>
 				<designed target="Tooltip" value="" ver="4"/>
-				<designed target="Width" value="110" ver="4"/>
+				<designed target="Width" value="90" ver="4"/>
 				<designed target="Height" value="57" ver="4"/>
 				<designed target="Checkable" value="false" ver="4"/>
-				<designed target="Text" value="Разблокировать
+				<designed target="Text" value="Разблок.
 задвижки" ver="4"/>
 				<designed target="TextAlignment" value="132" ver="4"/>
 				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
@@ -1557,7 +1403,7 @@ else
 							<![CDATA[OutDeblockGate]]>
 						</condition>
 						<expr>
-							<![CDATA["Заблокировать
+							<![CDATA["Заблок.
 задвижки"]]>
 						</expr>
 					</conditional-expr>
@@ -1566,7 +1412,7 @@ else
 							<![CDATA[!OutDeblockGate]]>
 						</condition>
 						<expr>
-							<![CDATA["Разблокировать
+							<![CDATA["Разблок.
 задвижки"]]>
 						</expr>
 					</conditional-expr>
@@ -1683,7 +1529,7 @@ InManCtrl=false;]]>
 				<designed target="Enabled" value="true" ver="4"/>
 				<designed target="InvokeTrigger" value="false" ver="4"/>
 				<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="Invoked" form-action="open-dialog" form-by-id="false">
-					<object access-modifier="private" uuid="f7671da7-9fcf-45f6-b3b8-3299569e5a99" base-type="Диалог розжига" base-type-id="31e1022a-f2d9-46df-b7b6-de369e497b37" ver="4">
+					<object access-modifier="private" uuid="09b5279f-156a-4c42-a3db-22e53c41c37c" base-type="Диалог розжига" base-type-id="31e1022a-f2d9-46df-b7b6-de369e497b37" ver="4">
 						<designed target="WindowX" value="835" ver="4"/>
 						<designed target="WindowY" value="502" ver="4"/>
 						<init target="refIgnStart" ver="4" ref="InNoGerm"/>
@@ -1695,7 +1541,7 @@ InManCtrl=false;]]>
 				<designed target="Enabled" value="true" ver="4"/>
 				<designed target="InvokeTrigger" value="false" ver="4"/>
 				<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="Invoked" form-action="open-dialog" form-by-id="false">
-					<object access-modifier="private" uuid="f7671da7-9fcf-45f6-b3b8-3299569e5a99" base-type="Диалог розжига" base-type-id="31e1022a-f2d9-46df-b7b6-de369e497b37" ver="4">
+					<object access-modifier="private" uuid="ae7f0e04-5e32-4419-9618-4c1045fc2bd4" base-type="Диалог розжига" base-type-id="31e1022a-f2d9-46df-b7b6-de369e497b37" ver="4">
 						<designed target="WindowX" value="835" ver="4"/>
 						<designed target="WindowY" value="502" ver="4"/>
 						<init target="refIgnStart" ver="4" ref="inFreeCtrlDOProg"/>
@@ -1711,6 +1557,78 @@ InManCtrl=false;]]>
 			<object access-modifier="private" name="InDeblockGate" display-name="InDeblockGate" uuid="dd6eb539-5a83-4a4c-a87d-21f7e2f885f2" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 				<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
 				<init target="Path" ver="4" value="ROOT.BOILER.InDeblockGate"/>
+			</object>
+			<object access-modifier="private" name="btnDeblock_1" display-name="btnDeblock_1" uuid="e53f198a-5c44-4851-b201-81148e9ba75d" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
+				<designed target="X" value="3" ver="4"/>
+				<designed target="Y" value="170" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="90" ver="4"/>
+				<designed target="Height" value="57" ver="4"/>
+				<designed target="Checkable" value="false" ver="4"/>
+				<designed target="Text" value="Проверка
+сигнализации" ver="4"/>
+				<designed target="TextAlignment" value="132" ver="4"/>
+				<designed target="Font" value="Arial,9,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+				<designed target="FontColor" value="4278190080" ver="4"/>
+				<designed target="OnClickFontColor" value="4278190080" ver="4"/>
+				<designed target="OnHoverFontColor" value="4278190080" ver="4"/>
+				<designed target="DisabledFontColor" value="4278190080" ver="4"/>
+				<designed target="BrushColor" value="4293980400" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<designed target="OnClickBrushColor" value="0xffa0a0a0" ver="4"/>
+				<designed target="OnClickBrushStyle" value="1" ver="4"/>
+				<designed target="OnHoverBrushColor" value="0xffffffff" ver="4"/>
+				<designed target="OnHoverBrushStyle" value="1" ver="4"/>
+				<designed target="DisabledBrushColor" value="0xffa0a0a0" ver="4"/>
+				<designed target="DisabledBrushStyle" value="1" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="OnClickPenColor" value="4278190080" ver="4"/>
+				<designed target="OnClickPenStyle" value="1" ver="4"/>
+				<designed target="OnClickPenWidth" value="1" ver="4"/>
+				<designed target="OnHoverPenColor" value="4278190080" ver="4"/>
+				<designed target="OnHoverPenStyle" value="1" ver="4"/>
+				<designed target="OnHoverPenWidth" value="1" ver="4"/>
+				<designed target="DisabledPenColor" value="4288716960" ver="4"/>
+				<designed target="DisabledPenStyle" value="1" ver="4"/>
+				<designed target="DisabledPenWidth" value="1" ver="4"/>
+				<do-trace access-modifier="private" target="Enabled" ver="4">
+					<body>
+						<![CDATA[!BoilerWork]]>
+					</body>
+				</do-trace>
+				<do-trace access-modifier="private" target="Visible" ver="4">
+					<body>
+						<![CDATA[unit.Security.AllowSettingsChange.Value]]>
+					</body>
+				</do-trace>
+				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
+					<body kind="om">
+						<![CDATA[if (!OutTestAlarm)
+	InTestAlarm=true;]]>
+					</body>
+				</do-on>
+				<designed target="Checked" value="false" ver="4"/>
+				<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="MouseClick">
+					<body kind="om">
+						<![CDATA[unit.Global.ShowMSG("Нажатие на кнопку \"Проверка сигнализации\".",2);]]>
+					</body>
+				</do-on>
+			</object>
+			<object access-modifier="private" name="OutTestAlarm" display-name="OutTestAlarm" uuid="ecf5efad-4ab5-43cc-bf61-f272c7ec3340" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+				<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+				<init target="Path" ver="4" value="ROOT.Boiler.OutTestAlarm"/>
+			</object>
+			<object access-modifier="private" name="InTestAlarm" display-name="InTestAlarm" uuid="db7a9bb4-6bb8-4524-9708-3760d064b6b1" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+				<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+				<init target="Path" ver="4" value="ROOT.Boiler.InTestAlarm"/>
 			</object>
 		</object>
 		<object access-modifier="private" name="IgnitionGroups" display-name="IgnitionGroups" uuid="1830182b-e324-4414-a053-aee9dc5b12a2" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="3">

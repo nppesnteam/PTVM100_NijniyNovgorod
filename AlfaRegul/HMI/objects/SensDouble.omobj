@@ -72,7 +72,7 @@
 			<designed target="TextAlignment" value="132" ver="3"/>
 			<do-trace access-modifier="private" target="Text" ver="4">
 				<body>
-					<![CDATA[CorrectValue.OutValue]]>
+					<![CDATA[OutValue]]>
 				</body>
 			</do-trace>
 			<do-trace access-modifier="private" target="FontColor" ver="4">
@@ -320,7 +320,6 @@ else
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-action="open-new" form-by-id="false">
 			<object access-modifier="private" uuid="abd01513-47f6-4e45-8e8d-794a8ac67ffc" base-type="2 датчика" base-type-id="a104b692-57e6-4ab3-bea4-4df08bf16447" ver="4">
 				<init target="refData" ver="4" ref="here"/>
-				<designed target="WindowHeight" value="270" ver="4"/>
 				<init target="WindowX" ver="4">
 					<expr>
 						<![CDATA[here.posX]]>
@@ -382,7 +381,6 @@ else
 		<designed target="InvokeTrigger" value="false" ver="4"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-action="open-new" form-by-id="false">
 			<object access-modifier="private" uuid="763678e6-8e58-48e8-9472-72d65f2ef461" base-type="Контекстное меню (заслонка)" base-type-id="7ff8281a-41b3-4ac6-807c-e1adac92357d" ver="4">
-				<designed target="Opacity" value="1" ver="4"/>
 				<init target="refData" ver="4" ref="here"/>
 				<init target="WindowX" ver="4">
 					<expr>
@@ -498,38 +496,12 @@ else
 	<object access-modifier="private" name="CorrectValue" display-name="CorrectValue" uuid="10299d62-7f9f-44fd-8cc6-fcf35ea5bf0c" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="4">
 		<designed target="InValue" value="" ver="4"/>
 		<init target="Format" ver="4">
-			<object access-modifier="private" uuid="2a2337c5-8bcb-49f1-8073-95406267a35c" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
+			<object access-modifier="private" uuid="45feef21-b72f-4441-bd57-cb6d50ed8b56" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
 				<designed target="DigitsCount" value="0" ver="4"/>
 				<do-trace access-modifier="private" target="DigitsCount" ver="4">
-					<conditional-expr>
-						<condition>
-							<![CDATA[ALIAS=="P"]]>
-						</condition>
-						<expr>
-							<![CDATA[2]]>
-						</expr>
-					</conditional-expr>
-					<conditional-expr>
-						<condition>
-							<![CDATA[ALIAS=="T"]]>
-						</condition>
-						<expr>
-							<![CDATA[1]]>
-						</expr>
-					</conditional-expr>
-					<conditional-expr>
-						<condition>
-							<![CDATA[ALIAS=="F"]]>
-						</condition>
-						<expr>
-							<![CDATA[1]]>
-						</expr>
-					</conditional-expr>
-					<default-expr>
-						<expr>
-							<![CDATA[0]]>
-						</expr>
-					</default-expr>
+					<body>
+						<![CDATA[DIGITS]]>
+					</body>
 				</do-trace>
 			</object>
 		</init>
@@ -881,7 +853,7 @@ else
 		</do-on>
 		<do-trace access-modifier="private" target="Enabled" ver="4">
 			<body>
-				<![CDATA[!isOpenedProtCheck&&HaveProt&&unit.Security.AllowSettingsChange.Value&&unit.Global.OutCheckProt]]>
+				<![CDATA[!isOpenedProtCheck&&HaveProt&&unit.Security.AllowSettingsChange.Value]]>
 			</body>
 		</do-trace>
 	</object>
@@ -889,7 +861,7 @@ else
 	<object access-modifier="private" name="CorrectValueTimeSignalL" display-name="CorrectValueTimeSignalL" uuid="4b99e65c-5863-4c08-8920-39ae3cb75536" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="4">
 		<designed target="InValue" value="" ver="4"/>
 		<init target="Format" ver="4">
-			<object access-modifier="private" uuid="2a2337c5-8bcb-49f1-8073-95406267a35c" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
+			<object access-modifier="private" uuid="1adbfede-52c0-4aa9-bada-70cf9cea8207" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
 				<designed target="DigitsCount" value="1" ver="4"/>
 			</object>
 		</init>
@@ -902,7 +874,7 @@ else
 	<object access-modifier="private" name="CorrectValueTimeSignalH" display-name="CorrectValueTimeSignalH" uuid="9eaec4d8-5c2d-464f-a792-8557d39dacc4" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="4">
 		<designed target="InValue" value="" ver="4"/>
 		<init target="Format" ver="4">
-			<object access-modifier="private" uuid="2a2337c5-8bcb-49f1-8073-95406267a35c" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
+			<object access-modifier="private" uuid="1bcd7d3e-215e-40d5-ac9e-0a3d4bb09d65" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
 				<designed target="DigitsCount" value="1" ver="4"/>
 			</object>
 		</init>
@@ -915,7 +887,7 @@ else
 	<object access-modifier="private" name="CorrectValueTimeProtectL" display-name="CorrectValueTimeProtectL" uuid="2fdf08f8-8714-48e7-a1ad-1b3130a02bc7" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="4">
 		<designed target="InValue" value="" ver="4"/>
 		<init target="Format" ver="4">
-			<object access-modifier="private" uuid="2a2337c5-8bcb-49f1-8073-95406267a35c" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
+			<object access-modifier="private" uuid="59488aaa-aa53-4a38-aad3-8383c97144e4" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
 				<designed target="DigitsCount" value="1" ver="4"/>
 			</object>
 		</init>
@@ -928,7 +900,7 @@ else
 	<object access-modifier="private" name="CorrectValueTimeProtectH" display-name="CorrectValueTimeProtectH" uuid="20623e8e-1f3c-4422-97d8-271dcd503e84" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="4">
 		<designed target="InValue" value="" ver="4"/>
 		<init target="Format" ver="4">
-			<object access-modifier="private" uuid="2a2337c5-8bcb-49f1-8073-95406267a35c" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
+			<object access-modifier="private" uuid="9234a4af-c8fd-4be7-93d6-9b87c3d2a07d" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
 				<designed target="DigitsCount" value="1" ver="4"/>
 			</object>
 		</init>
@@ -1069,7 +1041,7 @@ if (me.Value&&isOpenedProtCheck&&unit.Global.OutCheckProt)
 	<object access-modifier="private" name="CorrectValue_1" display-name="CorrectValue_1" uuid="b49c5de9-dac4-40b6-9e46-a6306f141613" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="4">
 		<designed target="InValue" value="" ver="4"/>
 		<init target="Format" ver="4">
-			<object access-modifier="private" uuid="2a2337c5-8bcb-49f1-8073-95406267a35c" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
+			<object access-modifier="private" uuid="a5027709-053e-40c1-a498-1e951d5327ba" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
 				<designed target="DigitsCount" value="0" ver="4"/>
 				<do-trace access-modifier="private" target="DigitsCount" ver="4">
 					<body>
@@ -1087,7 +1059,7 @@ if (me.Value&&isOpenedProtCheck&&unit.Global.OutCheckProt)
 	<object access-modifier="private" name="CorrectValue_2" display-name="CorrectValue_2" uuid="02804f69-4c06-41b9-95df-aef29ceb0cd1" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="4">
 		<designed target="InValue" value="" ver="4"/>
 		<init target="Format" ver="4">
-			<object access-modifier="private" uuid="2a2337c5-8bcb-49f1-8073-95406267a35c" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
+			<object access-modifier="private" uuid="e15971fd-28d0-4db6-94d9-b40337ebc7aa" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
 				<designed target="DigitsCount" value="0" ver="4"/>
 				<do-trace access-modifier="private" target="DigitsCount" ver="4">
 					<body>
@@ -1177,5 +1149,9 @@ OpenProtCheckWindow.Invoke();]]>
 	<object access-modifier="private" name="VALUE" display-name="VALUE" uuid="0e13a963-5ed4-4d20-b54c-e19cec83f468" base-type="notifying_float4" base-type-id="bb7d05ee-cbf0-4c44-8740-1905239c8ead" ver="4"/>
 	<object access-modifier="private" name="TWatOut1" display-name="TWatOut1" uuid="ae904249-045a-4cb7-8982-4cb4f8913299" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4"/>
 	<object access-modifier="private" name="TWatOut2" display-name="TWatOut2" uuid="73b10ae7-4c42-4732-8bd0-ec604e887bec" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4"/>
+	<object access-modifier="private" name="OutValue" display-name="OutValue" uuid="29e48386-ca34-4f83-a83a-54bef885e34c" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="OutValue"/>
+	</object>
 </type>
 

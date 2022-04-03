@@ -216,9 +216,7 @@ Trig=false;]]>
 			</conditional-expr>
 		</do-trace>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick" form-action="open-dialog" form-by-id="false">
-			<object access-modifier="private" uuid="0ac9add0-0916-4cd3-998c-edfe0685d12b" base-type="Смена пароля" base-type-id="440a4834-66db-41a2-ac6a-53f5ca3506d4" ver="4">
-				<designed target="WindowPosition" value="1" ver="4"/>
-			</object>
+			<object access-modifier="private" uuid="0ac9add0-0916-4cd3-998c-edfe0685d12b" base-type="Смена пароля" base-type-id="440a4834-66db-41a2-ac6a-53f5ca3506d4" ver="4"/>
 		</do-on>
 	</object>
 	<object access-modifier="private" name="Error" display-name="Error" uuid="bf784e76-a1c6-42af-95b4-5267bd2ed2c9" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4">

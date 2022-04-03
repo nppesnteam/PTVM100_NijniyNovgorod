@@ -266,7 +266,7 @@
 				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Visible" value="false" ver="4"/>
 				<designed target="Opacity" value="1" ver="4"/>
 				<designed target="Enabled" value="true" ver="4"/>
 				<designed target="Tooltip" value="" ver="4"/>
@@ -275,10 +275,15 @@
 				<designed target="PenColor" value="4278190080" ver="4"/>
 				<designed target="PenStyle" value="0" ver="4"/>
 				<designed target="PenWidth" value="1" ver="4"/>
-				<designed target="ImageFile" value="smoke.gif" ver="4"/>
+				<designed target="ImageFile" value="smoke1.gif" ver="4"/>
 				<designed target="Active" value="true" ver="4"/>
 				<designed target="CurrentFrameNumber" value="0" ver="4"/>
 				<designed target="Speed" value="1" ver="4"/>
+				<do-trace access-modifier="private" target="Visible" ver="4">
+					<body>
+						<![CDATA[bAnyFinal]]>
+					</body>
+				</do-trace>
 			</object>
 			<object access-modifier="private" name="OpcSource" display-name="OpcSource" uuid="84343517-310d-4d83-8e3a-199d8c341ee3" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
 				<designed target="Active" value="false" ver="4"/>
@@ -286,6 +291,10 @@
 				<designed target="ReAdvise" value="0" ver="4"/>
 				<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
 				<init target="Path" ver="4" value="ROOT.Smoke"/>
+			</object>
+			<object access-modifier="private" name="bAnyFinal" display-name="bAnyFinal" uuid="cf5ea3e0-6ac6-4311-925f-2a269be7130c" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+				<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+				<init target="Path" ver="4" value="ROOT.Boiler.AnyFinal"/>
 			</object>
 		</object>
 		<object access-modifier="private" name="Water" display-name="Water" uuid="6dc32c29-95b1-4eca-a8a2-cf51a26c89a9" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
@@ -771,6 +780,7 @@
 				<init target="PenType" ver="4" value="1"/>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
 				<init target="initPath" ver="4" value="F"/>
+				<init target="initName" ver="4" value="QWatOut"/>
 			</object>
 			<object access-modifier="private" name="PWaterOut" display-name="PWaterOut" uuid="7ce5cd5f-ca40-403b-bd05-70f0e411381e" base-type="rectangleWithFooter" base-type-id="f0efb2b9-b2c2-4ae5-9828-4b87079c3c46" ver="4">
 				<designed target="X" value="670" ver="4"/>
@@ -780,6 +790,7 @@
 				<init target="initPath" ver="4" value="POut"/>
 				<init target="EUColor" ver="4" value="0xff00aa00"/>
 				<init target="VALUETxtColor" ver="4" value="0xff00ff00"/>
+				<init target="initName" ver="4" value="PWatOut"/>
 			</object>
 			<object access-modifier="private" name="TWaterOut" display-name="TWaterOut" uuid="908a4632-d66d-48ec-8109-62cea0016b85" base-type="rectangleWithFooter" base-type-id="f0efb2b9-b2c2-4ae5-9828-4b87079c3c46" ver="4">
 				<designed target="X" value="770" ver="4"/>
@@ -789,6 +800,7 @@
 				<init target="initPath" ver="4" value="TOut"/>
 				<init target="EUColor" ver="4" value="0xff00aa00"/>
 				<init target="VALUETxtColor" ver="4" value="0xff00ff00"/>
+				<init target="initName" ver="4" value="TWatOut"/>
 			</object>
 			<object access-modifier="private" name="TxtWaterIn" display-name="TxtWaterIn" uuid="30e9163b-3e57-4e4c-ab3c-538e7df9f098" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
 				<designed target="X" value="180" ver="4"/>
@@ -1366,6 +1378,7 @@
 				<init target="PenType" ver="4" value="1"/>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
 				<init target="initPath" ver="4" value="PAfterFlap"/>
+				<init target="initName" ver="4" value="POil"/>
 			</object>
 			<object access-modifier="private" name="POilAfterGate" display-name="POilAfterGate" uuid="3e030847-6d62-4422-be2a-7b242105dac7" base-type="Sens" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 				<designed target="X" value="45" ver="4"/>
@@ -2126,7 +2139,7 @@
 				<designed target="Rotation" value="90" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
-				<init target="initPath" ver="4" value="ValveBlowTop"/>
+				<init target="initPath" ver="4" value="ValveBlowBot"/>
 			</object>
 			<object access-modifier="private" name="ValveBlowBot" display-name="ValveBlowBot" uuid="44b79b86-1650-4b56-a78c-7c4f68a54e4b" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="112" ver="4"/>
@@ -2134,7 +2147,7 @@
 				<designed target="Rotation" value="90" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
-				<init target="initPath" ver="4" value="ValveBlowBot"/>
+				<init target="initPath" ver="4" value="ValveBlowTop"/>
 			</object>
 			<object access-modifier="private" name="PGasAfterFlap" display-name="PGasAfterFlap" uuid="309544b9-9281-47e0-86e8-42629047663e" base-type="rectangleWithFooter" base-type-id="f0efb2b9-b2c2-4ae5-9828-4b87079c3c46" ver="4">
 				<designed target="X" value="1058.3" ver="4"/>
@@ -2144,6 +2157,7 @@
 				<init target="initPath" ver="4" value="PAfterFlap"/>
 				<init target="EUColor" ver="4" value="0xff00aa00"/>
 				<init target="VALUETxtColor" ver="4" value="0xff00ff00"/>
+				<init target="initName" ver="4" value="PGasColl"/>
 			</object>
 			<object access-modifier="private" name="TGasAfterGate" display-name="TGasAfterGate" uuid="3a11bb3c-7b40-4803-b3fa-99acd17b1725" base-type="Sens" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 				<designed target="X" value="1066" ver="4"/>
@@ -2497,6 +2511,11 @@
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
 				<init target="initPath" ver="4" value="Valve1"/>
+				<do-trace access-modifier="private" target="Tooltip" ver="4">
+					<body kind="om">
+						<![CDATA[NAME+" "+String.ToString(Group)]]>
+					</body>
+				</do-trace>
 			</object>
 			<object access-modifier="private" name="ValveDensity" display-name="ValveDensity" uuid="13f4696d-512e-4227-8d1b-c7b6d0917b42" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="548" ver="4"/>
@@ -2505,6 +2524,11 @@
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
 				<init target="initPath" ver="4" value="ValveDensity"/>
+				<do-trace access-modifier="private" target="Tooltip" ver="4">
+					<body kind="om">
+						<![CDATA[NAME+" "+String.ToString(Group)]]>
+					</body>
+				</do-trace>
 			</object>
 			<object access-modifier="private" name="ValveSecurity" display-name="ValveSecurity" uuid="07870348-b1a0-4e03-b6b1-9280ef5e9cdf" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="578" ver="4"/>
@@ -2513,6 +2537,11 @@
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
 				<init target="initPath" ver="4" value="ValveSecurity"/>
+				<do-trace access-modifier="private" target="Tooltip" ver="4">
+					<body kind="om">
+						<![CDATA[NAME+" "+String.ToString(Group)]]>
+					</body>
+				</do-trace>
 			</object>
 			<object access-modifier="private" name="PBetween" display-name="PBetween" uuid="2c0bef40-2e48-43c6-8c71-04f8863c90f1" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 				<designed target="X" value="280" ver="4"/>
@@ -2526,6 +2555,11 @@
 				<init target="PenType" ver="4" value="1"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
 				<init target="initPath" ver="4" value="PBetween"/>
+				<do-trace access-modifier="private" target="Tooltip" ver="4">
+					<body kind="om">
+						<![CDATA[NAME+" "+String.ToString(Group)+", "+EU]]>
+					</body>
+				</do-trace>
 			</object>
 			<object access-modifier="private" name="Germ" display-name="Germ" uuid="37e46d88-623d-4ca2-b650-17fabdd32e50" base-type="ProgressBar" base-type-id="a5193173-0399-4840-95f8-2e9958e4e74e" ver="4">
 				<designed target="X" value="190" ver="4"/>
@@ -2903,6 +2937,11 @@
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
 				<init target="initPath" ver="4" value="Valve1"/>
+				<do-trace access-modifier="private" target="Tooltip" ver="4">
+					<body kind="om">
+						<![CDATA[NAME+" "+String.ToString(Group)]]>
+					</body>
+				</do-trace>
 			</object>
 			<object access-modifier="private" name="ValveDensity" display-name="ValveDensity" uuid="80541c08-b17e-4a28-b721-8bf4934163a2" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="548" ver="4"/>
@@ -2911,6 +2950,11 @@
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
 				<init target="initPath" ver="4" value="ValveDensity"/>
+				<do-trace access-modifier="private" target="Tooltip" ver="4">
+					<body kind="om">
+						<![CDATA[NAME+" "+String.ToString(Group)]]>
+					</body>
+				</do-trace>
 			</object>
 			<object access-modifier="private" name="ValveSecurity" display-name="ValveSecurity" uuid="e4c2e57e-1268-4ff3-b177-db07fc3a0445" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="578" ver="4"/>
@@ -2919,6 +2963,11 @@
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
 				<init target="initPath" ver="4" value="ValveSecurity"/>
+				<do-trace access-modifier="private" target="Tooltip" ver="4">
+					<body kind="om">
+						<![CDATA[NAME+" "+String.ToString(Group)]]>
+					</body>
+				</do-trace>
 			</object>
 			<object access-modifier="private" name="PBetween" display-name="PBetween" uuid="cb2a827f-c42b-459d-ba25-9e1ccd2054ab" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 				<designed target="X" value="430" ver="4"/>
@@ -2932,6 +2981,11 @@
 				<init target="PenType" ver="4" value="1"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
 				<init target="initPath" ver="4" value="PBetween"/>
+				<do-trace access-modifier="private" target="Tooltip" ver="4">
+					<body kind="om">
+						<![CDATA[NAME+" "+String.ToString(Group)+", "+EU]]>
+					</body>
+				</do-trace>
 			</object>
 			<object access-modifier="private" name="Germ" display-name="Germ" uuid="ad3b571c-7a92-4623-9c06-fcf6a62841d2" base-type="ProgressBar" base-type-id="a5193173-0399-4840-95f8-2e9958e4e74e" ver="4">
 				<designed target="X" value="190" ver="4"/>
@@ -3309,6 +3363,11 @@
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
 				<init target="initPath" ver="4" value="Valve1"/>
+				<do-trace access-modifier="private" target="Tooltip" ver="4">
+					<body kind="om">
+						<![CDATA[NAME+" "+String.ToString(Group)]]>
+					</body>
+				</do-trace>
 			</object>
 			<object access-modifier="private" name="ValveDensity" display-name="ValveDensity" uuid="f50cc7f2-85e9-4996-9881-230ffb86e091" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="548" ver="4"/>
@@ -3317,6 +3376,11 @@
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
 				<init target="initPath" ver="4" value="ValveDensity"/>
+				<do-trace access-modifier="private" target="Tooltip" ver="4">
+					<body kind="om">
+						<![CDATA[NAME+" "+String.ToString(Group)]]>
+					</body>
+				</do-trace>
 			</object>
 			<object access-modifier="private" name="ValveSecurity" display-name="ValveSecurity" uuid="2e6cb29a-0645-4ad6-9f12-3e7770b7c997" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="578" ver="4"/>
@@ -3325,6 +3389,11 @@
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
 				<init target="initPath" ver="4" value="ValveSecurity"/>
+				<do-trace access-modifier="private" target="Tooltip" ver="4">
+					<body kind="om">
+						<![CDATA[NAME+" "+String.ToString(Group)]]>
+					</body>
+				</do-trace>
 			</object>
 			<object access-modifier="private" name="PBetween" display-name="PBetween" uuid="174ca7a6-a82e-478e-91dd-03bd861d220d" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 				<designed target="X" value="280" ver="4"/>
@@ -3338,6 +3407,11 @@
 				<init target="PenType" ver="4" value="1"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
 				<init target="initPath" ver="4" value="PBetween"/>
+				<do-trace access-modifier="private" target="Tooltip" ver="4">
+					<body kind="om">
+						<![CDATA[NAME+" "+String.ToString(Group)+", "+EU]]>
+					</body>
+				</do-trace>
 			</object>
 			<object access-modifier="private" name="Germ" display-name="Germ" uuid="2b424b91-9a65-4f54-97de-44d1279ec457" base-type="ProgressBar" base-type-id="a5193173-0399-4840-95f8-2e9958e4e74e" ver="4">
 				<designed target="X" value="190" ver="4"/>
@@ -3715,6 +3789,11 @@
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
 				<init target="initPath" ver="4" value="Valve1"/>
+				<do-trace access-modifier="private" target="Tooltip" ver="4">
+					<body kind="om">
+						<![CDATA[NAME+" "+String.ToString(Group)]]>
+					</body>
+				</do-trace>
 			</object>
 			<object access-modifier="private" name="ValveDensity" display-name="ValveDensity" uuid="377c7491-bf28-4b60-9dfe-ed7d7da4e1d7" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="548" ver="4"/>
@@ -3723,6 +3802,11 @@
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
 				<init target="initPath" ver="4" value="ValveDensity"/>
+				<do-trace access-modifier="private" target="Tooltip" ver="4">
+					<body kind="om">
+						<![CDATA[NAME+" "+String.ToString(Group)]]>
+					</body>
+				</do-trace>
 			</object>
 			<object access-modifier="private" name="ValveSecurity" display-name="ValveSecurity" uuid="9fc17c48-2057-48b6-80f1-60fa92925f25" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="578" ver="4"/>
@@ -3731,6 +3815,11 @@
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
 				<init target="initPath" ver="4" value="ValveSecurity"/>
+				<do-trace access-modifier="private" target="Tooltip" ver="4">
+					<body kind="om">
+						<![CDATA[NAME+" "+String.ToString(Group)]]>
+					</body>
+				</do-trace>
 			</object>
 			<object access-modifier="private" name="PBetween" display-name="PBetween" uuid="bc73b792-76a7-4cb1-bed3-d1ccde033c01" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 				<designed target="X" value="430" ver="4"/>
@@ -3744,6 +3833,11 @@
 				<init target="PenType" ver="4" value="1"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
 				<init target="initPath" ver="4" value="PBetween"/>
+				<do-trace access-modifier="private" target="Tooltip" ver="4">
+					<body kind="om">
+						<![CDATA[NAME+" "+String.ToString(Group)+", "+EU]]>
+					</body>
+				</do-trace>
 			</object>
 			<object access-modifier="private" name="Germ" display-name="Germ" uuid="8ffc26dd-3521-42c4-b6ab-9cc719a5195d" base-type="ProgressBar" base-type-id="a5193173-0399-4840-95f8-2e9958e4e74e" ver="4">
 				<designed target="X" value="190" ver="4"/>
@@ -5936,7 +6030,7 @@ while (i<12)
 		<designed target="Width" value="88" ver="4"/>
 		<designed target="Height" value="46.5" ver="4"/>
 		<designed target="PenColor" value="4278190080" ver="4"/>
-		<designed target="PenStyle" value="1" ver="4"/>
+		<designed target="PenStyle" value="0" ver="4"/>
 		<designed target="PenWidth" value="1" ver="4"/>
 		<designed target="BrushColor" value="4278190080" ver="4"/>
 		<designed target="BrushStyle" value="0" ver="4"/>
@@ -6082,7 +6176,7 @@ while (i<12)
 			<object access-modifier="private" name="OutputFormatter_1" display-name="OutputFormatter_1" uuid="e7ca2bd8-5c43-4628-9731-0229c054c23b" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="4">
 				<designed target="InValue" value="" ver="4"/>
 				<init target="Format" ver="4">
-					<object access-modifier="private" uuid="841c6da8-ed18-4043-a092-8188fb674c08" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
+					<object access-modifier="private" uuid="68f1d874-d4dd-4bf6-8d69-ecbfbc2b37ae" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
 						<designed target="DigitsCount" value="0" ver="4"/>
 					</object>
 				</init>

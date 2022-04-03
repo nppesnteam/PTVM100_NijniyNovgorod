@@ -95,7 +95,7 @@
 	<object access-modifier="private" name="CorrectValue" display-name="CorrectValue" uuid="a0aba4bc-b65d-4238-84b0-1e51089804e1" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="4">
 		<designed target="InValue" value="" ver="4"/>
 		<init target="Format" ver="4">
-			<object access-modifier="private" uuid="2a2337c5-8bcb-49f1-8073-95406267a35c" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
+			<object access-modifier="private" uuid="cbf5ce8c-a29e-448c-bce5-6edb2a1d4b55" base-type="FormatFloat" base-type-id="0b9dd5b4-9b68-4bbe-92b2-eb6fb5617d8e" ver="4">
 				<designed target="DigitsCount" value="0" ver="4"/>
 				<do-trace access-modifier="private" target="DigitsCount" ver="4">
 					<conditional-expr>

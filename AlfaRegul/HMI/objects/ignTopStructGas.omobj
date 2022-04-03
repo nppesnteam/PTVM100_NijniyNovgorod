@@ -225,6 +225,11 @@
 		<designed target="Rotation" value="0" ver="3"/>
 		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
 		<init target="initPath" ver="4" value="Burn"/>
+		<do-trace access-modifier="private" target="Tooltip" ver="4">
+			<body kind="om">
+				<![CDATA[NAME+" "+here.BurnNumber]]>
+			</body>
+		</do-trace>
 	</object>
 	<object access-modifier="private" name="TubeGasIgn" display-name="TubeGasIgn" uuid="0fe37fa0-7d1d-402b-81c3-ddd4a91eea63" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
 		<designed target="X" value="14" ver="4"/>
@@ -280,6 +285,11 @@
 		<init target="Color" ver="4" value="0xffffff00"/>
 		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
 		<init target="initPath" ver="4" value="ValveIgn"/>
+		<do-trace access-modifier="private" target="Tooltip" ver="4">
+			<body kind="om">
+				<![CDATA[NAME+" "+BurnNumber]]>
+			</body>
+		</do-trace>
 	</object>
 	<object access-modifier="private" name="Valve2" display-name="Valve2" uuid="05408477-0e70-42b7-8154-c87f10790e4e" base-type="valveEM" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="3">
 		<designed target="X" value="-2" ver="3"/>
@@ -288,6 +298,11 @@
 		<init target="Color" ver="3" value="0xffffff00"/>
 		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
 		<init target="initPath" ver="4" value="ValveII"/>
+		<do-trace access-modifier="private" target="Tooltip" ver="4">
+			<body kind="om">
+				<![CDATA[NAME+" "+BurnNumber]]>
+			</body>
+		</do-trace>
 	</object>
 	<object access-modifier="private" name="FlapGas" display-name="FlapGas" uuid="1941c4b2-8d7e-4600-a4a5-c0256639c120" base-type="flap" base-type-id="a3e73327-f733-446d-ac01-918439e55f3f" ver="4">
 		<designed target="X" value="-2" ver="4"/>
@@ -297,6 +312,11 @@
 		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
 		<init target="initPath" ver="4" value="FlapGas"/>
 		<init target="HavePositSens" ver="4" value="true"/>
+		<do-trace access-modifier="private" target="Tooltip" ver="4">
+			<body kind="om">
+				<![CDATA[NAME+" "+BurnNumber]]>
+			</body>
+		</do-trace>
 	</object>
 	<object access-modifier="private" name="FlapOil" display-name="FlapOil" uuid="ffc027db-3594-40fa-9bd4-48059dfb847d" base-type="Flap+Mode" base-type-id="b78f6792-0d3a-4088-980d-276c0d3138ee" ver="3">
 		<designed target="X" value="-43" ver="3"/>
@@ -305,6 +325,11 @@
 		<init target="Color" ver="3" value="0xffc65a02"/>
 		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
 		<init target="initPath" ver="4" value="FlapOil"/>
+		<do-trace access-modifier="private" target="Tooltip" ver="4">
+			<body kind="om">
+				<![CDATA[NAME+" "+BurnNumber]]>
+			</body>
+		</do-trace>
 	</object>
 	<object access-modifier="private" name="Vent" display-name="Vent" uuid="07b0a3a8-fbac-417d-8ae5-66f43bab8cd1" base-type="engineTop" base-type-id="c50df17d-e1a0-4f27-9be4-f55a0d8eed22" ver="4">
 		<designed target="X" value="-67" ver="4"/>
@@ -317,6 +342,11 @@
 				<![CDATA[Str.ToString(here.burner.BurnNumber)]]>
 			</body>
 		</do-trace>
+		<do-trace access-modifier="private" target="Tooltip" ver="4">
+			<body kind="om">
+				<![CDATA[NAME+" "+BurnNumber]]>
+			</body>
+		</do-trace>
 	</object>
 	<object access-modifier="private" name="FlapO2" display-name="FlapO2" uuid="8c396192-f1db-41be-9dba-34a45fe306f2" base-type="flap" base-type-id="a3e73327-f733-446d-ac01-918439e55f3f" ver="3">
 		<designed target="X" value="-70" ver="3"/>
@@ -325,6 +355,11 @@
 		<init target="Color" ver="3" value="0xff00aaff"/>
 		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
 		<init target="initPath" ver="4" value="FlapO2"/>
+		<do-trace access-modifier="private" target="Tooltip" ver="4">
+			<body kind="om">
+				<![CDATA[NAME+" "+BurnNumber]]>
+			</body>
+		</do-trace>
 	</object>
 	<object access-modifier="private" name="PGas" display-name="PGas" uuid="915205b6-8767-4328-928a-1af2dd1a0eb8" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 		<designed target="X" value="12" ver="4"/>
@@ -448,125 +483,15 @@
 			</body>
 		</do-trace>
 	</object>
-	<object access-modifier="private" name="fPaBefor" display-name="fPaBefor" uuid="a8763e7d-bdbf-42aa-a75e-c770e54c9a23" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="fPaBefor"/>
-	</object>
-	<object access-modifier="private" name="fPgBefor" display-name="fPgBefor" uuid="99a553a7-2cf8-494e-ab0b-547349bb40ed" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="fPgBefor"/>
-	</object>
-	<object access-modifier="private" name="fPgBetw" display-name="fPgBetw" uuid="aaa26663-2519-4b50-9195-76838109f431" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="fPgBetw"/>
-	</object>
-	<object access-modifier="private" name="fPositGDamper" display-name="fPositGDamper" uuid="3bc221c9-9950-4c22-aff1-c9110dd1c4d6" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="fPositGDamper"/>
-	</object>
-	<object access-modifier="private" name="fPositADamper" display-name="fPositADamper" uuid="16113fa1-fbe4-4966-a3a2-90f7453faeec" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="fPositADamper"/>
-	</object>
-	<object access-modifier="private" name="bDamperAH" display-name="bDamperAH" uuid="8e10b982-ce59-4a9a-aae5-16af2a93cbc8" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="bDamperAH"/>
-	</object>
-	<object access-modifier="private" name="bDamperAL" display-name="bDamperAL" uuid="e2bd2c85-9993-400b-8844-7e409b03b4c1" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="bDamperAL"/>
-	</object>
-	<object access-modifier="private" name="bDamperGH" display-name="bDamperGH" uuid="f9944f46-ceda-4da8-8355-7f0bf2b008bd" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="bDamperGH"/>
-	</object>
-	<object access-modifier="private" name="bDamperGL" display-name="bDamperGL" uuid="12551665-3466-4d63-ad35-cbe920c3eb20" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="bDamperGL"/>
-	</object>
-	<object access-modifier="private" name="bFanOn" display-name="bFanOn" uuid="5eba3fbf-c3d6-4d0d-90ad-9b9acd4e7602" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="bFanOn"/>
-	</object>
-	<object access-modifier="private" name="bSpark" display-name="bSpark" uuid="84526586-c1e1-4cb2-8732-914dfb8ff61a" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="bSpark"/>
-	</object>
-	<object access-modifier="private" name="bValveI" display-name="bValveI" uuid="5475680e-6f99-43c1-b131-e40a0d456dbd" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="bValveI"/>
-	</object>
-	<object access-modifier="private" name="bValveII" display-name="bValveII" uuid="a271c11a-410b-4d99-8f56-f7aaf1f45bdb" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="bValveII"/>
-	</object>
-	<object access-modifier="private" name="bValveIgn" display-name="bValveIgn" uuid="2b5169fc-ca6c-4d07-ba15-d303157576c8" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="bValveIgn"/>
-	</object>
-	<object access-modifier="private" name="bValveSafety" display-name="bValveSafety" uuid="9a079e89-5277-4f6e-881b-ecc4a3649421" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="bValveSafety"/>
-	</object>
-	<object access-modifier="private" name="bADamperH" display-name="bADamperH" uuid="370e8313-64ce-42a7-8f88-479f0c554b84" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="bADamperH"/>
-	</object>
-	<object access-modifier="private" name="bADamperL" display-name="bADamperL" uuid="f6b91ec4-67de-4c57-bd5a-bda07cfa8560" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="bADamperL"/>
-	</object>
-	<object access-modifier="private" name="bFanOni" display-name="bFanOni" uuid="a53c6880-4a6e-4a21-935f-f90685c414e4" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="bFanOn1"/>
-	</object>
-	<object access-modifier="private" name="bFireBurn" display-name="bFireBurn" uuid="75cc5e7e-5b4a-4077-9f62-006261bd3387" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="bFireBurn"/>
-	</object>
-	<object access-modifier="private" name="bFireBurnDef" display-name="bFireBurnDef" uuid="6c3e31d2-287d-4045-8583-ac3c78431d7d" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="bFireBurnDef"/>
-	</object>
-	<object access-modifier="private" name="bFireIgn" display-name="bFireIgn" uuid="c577167c-da99-4485-a5ee-87076efee1bb" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="bFireIgn"/>
-	</object>
-	<object access-modifier="private" name="bGDamperL" display-name="bGDamperL" uuid="dfb35c44-04a3-4faf-8f2c-351f1e0f4d62" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="bGDamperL"/>
-	</object>
-	<object access-modifier="private" name="bGDamperNoH" display-name="bGDamperNoH" uuid="bb3d6131-44e1-4148-b64b-8b1219d5baf9" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="bGDamperNoH"/>
-	</object>
-	<object access-modifier="private" name="bGDamperNoL" display-name="bGDamperNoL" uuid="408e7c04-7a08-4590-ae88-f1d6160eeb8e" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="bGDamperNoL"/>
-	</object>
-	<object access-modifier="private" name="bGValveI" display-name="bGValveI" uuid="4dd1b511-56b2-4f5a-b2d6-3282917d7b12" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="bGValveI"/>
-	</object>
-	<object access-modifier="private" name="bGValveII" display-name="bGValveII" uuid="4f82d6e9-9f29-43ae-a989-bbc817e46ad1" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="bGValveII"/>
-	</object>
-	<object access-modifier="private" name="bGValveIgn" display-name="bGValveIgn" uuid="624b4bed-1e60-4f7c-92b5-b64e5bc1fef9" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="bGValveIgn"/>
-	</object>
-	<object access-modifier="private" name="bGValveSafety" display-name="bGValveSafety" uuid="5533dfd7-a357-4864-a0a7-594a91420744" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="bGValveSafety"/>
-	</object>
-	<object access-modifier="private" name="bStart" display-name="bStart" uuid="05c1c508-477d-48ad-9449-6ae0812f38f4" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="burn.Start"/>
-	</object>
 	<object access-modifier="private" name="BurnerHasGas" display-name="BurnerHasGas" uuid="f74ece4e-74a7-4941-91be-e4c3f3978746" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
 	<object access-modifier="private" name="IgnHasGas" display-name="IgnHasGas" uuid="bb78d2b3-d4df-4933-848b-22731e56a590" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
 	<object access-modifier="private" name="Group" display-name="Group" uuid="7d909eff-da69-4941-9f06-c71abc89c5ab" base-type="notifying_int1" base-type-id="cc2bf8ea-3898-4228-bc8f-71a7738f0c62" ver="4"/>
 	<object access-modifier="private" name="InitPath" display-name="InitPath" uuid="9a5dc97f-a2e0-4282-876e-14ac62aa3e69" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="4"/>
+	<object access-modifier="private" name="BurnNumber" display-name="BurnNumber" uuid="4a6605f2-8f14-404c-bf0e-89fd95514f4c" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="4"/>
+	<do-trace access-modifier="private" target="BurnNumber" ver="4">
+		<body>
+			<![CDATA[burner.BurnNumber.ValueAsString]]>
+		</body>
+	</do-trace>
 </type>
 
