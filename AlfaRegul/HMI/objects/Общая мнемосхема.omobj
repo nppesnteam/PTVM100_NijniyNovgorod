@@ -2277,6 +2277,11 @@
 						<![CDATA[here.Alarms.VentOk&&!here.Alarms.GermOk]]>
 					</body>
 				</do-trace>
+				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
+					<body kind="om">
+						<![CDATA[InStartGerm=!OutStartGerm;]]>
+					</body>
+				</do-on>
 			</object>
 			<object access-modifier="private" name="InStartGerm" display-name="InStartGerm" uuid="52876110-907d-4e95-9e35-5f3b6e22d459" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 				<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
