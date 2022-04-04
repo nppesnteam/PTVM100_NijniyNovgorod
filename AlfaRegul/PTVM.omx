@@ -3223,17 +3223,17 @@
                 <object name="Prot1" base-type="Types.ProtectsValueBoiler.PLC_View" uuid="6d88a536-bd07-4228-8b0d-30edc196d12e">
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="unit.System.Attributes.Description" value="Давление газа в коллекторе ниже нормы" xmlns="system" />
-                  <attribute type="Attributes.ALIAS" value="PGasColL" xmlns="system" />
+                  <attribute type="Attributes.ALIAS" value="PGasCollL" xmlns="system" />
                 </object>
                 <object name="Prot2" base-type="Types.ProtectsValueBoiler.PLC_View" xmlns="automation.control" uuid="c815052a-1228-4bdc-b750-8b2fec8d7f97">
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="unit.System.Attributes.Description" value="Давление газа в коллекторе выше нормы" xmlns="system" />
-                  <attribute type="Attributes.ALIAS" value="PGasColH" xmlns="system" />
+                  <attribute type="Attributes.ALIAS" value="PGasCollH" xmlns="system" />
                 </object>
                 <object name="Prot3" base-type="Types.ProtectsValueBoiler.PLC_View" xmlns="automation.control" uuid="1ffe30e8-e6c4-4a22-8c60-8a7d1b5df895">
                   <attribute type="Attributes.EU" value="мПа" xmlns="system" />
                   <attribute type="unit.System.Attributes.Description" value="Давление рез.топлива в коллекторе ниже нормы" xmlns="system" />
-                  <attribute type="Attributes.ALIAS" value="POilColL" xmlns="system" />
+                  <attribute type="Attributes.ALIAS" value="POilL" xmlns="system" />
                 </object>
                 <object name="Prot4" base-type="Types.ProtectsValueBoiler.PLC_View" xmlns="automation.control" uuid="a77e933b-6968-43f9-92c4-d979ca0be065">
                   <attribute type="Attributes.EU" value="мПа" xmlns="system" />
@@ -3248,17 +3248,17 @@
                 <object name="Prot6" base-type="Types.ProtectsValueBoiler.PLC_View" xmlns="automation.control" uuid="e7d765c6-5fbf-4300-bff1-09c04dc3672b">
                   <attribute type="Attributes.EU" value="т/ч" xmlns="system" />
                   <attribute type="unit.System.Attributes.Description" value="Расход теплоносителя ниже нормы" xmlns="system" />
-                  <attribute type="Attributes.ALIAS" value="QWatL" xmlns="system" />
+                  <attribute type="Attributes.ALIAS" value="QWatOutL" xmlns="system" />
                 </object>
                 <object name="Prot7" base-type="Types.ProtectsValueBoiler.PLC_View" xmlns="automation.control" uuid="f170df8e-c78f-4896-83ed-e5b8af63080c">
                   <attribute type="Attributes.EU" value="°C" xmlns="system" />
                   <attribute type="unit.System.Attributes.Description" value="Температура теплоносителя выше нормы" xmlns="system" />
-                  <attribute type="Attributes.ALIAS" value="TWatH" xmlns="system" />
+                  <attribute type="Attributes.ALIAS" value="TWatOutH" xmlns="system" />
                 </object>
                 <object name="Prot8" base-type="Types.ProtectsValueBoiler.PLC_View" xmlns="automation.control" uuid="79362d86-26c2-42c4-a12b-4f4dc726fb98">
                   <attribute type="Attributes.EU" value="Па" xmlns="system" />
-                  <attribute type="unit.System.Attributes.Description" value="Разрежение выше нормы" xmlns="system" />
-                  <attribute type="Attributes.ALIAS" value="VacL" xmlns="system" />
+                  <attribute type="unit.System.Attributes.Description" value="Разрежение ниже нормы" xmlns="system" />
+                  <attribute type="Attributes.ALIAS" value="VacH" xmlns="system" />
                 </object>
                 <object name="Prot9" base-type="Types.ProtectsValueBoiler.PLC_View" xmlns="automation.control" uuid="1c3e4aae-ead6-40e3-bc2c-51779bd6037a">
                   <attribute type="Attributes.EU" value="°C" xmlns="system" />
@@ -3306,7 +3306,7 @@
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerIgn.PLC_View" aspect="Aspects.PLC_Aspect" uuid="948df0ca-8fdf-424b-8197-91c83fec01be">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка 3" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.BurnNumber" value="3" xmlns="system" />
                 </object>
@@ -3364,7 +3364,7 @@
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerWork.PLC_View" aspect="Aspects.PLC_Aspect" uuid="55cf35e2-2164-42d5-b98b-90f229b4203f">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка 1" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.BurnNumber" value="1" xmlns="system" />
                 </object>
@@ -3406,7 +3406,7 @@
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerWork.PLC_View" aspect="Aspects.PLC_Aspect" uuid="3b630567-5dc1-4cdf-93a4-2deb882449ab">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка 2" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.BurnNumber" value="2" xmlns="system" />
                 </object>
@@ -3448,7 +3448,7 @@
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerWork.PLC_View" aspect="Aspects.PLC_Aspect" uuid="325bdf6d-c891-49e0-8b86-3ec0ba30c953">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка 4" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.BurnNumber" value="4" xmlns="system" />
                 </object>
@@ -3557,7 +3557,7 @@
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerIgn.PLC_View" aspect="Aspects.PLC_Aspect" uuid="86097536-6dfa-460c-9727-152b6267838a">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка 6" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.BurnNumber" value="6" xmlns="system" />
                 </object>
@@ -3600,7 +3600,7 @@
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerWork.PLC_View" aspect="Aspects.PLC_Aspect" uuid="29fec796-9b21-4596-a5f1-f7dc4fbc9291">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка 7" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.BurnNumber" value="7" xmlns="system" />
                 </object>
@@ -3642,7 +3642,7 @@
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerWork.PLC_View" aspect="Aspects.PLC_Aspect" uuid="28b2efbc-e5b6-4678-932a-6dc4d03821ad">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка 8" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.BurnNumber" value="8" xmlns="system" />
                 </object>
@@ -3684,7 +3684,7 @@
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerWork.PLC_View" aspect="Aspects.PLC_Aspect" uuid="ae336336-f517-406a-ae56-fe7ded95fe6e">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка 5" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.BurnNumber" value="5" xmlns="system" />
                 </object>
@@ -3759,7 +3759,7 @@
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerIgn.PLC_View" aspect="Aspects.PLC_Aspect" uuid="1b7382a9-2639-42a6-9523-859600abc8ad">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка 11" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.BurnNumber" value="11" xmlns="system" />
                 </object>
@@ -3802,7 +3802,7 @@
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerWork.PLC_View" aspect="Aspects.PLC_Aspect" uuid="91ba96ee-c261-451a-b2b0-38c82aaf2787">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка 10" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.BurnNumber" value="10" xmlns="system" />
                 </object>
@@ -3844,7 +3844,7 @@
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerWork.PLC_View" aspect="Aspects.PLC_Aspect" uuid="bd690db3-5d65-4f9b-9f82-325d3a697794">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка 12" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.BurnNumber" value="12" xmlns="system" />
                 </object>
@@ -3886,7 +3886,7 @@
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerWork.PLC_View" aspect="Aspects.PLC_Aspect" uuid="6281578d-927e-4228-bfc6-1f524db92f31">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка 9" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.BurnNumber" value="9" xmlns="system" />
                 </object>
@@ -3961,7 +3961,7 @@
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerIgn.PLC_View" aspect="Aspects.PLC_Aspect" uuid="7926f37f-be5d-4d41-b292-7a11c81c9d35">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка 14" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.BurnNumber" value="14" xmlns="system" />
                 </object>
@@ -4004,7 +4004,7 @@
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerWork.PLC_View" aspect="Aspects.PLC_Aspect" uuid="27acb3cb-9e11-4719-8922-4a97399e61dd">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка 15" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.BurnNumber" value="15" xmlns="system" />
                 </object>
@@ -4046,7 +4046,7 @@
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerWork.PLC_View" aspect="Aspects.PLC_Aspect" uuid="8e098aa7-0ea8-4530-9714-213ebf952fc6">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка 16" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.BurnNumber" value="16" xmlns="system" />
                 </object>
@@ -4088,7 +4088,7 @@
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerWork.PLC_View" aspect="Aspects.PLC_Aspect" uuid="12221cf7-c4a4-48de-bc95-c4b22c37f138">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Горелка 13" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.BurnNumber" value="13" xmlns="system" />
                 </object>
@@ -8096,7 +8096,7 @@ Channel32.H=Math.TestBit(State.State,31);</property>
           <historian-database-link database="ARM2.Historian.DB_HISTORY" />
         </history-module>
         <opcua-client name="OpcUaClient" xmlns="server" uuid="93826dc2-a48e-4092-975b-af251935e9c6">
-          <opcua-server-link server="PLC.Runtime.OpcUaServer" security-mode="none" sampling-interval="200" update-rate="200" write-only-to-active-server="true" write-on-connect="true" can-suspended-server-be-active="true" control-signal-id-type="string" active-server-timeout="1000" notification-queue-size="0" max-nodes-per-browse="0" max-nodes-per-write="0" max-nodes-per-read="0" max-monitored-items-per-call="0" authorization-mode="Anonymous" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-value="5" control-signal-id="Application.GVL.iIsStateActive" session-timeout="10000" standby-mode="request-data" />
+          <opcua-server-link server="PLC.Runtime.OpcUaServer" security-mode="none" sampling-interval="200" update-rate="200" write-only-to-active-server="false" write-on-connect="true" can-suspended-server-be-active="true" control-signal-id-type="string" active-server-timeout="1000" notification-queue-size="0" max-nodes-per-browse="0" max-nodes-per-write="0" max-nodes-per-read="0" max-monitored-items-per-call="0" authorization-mode="Anonymous" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-value="5" control-signal-id="Application.GVL.iIsStateActive" session-timeout="5000" standby-mode="request-data" />
         </opcua-client>
         <netdiag-module name="NetDiagModule" uuid="da84fb71-1121-46d5-a391-ea4b6da83bbb">
           <network-node-binding node="PLC_R" />
@@ -9601,6 +9601,7 @@ else
         <parameter name="VALUE2" type="float32" direction="out" xmlns="automation.control" uuid="99f23be2-be3c-4e5f-8379-e7e38bbfdae1" />
         <parameter name="iSel" direction="in-out" type="int16" xmlns="automation.control" uuid="548fd04b-0024-4ee5-b38a-c806e5726736" />
         <parameter name="OutValue" type="float32" direction="out" xmlns="automation.control" uuid="486ac4fd-d816-4c09-ac62-fdf046f1950e" />
+        <parameter name="AllowDiff" type="float32" direction="in-out" xmlns="automation.control" uuid="58c7c5fb-1dbe-416d-af7b-b953dc7c211f" />
       </type>
       <type name="IOS_View" xmlns="automation.control" aspect="Aspects.IOS_Aspect" original="AnalogDoubleSens" uuid="d4c1f4a7-3e67-4d23-8c65-bef367b274f1">
         <parameter name="NAME" type="string" direction="out" uuid="9995e860-2bad-4125-b714-9393dc4ff353">
@@ -9635,6 +9636,10 @@ else
         <bind source="_PLC_View.iSel" target="OutiSel" />
         <parameter name="OutValue" uuid="e198d0d7-d7cb-472a-9529-d5329d21ab9e" direction="out" type="float32" />
         <bind source="_PLC_View.OutValue" target="OutValue" />
+        <parameter name="InAllowDiff" uuid="7d85d1b3-9828-409a-835e-3e9e8145ae81" direction="in" type="float32" />
+        <bind source="InAllowDiff" target="_PLC_View.AllowDiff" />
+        <parameter name="OutAllowDiff" uuid="f1cd9dcb-f316-41ab-aacf-453aa48d3e5a" direction="out" type="float32" />
+        <bind source="_PLC_View.AllowDiff" target="OutAllowDiff" />
       </type>
     </type>
     <ct:type name="Regime" uuid="db717efd-c888-409c-8d65-e0afb8f6ddfd">

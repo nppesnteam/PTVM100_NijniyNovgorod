@@ -7,9 +7,9 @@
  xmlns:html="http://www.w3.org/TR/REC-html40">
  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
   <Author>Преснецова Светлана Олеговна</Author>
-  <LastAuthor>Илья Чураков</LastAuthor>
+  <LastAuthor>Administrator</LastAuthor>
   <Created>2020-06-04T03:39:48Z</Created>
-  <LastSaved>2022-03-25T10:52:50Z</LastSaved>
+  <LastSaved>2022-04-04T10:59:58Z</LastSaved>
   <Version>16.00</Version>
  </DocumentProperties>
  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
@@ -45,15 +45,18 @@
    <Font ss:FontName="Calibri" x:CharSet="204" x:Family="Swiss" ss:Size="11"
     ss:Color="#000000" ss:Bold="1"/>
   </Style>
+  <Style ss:ID="s66">
+   <Font ss:FontName="Arial" x:CharSet="204" x:Family="Swiss" ss:Color="#333333"/>
+  </Style>
  </Styles>
  <Worksheet ss:Name="Tree">
-  <Table ss:ExpandedColumnCount="12" ss:ExpandedRowCount="866" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="12" ss:ExpandedRowCount="878" x:FullColumns="1"
    x:FullRows="1" ss:DefaultRowHeight="15">
-   <Column ss:Width="418.5"/>
+   <Column ss:Width="564.75"/>
    <Column ss:Width="51"/>
-   <Column ss:Width="282.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="282.75"/>
    <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="107.25"/>
-   <Column ss:Width="375.75"/>
+   <Column ss:Width="462.75"/>
    <Column ss:Index="8" ss:Width="400.5"/>
    <Column ss:Width="51"/>
    <Column ss:Width="273.75"/>
@@ -262,193 +265,193 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 1\Канал 1\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module1.Channel1.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Перепад давления газа на диафрагме</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 1\Канал 2\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module1.Channel2.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление газа после диафрагмы</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 1\Канал 3\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module1.Channel3.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">°C</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Температура газа после диафрагмы</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 1\Канал 4\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module1.Channel4.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление газа после регулирующей заслонки 1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 1\Канал 5\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module1.Channel5.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление газа после регулирующей заслонки 2</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 1\Канал 6\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module1.Channel6.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Перепад давления рез.топлива на диафрагме</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 1\Канал 7\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module1.Channel7.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">°C</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Температура резервного топлива после диафрагмы</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 1\Канал 8\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module1.Channel8.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">мПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление резервного топлива после диафрагмы</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 1\Канал 9\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module1.Channel9.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">мПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление резервного топлива после регулирующей заслонкой</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 1\Канал 10\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module1.Channel10.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">°C</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Температура уходящих газов</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 1\Канал 11\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module1.Channel11.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">%</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Содержание О2 в уходящих газах</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 1\Канал 12\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module1.Channel12.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">Па</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Разрежение в топке котла</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 1\Канал 13\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module1.Channel13.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Перепад давления воды на диафрагме</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 1\Канал 14\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module1.Channel14.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">°C</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Температура теплоносителя перед котлом</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 1\Канал 15\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module1.Channel15.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">мПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление теплоносителя перед котлом</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 1\Канал 16\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module1.Channel16.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 2\Канал 1\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module2.Channel1.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">°C</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Температура теплоносителя после котла 1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 2\Канал 2\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module2.Channel2.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">°C</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Температура теплоносителя после котла 2</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 2\Канал 3\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module2.Channel3.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">мПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление теплоносителя после котла 1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 2\Канал 4\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module2.Channel4.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">мПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление теплоносителя после котла 2</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 2\Канал 5\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module2.Channel5.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Интенсивность общего факела в топке</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 2\Канал 6\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module2.Channel6.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">%</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки газа</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 2\Канал 7\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module2.Channel7.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">%</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки резервного топлива</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 2\Канал 8\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module2.Channel8.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">%</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки разрежения А</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 2\Канал 9\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module2.Channel9.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">%</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Датчик положения МЭО регулирующей заслонки разрежения В</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 2\Канал 10\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module2.Channel10.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 2\Канал 11\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module2.Channel11.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 2\Канал 12\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module2.Channel12.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 2\Канал 13\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module2.Channel13.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 2\Канал 14\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module2.Channel14.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 2\Канал 15\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module2.Channel15.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУК\Аналоговые входы\Модуль 2\Канал 16\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Main.AI.Module2.Channel16.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -1510,97 +1513,97 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 1\Аналоговые входы\Модуль 1\Канал 1\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group1.AI.Module1.Channel1.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">%</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Положение заслонки газа растопочной горелки группы №1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 1\Аналоговые входы\Модуль 1\Канал 2\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group1.AI.Module1.Channel2.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление газа между ПЗК группы горелок №1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 1\Аналоговые входы\Модуль 1\Канал 3\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group1.AI.Module1.Channel3.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление газа перед горелкой №1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 1\Аналоговые входы\Модуль 1\Канал 4\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group1.AI.Module1.Channel4.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление воздуха перед горелкой №1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 1\Аналоговые входы\Модуль 1\Канал 5\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group1.AI.Module1.Channel5.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление газа перед горелкой №2</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 1\Аналоговые входы\Модуль 1\Канал 6\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group1.AI.Module1.Channel6.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление воздуха перед горелкой №2</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 1\Аналоговые входы\Модуль 1\Канал 7\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group1.AI.Module1.Channel7.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление газа перед горелкой №3</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 1\Аналоговые входы\Модуль 1\Канал 8\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group1.AI.Module1.Channel8.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление воздуха перед горелкой №3</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 1\Аналоговые входы\Модуль 1\Канал 9\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group1.AI.Module1.Channel9.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление газа перед горелкой №4</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 1\Аналоговые входы\Модуль 1\Канал 10\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group1.AI.Module1.Channel10.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление воздуха перед горелкой №4</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 1\Аналоговые входы\Модуль 1\Канал 11\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group1.AI.Module1.Channel11.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 1\Аналоговые входы\Модуль 1\Канал 12\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group1.AI.Module1.Channel12.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 1\Аналоговые входы\Модуль 1\Канал 13\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group1.AI.Module1.Channel13.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 1\Аналоговые входы\Модуль 1\Канал 14\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group1.AI.Module1.Channel14.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 1\Аналоговые входы\Модуль 1\Канал 15\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group1.AI.Module1.Channel15.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 1\Аналоговые входы\Модуль 1\Канал 16\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group1.AI.Module1.Channel16.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -2278,97 +2281,97 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 2\Аналоговые входы\Модуль 1\Канал 1\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group2.AI.Module1.Channel1.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">%</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Положение заслонки газа растопочной горелки группы №2</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 2\Аналоговые входы\Модуль 1\Канал 2\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group2.AI.Module1.Channel2.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление газа между ПЗК группы горелок №2</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 2\Аналоговые входы\Модуль 1\Канал 3\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group2.AI.Module1.Channel3.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление газа перед горелкой №5</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 2\Аналоговые входы\Модуль 1\Канал 4\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group2.AI.Module1.Channel4.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление воздуха перед горелкой №5</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 2\Аналоговые входы\Модуль 1\Канал 5\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group2.AI.Module1.Channel5.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление газа перед горелкой №6</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 2\Аналоговые входы\Модуль 1\Канал 6\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group2.AI.Module1.Channel6.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление воздуха перед горелкой №6</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 2\Аналоговые входы\Модуль 1\Канал 7\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group2.AI.Module1.Channel7.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление газа перед горелкой №7</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 2\Аналоговые входы\Модуль 1\Канал 8\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group2.AI.Module1.Channel8.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление воздуха перед горелкой №7</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 2\Аналоговые входы\Модуль 1\Канал 9\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group2.AI.Module1.Channel9.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление газа перед горелкой №8</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 2\Аналоговые входы\Модуль 1\Канал 10\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group2.AI.Module1.Channel10.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление воздуха перед горелкой №8</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 2\Аналоговые входы\Модуль 1\Канал 11\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group2.AI.Module1.Channel11.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 2\Аналоговые входы\Модуль 1\Канал 12\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group2.AI.Module1.Channel12.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 2\Аналоговые входы\Модуль 1\Канал 13\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group2.AI.Module1.Channel13.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 2\Аналоговые входы\Модуль 1\Канал 14\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group2.AI.Module1.Channel14.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 2\Аналоговые входы\Модуль 1\Канал 15\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group2.AI.Module1.Channel15.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 2\Аналоговые входы\Модуль 1\Канал 16\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group2.AI.Module1.Channel16.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -3046,97 +3049,97 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 3\Аналоговые входы\Модуль 1\Канал 1\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group3.AI.Module1.Channel1.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">%</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Положение заслонки газа растопочной горелки группы №3</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 3\Аналоговые входы\Модуль 1\Канал 2\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group3.AI.Module1.Channel2.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление газа между ПЗК группы горелок №3</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 3\Аналоговые входы\Модуль 1\Канал 3\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group3.AI.Module1.Channel3.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление газа перед горелкой №9</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 3\Аналоговые входы\Модуль 1\Канал 4\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group3.AI.Module1.Channel4.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление воздуха перед горелкой №9</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 3\Аналоговые входы\Модуль 1\Канал 5\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group3.AI.Module1.Channel5.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление газа перед горелкой №10</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 3\Аналоговые входы\Модуль 1\Канал 6\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group3.AI.Module1.Channel6.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление воздуха перед горелкой №10</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 3\Аналоговые входы\Модуль 1\Канал 7\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group3.AI.Module1.Channel7.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление газа перед горелкой №11</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 3\Аналоговые входы\Модуль 1\Канал 8\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group3.AI.Module1.Channel8.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление воздуха перед горелкой №11</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 3\Аналоговые входы\Модуль 1\Канал 9\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group3.AI.Module1.Channel9.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление газа перед горелкой №12</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 3\Аналоговые входы\Модуль 1\Канал 10\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group3.AI.Module1.Channel10.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление воздуха перед горелкой №12</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 3\Аналоговые входы\Модуль 1\Канал 11\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group3.AI.Module1.Channel11.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 3\Аналоговые входы\Модуль 1\Канал 12\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group3.AI.Module1.Channel12.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 3\Аналоговые входы\Модуль 1\Канал 13\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group3.AI.Module1.Channel13.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 3\Аналоговые входы\Модуль 1\Канал 14\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group3.AI.Module1.Channel14.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 3\Аналоговые входы\Модуль 1\Канал 15\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group3.AI.Module1.Channel15.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 3\Аналоговые входы\Модуль 1\Канал 16\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group3.AI.Module1.Channel16.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -3814,97 +3817,97 @@
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 4\Аналоговые входы\Модуль 1\Канал 1\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group4.AI.Module1.Channel1.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">%</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Положение заслонки газа растопочной горелки группы №4</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 4\Аналоговые входы\Модуль 1\Канал 2\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group4.AI.Module1.Channel2.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление газа между ПЗК группы горелок №4</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 4\Аналоговые входы\Модуль 1\Канал 3\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group4.AI.Module1.Channel3.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление газа перед горелкой №13</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 4\Аналоговые входы\Модуль 1\Канал 4\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group4.AI.Module1.Channel4.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление воздуха перед горелкой №13</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 4\Аналоговые входы\Модуль 1\Канал 5\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group4.AI.Module1.Channel5.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление газа перед горелкой №14</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 4\Аналоговые входы\Модуль 1\Канал 6\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group4.AI.Module1.Channel6.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление воздуха перед горелкой №14</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 4\Аналоговые входы\Модуль 1\Канал 7\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group4.AI.Module1.Channel7.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление газа перед горелкой №15</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 4\Аналоговые входы\Модуль 1\Канал 8\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group4.AI.Module1.Channel8.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление воздуха перед горелкой №15</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 4\Аналоговые входы\Модуль 1\Канал 9\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group4.AI.Module1.Channel9.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление газа перед горелкой №16</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 4\Аналоговые входы\Модуль 1\Канал 10\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group4.AI.Module1.Channel10.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">кПа</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Давление воздуха перед горелкой №16</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 4\Аналоговые входы\Модуль 1\Канал 11\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group4.AI.Module1.Channel11.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 4\Аналоговые входы\Модуль 1\Канал 12\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group4.AI.Module1.Channel12.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 4\Аналоговые входы\Модуль 1\Канал 13\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group4.AI.Module1.Channel13.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 4\Аналоговые входы\Модуль 1\Канал 14\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group4.AI.Module1.Channel14.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 4\Аналоговые входы\Модуль 1\Канал 15\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group4.AI.Module1.Channel15.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">Все каналы\ШУГ 4\Аналоговые входы\Модуль 1\Канал 16\Электрическая величина</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Diag.Group4.AI.Module1.Channel16.ELECTROVALUE</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String"> </Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">мА</Data></Cell>
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -4484,413 +4487,827 @@
     <Cell><Data ss:Type="String">Резерв</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Задержки срабатывания защит\Давление газа в коллекторе выше нормы</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.DelAlarmsBoiler.OutPGasCollH</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="String">Задержка срабатывания защиты &quot;Р газа в коллекторе выше нормы&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Задержка срабатывания защиты &quot;Давление газа в коллекторе выше нормы&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Задержки срабатывания защит\Давление газа в коллекторе ниже нормы</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.DelAlarmsBoiler.OutPGasCollL</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="String">Задержка срабатывания защиты &quot;Р газа в коллекторе ниже нормы&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Задержка срабатывания защиты &quot;Давление газа в коллекторе ниже нормы&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Задержки срабатывания защит\Давление рез.топлива ниже нормы</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.DelAlarmsBoiler.OutPOilL</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="String">Задержка срабатывания защиты &quot;Р рез.топлива ниже нормы&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Задержка срабатывания защиты &quot;Давление резервного топлива в коллекторе ниже нормы&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Задержки срабатывания защит\Давление теплоносителя на выходе выше нормы</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.DelAlarmsBoiler.OutPWatOutH</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="String">Задержка срабатывания защиты &quot;Р теплоносителя выше нормы&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Задержка срабатывания защиты &quot;Давление теплоносителя на выходе выше нормы&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Задержки срабатывания защит\Давление теплоносителя на выходе ниже нормы</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.DelAlarmsBoiler.OutPWatOutL</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="String">Задержка срабатывания защиты &quot;Р теплоносителя ниже нормы&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Задержка срабатывания защиты &quot;Давление теплоносителя на выходе ниже нормы&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Задержки срабатывания защит\Расход теплоносителя ниже нормы</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.DelAlarmsBoiler.OutQWatOutL</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="String">Задержка срабатывания защиты &quot;Расход теплоносителя ниже нормы&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Задержка срабатывания защиты &quot;Расход теплоносителя ниже нормы&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Задержки срабатывания защит\Температура дымовых газов выше нормы</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.DelAlarmsBoiler.OutTSmokeH</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="String">Задержка срабатывания защиты &quot;Т дымовых газов выше нормы&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Задержка срабатывания защиты &quot;Температура дымовых газов выше нормы&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Задержки срабатывания защит\Температура теплоносителя на выходе выше нормы</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.DelAlarmsBoiler.OutTWatOutH</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="String">Задержка срабатывания защиты &quot;Т теплоносителя выше нормы&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Задержка срабатывания защиты &quot;Температура теплоносителя на выходе выше нормы&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Задержки срабатывания защит\Разрежение ниже нормы</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.DelAlarmsBoiler.OutVacH</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="String">Задержка срабатывания защиты &quot;Разрежение ниже нормы&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Задержка срабатывания защиты &quot;Разрежение ниже нормы&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Задержки срабатывания защит\Нет факела горелки</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.DelAlarmsBurn.OuttDelFire</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="String">Задержка срабатывания защиты &quot;Нет факела горелки&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Задержка срабатывания защиты &quot;Нет факела горелки&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Задержки срабатывания защит\Давление газа перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.DelAlarmsBurn.OuttDelPGas</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="String">Задержка срабатывания защиты &quot;Р газа перед горелкой&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Задержка срабатывания защиты &quot;Давление газа перед горелкой&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Задержки срабатывания защит\Давление воздуха перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.DelAlarmsBurn.OuttDelPO2</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="String">Задержка срабатывания защиты &quot;Р воздуха перед горелкой&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Задержка срабатывания защиты &quot;Давление воздуха перед горелкой&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Задержки срабатывания защит\Сигнализация клапанов</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.DelAlarmsBurn.OuttDelValve</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="String">Задержка срабатывания сигнализации клапанов</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Задержка срабатывания сигнализации клапанов</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Задержки срабатывания защит\Отключение или невключение вентилятора</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.DelAlarmsBurn.OuttDelVent</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="String">Задержка срабатывания защиты &quot;Отключение\невключение вентилятора&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Задержка срабатывания защиты &quot;Отключение\невключение вентилятора&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Уставки срабатывания защит\Давление газа в коллекторе ниже нормы</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.ValueAlarmBoiler.Prot1.OutProtect</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Уставка защиты &quot;Давление газа в коллекторе ниже нормы&quot;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Уставки срабатывания защит\Давление газа в коллекторе выше нормы</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.ValueAlarmBoiler.Prot2.OutProtect</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Уставка защиты &quot;Давление газа в коллекторе выше нормы&quot;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Уставки срабатывания защит\Давление резервного топлива в коллекторе ниже нормы</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.ValueAlarmBoiler.Prot3.OutProtect</Data></Cell>
+    <Cell><Data ss:Type="String">мПа</Data></Cell>
+    <Cell><Data ss:Type="String">Уставка защиты &quot;Давление резервного топлива в коллекторе ниже нормы&quot;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Уставки срабатывания защит\Давление теплоносителя на выходе ниже нормы</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.ValueAlarmBoiler.Prot4.OutProtect</Data></Cell>
+    <Cell><Data ss:Type="String">мПа</Data></Cell>
+    <Cell><Data ss:Type="String">Уставка защиты &quot;Давление теплоносителя на выходе ниже нормы&quot;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Уставки срабатывания защит\Давление теплоносителя на выходе выше нормы</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.ValueAlarmBoiler.Prot5.OutProtect</Data></Cell>
+    <Cell><Data ss:Type="String">мПа</Data></Cell>
+    <Cell><Data ss:Type="String">Уставка защиты &quot;Давление теплоносителя на выходе выше нормы&quot;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Уставки срабатывания защит\Расход теплоносителя ниже нормы</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.ValueAlarmBoiler.Prot6.OutProtect</Data></Cell>
+    <Cell><Data ss:Type="String">т/ч</Data></Cell>
+    <Cell><Data ss:Type="String">Уставка защиты &quot;Расход теплоносителя ниже нормы&quot;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Уставки срабатывания защит\Температура теплоносителя выше нормы</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.ValueAlarmBoiler.Prot7.OutProtect</Data></Cell>
+    <Cell><Data ss:Type="String">°C</Data></Cell>
+    <Cell><Data ss:Type="String">Уставка защиты &quot;Температура теплоносителя выше нормы&quot;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Уставки срабатывания защит\Разрежение ниже нормы</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.ValueAlarmBoiler.Prot8.OutProtect</Data></Cell>
+    <Cell><Data ss:Type="String">Па</Data></Cell>
+    <Cell><Data ss:Type="String">Уставка защиты &quot;Разрежение ниже нормы&quot;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Уставки срабатывания защит\Температура дымовых газов выше нормы</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.ValueAlarmBoiler.Prot9.OutProtect</Data></Cell>
+    <Cell><Data ss:Type="String">°C</Data></Cell>
+    <Cell><Data ss:Type="String">Уставка защиты &quot;Температура дымовых газов выше нормы&quot;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Уставки срабатывания сигнализаций\Давление газа в коллекторе ниже нормы</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.ValueAlarmBoiler.Prot1.OutSignal</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Уставка сигнализации &quot;Давление газа в коллекторе ниже нормы&quot;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Уставки срабатывания сигнализаций\Давление газа в коллекторе выше нормы</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.ValueAlarmBoiler.Prot2.OutSignal</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Уставка сигнализации &quot;Давление газа в коллекторе выше нормы&quot;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Уставки срабатывания сигнализаций\Давление резервного топлива в коллекторе ниже нормы</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.ValueAlarmBoiler.Prot3.OutSignal</Data></Cell>
+    <Cell><Data ss:Type="String">мПа</Data></Cell>
+    <Cell><Data ss:Type="String">Уставка сигнализации &quot;Давление резервного топлива в коллекторе ниже нормы&quot;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Уставки срабатывания сигнализаций\Давление теплоносителя на выходе ниже нормы</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.ValueAlarmBoiler.Prot4.OutSignal</Data></Cell>
+    <Cell><Data ss:Type="String">мПа</Data></Cell>
+    <Cell><Data ss:Type="String">Уставка сигнализации &quot;Давление теплоносителя на выходе ниже нормы&quot;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Уставки срабатывания сигнализаций\Давление теплоносителя на выходе выше нормы</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.ValueAlarmBoiler.Prot5.OutSignal</Data></Cell>
+    <Cell><Data ss:Type="String">мПа</Data></Cell>
+    <Cell><Data ss:Type="String">Уставка сигнализации &quot;Давление теплоносителя на выходе выше нормы&quot;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Уставки срабатывания сигнализаций\Расход теплоносителя ниже нормы</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.ValueAlarmBoiler.Prot6.OutSignal</Data></Cell>
+    <Cell><Data ss:Type="String">т/ч</Data></Cell>
+    <Cell><Data ss:Type="String">Уставка сигнализации &quot;Расход теплоносителя ниже нормы&quot;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Уставки срабатывания сигнализаций\Температура теплоносителя выше нормы</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.ValueAlarmBoiler.Prot7.OutSignal</Data></Cell>
+    <Cell><Data ss:Type="String">°C</Data></Cell>
+    <Cell><Data ss:Type="String">Уставка сигнализации &quot;Температура теплоносителя выше нормы&quot;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Уставки срабатывания сигнализаций\Разрежение ниже нормы</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.ValueAlarmBoiler.Prot8.OutSignal</Data></Cell>
+    <Cell><Data ss:Type="String">Па</Data></Cell>
+    <Cell><Data ss:Type="String">Уставка сигнализации &quot;Разрежение ниже нормы&quot;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Уставки срабатывания сигнализаций\Температура дымовых газов выше нормы</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.ValueAlarmBoiler.Prot9.OutSignal</Data></Cell>
+    <Cell><Data ss:Type="String">°C</Data></Cell>
+    <Cell><Data ss:Type="String">Уставка сигнализации &quot;Температура дымовых газов выше нормы&quot;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\ШИМ\Пауза между импульсами</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.ProtectsValueBurn.OutImpDel</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="String">Задержка мужду импульсами ШИМ заслонок газа и воздуха</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Задержка мужду импульсами ШИМ заслонок газа и воздуха</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\ШИМ\Время импульса заслонки газа перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.ProtectsValueBurn.OutImpGas</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="String">Время импульса ШИМ заслонок газа</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Время импульса ШИМ заслонок газа</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\ШИМ\Время импульса шибера воздуха перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.ProtectsValueBurn.OutImpO2</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="String">Время импульса ШИМ заслонок воздуха</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Время импульса ШИМ заслонок воздуха</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Уставки срабатывания защит\Давление газа перед горелкой выше нормы</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.ProtectsValueBurn.OutPGasBurnH</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="String">Уставка защиты &quot;Р газа перед горелкой выше нормы&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Уставка защиты &quot;Давление газа перед горелкой выше нормы&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Уставки срабатывания защит\Давление газа перед горелкой ниже нормы</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.ProtectsValueBurn.OutPGasBurnL</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="String">Уставка защиты &quot;Р газа перед горелкой ниже нормы&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Уставка защиты &quot;Давление газа перед горелкой ниже нормы&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Опрессовка\Давление максимальное</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.ProtectsValueBurn.OutPMax</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="String">Настройка &quot;Р максимальное при опрессовке&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Настройка &quot;Давление максимальное при опрессовке&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Опрессовка\Давление минимальное</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.ProtectsValueBurn.OutPMin</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="String">Настройка &quot;Р минимальное при опрессовке&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Настройка &quot;Давление минимальное при опрессовке&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Уставки срабатывания защит\Давление воздуха перед горелкой ниже нормы</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.ProtectsValueBurn.OutPO2BurnL</Data></Cell>
-    <Cell ss:Index="5"><Data ss:Type="String">Уставка защиты &quot;Р воздуха перед горелкой ниже нормы&quot;</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Уставка защиты &quot;Давление воздуха перед горелкой ниже нормы&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Время проведения этапов\Розжиг горелки на газе</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.TimeProcesses.OuttBurn</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Время этапа &quot;Розжиг горелки на газе&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Время проведения этапов\Проверка герметичности клапана</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.TimeProcesses.OuttCtrl</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Время этапа &quot;Проверка герметичности клапана&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Время проведения этапов\Финал</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.TimeProcesses.OuttFinal</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Время этапа &quot;Финал&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Время проведения этапов\Фиксация давления</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.TimeProcesses.OuttFix</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Время этапа &quot;Фиксация давления&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Время проведения этапов\Исходное положение</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.TimeProcesses.OuttHome</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Время этапа &quot;Исходное положение&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Время проведения этапов\Розжиг запальника</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.TimeProcesses.OuttIgnGas</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Время этапа &quot;Розжиг запальника&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Время проведения этапов\Розжиг горелки на резервном топливе</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.TimeProcesses.OuttIgnOil</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Время этапа &quot;Розжиг горелки на резервном топливе&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Время проведения этапов\Открытие шибера воздуха перед растопкой горелки 3</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.TimeProcesses.OuttOpenAIgn1</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Время этапа &quot;Открытие шибера воздуха перед растопкой горелки 3&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Время проведения этапов\Открытие шибера воздуха перед растопкой горелки 6</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.TimeProcesses.OuttOpenAIgn2</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Время этапа &quot;Открытие шибера воздуха перед растопкой горелки 6&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Время проведения этапов\Открытие шибера воздуха перед растопкой горелки 11</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.TimeProcesses.OuttOpenAIgn3</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Время этапа &quot;Открытие шибера воздуха перед растопкой горелки 11&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Время проведения этапов\Открытие шибера воздуха перед растопкой горелки 14</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.TimeProcesses.OuttOpenAIgn4</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Время этапа &quot;Открытие шибера воздуха перед растопкой горелки 14&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.TimeProcesses.OuttOpenGateG</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Время проведения этапов\Открытие заслонки газа перед растопкой горелки 3</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.TimeProcesses.OuttOpenGIgn1</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Время этапа &quot;Открытие заслонки газа перед растопкой горелки 3&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Время проведения этапов\Открытие заслонки газа перед растопкой горелки 6</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.TimeProcesses.OuttOpenGIgn2</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Время этапа &quot;Открытие заслонки газа перед растопкой горелки 6&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Время проведения этапов\Открытие заслонки газа перед растопкой горелки 11</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.TimeProcesses.OuttOpenGIgn3</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Время этапа &quot;Открытие заслонки газа перед растопкой горелки 11&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Время проведения этапов\Открытие заслонки газа перед растопкой горелки 14</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.TimeProcesses.OuttOpenGIgn4</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Время этапа &quot;Открытие заслонки газа перед растопкой горелки 14&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Время проведения этапов\Опрессовка</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.TimeProcesses.OuttPump</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Время этапа &quot;Опрессовка&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Время проведения этапов\Подача искры</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.TimeProcesses.OuttSpark</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Время этапа &quot;Подача искры&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Время проведения этапов\Стабилизация давления</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.TimeProcesses.OuttStab</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Время этапа &quot;Стабилизация давления&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Настройки\Время проведения этапов\Вентиляция топки</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.AlarmsValue.TimeProcesses.OuttVent</Data></Cell>
+    <Cell><Data ss:Type="String">сек.</Data></Cell>
+    <Cell><Data ss:Type="String">Время этапа &quot;Вентиляция топки&quot;</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Газ\Расход</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Gas.F.VALUE</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">м³/ч</Data></Cell>
+    <Cell><Data ss:Type="String">Расход газа</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="3"><Data ss:Type="String">ROOT.Gas.Flap.Param</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Газ\Задание регулятора</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Gas.Flap.OutfSetTask</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Задание регулятора газа</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Газ\Давление после регулятора (датчик 1)</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Gas.PAfterFlap.VALUE1</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа после регулятора (датчик 1)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Газ\Давление после регулятора (датчик 2)</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Gas.PAfterFlap.VALUE2</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа после регулятора (датчик 2)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Газ\Ведущий датчик давления после регулятора</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Gas.PAfterFlap.OutiSel</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Ведущий датчик давления газа после регулятора</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Газ\Давление после диафрагмы</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Gas.PBeforeFlap.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа после диафрагмы</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Газ\Температура после диафрагмы</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Gas.T.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">°C</Data></Cell>
+    <Cell><Data ss:Type="String">Температура газа после диафрагмы</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Резервное топливо\Расход</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Oil.F.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кг/ч</Data></Cell>
+    <Cell><Data ss:Type="String">Расход рез.топлива</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="3"><Data ss:Type="String">ROOT.Oil.Flap.Param</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Резервное топливо\Задание регулятора</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Oil.Flap.OutfSetTask</Data></Cell>
+    <Cell><Data ss:Type="String">мПа</Data></Cell>
+    <Cell><Data ss:Type="String">Задание регулятора резервного топлива</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Резервное топливо\Давление после регулятора</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Oil.PAfterFlap.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">мПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление после регулятора резервного топлива</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Резервное топливо\Давление после диафрагмы</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Oil.PBeforeFlap.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">мПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление резервного топлива после диафрагмы</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Резервное топливо\Температура после диафрагмы</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Oil.T.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">°C</Data></Cell>
+    <Cell><Data ss:Type="String">Температура резервного топлива после диафрагмы</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="3"><Data ss:Type="String">ROOT.Smoke.FlapA.Param</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Дымоход\Задание регулятора разрежения</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Smoke.FlapA.OutfSetTask</Data></Cell>
+    <Cell><Data ss:Type="String">Па</Data></Cell>
+    <Cell><Data ss:Type="String">Задание регулятора разрежения</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="3"><Data ss:Type="String">ROOT.Smoke.FlapB.Param</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="3"><Data ss:Type="String">ROOT.Smoke.FlapB.OutfSetTask</Data></Cell>
-   </Row>
-   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Дымоход\Содержание кислорода</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Smoke.O2.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">%</Data></Cell>
+    <Cell><Data ss:Type="String">Содержание кислорода</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Дымоход\Разрежение</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Smoke.S.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">Па</Data></Cell>
+    <Cell><Data ss:Type="String">Разрежение в топке котла</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Дымоход\Температура дымовых газов</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Smoke.T.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">°C</Data></Cell>
+    <Cell><Data ss:Type="String">Температура дымовых газов</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Теплоноситель\Расход</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Water.F.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">т/ч</Data></Cell>
+    <Cell><Data ss:Type="String">Расход теплоносителя</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Теплоноситель\Давление на входе</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Water.PIn.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">мПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление теплоносителя на входе</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Теплоноситель\Давление на выходе (датчик 1)</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Water.POut.VALUE1</Data></Cell>
+    <Cell><Data ss:Type="String">мПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление теплоносителя на выходе (датчик 1)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Теплоноситель\Давление на выходе (датчик 2)</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Water.POut.VALUE2</Data></Cell>
+    <Cell><Data ss:Type="String">мПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление теплоносителя на выходе (датчик 2)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Теплоноситель\Ведущий датчик давления на выходе</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Water.POut.OutiSel</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Ведущий датчик давления теплоносителя на выходе</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Теплоноситель\Температура на входе</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Water.TIn.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">°C</Data></Cell>
+    <Cell><Data ss:Type="String">Температура теплоносителя на входе</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Теплоноситель\Температура на выходе (датчик 1)</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Water.TOut.VALUE1</Data></Cell>
+    <Cell><Data ss:Type="String">°C</Data></Cell>
+    <Cell><Data ss:Type="String">Температура теплоносителя на выходе (датчик 1)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Теплоноситель\Температура на выходе (датчик 2)</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Water.TOut.VALUE2</Data></Cell>
+    <Cell><Data ss:Type="String">°C</Data></Cell>
+    <Cell><Data ss:Type="String">Температура теплоносителя на выходе (датчик 2)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Теплоноситель\Ведущий датчик температуры на выходе</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Water.TOut.OutiSel</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Ведущий датчик температуры теплоносителя на выходе</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Мощность котла</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Boiler.PowerBoiler</Data></Cell>
+    <Cell><Data ss:Type="String">Гкал</Data></Cell>
+    <Cell><Data ss:Type="String">Мощность котла</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 1\Горелка 1\Запущена</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group1.Burn1.Burn.Start</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Горелка 1 в работе</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 1\Горелка 1\Давление газа перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group1.Burn1.PGas.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа перед горелкой 1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 1\Горелка 1\Давление воздуха перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group1.Burn1.PO2.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воздуха перед горелкой 1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 1\Горелка 2\Запущена</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group1.Burn2.Burn.Start</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Горелка 2 в работе</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 1\Горелка 2\Давление газа перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group1.Burn2.PGas.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа перед горелкой 2</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 1\Горелка 2\Давление воздуха перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group1.Burn2.PO2.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воздуха перед горелкой 2</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 1\Горелка 3\Запущена</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group1.Burn3.Burn.Start</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Горелка 3 в работе</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 1\Горелка 3\Давление газа перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group1.Burn3.PGas.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа перед горелкой 3</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 1\Горелка 3\Давление воздуха перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group1.Burn3.PO2.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воздуха перед горелкой 3</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 1\Горелка 4\Запущена</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group1.Burn4.Burn.Start</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Горелка 4 в работе</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 1\Горелка 4\Давление газа перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group1.Burn4.PGas.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа перед горелкой 4</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 1\Горелка 4\Давление воздуха перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group1.Burn4.PO2.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воздуха перед горелкой 4</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 1\Проверка герметичности</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group1.Germ.Final</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Завершена проверка герметичности группы 1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 1\Давление газа между ПЗК</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group1.PBetween.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа между ПЗК группы 1</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 2\Горелка 5\Запущена</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group2.Burn1.Burn.Start</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Горелка 5 в работе</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 2\Горелка 5\Давление газа перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group2.Burn1.PGas.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа перед горелкой 5</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 2\Горелка 5\Давление воздуха перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group2.Burn1.PO2.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воздуха перед горелкой 5</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 2\Горелка 6\Запущена</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group2.Burn2.Burn.Start</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Горелка 6 в работе</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 2\Горелка 6\Давление газа перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group2.Burn2.PGas.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа перед горелкой 6</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 2\Горелка 6\Давление воздуха перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group2.Burn2.PO2.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воздуха перед горелкой 6</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 2\Горелка 7\Запущена</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group2.Burn3.Burn.Start</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Горелка 7 в работе</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 2\Горелка 7\Давление газа перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group2.Burn3.PGas.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа перед горелкой 7</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 2\Горелка 7\Давление воздуха перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group2.Burn3.PO2.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воздуха перед горелкой 7</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 2\Горелка 8\Запущена</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group2.Burn4.Burn.Start</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Горелка 8 в работе</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 2\Горелка 8\Давление газа перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group2.Burn4.PGas.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа перед горелкой 8</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 2\Горелка 8\Давление воздуха перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group2.Burn4.PO2.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воздуха перед горелкой 8</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 2\Проверка герметичности</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group2.Germ.Final</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Завершена проверка герметичности группы 2</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 2\Давление газа между ПЗК</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group2.PBetween.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление между ПЗК группы 2</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 3\Горелка 9\Запущена</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group3.Burn1.Burn.Start</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Горелка 9 в работе</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 3\Горелка 9\Давление газа перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group3.Burn1.PGas.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа перед горелкой 9</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 3\Горелка 9\Давление воздуха перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group3.Burn1.PO2.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воздуха перед горелкой 9</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 3\Горелка 10\Запущена</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group3.Burn2.Burn.Start</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Горелка 10 в работе </Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 3\Горелка 10\Давление газа перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group3.Burn2.PGas.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа перед горелкой 10</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 3\Горелка 10\Давление воздуха перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group3.Burn2.PO2.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воздуха перед горелкой 10</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 3\Горелка 11\Запущена</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group3.Burn3.Burn.Start</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Горелка 11 в работе</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 3\Горелка 11\Давление газа перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group3.Burn3.PGas.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа перед горелкой 11</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 3\Горелка 11\Давление воздуха перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group3.Burn3.PO2.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воздуха перед горелкой 11</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 3\Горелка 12\Запущена</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group3.Burn4.Burn.Start</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Горелка 12 в работе</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 3\Горелка 12\Давление газа перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group3.Burn4.PGas.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа перед горелкой 12</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 3\Горелка 12\Давление воздуха перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group3.Burn4.PO2.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воздуха перед горелкой 12</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 3\Проверка герметичности</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group3.Germ.Final</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Завершена проверка герметичности группы 3</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 3\Давление газа между ПЗК</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group3.PBetween.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление между ПЗК группы 3</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 4\Горелка 13\Запущена</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group4.Burn1.Burn.Start</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Горелка 13 в работе</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 4\Горелка 13\Давление газа перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group4.Burn1.PGas.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа перед горелкой 13</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 4\Горелка 13\Давление воздуха перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group4.Burn1.PO2.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воздуха перед горелкой 13</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 4\Горелка 14\Запущена</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group4.Burn2.Burn.Start</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Горелка 14 в работе</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 4\Горелка 14\Давление газа перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group4.Burn2.PGas.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа перед горелкой 14</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 4\Горелка 14\Давление воздуха перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group4.Burn2.PO2.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воздуха перед горелкой 14</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 4\Горелка 15\Запущена</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group4.Burn3.Burn.Start</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Горелка 15 в работе</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 4\Горелка 15\Давление газа перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group4.Burn3.PGas.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа перед горелкой 15</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 4\Горелка 15\Давление воздуха перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group4.Burn3.PO2.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воздуха перед горелкой 15</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 4\Горелка 16\Запущена</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group4.Burn4.Burn.Start</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Горелка 16 в работе</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 4\Горелка 16\Давление газа перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group4.Burn4.PGas.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа перед горелкой 16</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 4\Горелка 16\Давление воздуха перед горелкой</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group4.Burn4.PO2.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воздуха перед горелкой 16</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 4\Проверка герметичности</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group4.Germ.Final</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">Завершена проверка герметичности группы 4</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Группа грелок 4\Давление газа между ПЗК</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">ROOT.Group4.PBetween.VALUE</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление между ПЗК группы 4</Data></Cell>
    </Row>
   </Table>
   <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
@@ -4908,11 +5325,11 @@
    </Print>
    <Zoom>85</Zoom>
    <Selected/>
-   <TopRowVisible>743</TopRowVisible>
+   <TopRowVisible>845</TopRowVisible>
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>759</ActiveRow>
+     <ActiveRow>878</ActiveRow>
      <ActiveCol>4</ActiveCol>
     </Pane>
    </Panes>

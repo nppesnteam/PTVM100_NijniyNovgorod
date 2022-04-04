@@ -228,6 +228,7 @@
 				<init target="PenType" ver="4" value="1"/>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
 				<init target="initPath" ver="4" value="S"/>
+				<init target="initName" ver="4" value="Vac"/>
 			</object>
 			<object access-modifier="private" name="O2Smoke" display-name="O2Smoke" uuid="84377af6-26af-4a3d-b305-099022792554" base-type="Sens" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 				<designed target="X" value="70" ver="4"/>
@@ -2229,6 +2230,62 @@
 				<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
 				<init target="Path" ver="4" value="ROOT.Gas"/>
 			</object>
+			<object access-modifier="private" name="StartGerm" display-name="StartGerm" uuid="fe6da31f-9c1c-44d0-9995-053354012a72" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
+				<designed target="X" value="352.833" ver="4"/>
+				<designed target="Y" value="355.833" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="110" ver="4"/>
+				<designed target="Height" value="37" ver="4"/>
+				<designed target="Checkable" value="false" ver="4"/>
+				<designed target="Checked" value="false" ver="4"/>
+				<designed target="Text" value="Проверка
+герметичности" ver="4"/>
+				<designed target="TextAlignment" value="132" ver="4"/>
+				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+				<designed target="FontColor" value="4278190080" ver="4"/>
+				<designed target="OnClickFontColor" value="4278190080" ver="4"/>
+				<designed target="OnHoverFontColor" value="4278190080" ver="4"/>
+				<designed target="DisabledFontColor" value="4278190080" ver="4"/>
+				<designed target="BrushColor" value="4293980400" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<designed target="OnClickBrushColor" value="4288716960" ver="4"/>
+				<designed target="OnClickBrushStyle" value="1" ver="4"/>
+				<designed target="OnHoverBrushColor" value="4294967295" ver="4"/>
+				<designed target="OnHoverBrushStyle" value="1" ver="4"/>
+				<designed target="DisabledBrushColor" value="4288716960" ver="4"/>
+				<designed target="DisabledBrushStyle" value="1" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="OnClickPenColor" value="4278190080" ver="4"/>
+				<designed target="OnClickPenStyle" value="1" ver="4"/>
+				<designed target="OnClickPenWidth" value="1" ver="4"/>
+				<designed target="OnHoverPenColor" value="4278190080" ver="4"/>
+				<designed target="OnHoverPenStyle" value="1" ver="4"/>
+				<designed target="OnHoverPenWidth" value="1" ver="4"/>
+				<designed target="DisabledPenColor" value="4288716960" ver="4"/>
+				<designed target="DisabledPenStyle" value="1" ver="4"/>
+				<designed target="DisabledPenWidth" value="1" ver="4"/>
+				<do-trace access-modifier="private" target="Visible" ver="4">
+					<body>
+						<![CDATA[here.Alarms.VentOk&&!here.Alarms.GermOk]]>
+					</body>
+				</do-trace>
+			</object>
+			<object access-modifier="private" name="InStartGerm" display-name="InStartGerm" uuid="52876110-907d-4e95-9e35-5f3b6e22d459" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+				<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+				<init target="Path" ver="4" value="ROOT.Boiler.InGermTestStart"/>
+			</object>
+			<object access-modifier="private" name="OutStartGerm" display-name="OutStartGerm" uuid="61c206c2-40e3-4e03-b542-080aaa1cd005" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+				<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+				<init target="Path" ver="4" value="ROOT.Boiler.OutGermTestStart"/>
+			</object>
 		</object>
 		<object access-modifier="private" name="Group1" display-name="Group1" uuid="722f4e00-9139-49bd-9447-228bded5b27c" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="3">
 			<designed target="X" value="728" ver="3"/>
@@ -2654,6 +2711,14 @@
 						<![CDATA["Группа "+String.ToString(Group)]]>
 					</body>
 				</do-trace>
+			</object>
+			<object access-modifier="private" name="InStartGerm" display-name="InStartGerm" uuid="b52b2051-a40f-42c6-a1da-dd3d2711b029" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+				<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+				<init target="Path" ver="4" value="ROOT.Boiler.InGermTestStart"/>
+			</object>
+			<object access-modifier="private" name="OutStartGerm" display-name="OutStartGerm" uuid="7b0d8e70-d178-45ed-b7bd-d2034825cf45" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+				<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+				<init target="Path" ver="4" value="ROOT.Boiler.OutGermTestStart"/>
 			</object>
 		</object>
 		<object access-modifier="private" name="Group2" display-name="Group2" uuid="08981b97-cfef-432c-a42e-5824f7bffd7e" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="3">
@@ -4044,16 +4109,15 @@ OpenSteps.Invoke();]]>
 			<designed target="Enabled" value="true" ver="4"/>
 			<designed target="InvokeTrigger" value="false" ver="4"/>
 			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-action="open-new" form-by-id="false">
-				<object access-modifier="private" uuid="1d4d2175-9c10-4b8f-82ac-c11a2ed778b9" base-type="Шаги подготовки к растопке" base-type-id="045aa052-08c4-4fed-b0fe-669d7a0651ea" ver="4">
+				<object access-modifier="private" uuid="592b6285-2ce1-4bae-905a-01a6ca6c17e5" base-type="Шаги вентиляции" base-type-id="df022b51-50fa-4614-8b2c-4f6fc9cfc5ac" ver="4">
+					<init target="WindowX" ver="4">
+						<expr>
+							<![CDATA[mX]]>
+						</expr>
+					</init>
 					<init target="WindowY" ver="4">
 						<expr>
 							<![CDATA[mY]]>
-						</expr>
-					</init>
-					<init target="refGas" ver="4" ref="here"/>
-					<init target="WindowX" ver="4">
-						<expr>
-							<![CDATA[TypeConvert.ToInt4(mX-810)]]>
 						</expr>
 					</init>
 				</object>

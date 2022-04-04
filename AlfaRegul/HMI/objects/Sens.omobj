@@ -285,7 +285,7 @@
 			</conditional-expr>
 			<default-expr>
 				<expr>
-					<![CDATA["ROOT.PROTECTS.BoilerVal"]]>
+					<![CDATA["ROOT.AlarmsValue.ValueAlarmBoiler"]]>
 				</expr>
 			</default-expr>
 		</do-trace>
@@ -298,11 +298,6 @@
 	fETProtectH=0;]]>
 			</body>
 		</do-on>
-		<do-trace access-modifier="private" target="Path" ver="4">
-			<body>
-				<![CDATA["Out"+initName+"H"]]>
-			</body>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="ProtectL" display-name="ProtectL" uuid="e35775b5-d79e-48a9-8503-66ed9ec6f0ff" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="ProtectOpcSorce"/>
@@ -312,11 +307,6 @@
 	fETProtectL=0;]]>
 			</body>
 		</do-on>
-		<do-trace access-modifier="private" target="Path" ver="4">
-			<body>
-				<![CDATA["Out"+initName+"L"]]>
-			</body>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="SignalH" display-name="SignalH" uuid="8808472f-a71a-42ab-b884-b93e49cd6da2" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="SignalOpcSorce"/>
@@ -715,19 +705,9 @@ if (me.Value&&isOpenedProtCheck&&unit.Global.OutCheckProt)
 	</object>
 	<object access-modifier="private" name="InProtectH" display-name="InProtectH" uuid="38052118-819f-4a1b-a373-2581cc69f85e" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="ProtectOpcSorce"/>
-		<do-trace access-modifier="private" target="Path" ver="4">
-			<body>
-				<![CDATA["In"+initName+"H"]]>
-			</body>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="InProtectL" display-name="InProtectL" uuid="f18e1dc9-4097-4dcb-b76a-65ab906cc72e" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="ProtectOpcSorce"/>
-		<do-trace access-modifier="private" target="Path" ver="4">
-			<body>
-				<![CDATA["In"+initName+"L"]]>
-			</body>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="InSignalH" display-name="InSignalH" uuid="4d833e11-8805-4314-b1b1-ee9cf93e1497" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="SignalOpcSorce"/>
@@ -778,6 +758,35 @@ fETSignalH=0;]]>
 	<object access-modifier="private" name="DIGITS" display-name="DIGITS" uuid="7c4a6473-823e-4311-b1f5-ac34844b721a" base-type="OpcItemUInt1" base-type-id="2caf434b-d488-4ada-a929-0585b21616c5" ver="4">
 		<init target="Source" ver="4" ref="here.hereOPCSource"/>
 		<init target="Path" ver="4" value="DIGITS"/>
+	</object>
+	<object access-modifier="private" name="Initializer_1" display-name="Initializer_1" uuid="3ea33d94-1edf-4d17-8961-4ccb7813edfa" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="4">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Initialized">
+			<body kind="om">
+				<![CDATA[i:	uint1=0;
+while (i<10)
+{
+	ALIASProt[i].Path="Prot"+String.ToString(i+1)+".ALIAS";
+	i+=1;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ALIASProt" display-name="ALIASProt" uuid="c88a4d2d-7721-4d18-a285-88ff0d46147a" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4" cardinal="9">
+		<init target="Source" ver="4" ref="ProtectOpcSorce"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[if (me.ValueAsString==initName+"L")
+{
+	ProtectL.Path="Prot"+String.ToString(Index+1)+".OutProtect";
+	InProtectL.Path="Prot"+String.ToString(Index+1)+".InProtect";
+}
+if (me.ValueAsString==initName+"H")
+{
+	ProtectH.Path="Prot"+String.ToString(Index+1)+".OutProtect";
+	InProtectH.Path="Prot"+String.ToString(Index+1)+".InProtect";
+}]]>
+			</body>
+		</do-on>
 	</object>
 </type>
 

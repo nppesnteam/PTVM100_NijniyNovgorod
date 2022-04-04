@@ -61,9 +61,17 @@
 		<body kind="om">
 			<![CDATA[mX = TypeConvert.ToFloat(ScreenX(MouseX, MouseY));
 mY = TypeConvert.ToFloat(ScreenY(MouseX, MouseY));
-if (mX+700>1920)
+if (unit.Security.AllowSettingsChange.Value)
+	if (mX+840>1920)
+	{
+		mX = TypeConvert.ToInt4(1920-850);
+	}
+if (!unit.Security.AllowSettingsChange.Value)
 {
-	mX = TypeConvert.ToInt4(mX-(710-(1920-mX)));
+	if (mX+700>1920)
+	{
+		mX = TypeConvert.ToInt4(1920-710);
+	}
 }
 if (mY+690>1080)
 {

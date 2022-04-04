@@ -66,7 +66,7 @@ if (unit.Security.AllowSettingsChange.Value)
 	{
 		mX = TypeConvert.ToInt4(1920-860);
 	}
-else
+if (!unit.Security.AllowSettingsChange.Value)
 {
 	if (mX+700>1920)
 	{

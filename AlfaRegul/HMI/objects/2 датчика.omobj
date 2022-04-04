@@ -63,7 +63,22 @@
 		<designed target="BarHighBrushStyle" value="1" ver="4"/>
 		<do-trace access-modifier="private" target="Value" ver="4">
 			<body>
-				<![CDATA[refData.VALUE]]>
+				<![CDATA[refData.OutValue]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="HighValue" ver="4">
+			<body>
+				<![CDATA[refData.ProtectH]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="LowValue" ver="4">
+			<body>
+				<![CDATA[refData.ProtectL]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="MaxLimit" ver="4">
+			<body>
+				<![CDATA[refData.ProtectH*1.2]]>
 			</body>
 		</do-trace>
 	</object>
@@ -182,7 +197,7 @@ refData.isOpened = true;]]>
 	</object>
 	<object access-modifier="private" name="sensor_1" display-name="sensor_1" uuid="bbf2f613-3f10-42e0-8e18-05125a7cbd6e" base-type="sensor" base-type-id="7d6aa5f1-44ff-4cfe-a668-21207cda0486" ver="4">
 		<designed target="X" value="5" ver="4"/>
-		<designed target="Y" value="59" ver="4"/>
+		<designed target="Y" value="47" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<do-trace access-modifier="private" target="VALUE" ver="4">
 			<body>
@@ -224,7 +239,7 @@ refData.isOpened = true;]]>
 	</object>
 	<object access-modifier="private" name="sensor_2" display-name="sensor_2" uuid="bd57a352-96bb-463b-b2fa-1daa1eb7a089" base-type="sensor" base-type-id="7d6aa5f1-44ff-4cfe-a668-21207cda0486" ver="4">
 		<designed target="X" value="5" ver="4"/>
-		<designed target="Y" value="110" ver="4"/>
+		<designed target="Y" value="94" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<do-trace access-modifier="private" target="VALUE" ver="4">
 			<body>
@@ -266,7 +281,7 @@ refData.isOpened = true;]]>
 	</object>
 	<object access-modifier="private" name="rectTrends" display-name="rectTrends" uuid="3a1dd181-6391-468e-b557-0ac1c406e3f6" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
 		<designed target="X" value="45" ver="4"/>
-		<designed target="Y" value="217" ver="4"/>
+		<designed target="Y" value="229" ver="4"/>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="1" ver="4"/>
@@ -328,7 +343,7 @@ OpenTrendsWindow.Invoke();]]>
 	</object>
 	<object access-modifier="private" name="rectValue" display-name="rectValue" uuid="9695d8fd-5ee4-4196-9598-e19f9e2e96ea" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
 		<designed target="X" value="5" ver="4"/>
-		<designed target="Y" value="162" ver="4"/>
+		<designed target="Y" value="139" ver="4"/>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="1" ver="4"/>
@@ -380,7 +395,7 @@ OpenTrendsWindow.Invoke();]]>
 				<designed target="TextAlignment" value="132" ver="4"/>
 				<do-trace access-modifier="private" target="Text" ver="4">
 					<body>
-						<![CDATA[refData.OutValue]]>
+						<![CDATA[refData.CorrectValue.OutValue]]>
 					</body>
 				</do-trace>
 			</object>
@@ -388,7 +403,7 @@ OpenTrendsWindow.Invoke();]]>
 	</object>
 	<object access-modifier="private" name="ButtonOff_1" display-name="ButtonOff_1" uuid="cf64245d-7d76-445b-b894-0d05eae4903d" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
 		<designed target="X" value="70" ver="4"/>
-		<designed target="Y" value="64" ver="4"/>
+		<designed target="Y" value="52" ver="4"/>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="1" ver="4"/>
@@ -490,10 +505,11 @@ if (refData.outiSel == 2)
 				</expr>
 			</conditional-expr>
 		</do-trace>
+		<designed target="Checked" value="false" ver="4"/>
 	</object>
 	<object access-modifier="private" name="ButtonOff_2" display-name="ButtonOff_2" uuid="5eea5ac3-8fca-4d32-9927-27c6513132b2" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
 		<designed target="X" value="70" ver="4"/>
-		<designed target="Y" value="115" ver="4"/>
+		<designed target="Y" value="99" ver="4"/>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="1" ver="4"/>
@@ -595,6 +611,7 @@ if (refData.outiSel == 1)
 				</expr>
 			</conditional-expr>
 		</do-trace>
+		<designed target="Checked" value="false" ver="4"/>
 	</object>
 	<object access-modifier="private" name="mX" display-name="mX" uuid="545059c6-4c88-47ff-befa-2cf886fb2189" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
 	<object access-modifier="private" name="mY" display-name="mY" uuid="239f500d-df05-4e29-af51-8e39be2b83a2" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
@@ -670,6 +687,91 @@ if (refData.outiSel == 1)
 		<do-trace access-modifier="private" target="InValue" ver="4">
 			<body>
 				<![CDATA[refData.VALUE]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="txtAllowDiff" display-name="txtAllowDiff" uuid="a9449b9d-0ed5-44d1-829e-e4b09bbf28ac" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+		<designed target="X" value="10" ver="4"/>
+		<designed target="Y" value="175" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="128" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="Text" value="Допустимая разница" ver="4"/>
+		<designed target="Font" value="Arial,9,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+		<designed target="FontColor" value="4278190080" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+	</object>
+	<object access-modifier="private" name="editAllowDiff" display-name="editAllowDiff" uuid="7a2946a6-9fb6-4f81-88e6-591059437978" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="4">
+		<designed target="X" value="29" ver="4"/>
+		<designed target="Y" value="196" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="66" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="Text" value="" ver="4"/>
+		<designed target="Font" value="Arial,9,-1,5,75,0,0,0,0,0" ver="4"/>
+		<designed target="FontColor" value="4278190080" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+		<designed target="HideInput" value="false" ver="4"/>
+		<designed target="PlaceholderText" value="" ver="4"/>
+		<designed target="ReadOnly" value="false" ver="4"/>
+		<do-trace access-modifier="private" target="Text" ver="4">
+			<body>
+				<![CDATA[refData.OutAllowDiff]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="ReadOnly" ver="4">
+			<body>
+				<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
+			</body>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
+			<body kind="om">
+				<![CDATA[me.Text=Str.Replace(me.Text,",",".");
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,refData.OutAllowDiff))<0)
+	refData.InAllowDiff=refData.OutAllowDiff;
+else
+	refData.InAllowDiff = TypeConvert.ToFloat(Str.ToDouble(me.Text,refData.OutAllowDiff));
+me.Text=refData.OutAllowDiff.ValueAsString;]]>
+			</body>
+		</do-on>
+		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
+			<body kind="om">
+				<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG("Допустимая разница датчиков \""+refData.NAME+"\" изменена на "+me.Text+" "+refData.EU+".",2);]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="txtEU" display-name="txtEU" uuid="ed52da51-a339-44c1-93ec-e674bb4d68b7" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+		<designed target="X" value="96.8" ver="4"/>
+		<designed target="Y" value="196.6" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="31.6" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="Text" value="ЕИ" ver="4"/>
+		<designed target="Font" value="Arial,9,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+		<designed target="FontColor" value="4278190080" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+		<do-trace access-modifier="private" target="Text" ver="4">
+			<body>
+				<![CDATA[refData.EU]]>
 			</body>
 		</do-trace>
 	</object>

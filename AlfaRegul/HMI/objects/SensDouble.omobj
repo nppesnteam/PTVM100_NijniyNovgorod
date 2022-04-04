@@ -72,7 +72,7 @@
 			<designed target="TextAlignment" value="132" ver="3"/>
 			<do-trace access-modifier="private" target="Text" ver="4">
 				<body>
-					<![CDATA[OutValue]]>
+					<![CDATA[CorrectValue.OutValue]]>
 				</body>
 			</do-trace>
 			<do-trace access-modifier="private" target="FontColor" ver="4">
@@ -507,7 +507,7 @@ else
 		</init>
 		<do-trace access-modifier="private" target="InValue" ver="4">
 			<body>
-				<![CDATA[(VALUE_1+VALUE_2)/2]]>
+				<![CDATA[here.OutValue]]>
 			</body>
 		</do-trace>
 	</object>
@@ -584,7 +584,7 @@ else
 		<designed target="UpdateRate" value="0" ver="4"/>
 		<designed target="ReAdvise" value="0" ver="4"/>
 		<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
-		<init target="Path" ver="4" value="ROOT.PROTECTS.BoilerVal"/>
+		<init target="Path" ver="4" value="ROOT.AlarmsValue.ValueAlarmBoiler"/>
 	</object>
 	<object access-modifier="private" name="ProtectH" display-name="ProtectH" uuid="a8dda133-69c4-44a9-b265-d364faa8741c" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="ProtectOpcSorce"/>
@@ -594,11 +594,6 @@ else
 	fETProtectH=0;]]>
 			</body>
 		</do-on>
-		<do-trace access-modifier="private" target="Path" ver="4">
-			<body>
-				<![CDATA["Out"+initName+"H"]]>
-			</body>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="ProtectL" display-name="ProtectL" uuid="d5f3a2df-bacb-4ebe-9dde-7f221159214b" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="ProtectOpcSorce"/>
@@ -608,37 +603,6 @@ else
 	fETProtectL=0;]]>
 			</body>
 		</do-on>
-		<do-trace access-modifier="private" target="Path" ver="4">
-			<conditional-expr>
-				<condition>
-					<![CDATA[TWatOut1<120&&TWatOut2<120&&ALIAS=="P"]]>
-				</condition>
-				<expr>
-					<![CDATA["Out"+initName+"L120"]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[TWatOut1>=120&&TWatOut1<130&&TWatOut2>=120&&TWatOut2<130&&ALIAS=="P"]]>
-				</condition>
-				<expr>
-					<![CDATA["Out"+initName+"L120130"]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[TWatOut1>=130&&TWatOut2>=130&&ALIAS=="P"]]>
-				</condition>
-				<expr>
-					<![CDATA["Out"+initName+"L130"]]>
-				</expr>
-			</conditional-expr>
-			<default-expr>
-				<expr>
-					<![CDATA["Out"+initName+"L"]]>
-				</expr>
-			</default-expr>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="SignalH" display-name="SignalH" uuid="4084ab30-7b5a-4f0a-bdcb-431e44196ff2" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="SignalOpcSorce"/>
@@ -663,35 +627,9 @@ else
 			</body>
 		</do-on>
 		<do-trace access-modifier="private" target="Path" ver="4">
-			<conditional-expr>
-				<condition>
-					<![CDATA[TWatOut1<120&&TWatOut2<120&&ALIAS=="P"]]>
-				</condition>
-				<expr>
-					<![CDATA["Out"+initName+"L120"]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[TWatOut1>=120&&TWatOut1<130&&TWatOut2>=120&&TWatOut2<130&&ALIAS=="P"]]>
-				</condition>
-				<expr>
-					<![CDATA["Out"+initName+"L120130"]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[TWatOut1>=130&&TWatOut2>=130&&ALIAS=="P"]]>
-				</condition>
-				<expr>
-					<![CDATA["Out"+initName+"L130"]]>
-				</expr>
-			</conditional-expr>
-			<default-expr>
-				<expr>
-					<![CDATA["Out"+initName+"L"]]>
-				</expr>
-			</default-expr>
+			<body>
+				<![CDATA["Out"+initName+"L"]]>
+			</body>
 		</do-trace>
 	</object>
 	<object access-modifier="private" name="SignalOpcSorce" display-name="SignalOpcSorce" uuid="39d7eb1d-1970-4e60-a0c5-0d3048073095" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
@@ -733,35 +671,9 @@ else
 			</body>
 		</do-on>
 		<do-trace access-modifier="private" target="Path" ver="4">
-			<conditional-expr>
-				<condition>
-					<![CDATA[TWatOut1<120&&TWatOut2<120&&ALIAS=="P"]]>
-				</condition>
-				<expr>
-					<![CDATA["ROOT.ALARMS.OtherAlarms.Alarm"+initName+"L120"]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[TWatOut1>=120&&TWatOut1<130&&TWatOut2>=120&&TWatOut2<130&&ALIAS=="P"]]>
-				</condition>
-				<expr>
-					<![CDATA["ROOT.ALARMS.OtherAlarms.Alarm"+initName+"L120130"]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[TWatOut1>=130&&TWatOut2>=130&&ALIAS=="P"]]>
-				</condition>
-				<expr>
-					<![CDATA["ROOT.ALARMS.OtherAlarms.Alarm"+initName+"L130"]]>
-				</expr>
-			</conditional-expr>
-			<default-expr>
-				<expr>
-					<![CDATA["ROOT.ALARMS.OtherAlarms.Alarm"+initName+"L"]]>
-				</expr>
-			</default-expr>
+			<body>
+				<![CDATA["ROOT.ALARMS.OtherAlarms.Alarm"+initName+"L"]]>
+			</body>
 		</do-trace>
 	</object>
 	<object access-modifier="private" name="SignalLPLC" display-name="SignalLPLC" uuid="74286313-e1de-45cc-ba85-3de71f67dd35" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
@@ -773,35 +685,9 @@ else
 			</body>
 		</do-on>
 		<do-trace access-modifier="private" target="Path" ver="4">
-			<conditional-expr>
-				<condition>
-					<![CDATA[TWatOut1<120&&TWatOut2<120&&ALIAS=="P"]]>
-				</condition>
-				<expr>
-					<![CDATA["ROOT.ALARMS.Signal.Alarm"+initName+"L120"]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[TWatOut1>=120&&TWatOut1<130&&TWatOut2>=120&&TWatOut2<130&&ALIAS=="P"]]>
-				</condition>
-				<expr>
-					<![CDATA["ROOT.ALARMS.Signal.Alarm"+initName+"L120130"]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[TWatOut1>=130&&TWatOut2>=130&&ALIAS=="P"]]>
-				</condition>
-				<expr>
-					<![CDATA["ROOT.ALARMS.Signal.Alarm"+initName+"L130"]]>
-				</expr>
-			</conditional-expr>
-			<default-expr>
-				<expr>
-					<![CDATA["ROOT.ALARMS.Signal.Alarm"+initName+"L"]]>
-				</expr>
-			</default-expr>
+			<body>
+				<![CDATA["ROOT.ALARMS.Signal.Alarm"+initName+"L"]]>
+			</body>
 		</do-trace>
 	</object>
 	<object access-modifier="private" name="ProtectHPLC" display-name="ProtectHPLC" uuid="a5dff38b-30c1-40b9-9de7-b729d2fd1c09" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
@@ -952,45 +838,9 @@ if (me.Value&&isOpenedProtCheck&&unit.Global.OutCheckProt)
 	</object>
 	<object access-modifier="private" name="InProtectH" display-name="InProtectH" uuid="882d4f64-392f-4880-81f4-d9691e5711ef" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="ProtectOpcSorce"/>
-		<do-trace access-modifier="private" target="Path" ver="4">
-			<body>
-				<![CDATA["In"+initName+"H"]]>
-			</body>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="InProtectL" display-name="InProtectL" uuid="e36d43ee-fb54-4195-a0fc-e52b88500256" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="ProtectOpcSorce"/>
-		<do-trace access-modifier="private" target="Path" ver="4">
-			<conditional-expr>
-				<condition>
-					<![CDATA[TWatOut1<120&&TWatOut2<120&&ALIAS=="P"]]>
-				</condition>
-				<expr>
-					<![CDATA["In"+initName+"L120"]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[TWatOut1>=120&&TWatOut1<130&&TWatOut2>=120&&TWatOut2<130&&ALIAS=="P"]]>
-				</condition>
-				<expr>
-					<![CDATA["In"+initName+"L120130"]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[TWatOut1>=130&&TWatOut2>=130&&ALIAS=="P"]]>
-				</condition>
-				<expr>
-					<![CDATA["In"+initName+"L130"]]>
-				</expr>
-			</conditional-expr>
-			<default-expr>
-				<expr>
-					<![CDATA["In"+initName+"L"]]>
-				</expr>
-			</default-expr>
-		</do-trace>
 	</object>
 	<object access-modifier="private" name="InSignalH" display-name="InSignalH" uuid="a33e59a0-5ff7-4a9a-9daa-c91e3625d3b7" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="SignalOpcSorce"/>
@@ -1003,35 +853,9 @@ if (me.Value&&isOpenedProtCheck&&unit.Global.OutCheckProt)
 	<object access-modifier="private" name="InSignalL" display-name="InSignalL" uuid="255e06d2-cda3-40d0-91eb-7b1d00ac7609" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="SignalOpcSorce"/>
 		<do-trace access-modifier="private" target="Path" ver="4">
-			<conditional-expr>
-				<condition>
-					<![CDATA[TWatOut1<120&&TWatOut2<120&&ALIAS=="P"]]>
-				</condition>
-				<expr>
-					<![CDATA["In"+initName+"L120"]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[TWatOut1>=120&&TWatOut1<130&&TWatOut2>=120&&TWatOut2<130&&ALIAS=="P"]]>
-				</condition>
-				<expr>
-					<![CDATA["In"+initName+"L120130"]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[TWatOut1>=130&&TWatOut2>=130&&ALIAS=="P"]]>
-				</condition>
-				<expr>
-					<![CDATA["In"+initName+"L130"]]>
-				</expr>
-			</conditional-expr>
-			<default-expr>
-				<expr>
-					<![CDATA["In"+initName+"L"]]>
-				</expr>
-			</default-expr>
+			<body>
+				<![CDATA["In"+initName+"L"]]>
+			</body>
 		</do-trace>
 	</object>
 	<object access-modifier="private" name="OrigSignalL" display-name="OrigSignalL" uuid="4fbca97e-1cf1-4c46-8a80-4accfe16f8ff" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
@@ -1147,11 +971,46 @@ OpenProtCheckWindow.Invoke();]]>
 		<init target="Path" ver="4" value="DIGITS"/>
 	</object>
 	<object access-modifier="private" name="VALUE" display-name="VALUE" uuid="0e13a963-5ed4-4d20-b54c-e19cec83f468" base-type="notifying_float4" base-type-id="bb7d05ee-cbf0-4c44-8740-1905239c8ead" ver="4"/>
-	<object access-modifier="private" name="TWatOut1" display-name="TWatOut1" uuid="ae904249-045a-4cb7-8982-4cb4f8913299" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4"/>
-	<object access-modifier="private" name="TWatOut2" display-name="TWatOut2" uuid="73b10ae7-4c42-4732-8bd0-ec604e887bec" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4"/>
 	<object access-modifier="private" name="OutValue" display-name="OutValue" uuid="29e48386-ca34-4f83-a83a-54bef885e34c" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
 		<init target="Path" ver="4" value="OutValue"/>
+	</object>
+	<object access-modifier="private" name="Initializer_1" display-name="Initializer_1" uuid="ea50f85d-c782-45ed-ba00-ee01652cf094" base-type="Initializer" base-type-id="6db89679-9299-4993-ad1a-0d086cd1c7d2" ver="4">
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Initialized">
+			<body kind="om">
+				<![CDATA[i:	uint1=0;
+while (i<10)
+{
+	ALIASProt[i].Path="Prot"+String.ToString(i+1)+".ALIAS";
+	i+=1;
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="ALIASProt" display-name="ALIASProt" uuid="0dbb2b2a-12a8-444e-8afe-08d2e8cc3ff1" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4" cardinal="9">
+		<init target="Source" ver="4" ref="ProtectOpcSorce"/>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
+			<body kind="om">
+				<![CDATA[if (me.ValueAsString==initName+"L")
+{
+	ProtectL.Path="Prot"+String.ToString(Index+1)+".OutProtect";
+	InProtectL.Path="Prot"+String.ToString(Index+1)+".InProtect";
+}
+if (me.ValueAsString==initName+"H")
+{
+	ProtectH.Path="Prot"+String.ToString(Index+1)+".OutProtect";
+	InProtectH.Path="Prot"+String.ToString(Index+1)+".InProtect";
+}]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="InAllowDiff" display-name="InAllowDiff" uuid="4a03e855-f9e4-40b0-b75c-d5c558bf128a" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="InAllowDiff"/>
+	</object>
+	<object access-modifier="private" name="OutAllowDiff" display-name="OutAllowDiff" uuid="44889025-e68e-4844-8e0e-566cd46c7147" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="OutAllowDiff"/>
 	</object>
 </type>
 

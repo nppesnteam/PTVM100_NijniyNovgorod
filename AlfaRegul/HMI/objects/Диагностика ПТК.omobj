@@ -336,27 +336,27 @@
 						</body>
 					</do-trace>
 				</object>
-				<object access-modifier="private" name="Port5_State" display-name="Port5_State" uuid="f5a52bf9-021f-4300-8dd4-3130da87ea91" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+				<object access-modifier="private" name="Port6_State" display-name="Port6_State" uuid="f5a52bf9-021f-4300-8dd4-3130da87ea91" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 					<init target="Source" ver="4" ref="hereOPCSource"/>
 					<init target="Path" ver="4" value="EthernetAdapter1.Ping.Status"/>
 				</object>
-				<object access-modifier="private" name="Port6_State" display-name="Port6_State" uuid="d12dd18e-2fb0-437d-8f61-2c2460f87e33" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+				<object access-modifier="private" name="Port5_State" display-name="Port5_State" uuid="d12dd18e-2fb0-437d-8f61-2c2460f87e33" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 					<init target="Source" ver="4" ref="hereOPCSource"/>
 					<init target="Path" ver="4" value="EthernetAdapter2.Ping.Status"/>
 				</object>
-				<object access-modifier="private" name="Port5_IP" display-name="Port5_IP" uuid="eb243cc3-a55d-404a-9793-61421b638652" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+				<object access-modifier="private" name="Port6_IP" display-name="Port6_IP" uuid="eb243cc3-a55d-404a-9793-61421b638652" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
 					<init target="Source" ver="4" ref="hereOPCSource"/>
 					<init target="Path" ver="4" value="EthernetAdapter1.Ping.IPaddress"/>
 				</object>
-				<object access-modifier="private" name="Port5_Ping" display-name="Port5_Ping" uuid="a65f9765-a21d-4b4c-a2db-e13bdd8b52f6" base-type="OpcItemUInt4" base-type-id="f388142f-bd99-4897-a6b3-8dbb46c49c74" ver="4">
+				<object access-modifier="private" name="Port6_Ping" display-name="Port6_Ping" uuid="a65f9765-a21d-4b4c-a2db-e13bdd8b52f6" base-type="OpcItemUInt4" base-type-id="f388142f-bd99-4897-a6b3-8dbb46c49c74" ver="4">
 					<init target="Source" ver="4" ref="hereOPCSource"/>
 					<init target="Path" ver="4" value="EthernetAdapter1.Ping.RTTTime"/>
 				</object>
-				<object access-modifier="private" name="Port6_IP" display-name="Port6_IP" uuid="257f54e2-2114-4956-b572-942f4a19f9cc" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+				<object access-modifier="private" name="Port5_IP" display-name="Port5_IP" uuid="257f54e2-2114-4956-b572-942f4a19f9cc" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
 					<init target="Source" ver="4" ref="hereOPCSource"/>
 					<init target="Path" ver="4" value="EthernetAdapter2.Ping.IPaddress"/>
 				</object>
-				<object access-modifier="private" name="Port6_Ping" display-name="Port6_Ping" uuid="4d33e053-de40-4d9b-8ae4-cc9c23a57f24" base-type="OpcItemUInt4" base-type-id="f388142f-bd99-4897-a6b3-8dbb46c49c74" ver="4">
+				<object access-modifier="private" name="Port5_Ping" display-name="Port5_Ping" uuid="4d33e053-de40-4d9b-8ae4-cc9c23a57f24" base-type="OpcItemUInt4" base-type-id="f388142f-bd99-4897-a6b3-8dbb46c49c74" ver="4">
 					<init target="Source" ver="4" ref="hereOPCSource"/>
 					<init target="Path" ver="4" value="EthernetAdapter2.Ping.RTTTime"/>
 				</object>
@@ -477,27 +477,27 @@
 						</default-expr>
 					</do-trace>
 				</object>
-				<object access-modifier="private" name="Port5_State" display-name="Port5_State" uuid="2f1ad84f-4c13-4abb-9b46-f3455dd6fc6f" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+				<object access-modifier="private" name="Port6_State" display-name="Port6_State" uuid="2f1ad84f-4c13-4abb-9b46-f3455dd6fc6f" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 					<init target="Source" ver="4" ref="hereOPCSource"/>
 					<init target="Path" ver="4" value="EthernetAdapter1.Ping.Status"/>
 				</object>
-				<object access-modifier="private" name="Port6_State" display-name="Port6_State" uuid="7693bdcd-de99-44f5-9ca5-23ff5e41a0f2" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+				<object access-modifier="private" name="Port5_State" display-name="Port5_State" uuid="7693bdcd-de99-44f5-9ca5-23ff5e41a0f2" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 					<init target="Source" ver="4" ref="hereOPCSource"/>
 					<init target="Path" ver="4" value="EthernetAdapter2.Ping.Status"/>
 				</object>
-				<object access-modifier="private" name="Port5_IP" display-name="Port5_IP" uuid="fc929468-8a94-4abb-a7ae-272f980add65" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+				<object access-modifier="private" name="Port6_IP" display-name="Port6_IP" uuid="fc929468-8a94-4abb-a7ae-272f980add65" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
 					<init target="Source" ver="4" ref="hereOPCSource"/>
 					<init target="Path" ver="4" value="EthernetAdapter1.Ping.IPaddress"/>
 				</object>
-				<object access-modifier="private" name="Port5_Ping" display-name="Port5_Ping" uuid="aea1d753-75a9-474e-aa80-ac5a360c7b0f" base-type="OpcItemUInt4" base-type-id="f388142f-bd99-4897-a6b3-8dbb46c49c74" ver="4">
+				<object access-modifier="private" name="Port6_Ping" display-name="Port6_Ping" uuid="aea1d753-75a9-474e-aa80-ac5a360c7b0f" base-type="OpcItemUInt4" base-type-id="f388142f-bd99-4897-a6b3-8dbb46c49c74" ver="4">
 					<init target="Source" ver="4" ref="hereOPCSource"/>
 					<init target="Path" ver="4" value="EthernetAdapter1.Ping.RTTTime"/>
 				</object>
-				<object access-modifier="private" name="Port6_IP" display-name="Port6_IP" uuid="898f11c7-6831-4dd2-9a9e-6d2861b1e650" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+				<object access-modifier="private" name="Port5_IP" display-name="Port5_IP" uuid="898f11c7-6831-4dd2-9a9e-6d2861b1e650" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
 					<init target="Source" ver="4" ref="hereOPCSource"/>
 					<init target="Path" ver="4" value="EthernetAdapter2.Ping.IPaddress"/>
 				</object>
-				<object access-modifier="private" name="Port6_Ping" display-name="Port6_Ping" uuid="cc2b8cae-21a9-4e86-8e5f-179e0624d179" base-type="OpcItemUInt4" base-type-id="f388142f-bd99-4897-a6b3-8dbb46c49c74" ver="4">
+				<object access-modifier="private" name="Port5_Ping" display-name="Port5_Ping" uuid="cc2b8cae-21a9-4e86-8e5f-179e0624d179" base-type="OpcItemUInt4" base-type-id="f388142f-bd99-4897-a6b3-8dbb46c49c74" ver="4">
 					<init target="Source" ver="4" ref="hereOPCSource"/>
 					<init target="Path" ver="4" value="EthernetAdapter2.Ping.RTTTime"/>
 				</object>
