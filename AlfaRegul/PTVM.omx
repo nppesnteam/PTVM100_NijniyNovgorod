@@ -3252,7 +3252,7 @@
                 </object>
                 <object name="Prot7" base-type="Types.ProtectsValueBoiler.PLC_View" xmlns="automation.control" uuid="f170df8e-c78f-4896-83ed-e5b8af63080c">
                   <attribute type="Attributes.EU" value="°C" xmlns="system" />
-                  <attribute type="unit.System.Attributes.Description" value="Температура теплоносителя выше нормы" xmlns="system" />
+                  <attribute type="unit.System.Attributes.Description" value="Температура теплоносителя на выходе выше нормы" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="TWatOutH" xmlns="system" />
                 </object>
                 <object name="Prot8" base-type="Types.ProtectsValueBoiler.PLC_View" xmlns="automation.control" uuid="79362d86-26c2-42c4-a12b-4f4dc726fb98">
@@ -8096,7 +8096,7 @@ Channel32.H=Math.TestBit(State.State,31);</property>
           <historian-database-link database="ARM2.Historian.DB_HISTORY" />
         </history-module>
         <opcua-client name="OpcUaClient" xmlns="server" uuid="93826dc2-a48e-4092-975b-af251935e9c6">
-          <opcua-server-link server="PLC.Runtime.OpcUaServer" security-mode="none" sampling-interval="200" update-rate="200" write-only-to-active-server="false" write-on-connect="true" can-suspended-server-be-active="true" control-signal-id-type="string" active-server-timeout="1000" notification-queue-size="0" max-nodes-per-browse="0" max-nodes-per-write="0" max-nodes-per-read="0" max-monitored-items-per-call="0" authorization-mode="Anonymous" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-value="5" control-signal-id="Application.GVL.iIsStateActive" session-timeout="5000" standby-mode="request-data" />
+          <opcua-server-link server="PLC.Runtime.OpcUaServer" security-mode="none" sampling-interval="200" update-rate="200" write-only-to-active-server="false" write-on-connect="false" can-suspended-server-be-active="true" control-signal-id-type="string" active-server-timeout="1000" notification-queue-size="0" max-nodes-per-browse="0" max-nodes-per-write="0" max-nodes-per-read="0" max-monitored-items-per-call="0" authorization-mode="Anonymous" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-value="5" control-signal-id="Application.GVL.iIsStateActive" session-timeout="5000" standby-mode="request-data" />
         </opcua-client>
         <netdiag-module name="NetDiagModule" uuid="da84fb71-1121-46d5-a391-ea4b6da83bbb">
           <network-node-binding node="PLC_R" />
@@ -8266,7 +8266,11 @@ STATUS_BITS.LowerElectrical = Math.TestBit(STATUS,4);</property>
         </parameter>
         <parameter name="InH" uuid="ab70170e-99f8-4932-8dba-313981051b84" direction="out" type="bool" />
         <bind source="_PLC_View.InH" target="InH" />
-        <parameter name="Err" uuid="99323400-4460-4384-9b58-487a8c4a22f0" direction="out" type="bool" />
+        <parameter name="Err" uuid="99323400-4460-4384-9b58-487a8c4a22f0" direction="out" type="bool">
+          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":".Авария","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
         <bind source="_PLC_View.Err" target="Err" />
         <parameter name="OutH" uuid="c6490fa6-6037-4059-a8d1-398f71a02749" direction="out" type="bool" />
         <bind source="_PLC_View.OutH" target="OutH" />
@@ -8759,7 +8763,6 @@ else
         <parameter name="VentTime" direction="out" type="int32" xmlns="automation.control" uuid="5e21568a-bd4d-4c4e-bae9-e77973273e01" />
         <parameter name="FreeCtrlDOProg" type="bool" direction="in-out" xmlns="automation.control" uuid="7e383cac-c741-42ad-8290-9bbfaf54a422" />
         <parameter name="DOImitTime" direction="out" type="int32" xmlns="automation.control" uuid="ceb411e4-697c-4690-a7de-5ae8bea3704e" />
-        <parameter name="ProtCheck" type="bool" direction="in-out" xmlns="automation.control" uuid="3cabd6ce-bf8a-4537-a974-5c958c464ba4" />
         <parameter name="MaskPGasColl" type="bool" direction="in-out" xmlns="automation.control" uuid="43f2b7be-6224-4477-bacf-0e2707302900" />
         <parameter name="MaskPOil" type="bool" direction="in-out" xmlns="automation.control" uuid="5aacbf4e-2e4d-42e2-ace0-1b8deba11cd6" />
         <parameter name="MaskPWatOut" type="bool" direction="in-out" xmlns="automation.control" uuid="0f688eba-c24d-48c8-8747-acc8680cb17a" />
@@ -8769,6 +8772,9 @@ else
         <parameter name="ManCtrlFan" type="bool" direction="in-out" xmlns="automation.control" uuid="2aaea544-33a5-4692-8f93-df2d9291d9aa" />
         <parameter name="TestAlarm" type="bool" direction="in-out" xmlns="automation.control" uuid="a5ac8c76-5b07-45c6-8ea5-f94be73e330c" />
         <parameter name="AnyFinal" type="bool" direction="out" xmlns="automation.control" uuid="7b15a16c-10f7-4540-b51b-be2fb16ceab0" />
+        <parameter name="ValveMain" type="bool" direction="in-out" xmlns="automation.control" uuid="68c2aabd-9fb4-4c68-a944-064e543dd66b" />
+        <parameter name="ValveTop" type="bool" direction="in-out" xmlns="automation.control" uuid="6f60ed11-3ca0-4f5a-84db-4a5e925717aa" />
+        <parameter name="ValveBot" type="bool" direction="in-out" xmlns="automation.control" uuid="47538274-3dac-4fc7-8e4a-bd2dd5c40a4c" />
       </type>
       <type name="IOS_View" xmlns="automation.control" aspect="Aspects.IOS_Aspect" original="Boiler" uuid="75814766-5317-4871-870a-b481b5f2198d">
         <ref name="_PLC_View" type="PLC_View" xmlns="automation.reference" uuid="c7683099-3278-4c6f-80ff-7887581b9e66" />
@@ -8847,14 +8853,6 @@ else
         <parameter name="InFreeCtrlDO" uuid="16ffbb8e-8ab7-4593-bf55-6d51aa4c5b3c" direction="in" type="bool" />
         <bind source="InFreeCtrlDO" target="_PLC_View.FreeCtrlDO" />
         <parameter name="InFreeCtrlDOProg" uuid="3702eb4b-0b64-4660-9014-5e1f30eaca83" direction="in" type="bool" />
-        <parameter name="InProtCheck" uuid="44b4167e-0ccf-42a3-80c8-1c626c56632a" direction="in" type="bool" />
-        <bind source="InProtCheck" target="_PLC_View.ProtCheck" />
-        <parameter name="OutProtCheck" uuid="be849159-6e59-4cc3-b5dd-e426a627b2a5" direction="out" type="bool">
-          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Включена проверка защит.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Отключена проверка защит.","Severity":1,"Type":3}],"Type":2}}</property>
-          </attribute>
-        </parameter>
-        <bind source="_PLC_View.ProtCheck" target="OutProtCheck" />
         <parameter name="InMaskPGasColl" uuid="80cceaef-4c94-400b-8eb5-1974545c79a1" direction="in" type="bool" />
         <bind source="InMaskPGasColl" target="_PLC_View.MaskPGasColl" />
         <parameter name="OutMaskPGasColl" uuid="368e2f88-2b5d-4f62-a522-169317b2b799" direction="out" type="bool">
@@ -8867,7 +8865,7 @@ else
         <bind source="InMaskPOil" target="_PLC_View.MaskPOil" />
         <parameter name="OutMaskPOil" uuid="a46693c6-c969-4f78-9d68-43da4437e970" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Включена защита по давлению ДТ.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Отключена защита по давлению ДТ.","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Включена защита по давлению рез.топлива.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Отключена защита по давлению рез.топлива.","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.MaskPOil" target="OutMaskPOil" />
@@ -8875,7 +8873,7 @@ else
         <bind source="InMaskPWatOut" target="_PLC_View.MaskPWatOut" />
         <parameter name="OutMaskPWatOut" uuid="0725dd1b-a7e1-45fa-9cff-c945d19a96ec" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Включена защита по давлению воды.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Отключена защита по давлению воды.","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Включена защита по давлению теплоносителя.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Отключена защита по давлению теплоносителя.","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.MaskPWatOut" target="OutMaskPWatOut" />
@@ -8883,7 +8881,7 @@ else
         <bind source="InMaskTWatOut" target="_PLC_View.MaskTWatOut" />
         <parameter name="OutMaskTWatOut" uuid="6900bcf9-be6c-46df-a8e1-87c0baca5f8a" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Включена защита по температуре воды.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Отключена защита по температуре воды.","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Включена защита по температуре теплоносителя.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Отключена защита по температуре теплоносителя.","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.MaskTWatOut" target="OutMaskTWatOut" />
@@ -8891,7 +8889,7 @@ else
         <bind source="InMaskQWatOut" target="_PLC_View.MaskQWatOut" />
         <parameter name="OutMaskQWatOut" uuid="464f0758-e92d-4b90-a338-16ca766e99ae" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Включена защита по расходу воды.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Отключена защита по расходу воды.","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Включена защита по расходу теплоносителя.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Отключена защита по расходу теплоносителя.","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.MaskQWatOut" target="OutMaskQWatOut" />
@@ -8914,6 +8912,18 @@ else
         <bind source="_PLC_View.TestAlarm" target="OutTestAlarm" />
         <parameter name="AnyFinal" uuid="9596c19b-d976-4b8b-8132-e0bf059c4a44" direction="out" type="bool" />
         <bind source="_PLC_View.AnyFinal" target="AnyFinal" />
+        <parameter name="InValveMain" uuid="3a148328-05aa-4f9b-8ec5-f486abb4bfce" direction="in" type="bool" />
+        <bind source="InValveMain" target="_PLC_View.ValveMain" />
+        <parameter name="OutValveMain" uuid="90d8b686-0122-4e57-bf48-086a5e7e1408" direction="out" type="bool" />
+        <bind source="_PLC_View.ValveMain" target="OutValveMain" />
+        <parameter name="InValveTop" uuid="7016b623-983f-4893-9403-399555d30f1a" direction="in" type="bool" />
+        <bind source="InValveTop" target="_PLC_View.ValveTop" />
+        <parameter name="OutValveTop" uuid="d412effa-fb2d-489b-a164-a28837ac491a" direction="out" type="bool" />
+        <bind source="_PLC_View.ValveTop" target="OutValveTop" />
+        <parameter name="InValveBot" uuid="240c2d1d-38d7-40f0-942c-e630855683d6" direction="in" type="bool" />
+        <bind source="InValveBot" target="_PLC_View.ValveBot" />
+        <parameter name="OutValveBot" uuid="94c47c17-b05c-4142-a76e-44ddb4217cc9" direction="out" type="bool" />
+        <bind source="_PLC_View.ValveBot" target="OutValveBot" />
       </type>
     </type>
     <type name="DelAlarmsBoiler" xmlns="automation.control" uuid="7bf32a59-7c25-4527-868a-f68a8101e433">
@@ -9632,6 +9642,9 @@ else
         <bind source="IniSel" target="_PLC_View.iSel" />
         <parameter name="OutiSel" uuid="a6872ab7-4703-41b6-8b36-e928783fea74" direction="out" type="int16">
           <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; ServerTime=&quot;True&quot;" xmlns="system" />
+          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":".Работа на двух датчиках","Severity":2,"Value":0},{"AckStrategy":0,"IsEnabled":true,"Message":".Работа на датчике 1","Severity":2,"Value":1},{"AckStrategy":0,"IsEnabled":true,"Message":".Работа на датчике 2","Severity":2,"Value":2}]}}</property>
+          </attribute>
         </parameter>
         <bind source="_PLC_View.iSel" target="OutiSel" />
         <parameter name="OutValue" uuid="e198d0d7-d7cb-472a-9529-d5329d21ab9e" direction="out" type="float32" />
@@ -9748,6 +9761,7 @@ else
         <attribute type="Attributes.EU" value="ЕИ" xmlns="system" />
         <attribute type="unit.System.Attributes.Description" value="Название уставки" xmlns="system" />
         <attribute type="Attributes.ALIAS" value="Объект" xmlns="system" />
+        <parameter name="ProtOff" type="bool" direction="in-out" xmlns="automation.control" uuid="47e9f7b8-3782-43b9-b0f6-ed7441b9cc36" />
       </type>
       <type name="IOS_View" original="ProtectsValueBoiler" aspect="Aspects.IOS_Aspect" uuid="bfd0d4d6-1d2e-4ffa-ac76-2744b89de567">
         <ref name="Reference" type="PLC_View" xmlns="automation.reference" uuid="c87fea24-5ac1-442a-9dff-fe89974a1e40" />
@@ -9772,6 +9786,14 @@ else
         <parameter name="ALIAS" type="string" direction="out" xmlns="automation.control" uuid="6845d1bc-e9bd-4086-861d-bedeb93ea0ed">
           <attribute type="unit.System.Attributes.InitialValue" value="@(object:Attributes.ALIAS)" xmlns="system" />
         </parameter>
+        <parameter name="InProtOff" uuid="9cda5939-ce2d-4708-b7ac-f56c73d8f0f2" direction="in" type="bool" />
+        <bind source="InProtOff" target="Reference.ProtOff" />
+        <parameter name="OutProtOff" uuid="2751fd14-be9d-4082-9f0e-62d4e14c7023" direction="out" type="bool">
+          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":".Защита отключена","Severity":2,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":".Защита включена","Severity":2,"Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
+        <bind source="Reference.ProtOff" target="OutProtOff" />
       </type>
     </type>
     <type name="Germ" xmlns="automation.control" uuid="9ebdb11f-8116-4d8f-b31e-2ee0470e3614">

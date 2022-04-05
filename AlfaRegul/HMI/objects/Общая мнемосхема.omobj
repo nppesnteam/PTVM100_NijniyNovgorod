@@ -2236,7 +2236,7 @@
 				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Visible" value="false" ver="4"/>
 				<designed target="Opacity" value="1" ver="4"/>
 				<designed target="Enabled" value="true" ver="4"/>
 				<designed target="Tooltip" value="" ver="4"/>
@@ -2648,7 +2648,7 @@
 					<designed target="ZValue" value="0" ver="4"/>
 					<designed target="Rotation" value="0" ver="4"/>
 					<designed target="Scale" value="1" ver="4"/>
-					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Visible" value="false" ver="4"/>
 					<designed target="Opacity" value="1" ver="4"/>
 					<designed target="Enabled" value="true" ver="4"/>
 					<designed target="Tooltip" value="" ver="4"/>
@@ -2661,6 +2661,11 @@
 					<do-trace access-modifier="private" target="Text" ver="4">
 						<body>
 							<![CDATA[Descr]]>
+						</body>
+					</do-trace>
+					<do-trace access-modifier="private" target="Visible" ver="4">
+						<body>
+							<![CDATA[Alarms.VentOk&&!Final]]>
 						</body>
 					</do-trace>
 				</object>
@@ -3082,7 +3087,7 @@
 					<designed target="ZValue" value="0" ver="4"/>
 					<designed target="Rotation" value="0" ver="4"/>
 					<designed target="Scale" value="1" ver="4"/>
-					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Visible" value="false" ver="4"/>
 					<designed target="Opacity" value="1" ver="4"/>
 					<designed target="Enabled" value="true" ver="4"/>
 					<designed target="Tooltip" value="" ver="4"/>
@@ -3095,6 +3100,11 @@
 					<do-trace access-modifier="private" target="Text" ver="4">
 						<body>
 							<![CDATA[Descr]]>
+						</body>
+					</do-trace>
+					<do-trace access-modifier="private" target="Visible" ver="4">
+						<body>
+							<![CDATA[Alarms.VentOk&&!Final]]>
 						</body>
 					</do-trace>
 				</object>
@@ -3523,6 +3533,11 @@
 							<![CDATA[Descr]]>
 						</body>
 					</do-trace>
+					<do-trace access-modifier="private" target="Visible" ver="4">
+						<body>
+							<![CDATA[Alarms.VentOk&&!Final]]>
+						</body>
+					</do-trace>
 				</object>
 				<do-trace access-modifier="private" target="Value" ver="4">
 					<body>
@@ -3934,7 +3949,7 @@
 					<designed target="ZValue" value="0" ver="4"/>
 					<designed target="Rotation" value="0" ver="4"/>
 					<designed target="Scale" value="1" ver="4"/>
-					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Visible" value="false" ver="4"/>
 					<designed target="Opacity" value="1" ver="4"/>
 					<designed target="Enabled" value="true" ver="4"/>
 					<designed target="Tooltip" value="" ver="4"/>
@@ -3947,6 +3962,11 @@
 					<do-trace access-modifier="private" target="Text" ver="4">
 						<body>
 							<![CDATA[Descr]]>
+						</body>
+					</do-trace>
+					<do-trace access-modifier="private" target="Visible" ver="4">
+						<body>
+							<![CDATA[Alarms.VentOk&&!Final]]>
 						</body>
 					</do-trace>
 				</object>
@@ -6255,6 +6275,99 @@ while (i<12)
 					</body>
 				</do-trace>
 			</object>
+		</object>
+	</object>
+	<object access-modifier="private" name="Blow" display-name="Blow" uuid="1c10abc7-db64-40c6-9e11-4e98393a4150" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="3">
+		<designed target="X" value="1094.5" ver="3"/>
+		<designed target="Y" value="10" ver="3"/>
+		<designed target="ZValue" value="0" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<designed target="Scale" value="1" ver="3"/>
+		<designed target="Visible" value="true" ver="3"/>
+		<designed target="Opacity" value="1" ver="3"/>
+		<designed target="Enabled" value="true" ver="3"/>
+		<designed target="Tooltip" value="" ver="3"/>
+		<designed target="Width" value="155" ver="3"/>
+		<designed target="Height" value="50" ver="3"/>
+		<designed target="RoundingRadius" value="0" ver="3"/>
+		<designed target="PenColor" value="0xffc8c8c8" ver="3"/>
+		<designed target="PenStyle" value="1" ver="3"/>
+		<designed target="PenWidth" value="1" ver="3"/>
+		<designed target="BrushColor" value="0xff737373" ver="3"/>
+		<designed target="BrushStyle" value="1" ver="3"/>
+		<object access-modifier="private" name="OpenBlow" display-name="OpenBlow" uuid="0109722d-7671-404e-beea-907821e81188" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4" cardinal="1">
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="InvokeTrigger" value="false" ver="4"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-action="open-new" form-by-id="false">
+				<object access-modifier="private" uuid="5348ec2e-0704-4c35-bb26-fbed90f95704" base-type="Продувка" base-type-id="2b28bd1d-0b62-4921-bf0c-742590332fbb" ver="4">
+					<init target="WindowX" ver="4">
+						<expr>
+							<![CDATA[mX]]>
+						</expr>
+					</init>
+					<init target="WindowY" ver="4">
+						<expr>
+							<![CDATA[mY]]>
+						</expr>
+					</init>
+				</object>
+			</do-on>
+			<do-trace access-modifier="private" target="Enabled" ver="4">
+				<body>
+					<![CDATA[!unit.Global.isOpenedBlow]]>
+				</body>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="mX" display-name="mX" uuid="4b9a8491-2eb5-418a-890d-19a33ad5961b" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
+		<object access-modifier="private" name="mY" display-name="mY" uuid="36769677-0e83-4a89-9785-fdd1f84bc067" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
+		<object access-modifier="private" name="btnBlow" display-name="btnBlow" uuid="7f8f8191-2970-430b-8788-f92d87492af6" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
+			<designed target="X" value="0" ver="4"/>
+			<designed target="Y" value="0" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="155" ver="4"/>
+			<designed target="Height" value="50" ver="4"/>
+			<designed target="Checkable" value="false" ver="4"/>
+			<designed target="Text" value="ПРОДУВКА" ver="4"/>
+			<designed target="TextAlignment" value="132" ver="4"/>
+			<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+			<designed target="FontColor" value="4278190080" ver="4"/>
+			<designed target="OnClickFontColor" value="4278190080" ver="4"/>
+			<designed target="OnHoverFontColor" value="4278190080" ver="4"/>
+			<designed target="DisabledFontColor" value="4278190080" ver="4"/>
+			<designed target="BrushColor" value="4293980400" ver="4"/>
+			<designed target="BrushStyle" value="1" ver="4"/>
+			<designed target="OnClickBrushColor" value="4288716960" ver="4"/>
+			<designed target="OnClickBrushStyle" value="1" ver="4"/>
+			<designed target="OnHoverBrushColor" value="4294967295" ver="4"/>
+			<designed target="OnHoverBrushStyle" value="1" ver="4"/>
+			<designed target="DisabledBrushColor" value="4288716960" ver="4"/>
+			<designed target="DisabledBrushStyle" value="1" ver="4"/>
+			<designed target="PenColor" value="4278190080" ver="4"/>
+			<designed target="PenStyle" value="1" ver="4"/>
+			<designed target="PenWidth" value="1" ver="4"/>
+			<designed target="OnClickPenColor" value="4278190080" ver="4"/>
+			<designed target="OnClickPenStyle" value="1" ver="4"/>
+			<designed target="OnClickPenWidth" value="1" ver="4"/>
+			<designed target="OnHoverPenColor" value="4278190080" ver="4"/>
+			<designed target="OnHoverPenStyle" value="1" ver="4"/>
+			<designed target="OnHoverPenWidth" value="1" ver="4"/>
+			<designed target="DisabledPenColor" value="4288716960" ver="4"/>
+			<designed target="DisabledPenStyle" value="1" ver="4"/>
+			<designed target="DisabledPenWidth" value="1" ver="4"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
+				<body kind="om">
+					<![CDATA[mX = TypeConvert.ToFloat(ScreenX(MouseX, MouseY));
+mY = TypeConvert.ToFloat(ScreenY(MouseX, MouseY));
+OpenBlow.Invoke();]]>
+				</body>
+			</do-on>
+			<designed target="Checked" value="false" ver="4"/>
 		</object>
 	</object>
 </type>

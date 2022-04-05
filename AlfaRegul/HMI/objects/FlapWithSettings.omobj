@@ -226,11 +226,10 @@ OpenModuleWindow.Invoke();]]>
 	</object>
 	<object access-modifier="private" name="outTASK" display-name="outTASK" uuid="2cd901af-326a-4d02-9881-5b5d7e75305a" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="OutfSetPgCollect"/>
+		<init target="Path" ver="4" value="OutfSetTask"/>
 	</object>
 	<object access-modifier="private" name="inTASK" display-name="inTASK" uuid="b8e491f9-2adc-4c2d-b1fe-62cec49326d0" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="InfSetPgCollect"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
 			<body kind="om">
 				<![CDATA[if (SetChanged==true)
@@ -240,6 +239,7 @@ OpenModuleWindow.Invoke();]]>
 }]]>
 			</body>
 		</do-on>
+		<init target="Path" ver="4" value="InfSetTask"/>
 	</object>
 	<object access-modifier="private" name="outSETL" display-name="outSETL" uuid="5c23a92d-031e-4fc7-a4c5-90fd9a1f661b" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>

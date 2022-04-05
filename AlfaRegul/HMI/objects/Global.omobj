@@ -299,5 +299,6 @@ InitTimer.Active=false;]]>
 		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
 		<init target="Path" ver="4" value="ROOT.BOILER.OutCheckProtTime"/>
 	</object>
+	<object access-modifier="private" name="isOpenedBlow" display-name="isOpenedBlow" uuid="7c71b759-057e-42ea-9972-706c62b8dff1" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
 </object>
 

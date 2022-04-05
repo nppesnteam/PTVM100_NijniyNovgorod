@@ -6763,7 +6763,7 @@
     <node-path>ROOT.Boiler.BoilerInWork</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAllDiInput.stMainDi2_4.bSB1_156</nodeId>
+    <nodeId>Application.GVL.ST_Virtual_Key.bStartBoil</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Boiler.AlarmBoilerStop</node-path>
@@ -6866,6 +6866,24 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.bAnyFinal</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Boiler.ValveMain</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.ST_Virtual_Key.bValveMain</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Boiler.ValveTop</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.ST_Virtual_Key.bValveBlowLeft</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Boiler.ValveBot</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.ST_Virtual_Key.bValveBlowRight</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.AlarmsValue.DelAlarmsBoiler.PGasCollL</node-path>
@@ -7150,10 +7168,22 @@
     <nodeId>Application.PersistentVars.stSetProt.fPgColL</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.AlarmsValue.ValueAlarmBoiler.Prot1.ProtOff</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stProtOff.PgCol_L</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.AlarmsValue.ValueAlarmBoiler.Prot2.Protect</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.stSetProt.fPgColH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.AlarmsValue.ValueAlarmBoiler.Prot2.ProtOff</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stProtOff.PgCol_H</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.AlarmsValue.ValueAlarmBoiler.Prot3.Protect</node-path>
@@ -7162,10 +7192,22 @@
     <nodeId>Application.PersistentVars.stSetProt.fPOillL</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.AlarmsValue.ValueAlarmBoiler.Prot3.ProtOff</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stProtOff.POilCol_L</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.AlarmsValue.ValueAlarmBoiler.Prot4.Protect</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.stSetProt.fPWotOutL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.AlarmsValue.ValueAlarmBoiler.Prot4.ProtOff</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stProtOff.Pboil_L</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.AlarmsValue.ValueAlarmBoiler.Prot5.Protect</node-path>
@@ -7174,16 +7216,34 @@
     <nodeId>Application.PersistentVars.stSetProt.fPWotOutH</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.AlarmsValue.ValueAlarmBoiler.Prot5.ProtOff</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stProtOff.Pboil_H</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.AlarmsValue.ValueAlarmBoiler.Prot6.Protect</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.stSetProt.fQL</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.AlarmsValue.ValueAlarmBoiler.Prot6.ProtOff</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stProtOff.Qboil_L</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.AlarmsValue.ValueAlarmBoiler.Prot7.Protect</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.stSetProt.fTH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.AlarmsValue.ValueAlarmBoiler.Prot7.ProtOff</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stProtOff.Tboil_H</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.AlarmsValue.ValueAlarmBoiler.Prot8.Protect</node-path>

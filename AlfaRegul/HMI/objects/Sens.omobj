@@ -401,7 +401,6 @@
 		</do-trace>
 	</object>
 	<object access-modifier="private" name="ProtectLPLC" display-name="ProtectLPLC" uuid="f27dd462-b2d7-4ca3-b505-fa953d2d8d0b" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
 			<body kind="om">
 				<![CDATA[if (!me.Value)
@@ -410,12 +409,12 @@
 		</do-on>
 		<do-trace access-modifier="private" target="Path" ver="4">
 			<body>
-				<![CDATA["ROOT.ALARMS.OtherAlarms.Alarm"+initName+"L"]]>
+				<![CDATA["Alarm"+initName+"L"]]>
 			</body>
 		</do-trace>
+		<init target="Source" ver="4" ref="ProtectPLCOPCSorce"/>
 	</object>
 	<object access-modifier="private" name="SignalLPLC" display-name="SignalLPLC" uuid="84223b62-bbf4-47fd-8e8c-77a888591ce1" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
 			<body kind="om">
 				<![CDATA[if (!me.Value)
@@ -424,12 +423,12 @@
 		</do-on>
 		<do-trace access-modifier="private" target="Path" ver="4">
 			<body>
-				<![CDATA["ROOT.ALARMS.Signal.Alarm"+initName+"L"]]>
+				<![CDATA["Alarm"+initName+"L"]]>
 			</body>
 		</do-trace>
+		<init target="Source" ver="4" ref="SignalPLCOPCSorce"/>
 	</object>
 	<object access-modifier="private" name="ProtectHPLC" display-name="ProtectHPLC" uuid="d4d40af8-5920-4766-b419-e77676991992" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
 			<body kind="om">
 				<![CDATA[if (!me.Value)
@@ -438,12 +437,12 @@
 		</do-on>
 		<do-trace access-modifier="private" target="Path" ver="4">
 			<body>
-				<![CDATA["ROOT.ALARMS.OtherAlarms.Alarm"+initName+"H"]]>
+				<![CDATA["Alarm"+initName+"H"]]>
 			</body>
 		</do-trace>
+		<init target="Source" ver="4" ref="ProtectPLCOPCSorce"/>
 	</object>
 	<object access-modifier="private" name="SignalHPLC" display-name="SignalHPLC" uuid="fb5d027e-38ec-450b-a65a-3a6b9c0fafb7" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
 			<body kind="om">
 				<![CDATA[if (!me.Value)
@@ -452,9 +451,10 @@
 		</do-on>
 		<do-trace access-modifier="private" target="Path" ver="4">
 			<body>
-				<![CDATA["ROOT.ALARMS.Signal.Alarm"+initName+"H"]]>
+				<![CDATA["Alarm"+initName+"H"]]>
 			</body>
 		</do-trace>
+		<init target="Source" ver="4" ref="SignalPLCOPCSorce"/>
 	</object>
 	<object access-modifier="private" name="HaveProt" display-name="HaveProt" uuid="e34dae5f-66bf-4de2-9118-8387972b03c3" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
 	<object access-modifier="private" name="fETSignalL" display-name="fETSignalL" uuid="659f4266-ad8e-4496-aeb4-362a445b221d" base-type="notifying_float8" base-type-id="3f905fb7-7738-4619-b402-5a91f136d4bd" ver="4"/>
@@ -779,14 +779,94 @@ while (i<10)
 {
 	ProtectL.Path="Prot"+String.ToString(Index+1)+".OutProtect";
 	InProtectL.Path="Prot"+String.ToString(Index+1)+".InProtect";
+	InProtOffL.Path="Prot"+String.ToString(Index+1)+".InProtOff";
+	OutProtOffL.Path="Prot"+String.ToString(Index+1)+".OutProtOff";
 }
 if (me.ValueAsString==initName+"H")
 {
 	ProtectH.Path="Prot"+String.ToString(Index+1)+".OutProtect";
 	InProtectH.Path="Prot"+String.ToString(Index+1)+".InProtect";
+	InProtOffH.Path="Prot"+String.ToString(Index+1)+".InProtOff";
+	OutProtOffH.Path="Prot"+String.ToString(Index+1)+".OutProtOff";
 }]]>
 			</body>
 		</do-on>
+	</object>
+	<object access-modifier="private" name="InTimeAlarmH" display-name="InTimeAlarmH" uuid="e92a5aa0-1903-40cc-87c0-980d7b1db2f9" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="TimeOpcSorce"/>
+		<do-trace access-modifier="private" target="Path" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[InBurner]]>
+				</condition>
+				<expr>
+					<![CDATA["OuttDel"+initName]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA["In"+initName+"H"]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="InTimeAlarmL" display-name="InTimeAlarmL" uuid="53aa4ecf-b51c-44ad-aa42-e4a4a89cb16d" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+		<init target="Source" ver="4" ref="TimeOpcSorce"/>
+		<do-trace access-modifier="private" target="Path" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[InBurner]]>
+				</condition>
+				<expr>
+					<![CDATA["OuttDel"+initName]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA["In"+initName+"L"]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ProtectPLCOPCSorce" display-name="ProtectPLCOPCSorce" uuid="d7b2cbbf-0527-4e57-9240-33704e72e3b4" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+		<designed target="Active" value="false" ver="4"/>
+		<designed target="UpdateRate" value="0" ver="4"/>
+		<designed target="ReAdvise" value="0" ver="4"/>
+		<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
+		<do-trace access-modifier="private" target="Path" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[InBurner]]>
+				</condition>
+				<expr>
+					<![CDATA["ROOT.GAS."+BurnValPath]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA["ROOT.Alarms.Protect"]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="SignalPLCOPCSorce" display-name="SignalPLCOPCSorce" uuid="d1963da1-1c71-4ef3-a63e-e8b0b01d68c9" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+		<designed target="Active" value="false" ver="4"/>
+		<designed target="UpdateRate" value="0" ver="4"/>
+		<designed target="ReAdvise" value="0" ver="4"/>
+		<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.Alarms.Signal"/>
+	</object>
+	<object access-modifier="private" name="InProtOffL" display-name="InProtOffL" uuid="048db165-2214-4224-9be7-94f5f91dc926" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="ProtectOpcSorce"/>
+	</object>
+	<object access-modifier="private" name="OutProtOffL" display-name="OutProtOffL" uuid="0f24db23-7bea-43a9-89dd-18524b492552" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="ProtectOpcSorce"/>
+	</object>
+	<object access-modifier="private" name="InProtOffH" display-name="InProtOffH" uuid="fb2f298b-50b9-4b37-831f-ce76af369bc0" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="ProtectOpcSorce"/>
+	</object>
+	<object access-modifier="private" name="OutProtOffH" display-name="OutProtOffH" uuid="1f64f454-e267-4e8f-94e4-c14f3c52810b" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="ProtectOpcSorce"/>
 	</object>
 </type>
 

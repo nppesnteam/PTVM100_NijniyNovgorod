@@ -558,6 +558,71 @@
 				</do-trace>
 			</object>
 		</object>
+		<object access-modifier="private" name="Reset" display-name="Reset" uuid="f8f9ddbd-c05b-4011-aba1-d6feddb04de2" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
+			<designed target="X" value="1415" ver="4"/>
+			<designed target="Y" value="55" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="91" ver="4"/>
+			<designed target="Height" value="31" ver="4"/>
+			<designed target="Checkable" value="false" ver="4"/>
+			<designed target="Checked" value="false" ver="4"/>
+			<designed target="Text" value="СБРОС" ver="4"/>
+			<designed target="TextAlignment" value="132" ver="4"/>
+			<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+			<designed target="FontColor" value="4278190080" ver="4"/>
+			<designed target="OnClickFontColor" value="4278190080" ver="4"/>
+			<designed target="OnHoverFontColor" value="0xff000000" ver="4"/>
+			<designed target="DisabledFontColor" value="4278190080" ver="4"/>
+			<designed target="BrushColor" value="4293980400" ver="4"/>
+			<designed target="BrushStyle" value="1" ver="4"/>
+			<designed target="OnClickBrushColor" value="0xffa0a0a0" ver="4"/>
+			<designed target="OnClickBrushStyle" value="1" ver="4"/>
+			<designed target="OnHoverBrushColor" value="0xffffffff" ver="4"/>
+			<designed target="OnHoverBrushStyle" value="1" ver="4"/>
+			<designed target="DisabledBrushColor" value="4288716960" ver="4"/>
+			<designed target="DisabledBrushStyle" value="1" ver="4"/>
+			<designed target="PenColor" value="4278190080" ver="4"/>
+			<designed target="PenStyle" value="1" ver="4"/>
+			<designed target="PenWidth" value="1" ver="4"/>
+			<designed target="OnClickPenColor" value="4278190080" ver="4"/>
+			<designed target="OnClickPenStyle" value="1" ver="4"/>
+			<designed target="OnClickPenWidth" value="1" ver="4"/>
+			<designed target="OnHoverPenColor" value="4278190080" ver="4"/>
+			<designed target="OnHoverPenStyle" value="1" ver="4"/>
+			<designed target="OnHoverPenWidth" value="1" ver="4"/>
+			<designed target="DisabledPenColor" value="4288716960" ver="4"/>
+			<designed target="DisabledPenStyle" value="1" ver="4"/>
+			<designed target="DisabledPenWidth" value="1" ver="4"/>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseRelease">
+				<body kind="om">
+					<![CDATA[InReset=false;]]>
+				</body>
+			</do-on>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
+				<body kind="om">
+					<![CDATA[InReset=true;]]>
+				</body>
+			</do-on>
+			<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseLeave">
+				<body kind="om">
+					<![CDATA[InReset=false;]]>
+				</body>
+			</do-on>
+		</object>
+		<object access-modifier="private" name="OutReset" display-name="OutReset" uuid="359c675d-5bd2-446e-b1ec-9c57e1aea7d3" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+			<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+			<init target="Path" ver="4" value="ROOT.BOILER.OutReset"/>
+		</object>
+		<object access-modifier="private" name="InReset" display-name="InReset" uuid="ccf1fb88-42d3-422a-9303-c3204cd783f6" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+			<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+			<init target="Path" ver="4" value="ROOT.BOILER.InReset"/>
+		</object>
 	</object>
 	<object access-modifier="private" name="RightPanel" display-name="RightPanel" uuid="c5ea021a-4e80-4443-9018-e9d4289b7414" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="3">
 		<designed target="X" value="1720" ver="3"/>
@@ -1558,7 +1623,7 @@ InManCtrl=false;]]>
 				<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
 				<init target="Path" ver="4" value="ROOT.BOILER.InDeblockGate"/>
 			</object>
-			<object access-modifier="private" name="btnDeblock_1" display-name="btnDeblock_1" uuid="e53f198a-5c44-4851-b201-81148e9ba75d" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
+			<object access-modifier="private" name="btnTestAlarm" display-name="btnTestAlarm" uuid="e53f198a-5c44-4851-b201-81148e9ba75d" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
 				<designed target="X" value="3" ver="4"/>
 				<designed target="Y" value="170" ver="4"/>
 				<designed target="ZValue" value="0" ver="4"/>
