@@ -220,7 +220,8 @@ taskDec.Active = true;]]>
 			<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="MouseRelease">
 				<body kind="om">
 					<![CDATA[taskDec.Active = false;
-refData.inTASK = hereTask;]]>
+refData.inTASK = hereTask;
+refData.SetChanged = true;]]>
 				</body>
 			</do-on>
 			<do-trace access-modifier="private" target="Enabled" ver="4">
@@ -232,12 +233,21 @@ refData.inTASK = hereTask;]]>
 						<![CDATA[false]]>
 					</expr>
 				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[refData.NAME=="Регулирующая заслонка рез. топлива перед котлом"]]>
+					</condition>
+					<expr>
+						<![CDATA[false]]>
+					</expr>
+				</conditional-expr>
 				<default-expr>
 					<expr>
 						<![CDATA[true]]>
 					</expr>
 				</default-expr>
 			</do-trace>
+			<designed target="Checked" value="false" ver="4"/>
 		</object>
 		<object access-modifier="private" name="txtValue" display-name="txtValue" uuid="68458f4a-1cf2-4f61-a579-e48fb7e3f651" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
 			<designed target="X" value="126" ver="4"/>
@@ -345,7 +355,8 @@ taskInc.Active = true;]]>
 			<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="MouseRelease">
 				<body kind="om">
 					<![CDATA[taskInc.Active = false;
-refData.inTASK = hereTask;]]>
+refData.inTASK = hereTask;
+refData.SetChanged = true;]]>
 				</body>
 			</do-on>
 			<do-trace access-modifier="private" target="Enabled" ver="4">
@@ -357,12 +368,21 @@ refData.inTASK = hereTask;]]>
 						<![CDATA[false]]>
 					</expr>
 				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[refData.NAME=="Регулирующая заслонка рез. топлива перед котлом"]]>
+					</condition>
+					<expr>
+						<![CDATA[false]]>
+					</expr>
+				</conditional-expr>
 				<default-expr>
 					<expr>
 						<![CDATA[true]]>
 					</expr>
 				</default-expr>
 			</do-trace>
+			<designed target="Checked" value="false" ver="4"/>
 		</object>
 	</object>
 	<object access-modifier="private" name="rectParam" display-name="rectParam" uuid="9947c2d1-8e83-454d-b710-2b7f443b7a73" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
@@ -1158,11 +1178,15 @@ refData.inTASK = hereTask;]]>
 		<designed target="Active" value="false" ver="4"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnTimer">
 			<body kind="om">
-				<![CDATA[hereTask+=refData.step;
+				<![CDATA[if (refData.outSETH>hereTask)
+	hereTask+=refData.step;
+else 
+	hereTask=refData.outSETH;
 if (me.Period>50)
 {
 	me.Period -= 50;
-}]]>
+}
+]]>
 			</body>
 		</do-on>
 	</object>
@@ -1171,7 +1195,10 @@ if (me.Period>50)
 		<designed target="Active" value="false" ver="4"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnTimer">
 			<body kind="om">
-				<![CDATA[hereTask-=refData.step;
+				<![CDATA[if (refData.outSETL<hereTask)
+	hereTask-=refData.step;
+else 
+	hereTask=refData.outSETL;
 if (me.Period>50)
 {
 	me.Period -= 50;

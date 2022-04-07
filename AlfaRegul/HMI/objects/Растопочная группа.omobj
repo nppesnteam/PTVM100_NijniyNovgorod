@@ -316,7 +316,7 @@ unit.Global.ActiveMainFrame = "Растопочная группа №" + Str.To
 				<designed target="DisabledPenWidth" value="1" ver="4"/>
 				<do-trace access-modifier="private" target="Enabled" ver="4">
 					<body>
-						<![CDATA[!IgnStart&&ArmStartAllow]]>
+						<![CDATA[!IgnStart]]>
 					</body>
 				</do-trace>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
@@ -383,7 +383,7 @@ if (unit.Global.Group[Group].ign == 3)
 				</do-on>
 				<do-trace access-modifier="private" target="Enabled" ver="4">
 					<body>
-						<![CDATA[IgnStart&&ArmStartAllow]]>
+						<![CDATA[IgnStart]]>
 					</body>
 				</do-trace>
 				<designed target="Checked" value="false" ver="4"/>
@@ -611,7 +611,7 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="DisabledPenWidth" value="1" ver="4"/>
 				<do-trace access-modifier="private" target="Enabled" ver="4">
 					<body>
-						<![CDATA[!IgnStart&&ArmStartAllow]]>
+						<![CDATA[!IgnStart]]>
 					</body>
 				</do-trace>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
@@ -664,7 +664,7 @@ StartBurn.Invoke();]]>
 				<designed target="DisabledPenWidth" value="1" ver="4"/>
 				<do-trace access-modifier="private" target="Enabled" ver="4">
 					<body>
-						<![CDATA[IgnStart&&ArmStartAllow]]>
+						<![CDATA[IgnStart]]>
 					</body>
 				</do-trace>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
@@ -883,7 +883,7 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="DisabledPenWidth" value="1" ver="4"/>
 				<do-trace access-modifier="private" target="Enabled" ver="4">
 					<body>
-						<![CDATA[!IgnStart&&ArmStartAllow]]>
+						<![CDATA[!IgnStart]]>
 					</body>
 				</do-trace>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
@@ -936,7 +936,7 @@ StartBurn.Invoke();]]>
 				<designed target="DisabledPenWidth" value="1" ver="4"/>
 				<do-trace access-modifier="private" target="Enabled" ver="4">
 					<body>
-						<![CDATA[IgnStart&&ArmStartAllow]]>
+						<![CDATA[IgnStart]]>
 					</body>
 				</do-trace>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
@@ -1178,7 +1178,7 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="DisabledPenWidth" value="1" ver="4"/>
 				<do-trace access-modifier="private" target="Enabled" ver="4">
 					<body>
-						<![CDATA[!IgnStart&&ArmStartAllow]]>
+						<![CDATA[!IgnStart]]>
 					</body>
 				</do-trace>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
@@ -1231,7 +1231,7 @@ StartBurn.Invoke();]]>
 				<designed target="DisabledPenWidth" value="1" ver="4"/>
 				<do-trace access-modifier="private" target="Enabled" ver="4">
 					<body>
-						<![CDATA[IgnStart&&ArmStartAllow]]>
+						<![CDATA[IgnStart]]>
 					</body>
 				</do-trace>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">

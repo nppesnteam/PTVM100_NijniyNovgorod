@@ -207,6 +207,7 @@
 				<init target="Color" ver="4" value="0xff888888"/>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
 				<init target="initPath" ver="4" value="FlapA"/>
+				<init target="step" ver="4" value="1"/>
 			</object>
 			<object access-modifier="private" name="FlapSmoke2" display-name="FlapSmoke2" uuid="b2317af0-f74b-4194-91da-63d12d631502" base-type="FlapWithSettings" base-type-id="4cc80454-f0cf-4879-8e38-2c16930c7fae" ver="4">
 				<designed target="X" value="196" ver="4"/>
@@ -215,6 +216,7 @@
 				<init target="Color" ver="4" value="0xff888888"/>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
 				<init target="initPath" ver="4" value="FlapB"/>
+				<init target="step" ver="4" value="1"/>
 			</object>
 			<object access-modifier="private" name="SSmoke" display-name="SSmoke" uuid="d678be86-c04a-4580-b5b6-fdb60dddb3d3" base-type="Sens" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 				<designed target="X" value="70" ver="4"/>

@@ -282,6 +282,12 @@
     <nodeId>Application.PersistentVars.stSelMainPT.fDifPg</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Gas.PAfterFlap.DiffAlarm</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstDoubleSensor[2].bBigDifferencePre</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Gas.Gate2.Mid</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -2785,13 +2791,13 @@
     <node-path>ROOT.Diag.Group1.DI.Module2.Channel10.Invert</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.stAllDiInputInv.stSlaveIDi2_3.bSB1142</nodeId>
+    <nodeId>Application.PersistentVars.stAllDiInputInv.stSlaveIDi2_3.bSB1_142</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.DI.Module2.Channel11.Invert</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.stAllDiInputInv.stSlaveIDi2_3.bSB2143</nodeId>
+    <nodeId>Application.PersistentVars.stAllDiInputInv.stSlaveIDi2_3.bSB2_143</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.DI.Module2.Channel12.Invert</node-path>
@@ -3780,13 +3786,13 @@
     <node-path>ROOT.Diag.Group2.DI.Module2.Channel10.Invert</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.stAllDiInputInv.stSlaveIIDi2_3.bSB1142</nodeId>
+    <nodeId>Application.PersistentVars.stAllDiInputInv.stSlaveIIDi2_3.bSB1_142</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.DI.Module2.Channel11.Invert</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.stAllDiInputInv.stSlaveIIDi2_3.bSB2143</nodeId>
+    <nodeId>Application.PersistentVars.stAllDiInputInv.stSlaveIIDi2_3.bSB2_143</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.DI.Module2.Channel12.Invert</node-path>
@@ -4775,13 +4781,13 @@
     <node-path>ROOT.Diag.Group3.DI.Module2.Channel10.Invert</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.stAllDiInputInv.stSlaveIIIDi2_3.bSB1142</nodeId>
+    <nodeId>Application.PersistentVars.stAllDiInputInv.stSlaveIIIDi2_3.bSB1_142</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.DI.Module2.Channel11.Invert</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.stAllDiInputInv.stSlaveIIIDi2_3.bSB2143</nodeId>
+    <nodeId>Application.PersistentVars.stAllDiInputInv.stSlaveIIIDi2_3.bSB2_143</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.DI.Module2.Channel12.Invert</node-path>
@@ -5770,13 +5776,13 @@
     <node-path>ROOT.Diag.Group4.DI.Module2.Channel10.Invert</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.stAllDiInputInv.stSlaveIVDi2_3.bSB1142</nodeId>
+    <nodeId>Application.PersistentVars.stAllDiInputInv.stSlaveIVDi2_3.bSB1_142</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.DI.Module2.Channel11.Invert</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.stAllDiInputInv.stSlaveIVDi2_3.bSB2143</nodeId>
+    <nodeId>Application.PersistentVars.stAllDiInputInv.stSlaveIVDi2_3.bSB2_143</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.DI.Module2.Channel12.Invert</node-path>
@@ -6166,6 +6172,12 @@
     <nodeId>Application.PersistentVars.stSelMainPT.fDifT</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Water.TOut.DiffAlarm</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstDoubleSensor[3].bBigDifferencePre</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Water.GateIn.Mid</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -6302,6 +6314,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.stSelMainPT.fDifP</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Water.POut.DiffAlarm</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstDoubleSensor[1].bBigDifferencePre</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Water.GateBypass.Mid</node-path>

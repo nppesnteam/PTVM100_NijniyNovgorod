@@ -300,5 +300,73 @@ InitTimer.Active=false;]]>
 		<init target="Path" ver="4" value="ROOT.BOILER.OutCheckProtTime"/>
 	</object>
 	<object access-modifier="private" name="isOpenedBlow" display-name="isOpenedBlow" uuid="7c71b759-057e-42ea-9972-706c62b8dff1" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
+	<object access-modifier="private" name="CPU1_5" display-name="CPU1_5" uuid="061633cf-4dc3-435b-84c8-2c022fb665f5" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="Service.Modules.NetDiag Module.Control.PLC.EthernetAdapter2.Ping.Status"/>
+	</object>
+	<object access-modifier="private" name="CPU1_6" display-name="CPU1_6" uuid="4b598050-19f3-4c2c-9055-fc2fd8c09298" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="Service.Modules.NetDiag Module.Control.PLC.EthernetAdapter1.Ping.Status"/>
+	</object>
+	<object access-modifier="private" name="CPU2_5" display-name="CPU2_5" uuid="b0ee7cd1-b197-4292-8fa1-80962172eaf8" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="Service.Modules.NetDiag Module.Control.PLC_R.EthernetAdapter2.Ping.Status"/>
+	</object>
+	<object access-modifier="private" name="CPU2_6" display-name="CPU2_6" uuid="5f827741-53d5-4192-aa6b-28109b06a76e" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="Service.Modules.NetDiag Module.Control.PLC_R.EthernetAdapter1.Ping.Status"/>
+	</object>
+	<object access-modifier="private" name="ARM1_1" display-name="ARM1_1" uuid="8e786ff6-9b57-4833-bd16-75664bc9b045" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="Service.Modules.NetDiag Module.Control.ARM1.EthernetAdapter1.Ping.Status"/>
+	</object>
+	<object access-modifier="private" name="ARM1_2" display-name="ARM1_2" uuid="798d86f2-b9be-42cb-9659-b37501b109c9" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="Service.Modules.NetDiag Module.Control.ARM1.EthernetAdapter2.Ping.Status"/>
+	</object>
+	<object access-modifier="private" name="ARM2_1" display-name="ARM2_1" uuid="d2a04783-aee1-4df1-a3c4-b96aa22cd76d" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="Service.Modules.NetDiag Module.Control.ARM2.EthernetAdapter1.Ping.Status"/>
+	</object>
+	<object access-modifier="private" name="ARM2_2" display-name="ARM2_2" uuid="a7bbc02b-d738-4d7a-a2d5-e8b2aae9aa7e" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="Service.Modules.NetDiag Module.Control.ARM2.EthernetAdapter2.Ping.Status"/>
+	</object>
+	<object access-modifier="private" name="ConnectionOk_ARM1" display-name="ConnectionOk_ARM1" uuid="7a103a0a-6a0b-41f5-9f18-3160e7317ead" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.Diag.Server.ConnectionOK_ARM1"/>
+		<do-trace access-modifier="private" target="Value" ver="4">
+			<body>
+				<![CDATA[ARM1_1||ARM1_2]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ConnectionOk_ARM2" display-name="ConnectionOk_ARM2" uuid="d7832a83-46ed-4e65-82c6-379ee24f3559" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.Diag.Server.ConnectionOK_ARM2"/>
+		<do-trace access-modifier="private" target="Value" ver="4">
+			<body>
+				<![CDATA[ARM2_1||ARM2_2]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ConnectionOk_PLC1" display-name="ConnectionOk_PLC1" uuid="9b842884-c375-49f8-9fed-d6282d06d2a9" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.Diag.Server.ConnectionOK_PLC1"/>
+		<do-trace access-modifier="private" target="Value" ver="4">
+			<body>
+				<![CDATA[CPU1_5||CPU1_6]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="ConnectionOk_PLC2" display-name="ConnectionOk_PLC2" uuid="a191eb5c-dc7f-4551-a750-5eaf7b951665" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.Diag.Server.ConnectionOK_PLC2"/>
+		<do-trace access-modifier="private" target="Value" ver="4">
+			<body>
+				<![CDATA[CPU2_5||CPU2_6]]>
+			</body>
+		</do-trace>
+	</object>
 </object>
 

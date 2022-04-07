@@ -54,7 +54,7 @@
               <object name="Flap" xmlns="automation.control" base-type="Types.Regulator.PLC_View" aspect="Aspects.PLC_Aspect" uuid="2fd6d8f2-c938-45f5-8bfc-1f0010765503">
                 <attribute type="unit.System.Attributes.Description" xmlns="system" value="Регулирующая заслонка газа перед котлом" />
                 <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                <attribute type="Attributes.EU" value="%" xmlns="system" />
+                <attribute type="Attributes.EU" value="кПа" xmlns="system" />
               </object>
               <object name="PAfterFlap" xmlns="automation.control" base-type="Types.AnalogDoubleSens.PLC_View" aspect="Aspects.PLC_Aspect" uuid="6532cecc-343c-41f6-91df-2b779f5a58a0">
                 <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа после регулирующей заслонки" />
@@ -125,14 +125,14 @@
                     <object name="Channel8" aspect="Aspects.PLC_Aspect" base-type="Types.AI.PLC_View" xmlns="automation.control" uuid="14ca0e2c-4800-41d3-9628-54b7357e0a19">
                       <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                       <attribute type="Attributes.DIGITS" value="2" xmlns="system" />
-                      <attribute type="Attributes.EU" value="мПа" xmlns="system" />
+                      <attribute type="Attributes.EU" value="МПа" xmlns="system" />
                       <attribute type="unit.System.Attributes.Title" value="1N820PT01" xmlns="system" />
                       <attribute type="unit.System.Attributes.Description" value="Давление резервного топлива после диафрагмы" xmlns="system" />
                     </object>
                     <object name="Channel9" aspect="Aspects.PLC_Aspect" base-type="Types.AI.PLC_View" xmlns="automation.control" uuid="46fe2682-f77b-4d6d-b66e-79718f07f4eb">
                       <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                       <attribute type="Attributes.DIGITS" value="2" xmlns="system" />
-                      <attribute type="Attributes.EU" value="мПа" xmlns="system" />
+                      <attribute type="Attributes.EU" value="МПа" xmlns="system" />
                       <attribute type="unit.System.Attributes.Title" value="1N820PT02" xmlns="system" />
                       <attribute type="unit.System.Attributes.Description" value="Давление резервного топлива после регулирующей заслонкой" xmlns="system" />
                     </object>
@@ -174,7 +174,7 @@
                     <object name="Channel15" aspect="Aspects.PLC_Aspect" base-type="Types.AI.PLC_View" xmlns="automation.control" uuid="fb838e33-97fb-49ab-b3ac-e4eee58e765f">
                       <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                       <attribute type="Attributes.DIGITS" value="2" xmlns="system" />
-                      <attribute type="Attributes.EU" value="мПа" xmlns="system" />
+                      <attribute type="Attributes.EU" value="МПа" xmlns="system" />
                       <attribute type="unit.System.Attributes.Title" value="1N130PT01" xmlns="system" />
                       <attribute type="unit.System.Attributes.Description" value="Давление теплоносителя перед котлом" xmlns="system" />
                     </object>
@@ -204,14 +204,14 @@
                     <object name="Channel3" aspect="Aspects.PLC_Aspect" base-type="Types.AI.PLC_View" xmlns="automation.control" uuid="2f9c9302-f08c-4319-91a8-e30d773eb6c6">
                       <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                       <attribute type="Attributes.DIGITS" value="2" xmlns="system" />
-                      <attribute type="Attributes.EU" value="мПа" xmlns="system" />
+                      <attribute type="Attributes.EU" value="МПа" xmlns="system" />
                       <attribute type="unit.System.Attributes.Title" value="1N131PT01" xmlns="system" />
                       <attribute type="unit.System.Attributes.Description" value="Давление теплоносителя после котла 1" xmlns="system" />
                     </object>
                     <object name="Channel4" aspect="Aspects.PLC_Aspect" base-type="Types.AI.PLC_View" xmlns="automation.control" uuid="67d69da9-f882-4f4e-b70c-4446f2654016">
                       <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                       <attribute type="Attributes.DIGITS" value="2" xmlns="system" />
-                      <attribute type="Attributes.EU" value="мПа" xmlns="system" />
+                      <attribute type="Attributes.EU" value="МПа" xmlns="system" />
                       <attribute type="unit.System.Attributes.Title" value="1N131PT02" xmlns="system" />
                       <attribute type="unit.System.Attributes.Description" value="Давление теплоносителя после котла 2" xmlns="system" />
                     </object>
@@ -3206,7 +3206,7 @@
               <object name="Flap" xmlns="automation.control" base-type="Types.Regulator.PLC_View" aspect="Aspects.PLC_Aspect" uuid="3010e2ab-fdc7-4601-a6a0-834817d1b0f7">
                 <attribute type="unit.System.Attributes.Description" xmlns="system" value="Регулирующая заслонка рез. топлива перед котлом" />
                 <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                <attribute type="Attributes.EU" value="%" xmlns="system" />
+                <attribute type="Attributes.EU" value="МПа" xmlns="system" />
               </object>
             </object>
             <object name="Alarms" uuid="33208b53-c89b-49f1-bd00-b965109464d7">
@@ -3494,12 +3494,12 @@
               <object name="FlapA" xmlns="automation.control" base-type="Types.Regulator.PLC_View" aspect="Aspects.PLC_Aspect" uuid="e9562ccc-dff4-4913-86d6-799ed00d98fa">
                 <attribute type="unit.System.Attributes.Description" xmlns="system" value="Регулирующий шибер разрежения А" />
                 <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                <attribute type="Attributes.EU" value="%" xmlns="system" />
+                <attribute type="Attributes.EU" value="Па" xmlns="system" />
               </object>
               <object name="FlapB" xmlns="automation.control" base-type="Types.Regulator.PLC_View" aspect="Aspects.PLC_Aspect" uuid="b163da62-d86c-4e08-aff2-f5e568c94cf9">
                 <attribute type="unit.System.Attributes.Description" xmlns="system" value="Регулирующий шибер разрежения В" />
                 <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                <attribute type="Attributes.EU" value="%" xmlns="system" />
+                <attribute type="Attributes.EU" value="Па" xmlns="system" />
               </object>
             </object>
             <object name="Group2" xmlns="automation.control" uuid="7a39816f-aba6-4623-952b-75a7be7a4572">
@@ -8584,28 +8584,63 @@ STATUS_BITS.LowerElectrical = Math.TestBit(STATUS,4);</property>
       </ct:type>
       <ct:type name="IOS_VIEW" uuid="1446c95d-df2f-47fb-8987-5ca1d65d5001" original="Server" aspect="Aspects.IOS_Aspect">
         <r:ref name="_PLC_VIEW" uuid="f735e255-6e5a-42c0-afe8-88e0a0a72055" type="PLC_VIEW" />
-        <ct:parameter name="CPU1_MAIN" uuid="a999e3b2-e936-48f1-82c5-4b86db23edde" direction="out" type="bool">
+        <ct:parameter name="CPU1_MAIN" uuid="a999e3b2-e936-48f1-82c5-4b86db23edde" direction="out" type="bool" />
+        <ct:parameter name="ConnectionOK_PLC1" uuid="9be72079-3598-4b8f-8d39-1e39a3a8146c" type="bool" direction="none">
           <attribute type="unit.Server.Attributes.Alarm">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Активен первый ПЛК.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Активен второй ПЛК.","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Установлено соединение с ПЛК 1","Severity":1,"Type":2},{"AckStrategy":1,"IsEnabled":true,"Message":"Потеряно соединение с ПЛК 1","Severity":668,"Sound":"alarm.wav","Type":3}],"Type":2}}</property>
           </attribute>
         </ct:parameter>
-        <ct:bind source="_PLC_VIEW.CPU1_MAIN" target="CPU1_MAIN" />
-        <ct:parameter name="ConnectionOK" uuid="9be72079-3598-4b8f-8d39-1e39a3a8146c" type="bool" direction="out">
-          <attribute type="unit.Server.Attributes.Alarm">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"Severity":1,"Type":2},{"AckStrategy":1,"IsEnabled":true,"Message":"Потеряно соединение с ПЛК","Severity":668,"Sound":"alarm.wav","Type":3}],"Type":2}}</property>
-          </attribute>
-        </ct:parameter>
-        <ct:handler name="Handler" uuid="996373b4-416c-4b28-a34a-5d4b8ef7bd88">
-          <ct:trigger on="_PLC_VIEW.CPU1_MAIN" />
-          <property name="source-code">if (CPU1_MAIN.Quality==24)
-	ConnectionOK.Value=false;
-else
-	ConnectionOK.Value=true;</property>
-        </ct:handler>
         <ct:parameter name="sRedMode" uuid="20806405-dabb-4ee4-8d29-6b2f37685007" direction="out" type="string" />
         <ct:bind source="_PLC_VIEW.sRedMode" target="sRedMode" />
         <ct:parameter name="iRedMode" uuid="a0d28edc-0725-4672-8cb2-949972284790" direction="out" type="int32" />
         <ct:bind source="_PLC_VIEW.iRedMode" target="iRedMode" />
+        <parameter name="ConnectionOK_PLC2" type="bool" direction="none" xmlns="automation.control" uuid="93207487-14fe-4d1b-98c1-5e041fa7364f">
+          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Установлено соединение с ПЛК 2","Severity":1,"Type":2},{"AckStrategy":1,"IsEnabled":true,"Message":"Потеряно соединение с ПЛК 2","Severity":668,"Sound":"alarm.wav","Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
+        <parameter name="ConnectionOK_ARM1" type="bool" direction="none" xmlns="automation.control" uuid="5a4b2e75-9871-4d5b-ba63-82aa1056a5fc">
+          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Установлено соединение с АРМ 1","Severity":1,"Type":2},{"AckStrategy":1,"IsEnabled":true,"Message":"Потеряно соединение с АРМ 1","Severity":668,"Sound":"alarm.wav","Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
+        <parameter name="ConnectionOK_ARM2" type="bool" direction="none" xmlns="automation.control" uuid="e84b2f2a-3dd6-4418-bbfa-fb6fc98feae2">
+          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Установлено соединение с АРМ 2","Severity":1,"Type":2},{"AckStrategy":1,"IsEnabled":true,"Message":"Потеряно соединение с АРМ 2","Severity":668,"Sound":"alarm.wav","Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
+        <ct:handler name="Handler" uuid="fee5f829-6aa8-41be-bb57-30c02d085810">
+          <ct:trigger on="_PLC_VIEW.CPU1_MAIN" />
+          <property name="source-code">if ((_PLC_VIEW.CPU1_MAIN&amp;&amp;iRedMode==5)||(!_PLC_VIEW.CPU1_MAIN&amp;&amp;iRedMode==3))
+	{
+		CPU1_MAIN=true;
+	}
+else if (ConnectionOK_PLC1)
+	CPU1_MAIN=true;
+if ((_PLC_VIEW.CPU1_MAIN&amp;&amp;iRedMode==3)||(!_PLC_VIEW.CPU1_MAIN&amp;&amp;iRedMode==5))
+	{
+		CPU1_MAIN=false;
+	}
+else if (ConnectionOK_PLC2)
+	CPU1_MAIN=false;
+if (!ConnectionOK_PLC1&amp;&amp;!ConnectionOK_PLC2)
+	Connection=false;
+else
+	Connection=true;</property>
+        </ct:handler>
+        <parameter name="RedudancyOK" direction="out" type="bool" xmlns="automation.control" uuid="725d2c79-d66f-4ce1-8286-63bb9051453d">
+          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Резервирование ПЛК работает.","Severity":1,"Type":2},{"AckStrategy":1,"IsEnabled":true,"Message":"Резервирование ПЛК не работает.","Severity":668,"Sound":"alarm.wav","Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
+        <ct:handler name="Handler1" uuid="c0485ec3-3bfb-45eb-ba38-4300a716d763" source-code="RedudancyOK=_PLC_VIEW.iRedMode==3||_PLC_VIEW.iRedMode==5;">
+          <ct:trigger on="_PLC_VIEW.iRedMode" />
+        </ct:handler>
+        <parameter name="Connection" direction="out" type="bool" xmlns="automation.control" uuid="ac660280-6fe1-44f7-b20b-0c6138d19bb8">
+          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"Severity":1,"Type":2},{"AckStrategy":1,"IsEnabled":true,"Message":"Нет соединение с обоими ПЛК.","Severity":668,"Sound":"alarm.wav","Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
       </ct:type>
     </ct:type>
     <type name="AnalogSens" xmlns="automation.control" uuid="472a2108-ef3b-486c-8894-777b87414be3">
@@ -8685,7 +8720,7 @@ else
         </parameter>
         <parameter name="AlarmBoilerStop" uuid="c77cf169-eb15-4966-97ae-97209ef5bdda" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"Message":"Аварийный останов котла кнопкой.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"IsEnabled":true,"Message":"Аварийный останов котла кнопкой.","Severity":668,"Sound":"alarm.wav","Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Аварийный останов котла кнопкой.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Message":"Аварийный останов котла кнопкой.","Severity":668,"Sound":"alarm.wav","Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmBoilerStop" target="AlarmBoilerStop" />
@@ -8754,7 +8789,7 @@ else
         <parameter name="ArmStartAllow" uuid="413b1e73-e049-4d62-8eff-e23b892c625c" type="bool" direction="out" />
         <parameter name="Reset" type="bool" direction="in-out" xmlns="automation.control" uuid="4426cf44-06b0-45f5-b9ea-14f53ee609d8" />
         <parameter name="GermTestStart" type="bool" direction="in-out" xmlns="automation.control" uuid="80a75437-e210-4ab1-afe5-cb4fa2493d66" />
-        <parameter name="BoilerInWork" type="bool" direction="out" xmlns="automation.control" uuid="40642955-7bb3-42b6-b41c-72be1157b12c" />
+        <parameter name="BoilerInWork" type="bool" direction="in-out" xmlns="automation.control" uuid="40642955-7bb3-42b6-b41c-72be1157b12c" />
         <parameter name="AlarmBoilerStop" uuid="3fc784d8-32e0-4da8-9333-d09b653b00af" type="bool" direction="out" />
         <parameter name="nVent" direction="out" type="int32" xmlns="automation.control" uuid="b9fed464-a15e-4382-bc05-e8f1a6d244e3" />
         <parameter name="NoVent" type="bool" direction="in-out" xmlns="automation.control" uuid="b791aaf7-4773-41df-810d-592937f49411" />
@@ -8857,7 +8892,7 @@ else
         <bind source="InMaskPGasColl" target="_PLC_View.MaskPGasColl" />
         <parameter name="OutMaskPGasColl" uuid="368e2f88-2b5d-4f62-a522-169317b2b799" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Включена защита по давлению газа.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Отключена защита по давлению газа.","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"Message":"Включена защита по давлению газа.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Отключена защита по давлению газа (для проверка).","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.MaskPGasColl" target="OutMaskPGasColl" />
@@ -8865,7 +8900,7 @@ else
         <bind source="InMaskPOil" target="_PLC_View.MaskPOil" />
         <parameter name="OutMaskPOil" uuid="a46693c6-c969-4f78-9d68-43da4437e970" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Включена защита по давлению рез.топлива.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Отключена защита по давлению рез.топлива.","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"Message":"Включена защита по давлению рез.топлива.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Отключена защита по давлению рез.топлива (для проверка).","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.MaskPOil" target="OutMaskPOil" />
@@ -8873,7 +8908,7 @@ else
         <bind source="InMaskPWatOut" target="_PLC_View.MaskPWatOut" />
         <parameter name="OutMaskPWatOut" uuid="0725dd1b-a7e1-45fa-9cff-c945d19a96ec" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Включена защита по давлению теплоносителя.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Отключена защита по давлению теплоносителя.","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"Message":"Включена защита по давлению теплоносителя.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Отключена защита по давлению теплоносителя для проверка.","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.MaskPWatOut" target="OutMaskPWatOut" />
@@ -8881,7 +8916,7 @@ else
         <bind source="InMaskTWatOut" target="_PLC_View.MaskTWatOut" />
         <parameter name="OutMaskTWatOut" uuid="6900bcf9-be6c-46df-a8e1-87c0baca5f8a" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Включена защита по температуре теплоносителя.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Отключена защита по температуре теплоносителя.","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"Message":"Включена защита по температуре теплоносителя.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Отключена защита по температуре теплоносителя (для проверка).","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.MaskTWatOut" target="OutMaskTWatOut" />
@@ -8889,7 +8924,7 @@ else
         <bind source="InMaskQWatOut" target="_PLC_View.MaskQWatOut" />
         <parameter name="OutMaskQWatOut" uuid="464f0758-e92d-4b90-a338-16ca766e99ae" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Включена защита по расходу теплоносителя.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Отключена защита по расходу теплоносителя.","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"Message":"Включена защита по расходу теплоносителя.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Отключена защита по расходу теплоносителя (для проверка).","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.MaskQWatOut" target="OutMaskQWatOut" />
@@ -8924,6 +8959,8 @@ else
         <bind source="InValveBot" target="_PLC_View.ValveBot" />
         <parameter name="OutValveBot" uuid="94c47c17-b05c-4142-a76e-44ddb4217cc9" direction="out" type="bool" />
         <bind source="_PLC_View.ValveBot" target="OutValveBot" />
+        <parameter name="InBoilerInWork" uuid="27671f9e-ac27-49b8-aa63-b414d776d3bb" direction="in" type="bool" />
+        <bind source="InBoilerInWork" target="_PLC_View.BoilerInWork" />
       </type>
     </type>
     <type name="DelAlarmsBoiler" xmlns="automation.control" uuid="7bf32a59-7c25-4527-868a-f68a8101e433">
@@ -9612,6 +9649,7 @@ else
         <parameter name="iSel" direction="in-out" type="int16" xmlns="automation.control" uuid="548fd04b-0024-4ee5-b38a-c806e5726736" />
         <parameter name="OutValue" type="float32" direction="out" xmlns="automation.control" uuid="486ac4fd-d816-4c09-ac62-fdf046f1950e" />
         <parameter name="AllowDiff" type="float32" direction="in-out" xmlns="automation.control" uuid="58c7c5fb-1dbe-416d-af7b-b953dc7c211f" />
+        <parameter name="DiffAlarm" type="bool" direction="out" xmlns="automation.control" uuid="a3e103fb-ecf8-452f-8605-87ca984418c6" />
       </type>
       <type name="IOS_View" xmlns="automation.control" aspect="Aspects.IOS_Aspect" original="AnalogDoubleSens" uuid="d4c1f4a7-3e67-4d23-8c65-bef367b274f1">
         <parameter name="NAME" type="string" direction="out" uuid="9995e860-2bad-4125-b714-9393dc4ff353">
@@ -9653,6 +9691,12 @@ else
         <bind source="InAllowDiff" target="_PLC_View.AllowDiff" />
         <parameter name="OutAllowDiff" uuid="f1cd9dcb-f316-41ab-aacf-453aa48d3e5a" direction="out" type="float32" />
         <bind source="_PLC_View.AllowDiff" target="OutAllowDiff" />
+        <parameter name="DiffAlarm" uuid="5fc845ea-2c25-437d-8eb0-37798ba10520" direction="out" type="bool">
+          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":".Большая разница показаний датчиков.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
+        <bind source="_PLC_View.DiffAlarm" target="DiffAlarm" />
       </type>
     </type>
     <ct:type name="Regime" uuid="db717efd-c888-409c-8d65-e0afb8f6ddfd">

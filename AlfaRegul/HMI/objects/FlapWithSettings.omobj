@@ -234,7 +234,7 @@ OpenModuleWindow.Invoke();]]>
 			<body kind="om">
 				<![CDATA[if (SetChanged==true)
 {
-	unit.Global.ShowMSG("Настройка \""+me.Description+"\" объекта \""+NAME.ValueAsString+"\" изменена на "+me.ValueAsString+".",2);
+	unit.Global.ShowMSG("Настройка \""+me.Description+"\" объекта \""+NAME.ValueAsString+"\" изменена на "+me.ValueAsString+" "+EU.ValueAsString+".",2);
 	SetChanged=false;
 }]]>
 			</body>
@@ -248,15 +248,6 @@ OpenModuleWindow.Invoke();]]>
 	<object access-modifier="private" name="inSETL" display-name="inSETL" uuid="4b343cc8-4b8f-4b2a-9a4a-14add06593fb" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
 		<init target="Path" ver="4" value="InfSetL"/>
-		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
-			<body kind="om">
-				<![CDATA[if (SetChanged==true)
-{
-	unit.Global.ShowMSG("Настройка \""+me.Description+"\" объекта \""+NAME.ValueAsString+"\" изменена на "+me.ValueAsString+".",2);
-	SetChanged=false;
-}]]>
-			</body>
-		</do-on>
 	</object>
 	<object access-modifier="private" name="outSETH" display-name="outSETH" uuid="d89032e8-66fe-4760-8558-7f454aa0d524" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
@@ -265,15 +256,6 @@ OpenModuleWindow.Invoke();]]>
 	<object access-modifier="private" name="inSETH" display-name="inSETH" uuid="f5249a78-acd9-4f2e-98b5-2082f6dc4f87" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
 		<init target="Path" ver="4" value="InfSetH"/>
-		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
-			<body kind="om">
-				<![CDATA[if (SetChanged==true)
-{
-	unit.Global.ShowMSG("Настройка \""+me.Description+"\" объекта \""+NAME.ValueAsString+"\" изменена на "+me.ValueAsString+".",2);
-	SetChanged=false;
-}]]>
-			</body>
-		</do-on>
 	</object>
 	<object access-modifier="private" name="outTFillIn" display-name="outTFillIn" uuid="1537bf6d-83af-4a81-9ca5-b01f62857261" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
@@ -282,15 +264,6 @@ OpenModuleWindow.Invoke();]]>
 	<object access-modifier="private" name="inTFillIn" display-name="inTFillIn" uuid="1fd1ac38-80a1-4533-ba48-66b3babc03c8" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
 		<init target="Path" ver="4" value="InTFillIn"/>
-		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
-			<body kind="om">
-				<![CDATA[if (SetChanged==true)
-{
-	unit.Global.ShowMSG("Настройка \""+me.Description+"\" объекта \""+NAME.ValueAsString+"\" изменена на "+me.ValueAsString+".",2);
-	SetChanged=false;
-}]]>
-			</body>
-		</do-on>
 	</object>
 	<object access-modifier="private" name="outFDead" display-name="outFDead" uuid="837f0f32-62cb-4e30-bcd0-a699e27c5a99" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
@@ -299,15 +272,6 @@ OpenModuleWindow.Invoke();]]>
 	<object access-modifier="private" name="inFDead" display-name="inFDead" uuid="1c8e5c92-d167-490f-b70e-d0737287d688" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
 		<init target="Path" ver="4" value="InFDead"/>
-		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
-			<body kind="om">
-				<![CDATA[if (SetChanged==true)
-{
-	unit.Global.ShowMSG("Настройка \""+me.Description+"\" объекта \""+NAME.ValueAsString+"\" изменена на "+me.ValueAsString+".",2);
-	SetChanged=false;
-}]]>
-			</body>
-		</do-on>
 	</object>
 	<object access-modifier="private" name="outfKp" display-name="outfKp" uuid="b332628c-8647-4212-8c03-192646dda9ed" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
@@ -316,15 +280,6 @@ OpenModuleWindow.Invoke();]]>
 	<object access-modifier="private" name="infKp" display-name="infKp" uuid="76075e32-f090-481a-85e7-fea7c5c1ffaa" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
 		<init target="Path" ver="4" value="infKp"/>
-		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
-			<body kind="om">
-				<![CDATA[if (SetChanged==true)
-{
-	unit.Global.ShowMSG("Настройка \""+me.Description+"\" объекта \""+NAME.ValueAsString+"\" изменена на "+me.ValueAsString+".",2);
-	SetChanged=false;
-}]]>
-			</body>
-		</do-on>
 	</object>
 	<object access-modifier="private" name="outfTi" display-name="outfTi" uuid="a73f77a3-b764-4d6c-8f88-4caa5898a889" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
@@ -333,15 +288,6 @@ OpenModuleWindow.Invoke();]]>
 	<object access-modifier="private" name="infTi" display-name="infTi" uuid="95912b8f-43bc-45cc-9ba4-74cf7cbb3466" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
 		<init target="Path" ver="4" value="infTi"/>
-		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
-			<body kind="om">
-				<![CDATA[if (SetChanged==true)
-{
-	unit.Global.ShowMSG("Настройка \""+me.Description+"\" объекта \""+NAME.ValueAsString+"\" изменена на "+me.ValueAsString+".",2);
-	SetChanged=false;
-}]]>
-			</body>
-		</do-on>
 	</object>
 	<object access-modifier="private" name="outfTd" display-name="outfTd" uuid="72abd5ca-3d7c-40d6-b775-22d0fb563a44" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
@@ -350,15 +296,6 @@ OpenModuleWindow.Invoke();]]>
 	<object access-modifier="private" name="infTd" display-name="infTd" uuid="7b0f1da9-61c3-4cf6-9812-42ee049266d8" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
 		<init target="Path" ver="4" value="infTd"/>
-		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
-			<body kind="om">
-				<![CDATA[if (SetChanged==true)
-{
-	unit.Global.ShowMSG("Настройка \""+me.Description+"\" объекта \""+NAME.ValueAsString+"\" изменена на "+me.ValueAsString+".",2);
-	SetChanged=false;
-}]]>
-			</body>
-		</do-on>
 	</object>
 	<object access-modifier="private" name="outfTm" display-name="outfTm" uuid="820009a4-af54-42de-9f75-e4088ad9f694" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
@@ -367,15 +304,6 @@ OpenModuleWindow.Invoke();]]>
 	<object access-modifier="private" name="infTm" display-name="infTm" uuid="76ea78f3-f697-4160-9413-55b49f23e9b2" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
 		<init target="Path" ver="4" value="infTm"/>
-		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
-			<body kind="om">
-				<![CDATA[if (SetChanged==true)
-{
-	unit.Global.ShowMSG("Настройка \""+me.Description+"\" объекта \""+NAME.ValueAsString+"\" изменена на "+me.ValueAsString+".",2);
-	SetChanged=false;
-}]]>
-			</body>
-		</do-on>
 	</object>
 	<object access-modifier="private" name="outfTmin" display-name="outfTmin" uuid="0e7d3156-a5eb-4178-b772-fda1ab09af58" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
@@ -384,15 +312,6 @@ OpenModuleWindow.Invoke();]]>
 	<object access-modifier="private" name="infTmin" display-name="infTmin" uuid="b1d1345e-bac1-48fe-a971-96a9f197b1d1" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
 		<init target="Path" ver="4" value="infTmin"/>
-		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
-			<body kind="om">
-				<![CDATA[if (SetChanged==true)
-{
-	unit.Global.ShowMSG("Настройка \""+me.Description+"\" объекта \""+NAME.ValueAsString+"\" изменена на "+me.ValueAsString+".",2);
-	SetChanged=false;
-}]]>
-			</body>
-		</do-on>
 	</object>
 	<object access-modifier="private" name="InOutH" display-name="InOutH" uuid="f142264d-b229-4338-aca4-506fc3b1c998" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
