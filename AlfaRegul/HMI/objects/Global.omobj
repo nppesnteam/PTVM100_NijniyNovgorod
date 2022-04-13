@@ -368,5 +368,13 @@ InitTimer.Active=false;]]>
 			</body>
 		</do-trace>
 	</object>
+	<object access-modifier="private" name="InMute" display-name="InMute" uuid="2b1e248f-1204-4db8-a045-c726959e1072" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.Boiler.InbMute"/>
+	</object>
+	<object access-modifier="private" name="OutMute" display-name="OutMute" uuid="be99978b-5f89-4fe6-914f-31e17853aebb" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.Boiler.OutbMute"/>
+	</object>
 </object>
 

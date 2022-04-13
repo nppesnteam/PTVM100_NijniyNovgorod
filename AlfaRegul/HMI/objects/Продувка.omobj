@@ -148,6 +148,75 @@
 		<designed target="Checked" value="false" ver="4"/>
 		<designed target="Text" value="Клапан
 продувки
+групп 3,4" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="4"/>
+		<designed target="FontColor" value="4278190080" ver="4"/>
+		<designed target="OnClickFontColor" value="4278190080" ver="4"/>
+		<designed target="OnHoverFontColor" value="4278190080" ver="4"/>
+		<designed target="DisabledFontColor" value="4278190080" ver="4"/>
+		<designed target="BrushColor" value="4293980400" ver="4"/>
+		<designed target="BrushStyle" value="1" ver="4"/>
+		<designed target="OnClickBrushColor" value="0xff5bff4f" ver="4"/>
+		<designed target="OnClickBrushStyle" value="1" ver="4"/>
+		<designed target="OnHoverBrushColor" value="0xff8dff85" ver="4"/>
+		<designed target="OnHoverBrushStyle" value="1" ver="4"/>
+		<designed target="DisabledBrushColor" value="4288716960" ver="4"/>
+		<designed target="DisabledBrushStyle" value="1" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="1" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="OnClickPenColor" value="4278190080" ver="4"/>
+		<designed target="OnClickPenStyle" value="1" ver="4"/>
+		<designed target="OnClickPenWidth" value="1" ver="4"/>
+		<designed target="OnHoverPenColor" value="4278190080" ver="4"/>
+		<designed target="OnHoverPenStyle" value="1" ver="4"/>
+		<designed target="OnHoverPenWidth" value="1" ver="4"/>
+		<designed target="DisabledPenColor" value="4288716960" ver="4"/>
+		<designed target="DisabledPenStyle" value="1" ver="4"/>
+		<designed target="DisabledPenWidth" value="1" ver="4"/>
+		<do-trace access-modifier="private" target="Checked" ver="4">
+			<body>
+				<![CDATA[OutTop]]>
+			</body>
+		</do-trace>
+		<do-trace access-modifier="private" target="BrushColor" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[OutTop]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA[0xfff0f0f0]]>
+				</expr>
+			</default-expr>
+		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
+			<body kind="om">
+				<![CDATA[InTop=!OutTop;]]>
+			</body>
+		</do-on>
+	</object>
+	<object access-modifier="private" name="Top" display-name="Top" uuid="b6f634d6-d965-4272-a2e3-e8d196dd9b9b" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
+		<designed target="X" value="10" ver="4"/>
+		<designed target="Y" value="130" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="80" ver="4"/>
+		<designed target="Height" value="50" ver="4"/>
+		<designed target="Checkable" value="false" ver="4"/>
+		<designed target="Checked" value="false" ver="4"/>
+		<designed target="Text" value="Клапан
+продувки
 групп 1,2" ver="4"/>
 		<designed target="TextAlignment" value="132" ver="4"/>
 		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="4"/>
@@ -198,75 +267,6 @@
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
 			<body kind="om">
 				<![CDATA[InBot=!OutBot;]]>
-			</body>
-		</do-on>
-	</object>
-	<object access-modifier="private" name="Top" display-name="Top" uuid="b6f634d6-d965-4272-a2e3-e8d196dd9b9b" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
-		<designed target="X" value="10" ver="4"/>
-		<designed target="Y" value="130" ver="4"/>
-		<designed target="ZValue" value="0" ver="4"/>
-		<designed target="Rotation" value="0" ver="4"/>
-		<designed target="Scale" value="1" ver="4"/>
-		<designed target="Visible" value="true" ver="4"/>
-		<designed target="Opacity" value="1" ver="4"/>
-		<designed target="Enabled" value="true" ver="4"/>
-		<designed target="Tooltip" value="" ver="4"/>
-		<designed target="Width" value="80" ver="4"/>
-		<designed target="Height" value="50" ver="4"/>
-		<designed target="Checkable" value="false" ver="4"/>
-		<designed target="Checked" value="false" ver="4"/>
-		<designed target="Text" value="Клапан
-продувки
-групп 3,4" ver="4"/>
-		<designed target="TextAlignment" value="132" ver="4"/>
-		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="4"/>
-		<designed target="FontColor" value="4278190080" ver="4"/>
-		<designed target="OnClickFontColor" value="4278190080" ver="4"/>
-		<designed target="OnHoverFontColor" value="4278190080" ver="4"/>
-		<designed target="DisabledFontColor" value="4278190080" ver="4"/>
-		<designed target="BrushColor" value="4293980400" ver="4"/>
-		<designed target="BrushStyle" value="1" ver="4"/>
-		<designed target="OnClickBrushColor" value="0xff5bff4f" ver="4"/>
-		<designed target="OnClickBrushStyle" value="1" ver="4"/>
-		<designed target="OnHoverBrushColor" value="0xff8dff85" ver="4"/>
-		<designed target="OnHoverBrushStyle" value="1" ver="4"/>
-		<designed target="DisabledBrushColor" value="4288716960" ver="4"/>
-		<designed target="DisabledBrushStyle" value="1" ver="4"/>
-		<designed target="PenColor" value="4278190080" ver="4"/>
-		<designed target="PenStyle" value="1" ver="4"/>
-		<designed target="PenWidth" value="1" ver="4"/>
-		<designed target="OnClickPenColor" value="4278190080" ver="4"/>
-		<designed target="OnClickPenStyle" value="1" ver="4"/>
-		<designed target="OnClickPenWidth" value="1" ver="4"/>
-		<designed target="OnHoverPenColor" value="4278190080" ver="4"/>
-		<designed target="OnHoverPenStyle" value="1" ver="4"/>
-		<designed target="OnHoverPenWidth" value="1" ver="4"/>
-		<designed target="DisabledPenColor" value="4288716960" ver="4"/>
-		<designed target="DisabledPenStyle" value="1" ver="4"/>
-		<designed target="DisabledPenWidth" value="1" ver="4"/>
-		<do-trace access-modifier="private" target="Checked" ver="4">
-			<body>
-				<![CDATA[OutTop]]>
-			</body>
-		</do-trace>
-		<do-trace access-modifier="private" target="BrushColor" ver="4">
-			<conditional-expr>
-				<condition>
-					<![CDATA[OutTop]]>
-				</condition>
-				<expr>
-					<![CDATA[0xff00ff00]]>
-				</expr>
-			</conditional-expr>
-			<default-expr>
-				<expr>
-					<![CDATA[0xfff0f0f0]]>
-				</expr>
-			</default-expr>
-		</do-trace>
-		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
-			<body kind="om">
-				<![CDATA[InTop=!InTop;]]>
 			</body>
 		</do-on>
 	</object>

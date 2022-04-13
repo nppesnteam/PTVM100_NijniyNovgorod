@@ -469,12 +469,12 @@
 					<designed target="Speed" value="1" ver="4"/>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
 						<body kind="om">
-							<![CDATA[unit.Global.Mute = !unit.Global.Mute;]]>
+							<![CDATA[unit.Global.InMute = !unit.Global.OutMute;]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="Visible" ver="4">
 						<body>
-							<![CDATA[!unit.Global.Mute]]>
+							<![CDATA[!unit.Global.OutMute]]>
 						</body>
 					</do-trace>
 				</object>
@@ -499,12 +499,12 @@
 					<designed target="Speed" value="1" ver="4"/>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
 						<body kind="om">
-							<![CDATA[unit.Global.Mute = !unit.Global.Mute;]]>
+							<![CDATA[unit.Global.InMute = !unit.Global.OutMute;]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="Visible" ver="4">
 						<body>
-							<![CDATA[unit.Global.Mute]]>
+							<![CDATA[unit.Global.OutMute]]>
 						</body>
 					</do-trace>
 				</object>

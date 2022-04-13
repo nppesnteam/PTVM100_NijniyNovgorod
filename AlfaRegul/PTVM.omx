@@ -8096,7 +8096,7 @@ Channel32.H=Math.TestBit(State.State,31);</property>
           <historian-database-link database="ARM2.Historian.DB_HISTORY" />
         </history-module>
         <opcua-client name="OpcUaClient" xmlns="server" uuid="93826dc2-a48e-4092-975b-af251935e9c6">
-          <opcua-server-link server="PLC.Runtime.OpcUaServer" security-mode="none" sampling-interval="200" update-rate="200" write-only-to-active-server="false" write-on-connect="false" can-suspended-server-be-active="true" control-signal-id-type="string" active-server-timeout="1000" notification-queue-size="0" max-nodes-per-browse="0" max-nodes-per-write="0" max-nodes-per-read="0" max-monitored-items-per-call="0" authorization-mode="Anonymous" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-value="5" control-signal-id="Application.GVL.iIsStateActive" session-timeout="5000" standby-mode="request-data" />
+          <opcua-server-link server="PLC.Runtime.OpcUaServer" security-mode="none" sampling-interval="200" update-rate="200" write-only-to-active-server="true" write-on-connect="false" can-suspended-server-be-active="true" control-signal-id-type="string" active-server-timeout="1000" notification-queue-size="0" max-nodes-per-browse="0" max-nodes-per-write="0" max-nodes-per-read="0" max-monitored-items-per-call="0" authorization-mode="Anonymous" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-value="5" control-signal-id="Application.PLC_PRG.mode" session-timeout="5000" standby-mode="request-data" />
         </opcua-client>
         <netdiag-module name="NetDiagModule" uuid="da84fb71-1121-46d5-a391-ea4b6da83bbb">
           <network-node-binding node="PLC_R" />
@@ -8587,7 +8587,7 @@ STATUS_BITS.LowerElectrical = Math.TestBit(STATUS,4);</property>
         <ct:parameter name="CPU1_MAIN" uuid="a999e3b2-e936-48f1-82c5-4b86db23edde" direction="out" type="bool" />
         <ct:parameter name="ConnectionOK_PLC1" uuid="9be72079-3598-4b8f-8d39-1e39a3a8146c" type="bool" direction="none">
           <attribute type="unit.Server.Attributes.Alarm">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Установлено соединение с ПЛК 1","Severity":1,"Type":2},{"AckStrategy":1,"IsEnabled":true,"Message":"Потеряно соединение с ПЛК 1","Severity":668,"Sound":"alarm.wav","Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Установлено соединение с ПЛК 1","Severity":1,"Type":2},{"AckStrategy":1,"IsEnabled":true,"Message":"Потеряно соединение с ПЛК 1","Severity":668,"Sound":"alarm.wav","Type":3}],"Type":2}}</property>
           </attribute>
         </ct:parameter>
         <ct:parameter name="sRedMode" uuid="20806405-dabb-4ee4-8d29-6b2f37685007" direction="out" type="string" />
@@ -8596,41 +8596,29 @@ STATUS_BITS.LowerElectrical = Math.TestBit(STATUS,4);</property>
         <ct:bind source="_PLC_VIEW.iRedMode" target="iRedMode" />
         <parameter name="ConnectionOK_PLC2" type="bool" direction="none" xmlns="automation.control" uuid="93207487-14fe-4d1b-98c1-5e041fa7364f">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Установлено соединение с ПЛК 2","Severity":1,"Type":2},{"AckStrategy":1,"IsEnabled":true,"Message":"Потеряно соединение с ПЛК 2","Severity":668,"Sound":"alarm.wav","Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Установлено соединение с ПЛК 2","Severity":1,"Type":2},{"AckStrategy":1,"IsEnabled":true,"Message":"Потеряно соединение с ПЛК 2","Severity":668,"Sound":"alarm.wav","Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="ConnectionOK_ARM1" type="bool" direction="none" xmlns="automation.control" uuid="5a4b2e75-9871-4d5b-ba63-82aa1056a5fc">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Установлено соединение с АРМ 1","Severity":1,"Type":2},{"AckStrategy":1,"IsEnabled":true,"Message":"Потеряно соединение с АРМ 1","Severity":668,"Sound":"alarm.wav","Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Установлено соединение с АРМ 1","Severity":1,"Type":2},{"AckStrategy":1,"IsEnabled":true,"Message":"Потеряно соединение с АРМ 1","Severity":668,"Sound":"alarm.wav","Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="ConnectionOK_ARM2" type="bool" direction="none" xmlns="automation.control" uuid="e84b2f2a-3dd6-4418-bbfa-fb6fc98feae2">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Установлено соединение с АРМ 2","Severity":1,"Type":2},{"AckStrategy":1,"IsEnabled":true,"Message":"Потеряно соединение с АРМ 2","Severity":668,"Sound":"alarm.wav","Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Установлено соединение с АРМ 2","Severity":1,"Type":2},{"AckStrategy":1,"IsEnabled":true,"Message":"Потеряно соединение с АРМ 2","Severity":668,"Sound":"alarm.wav","Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <ct:handler name="Handler" uuid="fee5f829-6aa8-41be-bb57-30c02d085810">
-          <ct:trigger on="_PLC_VIEW.CPU1_MAIN" />
-          <property name="source-code">if ((_PLC_VIEW.CPU1_MAIN&amp;&amp;iRedMode==5)||(!_PLC_VIEW.CPU1_MAIN&amp;&amp;iRedMode==3))
-	{
-		CPU1_MAIN=true;
-	}
-else if (ConnectionOK_PLC1)
-	CPU1_MAIN=true;
-if ((_PLC_VIEW.CPU1_MAIN&amp;&amp;iRedMode==3)||(!_PLC_VIEW.CPU1_MAIN&amp;&amp;iRedMode==5))
-	{
-		CPU1_MAIN=false;
-	}
-else if (ConnectionOK_PLC2)
-	CPU1_MAIN=false;
-if (!ConnectionOK_PLC1&amp;&amp;!ConnectionOK_PLC2)
+          <property name="source-code">if (!ConnectionOK_PLC1&amp;&amp;!ConnectionOK_PLC2)
 	Connection=false;
 else
 	Connection=true;</property>
+          <ct:trigger on="Timer" />
         </ct:handler>
         <parameter name="RedudancyOK" direction="out" type="bool" xmlns="automation.control" uuid="725d2c79-d66f-4ce1-8286-63bb9051453d">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Резервирование ПЛК работает.","Severity":1,"Type":2},{"AckStrategy":1,"IsEnabled":true,"Message":"Резервирование ПЛК не работает.","Severity":668,"Sound":"alarm.wav","Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Резервирование ПЛК работает.","Severity":1,"Type":2},{"AckStrategy":1,"IsEnabled":true,"Message":"Резервирование ПЛК не работает.","Severity":668,"Sound":"alarm.wav","Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <ct:handler name="Handler1" uuid="c0485ec3-3bfb-45eb-ba38-4300a716d763" source-code="RedudancyOK=_PLC_VIEW.iRedMode==3||_PLC_VIEW.iRedMode==5;">
@@ -8641,6 +8629,8 @@ else
             <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"Severity":1,"Type":2},{"AckStrategy":1,"IsEnabled":true,"Message":"Нет соединение с обоими ПЛК.","Severity":668,"Sound":"alarm.wav","Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
+        <ct:bind source="_PLC_VIEW.CPU1_MAIN" target="CPU1_MAIN" />
+        <ct:timer name="Timer" uuid="a72d23f5-2d1a-4b1c-84c3-ca5efd8039b6" />
       </ct:type>
     </ct:type>
     <type name="AnalogSens" xmlns="automation.control" uuid="472a2108-ef3b-486c-8894-777b87414be3">
@@ -8810,6 +8800,8 @@ else
         <parameter name="ValveMain" type="bool" direction="in-out" xmlns="automation.control" uuid="68c2aabd-9fb4-4c68-a944-064e543dd66b" />
         <parameter name="ValveTop" type="bool" direction="in-out" xmlns="automation.control" uuid="6f60ed11-3ca0-4f5a-84db-4a5e925717aa" />
         <parameter name="ValveBot" type="bool" direction="in-out" xmlns="automation.control" uuid="47538274-3dac-4fc7-8e4a-bd2dd5c40a4c" />
+        <parameter name="AutoIgn" type="bool" direction="in-out" xmlns="automation.control" uuid="02cb7311-4878-4156-ac5e-c7a2ccde6c64" />
+        <parameter name="bMute" type="bool" direction="in-out" xmlns="automation.control" uuid="74b62f0a-870b-4dcf-a858-0b34a9bf9942" />
       </type>
       <type name="IOS_View" xmlns="automation.control" aspect="Aspects.IOS_Aspect" original="Boiler" uuid="75814766-5317-4871-870a-b481b5f2198d">
         <ref name="_PLC_View" type="PLC_View" xmlns="automation.reference" uuid="c7683099-3278-4c6f-80ff-7887581b9e66" />
@@ -8961,6 +8953,14 @@ else
         <bind source="_PLC_View.ValveBot" target="OutValveBot" />
         <parameter name="InBoilerInWork" uuid="27671f9e-ac27-49b8-aa63-b414d776d3bb" direction="in" type="bool" />
         <bind source="InBoilerInWork" target="_PLC_View.BoilerInWork" />
+        <parameter name="InAutoIgn" uuid="84f3657e-f540-4c85-8050-90aa4ad51581" direction="in" type="bool" />
+        <bind source="InAutoIgn" target="_PLC_View.AutoIgn" />
+        <parameter name="OutAutoIgn" uuid="8467870a-1bab-4f32-89d6-5fd8cbe70a6c" direction="out" type="bool" />
+        <bind source="_PLC_View.AutoIgn" target="OutAutoIgn" />
+        <parameter name="InbMute" uuid="dbad29f4-a8e9-4d9f-ac51-d6088c290784" direction="in" type="bool" />
+        <bind source="InbMute" target="_PLC_View.bMute" />
+        <parameter name="OutbMute" uuid="73aba686-b065-4c55-b48e-5e610c183b5a" direction="out" type="bool" />
+        <bind source="_PLC_View.bMute" target="OutbMute" />
       </type>
     </type>
     <type name="DelAlarmsBoiler" xmlns="automation.control" uuid="7bf32a59-7c25-4527-868a-f68a8101e433">

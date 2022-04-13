@@ -2142,7 +2142,7 @@
 				<designed target="Rotation" value="90" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
-				<init target="initPath" ver="4" value="ValveBlowBot"/>
+				<init target="initPath" ver="4" value="ValveBlowTop"/>
 			</object>
 			<object access-modifier="private" name="ValveBlowBot" display-name="ValveBlowBot" uuid="44b79b86-1650-4b56-a78c-7c4f68a54e4b" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="112" ver="4"/>
@@ -2150,7 +2150,7 @@
 				<designed target="Rotation" value="90" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
-				<init target="initPath" ver="4" value="ValveBlowTop"/>
+				<init target="initPath" ver="4" value="ValveBlowBot"/>
 			</object>
 			<object access-modifier="private" name="PGasAfterFlap" display-name="PGasAfterFlap" uuid="309544b9-9281-47e0-86e8-42629047663e" base-type="rectangleWithFooter" base-type-id="f0efb2b9-b2c2-4ae5-9828-4b87079c3c46" ver="4">
 				<designed target="X" value="1058.3" ver="4"/>
@@ -4787,7 +4787,7 @@ OpenSteps.Invoke();]]>
 	</object>
 	<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="Opened">
 		<body kind="om">
-			<![CDATA[unit.Global.ActiveMainFrame = "Общая мнемосхема. Газ";]]>
+			<![CDATA[unit.Global.ActiveMainFrame = "Общая мнемосхема";]]>
 		</body>
 	</do-on>
 	<object access-modifier="private" name="PGasFix" display-name="PGasFix" uuid="0ca2f725-efaa-4585-899c-15e537b34981" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">

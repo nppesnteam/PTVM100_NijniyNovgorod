@@ -629,7 +629,7 @@ while(i<16)
 		<do-trace access-modifier="private" target="BrushColor" ver="4">
 			<conditional-expr>
 				<condition>
-					<![CDATA[OutSelOil==false]]>
+					<![CDATA[OutAutoIgn==true]]>
 				</condition>
 				<expr>
 					<![CDATA[0xff00ff00]]>
@@ -637,7 +637,7 @@ while(i<16)
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[OutSelOil==true]]>
+					<![CDATA[OutAutoIgn==false]]>
 				</condition>
 				<expr>
 					<![CDATA[0xfff0f0f0]]>
@@ -646,7 +646,7 @@ while(i<16)
 		</do-trace>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
 			<body kind="om">
-				<![CDATA[InSelOil=false;]]>
+				<![CDATA[InAutoIgn=true;]]>
 			</body>
 		</do-on>
 		<do-trace access-modifier="private" target="Enabled" ver="4">
@@ -699,24 +699,24 @@ while(i<16)
 		<do-trace access-modifier="private" target="BrushColor" ver="4">
 			<conditional-expr>
 				<condition>
-					<![CDATA[OutSelOil==false]]>
+					<![CDATA[OutAutoIgn==false]]>
+				</condition>
+				<expr>
+					<![CDATA[0xff00ff00]]>
+				</expr>
+			</conditional-expr>
+			<conditional-expr>
+				<condition>
+					<![CDATA[OutAutoIgn==true]]>
 				</condition>
 				<expr>
 					<![CDATA[0xfff0f0f0]]>
 				</expr>
 			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[OutSelOil==true]]>
-				</condition>
-				<expr>
-					<![CDATA[0xffffaa00]]>
-				</expr>
-			</conditional-expr>
 		</do-trace>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
 			<body kind="om">
-				<![CDATA[InSelOil=true;]]>
+				<![CDATA[InAutoIgn=false;]]>
 			</body>
 		</do-on>
 		<do-trace access-modifier="private" target="Enabled" ver="4">
