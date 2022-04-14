@@ -85,7 +85,7 @@
 			<designed target="Period" value="1000" ver="4"/>
 			<designed target="Active" value="false" ver="4"/>
 			<designed target="PenColor" value="0xffff0000" ver="4"/>
-			<designed target="BrushColor" value="4278190080" ver="4"/>
+			<designed target="BrushColor" value="0xff000000" ver="4"/>
 			<designed target="FontColor" value="4278190080" ver="4"/>
 			<do-trace access-modifier="private" target="Active" ver="4">
 				<body>
@@ -93,6 +93,24 @@
 				</body>
 			</do-trace>
 			<do-trace access-modifier="private" target="PenColor" ver="4">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Protect]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffff0000]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Signal]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffb700]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="BrushColor" ver="4">
 				<conditional-expr>
 					<condition>
 						<![CDATA[Protect]]>
@@ -234,36 +252,6 @@
 				</expr>
 			</conditional-expr>
 		</do-trace>
-		<object access-modifier="private" name="Blinker_1" display-name="Blinker_1" uuid="98b55fca-756c-46da-bf32-baeca6bda23b" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006" ver="4">
-			<designed target="Period" value="1000" ver="4"/>
-			<designed target="Active" value="false" ver="4"/>
-			<designed target="PenColor" value="0xffff0000" ver="4"/>
-			<designed target="BrushColor" value="4278190080" ver="4"/>
-			<designed target="FontColor" value="4278190080" ver="4"/>
-			<do-trace access-modifier="private" target="Active" ver="4">
-				<body>
-					<![CDATA[Protect||Signal]]>
-				</body>
-			</do-trace>
-			<do-trace access-modifier="private" target="PenColor" ver="4">
-				<conditional-expr>
-					<condition>
-						<![CDATA[Protect]]>
-					</condition>
-					<expr>
-						<![CDATA[0xffff0000]]>
-					</expr>
-				</conditional-expr>
-				<conditional-expr>
-					<condition>
-						<![CDATA[Signal]]>
-					</condition>
-					<expr>
-						<![CDATA[0xffffb700]]>
-					</expr>
-				</conditional-expr>
-			</do-trace>
-		</object>
 	</object>
 	<object access-modifier="private" name="VALUETxtColor" display-name="VALUETxtColor" uuid="069540b3-2810-4e91-be61-3bf351937b82" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="4"/>
 	<param access-modifier="private" name="initOPCSource" display-name="initOPCSource" uuid="22b5fe73-ae3f-451c-a960-79b04885894b" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" base-const="true" base-ref="true" ver="4"/>

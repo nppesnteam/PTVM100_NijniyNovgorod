@@ -6757,7 +6757,7 @@
     <node-path>ROOT.Boiler.PowerBoiler</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stFlow.fPowerBoiler</nodeId>
+    <nodeId>Application.GVL.stFlow.fEGaz</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Boiler.ArmStartAllow</node-path>
@@ -6914,6 +6914,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.ST_Virtual_Key.bMute</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Boiler.KPD</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stFlow.fEfficiency</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.AlarmsValue.DelAlarmsBoiler.PGasCollL</node-path>

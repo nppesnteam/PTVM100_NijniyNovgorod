@@ -610,7 +610,7 @@ while(i<16)
 		<designed target="BrushStyle" value="1" ver="4"/>
 		<designed target="OnClickBrushColor" value="4288716960" ver="4"/>
 		<designed target="OnClickBrushStyle" value="1" ver="4"/>
-		<designed target="OnHoverBrushColor" value="0xffffff7f" ver="4"/>
+		<designed target="OnHoverBrushColor" value="0xffaeffae" ver="4"/>
 		<designed target="OnHoverBrushStyle" value="1" ver="4"/>
 		<designed target="DisabledBrushColor" value="4288716960" ver="4"/>
 		<designed target="DisabledBrushStyle" value="1" ver="4"/>
@@ -649,11 +649,6 @@ while(i<16)
 				<![CDATA[InAutoIgn=true;]]>
 			</body>
 		</do-on>
-		<do-trace access-modifier="private" target="Enabled" ver="4">
-			<body>
-				<![CDATA[!BoilerWork]]>
-			</body>
-		</do-trace>
 		<designed target="Checked" value="false" ver="4"/>
 	</object>
 	<object access-modifier="private" name="btnMazut_1" display-name="btnMazut_1" uuid="e1f01742-f2df-4f8f-923c-fc90db55e074" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
@@ -676,11 +671,11 @@ while(i<16)
 		<designed target="OnClickFontColor" value="4278190080" ver="4"/>
 		<designed target="OnHoverFontColor" value="4278190080" ver="4"/>
 		<designed target="DisabledFontColor" value="4278190080" ver="4"/>
-		<designed target="BrushColor" value="4293980400" ver="4"/>
+		<designed target="BrushColor" value="0xfff0f0f0" ver="4"/>
 		<designed target="BrushStyle" value="1" ver="4"/>
-		<designed target="OnClickBrushColor" value="4288716960" ver="4"/>
+		<designed target="OnClickBrushColor" value="0xffa0a0a0" ver="4"/>
 		<designed target="OnClickBrushStyle" value="1" ver="4"/>
-		<designed target="OnHoverBrushColor" value="0xffffaa7f" ver="4"/>
+		<designed target="OnHoverBrushColor" value="0xffaeffae" ver="4"/>
 		<designed target="OnHoverBrushStyle" value="1" ver="4"/>
 		<designed target="DisabledBrushColor" value="4288716960" ver="4"/>
 		<designed target="DisabledBrushStyle" value="1" ver="4"/>
@@ -719,11 +714,6 @@ while(i<16)
 				<![CDATA[InAutoIgn=false;]]>
 			</body>
 		</do-on>
-		<do-trace access-modifier="private" target="Enabled" ver="4">
-			<body>
-				<![CDATA[!BoilerWork]]>
-			</body>
-		</do-trace>
 		<designed target="Checked" value="false" ver="4"/>
 	</object>
 </type>

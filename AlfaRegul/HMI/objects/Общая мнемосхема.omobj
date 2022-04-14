@@ -4514,7 +4514,19 @@ OpenSteps.Invoke();]]>
 					</do-trace>
 				</object>
 			</object>
-			<object access-modifier="private" name="Blinker_1" display-name="Blinker_1" uuid="a9d5fa5d-bd2a-4676-b737-e4b6bb3ffa43" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006" ver="4">
+			<object access-modifier="private" name="BlinkerSignal" display-name="BlinkerSignal" uuid="a9d5fa5d-bd2a-4676-b737-e4b6bb3ffa43" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006" ver="4">
+				<designed target="Period" value="1000" ver="4"/>
+				<designed target="Active" value="false" ver="4"/>
+				<designed target="PenColor" value="0xffffaa00" ver="4"/>
+				<designed target="BrushColor" value="0xff737373" ver="4"/>
+				<designed target="FontColor" value="0xffffaa00" ver="4"/>
+				<do-trace access-modifier="private" target="Active" ver="4">
+					<body>
+						<![CDATA[PGasCollLow||PGasCollHigh]]>
+					</body>
+				</do-trace>
+			</object>
+			<object access-modifier="private" name="BlinkerProt" display-name="BlinkerProt" uuid="d9dbf1d5-ca95-4553-ac76-e9881d74fa4e" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006" ver="4">
 				<designed target="Period" value="1000" ver="4"/>
 				<designed target="Active" value="false" ver="4"/>
 				<designed target="PenColor" value="0xffff0000" ver="4"/>
@@ -4522,7 +4534,7 @@ OpenSteps.Invoke();]]>
 				<designed target="FontColor" value="0xffff0000" ver="4"/>
 				<do-trace access-modifier="private" target="Active" ver="4">
 					<body>
-						<![CDATA[PGasCollLow||PGasCollHigh]]>
+						<![CDATA[PGasCollLowProt||PGasCollHighProt]]>
 					</body>
 				</do-trace>
 			</object>
@@ -4575,7 +4587,19 @@ OpenSteps.Invoke();]]>
 					</do-trace>
 				</object>
 			</object>
-			<object access-modifier="private" name="Blinker_1" display-name="Blinker_1" uuid="ce15b10a-aaa2-4dee-b696-adfcec7f5463" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006" ver="4">
+			<object access-modifier="private" name="BlinkerSignal" display-name="BlinkerSignal" uuid="ce15b10a-aaa2-4dee-b696-adfcec7f5463" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006" ver="4">
+				<designed target="Period" value="1000" ver="4"/>
+				<designed target="Active" value="false" ver="4"/>
+				<designed target="PenColor" value="0xffffaa00" ver="4"/>
+				<designed target="BrushColor" value="0xff737373" ver="4"/>
+				<designed target="FontColor" value="0xffffaa00" ver="4"/>
+				<do-trace access-modifier="private" target="Active" ver="4">
+					<body>
+						<![CDATA[FWaterLow]]>
+					</body>
+				</do-trace>
+			</object>
+			<object access-modifier="private" name="BlinkerProt" display-name="BlinkerProt" uuid="0c77f579-6dd5-4fe0-89f3-d25f22047f94" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006" ver="4">
 				<designed target="Period" value="1000" ver="4"/>
 				<designed target="Active" value="false" ver="4"/>
 				<designed target="PenColor" value="0xffff0000" ver="4"/>
@@ -4583,7 +4607,7 @@ OpenSteps.Invoke();]]>
 				<designed target="FontColor" value="0xffff0000" ver="4"/>
 				<do-trace access-modifier="private" target="Active" ver="4">
 					<body>
-						<![CDATA[FWaterLow]]>
+						<![CDATA[FWaterLowProt]]>
 					</body>
 				</do-trace>
 			</object>
@@ -4776,6 +4800,18 @@ OpenSteps.Invoke();]]>
 		<object access-modifier="private" name="VentET" display-name="VentET" uuid="fc6177d8-077d-44ea-b396-38892da839cc" base-type="OpcItemInt4" base-type-id="c8220066-9348-4b3e-a68e-d8ac76d47db1" ver="4">
 			<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
 			<init target="Path" ver="4" value="ROOT.Boiler.VentTime"/>
+		</object>
+		<object access-modifier="private" name="FWaterLowProt" display-name="FWaterLowProt" uuid="4c460d1e-f19c-4042-90e9-fffe2828b2b2" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+			<init target="Source" ver="4" ref="hereOPCSourceForAlarms"/>
+			<init target="Path" ver="4" value="Protect.AlarmQWatOutL"/>
+		</object>
+		<object access-modifier="private" name="PGasCollLowProt" display-name="PGasCollLowProt" uuid="16b1ae76-8369-4935-ac3d-b9edd72d6fc5" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+			<init target="Source" ver="4" ref="hereOPCSourceForAlarms"/>
+			<init target="Path" ver="4" value="Protect.AlarmPGasCollL"/>
+		</object>
+		<object access-modifier="private" name="PGasCollHighProt" display-name="PGasCollHighProt" uuid="05d3c21a-d2b3-45a5-bc43-4ef16a037b4e" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+			<init target="Source" ver="4" ref="hereOPCSourceForAlarms"/>
+			<init target="Path" ver="4" value="Protect.AlarmPGasCollH"/>
 		</object>
 	</object>
 	<object access-modifier="private" name="hereOPCSourceForAlarms" display-name="hereOPCSourceForAlarms" uuid="635a856d-4f87-405a-a24a-85323e9d887a" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
@@ -6172,7 +6208,7 @@ while (i<12)
 				<designed target="Visible" value="true" ver="4"/>
 				<designed target="Opacity" value="1" ver="4"/>
 				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Tooltip" value="Мощность на выходе, ГКал/ч" ver="4"/>
 				<designed target="Width" value="60" ver="4"/>
 				<designed target="Height" value="20" ver="4"/>
 				<designed target="Text" value="0,0" ver="4"/>
@@ -6209,9 +6245,9 @@ while (i<12)
 			<designed target="ZValue" value="0" ver="4"/>
 			<designed target="Rotation" value="0" ver="4"/>
 			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="false" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
 			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="false" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
 			<designed target="Tooltip" value="" ver="4"/>
 			<designed target="Width" value="29" ver="4"/>
 			<designed target="Height" value="16.5" ver="4"/>
@@ -6226,9 +6262,9 @@ while (i<12)
 			<designed target="ZValue" value="0" ver="4"/>
 			<designed target="Rotation" value="0" ver="4"/>
 			<designed target="Scale" value="1" ver="4"/>
-			<designed target="Visible" value="false" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
 			<designed target="Opacity" value="1" ver="4"/>
-			<designed target="Enabled" value="false" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
 			<designed target="Tooltip" value="" ver="4"/>
 			<designed target="Width" value="60" ver="4"/>
 			<designed target="Height" value="20" ver="4"/>
@@ -6262,7 +6298,7 @@ while (i<12)
 			</object>
 			<object access-modifier="private" name="KPDValue" display-name="KPDValue" uuid="21a38360-ff3c-4e70-b39d-6605f05bf180" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 				<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
-				<init target="Path" ver="4" value="ROOT.BOILER.KPD"/>
+				<init target="Path" ver="4" value="ROOT.Boiler.KPD"/>
 			</object>
 			<object access-modifier="private" name="OutputFormatter_1" display-name="OutputFormatter_1" uuid="e7ca2bd8-5c43-4628-9731-0229c054c23b" base-type="OutputFormatter" base-type-id="9095fd20-4489-4cca-bd27-49ff94391a32" ver="4">
 				<designed target="InValue" value="" ver="4"/>

@@ -8802,6 +8802,7 @@ else
         <parameter name="ValveBot" type="bool" direction="in-out" xmlns="automation.control" uuid="47538274-3dac-4fc7-8e4a-bd2dd5c40a4c" />
         <parameter name="AutoIgn" type="bool" direction="in-out" xmlns="automation.control" uuid="02cb7311-4878-4156-ac5e-c7a2ccde6c64" />
         <parameter name="bMute" type="bool" direction="in-out" xmlns="automation.control" uuid="74b62f0a-870b-4dcf-a858-0b34a9bf9942" />
+        <parameter name="KPD" direction="out" type="float32" xmlns="automation.control" uuid="07ba42fc-3fd2-4be1-a2e8-de89a2197f2d" />
       </type>
       <type name="IOS_View" xmlns="automation.control" aspect="Aspects.IOS_Aspect" original="Boiler" uuid="75814766-5317-4871-870a-b481b5f2198d">
         <ref name="_PLC_View" type="PLC_View" xmlns="automation.reference" uuid="c7683099-3278-4c6f-80ff-7887581b9e66" />
@@ -8961,6 +8962,8 @@ else
         <bind source="InbMute" target="_PLC_View.bMute" />
         <parameter name="OutbMute" uuid="73aba686-b065-4c55-b48e-5e610c183b5a" direction="out" type="bool" />
         <bind source="_PLC_View.bMute" target="OutbMute" />
+        <parameter name="KPD" uuid="14796461-7376-453e-add8-5d8c433fda10" direction="out" type="float32" />
+        <bind source="_PLC_View.KPD" target="KPD" />
       </type>
     </type>
     <type name="DelAlarmsBoiler" xmlns="automation.control" uuid="7bf32a59-7c25-4527-868a-f68a8101e433">

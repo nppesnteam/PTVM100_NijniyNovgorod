@@ -149,7 +149,6 @@
 	</object>
 	<object access-modifier="private" name="OutOutH" display-name="OutOutH" uuid="351d6bca-689e-41fe-847f-d372ed13d667" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="OutOutH"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
 			<body kind="om">
 				<![CDATA[if (me.Value == true)
@@ -158,10 +157,10 @@
 }]]>
 			</body>
 		</do-on>
+		<init target="Path" ver="4" value="OutOpen"/>
 	</object>
 	<object access-modifier="private" name="OutOutL" display-name="OutOutL" uuid="e290885b-a7be-435e-829c-fec3365e1159" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="OutOutL"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
 			<body kind="om">
 				<![CDATA[if (me.Value == true)
@@ -170,6 +169,7 @@
 }]]>
 			</body>
 		</do-on>
+		<init target="Path" ver="4" value="OutClose"/>
 	</object>
 	<object access-modifier="private" name="VALUE" display-name="VALUE" uuid="6fdfe306-d687-45bf-981a-26cb8423c95e" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
@@ -315,11 +315,11 @@ OpenModuleWindow.Invoke();]]>
 	</object>
 	<object access-modifier="private" name="InOutH" display-name="InOutH" uuid="f142264d-b229-4338-aca4-506fc3b1c998" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="InOutH"/>
+		<init target="Path" ver="4" value="InOpen"/>
 	</object>
 	<object access-modifier="private" name="InOutL" display-name="InOutL" uuid="6158b42a-1993-4a7e-96c7-16f80ae90f05" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="InOutL"/>
+		<init target="Path" ver="4" value="InClose"/>
 	</object>
 	<object access-modifier="private" name="OpenSettingsWindow" display-name="OpenSettingsWindow" uuid="71c65a52-d489-4a3a-af5e-bc04c641069f" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4" cardinal="1">
 		<designed target="Enabled" value="true" ver="4"/>
