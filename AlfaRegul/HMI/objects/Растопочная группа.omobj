@@ -13,7 +13,7 @@
 	<designed target="PenColor" value="4278190080" ver="4"/>
 	<designed target="PenStyle" value="0" ver="4"/>
 	<designed target="PenWidth" value="1" ver="4"/>
-	<designed target="BrushColor" value="0xff000000" ver="4"/>
+	<designed target="BrushColor" value="0xff4d4d4d" ver="4"/>
 	<designed target="BrushStyle" value="1" ver="4"/>
 	<designed target="WindowX" value="0" ver="4"/>
 	<designed target="WindowY" value="0" ver="4"/>
@@ -1785,20 +1785,22 @@ OpenBurnSteps.Invoke();]]>
 				</object>
 			</object>
 			<object access-modifier="private" name="GateGas1" display-name="GateGas1" uuid="c63b1c86-1fcf-4642-8fda-3c560b532eae" base-type="gate" base-type-id="412146cb-dc7b-472f-be3b-e66aa672ce43" ver="4">
-				<designed target="X" value="162" ver="4"/>
+				<designed target="X" value="162.909" ver="4"/>
 				<designed target="Y" value="80" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
 				<init target="initPath" ver="4" value="Gate1"/>
+				<designed target="Scale" value="1.5" ver="4"/>
 			</object>
 			<object access-modifier="private" name="GateGas2" display-name="GateGas2" uuid="9ed77b01-106b-4ea0-8069-fd39c07a531e" base-type="gate" base-type-id="412146cb-dc7b-472f-be3b-e66aa672ce43" ver="4">
-				<designed target="X" value="162" ver="4"/>
+				<designed target="X" value="162.909" ver="4"/>
 				<designed target="Y" value="130" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
 				<init target="initPath" ver="4" value="Gate2"/>
+				<designed target="Scale" value="1.5" ver="4"/>
 			</object>
 			<object access-modifier="private" name="FlapGas" display-name="FlapGas" uuid="631ded17-8701-4ec7-b317-f51d85b5c157" base-type="FlapWithSettings" base-type-id="4cc80454-f0cf-4879-8e38-2c16930c7fae" ver="4">
 				<designed target="X" value="162" ver="4"/>
@@ -1809,12 +1811,13 @@ OpenBurnSteps.Invoke();]]>
 				<init target="initPath" ver="4" value="Flap"/>
 			</object>
 			<object access-modifier="private" name="ValveGas" display-name="ValveGas" uuid="c9cd5b63-f0df-42f5-9261-de54f82941be" base-type="Valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
-				<designed target="X" value="162" ver="4"/>
+				<designed target="X" value="161.091" ver="4"/>
 				<designed target="Y" value="300" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
 				<init target="initPath" ver="4" value="ValveAfterFlap"/>
+				<designed target="Scale" value="1.5" ver="4"/>
 			</object>
 			<object access-modifier="private" name="ValveBlowTopBot" display-name="ValveBlowTopBot" uuid="cf80ba0b-7fa9-4cfa-88d3-4c009b2ed30a" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="162" ver="4"/>
@@ -1838,7 +1841,7 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="Y" value="170" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xffffff00"/>
-				<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+				<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="VALUEBrushType" ver="4" value="1"/>
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
@@ -1851,7 +1854,7 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="Y" value="190" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xffffff00"/>
-				<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+				<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="VALUEBrushType" ver="4" value="1"/>
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
@@ -1864,7 +1867,7 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="Y" value="210" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xffffff00"/>
-				<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+				<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="VALUEBrushType" ver="4" value="1"/>
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
@@ -2145,12 +2148,13 @@ OpenBurnSteps.Invoke();]]>
 				<init target="Path" ver="4" value="ROOT.Oil"/>
 			</object>
 			<object access-modifier="private" name="GateOil" display-name="GateOil" uuid="69295223-e4a6-4021-892c-7ded88cafcfa" base-type="gate" base-type-id="412146cb-dc7b-472f-be3b-e66aa672ce43" ver="4">
-				<designed target="X" value="132" ver="4"/>
+				<designed target="X" value="132.909" ver="4"/>
 				<designed target="Y" value="70" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffc65a02"/>
 				<init target="initPath" ver="4" value="Gate"/>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<designed target="Scale" value="1.5" ver="4"/>
 			</object>
 			<object access-modifier="private" name="ValveOil" display-name="ValveOil" uuid="c0cd81f4-300c-40dc-a36a-ee678286f08f" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="132" ver="4"/>
@@ -2173,7 +2177,7 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="Y" value="100" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xffc65a02"/>
-				<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+				<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="VALUEBrushType" ver="4" value="1"/>
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
@@ -2186,7 +2190,7 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="Y" value="120" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xffc65a02"/>
-				<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+				<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="VALUEBrushType" ver="4" value="1"/>
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
@@ -2199,7 +2203,7 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="Y" value="140" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xffc65a02"/>
-				<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+				<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="VALUEBrushType" ver="4" value="1"/>
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
@@ -2212,7 +2216,7 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="Y" value="240" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xffc65a02"/>
-				<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+				<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="VALUEBrushType" ver="4" value="1"/>
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
@@ -2739,7 +2743,7 @@ OpenBurnSteps.Invoke();]]>
 			</object>
 			<object access-modifier="private" name="Valve1" display-name="Valve1" uuid="d4622ae2-8baf-4208-927d-c5dc6ea7ccef" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="3" ver="4"/>
-				<designed target="Y" value="530.3" ver="4"/>
+				<designed target="Y" value="529.3" ver="4"/>
 				<designed target="Rotation" value="90" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initPath" ver="4" value="Valve1"/>
@@ -2750,15 +2754,16 @@ OpenBurnSteps.Invoke();]]>
 							<![CDATA[here.Group%2==0]]>
 						</condition>
 						<expr>
-							<![CDATA[380.3]]>
+							<![CDATA[379.3]]>
 						</expr>
 					</conditional-expr>
 					<default-expr>
 						<expr>
-							<![CDATA[530.3]]>
+							<![CDATA[529.3]]>
 						</expr>
 					</default-expr>
 				</do-trace>
+				<designed target="Scale" value="1.5" ver="4"/>
 			</object>
 			<object access-modifier="private" name="ValveDensity" display-name="ValveDensity" uuid="6a9586d6-be97-4ca0-ad96-64677c7de946" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="3" ver="4"/>
@@ -2781,7 +2786,7 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="Y" value="502" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xffffff00"/>
-				<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+				<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="VALUEBrushType" ver="4" value="1"/>
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>

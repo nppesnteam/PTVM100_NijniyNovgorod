@@ -218,26 +218,30 @@
 		<designed target="Y" value="-40" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<init target="EUTextColor" ver="4" value="0xffffff00"/>
-		<init target="VALUEBackgroundColor" ver="4" value="0xff787878"/>
+		<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 		<init target="VALUEBrushType" ver="4" value="1"/>
 		<init target="PenType" ver="4" value="1"/>
 		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
 		<init target="initPath" ver="4" value="PGas"/>
 		<init target="initName" ver="4" value="PGas"/>
 		<init target="InBurner" ver="4" value="true"/>
+		<init target="EUBrushType" ver="4" value="1"/>
+		<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 	</object>
 	<object access-modifier="private" name="PO2" display-name="PO2" uuid="99235060-6cb9-49bb-b6af-791bee087a83" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 		<designed target="X" value="296" ver="4"/>
 		<designed target="Y" value="50" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<init target="EUTextColor" ver="4" value="0xff00aaff"/>
-		<init target="VALUEBackgroundColor" ver="4" value="0xff787878"/>
+		<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 		<init target="VALUEBrushType" ver="4" value="1"/>
 		<init target="PenType" ver="4" value="1"/>
 		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
 		<init target="initPath" ver="4" value="PO2"/>
 		<init target="initName" ver="4" value="PO2"/>
 		<init target="InBurner" ver="4" value="true"/>
+		<init target="EUBrushType" ver="4" value="1"/>
+		<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 	</object>
 	<param access-modifier="private" name="initOPCSource" display-name="initOPCSource" uuid="1817609d-e24c-4fb5-909e-54a155e03c44" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" base-const="true" base-ref="true" ver="4"/>
 	<object access-modifier="private" name="hereOPCSource" display-name="hereOPCSource" uuid="602c83f5-4f4c-4d39-aaf4-879a00a40235" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">

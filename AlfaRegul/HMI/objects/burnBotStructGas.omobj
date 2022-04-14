@@ -180,6 +180,19 @@
 		</object>
 		<object access-modifier="private" name="HasGas" display-name="HasGas" uuid="c8154a0b-4f55-4c3d-9cf1-ed9f898a2476" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
 	</object>
+	<object access-modifier="private" name="FlapOil" display-name="FlapOil" uuid="8ea3cc90-d234-47fe-8edc-32a6258b69d8" base-type="Flap+Mode" base-type-id="b78f6792-0d3a-4088-980d-276c0d3138ee" ver="3">
+		<designed target="X" value="-43" ver="3"/>
+		<designed target="Y" value="140" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<init target="Color" ver="3" value="0xffc65a02"/>
+		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
+		<init target="initPath" ver="4" value="FlapOil"/>
+		<do-trace access-modifier="private" target="Tooltip" ver="4">
+			<body kind="om">
+				<![CDATA[NAME+" "+BurnNumber]]>
+			</body>
+		</do-trace>
+	</object>
 	<object access-modifier="private" name="ПЗК-2" display-name="ПЗК-2" uuid="01e40a70-ec1a-41e6-85f9-e4e097e4abac" base-type="valveEM" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="3">
 		<designed target="X" value="-2" ver="3"/>
 		<designed target="Y" value="140" ver="3"/>
@@ -229,7 +242,7 @@
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="1.1" ver="4"/>
 		<init target="EUTextColor" ver="4" value="0xff00aaff"/>
-		<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+		<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 		<init target="VALUEBrushType" ver="4" value="1"/>
 		<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 		<init target="EUBrushType" ver="4" value="1"/>
@@ -255,7 +268,7 @@
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="1.1" ver="4"/>
 		<init target="EUTextColor" ver="4" value="0xffffff00"/>
-		<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+		<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 		<init target="VALUEBrushType" ver="4" value="1"/>
 		<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 		<init target="EUBrushType" ver="4" value="1"/>
@@ -354,19 +367,6 @@
 	<object access-modifier="private" name="BurnerHasGas" display-name="BurnerHasGas" uuid="7bb554bb-2b04-4022-8642-89ad7c826a6f" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
 	<object access-modifier="private" name="Group" display-name="Group" uuid="d6abb5dd-b8fe-4d03-afe9-0d60835399f0" base-type="notifying_int1" base-type-id="cc2bf8ea-3898-4228-bc8f-71a7738f0c62" ver="4"/>
 	<object access-modifier="private" name="InitPath" display-name="InitPath" uuid="c0ff3727-1d19-4070-a7e8-a7b28b373b1d" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="4"/>
-	<object access-modifier="private" name="FlapOil" display-name="FlapOil" uuid="8ea3cc90-d234-47fe-8edc-32a6258b69d8" base-type="Flap+Mode" base-type-id="b78f6792-0d3a-4088-980d-276c0d3138ee" ver="3">
-		<designed target="X" value="-43" ver="3"/>
-		<designed target="Y" value="140" ver="3"/>
-		<designed target="Rotation" value="0" ver="3"/>
-		<init target="Color" ver="3" value="0xffc65a02"/>
-		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
-		<init target="initPath" ver="4" value="FlapOil"/>
-		<do-trace access-modifier="private" target="Tooltip" ver="4">
-			<body kind="om">
-				<![CDATA[NAME+" "+BurnNumber]]>
-			</body>
-		</do-trace>
-	</object>
 	<object access-modifier="private" name="BurnNumber" display-name="BurnNumber" uuid="a5fe2482-0737-4eb0-902b-9173586ecf07" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="4"/>
 	<do-trace access-modifier="private" target="BurnNumber" ver="4">
 		<body>

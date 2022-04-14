@@ -196,9 +196,9 @@
 		<designed target="DisabledPenWidth" value="0.5" ver="4"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MousePress">
 			<body kind="om">
-				<![CDATA[refData.OutH = false;
-refData.OutStop = false;
-refData.OutL = true;]]>
+				<![CDATA[refData.InOpen = false;
+refData.InStop = false;
+refData.InClose = true;]]>
 			</body>
 		</do-on>
 		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="MousePress">
@@ -208,11 +208,12 @@ refData.OutL = true;]]>
 		</do-on>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseRelease">
 			<body kind="om">
-				<![CDATA[refData.OutH = false;
-refData.OutStop = false;
-refData.OutL = false;]]>
+				<![CDATA[refData.InOpen = false;
+refData.InStop = false;
+refData.InClose = false;]]>
 			</body>
 		</do-on>
+		<designed target="Checked" value="false" ver="4"/>
 	</object>
 	<object access-modifier="private" name="btnStop" display-name="btnStop" uuid="3fa65662-67a8-4f6c-aad1-97002c5a7207" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
 		<designed target="X" value="89" ver="4"/>
@@ -256,9 +257,9 @@ refData.OutL = false;]]>
 		<designed target="DisabledPenWidth" value="0.5" ver="4"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MousePress">
 			<body kind="om">
-				<![CDATA[refData.OutH = false;
-refData.OutL = false;
-refData.OutStop = true;]]>
+				<![CDATA[refData.InOpen = false;
+refData.InClose = false;
+refData.InStop = true;]]>
 			</body>
 		</do-on>
 		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="MousePress">
@@ -268,11 +269,12 @@ refData.OutStop = true;]]>
 		</do-on>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseRelease">
 			<body kind="om">
-				<![CDATA[refData.OutH = false;
-refData.OutL = false;
-refData.OutStop = false;]]>
+				<![CDATA[refData.InOpen= false;
+refData.InClose = false;
+refData.InStop = false;]]>
 			</body>
 		</do-on>
+		<designed target="Checked" value="false" ver="4"/>
 	</object>
 	<object access-modifier="private" name="btnUp" display-name="btnUp" uuid="2736c792-5f9e-4fba-a866-0883de5d63d2" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
 		<designed target="X" value="168" ver="4"/>
@@ -316,9 +318,9 @@ refData.OutStop = false;]]>
 		<designed target="DisabledPenWidth" value="0.5" ver="4"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MousePress">
 			<body kind="om">
-				<![CDATA[refData.OutL = false;
-refData.OutStop = false;
-refData.OutH = true;]]>
+				<![CDATA[refData.InClose = false;
+refData.InStop = false;
+refData.InOpen = true;]]>
 			</body>
 		</do-on>
 		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="MousePress">
@@ -328,11 +330,12 @@ refData.OutH = true;]]>
 		</do-on>
 		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="4" event="MouseRelease">
 			<body kind="om">
-				<![CDATA[refData.OutL = false;
-refData.OutStop = false;
-refData.OutH = false;]]>
+				<![CDATA[refData.InClose = false;
+refData.InStop = false;
+refData.InOpen = false;]]>
 			</body>
 		</do-on>
+		<designed target="Checked" value="false" ver="4"/>
 	</object>
 	<object access-modifier="private" name="indicDn" display-name="indicDn" uuid="84dd1c57-26df-4764-a179-70652bb4a360" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
 		<designed target="X" value="22.5" ver="4"/>
@@ -355,7 +358,7 @@ refData.OutH = false;]]>
 		<do-trace access-modifier="private" target="BrushStyle" ver="4">
 			<conditional-expr>
 				<condition>
-					<![CDATA[refData.InL == true]]>
+					<![CDATA[refData.OutClose == true]]>
 				</condition>
 				<expr>
 					<![CDATA[1]]>
@@ -363,7 +366,7 @@ refData.OutH = false;]]>
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[refData.InL == false]]>
+					<![CDATA[refData.OutClose == false]]>
 				</condition>
 				<expr>
 					<![CDATA[0]]>
@@ -393,7 +396,7 @@ refData.OutH = false;]]>
 		<do-trace access-modifier="private" target="BrushStyle" ver="4">
 			<conditional-expr>
 				<condition>
-					<![CDATA[refData.InH == true]]>
+					<![CDATA[refData.OutOpen == true]]>
 				</condition>
 				<expr>
 					<![CDATA[1]]>
@@ -401,7 +404,7 @@ refData.OutH = false;]]>
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[refData.InH == false]]>
+					<![CDATA[refData.OutOpen == false]]>
 				</condition>
 				<expr>
 					<![CDATA[0]]>

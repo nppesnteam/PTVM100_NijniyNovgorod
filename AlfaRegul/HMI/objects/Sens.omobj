@@ -98,6 +98,11 @@
 				</conditional-expr>
 			</do-trace>
 		</object>
+		<do-trace access-modifier="private" target="PenColor" ver="4">
+			<body>
+				<![CDATA[EUTextColor]]>
+			</body>
+		</do-trace>
 	</object>
 	<object access-modifier="private" name="EUTextColor" display-name="EUTextColor" uuid="571cca90-ad7b-4886-bf5d-b14d16bbab79" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="3"/>
 	<object access-modifier="private" name="rectValueWrapper" display-name="rectValueWrapper" uuid="6203f823-cc6c-4933-b315-4e7a04cb4c9c" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="3">
@@ -132,7 +137,7 @@
 			<designed target="Height" value="13" ver="3"/>
 			<designed target="Text" value="0,0" ver="3"/>
 			<designed target="Font" value="Arial,9,-1,5,75,0,0,0,0,0,Narrow Bold" ver="3"/>
-			<designed target="FontColor" value="0xff00ff00" ver="3"/>
+			<designed target="FontColor" value="0xffffff00" ver="3"/>
 			<designed target="TextAlignment" value="132" ver="3"/>
 			<do-trace access-modifier="private" target="Text" ver="4">
 				<body>
@@ -154,32 +159,6 @@
 			<body>
 				<![CDATA[PenType]]>
 			</body>
-		</do-trace>
-		<do-trace access-modifier="private" target="PenColor" ver="4">
-			<conditional-expr>
-				<condition>
-					<![CDATA[VALUE.Quality == 192]]>
-				</condition>
-				<expr>
-					<![CDATA[0xffbfbfbf]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[VALUE.Quality == 64]]>
-				</condition>
-				<expr>
-					<![CDATA[0xffffaa00]]>
-				</expr>
-			</conditional-expr>
-			<conditional-expr>
-				<condition>
-					<![CDATA[VALUE.Quality == 4]]>
-				</condition>
-				<expr>
-					<![CDATA[0xffff0000]]>
-				</expr>
-			</conditional-expr>
 		</do-trace>
 		<object access-modifier="private" name="Blinker_1" display-name="Blinker_1" uuid="7e8b84de-c2c2-4b16-8f2f-a73019977620" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006" ver="4">
 			<designed target="Period" value="1000" ver="4"/>
@@ -211,6 +190,11 @@
 				</conditional-expr>
 			</do-trace>
 		</object>
+		<do-trace access-modifier="private" target="PenColor" ver="4">
+			<body>
+				<![CDATA[EUTextColor]]>
+			</body>
+		</do-trace>
 	</object>
 	<object access-modifier="private" name="VALUEBackgroundColor" display-name="VALUEBackgroundColor" uuid="a163be58-e6b5-4579-9762-f6612028c064" base-type="notifying_uint4" base-type-id="2606f4f1-fd02-40e5-b3c8-9c59e02296fb" ver="4"/>
 	<object access-modifier="private" name="VALUEBrushType" display-name="VALUEBrushType" uuid="d9dff18b-4e7a-4ba9-81a5-4cf7b95c55e1" base-type="notifying_uint2" base-type-id="ac10cc3c-8557-43b5-8da5-1144cd866e59" ver="4"/>

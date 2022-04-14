@@ -79,7 +79,7 @@
 		<do-trace access-modifier="private" target="BrushColor" ver="4">
 			<conditional-expr>
 				<condition>
-					<![CDATA[(OutH == true) && (OutL == false)]]>
+					<![CDATA[(InOpen == true) && (InClose == false)]]>
 				</condition>
 				<expr>
 					<![CDATA[0xff00ff00]]>
@@ -87,7 +87,7 @@
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[(OutH == false) && (OutL == true)]]>
+					<![CDATA[(InOpen == false) && (InClose == true)]]>
 				</condition>
 				<expr>
 					<![CDATA[0xffffff00]]>
@@ -95,7 +95,7 @@
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[(OutH == true) && (OutL == true)]]>
+					<![CDATA[(InOpen == true) && (InClose == true)]]>
 				</condition>
 				<expr>
 					<![CDATA[0xffff0000]]>
@@ -103,7 +103,7 @@
 			</conditional-expr>
 			<conditional-expr>
 				<condition>
-					<![CDATA[(OutH == false) && (OutL == false)]]>
+					<![CDATA[(InOpen == false) && (InClose == false)]]>
 				</condition>
 				<expr>
 					<![CDATA[0xff000000]]>
@@ -115,6 +115,7 @@
 				</expr>
 			</default-expr>
 		</do-trace>
+		<designed target="HoleSize" value="0" ver="4"/>
 	</object>
 	<designed target="X" value="0" ver="3"/>
 	<designed target="Y" value="0" ver="3"/>
@@ -148,13 +149,13 @@
 		<init target="Source" ver="4" ref="hereOPCSource"/>
 		<init target="Path" ver="4" value="Mid"/>
 	</object>
-	<object access-modifier="private" name="OutH" display-name="OutH" uuid="3f0382bf-3db7-4805-9981-c78b07d86569" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Path" ver="4" value="OutH"/>
+	<object access-modifier="private" name="OutOpen" display-name="OutOpen" uuid="3f0382bf-3db7-4805-9981-c78b07d86569" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="OutOpen"/>
 	</object>
-	<object access-modifier="private" name="OutL" display-name="OutL" uuid="4435644c-bcb0-45e4-a621-1bf5a70d7e15" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
-		<init target="Path" ver="4" value="OutL"/>
+	<object access-modifier="private" name="OutClose" display-name="OutClose" uuid="4435644c-bcb0-45e4-a621-1bf5a70d7e15" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
+		<init target="Path" ver="4" value="OutClose"/>
 	</object>
 	<do-trace access-modifier="private" target="FillTop" ver="4">
 		<body>
@@ -229,7 +230,7 @@
 			</object>
 			<do-trace access-modifier="private" target="Visible" ver="4">
 				<body>
-					<![CDATA[InH]]>
+					<![CDATA[OutOpen]]>
 				</body>
 			</do-trace>
 		</object>
@@ -268,7 +269,7 @@
 			</object>
 			<do-trace access-modifier="private" target="Visible" ver="4">
 				<body>
-					<![CDATA[InL]]>
+					<![CDATA[OutClose]]>
 				</body>
 			</do-trace>
 		</object>
@@ -322,17 +323,17 @@ OpenModuleWindow.Invoke();]]>
 		</do-on>
 	</object>
 	<object access-modifier="private" name="isOpenedModule" display-name="isOpenedModule" uuid="33cf63b9-44d7-4c0b-bec8-d8093905c7c6" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
-	<object access-modifier="private" name="InH" display-name="InH" uuid="5bafa208-54ae-4de6-8638-fea84f5c7de0" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+	<object access-modifier="private" name="InOpen" display-name="InOpen" uuid="5bafa208-54ae-4de6-8638-fea84f5c7de0" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="InH"/>
+		<init target="Path" ver="4" value="InOpen"/>
 	</object>
-	<object access-modifier="private" name="InL" display-name="InL" uuid="3c78cc2b-4815-4a9a-acba-f718c2b75d33" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+	<object access-modifier="private" name="InClose" display-name="InClose" uuid="3c78cc2b-4815-4a9a-acba-f718c2b75d33" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="InL"/>
+		<init target="Path" ver="4" value="InClose"/>
 	</object>
-	<object access-modifier="private" name="OutStop" display-name="OutStop" uuid="d09c3e25-1fed-4a15-9f53-ff4945922408" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+	<object access-modifier="private" name="InStop" display-name="InStop" uuid="d09c3e25-1fed-4a15-9f53-ff4945922408" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="hereOPCSource"/>
-		<init target="Path" ver="4" value="OutStop"/>
+		<init target="Path" ver="4" value="InStop"/>
 	</object>
 </type>
 

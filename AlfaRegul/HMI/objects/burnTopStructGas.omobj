@@ -193,19 +193,6 @@
 			</body>
 		</do-trace>
 	</object>
-	<object access-modifier="private" name="Valve2" display-name="Valve2" uuid="7802a225-8ead-45cf-91b6-27a61349d8e6" base-type="valveEM" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="3">
-		<designed target="X" value="-2" ver="3"/>
-		<designed target="Y" value="70" ver="3"/>
-		<designed target="Rotation" value="0" ver="3"/>
-		<init target="Color" ver="3" value="0xffffff00"/>
-		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
-		<init target="initPath" ver="4" value="ValveII"/>
-		<do-trace access-modifier="private" target="Tooltip" ver="4">
-			<body kind="om">
-				<![CDATA[NAME+" "+BurnNumber]]>
-			</body>
-		</do-trace>
-	</object>
 	<object access-modifier="private" name="FlapOil" display-name="FlapOil" uuid="f6ec5dc9-8a88-45bd-8dbf-7f04ab1cc866" base-type="Flap+Mode" base-type-id="b78f6792-0d3a-4088-980d-276c0d3138ee" ver="3">
 		<designed target="X" value="-43" ver="3"/>
 		<designed target="Y" value="70" ver="3"/>
@@ -213,6 +200,19 @@
 		<init target="Color" ver="3" value="0xffc65a02"/>
 		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
 		<init target="initPath" ver="4" value="FlapOil"/>
+		<do-trace access-modifier="private" target="Tooltip" ver="4">
+			<body kind="om">
+				<![CDATA[NAME+" "+BurnNumber]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="Valve2" display-name="Valve2" uuid="7802a225-8ead-45cf-91b6-27a61349d8e6" base-type="valveEM" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="3">
+		<designed target="X" value="-2" ver="3"/>
+		<designed target="Y" value="70" ver="3"/>
+		<designed target="Rotation" value="0" ver="3"/>
+		<init target="Color" ver="3" value="0xffffff00"/>
+		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
+		<init target="initPath" ver="4" value="ValveII"/>
 		<do-trace access-modifier="private" target="Tooltip" ver="4">
 			<body kind="om">
 				<![CDATA[NAME+" "+BurnNumber]]>
@@ -255,7 +255,7 @@
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="1.1" ver="4"/>
 		<init target="EUTextColor" ver="4" value="0xffffff00"/>
-		<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+		<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 		<init target="VALUEBrushType" ver="4" value="1"/>
 		<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 		<init target="EUBrushType" ver="4" value="1"/>
@@ -281,7 +281,7 @@
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="1.1" ver="4"/>
 		<init target="EUTextColor" ver="4" value="0xff00aaff"/>
-		<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+		<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 		<init target="VALUEBrushType" ver="4" value="1"/>
 		<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 		<init target="EUBrushType" ver="4" value="1"/>

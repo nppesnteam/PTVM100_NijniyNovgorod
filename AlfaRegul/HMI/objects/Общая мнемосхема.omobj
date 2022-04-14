@@ -223,7 +223,7 @@
 				<designed target="Y" value="493" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xff888888"/>
-				<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+				<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="VALUEBrushType" ver="4" value="1"/>
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
@@ -237,7 +237,7 @@
 				<designed target="Y" value="360" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xff888888"/>
-				<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+				<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="VALUEBrushType" ver="4" value="1"/>
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
@@ -250,7 +250,7 @@
 				<designed target="Y" value="340" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xff888888"/>
-				<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+				<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="VALUEBrushType" ver="4" value="1"/>
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
@@ -708,28 +708,31 @@
 				</object>
 			</object>
 			<object access-modifier="private" name="GateWaterIn" display-name="GateWaterIn" uuid="34be9ced-6fb7-41cd-b06c-fc4f576c882e" base-type="gate" base-type-id="412146cb-dc7b-472f-be3b-e66aa672ce43" ver="4">
-				<designed target="X" value="321" ver="4"/>
-				<designed target="Y" value="101" ver="4"/>
+				<designed target="X" value="322" ver="4"/>
+				<designed target="Y" value="99" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xff00aa00"/>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
 				<init target="initPath" ver="4" value="GateIn"/>
+				<designed target="Scale" value="1.5" ver="4"/>
 			</object>
 			<object access-modifier="private" name="GateWaterOut" display-name="GateWaterOut" uuid="f0947ba5-1d0b-4965-9035-42fd5bab8c51" base-type="gate" base-type-id="412146cb-dc7b-472f-be3b-e66aa672ce43" ver="4">
-				<designed target="X" value="611" ver="4"/>
-				<designed target="Y" value="101" ver="4"/>
+				<designed target="X" value="612" ver="4"/>
+				<designed target="Y" value="99" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xff00aa00"/>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
 				<init target="initPath" ver="4" value="GateOut"/>
+				<designed target="Scale" value="1.5" ver="4"/>
 			</object>
 			<object access-modifier="private" name="GateWaterBypass" display-name="GateWaterBypass" uuid="174c852d-089e-441a-b3c8-9200c59fa7d1" base-type="gate" base-type-id="412146cb-dc7b-472f-be3b-e66aa672ce43" ver="4">
 				<designed target="X" value="462" ver="4"/>
-				<designed target="Y" value="74.5" ver="4"/>
+				<designed target="Y" value="76" ver="4"/>
 				<designed target="Rotation" value="90" ver="4"/>
 				<init target="Color" ver="4" value="0xff00aa00"/>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
 				<init target="initPath" ver="4" value="GateBypass"/>
+				<designed target="Scale" value="1.5" ver="4"/>
 			</object>
 			<object access-modifier="private" name="ArrowWaterIn" display-name="ArrowWaterIn" uuid="aacd07a2-59af-4e1e-9a62-196a5726f923" base-type="arrow" base-type-id="bd45c7e6-c41b-44ca-a8f9-0542667feb49" ver="4">
 				<designed target="X" value="323" ver="4"/>
@@ -746,11 +749,11 @@
 				<designed target="Scale" value="1.2" ver="4"/>
 			</object>
 			<object access-modifier="private" name="PWaterIn" display-name="PWaterIn" uuid="e3d14cae-67a5-45f3-bab4-5e0c773df0c8" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
-				<designed target="X" value="240" ver="4"/>
+				<designed target="X" value="221" ver="4"/>
 				<designed target="Y" value="110" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xff00aa00"/>
-				<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+				<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="VALUEBrushType" ver="4" value="1"/>
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
@@ -759,11 +762,11 @@
 				<init target="initPath" ver="4" value="PIn"/>
 			</object>
 			<object access-modifier="private" name="TWaterIn" display-name="TWaterIn" uuid="0c24adc1-71d1-45cd-9451-6227eab21afe" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
-				<designed target="X" value="150" ver="4"/>
+				<designed target="X" value="131" ver="4"/>
 				<designed target="Y" value="110" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xff00aa00"/>
-				<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+				<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="VALUEBrushType" ver="4" value="1"/>
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
@@ -772,11 +775,11 @@
 				<init target="initPath" ver="4" value="TIn"/>
 			</object>
 			<object access-modifier="private" name="FWaterIn" display-name="FWaterIn" uuid="32b17bc7-6f58-441e-a59e-44c428534d03" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
-				<designed target="X" value="60" ver="4"/>
+				<designed target="X" value="41" ver="4"/>
 				<designed target="Y" value="110" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xff00aa00"/>
-				<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+				<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="VALUEBrushType" ver="4" value="1"/>
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
@@ -786,7 +789,7 @@
 				<init target="initName" ver="4" value="QWatOut"/>
 			</object>
 			<object access-modifier="private" name="PWaterOut" display-name="PWaterOut" uuid="7ce5cd5f-ca40-403b-bd05-70f0e411381e" base-type="rectangleWithFooter" base-type-id="f0efb2b9-b2c2-4ae5-9828-4b87079c3c46" ver="4">
-				<designed target="X" value="670" ver="4"/>
+				<designed target="X" value="687" ver="4"/>
 				<designed target="Y" value="105" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
@@ -796,7 +799,7 @@
 				<init target="initName" ver="4" value="PWatOut"/>
 			</object>
 			<object access-modifier="private" name="TWaterOut" display-name="TWaterOut" uuid="908a4632-d66d-48ec-8109-62cea0016b85" base-type="rectangleWithFooter" base-type-id="f0efb2b9-b2c2-4ae5-9828-4b87079c3c46" ver="4">
-				<designed target="X" value="770" ver="4"/>
+				<designed target="X" value="787" ver="4"/>
 				<designed target="Y" value="105" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
@@ -1013,7 +1016,7 @@
 				<designed target="Enabled" value="true" ver="4"/>
 				<designed target="Tooltip" value="" ver="4"/>
 				<designed target="Width" value="1221" ver="4"/>
-				<designed target="Height" value="709" ver="4"/>
+				<designed target="Height" value="698" ver="4"/>
 				<designed target="PenColor" value="0xffffaa00" ver="4"/>
 				<designed target="PenStyle" value="1" ver="4"/>
 				<designed target="PenWidth" value="1" ver="4"/>
@@ -1337,12 +1340,13 @@
 				<init target="initPath" ver="4" value="Valve"/>
 			</object>
 			<object access-modifier="private" name="GateOil" display-name="GateOil" uuid="d5d3cff0-2d62-4b3e-8af6-7e1c4ecca7dc" base-type="gate" base-type-id="412146cb-dc7b-472f-be3b-e66aa672ce43" ver="4">
-				<designed target="X" value="18" ver="4"/>
+				<designed target="X" value="19" ver="4"/>
 				<designed target="Y" value="640" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffc65a02"/>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
 				<init target="initPath" ver="4" value="Gate"/>
+				<designed target="Scale" value="1.5" ver="4"/>
 			</object>
 			<object access-modifier="private" name="ArrowOilIn" display-name="ArrowOilIn" uuid="fc3caf2b-39d1-433d-8f64-90418b8c32bc" base-type="arrow" base-type-id="bd45c7e6-c41b-44ca-a8f9-0542667feb49" ver="4">
 				<designed target="X" value="20" ver="4"/>
@@ -1374,7 +1378,7 @@
 				<designed target="Y" value="430" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xffc65a02"/>
-				<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+				<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="VALUEBrushType" ver="4" value="1"/>
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
@@ -1388,7 +1392,7 @@
 				<designed target="Y" value="560" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xffc65a02"/>
-				<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+				<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="VALUEBrushType" ver="4" value="1"/>
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
@@ -1401,7 +1405,7 @@
 				<designed target="Y" value="580" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xffc65a02"/>
-				<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+				<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="VALUEBrushType" ver="4" value="1"/>
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
@@ -1414,7 +1418,7 @@
 				<designed target="Y" value="600" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xffc65a02"/>
-				<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+				<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="VALUEBrushType" ver="4" value="1"/>
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
@@ -2105,20 +2109,22 @@
 				<init target="TubeOutHasFuel" ver="4" value="false"/>
 			</object>
 			<object access-modifier="private" name="GateGas1" display-name="GateGas1" uuid="11a26b65-ee96-46a3-8c56-4a984351905e" base-type="gate" base-type-id="412146cb-dc7b-472f-be3b-e66aa672ce43" ver="4">
-				<designed target="X" value="1130" ver="4"/>
-				<designed target="Y" value="640" ver="4"/>
+				<designed target="X" value="1131" ver="4"/>
+				<designed target="Y" value="647" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
 				<init target="initPath" ver="4" value="Gate1"/>
+				<designed target="Scale" value="1.5" ver="4"/>
 			</object>
 			<object access-modifier="private" name="GateGas2" display-name="GateGas2" uuid="192ece50-61a6-4813-9d8c-a80d5b927bc9" base-type="gate" base-type-id="412146cb-dc7b-472f-be3b-e66aa672ce43" ver="4">
-				<designed target="X" value="1130" ver="4"/>
-				<designed target="Y" value="590" ver="4"/>
+				<designed target="X" value="1131" ver="4"/>
+				<designed target="Y" value="597" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
 				<init target="initPath" ver="4" value="Gate2"/>
+				<designed target="Scale" value="1.5" ver="4"/>
 			</object>
 			<object access-modifier="private" name="FlapGas" display-name="FlapGas" uuid="b1dc5378-060b-4734-9a40-b9c7d64dd436" base-type="FlapWithSettings" base-type-id="4cc80454-f0cf-4879-8e38-2c16930c7fae" ver="4">
 				<designed target="X" value="1130" ver="4"/>
@@ -2129,12 +2135,13 @@
 				<init target="initPath" ver="4" value="Flap"/>
 			</object>
 			<object access-modifier="private" name="ValveGas" display-name="ValveGas" uuid="3ac07459-e1c8-42b7-9377-759811aa5a9d" base-type="Valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
-				<designed target="X" value="1130" ver="4"/>
-				<designed target="Y" value="420" ver="4"/>
+				<designed target="X" value="1129" ver="4"/>
+				<designed target="Y" value="424" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
 				<init target="initPath" ver="4" value="ValveAfterFlap"/>
+				<designed target="Scale" value="1.5" ver="4"/>
 			</object>
 			<object access-modifier="private" name="ValveBlowTop" display-name="ValveBlowTop" uuid="e1ea1fac-039d-4526-9247-f8288e765ace" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="112" ver="4"/>
@@ -2154,12 +2161,12 @@
 			</object>
 			<object access-modifier="private" name="PGasAfterFlap" display-name="PGasAfterFlap" uuid="309544b9-9281-47e0-86e8-42629047663e" base-type="rectangleWithFooter" base-type-id="f0efb2b9-b2c2-4ae5-9828-4b87079c3c46" ver="4">
 				<designed target="X" value="1058.3" ver="4"/>
-				<designed target="Y" value="450" ver="4"/>
+				<designed target="Y" value="456" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
 				<init target="initPath" ver="4" value="PAfterFlap"/>
-				<init target="EUColor" ver="4" value="0xff00aa00"/>
-				<init target="VALUETxtColor" ver="4" value="0xff00ff00"/>
+				<init target="EUColor" ver="4" value="0xffffff00"/>
+				<init target="VALUETxtColor" ver="4" value="0xffffff00"/>
 				<init target="initName" ver="4" value="PGasColl"/>
 			</object>
 			<object access-modifier="private" name="TGasAfterGate" display-name="TGasAfterGate" uuid="3a11bb3c-7b40-4803-b3fa-99acd17b1725" base-type="Sens" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
@@ -2167,7 +2174,7 @@
 				<designed target="Y" value="518" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xffffff00"/>
-				<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+				<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="VALUEBrushType" ver="4" value="1"/>
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
@@ -2180,7 +2187,7 @@
 				<designed target="Y" value="538" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xffffff00"/>
-				<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+				<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="VALUEBrushType" ver="4" value="1"/>
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
@@ -2193,7 +2200,7 @@
 				<designed target="Y" value="558" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xffffff00"/>
-				<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+				<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="VALUEBrushType" ver="4" value="1"/>
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
@@ -2569,7 +2576,7 @@
 				</do-trace>
 			</object>
 			<object access-modifier="private" name="Valve1" display-name="Valve1" uuid="ea1912a3-17f3-4dac-bdf0-d802eaac5b5f" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
-				<designed target="X" value="248" ver="4"/>
+				<designed target="X" value="247" ver="4"/>
 				<designed target="Y" value="264" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
@@ -2580,6 +2587,7 @@
 						<![CDATA[NAME+" "+String.ToString(Group)]]>
 					</body>
 				</do-trace>
+				<designed target="Scale" value="1.5" ver="4"/>
 			</object>
 			<object access-modifier="private" name="ValveDensity" display-name="ValveDensity" uuid="13f4696d-512e-4227-8d1b-c7b6d0917b42" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="548" ver="4"/>
@@ -2608,11 +2616,11 @@
 				</do-trace>
 			</object>
 			<object access-modifier="private" name="PBetween" display-name="PBetween" uuid="2c0bef40-2e48-43c6-8c71-04f8863c90f1" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
-				<designed target="X" value="280" ver="4"/>
+				<designed target="X" value="288" ver="4"/>
 				<designed target="Y" value="256" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xffffff00"/>
-				<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+				<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="VALUEBrushType" ver="4" value="1"/>
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
@@ -3008,7 +3016,7 @@
 				</do-trace>
 			</object>
 			<object access-modifier="private" name="Valve1" display-name="Valve1" uuid="cd1c82c5-16bb-46e5-8085-f5481c1e46a3" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
-				<designed target="X" value="398" ver="4"/>
+				<designed target="X" value="397" ver="4"/>
 				<designed target="Y" value="264" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
@@ -3019,6 +3027,7 @@
 						<![CDATA[NAME+" "+String.ToString(Group)]]>
 					</body>
 				</do-trace>
+				<designed target="Scale" value="1.5" ver="4"/>
 			</object>
 			<object access-modifier="private" name="ValveDensity" display-name="ValveDensity" uuid="80541c08-b17e-4a28-b721-8bf4934163a2" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="548" ver="4"/>
@@ -3047,11 +3056,11 @@
 				</do-trace>
 			</object>
 			<object access-modifier="private" name="PBetween" display-name="PBetween" uuid="cb2a827f-c42b-459d-ba25-9e1ccd2054ab" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
-				<designed target="X" value="430" ver="4"/>
+				<designed target="X" value="438" ver="4"/>
 				<designed target="Y" value="256" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xffffff00"/>
-				<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+				<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="VALUEBrushType" ver="4" value="1"/>
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
@@ -3166,7 +3175,7 @@
 		</object>
 		<object access-modifier="private" name="Group3" display-name="Group3" uuid="e76d8d6c-a9f1-46f3-b5fa-4486be6990f7" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="3">
 			<designed target="X" value="728" ver="3"/>
-			<designed target="Y" value="193" ver="3"/>
+			<designed target="Y" value="187" ver="3"/>
 			<designed target="ZValue" value="0" ver="3"/>
 			<designed target="Rotation" value="0" ver="3"/>
 			<designed target="Scale" value="1" ver="3"/>
@@ -3188,7 +3197,7 @@
 			<init target="Group" ver="4" value="3"/>
 			<object access-modifier="private" name="TubeGas" display-name="TubeGas" uuid="47c3175e-4e5a-49b7-a952-7dad884b3f9a" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
 				<designed target="X" value="106" ver="4"/>
-				<designed target="Y" value="70" ver="4"/>
+				<designed target="Y" value="76" ver="4"/>
 				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<designed target="Scale" value="1" ver="4"/>
@@ -3330,7 +3339,7 @@
 			</object>
 			<object access-modifier="private" name="TubeSecurity" display-name="TubeSecurity" uuid="1e5f8c4c-a120-447e-8c54-7219766e626e" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
 				<designed target="X" value="596" ver="4"/>
-				<designed target="Y" value="40" ver="4"/>
+				<designed target="Y" value="46" ver="4"/>
 				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<designed target="Scale" value="1" ver="4"/>
@@ -3376,7 +3385,7 @@
 			</object>
 			<object access-modifier="private" name="burn1" display-name="burn1" uuid="1e3dbd14-d9aa-4c92-824b-ad9806d967d8" base-type="burnTopStruct" base-type-id="db217da3-5b19-4c08-9357-c27589892127" ver="4">
 				<designed target="X" value="550" ver="4"/>
-				<designed target="Y" value="0" ver="4"/>
+				<designed target="Y" value="6" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="InitOpcSource" ver="4" ref="OPCSource"/>
 				<do-trace access-modifier="private" target="Group" ver="4">
@@ -3388,7 +3397,7 @@
 			</object>
 			<object access-modifier="private" name="burn2" display-name="burn2" uuid="238f9d22-84d0-46e2-88fe-b52485f20b87" base-type="burnTopStruct" base-type-id="db217da3-5b19-4c08-9357-c27589892127" ver="4">
 				<designed target="X" value="400" ver="4"/>
-				<designed target="Y" value="0" ver="4"/>
+				<designed target="Y" value="6" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="InitOpcSource" ver="4" ref="OPCSource"/>
 				<do-trace access-modifier="private" target="Group" ver="4">
@@ -3400,7 +3409,7 @@
 			</object>
 			<object access-modifier="private" name="burn3" display-name="burn3" uuid="1fe49933-685a-47e4-9f91-0921148c40e9" base-type="ignTopStruct" base-type-id="f4c86c1f-2d49-4b68-b807-72500ee8461a" ver="4">
 				<designed target="X" value="250" ver="4"/>
-				<designed target="Y" value="0" ver="4"/>
+				<designed target="Y" value="6" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="InitOpcSource" ver="4" ref="OPCSource"/>
 				<do-trace access-modifier="private" target="IgnHasGas" ver="4">
@@ -3417,7 +3426,7 @@
 			</object>
 			<object access-modifier="private" name="burn4" display-name="burn4" uuid="6814e974-4642-4407-b81f-68724128f055" base-type="burnTopStruct" base-type-id="db217da3-5b19-4c08-9357-c27589892127" ver="4">
 				<designed target="X" value="100" ver="4"/>
-				<designed target="Y" value="0" ver="4"/>
+				<designed target="Y" value="6" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="InitOpcSource" ver="4" ref="OPCSource"/>
 				<do-trace access-modifier="private" target="Group" ver="4">
@@ -3439,8 +3448,8 @@
 				</do-trace>
 			</object>
 			<object access-modifier="private" name="Valve1" display-name="Valve1" uuid="6ab5c839-1aa8-41e0-841c-eee78383500f" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
-				<designed target="X" value="248" ver="4"/>
-				<designed target="Y" value="0" ver="4"/>
+				<designed target="X" value="247" ver="4"/>
+				<designed target="Y" value="6" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
@@ -3450,10 +3459,11 @@
 						<![CDATA[NAME+" "+String.ToString(Group)]]>
 					</body>
 				</do-trace>
+				<designed target="Scale" value="1.5" ver="4"/>
 			</object>
 			<object access-modifier="private" name="ValveDensity" display-name="ValveDensity" uuid="f50cc7f2-85e9-4996-9881-230ffb86e091" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="548" ver="4"/>
-				<designed target="Y" value="0" ver="4"/>
+				<designed target="Y" value="6" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
@@ -3466,7 +3476,7 @@
 			</object>
 			<object access-modifier="private" name="ValveSecurity" display-name="ValveSecurity" uuid="2e6cb29a-0645-4ad6-9f12-3e7770b7c997" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="578" ver="4"/>
-				<designed target="Y" value="26.3" ver="4"/>
+				<designed target="Y" value="32.3" ver="4"/>
 				<designed target="Rotation" value="90" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
@@ -3478,11 +3488,11 @@
 				</do-trace>
 			</object>
 			<object access-modifier="private" name="PBetween" display-name="PBetween" uuid="174ca7a6-a82e-478e-91dd-03bd861d220d" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
-				<designed target="X" value="280" ver="4"/>
-				<designed target="Y" value="15" ver="4"/>
+				<designed target="X" value="288" ver="4"/>
+				<designed target="Y" value="21" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xffffff00"/>
-				<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+				<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="VALUEBrushType" ver="4" value="1"/>
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
@@ -3574,7 +3584,7 @@
 			</object>
 			<object access-modifier="private" name="txtGroup" display-name="txtGroup" uuid="776b5aaf-aa38-4fd1-954e-22fd408f9fb0" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
 				<designed target="X" value="375" ver="4"/>
-				<designed target="Y" value="0" ver="4"/>
+				<designed target="Y" value="6" ver="4"/>
 				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<designed target="Scale" value="1" ver="4"/>
@@ -3597,7 +3607,7 @@
 		</object>
 		<object access-modifier="private" name="Group4" display-name="Group4" uuid="90c68d75-a60a-496b-85cc-0f9fa63aa088" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="3">
 			<designed target="X" value="128" ver="3"/>
-			<designed target="Y" value="193" ver="3"/>
+			<designed target="Y" value="187" ver="3"/>
 			<designed target="ZValue" value="0" ver="3"/>
 			<designed target="Rotation" value="0" ver="3"/>
 			<designed target="Scale" value="1" ver="3"/>
@@ -3619,7 +3629,7 @@
 			<init target="Group" ver="4" value="4"/>
 			<object access-modifier="private" name="TubeGas" display-name="TubeGas" uuid="1d5ea6a9-f4a4-44e5-9754-073b204210d4" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
 				<designed target="X" value="106" ver="4"/>
-				<designed target="Y" value="70" ver="4"/>
+				<designed target="Y" value="76" ver="4"/>
 				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<designed target="Scale" value="1" ver="4"/>
@@ -3761,7 +3771,7 @@
 			</object>
 			<object access-modifier="private" name="TubeSecurity" display-name="TubeSecurity" uuid="39951d9e-5ef4-4d0b-b1f5-2444913f8131" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
 				<designed target="X" value="596" ver="4"/>
-				<designed target="Y" value="40" ver="4"/>
+				<designed target="Y" value="46" ver="4"/>
 				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<designed target="Scale" value="1" ver="4"/>
@@ -3807,7 +3817,7 @@
 			</object>
 			<object access-modifier="private" name="burn1" display-name="burn1" uuid="7e17c879-b981-4ce7-9d5b-9ecc29ca6ed3" base-type="burnTopStruct" base-type-id="db217da3-5b19-4c08-9357-c27589892127" ver="4">
 				<designed target="X" value="550" ver="4"/>
-				<designed target="Y" value="0" ver="4"/>
+				<designed target="Y" value="6" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="InitOpcSource" ver="4" ref="OPCSource"/>
 				<do-trace access-modifier="private" target="Group" ver="4">
@@ -3819,7 +3829,7 @@
 			</object>
 			<object access-modifier="private" name="burn2" display-name="burn2" uuid="abf22ed9-b067-49b2-8628-ea8d8d481d13" base-type="ignTopStruct" base-type-id="f4c86c1f-2d49-4b68-b807-72500ee8461a" ver="4">
 				<designed target="X" value="400" ver="4"/>
-				<designed target="Y" value="0" ver="4"/>
+				<designed target="Y" value="6" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="InitOpcSource" ver="4" ref="OPCSource"/>
 				<do-trace access-modifier="private" target="IgnHasGas" ver="4">
@@ -3836,7 +3846,7 @@
 			</object>
 			<object access-modifier="private" name="burn3" display-name="burn3" uuid="7e76f36e-e884-45ae-bf49-9ea2b370f1d5" base-type="burnTopStruct" base-type-id="db217da3-5b19-4c08-9357-c27589892127" ver="4">
 				<designed target="X" value="250" ver="4"/>
-				<designed target="Y" value="0" ver="4"/>
+				<designed target="Y" value="6" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="InitOpcSource" ver="4" ref="OPCSource"/>
 				<do-trace access-modifier="private" target="Group" ver="4">
@@ -3848,7 +3858,7 @@
 			</object>
 			<object access-modifier="private" name="burn4" display-name="burn4" uuid="93c59cf8-836b-4c2d-a951-c32f499632dd" base-type="burnTopStruct" base-type-id="db217da3-5b19-4c08-9357-c27589892127" ver="4">
 				<designed target="X" value="100" ver="4"/>
-				<designed target="Y" value="0" ver="4"/>
+				<designed target="Y" value="6" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="InitOpcSource" ver="4" ref="OPCSource"/>
 				<do-trace access-modifier="private" target="Group" ver="4">
@@ -3870,8 +3880,8 @@
 				</do-trace>
 			</object>
 			<object access-modifier="private" name="Valve1" display-name="Valve1" uuid="538f7fae-6def-479a-89a1-230463179235" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
-				<designed target="X" value="398" ver="4"/>
-				<designed target="Y" value="0" ver="4"/>
+				<designed target="X" value="397" ver="4"/>
+				<designed target="Y" value="6" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
@@ -3881,10 +3891,11 @@
 						<![CDATA[NAME+" "+String.ToString(Group)]]>
 					</body>
 				</do-trace>
+				<designed target="Scale" value="1.5" ver="4"/>
 			</object>
 			<object access-modifier="private" name="ValveDensity" display-name="ValveDensity" uuid="377c7491-bf28-4b60-9dfe-ed7d7da4e1d7" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="548" ver="4"/>
-				<designed target="Y" value="0" ver="4"/>
+				<designed target="Y" value="6" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
@@ -3897,7 +3908,7 @@
 			</object>
 			<object access-modifier="private" name="ValveSecurity" display-name="ValveSecurity" uuid="9fc17c48-2057-48b6-80f1-60fa92925f25" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="578" ver="4"/>
-				<designed target="Y" value="26.3" ver="4"/>
+				<designed target="Y" value="32.3" ver="4"/>
 				<designed target="Rotation" value="90" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
@@ -3909,11 +3920,11 @@
 				</do-trace>
 			</object>
 			<object access-modifier="private" name="PBetween" display-name="PBetween" uuid="bc73b792-76a7-4cb1-bed3-d1ccde033c01" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
-				<designed target="X" value="430" ver="4"/>
-				<designed target="Y" value="15" ver="4"/>
+				<designed target="X" value="438" ver="4"/>
+				<designed target="Y" value="21" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xffffff00"/>
-				<init target="VALUEBackgroundColor" ver="4" value="0xff838383"/>
+				<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="VALUEBrushType" ver="4" value="1"/>
 				<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
 				<init target="EUBrushType" ver="4" value="1"/>
@@ -4005,7 +4016,7 @@
 			</object>
 			<object access-modifier="private" name="txtGroup" display-name="txtGroup" uuid="77192776-dd6b-4961-a11c-95570d37a65d" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
 				<designed target="X" value="225" ver="4"/>
-				<designed target="Y" value="0" ver="4"/>
+				<designed target="Y" value="6" ver="4"/>
 				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<designed target="Scale" value="1" ver="4"/>
@@ -4031,7 +4042,7 @@
 			<init target="Path" ver="4" value="ROOT.Boiler.BoilerInWork"/>
 		</object>
 	</object>
-	<designed target="BrushColor" value="0xff000000" ver="3"/>
+	<designed target="BrushColor" value="0xff4d4d4d" ver="3"/>
 	<object access-modifier="private" name="FGU" display-name="FGU" uuid="7c71de3c-7e4c-4226-98c3-f38874bc92f0" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="3">
 		<designed target="X" value="910" ver="3"/>
 		<designed target="Y" value="10" ver="3"/>
