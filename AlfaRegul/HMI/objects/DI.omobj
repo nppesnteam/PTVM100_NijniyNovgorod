@@ -122,5 +122,43 @@ while(i<32)
 	<object access-modifier="private" name="OutReal" display-name="OutReal" uuid="a02bcd64-14f7-4bd1-a0e2-b7e9b987148b" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4" cardinal="32">
 		<init target="Source" ver="4" ref="hereOpcSource"/>
 	</object>
+	<object access-modifier="private" name="Name" display-name="Name" uuid="f9764f21-0b30-4442-941c-7cc3f8b16973" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+		<designed target="X" value="32" ver="4"/>
+		<designed target="Y" value="426.5" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="201" ver="4"/>
+		<designed target="Height" value="147" ver="4"/>
+		<designed target="RoundingRadius" value="0" ver="4"/>
+		<designed target="PenColor" value="0xffffffff" ver="4"/>
+		<designed target="PenStyle" value="1" ver="4"/>
+		<designed target="PenWidth" value="5" ver="4"/>
+		<designed target="BrushColor" value="0xffffffff" ver="4"/>
+		<designed target="BrushStyle" value="1" ver="4"/>
+		<object access-modifier="private" name="txt" display-name="txt" uuid="2af6faaa-82fe-48d5-bd95-368d490e0f2c" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+			<designed target="X" value="0" ver="4"/>
+			<designed target="Y" value="0" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="201" ver="4"/>
+			<designed target="Height" value="147" ver="4"/>
+			<designed target="Text" value="NAME" ver="4"/>
+			<designed target="Font" value="Arial,36,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+			<designed target="FontColor" value="0xff000000" ver="4"/>
+			<designed target="TextAlignment" value="132" ver="4"/>
+			<init target="Text" ver="4" ref="ModuleName"/>
+		</object>
+	</object>
+	<param access-modifier="private" name="ModuleName" display-name="ModuleName" uuid="f71d94c1-dcc4-426a-9c46-bb15b9e0af9f" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
 </type>
 

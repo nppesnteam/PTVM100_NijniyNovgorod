@@ -6730,6 +6730,24 @@
     <nodeId>Application.GVL.stAlarmBoilPre.Al_Tsmo_H</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Alarms.Signal.AlarmDiffPG</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAlarmBoilPre.Al_PGasDiff</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Alarms.Signal.AlarmDiffPWat</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAlarmBoilPre.AL_PboilDiff</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Alarms.Signal.AlarmDiffTWat</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAlarmBoilPre.Al_TboilDiff</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Boiler.SelOil</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -6920,6 +6938,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stFlow.fEfficiency</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Boiler.MaskVac</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstMaskProtBoil[6].bMask</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.AlarmsValue.DelAlarmsBoiler.PGasCollL</node-path>
@@ -7328,6 +7352,18 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.stSetProt.fPvacH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.AlarmsValue.ValueAlarmBoiler.Prot8.Signal</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.stSetProtPre.fPvacH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.AlarmsValue.ValueAlarmBoiler.Prot8.ProtOff</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stProtOff.PVacH</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.AlarmsValue.ValueAlarmBoiler.Prot9.Signal</node-path>
@@ -12190,5 +12226,83 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstNumBurnPgaz[16].fPg</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.RegimeMapOil.RegimeP4</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstNumBurnPoil[4].fPg</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.RegimeMapOil.RegimeP5</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstNumBurnPoil[5].fPg</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.RegimeMapOil.RegimeP6</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstNumBurnPoil[6].fPg</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.RegimeMapOil.RegimeP7</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstNumBurnPoil[7].fPg</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.RegimeMapOil.RegimeP8</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstNumBurnPoil[8].fPg</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.RegimeMapOil.RegimeP9</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstNumBurnPoil[9].fPg</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.RegimeMapOil.RegimeP10</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstNumBurnPoil[10].fPg</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.RegimeMapOil.RegimeP11</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstNumBurnPoil[11].fPg</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.RegimeMapOil.RegimeP12</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstNumBurnPoil[12].fPg</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.RegimeMapOil.RegimeP13</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstNumBurnPoil[13].fPg</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.RegimeMapOil.RegimeP14</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstNumBurnPoil[14].fPg</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.RegimeMapOil.RegimeP15</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstNumBurnPoil[15].fPg</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.RegimeMapOil.RegimeP16</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstNumBurnPoil[16].fPg</nodeId>
   </item>
 </root>

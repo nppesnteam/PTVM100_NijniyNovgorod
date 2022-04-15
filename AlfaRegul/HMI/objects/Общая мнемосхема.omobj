@@ -5,7 +5,7 @@
 	<designed target="Width" value="1720" ver="3"/>
 	<designed target="Height" value="960" ver="3"/>
 	<object access-modifier="private" name="Mnemo" display-name="Mnemo" uuid="3470f296-704d-467a-b5b2-5eaed21fdd60" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
-		<designed target="X" value="76" ver="4"/>
+		<designed target="X" value="70" ver="4"/>
 		<designed target="Y" value="70" ver="4"/>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
@@ -25,7 +25,7 @@
 		<designed target="ShowScrollBars" value="true" ver="4"/>
 		<designed target="MoveByMouse" value="false" ver="4"/>
 		<object access-modifier="private" name="Smoke" display-name="Smoke" uuid="51cd89f2-866f-433d-9b21-b600b2129e49" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
-			<designed target="X" value="1362" ver="4"/>
+			<designed target="X" value="1368" ver="4"/>
 			<designed target="Y" value="0" ver="4"/>
 			<designed target="ZValue" value="0" ver="4"/>
 			<designed target="Rotation" value="0" ver="4"/>
@@ -301,7 +301,7 @@
 			</object>
 		</object>
 		<object access-modifier="private" name="Water" display-name="Water" uuid="6dc32c29-95b1-4eca-a8a2-cf51a26c89a9" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
-			<designed target="X" value="80" ver="4"/>
+			<designed target="X" value="86" ver="4"/>
 			<designed target="Y" value="-20" ver="4"/>
 			<designed target="ZValue" value="0" ver="4"/>
 			<designed target="Rotation" value="0" ver="4"/>
@@ -853,7 +853,7 @@
 			</object>
 		</object>
 		<object access-modifier="private" name="rectBoiler" display-name="rectBoiler" uuid="4b7106b3-b999-4d33-8d80-7bec2cdf5043" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
-			<designed target="X" value="152" ver="4"/>
+			<designed target="X" value="158" ver="4"/>
 			<designed target="Y" value="380" ver="4"/>
 			<designed target="ZValue" value="0" ver="4"/>
 			<designed target="Rotation" value="0" ver="4"/>
@@ -892,7 +892,7 @@
 			<designed target="ShowScrollBars" value="true" ver="4"/>
 			<designed target="MoveByMouse" value="false" ver="4"/>
 			<object access-modifier="private" name="TubeOilBeforeGate" display-name="TubeOilBeforeGate" uuid="e85aeeca-d923-44dd-bf17-6e6eaea9d870" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
-				<designed target="X" value="26" ver="4"/>
+				<designed target="X" value="32" ver="4"/>
 				<designed target="Y" value="660" ver="4"/>
 				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
@@ -930,7 +930,7 @@
 				</object>
 			</object>
 			<object access-modifier="private" name="TubeOilAfterGate" display-name="TubeOilAfterGate" uuid="fc384416-4ee5-42c0-90b0-9870fd1e3e37" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
-				<designed target="X" value="26" ver="4"/>
+				<designed target="X" value="32" ver="4"/>
 				<designed target="Y" value="540" ver="4"/>
 				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
@@ -968,7 +968,7 @@
 				</object>
 			</object>
 			<object access-modifier="private" name="TubeOilAfterValve" display-name="TubeOilAfterValve" uuid="cc45b74c-86f1-4e73-b4be-1e096be96527" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
-				<designed target="X" value="26" ver="4"/>
+				<designed target="X" value="32" ver="4"/>
 				<designed target="Y" value="480" ver="4"/>
 				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
@@ -1006,7 +1006,7 @@
 				</object>
 			</object>
 			<object access-modifier="private" name="TubeOilAfterFlap" display-name="TubeOilAfterFlap" uuid="52486a51-3327-4a9e-bc76-68603230105b" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
-				<designed target="X" value="30" ver="4"/>
+				<designed target="X" value="36" ver="4"/>
 				<designed target="Y" value="460" ver="4"/>
 				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
@@ -1324,7 +1324,7 @@
 				</object>
 			</object>
 			<object access-modifier="private" name="FlapOil" display-name="FlapOil" uuid="2e6b0243-f4d9-4e88-b60e-a9bc73869941" base-type="FlapWithSettings" base-type-id="4cc80454-f0cf-4879-8e38-2c16930c7fae" ver="4">
-				<designed target="X" value="18" ver="4"/>
+				<designed target="X" value="24" ver="4"/>
 				<designed target="Y" value="460" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffc65a02"/>
@@ -1332,7 +1332,7 @@
 				<init target="initPath" ver="4" value="Flap"/>
 			</object>
 			<object access-modifier="private" name="ValveOil" display-name="ValveOil" uuid="910a5e3f-aa06-4254-8286-97741b40fbe2" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
-				<designed target="X" value="18" ver="4"/>
+				<designed target="X" value="24" ver="4"/>
 				<designed target="Y" value="520" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffc65a02"/>
@@ -1340,7 +1340,7 @@
 				<init target="initPath" ver="4" value="Valve"/>
 			</object>
 			<object access-modifier="private" name="GateOil" display-name="GateOil" uuid="d5d3cff0-2d62-4b3e-8af6-7e1c4ecca7dc" base-type="gate" base-type-id="412146cb-dc7b-472f-be3b-e66aa672ce43" ver="4">
-				<designed target="X" value="19" ver="4"/>
+				<designed target="X" value="25" ver="4"/>
 				<designed target="Y" value="640" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffc65a02"/>
@@ -1349,14 +1349,14 @@
 				<designed target="Scale" value="1.5" ver="4"/>
 			</object>
 			<object access-modifier="private" name="ArrowOilIn" display-name="ArrowOilIn" uuid="fc3caf2b-39d1-433d-8f64-90418b8c32bc" base-type="arrow" base-type-id="bd45c7e6-c41b-44ca-a8f9-0542667feb49" ver="4">
-				<designed target="X" value="20" ver="4"/>
+				<designed target="X" value="26" ver="4"/>
 				<designed target="Y" value="710" ver="4"/>
 				<designed target="Rotation" value="90" ver="4"/>
 				<init target="Color" ver="4" value="0xffc65a02"/>
 				<designed target="Scale" value="1.2" ver="4"/>
 			</object>
 			<object access-modifier="private" name="TxtOil" display-name="TxtOil" uuid="8b307dc4-daf0-4648-8970-5a14153f1491" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
-				<designed target="X" value="40.6" ver="4"/>
+				<designed target="X" value="46.6" ver="4"/>
 				<designed target="Y" value="694" ver="4"/>
 				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
@@ -1374,7 +1374,7 @@
 				<designed target="TextAlignment" value="132" ver="4"/>
 			</object>
 			<object access-modifier="private" name="POilAfterFlap" display-name="POilAfterFlap" uuid="71c95e52-af33-4445-954d-decd784959ed" base-type="Sens" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
-				<designed target="X" value="45" ver="4"/>
+				<designed target="X" value="51" ver="4"/>
 				<designed target="Y" value="430" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xffc65a02"/>
@@ -1388,7 +1388,7 @@
 				<init target="initName" ver="4" value="POil"/>
 			</object>
 			<object access-modifier="private" name="POilAfterGate" display-name="POilAfterGate" uuid="3e030847-6d62-4422-be2a-7b242105dac7" base-type="Sens" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
-				<designed target="X" value="45" ver="4"/>
+				<designed target="X" value="51" ver="4"/>
 				<designed target="Y" value="560" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xffc65a02"/>
@@ -1401,7 +1401,7 @@
 				<init target="initPath" ver="4" value="PBeforeFlap"/>
 			</object>
 			<object access-modifier="private" name="TOilAfterGate" display-name="TOilAfterGate" uuid="08cfca75-ddec-45c9-ad14-0abc0369d680" base-type="Sens" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
-				<designed target="X" value="45" ver="4"/>
+				<designed target="X" value="51" ver="4"/>
 				<designed target="Y" value="580" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xffc65a02"/>
@@ -1414,7 +1414,7 @@
 				<init target="initPath" ver="4" value="T"/>
 			</object>
 			<object access-modifier="private" name="FOilAfterGate" display-name="FOilAfterGate" uuid="b8538d40-3149-41bc-8b59-ca04df1a7a6f" base-type="Sens" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
-				<designed target="X" value="45" ver="4"/>
+				<designed target="X" value="51" ver="4"/>
 				<designed target="Y" value="600" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xffc65a02"/>
@@ -1435,7 +1435,7 @@
 			</object>
 		</object>
 		<object access-modifier="private" name="Gas" display-name="Gas" uuid="815b0cbd-5a6f-48c3-a8c3-d2d57d088733" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
-			<designed target="X" value="350" ver="4"/>
+			<designed target="X" value="356" ver="4"/>
 			<designed target="Y" value="130" ver="4"/>
 			<designed target="ZValue" value="0" ver="4"/>
 			<designed target="Rotation" value="0" ver="4"/>
@@ -2302,7 +2302,7 @@
 			</object>
 		</object>
 		<object access-modifier="private" name="Group1" display-name="Group1" uuid="722f4e00-9139-49bd-9447-228bded5b27c" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="3">
-			<designed target="X" value="728" ver="3"/>
+			<designed target="X" value="734" ver="3"/>
 			<designed target="Y" value="530" ver="3"/>
 			<designed target="ZValue" value="0" ver="3"/>
 			<designed target="Rotation" value="0" ver="3"/>
@@ -2742,7 +2742,7 @@
 			</object>
 		</object>
 		<object access-modifier="private" name="Group2" display-name="Group2" uuid="08981b97-cfef-432c-a42e-5824f7bffd7e" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="3">
-			<designed target="X" value="128" ver="3"/>
+			<designed target="X" value="134" ver="3"/>
 			<designed target="Y" value="530" ver="3"/>
 			<designed target="ZValue" value="0" ver="3"/>
 			<designed target="Rotation" value="0" ver="3"/>
@@ -3174,7 +3174,7 @@
 			</object>
 		</object>
 		<object access-modifier="private" name="Group3" display-name="Group3" uuid="e76d8d6c-a9f1-46f3-b5fa-4486be6990f7" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="3">
-			<designed target="X" value="728" ver="3"/>
+			<designed target="X" value="734" ver="3"/>
 			<designed target="Y" value="187" ver="3"/>
 			<designed target="ZValue" value="0" ver="3"/>
 			<designed target="Rotation" value="0" ver="3"/>
@@ -3606,7 +3606,7 @@
 			</object>
 		</object>
 		<object access-modifier="private" name="Group4" display-name="Group4" uuid="90c68d75-a60a-496b-85cc-0f9fa63aa088" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="3">
-			<designed target="X" value="128" ver="3"/>
+			<designed target="X" value="134" ver="3"/>
 			<designed target="Y" value="187" ver="3"/>
 			<designed target="ZValue" value="0" ver="3"/>
 			<designed target="Rotation" value="0" ver="3"/>
@@ -4512,7 +4512,19 @@ OpenSteps.Invoke();]]>
 				<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Bold" ver="3"/>
 				<designed target="FontColor" value="0xffc8c8c8" ver="3"/>
 				<designed target="TextAlignment" value="132" ver="3"/>
-				<object access-modifier="private" name="Blinker_1" display-name="Blinker_1" uuid="2547f81d-400b-4e21-936c-df24ecd1d4fe" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006" ver="4">
+				<object access-modifier="private" name="BlinkerSignal" display-name="BlinkerSignal" uuid="6996ff30-c11c-4378-8380-342e30c339c3" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006" ver="4">
+					<designed target="Period" value="1000" ver="4"/>
+					<designed target="Active" value="false" ver="4"/>
+					<designed target="PenColor" value="0xffffaa00" ver="4"/>
+					<designed target="BrushColor" value="0xff737373" ver="4"/>
+					<designed target="FontColor" value="0xffffaa00" ver="4"/>
+					<do-trace access-modifier="private" target="Active" ver="4">
+						<body>
+							<![CDATA[PGasCollLow||PGasCollHigh]]>
+						</body>
+					</do-trace>
+				</object>
+				<object access-modifier="private" name="BlinkerProt" display-name="BlinkerProt" uuid="8ea2be52-31c9-4d08-8c25-9e4b49478f74" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006" ver="4">
 					<designed target="Period" value="1000" ver="4"/>
 					<designed target="Active" value="false" ver="4"/>
 					<designed target="PenColor" value="0xffff0000" ver="4"/>
@@ -4520,7 +4532,7 @@ OpenSteps.Invoke();]]>
 					<designed target="FontColor" value="0xffff0000" ver="4"/>
 					<do-trace access-modifier="private" target="Active" ver="4">
 						<body>
-							<![CDATA[PGasCollLow||PGasCollHigh]]>
+							<![CDATA[PGasCollLowProt||PGasCollHighProt]]>
 						</body>
 					</do-trace>
 				</object>
@@ -4585,7 +4597,19 @@ OpenSteps.Invoke();]]>
 				<designed target="Font" value="MS Shell Dlg 2,10,-1,5,75,0,0,0,0,0,Bold" ver="3"/>
 				<designed target="FontColor" value="0xffc8c8c8" ver="3"/>
 				<designed target="TextAlignment" value="132" ver="3"/>
-				<object access-modifier="private" name="Blinker_1" display-name="Blinker_1" uuid="cc9055ab-ba9d-4138-94a0-feeb1d41efc4" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006" ver="4">
+				<object access-modifier="private" name="BlinkerSignal" display-name="BlinkerSignal" uuid="66f83b45-ef81-4528-852e-7694a3e603d2" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006" ver="4">
+					<designed target="Period" value="1000" ver="4"/>
+					<designed target="Active" value="false" ver="4"/>
+					<designed target="PenColor" value="0xffffaa00" ver="4"/>
+					<designed target="BrushColor" value="0xff737373" ver="4"/>
+					<designed target="FontColor" value="0xffffaa00" ver="4"/>
+					<do-trace access-modifier="private" target="Active" ver="4">
+						<body>
+							<![CDATA[FWaterLow]]>
+						</body>
+					</do-trace>
+				</object>
+				<object access-modifier="private" name="BlinkerProt" display-name="BlinkerProt" uuid="790dca8e-5b03-454f-b3c6-11e1ec662410" base-type="Blinker" base-type-id="de67e797-c7fd-4703-9e0a-c04ac4022006" ver="4">
 					<designed target="Period" value="1000" ver="4"/>
 					<designed target="Active" value="false" ver="4"/>
 					<designed target="PenColor" value="0xffff0000" ver="4"/>
@@ -4593,7 +4617,7 @@ OpenSteps.Invoke();]]>
 					<designed target="FontColor" value="0xffff0000" ver="4"/>
 					<do-trace access-modifier="private" target="Active" ver="4">
 						<body>
-							<![CDATA[FWaterLow]]>
+							<![CDATA[FWaterLowProt]]>
 						</body>
 					</do-trace>
 				</object>
@@ -6418,6 +6442,15 @@ OpenBlow.Invoke();]]>
 			</do-on>
 			<designed target="Checked" value="false" ver="4"/>
 		</object>
+		<object access-modifier="private" name="GermFinal" display-name="GermFinal" uuid="27fb979c-27b3-4381-9d3f-ceff8460732b" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+			<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+			<init target="Path" ver="4" value="ROOT.Alarms.Protect.AlarmGermOK"/>
+		</object>
+		<do-trace access-modifier="private" target="Enabled" ver="4">
+			<body>
+				<![CDATA[!GermFinal]]>
+			</body>
+		</do-trace>
 	</object>
 </type>
 

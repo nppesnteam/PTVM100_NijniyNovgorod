@@ -2226,7 +2226,7 @@ OpenBurnSteps.Invoke();]]>
 			</object>
 		</object>
 		<object access-modifier="private" name="Group" display-name="Group" uuid="2ea72c49-e6ec-447a-aad9-90825f491f2a" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
-			<designed target="X" value="215" ver="4"/>
+			<designed target="X" value="210.455" ver="4"/>
 			<designed target="Y" value="0" ver="4"/>
 			<designed target="ZValue" value="0" ver="4"/>
 			<designed target="Rotation" value="0" ver="4"/>
@@ -2246,7 +2246,7 @@ OpenBurnSteps.Invoke();]]>
 			<designed target="ShowScrollBars" value="true" ver="4"/>
 			<designed target="MoveByMouse" value="false" ver="4"/>
 			<object access-modifier="private" name="TubeGas" display-name="TubeGas" uuid="8dd254c0-3729-40c2-bfdb-b06ff27408d1" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
-				<designed target="X" value="110" ver="4"/>
+				<designed target="X" value="114.545" ver="4"/>
 				<designed target="Y" value="240" ver="4"/>
 				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
@@ -2568,7 +2568,7 @@ OpenBurnSteps.Invoke();]]>
 				</object>
 			</object>
 			<object access-modifier="private" name="TubeSecurity" display-name="TubeSecurity" uuid="4eccd37a-1640-493d-8ddd-b32a4c62643e" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
-				<designed target="X" value="41" ver="4"/>
+				<designed target="X" value="45.5455" ver="4"/>
 				<designed target="Y" value="796" ver="4"/>
 				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="90" ver="4"/>
@@ -2614,7 +2614,7 @@ OpenBurnSteps.Invoke();]]>
 				</object>
 			</object>
 			<object access-modifier="private" name="burn1" display-name="burn1" uuid="705c0014-9716-4f38-9858-223b4f0a9232" base-type="burnGroup" base-type-id="fd973e8a-d8c8-4b96-8763-069ba372be39" ver="4">
-				<designed target="X" value="1" ver="4"/>
+				<designed target="X" value="5.54545" ver="4"/>
 				<designed target="Y" value="242" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<do-trace access-modifier="private" target="Group" ver="4">
@@ -2626,7 +2626,7 @@ OpenBurnSteps.Invoke();]]>
 				<init target="InitPath" ver="4" value="burn1"/>
 			</object>
 			<object access-modifier="private" name="burn2" display-name="burn2" uuid="d9d4db02-4af3-479a-847f-3c323df61a9d" base-type="burnGroup" base-type-id="fd973e8a-d8c8-4b96-8763-069ba372be39" ver="4">
-				<designed target="X" value="1" ver="4"/>
+				<designed target="X" value="5.54545" ver="4"/>
 				<designed target="Y" value="392" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<do-trace access-modifier="private" target="Group" ver="4">
@@ -2667,7 +2667,7 @@ OpenBurnSteps.Invoke();]]>
 				</do-trace>
 			</object>
 			<object access-modifier="private" name="burn3" display-name="burn3" uuid="6c9fe549-aefc-49ae-b1df-bfbc3810cebb" base-type="ignGroup" base-type-id="b4bb791a-887e-4d66-9bf7-0abe346cbe1c" ver="4">
-				<designed target="X" value="1" ver="4"/>
+				<designed target="X" value="5.54545" ver="4"/>
 				<designed target="Y" value="542" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<do-trace access-modifier="private" target="Y" ver="4">
@@ -2708,7 +2708,7 @@ OpenBurnSteps.Invoke();]]>
 				</do-trace>
 			</object>
 			<object access-modifier="private" name="burn4" display-name="burn4" uuid="3207e8f5-a5ad-4581-9f7a-019c183d7332" base-type="burnGroup" base-type-id="fd973e8a-d8c8-4b96-8763-069ba372be39" ver="4">
-				<designed target="X" value="1" ver="4"/>
+				<designed target="X" value="5.54545" ver="4"/>
 				<designed target="Y" value="692" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<do-trace access-modifier="private" target="Group" ver="4">
@@ -2742,7 +2742,7 @@ OpenBurnSteps.Invoke();]]>
 				</do-trace>
 			</object>
 			<object access-modifier="private" name="Valve1" display-name="Valve1" uuid="d4622ae2-8baf-4208-927d-c5dc6ea7ccef" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
-				<designed target="X" value="3" ver="4"/>
+				<designed target="X" value="7.54545" ver="4"/>
 				<designed target="Y" value="529.3" ver="4"/>
 				<designed target="Rotation" value="90" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
@@ -2766,7 +2766,7 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="Scale" value="1.5" ver="4"/>
 			</object>
 			<object access-modifier="private" name="ValveDensity" display-name="ValveDensity" uuid="6a9586d6-be97-4ca0-ad96-64677c7de946" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
-				<designed target="X" value="3" ver="4"/>
+				<designed target="X" value="7.54545" ver="4"/>
 				<designed target="Y" value="680.3" ver="4"/>
 				<designed target="Rotation" value="90" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
@@ -2774,7 +2774,7 @@ OpenBurnSteps.Invoke();]]>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
 			</object>
 			<object access-modifier="private" name="ValveSecurity" display-name="ValveSecurity" uuid="3eb546c7-aba3-40c4-aa7d-9e74cd7243c7" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
-				<designed target="X" value="48" ver="4"/>
+				<designed target="X" value="52.5455" ver="4"/>
 				<designed target="Y" value="746" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xffffff00"/>
@@ -2782,7 +2782,7 @@ OpenBurnSteps.Invoke();]]>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
 			</object>
 			<object access-modifier="private" name="PBetween" display-name="PBetween" uuid="9f194e59-04c4-455b-a64c-e751d75c2165" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
-				<designed target="X" value="70" ver="4"/>
+				<designed target="X" value="74.5455" ver="4"/>
 				<designed target="Y" value="502" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xffffff00"/>

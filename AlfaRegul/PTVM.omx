@@ -507,7 +507,7 @@
                     </object>
                     <object name="Channel17" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="de1211dc-8491-4e21-91b2-576650c28b61">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Резерв" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Режим работы &quot;Автомат&quot; задвижки рез.топлива" />
                     </object>
                     <object name="Channel18" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="0a4ff107-8201-402c-8a51-36722384c913">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
@@ -4128,6 +4128,7 @@
               <object name="Sequence16" base-type="Types.IgnSequence.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="63cf246d-7648-4f68-ba1d-b1029a934bce" />
             </object>
             <object name="RegimeMap" base-type="Types.Regime.PLC_View" aspect="Aspects.PLC_Aspect" uuid="29ed9476-d21d-44c2-9868-fc7b021b1b1a" />
+            <object name="RegimeMapOil" base-type="Types.Regime.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="04b8146c-3de2-4655-b210-d3c74f9b53e4" />
           </object>
         </dp:application-object>
         <opc:opcua-server name="OpcUaServer" uuid="2cf86c2a-f319-4add-9221-d2a8e4c5b575" tag-map="PLC_App.OpcUaAddressMap" endpoint-name="regul_ua_server" port="4840" />
@@ -8076,6 +8077,9 @@ Channel32.H=Math.TestBit(State.State,31);</property>
         <ct:object name="RegimeMap" uuid="99061f7f-3b77-4762-af00-d47dbc404664" original="PLC.Runtime.PLC_App.ROOT.RegimeMap" base-type="Types.Regime.IOS_View" aspect="Aspects.IOS_Aspect">
           <r:init-ref ref="_PLC_View" target="Domain.PLC.Runtime.PLC_App.ROOT.RegimeMap" />
         </ct:object>
+        <ct:object name="RegimeMapOil" uuid="72cb86e1-5476-4f1e-89bb-35698429962b" original="PLC.Runtime.PLC_App.ROOT.RegimeMapOil" base-type="Types.Regime.IOS_View" aspect="Aspects.IOS_Aspect">
+          <r:init-ref ref="_PLC_View" target="Domain.PLC.Runtime.PLC_App.ROOT.RegimeMapOil" />
+        </ct:object>
       </ct:object>
     </dp:application-object>
     <dp:domain-node name="ARM1" uuid="5c501410-d8c6-4207-b464-de8db5742447">
@@ -8803,6 +8807,7 @@ else
         <parameter name="AutoIgn" type="bool" direction="in-out" xmlns="automation.control" uuid="02cb7311-4878-4156-ac5e-c7a2ccde6c64" />
         <parameter name="bMute" type="bool" direction="in-out" xmlns="automation.control" uuid="74b62f0a-870b-4dcf-a858-0b34a9bf9942" />
         <parameter name="KPD" direction="out" type="float32" xmlns="automation.control" uuid="07ba42fc-3fd2-4be1-a2e8-de89a2197f2d" />
+        <parameter name="MaskVac" type="bool" direction="in-out" xmlns="automation.control" uuid="59cda660-ca9f-46f6-bda0-ab321a33191e" />
       </type>
       <type name="IOS_View" xmlns="automation.control" aspect="Aspects.IOS_Aspect" original="Boiler" uuid="75814766-5317-4871-870a-b481b5f2198d">
         <ref name="_PLC_View" type="PLC_View" xmlns="automation.reference" uuid="c7683099-3278-4c6f-80ff-7887581b9e66" />
@@ -8964,6 +8969,10 @@ else
         <bind source="_PLC_View.bMute" target="OutbMute" />
         <parameter name="KPD" uuid="14796461-7376-453e-add8-5d8c433fda10" direction="out" type="float32" />
         <bind source="_PLC_View.KPD" target="KPD" />
+        <parameter name="InMaskVac" uuid="223ac728-0ff5-4eb5-aec4-61c1b782bc4b" direction="in" type="bool" />
+        <bind source="InMaskVac" target="_PLC_View.MaskVac" />
+        <parameter name="OutMaskVac" uuid="a2b938ab-ea50-4d73-9f2c-c1d7b5a532e8" direction="out" type="bool" />
+        <bind source="_PLC_View.MaskVac" target="OutMaskVac" />
       </type>
     </type>
     <type name="DelAlarmsBoiler" xmlns="automation.control" uuid="7bf32a59-7c25-4527-868a-f68a8101e433">
@@ -9560,52 +9569,55 @@ else
         <parameter name="AlarmTSmoke" type="bool" direction="out" xmlns="automation.control" uuid="0ff32605-9fe7-4dc8-8b2e-653a1f0380d1" />
         <parameter name="AlarmCH4" type="bool" direction="out" xmlns="automation.control" uuid="93c2b961-d465-45ad-93c1-f3db7fd755e5" />
         <parameter name="AlarmCO" type="bool" direction="out" xmlns="automation.control" uuid="2ddb165b-331c-4bc7-8376-87ba8f5803c5" />
+        <parameter name="AlarmDiffPWat" type="bool" direction="out" xmlns="automation.control" uuid="39978b8d-a8d9-491d-9bd7-2ab8e1470312" />
+        <parameter name="AlarmDiffPG" type="bool" direction="out" xmlns="automation.control" uuid="b69c5343-88ad-4758-9775-5ab3ab09ae0d" />
+        <parameter name="AlarmDiffTWat" type="bool" direction="out" xmlns="automation.control" uuid="519867e5-383d-426d-bdb0-e8531f6066da" />
       </type>
       <type name="IOS_View" xmlns="automation.control" aspect="Aspects.IOS_Aspect" original="SignalBoiler" uuid="1252da21-45ab-4064-a30d-325bb7c1c702">
         <ref name="_PLC_View" type="PLC_View" xmlns="automation.reference" uuid="a5c05ebf-2f05-44a1-9681-996474a17875" />
         <parameter name="AlarmPGasCollL" uuid="78a1da7c-3139-4c82-8b6e-a282cef61266" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление газа в коллекторе ниже нормы.Сигнализация.","Severity":668,"Sound":"trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление газа в коллекторе ниже нормы.Сигнализация.","Severity":335,"Sound":"trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmPGasCollH" uuid="bf263d78-f000-4c0a-a2dd-5354050b3fa1" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление газа в коллекторе выше нормы.Сигнализация.","Severity":668,"Sound":"trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление газа в коллекторе выше нормы.Сигнализация.","Severity":335,"Sound":"trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmPOilL" uuid="31ce0895-309b-45a0-8045-1cfb04e26ccb" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление дизельного топлива ниже нормы. Сигнализация.","Severity":668,"Sound":"trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление дизельного топлива ниже нормы. Сигнализация.","Severity":335,"Sound":"trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmPWatOutL" uuid="f4bb63c2-0f09-4066-b20c-0bb952327fca" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление воды за котлом ниже нормы. Сигнализация.","Severity":668,"Sound":"trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление воды за котлом ниже нормы. Сигнализация.","Severity":335,"Sound":"trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmPWatOutH" uuid="62daa159-79bb-4754-9036-a463eede5f3e" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление воды за котлом выше нормы. Сигнализация.","Severity":668,"Sound":"trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление воды за котлом выше нормы. Сигнализация.","Severity":335,"Sound":"trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmTWatOutH" uuid="2aa708a7-8688-43f2-b043-6b017693e9d6" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Температура воды за котлом выше нормы. Сигнализация.","Severity":668,"Sound":"trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Температура воды за котлом выше нормы. Сигнализация.","Severity":335,"Sound":"trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmQWatOutL" uuid="6131a7a1-380d-43c6-a5c4-bdce870323d9" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Расход воды за котлом ниже нормы. Сигнализация.","Severity":668,"Sound":"trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Расход воды за котлом ниже нормы. Сигнализация.","Severity":335,"Sound":"trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmVacH" uuid="0a92c197-52c0-475a-a649-f96357d838a7" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Разрежение ниже нормы. Сигнализация.","Severity":668,"Sound":"trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Разрежение ниже нормы. Сигнализация.","Severity":335,"Sound":"trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmTSmokeH" uuid="77f2bb07-6bd8-4eed-b6c7-9af770a0dad2" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Температура дымовых газов выше нормы. Сигнализация.","Severity":668,"Sound":"trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Температура дымовых газов выше нормы. Сигнализация.","Severity":335,"Sound":"trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmPGasCollLow" target="AlarmPGasCollL" />
@@ -9617,10 +9629,36 @@ else
         <bind source="_PLC_View.AlarmFWaterOutLow" target="AlarmQWatOutL" />
         <bind source="_PLC_View.AlarmVacL" target="AlarmVacH" />
         <bind source="_PLC_View.AlarmTSmoke" target="AlarmTSmokeH" />
-        <parameter name="AlarmCH4" uuid="fdf0ba05-39c5-42fe-a186-634f6dcfc6aa" direction="out" type="bool" />
+        <parameter name="AlarmCH4" uuid="fdf0ba05-39c5-42fe-a186-634f6dcfc6aa" direction="out" type="bool">
+          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Превышения содержания CH4. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
         <bind source="_PLC_View.AlarmCH4" target="AlarmCH4" />
-        <parameter name="AlarmCO" uuid="92137cc8-0757-405e-80e4-cc81ba82ef4d" direction="out" type="bool" />
+        <parameter name="AlarmCO" uuid="92137cc8-0757-405e-80e4-cc81ba82ef4d" direction="out" type="bool">
+          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Превышения содержания CО. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
         <bind source="_PLC_View.AlarmCO" target="AlarmCO" />
+        <parameter name="AlarmDiffPG" uuid="c81e4162-ff7e-420a-9f84-f0e099b2e898" direction="out" type="bool">
+          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Превышение разницы значений датчиков давления газа в коллекторе. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
+        <bind source="_PLC_View.AlarmDiffPG" target="AlarmDiffPG" />
+        <parameter name="AlarmDiffPWat" uuid="794f2b9a-81d5-4093-b0c4-8de0a2861fa1" direction="out" type="bool">
+          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Превышение разницы значений датчиков давления теплоносителя после котла. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
+        <bind source="_PLC_View.AlarmDiffPWat" target="AlarmDiffPWat" />
+        <parameter name="AlarmDiffTWat" uuid="9635ff7f-585f-48c2-bc7c-92cc91d9e541" direction="out" type="bool">
+          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Превышение разницы значений датчиков температуры теплоносителя после котла. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
+        <bind source="_PLC_View.AlarmDiffTWat" target="AlarmDiffTWat" />
       </type>
     </type>
     <type name="ManUpDnCtrl" xmlns="automation.control" uuid="27540cd2-5a33-4a90-a00a-35d37f3ab2ca">

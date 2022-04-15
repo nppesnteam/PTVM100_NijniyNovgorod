@@ -97,6 +97,24 @@
 					</expr>
 				</conditional-expr>
 			</do-trace>
+			<do-trace access-modifier="private" target="BrushColor" ver="4">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Protect]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffff0000]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Signal]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffb700]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
 		</object>
 		<do-trace access-modifier="private" target="PenColor" ver="4">
 			<body>
@@ -172,6 +190,24 @@
 				</body>
 			</do-trace>
 			<do-trace access-modifier="private" target="PenColor" ver="4">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Protect]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffff0000]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[Signal]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffffb700]]>
+					</expr>
+				</conditional-expr>
+			</do-trace>
+			<do-trace access-modifier="private" target="BrushColor" ver="4">
 				<conditional-expr>
 					<condition>
 						<![CDATA[Protect]]>

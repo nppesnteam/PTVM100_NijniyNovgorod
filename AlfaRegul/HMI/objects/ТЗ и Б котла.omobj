@@ -3011,6 +3011,118 @@ unit.Global.ShowMSG("Время срабатывания "+Column_2.txt.Text+" �
 				<designed target="PenWidth" value="1" ver="4"/>
 				<designed target="BrushColor" value="0xffd3d3d3" ver="4"/>
 				<designed target="BrushStyle" value="0" ver="4"/>
+				<object access-modifier="private" name="btn" display-name="btn" uuid="612cfde0-1609-4e4b-bae8-a3922341e70c" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
+					<designed target="X" value="5" ver="4"/>
+					<designed target="Y" value="5" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="80" ver="4"/>
+					<designed target="Height" value="20" ver="4"/>
+					<designed target="Checkable" value="false" ver="4"/>
+					<designed target="Checked" value="false" ver="4"/>
+					<designed target="Text" value="Срабатывание" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+					<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="OnClickFontColor" value="4278190080" ver="4"/>
+					<designed target="OnHoverFontColor" value="4278190080" ver="4"/>
+					<designed target="DisabledFontColor" value="4278190080" ver="4"/>
+					<designed target="BrushColor" value="4293980400" ver="4"/>
+					<designed target="BrushStyle" value="1" ver="4"/>
+					<designed target="OnClickBrushColor" value="4288716960" ver="4"/>
+					<designed target="OnClickBrushStyle" value="1" ver="4"/>
+					<designed target="OnHoverBrushColor" value="4294967295" ver="4"/>
+					<designed target="OnHoverBrushStyle" value="1" ver="4"/>
+					<designed target="DisabledBrushColor" value="4288716960" ver="4"/>
+					<designed target="DisabledBrushStyle" value="1" ver="4"/>
+					<designed target="PenColor" value="4278190080" ver="4"/>
+					<designed target="PenStyle" value="1" ver="4"/>
+					<designed target="PenWidth" value="1" ver="4"/>
+					<designed target="OnClickPenColor" value="4278190080" ver="4"/>
+					<designed target="OnClickPenStyle" value="1" ver="4"/>
+					<designed target="OnClickPenWidth" value="1" ver="4"/>
+					<designed target="OnHoverPenColor" value="4278190080" ver="4"/>
+					<designed target="OnHoverPenStyle" value="1" ver="4"/>
+					<designed target="OnHoverPenWidth" value="1" ver="4"/>
+					<designed target="DisabledPenColor" value="4288716960" ver="4"/>
+					<designed target="DisabledPenStyle" value="1" ver="4"/>
+					<designed target="DisabledPenWidth" value="1" ver="4"/>
+					<do-trace access-modifier="private" target="Text" ver="4">
+						<conditional-expr>
+							<condition>
+								<![CDATA[refData.OutProtOffH]]>
+							</condition>
+							<expr>
+								<![CDATA["Сигнал"]]>
+							</expr>
+						</conditional-expr>
+						<default-expr>
+							<expr>
+								<![CDATA["Срабатывание"]]>
+							</expr>
+						</default-expr>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
+						<body kind="om">
+							<![CDATA[refData.InProtOffH=!refData.OutProtOffH;]]>
+						</body>
+					</do-on>
+					<do-trace access-modifier="private" target="Enabled" ver="4">
+						<body>
+							<![CDATA[unit.Security.AllowSettingsChange.Value]]>
+						</body>
+					</do-trace>
+					<do-trace access-modifier="private" target="BrushColor" ver="4">
+						<conditional-expr>
+							<condition>
+								<![CDATA[refData.OutProtOffH]]>
+							</condition>
+							<expr>
+								<![CDATA[0xffffff00]]>
+							</expr>
+						</conditional-expr>
+						<default-expr>
+							<expr>
+								<![CDATA[0xff00ff00]]>
+							</expr>
+						</default-expr>
+					</do-trace>
+					<do-trace access-modifier="private" target="OnClickBrushColor" ver="4">
+						<conditional-expr>
+							<condition>
+								<![CDATA[refData.OutProtOffH]]>
+							</condition>
+							<expr>
+								<![CDATA[0xffffff00]]>
+							</expr>
+						</conditional-expr>
+						<default-expr>
+							<expr>
+								<![CDATA[0xff00ff00]]>
+							</expr>
+						</default-expr>
+					</do-trace>
+					<do-trace access-modifier="private" target="OnHoverBrushColor" ver="4">
+						<conditional-expr>
+							<condition>
+								<![CDATA[refData.OutProtOffH]]>
+							</condition>
+							<expr>
+								<![CDATA[0xffffff7f]]>
+							</expr>
+						</conditional-expr>
+						<default-expr>
+							<expr>
+								<![CDATA[0xff58ff74]]>
+							</expr>
+						</default-expr>
+					</do-trace>
+				</object>
 			</object>
 			<object access-modifier="private" name="refData" display-name="refData" uuid="4610a19b-2c9d-43f1-92cc-ece0ed3a60ba" base-type="Sens" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" base-const="true" base-ref="true" ver="4"/>
 			<init target="refData" ver="4" ref="Column_3.SSmoke"/>

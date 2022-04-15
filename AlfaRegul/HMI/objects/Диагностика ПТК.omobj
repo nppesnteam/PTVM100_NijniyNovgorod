@@ -637,6 +637,7 @@
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initPath" ver="4" value="AI.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+				<init target="ModuleName" ver="4" value="A2.1"/>
 			</object>
 			<object access-modifier="private" name="AI_16_011_1" display-name="AI_16_011_1" uuid="5428e05c-74eb-41bc-af59-0368bee34f6e" base-type="AI" base-type-id="9b579fb6-d797-4d72-89ea-5c3e6e63a0f4" ver="4">
 				<designed target="X" value="1535" ver="4"/>
@@ -644,6 +645,7 @@
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initPath" ver="4" value="AI.Module2"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+				<init target="ModuleName" ver="4" value="A2.2"/>
 			</object>
 			<object access-modifier="private" name="CPU1_MAIN" display-name="CPU1_MAIN" uuid="ec46c64a-7990-4e51-9a06-8be5a7b81004" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 				<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
@@ -704,6 +706,7 @@
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initPath" ver="4" value="DI.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+				<init target="ModuleName" ver="4" value="A2.3"/>
 			</object>
 			<object access-modifier="private" name="DI_32_011_1" display-name="DI_32_011_1" uuid="9924a8f0-c9a5-436d-aa5e-c6ad8a683049" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
 				<designed target="X" value="510" ver="4"/>
@@ -711,6 +714,7 @@
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initPath" ver="4" value="DI.Module2"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+				<init target="ModuleName" ver="4" value="A2.4"/>
 			</object>
 			<object access-modifier="private" name="DI_32_011_2" display-name="DI_32_011_2" uuid="074ee9cd-5d29-4a45-8e9a-74732b432bb1" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
 				<designed target="X" value="770" ver="4"/>
@@ -718,6 +722,7 @@
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initPath" ver="4" value="DI.Module3"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+				<init target="ModuleName" ver="4" value="A2.5"/>
 			</object>
 			<object access-modifier="private" name="DO_32_011_0" display-name="DO_32_011_0" uuid="8405210b-aa89-4126-89a0-34f623720234" base-type="DO" base-type-id="2015126c-643d-42f1-a2e1-ba13979bf8d0" ver="4">
 				<designed target="X" value="1030" ver="4"/>
@@ -725,6 +730,7 @@
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initPath" ver="4" value="DO.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+				<init target="ModuleName" ver="4" value="A2.6"/>
 			</object>
 			<object access-modifier="private" name="DO_32_011_1" display-name="DO_32_011_1" uuid="13775516-91f8-46b4-8fc0-fb0e5185f584" base-type="DO" base-type-id="2015126c-643d-42f1-a2e1-ba13979bf8d0" ver="4">
 				<designed target="X" value="1290" ver="4"/>
@@ -732,6 +738,7 @@
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initPath" ver="4" value="DO.Module2"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+				<init target="ModuleName" ver="4" value="A2.7"/>
 			</object>
 		</object>
 		<object access-modifier="private" name="OpcSource" display-name="OpcSource" uuid="17ab28e9-b85b-4c83-84a6-8353c1e390b4" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
@@ -808,6 +815,7 @@
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initPath" ver="4" value="AI.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+				<init target="ModuleName" ver="4" value="A2.1"/>
 			</object>
 			<object access-modifier="private" name="DI_32_011_0" display-name="DI_32_011_0" uuid="5e939798-54d9-4539-89ba-9c4876d4de7f" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
 				<designed target="X" value="510" ver="4"/>
@@ -815,6 +823,7 @@
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initPath" ver="4" value="DI.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+				<init target="ModuleName" ver="4" value="A2.2"/>
 			</object>
 			<object access-modifier="private" name="DI_32_011_1" display-name="DI_32_011_1" uuid="1e878ea8-2666-4cf0-bc58-634bd2caff2b" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
 				<designed target="X" value="770" ver="4"/>
@@ -822,6 +831,7 @@
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initPath" ver="4" value="DI.Module2"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+				<init target="ModuleName" ver="4" value="A2.3"/>
 			</object>
 			<object access-modifier="private" name="DO_32_011_0" display-name="DO_32_011_0" uuid="bf77415f-c32b-41e3-9863-2ae961a5ff42" base-type="DO" base-type-id="2015126c-643d-42f1-a2e1-ba13979bf8d0" ver="4">
 				<designed target="X" value="1030" ver="4"/>
@@ -829,6 +839,7 @@
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initPath" ver="4" value="DO.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+				<init target="ModuleName" ver="4" value="A2.4"/>
 			</object>
 		</object>
 		<object access-modifier="private" name="OpcSource" display-name="OpcSource" uuid="e3edb3ae-f55b-4c1b-a44a-12cdcc5e8ef0" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
@@ -905,6 +916,7 @@
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initPath" ver="4" value="AI.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+				<init target="ModuleName" ver="4" value="A2.1"/>
 			</object>
 			<object access-modifier="private" name="DI_32_011_0" display-name="DI_32_011_0" uuid="62cc90ce-92e5-424a-a279-eb83c9e624ab" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
 				<designed target="X" value="510" ver="4"/>
@@ -912,6 +924,7 @@
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initPath" ver="4" value="DI.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+				<init target="ModuleName" ver="4" value="A2.2"/>
 			</object>
 			<object access-modifier="private" name="DI_32_011_1" display-name="DI_32_011_1" uuid="b2ca1315-ed14-40e6-b0cd-38d9cd238d5c" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
 				<designed target="X" value="770" ver="4"/>
@@ -919,6 +932,7 @@
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initPath" ver="4" value="DI.Module2"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+				<init target="ModuleName" ver="4" value="A2.3"/>
 			</object>
 			<object access-modifier="private" name="DO_32_011_0" display-name="DO_32_011_0" uuid="bf5a5550-848f-476d-99cb-b08a8b04fbb3" base-type="DO" base-type-id="2015126c-643d-42f1-a2e1-ba13979bf8d0" ver="4">
 				<designed target="X" value="1030" ver="4"/>
@@ -926,6 +940,7 @@
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initPath" ver="4" value="DO.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+				<init target="ModuleName" ver="4" value="A2.4"/>
 			</object>
 		</object>
 		<object access-modifier="private" name="OpcSource" display-name="OpcSource" uuid="6532c2fb-b243-42fa-94a5-f9ce36f3bdc1" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
@@ -1002,6 +1017,7 @@
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initPath" ver="4" value="AI.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+				<init target="ModuleName" ver="4" value="A2.1"/>
 			</object>
 			<object access-modifier="private" name="DI_32_011_0" display-name="DI_32_011_0" uuid="d9f0f02d-df9a-4aec-b8ff-471c5200d684" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
 				<designed target="X" value="510" ver="4"/>
@@ -1009,6 +1025,7 @@
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initPath" ver="4" value="DI.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+				<init target="ModuleName" ver="4" value="A2.2"/>
 			</object>
 			<object access-modifier="private" name="DI_32_011_1" display-name="DI_32_011_1" uuid="c65928ea-9321-4fe6-93f5-650ae055a05e" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
 				<designed target="X" value="770" ver="4"/>
@@ -1016,6 +1033,7 @@
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initPath" ver="4" value="DI.Module2"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+				<init target="ModuleName" ver="4" value="A2.3"/>
 			</object>
 			<object access-modifier="private" name="DO_32_011_0" display-name="DO_32_011_0" uuid="2ccf9a1f-9776-4f96-95f7-42635bf956eb" base-type="DO" base-type-id="2015126c-643d-42f1-a2e1-ba13979bf8d0" ver="4">
 				<designed target="X" value="1030" ver="4"/>
@@ -1023,6 +1041,7 @@
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initPath" ver="4" value="DO.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+				<init target="ModuleName" ver="4" value="A2.4"/>
 			</object>
 		</object>
 		<object access-modifier="private" name="OpcSource" display-name="OpcSource" uuid="e12ca4bf-660f-4a71-aec8-8124cebe1e31" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
@@ -1099,6 +1118,7 @@
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initPath" ver="4" value="AI.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+				<init target="ModuleName" ver="4" value="A2.1"/>
 			</object>
 			<object access-modifier="private" name="DI_32_011_0" display-name="DI_32_011_0" uuid="f6ead668-166d-42be-a80d-060eb598ad46" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
 				<designed target="X" value="510" ver="4"/>
@@ -1106,6 +1126,7 @@
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initPath" ver="4" value="DI.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+				<init target="ModuleName" ver="4" value="A2.2"/>
 			</object>
 			<object access-modifier="private" name="DI_32_011_1" display-name="DI_32_011_1" uuid="fafa77eb-8a00-4e74-8f08-30b0278db107" base-type="DI" base-type-id="4e72dde4-5d4f-4681-918b-dfd75ed55a1a" ver="4">
 				<designed target="X" value="770" ver="4"/>
@@ -1113,6 +1134,7 @@
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initPath" ver="4" value="DI.Module2"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+				<init target="ModuleName" ver="4" value="A2.3"/>
 			</object>
 			<object access-modifier="private" name="DO_32_011_0" display-name="DO_32_011_0" uuid="28d9cd0d-c94b-43e8-b987-f887f892af26" base-type="DO" base-type-id="2015126c-643d-42f1-a2e1-ba13979bf8d0" ver="4">
 				<designed target="X" value="1030" ver="4"/>
@@ -1120,6 +1142,7 @@
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initPath" ver="4" value="DO.Module1"/>
 				<init target="initOpcSource" ver="4" ref="OpcSource"/>
+				<init target="ModuleName" ver="4" value="A2.4"/>
 			</object>
 		</object>
 		<object access-modifier="private" name="OpcSource" display-name="OpcSource" uuid="3aa047bb-0ae7-4c29-817b-2d4a7a90eb2a" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
