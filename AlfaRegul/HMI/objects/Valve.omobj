@@ -101,14 +101,34 @@
 	<param access-modifier="private" name="initOPCSource" display-name="initOPCSource" uuid="f782396b-6efc-4aa6-a379-e5665d68ecdf" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" base-const="true" base-ref="true" ver="4"/>
 	<param access-modifier="private" name="initPath" display-name="initPath" uuid="de652cd9-2704-482a-a603-f57cf3f966c2" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
 	<do-trace access-modifier="private" target="FillTop" ver="4">
-		<body>
-			<![CDATA[OutH]]>
-		</body>
+		<conditional-expr>
+			<condition>
+				<![CDATA[OutInvert]]>
+			</condition>
+			<expr>
+				<![CDATA[!OutH]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[OutH]]>
+			</expr>
+		</default-expr>
 	</do-trace>
 	<do-trace access-modifier="private" target="FillBot" ver="4">
-		<body>
-			<![CDATA[OutH]]>
-		</body>
+		<conditional-expr>
+			<condition>
+				<![CDATA[OutInvert]]>
+			</condition>
+			<expr>
+				<![CDATA[!OutH]]>
+			</expr>
+		</conditional-expr>
+		<default-expr>
+			<expr>
+				<![CDATA[OutH]]>
+			</expr>
+		</default-expr>
 	</do-trace>
 	<do-trace access-modifier="private" target="Tooltip" ver="4">
 		<body>
@@ -124,5 +144,6 @@
 			<![CDATA[Err]]>
 		</body>
 	</do-trace>
+	<object access-modifier="private" name="OutInvert" display-name="OutInvert" uuid="cf36b8de-bfc2-45b9-913b-fd72305b0d91" base-type="notifying_bool" base-type-id="f8797810-1baa-4a1f-af36-cf839bf252e8" ver="4"/>
 </type>
 

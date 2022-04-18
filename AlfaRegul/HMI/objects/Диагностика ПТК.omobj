@@ -39,7 +39,7 @@
 	</do-on>
 	<object access-modifier="private" name="Main" display-name="Main" uuid="7f47dad6-a971-433b-baa8-066b6913246b" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
 		<designed target="X" value="-30" ver="4"/>
-		<designed target="Y" value="-680" ver="4"/>
+		<designed target="Y" value="-649" ver="4"/>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="0.3" ver="4"/>
@@ -751,7 +751,7 @@
 	</object>
 	<object access-modifier="private" name="Group_1" display-name="Group_1" uuid="5ea92ac1-5376-414b-9404-0facebbb424c" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
 		<designed target="X" value="830" ver="4"/>
-		<designed target="Y" value="100" ver="4"/>
+		<designed target="Y" value="131" ver="4"/>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="0.3" ver="4"/>
@@ -852,7 +852,7 @@
 	</object>
 	<object access-modifier="private" name="Group_2" display-name="Group_2" uuid="22d3ac6d-215b-43cb-9b6d-b9181b7df2ef" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
 		<designed target="X" value="-400" ver="4"/>
-		<designed target="Y" value="100" ver="4"/>
+		<designed target="Y" value="131" ver="4"/>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="0.3" ver="4"/>
@@ -953,7 +953,7 @@
 	</object>
 	<object access-modifier="private" name="Group_3" display-name="Group_3" uuid="ed04cccf-5c46-4a3f-97af-2be380aed642" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
 		<designed target="X" value="830" ver="4"/>
-		<designed target="Y" value="-300" ver="4"/>
+		<designed target="Y" value="-269" ver="4"/>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="0.3" ver="4"/>
@@ -1054,7 +1054,7 @@
 	</object>
 	<object access-modifier="private" name="Group_4" display-name="Group_4" uuid="d86fca1f-4275-4b0d-a1b9-f7ba2cb96d25" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
 		<designed target="X" value="-400" ver="4"/>
-		<designed target="Y" value="-300" ver="4"/>
+		<designed target="Y" value="-269" ver="4"/>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="0.3" ver="4"/>
@@ -1153,9 +1153,341 @@
 			<init target="Path" ver="4" value="ROOT.DIAG.Group4"/>
 		</object>
 	</object>
+	<object access-modifier="private" name="AVR" display-name="AVR" uuid="32e32430-71c6-45cc-a0d7-b7c0c43b53a0" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
+		<designed target="X" value="1043" ver="4"/>
+		<designed target="Y" value="18.3333" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="210.5" ver="4"/>
+		<designed target="Height" value="138.5" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="1" ver="4"/>
+		<designed target="PenWidth" value="5" ver="4"/>
+		<designed target="BrushColor" value="4278190080" ver="4"/>
+		<designed target="BrushStyle" value="0" ver="4"/>
+		<designed target="OverrideScaling" value="false" ver="4"/>
+		<designed target="ShowScrollBars" value="true" ver="4"/>
+		<designed target="MoveByMouse" value="false" ver="4"/>
+		<object access-modifier="private" name="txtAVR" display-name="txtAVR" uuid="8695f17f-980b-428b-99b4-7f0f50174ea8" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+			<designed target="X" value="8.5" ver="4"/>
+			<designed target="Y" value="7" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="196" ver="4"/>
+			<designed target="Height" value="30" ver="4"/>
+			<designed target="Text" value="ШКАФ АВР" ver="4"/>
+			<designed target="Font" value="Arial,20,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+			<designed target="FontColor" value="0xff000000" ver="4"/>
+			<designed target="TextAlignment" value="132" ver="4"/>
+		</object>
+		<object access-modifier="private" name="Vvod_1" display-name="Vvod_1" uuid="660182ad-6cc4-4160-9dd3-1d979d1b8e32" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+			<designed target="X" value="14" ver="4"/>
+			<designed target="Y" value="40" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="80" ver="4"/>
+			<designed target="Height" value="30" ver="4"/>
+			<designed target="RoundingRadius" value="0" ver="4"/>
+			<designed target="PenColor" value="4278190080" ver="4"/>
+			<designed target="PenStyle" value="1" ver="4"/>
+			<designed target="PenWidth" value="1" ver="4"/>
+			<designed target="BrushColor" value="4278190080" ver="4"/>
+			<designed target="BrushStyle" value="0" ver="4"/>
+			<object access-modifier="private" name="txt" display-name="txt" uuid="84235a05-79f0-4bdc-b606-7ea394ada3fa" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+				<designed target="X" value="0" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="80" ver="4"/>
+				<designed target="Height" value="30" ver="4"/>
+				<designed target="Text" value="ВВОД 1
+В НОРМЕ" ver="4"/>
+				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+				<designed target="FontColor" value="0xff000000" ver="4"/>
+				<designed target="TextAlignment" value="132" ver="4"/>
+				<do-trace access-modifier="private" target="FontColor" ver="4">
+					<conditional-expr>
+						<condition>
+							<![CDATA[Vvod1OK.Value]]>
+						</condition>
+						<expr>
+							<![CDATA[0xff00ff00]]>
+						</expr>
+					</conditional-expr>
+					<default-expr>
+						<expr>
+							<![CDATA[0xff000000]]>
+						</expr>
+					</default-expr>
+				</do-trace>
+			</object>
+			<do-trace access-modifier="private" target="PenColor" ver="4">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Vvod1OK.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff00ff00]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[!Vvod1OK.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffff0000]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="hereOPCSource" display-name="hereOPCSource" uuid="dc1b6269-db82-44f8-9e4c-af72549af2d1" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+			<designed target="Active" value="false" ver="4"/>
+			<designed target="UpdateRate" value="0" ver="4"/>
+			<designed target="ReAdvise" value="0" ver="4"/>
+			<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
+			<init target="Path" ver="4" value="ROOT.Diag.Main.DI.Module2"/>
+		</object>
+		<object access-modifier="private" name="Vvod1OK" display-name="Vvod1OK" uuid="b63344b1-e373-4bc5-9684-de0cf80550cd" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+			<init target="Source" ver="4" ref="hereOPCSource"/>
+			<init target="Path" ver="4" value="Channel12.HProg"/>
+		</object>
+		<object access-modifier="private" name="Vvod2OK" display-name="Vvod2OK" uuid="f228677f-5405-48ff-9be4-60314a434760" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+			<init target="Source" ver="4" ref="hereOPCSource"/>
+			<init target="Path" ver="4" value="Channel13.HProg"/>
+		</object>
+		<object access-modifier="private" name="TypeAuto" display-name="TypeAuto" uuid="99caf4aa-f200-4c62-959e-0b51e1c07151" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+			<init target="Source" ver="4" ref="hereOPCSource"/>
+			<init target="Path" ver="4" value="Channel14.HProg"/>
+		</object>
+		<object access-modifier="private" name="Vvod2Work" display-name="Vvod2Work" uuid="fc72ae64-3cfa-4a12-a1e9-39cfbfa4951e" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+			<init target="Source" ver="4" ref="hereOPCSource"/>
+			<init target="Path" ver="4" value="Channel15.HProg"/>
+		</object>
+		<object access-modifier="private" name="Vvod_2" display-name="Vvod_2" uuid="e4162274-58e4-4a36-a3d9-af4bb4bfe51f" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+			<designed target="X" value="117" ver="4"/>
+			<designed target="Y" value="40.5" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="80" ver="4"/>
+			<designed target="Height" value="30" ver="4"/>
+			<designed target="RoundingRadius" value="0" ver="4"/>
+			<designed target="PenColor" value="4278190080" ver="4"/>
+			<designed target="PenStyle" value="1" ver="4"/>
+			<designed target="PenWidth" value="1" ver="4"/>
+			<designed target="BrushColor" value="4278190080" ver="4"/>
+			<designed target="BrushStyle" value="0" ver="4"/>
+			<object access-modifier="private" name="txt" display-name="txt" uuid="7c9e41d0-1a48-4d72-9c1f-383a2c545d86" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+				<designed target="X" value="0" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="80" ver="4"/>
+				<designed target="Height" value="30" ver="4"/>
+				<designed target="Text" value="ВВОД 2
+В НОРМЕ" ver="4"/>
+				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+				<designed target="FontColor" value="0xff000000" ver="4"/>
+				<designed target="TextAlignment" value="132" ver="4"/>
+				<do-trace access-modifier="private" target="FontColor" ver="4">
+					<conditional-expr>
+						<condition>
+							<![CDATA[Vvod2OK.Value]]>
+						</condition>
+						<expr>
+							<![CDATA[0xff00ff00]]>
+						</expr>
+					</conditional-expr>
+					<default-expr>
+						<expr>
+							<![CDATA[0xff000000]]>
+						</expr>
+					</default-expr>
+				</do-trace>
+			</object>
+			<do-trace access-modifier="private" target="PenColor" ver="4">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Vvod2OK.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xff00ff00]]>
+					</expr>
+				</conditional-expr>
+				<conditional-expr>
+					<condition>
+						<![CDATA[!Vvod2OK.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[0xffff0000]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0xff000000]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="txtInWork" display-name="txtInWork" uuid="66361cfe-b993-4c08-87c5-793e399c2dd3" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+			<designed target="X" value="64.5" ver="4"/>
+			<designed target="Y" value="75" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="80" ver="4"/>
+			<designed target="Height" value="30" ver="4"/>
+			<designed target="Text" value="Ввод в работе" ver="4"/>
+			<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+			<designed target="FontColor" value="0xff000000" ver="4"/>
+			<designed target="TextAlignment" value="132" ver="4"/>
+		</object>
+		<object access-modifier="private" name="txtTypeWork" display-name="txtTypeWork" uuid="c45456f6-4f88-46b0-815e-5f7ca95c8293" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+			<designed target="X" value="14" ver="4"/>
+			<designed target="Y" value="105.5" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="183.5" ver="4"/>
+			<designed target="Height" value="30" ver="4"/>
+			<designed target="Text" value="Режим работы:" ver="4"/>
+			<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+			<designed target="FontColor" value="0xff000000" ver="4"/>
+			<designed target="TextAlignment" value="129" ver="4"/>
+			<do-trace access-modifier="private" target="Text" ver="4">
+				<conditional-expr>
+					<condition>
+						<![CDATA[TypeAuto]]>
+					</condition>
+					<expr>
+						<![CDATA["Режим работы: автомат"]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA["Режим работы: ручной"]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="ellWork_1" display-name="ellWork_1" uuid="c2dd2339-0f26-4939-9a5a-ba0eb623fce6" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="4">
+			<designed target="X" value="41.7273" ver="4"/>
+			<designed target="Y" value="77.7272" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="24.5455" ver="4"/>
+			<designed target="Height" value="24.5455" ver="4"/>
+			<designed target="PenColor" value="4278190080" ver="4"/>
+			<designed target="PenStyle" value="1" ver="4"/>
+			<designed target="PenWidth" value="1" ver="4"/>
+			<designed target="BrushColor" value="0xff00ff00" ver="4"/>
+			<designed target="BrushStyle" value="0" ver="4"/>
+			<designed target="PieAngle" value="360" ver="4"/>
+			<designed target="PieAngleStart" value="360" ver="4"/>
+			<designed target="HoleSize" value="0" ver="4"/>
+			<do-trace access-modifier="private" target="BrushStyle" ver="4">
+				<conditional-expr>
+					<condition>
+						<![CDATA[!Vvod2Work.Value&&Vvod1OK.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[1]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+		<object access-modifier="private" name="ellWork_2" display-name="ellWork_2" uuid="72a13a53-1e25-4f76-a42e-dde6950b9404" base-type="Ellipse" base-type-id="7f9e9b77-5d97-45c4-89c1-0f67adb636cd" ver="4">
+			<designed target="X" value="144.727" ver="4"/>
+			<designed target="Y" value="77.7272" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="24.5455" ver="4"/>
+			<designed target="Height" value="24.5455" ver="4"/>
+			<designed target="PenColor" value="4278190080" ver="4"/>
+			<designed target="PenStyle" value="1" ver="4"/>
+			<designed target="PenWidth" value="1" ver="4"/>
+			<designed target="BrushColor" value="0xff00ff00" ver="4"/>
+			<designed target="BrushStyle" value="0" ver="4"/>
+			<designed target="PieAngle" value="360" ver="4"/>
+			<designed target="PieAngleStart" value="360" ver="4"/>
+			<designed target="HoleSize" value="0" ver="4"/>
+			<do-trace access-modifier="private" target="BrushStyle" ver="4">
+				<conditional-expr>
+					<condition>
+						<![CDATA[Vvod2Work.Value&&Vvod2OK.Value]]>
+					</condition>
+					<expr>
+						<![CDATA[1]]>
+					</expr>
+				</conditional-expr>
+				<default-expr>
+					<expr>
+						<![CDATA[0]]>
+					</expr>
+				</default-expr>
+			</do-trace>
+		</object>
+	</object>
 	<object access-modifier="private" name="txtMain" display-name="txtMain" uuid="0b03708b-9d5e-4b8a-b69b-0ab5c9f29f33" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
 		<designed target="X" value="832.5" ver="4"/>
-		<designed target="Y" value="90" ver="4"/>
+		<designed target="Y" value="121" ver="4"/>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="1" ver="4"/>
@@ -1172,7 +1504,7 @@
 	</object>
 	<object access-modifier="private" name="txtGroup_1" display-name="txtGroup_1" uuid="4adb839a-0bd2-4450-83ba-2f2998cd6770" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
 		<designed target="X" value="195" ver="4"/>
-		<designed target="Y" value="60" ver="4"/>
+		<designed target="Y" value="91" ver="4"/>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="1" ver="4"/>
@@ -1189,7 +1521,7 @@
 	</object>
 	<object access-modifier="private" name="txtGroup_2" display-name="txtGroup_2" uuid="c519344d-aef1-4e6c-a4b2-e8026a9b5eee" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
 		<designed target="X" value="195" ver="4"/>
-		<designed target="Y" value="880" ver="4"/>
+		<designed target="Y" value="911" ver="4"/>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="1" ver="4"/>
@@ -1206,7 +1538,7 @@
 	</object>
 	<object access-modifier="private" name="txtGroup_3" display-name="txtGroup_3" uuid="038fc07e-d249-470e-b43a-5582e97225a0" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
 		<designed target="X" value="1425" ver="4"/>
-		<designed target="Y" value="60" ver="4"/>
+		<designed target="Y" value="91" ver="4"/>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="1" ver="4"/>
@@ -1223,7 +1555,7 @@
 	</object>
 	<object access-modifier="private" name="txtGroup_4" display-name="txtGroup_4" uuid="2df4f494-3d0f-4363-9d37-8da0f923e834" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
 		<designed target="X" value="1425" ver="4"/>
-		<designed target="Y" value="880" ver="4"/>
+		<designed target="Y" value="911" ver="4"/>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="1" ver="4"/>

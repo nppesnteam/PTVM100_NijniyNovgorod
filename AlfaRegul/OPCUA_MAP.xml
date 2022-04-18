@@ -6730,16 +6730,28 @@
     <nodeId>Application.GVL.stAlarmBoilPre.Al_Tsmo_H</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Alarms.Signal.AlarmDiffPG</node-path>
+    <node-path>ROOT.Alarms.Signal.AlarmCH4</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAlarmBoilPre.Al_PGasDiff</nodeId>
+    <nodeId>Application.GVL.stAlarmBoilPre.Al_CH4</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Alarms.Signal.AlarmCO</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAlarmBoilPre.Al_CO1</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Alarms.Signal.AlarmDiffPWat</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAlarmBoilPre.AL_PboilDiff</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Alarms.Signal.AlarmDiffPG</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAlarmBoilPre.Al_PGasDiff</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Alarms.Signal.AlarmDiffTWat</node-path>

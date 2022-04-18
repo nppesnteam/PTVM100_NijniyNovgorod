@@ -316,7 +316,7 @@ unit.Global.ActiveMainFrame = "Растопочная группа №" + Str.To
 				<designed target="DisabledPenWidth" value="1" ver="4"/>
 				<do-trace access-modifier="private" target="Enabled" ver="4">
 					<body>
-						<![CDATA[!IgnStart]]>
+						<![CDATA[!OutIgnStart]]>
 					</body>
 				</do-trace>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
@@ -383,7 +383,7 @@ if (unit.Global.Group[Group].ign == 3)
 				</do-on>
 				<do-trace access-modifier="private" target="Enabled" ver="4">
 					<body>
-						<![CDATA[IgnStart]]>
+						<![CDATA[OutIgnStart]]>
 					</body>
 				</do-trace>
 				<designed target="Checked" value="false" ver="4"/>
@@ -548,6 +548,10 @@ OpenBurnSteps.Invoke();]]>
 					</object>
 				</do-on>
 			</object>
+			<object access-modifier="private" name="OutIgnStart" display-name="OutIgnStart" uuid="045336c8-d4eb-44ad-849a-a90191a6ff46" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+				<init target="Source" ver="4" ref="Scheme.Group.OpcSource"/>
+				<init target="Path" ver="4" value="Burn1.Burn.OutArmStart"/>
+			</object>
 		</object>
 		<object access-modifier="private" name="ControlButtonsburn2" display-name="ControlButtonsburn2" uuid="efb84998-01dd-49f7-894e-b32cfa77ae15" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
 			<designed target="X" value="0" ver="4"/>
@@ -611,7 +615,7 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="DisabledPenWidth" value="1" ver="4"/>
 				<do-trace access-modifier="private" target="Enabled" ver="4">
 					<body>
-						<![CDATA[!IgnStart]]>
+						<![CDATA[!OutIgnStart]]>
 					</body>
 				</do-trace>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
@@ -664,7 +668,7 @@ StartBurn.Invoke();]]>
 				<designed target="DisabledPenWidth" value="1" ver="4"/>
 				<do-trace access-modifier="private" target="Enabled" ver="4">
 					<body>
-						<![CDATA[IgnStart]]>
+						<![CDATA[OutIgnStart]]>
 					</body>
 				</do-trace>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
@@ -820,6 +824,10 @@ OpenBurnSteps.Invoke();]]>
 					</object>
 				</do-on>
 			</object>
+			<object access-modifier="private" name="OutIgnStart" display-name="OutIgnStart" uuid="a76cd037-f34e-4802-af00-7990b4fe5e38" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+				<init target="Source" ver="4" ref="Scheme.Group.OpcSource"/>
+				<init target="Path" ver="4" value="Burn2.Burn.OutArmStart"/>
+			</object>
 		</object>
 		<object access-modifier="private" name="ControlButtonsburn3" display-name="ControlButtonsburn3" uuid="868e080b-df01-4cb0-ade8-7cf18a71413f" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
 			<designed target="X" value="0" ver="4"/>
@@ -883,7 +891,7 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="DisabledPenWidth" value="1" ver="4"/>
 				<do-trace access-modifier="private" target="Enabled" ver="4">
 					<body>
-						<![CDATA[!IgnStart]]>
+						<![CDATA[!OutIgnStart]]>
 					</body>
 				</do-trace>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
@@ -936,7 +944,7 @@ StartBurn.Invoke();]]>
 				<designed target="DisabledPenWidth" value="1" ver="4"/>
 				<do-trace access-modifier="private" target="Enabled" ver="4">
 					<body>
-						<![CDATA[IgnStart]]>
+						<![CDATA[OutIgnStart]]>
 					</body>
 				</do-trace>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
@@ -1115,6 +1123,10 @@ OpenBurnSteps.Invoke();]]>
 					</object>
 				</do-on>
 			</object>
+			<object access-modifier="private" name="OutIgnStart" display-name="OutIgnStart" uuid="393b915e-2b5e-43d1-93cb-2fce12487618" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+				<init target="Source" ver="4" ref="Scheme.Group.OpcSource"/>
+				<init target="Path" ver="4" value="Burn3.Burn.OutArmStart"/>
+			</object>
 		</object>
 		<object access-modifier="private" name="ControlButtonsburn4" display-name="ControlButtonsburn4" uuid="151e85ac-3e5d-4c1b-ad6a-99747bef225b" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
 			<designed target="X" value="0" ver="4"/>
@@ -1178,7 +1190,7 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="DisabledPenWidth" value="1" ver="4"/>
 				<do-trace access-modifier="private" target="Enabled" ver="4">
 					<body>
-						<![CDATA[!IgnStart]]>
+						<![CDATA[!OutIgnStart]]>
 					</body>
 				</do-trace>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
@@ -1231,7 +1243,7 @@ StartBurn.Invoke();]]>
 				<designed target="DisabledPenWidth" value="1" ver="4"/>
 				<do-trace access-modifier="private" target="Enabled" ver="4">
 					<body>
-						<![CDATA[IgnStart]]>
+						<![CDATA[OutIgnStart]]>
 					</body>
 				</do-trace>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
@@ -1409,6 +1421,10 @@ OpenBurnSteps.Invoke();]]>
 						<init target="notifText" ver="4" ref="DialText"/>
 					</object>
 				</do-on>
+			</object>
+			<object access-modifier="private" name="OutIgnStart" display-name="OutIgnStart" uuid="b27f4346-15cd-423f-a0a6-a700f95cb4c4" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+				<init target="Source" ver="4" ref="Scheme.Group.OpcSource"/>
+				<init target="Path" ver="4" value="Burn4.Burn.OutArmStart"/>
 			</object>
 		</object>
 		<object access-modifier="private" name="ArmStartAllow" display-name="ArmStartAllow" uuid="f52fd2e6-1489-4044-9981-2add95790e65" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">

@@ -2614,6 +2614,7 @@
 						<![CDATA[NAME+" "+String.ToString(Group)]]>
 					</body>
 				</do-trace>
+				<init target="OutInvert" ver="4" value="true"/>
 			</object>
 			<object access-modifier="private" name="PBetween" display-name="PBetween" uuid="2c0bef40-2e48-43c6-8c71-04f8863c90f1" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 				<designed target="X" value="288" ver="4"/>
@@ -3054,6 +3055,7 @@
 						<![CDATA[NAME+" "+String.ToString(Group)]]>
 					</body>
 				</do-trace>
+				<init target="OutInvert" ver="4" value="true"/>
 			</object>
 			<object access-modifier="private" name="PBetween" display-name="PBetween" uuid="cb2a827f-c42b-459d-ba25-9e1ccd2054ab" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 				<designed target="X" value="438" ver="4"/>
@@ -3486,6 +3488,7 @@
 						<![CDATA[NAME+" "+String.ToString(Group)]]>
 					</body>
 				</do-trace>
+				<init target="OutInvert" ver="4" value="true"/>
 			</object>
 			<object access-modifier="private" name="PBetween" display-name="PBetween" uuid="174ca7a6-a82e-478e-91dd-03bd861d220d" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 				<designed target="X" value="288" ver="4"/>
@@ -3918,6 +3921,7 @@
 						<![CDATA[NAME+" "+String.ToString(Group)]]>
 					</body>
 				</do-trace>
+				<init target="OutInvert" ver="4" value="true"/>
 			</object>
 			<object access-modifier="private" name="PBetween" display-name="PBetween" uuid="bc73b792-76a7-4cb1-bed3-d1ccde033c01" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 				<designed target="X" value="438" ver="4"/>
@@ -6451,6 +6455,89 @@ OpenBlow.Invoke();]]>
 				<![CDATA[!GermFinal]]>
 			</body>
 		</do-trace>
+	</object>
+	<object access-modifier="private" name="ProgressBarVent" display-name="ProgressBarVent" uuid="254bf6aa-a7c5-4a54-971d-8cd350f96d4b" base-type="ProgressBar" base-type-id="a5193173-0399-4840-95f8-2e9958e4e74e" ver="4">
+		<designed target="X" value="1280" ver="4"/>
+		<designed target="Y" value="29" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="280" ver="4"/>
+		<designed target="Height" value="30" ver="4"/>
+		<designed target="Orientation" value="1" ver="4"/>
+		<designed target="MinLimit" value="0" ver="4"/>
+		<designed target="MaxLimit" value="100" ver="4"/>
+		<designed target="Value" value="0" ver="4"/>
+		<designed target="ShowText" value="false" ver="4"/>
+		<designed target="Font" value="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" ver="4"/>
+		<designed target="FontColor" value="0xffffffff" ver="4"/>
+		<object access-modifier="private" name="VentStatus" display-name="VentStatus" uuid="942435ff-3d4a-46d7-8e71-94d05c9059da" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+			<designed target="X" value="0" ver="4"/>
+			<designed target="Y" value="0" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="280" ver="4"/>
+			<designed target="Height" value="30" ver="4"/>
+			<designed target="Text" value="Шаги вентиляции" ver="4"/>
+			<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+			<designed target="FontColor" value="0xff000000" ver="4"/>
+			<designed target="TextAlignment" value="132" ver="4"/>
+			<do-trace access-modifier="private" target="Text" ver="4">
+				<body>
+					<![CDATA[here.VentStatus]]>
+				</body>
+			</do-trace>
+		</object>
+		<do-trace access-modifier="private" target="Value" ver="4">
+			<body>
+				<![CDATA[VentProgress]]>
+			</body>
+		</do-trace>
+	</object>
+	<object access-modifier="private" name="txtVent" display-name="txtVent" uuid="16af00f8-3165-47eb-99f7-6ac3b113fc23" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+		<designed target="X" value="1364.5" ver="4"/>
+		<designed target="Y" value="10" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="111" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="Text" value="Шаги вентиляции" ver="4"/>
+		<designed target="Font" value="Arial,8,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+		<designed target="FontColor" value="0xffffffff" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+	</object>
+	<object access-modifier="private" name="hereOpcSource" display-name="hereOpcSource" uuid="b57ec5f7-1d90-47c6-a270-55fcb0b9e1f8" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+		<designed target="Active" value="false" ver="4"/>
+		<designed target="UpdateRate" value="0" ver="4"/>
+		<designed target="ReAdvise" value="0" ver="4"/>
+		<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.BOILER"/>
+	</object>
+	<object access-modifier="private" name="VentStatus" display-name="VentStatus" uuid="75d411ac-bc79-4b54-9533-1ad443961e7f" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+		<init target="Path" ver="4" value="VentStatus"/>
+	</object>
+	<object access-modifier="private" name="VentOK" display-name="VentOK" uuid="a3814559-dd88-4709-824c-d5701e8147c7" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.ALARMS.OtherAlarms.AlarmVentOK"/>
+	</object>
+	<object access-modifier="private" name="VentProgress" display-name="VentProgress" uuid="d1dcf08e-e214-493b-b149-db055d1c3735" base-type="OpcItemInt4" base-type-id="c8220066-9348-4b3e-a68e-d8ac76d47db1" ver="4">
+		<init target="Source" ver="4" ref="hereOpcSource"/>
+		<init target="Path" ver="4" value="VentProgress"/>
 	</object>
 </type>
 

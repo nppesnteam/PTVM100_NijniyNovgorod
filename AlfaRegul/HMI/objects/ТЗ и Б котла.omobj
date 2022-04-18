@@ -106,7 +106,7 @@
 					<designed target="Opacity" value="1" ver="4"/>
 					<designed target="Enabled" value="true" ver="4"/>
 					<designed target="Tooltip" value="" ver="4"/>
-					<designed target="Width" value="250" ver="4"/>
+					<designed target="Width" value="350" ver="4"/>
 					<designed target="Height" value="20" ver="4"/>
 					<designed target="Text" value="Наименование защиты" ver="4"/>
 					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
@@ -7860,9 +7860,9 @@ unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Colu
 			<![CDATA[unit.Global.ActiveMainFrame = "Технологические защиты и настройки котла";]]>
 		</body>
 	</do-on>
-	<object access-modifier="private" name="RegimeMap" display-name="RegimeMap" uuid="627db4ab-f7d2-4b9e-9aad-661882439b21" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
+	<object access-modifier="private" name="RegimeMapGas" display-name="RegimeMapGas" uuid="627db4ab-f7d2-4b9e-9aad-661882439b21" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
 		<designed target="X" value="70" ver="4"/>
-		<designed target="Y" value="382" ver="4"/>
+		<designed target="Y" value="380" ver="4"/>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="1" ver="4"/>
@@ -8452,7 +8452,7 @@ unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Colu
 					<designed target="Tooltip" value="" ver="4"/>
 					<designed target="Width" value="50" ver="4"/>
 					<designed target="Height" value="20" ver="4"/>
-					<designed target="Text" value="Р газа" ver="4"/>
+					<designed target="Text" value="Р газ" ver="4"/>
 					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
 					<designed target="FontColor" value="4278190080" ver="4"/>
 					<designed target="TextAlignment" value="132" ver="4"/>
@@ -8518,7 +8518,7 @@ me.Text=outRegimeP_4.ValueAsString;]]>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
-unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кПа.",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -8572,12 +8572,6 @@ unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" гор
 							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
 						</body>
 					</do-trace>
-					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
-						<body kind="om">
-							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
-unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
-						</body>
-					</do-on>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
@@ -8586,6 +8580,12 @@ if (TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_5))<0)
 else
 	inRegimeP_5 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_5));
 me.Text=outRegimeP_5.ValueAsString;]]>
+						</body>
+					</do-on>
+					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кПа.",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -8652,7 +8652,7 @@ me.Text=outRegimeP_6.ValueAsString;]]>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
-unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кПа.",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -8719,7 +8719,7 @@ me.Text=outRegimeP_7.ValueAsString;]]>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
-unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кПа.",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -8786,7 +8786,7 @@ me.Text=outRegimeP_8.ValueAsString;]]>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
-unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кПа.",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -8853,7 +8853,7 @@ me.Text=outRegimeP_9.ValueAsString;]]>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
-unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кПа.",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -8920,7 +8920,7 @@ me.Text=outRegimeP_10.ValueAsString;]]>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
-unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кПа.",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -8987,7 +8987,7 @@ me.Text=outRegimeP_11.ValueAsString;]]>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
-unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кПа.",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -9054,7 +9054,7 @@ me.Text=outRegimeP_12.ValueAsString;]]>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
-unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кПа.",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -9121,7 +9121,7 @@ me.Text=outRegimeP_13.ValueAsString;]]>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
-unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кПа.",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -9188,7 +9188,7 @@ me.Text=outRegimeP_14.ValueAsString;]]>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
-unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кПа.",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -9255,7 +9255,7 @@ me.Text=outRegimeP_15.ValueAsString;]]>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
-unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кПа.",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -9322,7 +9322,7 @@ me.Text=outRegimeP_16.ValueAsString;]]>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
-unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кгс/см².",2);]]>
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" кПа.",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -9442,9 +9442,1591 @@ unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" гор
 			<init target="Path" ver="4" value="OutRegimeP16"/>
 		</object>
 	</object>
+	<object access-modifier="private" name="RegimeMapOil" display-name="RegimeMapOil" uuid="e5efcaad-0dc1-42a3-8a9f-6bd3da405dfa" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
+		<designed target="X" value="70" ver="4"/>
+		<designed target="Y" value="484" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="700" ver="4"/>
+		<designed target="Height" value="50" ver="4"/>
+		<designed target="PenColor" value="4278190080" ver="4"/>
+		<designed target="PenStyle" value="1" ver="4"/>
+		<designed target="PenWidth" value="1" ver="4"/>
+		<designed target="BrushColor" value="4278190080" ver="4"/>
+		<designed target="BrushStyle" value="0" ver="4"/>
+		<designed target="OverrideScaling" value="false" ver="4"/>
+		<designed target="ShowScrollBars" value="true" ver="4"/>
+		<designed target="MoveByMouse" value="false" ver="4"/>
+		<object access-modifier="private" name="Header" display-name="Header" uuid="aa32461c-120f-42bc-86c1-b637420af5e7" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+			<designed target="X" value="0" ver="4"/>
+			<designed target="Y" value="0" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="700" ver="4"/>
+			<designed target="Height" value="30" ver="4"/>
+			<designed target="RoundingRadius" value="0" ver="4"/>
+			<designed target="PenColor" value="4278190080" ver="4"/>
+			<designed target="PenStyle" value="1" ver="4"/>
+			<designed target="PenWidth" value="1" ver="4"/>
+			<designed target="BrushColor" value="4278190080" ver="4"/>
+			<designed target="BrushStyle" value="0" ver="4"/>
+			<object access-modifier="private" name="Column_1" display-name="Column_1" uuid="bf80702b-4ea3-41f3-99fd-abe2740a42c9" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="0" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="30" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffd3d3d3" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="773386ba-3fcb-4672-81eb-034a824d0fd3" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="30" ver="4"/>
+					<designed target="Text" value="Кол-во
+горелок" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+				</object>
+			</object>
+			<object access-modifier="private" name="Column_2" display-name="Column_2" uuid="fd5eb420-d168-43da-8027-1757c0826637" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="50" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="30" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffd3d3d3" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="81e6d462-58e0-4d25-a7ff-28c8f2d2c0e6" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="30" ver="4"/>
+					<designed target="Text" value="4" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+				</object>
+			</object>
+			<object access-modifier="private" name="Column_3" display-name="Column_3" uuid="8ca51fb0-5cd0-499f-9cbf-239c023f2e0e" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="100" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="30" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffd3d3d3" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="3fd6c9aa-b64b-4709-87d3-31345685da10" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="30" ver="4"/>
+					<designed target="Text" value="5" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+				</object>
+			</object>
+			<object access-modifier="private" name="Column_4" display-name="Column_4" uuid="53b65e09-a978-4dd7-b369-5aa7b6368121" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="150" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="30" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffd3d3d3" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="c127d305-d78f-4110-a185-4c3c0216bcb6" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="30" ver="4"/>
+					<designed target="Text" value="6" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+				</object>
+			</object>
+			<object access-modifier="private" name="Column_5" display-name="Column_5" uuid="0b856af2-57c8-4237-81bd-2f66afa45210" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="200" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="30" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffd3d3d3" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="a4b4f78c-31ed-4326-ad30-5919708643cb" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="30" ver="4"/>
+					<designed target="Text" value="7" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+				</object>
+			</object>
+			<object access-modifier="private" name="Column_6" display-name="Column_6" uuid="dfae4241-036b-410e-bb4d-7fe45afa92ab" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="250" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="30" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffd3d3d3" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="7d63bfae-0fef-4011-8850-77322423e319" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="30" ver="4"/>
+					<designed target="Text" value="8" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+				</object>
+			</object>
+			<object access-modifier="private" name="Column_7" display-name="Column_7" uuid="69718083-5a38-4131-a573-cf498189b75c" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="300" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="30" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffd3d3d3" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="288c6245-9a53-4eb2-97ef-0c50d8839655" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="30" ver="4"/>
+					<designed target="Text" value="9" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+				</object>
+			</object>
+			<object access-modifier="private" name="Column_8" display-name="Column_8" uuid="f0ac2e50-c78b-4e70-95e9-1e0bb1459746" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="350" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="30" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffd3d3d3" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="e0b889ac-8505-46e9-8d15-fd41a5d6febe" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="30" ver="4"/>
+					<designed target="Text" value="10" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+				</object>
+			</object>
+			<object access-modifier="private" name="Column_9" display-name="Column_9" uuid="8bd9b081-ddd8-447b-901c-24d788a07ebe" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="400" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="30" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffd3d3d3" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="5ff5cd89-19e0-4117-92d3-64f2edbd6824" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="30" ver="4"/>
+					<designed target="Text" value="11" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+				</object>
+			</object>
+			<object access-modifier="private" name="Column_10" display-name="Column_10" uuid="06078b84-f889-4ebf-b1e7-540732c5d6db" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="450" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="30" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffd3d3d3" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="3d00dc66-ca1e-40fe-a511-af7d6f143996" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="30" ver="4"/>
+					<designed target="Text" value="12" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+				</object>
+			</object>
+			<object access-modifier="private" name="Column_11" display-name="Column_11" uuid="97df071a-8626-41dd-bd3b-ef583f7ea364" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="500" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="30" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffd3d3d3" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="21a06507-3e19-4464-86be-3da9498f010f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="30" ver="4"/>
+					<designed target="Text" value="13" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+				</object>
+			</object>
+			<object access-modifier="private" name="Column_12" display-name="Column_12" uuid="60707bad-e876-4ea9-924e-bcaeb10e908a" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="550" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="30" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffd3d3d3" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="474c0deb-c7d3-4521-bfea-4468ad3b9f43" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="30" ver="4"/>
+					<designed target="Text" value="14" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+				</object>
+			</object>
+			<object access-modifier="private" name="Column_13" display-name="Column_13" uuid="e9820917-9e17-4b44-99ed-32e0aaabc0e0" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="600" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="30" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffd3d3d3" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="1279eb02-5e77-4d90-98e4-67a8296ab390" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="30" ver="4"/>
+					<designed target="Text" value="15" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+				</object>
+			</object>
+			<object access-modifier="private" name="Column_14" display-name="Column_14" uuid="16c9781f-8d2a-4b36-972f-eed6af8d265a" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="650" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="30" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffd3d3d3" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="e0e1c041-ae63-4451-af0c-30f870a80b57" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="30" ver="4"/>
+					<designed target="Text" value="16" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+				</object>
+			</object>
+		</object>
+		<object access-modifier="private" name="Row_1" display-name="Row_1" uuid="9380c901-8209-45d9-abf6-ccd85d5b6124" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+			<designed target="X" value="0" ver="4"/>
+			<designed target="Y" value="30" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="700" ver="4"/>
+			<designed target="Height" value="20" ver="4"/>
+			<designed target="RoundingRadius" value="0" ver="4"/>
+			<designed target="PenColor" value="4278190080" ver="4"/>
+			<designed target="PenStyle" value="1" ver="4"/>
+			<designed target="PenWidth" value="1" ver="4"/>
+			<designed target="BrushColor" value="4278190080" ver="4"/>
+			<designed target="BrushStyle" value="0" ver="4"/>
+			<object access-modifier="private" name="Column_1" display-name="Column_1" uuid="7d31155c-68b7-4b77-a4f5-000f233060ff" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="0" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="20" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffd3d3d3" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="e0fb5e6b-7951-408a-ab42-162d8221acc6" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="20" ver="4"/>
+					<designed target="Text" value="Р мазут" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+				</object>
+			</object>
+			<object access-modifier="private" name="Column_2" display-name="Column_2" uuid="ea3d1ce9-f4bb-4e75-a7f5-09e9c30fff81" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="50" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="20" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffeeeeee" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="0e44d45d-747a-4105-af18-c66f8c1988d1" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="20" ver="4"/>
+					<designed target="Text" value="0.0" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+					<designed target="HideInput" value="false" ver="4"/>
+					<designed target="PlaceholderText" value="" ver="4"/>
+					<designed target="ReadOnly" value="false" ver="4"/>
+					<do-trace access-modifier="private" target="Text" ver="4">
+						<body>
+							<![CDATA[outRegimeP_4]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_4))<0)
+	inRegimeP_4=outRegimeP_4;
+else
+	inRegimeP_4 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_4));
+me.Text=outRegimeP_4.ValueAsString;]]>
+						</body>
+					</do-on>
+					<do-trace access-modifier="private" target="ReadOnly" ver="4">
+						<body>
+							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" МПа.",2);]]>
+						</body>
+					</do-on>
+				</object>
+				<object access-modifier="private" name="BurnCount" display-name="BurnCount" uuid="95d1ebbf-66ba-4c61-a612-7932f99b7ef2" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+				<init target="BurnCount" ver="4" value="4"/>
+			</object>
+			<object access-modifier="private" name="Column_3" display-name="Column_3" uuid="7463d1c8-e397-455a-8188-b2ca936d79c3" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="100" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="20" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffeeeeee" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="d0690191-9c92-47eb-9046-eb8f81cc7f49" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="20" ver="4"/>
+					<designed target="Text" value="0.0" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+					<designed target="HideInput" value="false" ver="4"/>
+					<designed target="PlaceholderText" value="" ver="4"/>
+					<designed target="ReadOnly" value="false" ver="4"/>
+					<do-trace access-modifier="private" target="Text" ver="4">
+						<body>
+							<![CDATA[outRegimeP_5]]>
+						</body>
+					</do-trace>
+					<do-trace access-modifier="private" target="ReadOnly" ver="4">
+						<body>
+							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_5))<0)
+	inRegimeP_5=outRegimeP_5;
+else
+	inRegimeP_5 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_5));
+me.Text=outRegimeP_5.ValueAsString;]]>
+						</body>
+					</do-on>
+					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" МПа.",2);]]>
+						</body>
+					</do-on>
+				</object>
+				<object access-modifier="private" name="BurnCount" display-name="BurnCount" uuid="b80caef9-523c-493e-88fb-0018b6ead630" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+				<init target="BurnCount" ver="4" value="5"/>
+			</object>
+			<object access-modifier="private" name="Column_4" display-name="Column_4" uuid="a275209f-a388-4f00-9ac2-3a6df6747e14" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="150" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="20" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffeeeeee" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="889f63b8-b039-4bde-9c0f-45717502780d" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="20" ver="4"/>
+					<designed target="Text" value="0.0" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+					<designed target="HideInput" value="false" ver="4"/>
+					<designed target="PlaceholderText" value="" ver="4"/>
+					<designed target="ReadOnly" value="false" ver="4"/>
+					<do-trace access-modifier="private" target="Text" ver="4">
+						<body>
+							<![CDATA[outRegimeP_6]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_6))<0)
+	inRegimeP_6=outRegimeP_6;
+else
+	inRegimeP_6 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_6));
+me.Text=outRegimeP_6.ValueAsString;]]>
+						</body>
+					</do-on>
+					<do-trace access-modifier="private" target="ReadOnly" ver="4">
+						<body>
+							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" МПа.",2);]]>
+						</body>
+					</do-on>
+				</object>
+				<object access-modifier="private" name="BurnCount" display-name="BurnCount" uuid="6826bcb7-b56f-4391-be5d-08b5bb558226" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+				<init target="BurnCount" ver="4" value="6"/>
+			</object>
+			<object access-modifier="private" name="Column_5" display-name="Column_5" uuid="8ff9c196-ba41-47ad-9429-d8988f541f8c" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="200" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="20" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffeeeeee" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="724e3590-bcd9-4544-a961-87ec2271735b" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="20" ver="4"/>
+					<designed target="Text" value="0.0" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+					<designed target="HideInput" value="false" ver="4"/>
+					<designed target="PlaceholderText" value="" ver="4"/>
+					<designed target="ReadOnly" value="false" ver="4"/>
+					<do-trace access-modifier="private" target="Text" ver="4">
+						<body>
+							<![CDATA[outRegimeP_7]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_7))<0)
+	inRegimeP_7=outRegimeP_7;
+else
+	inRegimeP_7 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_7));
+me.Text=outRegimeP_7.ValueAsString;]]>
+						</body>
+					</do-on>
+					<do-trace access-modifier="private" target="ReadOnly" ver="4">
+						<body>
+							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" МПа.",2);]]>
+						</body>
+					</do-on>
+				</object>
+				<object access-modifier="private" name="BurnCount" display-name="BurnCount" uuid="43d316c4-ac99-424f-8000-1f0cdb2d258b" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+				<init target="BurnCount" ver="4" value="7"/>
+			</object>
+			<object access-modifier="private" name="Column_6" display-name="Column_6" uuid="a4be2f3e-2f6c-4206-879b-eb4035ae1b4c" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="250" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="20" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffeeeeee" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="984ac4be-c8cc-4350-9a37-9c5df8551602" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="20" ver="4"/>
+					<designed target="Text" value="0.0" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+					<designed target="HideInput" value="false" ver="4"/>
+					<designed target="PlaceholderText" value="" ver="4"/>
+					<designed target="ReadOnly" value="false" ver="4"/>
+					<do-trace access-modifier="private" target="Text" ver="4">
+						<body>
+							<![CDATA[outRegimeP_8]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_8))<0)
+	inRegimeP_8=outRegimeP_8;
+else
+	inRegimeP_8 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_8));
+me.Text=outRegimeP_8.ValueAsString;]]>
+						</body>
+					</do-on>
+					<do-trace access-modifier="private" target="ReadOnly" ver="4">
+						<body>
+							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" МПа.",2);]]>
+						</body>
+					</do-on>
+				</object>
+				<object access-modifier="private" name="BurnCount" display-name="BurnCount" uuid="c3be57e2-7bb7-44a9-ade5-ef0cae18ff62" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+				<init target="BurnCount" ver="4" value="8"/>
+			</object>
+			<object access-modifier="private" name="Column_7" display-name="Column_7" uuid="8cf0b0b6-167c-424d-82a5-821e139bda5e" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="300" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="20" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffeeeeee" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="0320b56e-888e-4068-8a33-f36f3b38ccbf" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="20" ver="4"/>
+					<designed target="Text" value="0.0" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+					<designed target="HideInput" value="false" ver="4"/>
+					<designed target="PlaceholderText" value="" ver="4"/>
+					<designed target="ReadOnly" value="false" ver="4"/>
+					<do-trace access-modifier="private" target="Text" ver="4">
+						<body>
+							<![CDATA[outRegimeP_9]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_9))<0)
+	inRegimeP_9=outRegimeP_9;
+else
+	inRegimeP_9 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_9));
+me.Text=outRegimeP_9.ValueAsString;]]>
+						</body>
+					</do-on>
+					<do-trace access-modifier="private" target="ReadOnly" ver="4">
+						<body>
+							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" МПа.",2);]]>
+						</body>
+					</do-on>
+				</object>
+				<object access-modifier="private" name="BurnCount" display-name="BurnCount" uuid="50f152b1-5bc6-4574-88c8-7db788ada030" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+				<init target="BurnCount" ver="4" value="9"/>
+			</object>
+			<object access-modifier="private" name="Column_8" display-name="Column_8" uuid="b2d9ff80-bac5-4499-8db4-40315bc38bd0" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="350" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="20" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffeeeeee" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="155933f2-c874-45ba-af47-6dc94ea9fcd1" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="20" ver="4"/>
+					<designed target="Text" value="0.0" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+					<designed target="HideInput" value="false" ver="4"/>
+					<designed target="PlaceholderText" value="" ver="4"/>
+					<designed target="ReadOnly" value="false" ver="4"/>
+					<do-trace access-modifier="private" target="Text" ver="4">
+						<body>
+							<![CDATA[outRegimeP_10]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_10))<0)
+	inRegimeP_10=outRegimeP_10;
+else
+	inRegimeP_10 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_10));
+me.Text=outRegimeP_10.ValueAsString;]]>
+						</body>
+					</do-on>
+					<do-trace access-modifier="private" target="ReadOnly" ver="4">
+						<body>
+							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" МПа.",2);]]>
+						</body>
+					</do-on>
+				</object>
+				<object access-modifier="private" name="BurnCount" display-name="BurnCount" uuid="6980e858-f077-46bd-ae66-26a39dea11b0" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+				<init target="BurnCount" ver="4" value="10"/>
+			</object>
+			<object access-modifier="private" name="Column_9" display-name="Column_9" uuid="bf8dfc60-3d83-4ea1-b5ca-2ecb8b13af93" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="400" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="20" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffeeeeee" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="b71e677f-3b79-45f5-8c32-ad954dd66f5b" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="20" ver="4"/>
+					<designed target="Text" value="0.0" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+					<designed target="HideInput" value="false" ver="4"/>
+					<designed target="PlaceholderText" value="" ver="4"/>
+					<designed target="ReadOnly" value="false" ver="4"/>
+					<do-trace access-modifier="private" target="Text" ver="4">
+						<body>
+							<![CDATA[outRegimeP_11]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_11))<0)
+	inRegimeP_11=outRegimeP_11;
+else
+	inRegimeP_11 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_11));
+me.Text=outRegimeP_11.ValueAsString;]]>
+						</body>
+					</do-on>
+					<do-trace access-modifier="private" target="ReadOnly" ver="4">
+						<body>
+							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" МПа.",2);]]>
+						</body>
+					</do-on>
+				</object>
+				<object access-modifier="private" name="BurnCount" display-name="BurnCount" uuid="be3e3047-4b40-441c-9301-82df92cdf91e" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+				<init target="BurnCount" ver="4" value="11"/>
+			</object>
+			<object access-modifier="private" name="Column_10" display-name="Column_10" uuid="4b70d91b-c256-40fe-8db4-f77852affd86" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="450" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="20" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffeeeeee" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="f2b64fbb-f9eb-4778-84c0-d58888752271" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="20" ver="4"/>
+					<designed target="Text" value="0.0" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+					<designed target="HideInput" value="false" ver="4"/>
+					<designed target="PlaceholderText" value="" ver="4"/>
+					<designed target="ReadOnly" value="false" ver="4"/>
+					<do-trace access-modifier="private" target="Text" ver="4">
+						<body>
+							<![CDATA[outRegimeP_12]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_12))<0)
+	inRegimeP_12=outRegimeP_12;
+else
+	inRegimeP_12 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_12));
+me.Text=outRegimeP_12.ValueAsString;]]>
+						</body>
+					</do-on>
+					<do-trace access-modifier="private" target="ReadOnly" ver="4">
+						<body>
+							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" МПа.",2);]]>
+						</body>
+					</do-on>
+				</object>
+				<object access-modifier="private" name="BurnCount" display-name="BurnCount" uuid="febe862c-22fd-44a7-9fbd-404a80b4e871" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+				<init target="BurnCount" ver="4" value="12"/>
+			</object>
+			<object access-modifier="private" name="Column_11" display-name="Column_11" uuid="4f9e62e6-a9b8-461f-b768-387a90024406" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="500" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="20" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffeeeeee" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="1665821b-fc39-4212-b4fa-ee3f8c656c16" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="20" ver="4"/>
+					<designed target="Text" value="0.0" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+					<designed target="HideInput" value="false" ver="4"/>
+					<designed target="PlaceholderText" value="" ver="4"/>
+					<designed target="ReadOnly" value="false" ver="4"/>
+					<do-trace access-modifier="private" target="Text" ver="4">
+						<body>
+							<![CDATA[outRegimeP_13]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_13))<0)
+	inRegimeP_13=outRegimeP_13;
+else
+	inRegimeP_13 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_13));
+me.Text=outRegimeP_13.ValueAsString;]]>
+						</body>
+					</do-on>
+					<do-trace access-modifier="private" target="ReadOnly" ver="4">
+						<body>
+							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" МПа.",2);]]>
+						</body>
+					</do-on>
+				</object>
+				<object access-modifier="private" name="BurnCount" display-name="BurnCount" uuid="0ef8711c-f4d9-48e3-94c4-55c5b04e27d9" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+				<init target="BurnCount" ver="4" value="12"/>
+			</object>
+			<object access-modifier="private" name="Column_12" display-name="Column_12" uuid="283c87e9-b9a6-4ae7-9145-ae3c7b9f0d77" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="550" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="20" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffeeeeee" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="2bd123eb-2e95-4fff-9958-74f7011d0f5e" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="20" ver="4"/>
+					<designed target="Text" value="0.0" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+					<designed target="HideInput" value="false" ver="4"/>
+					<designed target="PlaceholderText" value="" ver="4"/>
+					<designed target="ReadOnly" value="false" ver="4"/>
+					<do-trace access-modifier="private" target="Text" ver="4">
+						<body>
+							<![CDATA[outRegimeP_14]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_14))<0)
+	inRegimeP_14=outRegimeP_14;
+else
+	inRegimeP_14 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_14));
+me.Text=outRegimeP_14.ValueAsString;]]>
+						</body>
+					</do-on>
+					<do-trace access-modifier="private" target="ReadOnly" ver="4">
+						<body>
+							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" МПа.",2);]]>
+						</body>
+					</do-on>
+				</object>
+				<object access-modifier="private" name="BurnCount" display-name="BurnCount" uuid="fa675c08-ebfd-4a22-ae3b-deece06e4117" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+				<init target="BurnCount" ver="4" value="12"/>
+			</object>
+			<object access-modifier="private" name="Column_13" display-name="Column_13" uuid="7f513c49-bd97-4162-abff-74d05629c4f6" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="600" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="20" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffeeeeee" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="8a447be6-df63-4a65-a9bf-28c5affbff2e" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="20" ver="4"/>
+					<designed target="Text" value="0.0" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+					<designed target="HideInput" value="false" ver="4"/>
+					<designed target="PlaceholderText" value="" ver="4"/>
+					<designed target="ReadOnly" value="false" ver="4"/>
+					<do-trace access-modifier="private" target="Text" ver="4">
+						<body>
+							<![CDATA[outRegimeP_15]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_15))<0)
+	inRegimeP_15=outRegimeP_15;
+else
+	inRegimeP_15 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_15));
+me.Text=outRegimeP_15.ValueAsString;]]>
+						</body>
+					</do-on>
+					<do-trace access-modifier="private" target="ReadOnly" ver="4">
+						<body>
+							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" МПа.",2);]]>
+						</body>
+					</do-on>
+				</object>
+				<object access-modifier="private" name="BurnCount" display-name="BurnCount" uuid="e20084e8-b90e-42cb-93f4-15de466c71b6" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+				<init target="BurnCount" ver="4" value="12"/>
+			</object>
+			<object access-modifier="private" name="Column_14" display-name="Column_14" uuid="9a259c91-4a5c-457f-89e0-8d7d4b039184" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
+				<designed target="X" value="650" ver="4"/>
+				<designed target="Y" value="0" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="50" ver="4"/>
+				<designed target="Height" value="20" ver="4"/>
+				<designed target="RoundingRadius" value="0" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffeeeeee" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="txt" display-name="txt" uuid="fcb7e11e-2bce-4d1f-bd73-9f197a780f57" base-type="TextEdit" base-type-id="53a97863-93f3-45a1-a2ea-9ff98d2dcdd9" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+					<designed target="ZValue" value="0" ver="4"/>
+					<designed target="Rotation" value="0" ver="4"/>
+					<designed target="Scale" value="1" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
+					<designed target="Opacity" value="1" ver="4"/>
+					<designed target="Enabled" value="true" ver="4"/>
+					<designed target="Tooltip" value="" ver="4"/>
+					<designed target="Width" value="50" ver="4"/>
+					<designed target="Height" value="20" ver="4"/>
+					<designed target="Text" value="0.0" ver="4"/>
+					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0" ver="4"/>
+					<designed target="FontColor" value="4278190080" ver="4"/>
+					<designed target="TextAlignment" value="132" ver="4"/>
+					<designed target="HideInput" value="false" ver="4"/>
+					<designed target="PlaceholderText" value="" ver="4"/>
+					<designed target="ReadOnly" value="false" ver="4"/>
+					<do-trace access-modifier="private" target="Text" ver="4">
+						<body>
+							<![CDATA[outRegimeP_16]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_16))<0)
+	inRegimeP_16=outRegimeP_16;
+else
+	inRegimeP_16 = TypeConvert.ToFloat(Str.ToDouble(me.Text,outRegimeP_16));
+me.Text=outRegimeP_16.ValueAsString;]]>
+						</body>
+					</do-on>
+					<do-trace access-modifier="private" target="ReadOnly" ver="4">
+						<body>
+							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
+						</body>
+					</do-trace>
+					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" горелок изменено на "+me.Text+" МПа.",2);]]>
+						</body>
+					</do-on>
+				</object>
+				<object access-modifier="private" name="BurnCount" display-name="BurnCount" uuid="c2d1b70d-a383-4bdb-9351-6ddd7643ed0f" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
+				<init target="BurnCount" ver="4" value="12"/>
+			</object>
+		</object>
+		<object access-modifier="private" name="OPCRegimeMap" display-name="OPCRegimeMap" uuid="9ebda8a1-31fb-4539-ac8c-9546fa1ecc6f" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+			<designed target="Active" value="false" ver="4"/>
+			<designed target="UpdateRate" value="0" ver="4"/>
+			<designed target="ReAdvise" value="0" ver="4"/>
+			<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
+			<init target="Path" ver="4" value="ROOT.RegimeMapOil"/>
+		</object>
+		<object access-modifier="private" name="inRegimeP_4" display-name="inRegimeP_4" uuid="b7f7843a-b876-4bf7-9ec4-9194a3af0f7e" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="InRegimeP4"/>
+		</object>
+		<object access-modifier="private" name="inRegimeP_5" display-name="inRegimeP_5" uuid="bce97245-d2e3-48bb-b027-2775477c9575" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="InRegimeP5"/>
+		</object>
+		<object access-modifier="private" name="inRegimeP_6" display-name="inRegimeP_6" uuid="3608acc8-17ae-4cce-afe9-cefab9cfe141" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="InRegimeP6"/>
+		</object>
+		<object access-modifier="private" name="inRegimeP_7" display-name="inRegimeP_7" uuid="d094b0e3-6f64-466a-a8a0-37037cc025d6" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="InRegimeP7"/>
+		</object>
+		<object access-modifier="private" name="inRegimeP_8" display-name="inRegimeP_8" uuid="9e30688b-a3e2-4871-8f5d-aded4021ff72" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="InRegimeP8"/>
+		</object>
+		<object access-modifier="private" name="inRegimeP_9" display-name="inRegimeP_9" uuid="a9cfb10b-6ea6-40bb-8ae3-5caf9a4ba123" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="InRegimeP9"/>
+		</object>
+		<object access-modifier="private" name="inRegimeP_10" display-name="inRegimeP_10" uuid="55171c85-35aa-40ed-aa43-7139c1ecdcc2" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="InRegimeP10"/>
+		</object>
+		<object access-modifier="private" name="inRegimeP_11" display-name="inRegimeP_11" uuid="28e9b98a-e673-4088-9b04-fb67218bdd02" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="InRegimeP11"/>
+		</object>
+		<object access-modifier="private" name="inRegimeP_12" display-name="inRegimeP_12" uuid="f6fec267-7c39-48c2-bcaf-9b8bd8c0f730" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="InRegimeP12"/>
+		</object>
+		<object access-modifier="private" name="inRegimeP_13" display-name="inRegimeP_13" uuid="5bad22d6-d398-4847-9e13-ba81360faae3" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="InRegimeP13"/>
+		</object>
+		<object access-modifier="private" name="inRegimeP_14" display-name="inRegimeP_14" uuid="131b9885-7005-4cb8-85a7-a5027bf12c70" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="InRegimeP14"/>
+		</object>
+		<object access-modifier="private" name="inRegimeP_15" display-name="inRegimeP_15" uuid="fd98e0ef-d9e1-492b-ae07-676edc18daca" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="InRegimeP15"/>
+		</object>
+		<object access-modifier="private" name="inRegimeP_16" display-name="inRegimeP_16" uuid="eafd2ff3-041a-4b6a-92b6-c027c6e2db77" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="InRegimeP16"/>
+		</object>
+		<object access-modifier="private" name="outRegimeP_4" display-name="outRegimeP_4" uuid="4b174b2c-54d7-49e5-a7ee-d0a4c1337cd8" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="OutRegimeP4"/>
+		</object>
+		<object access-modifier="private" name="outRegimeP_5" display-name="outRegimeP_5" uuid="82203cb1-f164-4ea2-908f-5a201aff33bd" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="OutRegimeP5"/>
+		</object>
+		<object access-modifier="private" name="outRegimeP_6" display-name="outRegimeP_6" uuid="0e6a7a98-1378-4c05-844c-40bdb59a1e9b" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="OutRegimeP6"/>
+		</object>
+		<object access-modifier="private" name="outRegimeP_7" display-name="outRegimeP_7" uuid="9be922fa-9bd5-4f9f-91c0-9af0cc9b9209" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="OutRegimeP7"/>
+		</object>
+		<object access-modifier="private" name="outRegimeP_8" display-name="outRegimeP_8" uuid="e6aa6b8d-6b71-4bf7-b970-36ad6b93bf62" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="OutRegimeP8"/>
+		</object>
+		<object access-modifier="private" name="outRegimeP_9" display-name="outRegimeP_9" uuid="cb650260-5157-4083-aac1-5ba91270151c" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="OutRegimeP9"/>
+		</object>
+		<object access-modifier="private" name="outRegimeP_10" display-name="outRegimeP_10" uuid="9da23594-3df9-4987-8338-481e34236f6a" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="OutRegimeP10"/>
+		</object>
+		<object access-modifier="private" name="outRegimeP_11" display-name="outRegimeP_11" uuid="56c39661-43d1-4329-99b4-621014bf4c60" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="OutRegimeP11"/>
+		</object>
+		<object access-modifier="private" name="outRegimeP_12" display-name="outRegimeP_12" uuid="c5e402b0-3650-4d07-a7e0-7acba6080063" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="OutRegimeP12"/>
+		</object>
+		<object access-modifier="private" name="outRegimeP_13" display-name="outRegimeP_13" uuid="d0169aa6-788a-40be-bb2f-76cdd7cfd8d3" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="OutRegimeP13"/>
+		</object>
+		<object access-modifier="private" name="outRegimeP_14" display-name="outRegimeP_14" uuid="89e0fd17-fb70-4e64-816d-4bb6df4dfa9d" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="OutRegimeP14"/>
+		</object>
+		<object access-modifier="private" name="outRegimeP_15" display-name="outRegimeP_15" uuid="fcc3047b-4919-412a-9417-fa69470ef5ec" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="OutRegimeP15"/>
+		</object>
+		<object access-modifier="private" name="outRegimeP_16" display-name="outRegimeP_16" uuid="22af7a20-0372-4486-98f5-81964a5022bf" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+			<init target="Source" ver="4" ref="OPCRegimeMap"/>
+			<init target="Path" ver="4" value="OutRegimeP16"/>
+		</object>
+	</object>
 	<object access-modifier="private" name="IgnFlapOpen" display-name="IgnFlapOpen" uuid="85634e3c-082e-41d5-afc7-632b09b7866a" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
 		<designed target="X" value="76" ver="4"/>
-		<designed target="Y" value="513" ver="4"/>
+		<designed target="Y" value="595" ver="4"/>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="1" ver="4"/>
@@ -10404,7 +11986,7 @@ me.Text=OutOpenAIgn_4.ValueAsString;]]>
 	</object>
 	<object access-modifier="private" name="txtOpenBeforeIgn" display-name="txtOpenBeforeIgn" uuid="ec7d336f-dcf7-424f-b620-d07530303327" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
 		<designed target="X" value="89" ver="4"/>
-		<designed target="Y" value="482" ver="4"/>
+		<designed target="Y" value="564" ver="4"/>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="1" ver="4"/>
@@ -10415,6 +11997,40 @@ me.Text=OutOpenAIgn_4.ValueAsString;]]>
 		<designed target="Width" value="234" ver="4"/>
 		<designed target="Height" value="20" ver="4"/>
 		<designed target="Text" value="Время открытия перед розжигом" ver="4"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+		<designed target="FontColor" value="4278190080" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+	</object>
+	<object access-modifier="private" name="txtRegimeGas" display-name="txtRegimeGas" uuid="f289a4e5-e4b7-44f9-b6e1-05c11e66561f" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+		<designed target="X" value="303" ver="4"/>
+		<designed target="Y" value="350" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="234" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="Text" value="Режимная карта газ" ver="4"/>
+		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+		<designed target="FontColor" value="4278190080" ver="4"/>
+		<designed target="TextAlignment" value="132" ver="4"/>
+	</object>
+	<object access-modifier="private" name="txtRegimeOil" display-name="txtRegimeOil" uuid="e99bfe42-1843-43b8-a40e-6e67557f6234" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+		<designed target="X" value="303" ver="4"/>
+		<designed target="Y" value="454" ver="4"/>
+		<designed target="ZValue" value="0" ver="4"/>
+		<designed target="Rotation" value="0" ver="4"/>
+		<designed target="Scale" value="1" ver="4"/>
+		<designed target="Visible" value="true" ver="4"/>
+		<designed target="Opacity" value="1" ver="4"/>
+		<designed target="Enabled" value="true" ver="4"/>
+		<designed target="Tooltip" value="" ver="4"/>
+		<designed target="Width" value="234" ver="4"/>
+		<designed target="Height" value="20" ver="4"/>
+		<designed target="Text" value="Режимная карта рез.топливо" ver="4"/>
 		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
 		<designed target="FontColor" value="4278190080" ver="4"/>
 		<designed target="TextAlignment" value="132" ver="4"/>

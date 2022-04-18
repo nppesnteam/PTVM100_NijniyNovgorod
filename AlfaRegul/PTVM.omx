@@ -40,7 +40,7 @@
                 <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
               </object>
               <object name="ValveBlowBot" xmlns="automation.control" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="8aa5c309-47ca-4059-b88b-e6ea3daeaa7b">
-                <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан продувки групп горелок 3, 4" />
+                <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан продувки групп горелок 1, 2" />
                 <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
               </object>
               <object name="ValveAfterFlap" xmlns="automation.control" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="2ad8edc5-256c-4d5b-ba98-25f1f772b854">
@@ -48,7 +48,7 @@
                 <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
               </object>
               <object name="ValveBlowTop" xmlns="automation.control" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="ddf6e575-c1cc-4f8b-a64e-924e88f26f46">
-                <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан продувки групп горелок 1, 2" />
+                <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан продувки групп горелок 3, 4" />
                 <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
               </object>
               <object name="Flap" xmlns="automation.control" base-type="Types.Regulator.PLC_View" aspect="Aspects.PLC_Aspect" uuid="2fd6d8f2-c938-45f5-8bfc-1f0010765503">
@@ -503,7 +503,7 @@
                     </object>
                     <object name="Channel16" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="8e56358f-5340-41ca-ab80-de64e59a2170">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="ШП/SF23" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Наличие 220В в цепи закрытия ПЗК рез. топлива" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Наличие 220В в цепях защиты" />
                     </object>
                     <object name="Channel17" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="de1211dc-8491-4e21-91b2-576650c28b61">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
@@ -959,7 +959,7 @@
                     </object>
                     <object name="Channel27" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="580e532c-0350-49b5-874e-bc4339cddb5c">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Резерв" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Подсветка кнопки &quot;Автомат&quot; регулятора разрежения В" />
                     </object>
                     <object name="Channel28" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="6b496daa-f173-4dd8-bf39-0572582f781d">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
@@ -979,11 +979,11 @@
                     </object>
                     <object name="Channel32" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="b2999204-275b-4ce1-b45b-82518ef540ff">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Подсветка кнопки &quot;Автомат&quot; регулятора разрежения В" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Резерв" />
                     </object>
                     <object name="State" aspect="Aspects.PLC_Aspect" base-type="Types.dwState.PLC_View" xmlns="automation.control" uuid="50138178-59ed-4065-983e-2fe7425de315">
-                      <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N400MA02" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Регулятор разрежения В (не закр.)" />
+                      <attribute type="unit.System.Attributes.Title" xmlns="system" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" />
                     </object>
                   </object>
                 </object>
@@ -8457,7 +8457,7 @@ STATUS_BITS.LowerElectrical = Math.TestBit(STATUS,4);</property>
         <attribute type="unit.System.Attributes.Description" value="KKS" xmlns="system" />
         <parameter name="FireIgnSens" type="bool" direction="out" xmlns="automation.control" uuid="efdd4a92-767d-4c37-afc3-72900ba6435a" />
         <parameter name="Start" type="bool" direction="out" xmlns="automation.control" uuid="14702568-89b4-4571-867f-6989a4bd5966" />
-        <parameter name="ArmStart" type="bool" direction="in" xmlns="automation.control" uuid="b2836bbc-e4e1-4677-9ce9-59c31930d805" />
+        <parameter name="ArmStart" type="bool" direction="in-out" xmlns="automation.control" uuid="b2836bbc-e4e1-4677-9ce9-59c31930d805" />
         <parameter name="IgnProgress" direction="out" type="int32" xmlns="automation.control" uuid="f0e1d959-7df7-4126-b85e-3724503cc88e" />
         <parameter name="BurnStatus" uuid="5bc57e89-eea5-425d-bb0a-34b1dbcd6338" direction="out" type="string" />
         <parameter name="FinalIgnBurn" type="bool" direction="out" xmlns="automation.control" uuid="31de1fa3-806f-43e7-9673-6402749975dc" />
@@ -8503,7 +8503,7 @@ STATUS_BITS.LowerElectrical = Math.TestBit(STATUS,4);</property>
         <bind source="_PLC_View.FinalIgnBurn" target="FinalIgnBurn" />
         <parameter name="nBurn" uuid="e2940f47-9b5c-46b3-8ebb-00b70ff7bacf" direction="out" type="int16">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":".Начат розжиг.","Severity":1,"Value":1}]}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":".Начат розжиг.","Severity":1,"Value":1},{"AckStrategy":0,"IsEnabled":true,"Message":".Розжиг окончен.","Severity":1,"Value":6},{"AckStrategy":1,"IsEnabled":true,"Message":".Дефект факела запальника.","Severity":668,"Sound":"alarm.wav","Value":7},{"AckStrategy":1,"IsEnabled":true,"Message":".Дефект факела горелки.","Severity":668,"Sound":"alarm.wav","Value":8},{"AckStrategy":1,"IsEnabled":true,"Message":".Нет факела запальника.","Severity":668,"Sound":"alarm.wav","Value":9},{"AckStrategy":1,"IsEnabled":true,"Message":".Нет факела горелки.","Severity":668,"Sound":"alarm.wav","Value":10},{"AckStrategy":1,"IsEnabled":true,"Message":".Давление газа ниже нормы.","Severity":668,"Sound":"alarm.wav","Value":11},{"AckStrategy":1,"IsEnabled":true,"Message":".Давление газа выше нормы.","Severity":668,"Sound":"alarm.wav","Value":12},{"AckStrategy":1,"IsEnabled":true,"Message":".Давление воздуха ниже нормы.","Severity":668,"Sound":"alarm.wav","Value":13},{"AckStrategy":1,"IsEnabled":true,"Message":".Авария вентилятора.","Severity":668,"Sound":"alarm.wav","Value":14},{"AckStrategy":1,"IsEnabled":true,"Message":".Неисправность клапана безопасности.","Severity":668,"Sound":"alarm.wav","Value":15},{"AckStrategy":1,"IsEnabled":true,"Message":".Неисправность клапана запальника.","Severity":668,"Sound":"alarm.wav","Value":16},{"AckStrategy":1,"IsEnabled":true,"Message":".Неисправность ПЗК-1.","Severity":668,"Sound":"alarm.wav","Value":17},{"AckStrategy":1,"IsEnabled":true,"Message":".Неисправность ПЗК-2.","Severity":668,"Sound":"alarm.wav","Value":18}]}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.nBurn" target="nBurn" />
@@ -8518,6 +8518,8 @@ STATUS_BITS.LowerElectrical = Math.TestBit(STATUS,4);</property>
         </parameter>
         <parameter name="AlarmBurner" uuid="3a6b4633-4090-4330-8218-bf685968591c" direction="out" type="bool" />
         <bind source="_PLC_View.AlarmBurner" target="AlarmBurner" />
+        <parameter name="OutArmStart" uuid="1f1cbfa1-4c4c-43ee-82d8-cf9d61175025" direction="out" type="bool" />
+        <bind source="_PLC_View.ArmStart" target="OutArmStart" />
       </type>
     </type>
     <type name="Vent" xmlns="automation.control" uuid="5d5e306c-b89d-494a-9780-7125f2bfc1a4">
@@ -8542,42 +8544,6 @@ STATUS_BITS.LowerElectrical = Math.TestBit(STATUS,4);</property>
         <bind source="_PLC_View.OutOn" target="OutOn" />
         <parameter name="Err" uuid="3553607e-dce9-4f6a-8f75-b0060673c929" direction="out" type="bool" />
         <bind source="_PLC_View.Err" target="Err" />
-      </type>
-    </type>
-    <type name="CO" xmlns="automation.control" uuid="b8164445-a7b5-4006-88e1-741760ca64f5">
-      <type name="PLC_View" original="CO" aspect="Aspects.PLC_Aspect" uuid="7d83dfc4-e306-4501-9366-4340354354d1">
-        <parameter name="CH4" type="bool" direction="out" uuid="7501f33b-2401-4f04-b54f-26df83701d29" />
-        <attribute type="unit.System.Attributes.Title" xmlns="system" />
-        <attribute type="unit.System.Attributes.Description" value="KKS" xmlns="system" />
-        <parameter name="1CO" type="bool" direction="out" xmlns="automation.control" uuid="fac820f1-0438-4de8-a265-cf9bb3741ef0" />
-        <parameter name="2CO" type="bool" direction="out" xmlns="automation.control" uuid="567f211f-1772-4788-b862-5e687c644529" />
-      </type>
-      <type name="IOS_View" xmlns="automation.control" aspect="Aspects.IOS_Aspect" original="CO" uuid="ed743af7-00d6-4a1a-abe4-24556fba3f48">
-        <parameter name="NAME" type="string" direction="out" uuid="0eef1cca-3dde-48a1-9c2b-797dbc83c936">
-          <attribute type="unit.System.Attributes.InitialValue" value="@(object:System.Attributes.Description)" xmlns="system" />
-        </parameter>
-        <ref name="_PLC_View" type="PLC_View" xmlns="automation.reference" uuid="d26e53c7-6e7a-4bb4-aa12-936552a51ffd" />
-        <parameter name="KKS" type="string" direction="out" uuid="8830b946-dc8d-4e24-8f95-ab75546a3a64">
-          <attribute type="unit.System.Attributes.InitialValue" value="@(object:System.Attributes.Title)" xmlns="system" />
-        </parameter>
-        <parameter name="CH4" uuid="66a6933e-fd32-4380-8571-1b07eb6091b1" direction="out" type="bool">
-          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Превышен СН4 в помещении","Severity":1,"Sound":"Trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
-          </attribute>
-        </parameter>
-        <bind source="_PLC_View.CH4" target="CH4" />
-        <parameter name="1CO" uuid="6c30a365-0b82-45d3-8ba1-e34492a70b4b" direction="out" type="bool">
-          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Превышен СО 1 предел","Severity":1,"Sound":"Trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
-          </attribute>
-        </parameter>
-        <bind source="_PLC_View.1CO" target="1CO" />
-        <parameter name="2CO" uuid="c7509e20-b58e-490c-b691-6b1c035e7c70" direction="out" type="bool">
-          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Превышен СО 2 предел","Severity":1,"Sound":"Trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
-          </attribute>
-        </parameter>
-        <bind source="_PLC_View.2CO" target="2CO" />
       </type>
     </type>
     <ct:type name="Server" uuid="3aa8c6c9-ef7f-4a77-8db7-7364db6ee3be">
@@ -9994,7 +9960,7 @@ else
         <bind source="_PLC_View.FinalIgnBurn" target="FinalIgnBurn" />
         <parameter name="nBurn" direction="out" type="int16" uuid="9c33ba07-cb22-40f8-b7ec-f16cac18ed56">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":".Начат розжиг.","Severity":1,"Value":1}]}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":".Начат розжиг.","Severity":1,"Value":1},{"AckStrategy":0,"IsEnabled":true,"Message":".Розжиг окончен.","Severity":1,"Value":6},{"AckStrategy":1,"IsEnabled":true,"Message":".Дефект факела горелки.","Severity":668,"Sound":"alarm.wav","Value":8},{"AckStrategy":1,"IsEnabled":true,"Message":".Нет факела горелки.","Severity":668,"Sound":"alarm.wav","Value":10},{"AckStrategy":1,"IsEnabled":true,"Message":".Давление газа ниже нормы.","Severity":668,"Sound":"alarm.wav","Value":11},{"AckStrategy":1,"IsEnabled":true,"Message":".Давление газа выше нормы.","Severity":668,"Sound":"alarm.wav","Value":12},{"AckStrategy":1,"IsEnabled":true,"Message":".Давление воздуха ниже нормы.","Severity":668,"Sound":"alarm.wav","Value":13},{"AckStrategy":1,"IsEnabled":true,"Message":".Авария вентилятора.","Severity":668,"Sound":"alarm.wav","Value":14},{"AckStrategy":1,"IsEnabled":true,"Message":".Неисправность клапана безопасности.","Severity":668,"Sound":"alarm.wav","Value":15},{"AckStrategy":1,"IsEnabled":true,"Message":".Неисправность клапана запальника.","Severity":668,"Sound":"alarm.wav","Value":16},{"AckStrategy":1,"IsEnabled":true,"Message":".Неисправность ПЗК-2.","Severity":668,"Sound":"alarm.wav","Value":18}]}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.nBurn" target="nBurn" />
