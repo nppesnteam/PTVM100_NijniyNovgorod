@@ -321,7 +321,7 @@ unit.Global.ActiveMainFrame = "Растопочная группа №" + Str.To
 				</do-trace>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
 					<body kind="om">
-						<![CDATA[//DialText="Разжечь горелку №"+Str.ToString(unit.Global.Group[Group].burn[0].Number.Value)+"?";
+						<![CDATA[DialText="Разжечь горелку №"+String.ToString(Scheme.Group.burn1.BurnNumber)+"?";
 StartBurn.Invoke();]]>
 					</body>
 				</do-on>
@@ -369,16 +369,8 @@ StartBurn.Invoke();]]>
 				<designed target="DisabledPenWidth" value="1" ver="4"/>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
 					<body kind="om">
-						<![CDATA[if (unit.Global.Group[Group].ign == 1)
-{
-	//DialText="Остановить группу горелок №"+ Str.ToString(Group+1)+"?";
-	StopIgnBurn.Invoke();
-}
-if (unit.Global.Group[Group].ign == 3)
-{
-	//DialText="Остановить горелку №"+Str.ToString(unit.Global.Group[Group].burn[0].Number.Value)+"?";
-	StopBurn.Invoke();
-}]]>
+						<![CDATA[DialText="Остановить горелку №"+String.ToString(Scheme.Group.burn1.BurnNumber)+"?";
+StopBurn.Invoke();]]>
 					</body>
 				</do-on>
 				<do-trace access-modifier="private" target="Enabled" ver="4">
@@ -521,20 +513,6 @@ OpenBurnSteps.Invoke();]]>
 					</object>
 				</do-on>
 			</object>
-			<object access-modifier="private" name="StopIgnBurn" display-name="StopIgnBurn" uuid="468c8036-418d-48ad-ba03-17c7f1fbf87c" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4">
-				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="InvokeTrigger" value="false" ver="4"/>
-				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-by-id="false" form-action="open-dialog">
-					<object access-modifier="private" uuid="ccac6155-2339-4ee3-9279-603404289e32" base-type="Диалог останова" base-type-id="9eff29d5-9015-4d45-b1e9-0f16f1be7649" ver="4">
-						<designed target="WindowX" value="835" ver="4"/>
-						<designed target="WindowY" value="502" ver="4"/>
-						<init target="refIgnStart" ver="4" ref="IgnStart"/>
-						<init target="refIgnStart_2" ver="4" ref="here.ControlPanel.ControlButtonsburn2.IgnStart"/>
-						<init target="refIgnStart_1" ver="4" ref="here.ControlPanel.ControlButtonsburn3.IgnStart"/>
-						<init target="notifText" ver="4" ref="DialText"/>
-					</object>
-				</do-on>
-			</object>
 			<object access-modifier="private" name="DialText" display-name="DialText" uuid="82365dd9-1b75-4236-be9b-bff9a3f0f2e3" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="4"/>
 			<object access-modifier="private" name="StartBurn" display-name="StartBurn" uuid="f6f5be9e-7334-4f89-91a4-564212d85587" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4">
 				<designed target="Enabled" value="true" ver="4"/>
@@ -620,7 +598,10 @@ OpenBurnSteps.Invoke();]]>
 				</do-trace>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
 					<body kind="om">
-						<![CDATA[//DialText="Разжечь горелку №"+Str.ToString(unit.Global.Group[Group].burn[1].Number.Value)+"?";
+						<![CDATA[if ((Group%2==0))
+	DialText="Разжечь горелку №"+String.ToString(Scheme.Group.burn3.BurnNumber)+"?";
+else
+	DialText="Разжечь горелку №"+String.ToString(Scheme.Group.burn2.BurnNumber)+"?";
 StartBurn.Invoke();]]>
 					</body>
 				</do-on>
@@ -673,7 +654,16 @@ StartBurn.Invoke();]]>
 				</do-trace>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
 					<body kind="om">
-						<![CDATA[StopBurn.Invoke();]]>
+						<![CDATA[if (!(Group%2==0))
+{
+	DialText="Остановить горелку №"+String.ToString(Scheme.Group.burn2.BurnNumber)+"?";
+	StopBurn.Invoke();
+}
+else
+{
+	DialText="Остановить группу горелок №"+String.ToString(here.Group)+"?";
+	StopIgnBurn.Invoke();
+}]]>
 					</body>
 				</do-on>
 				<designed target="Checked" value="false" ver="4"/>
@@ -828,6 +818,21 @@ OpenBurnSteps.Invoke();]]>
 				<init target="Source" ver="4" ref="Scheme.Group.OpcSource"/>
 				<init target="Path" ver="4" value="Burn2.Burn.OutArmStart"/>
 			</object>
+			<object access-modifier="private" name="StopIgnBurn" display-name="StopIgnBurn" uuid="c3f7cb60-5ce4-4d49-8576-f876a66a3aa3" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4">
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="InvokeTrigger" value="false" ver="4"/>
+				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-by-id="false" form-action="open-dialog">
+					<object access-modifier="private" uuid="7c2960f3-7569-4953-9108-cde3c129f98b" base-type="Диалог останова" base-type-id="9eff29d5-9015-4d45-b1e9-0f16f1be7649" ver="4">
+						<designed target="WindowX" value="835" ver="4"/>
+						<designed target="WindowY" value="502" ver="4"/>
+						<init target="refIgnStart" ver="4" ref="IgnStart"/>
+						<init target="notifText" ver="4" ref="DialText"/>
+						<init target="refIgnStart_3" ver="4" ref="here.ControlPanel.ControlButtonsburn4.IgnStart"/>
+						<init target="refIgnStart_1" ver="4" ref="here.ControlPanel.ControlButtonsburn1.IgnStart"/>
+						<init target="refIgnStart_2" ver="4" ref="here.ControlPanel.ControlButtonsburn3.IgnStart"/>
+					</object>
+				</do-on>
+			</object>
 		</object>
 		<object access-modifier="private" name="ControlButtonsburn3" display-name="ControlButtonsburn3" uuid="868e080b-df01-4cb0-ade8-7cf18a71413f" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
 			<designed target="X" value="0" ver="4"/>
@@ -896,7 +901,10 @@ OpenBurnSteps.Invoke();]]>
 				</do-trace>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
 					<body kind="om">
-						<![CDATA[//DialText="Разжечь горелку №"+Str.ToString(unit.Global.Group[Group].burn[2].Number.Value)+"?";
+						<![CDATA[if (!(Group%2==0))
+	DialText="Разжечь горелку №"+String.ToString(Scheme.Group.burn3.BurnNumber)+"?";
+else
+	DialText="Разжечь горелку №"+String.ToString(Scheme.Group.burn2.BurnNumber)+"?";
 StartBurn.Invoke();]]>
 					</body>
 				</do-on>
@@ -949,14 +957,14 @@ StartBurn.Invoke();]]>
 				</do-trace>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
 					<body kind="om">
-						<![CDATA[if (unit.Global.Group[Group].ign == 1)
+						<![CDATA[if (here.Group%2==0)
 {
-	//DialText="Остановить горелку №"+Str.ToString(unit.Global.Group[Group].burn[2].Number.Value)+"?";
+	DialText="Остановить горелку №"+String.ToString(Scheme.Group.burn3.BurnNumber)+"?";
 	StopBurn.Invoke();
 }
-if (unit.Global.Group[Group].ign == 3)
+else
 {
-	//DialText="Остановить группу горелок №"+ Str.ToString(Group+1)+"?";
+	DialText="Остановить группу горелок №"+String.ToString(here.Group)+"?";
 	StopIgnBurn.Invoke();
 }]]>
 					</body>
@@ -1105,8 +1113,9 @@ OpenBurnSteps.Invoke();]]>
 						<designed target="WindowY" value="502" ver="4"/>
 						<init target="refIgnStart" ver="4" ref="IgnStart"/>
 						<init target="refIgnStart_1" ver="4" ref="here.ControlPanel.ControlButtonsburn1.IgnStart"/>
-						<init target="refIgnStart_2" ver="4" ref="here.ControlPanel.ControlButtonsburn2.IgnStart"/>
 						<init target="notifText" ver="4" ref="DialText"/>
+						<init target="refIgnStart_2" ver="4" ref="here.ControlPanel.ControlButtonsburn2.IgnStart"/>
+						<init target="refIgnStart_3" ver="4" ref="here.ControlPanel.ControlButtonsburn4.IgnStart"/>
 					</object>
 				</do-on>
 			</object>
@@ -1195,7 +1204,7 @@ OpenBurnSteps.Invoke();]]>
 				</do-trace>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
 					<body kind="om">
-						<![CDATA[//DialText="Разжечь горелку №"+Str.ToString(unit.Global.Group[Group].burn[2].Number.Value)+"?";
+						<![CDATA[DialText="Разжечь горелку №"+String.ToString(Scheme.Group.burn4.BurnNumber)+"?";
 StartBurn.Invoke();]]>
 					</body>
 				</do-on>
@@ -1248,16 +1257,8 @@ StartBurn.Invoke();]]>
 				</do-trace>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
 					<body kind="om">
-						<![CDATA[if (unit.Global.Group[Group].ign == 1)
-{
-	//DialText="Остановить горелку №"+Str.ToString(unit.Global.Group[Group].burn[2].Number.Value)+"?";
-	StopBurn.Invoke();
-}
-if (unit.Global.Group[Group].ign == 3)
-{
-	//DialText="Остановить группу горелок №"+ Str.ToString(Group+1)+"?";
-	StopIgnBurn.Invoke();
-}]]>
+						<![CDATA[DialText="Остановить горелку №"+String.ToString(Scheme.Group.burn4.BurnNumber)+"?";
+StopBurn.Invoke();]]>
 					</body>
 				</do-on>
 				<designed target="Checked" value="false" ver="4"/>
@@ -1391,20 +1392,6 @@ OpenBurnSteps.Invoke();]]>
 						<designed target="WindowX" value="835" ver="4"/>
 						<designed target="WindowY" value="502" ver="4"/>
 						<init target="refIgnStart" ver="4" ref="IgnStart"/>
-						<init target="notifText" ver="4" ref="DialText"/>
-					</object>
-				</do-on>
-			</object>
-			<object access-modifier="private" name="StopIgnBurn" display-name="StopIgnBurn" uuid="41e861f2-21be-4afc-a4e7-2fc32baf3d4e" base-type="Action" base-type-id="a9ee9770-1c4a-44c9-b815-157d9fc2ab95" ver="4">
-				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="InvokeTrigger" value="false" ver="4"/>
-				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-by-id="false" form-action="open-dialog">
-					<object access-modifier="private" uuid="a897ab89-9160-4ac6-ac7a-65da50275719" base-type="Диалог останова" base-type-id="9eff29d5-9015-4d45-b1e9-0f16f1be7649" ver="4">
-						<designed target="WindowX" value="835" ver="4"/>
-						<designed target="WindowY" value="502" ver="4"/>
-						<init target="refIgnStart" ver="4" ref="IgnStart"/>
-						<init target="refIgnStart_1" ver="4" ref="here.ControlPanel.ControlButtonsburn1.IgnStart"/>
-						<init target="refIgnStart_2" ver="4" ref="here.ControlPanel.ControlButtonsburn2.IgnStart"/>
 						<init target="notifText" ver="4" ref="DialText"/>
 					</object>
 				</do-on>
@@ -2796,6 +2783,7 @@ OpenBurnSteps.Invoke();]]>
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initPath" ver="4" value="ValveSecurity"/>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
+				<init target="OutInvert" ver="4" value="true"/>
 			</object>
 			<object access-modifier="private" name="PBetween" display-name="PBetween" uuid="9f194e59-04c4-455b-a64c-e751d75c2165" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 				<designed target="X" value="74.5455" ver="4"/>

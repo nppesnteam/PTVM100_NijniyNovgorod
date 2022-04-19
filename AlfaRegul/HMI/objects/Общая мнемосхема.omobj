@@ -870,6 +870,36 @@
 			<designed target="PenWidth" value="5" ver="4"/>
 			<designed target="BrushColor" value="0xff000000" ver="4"/>
 			<designed target="BrushStyle" value="0" ver="4"/>
+			<object access-modifier="private" name="HistogramBar_1" display-name="HistogramBar_1" uuid="377e03d7-52dd-4fc8-937f-922dd88dbe47" base-type="HistogramBar" base-type-id="abcbe2c6-2016-434a-b9bf-f6cbfa135e4c" ver="4">
+				<designed target="X" value="1178" ver="4"/>
+				<designed target="Y" value="70" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="20" ver="4"/>
+				<designed target="Height" value="110" ver="4"/>
+				<designed target="MinLimit" value="0" ver="4"/>
+				<designed target="MaxLimit" value="100" ver="4"/>
+				<designed target="LowValue" value="0" ver="4"/>
+				<designed target="HighValue" value="100" ver="4"/>
+				<designed target="Value" value="0.5" ver="4"/>
+				<designed target="Orientation" value="2" ver="4"/>
+				<designed target="PenColor" value="4278190080" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="4278190080" ver="4"/>
+				<designed target="BrushStyle" value="0" ver="4"/>
+				<designed target="BarBrushColor" value="4278255360" ver="4"/>
+				<designed target="BarBrushStyle" value="1" ver="4"/>
+				<designed target="BarLowBrushColor" value="4294967040" ver="4"/>
+				<designed target="BarLowBrushStyle" value="1" ver="4"/>
+				<designed target="BarHighBrushColor" value="4294901760" ver="4"/>
+				<designed target="BarHighBrushStyle" value="1" ver="4"/>
+			</object>
 		</object>
 		<object access-modifier="private" name="Oil" display-name="Oil" uuid="e53fbfe2-4738-49e5-b24d-dc7bbae7f1a8" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
 			<designed target="X" value="0" ver="4"/>

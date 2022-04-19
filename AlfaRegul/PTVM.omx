@@ -4108,7 +4108,6 @@
                 <attribute type="unit.System.Attributes.Description" value="Давление фиксированное между ПЗК группы горелок" xmlns="system" />
               </object>
             </object>
-            <object name="BurnStartSequence" base-type="Types.BurnSequence.PLC_View" aspect="Aspects.PLC_Aspect" uuid="5cbb67b4-37e5-4c60-a346-ae8e1f5dc983" />
             <object name="IgnSequence" uuid="d6437b46-046b-48b1-934e-1a04ff1b2390">
               <object name="Sequence1" base-type="Types.IgnSequence.PLC_View" aspect="Aspects.PLC_Aspect" uuid="0d8765ac-3671-4cfa-97ed-046069749d4f" />
               <object name="Sequence2" base-type="Types.IgnSequence.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="849f916e-71b7-4b81-bfda-4aca2b93a8a8" />
@@ -8021,9 +8020,6 @@ Channel32.H=Math.TestBit(State.State,31);</property>
             <r:init-ref ref="_PLC_View" target="Domain.PLC.Runtime.PLC_App.ROOT.Group4.PGasFix" />
           </ct:object>
         </ct:object>
-        <ct:object name="BurnStartSequence" uuid="03debcab-d2dd-4a4d-b8f9-7da9909c89ac" original="PLC.Runtime.PLC_App.ROOT.BurnStartSequence" base-type="Types.BurnSequence.IOS_View" aspect="Aspects.IOS_Aspect">
-          <r:init-ref ref="_PLC_View" target="Domain.PLC.Runtime.PLC_App.ROOT.BurnStartSequence" />
-        </ct:object>
         <ct:object name="IgnSequence" uuid="41db8d83-69b1-4b61-8ec9-11372c800c19" original="PLC.Runtime.PLC_App.ROOT.IgnSequence" aspect="Aspects.IOS_Aspect">
           <ct:object name="Sequence1" uuid="b4bba72b-8f06-4aad-8e1d-c68714e5439b" original="PLC.Runtime.PLC_App.ROOT.IgnSequence.Sequence1" base-type="Types.IgnSequence.IOS_View" aspect="Aspects.IOS_Aspect">
             <r:init-ref ref="_PLC_View" target="Domain.PLC.Runtime.PLC_App.ROOT.IgnSequence.Sequence1" />
@@ -8465,6 +8461,15 @@ STATUS_BITS.LowerElectrical = Math.TestBit(STATUS,4);</property>
         <parameter name="AlarmFan" type="bool" direction="out" xmlns="automation.control" uuid="a230d849-54e3-4961-ad66-00a99b25d50a" />
         <attribute type="Attributes.BurnNumber" value="0" xmlns="system" />
         <parameter name="AlarmBurner" type="bool" direction="out" xmlns="automation.control" uuid="4842f3a5-6b8f-4a7e-a6ff-f29eaabc5a9e" />
+        <parameter name="SetProtPgH" uuid="bb7c4be2-e074-47bb-a617-6aa02d709a45" type="float32" direction="in-out" />
+        <parameter name="SetProtPaL" type="float32" direction="in-out" xmlns="automation.control" uuid="ebf7fba3-f3fa-4a3d-aa99-e68765f75713" />
+        <parameter name="SetProtPgL" type="float32" direction="in-out" xmlns="automation.control" uuid="5db4d0a5-7504-4a12-acb7-ac84de590727" />
+        <parameter name="CheckProt" type="bool" direction="in-out" xmlns="automation.control" uuid="d6ac3209-3f05-4f0c-924e-3bd8f7988e51" />
+        <parameter name="ProtTestFireB" type="bool" direction="out" xmlns="automation.control" uuid="6ce63ba4-f540-4b3f-86e0-cfd1700824e9" />
+        <parameter name="ProtTestPgL" type="bool" direction="out" xmlns="automation.control" uuid="e48d0095-4ca0-42aa-98cc-574969f60ab0" />
+        <parameter name="ProtTestPgH" type="bool" direction="out" xmlns="automation.control" uuid="917a6982-671f-4258-995a-0483ad7b6bfe" />
+        <parameter name="ProtTestPaL" type="bool" direction="out" xmlns="automation.control" uuid="8b35a279-3bce-4e85-9978-747aa2aff363" />
+        <parameter name="ProtTestFan" type="bool" direction="out" xmlns="automation.control" uuid="224170d4-c4d7-4b8e-89a0-6139d3a9fd61" />
       </type>
       <type name="IOS_View" xmlns="automation.control" aspect="Aspects.IOS_Aspect" original="BurnerIgn" uuid="f1318089-5158-4bee-8425-1823cb6afe61">
         <ref name="_PLC_View" type="PLC_View" xmlns="automation.reference" uuid="07cb769f-ca9e-4c65-b3b8-04dee9da512f" />
@@ -8520,6 +8525,56 @@ STATUS_BITS.LowerElectrical = Math.TestBit(STATUS,4);</property>
         <bind source="_PLC_View.AlarmBurner" target="AlarmBurner" />
         <parameter name="OutArmStart" uuid="1f1cbfa1-4c4c-43ee-82d8-cf9d61175025" direction="out" type="bool" />
         <bind source="_PLC_View.ArmStart" target="OutArmStart" />
+        <parameter name="ProtTestPGasL" type="bool" direction="out" xmlns="automation.control" uuid="fce78d04-cadf-4b89-ae63-fe7b9eaad553">
+          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":".Давление газа ниже нормы.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
+        <parameter name="ProtTestPGasH" type="bool" direction="out" xmlns="automation.control" uuid="95ed2ce6-9297-4d99-84cb-31f1ae406a69">
+          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":".Давление газа выше нормы.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
+        <parameter name="ProtTestPO2L" type="bool" direction="out" xmlns="automation.control" uuid="aa908333-30d3-45ef-86a7-ada0d3cee02d">
+          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":".Давление воздуха ниже нормы.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
+        <parameter name="ProtTestFan" type="bool" direction="out" xmlns="automation.control" uuid="3e360cf4-43da-447c-a4be-fc949633d596">
+          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":".Отключение вентилятора.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
+        <bind source="_PLC_View.ProtTestPgL" target="ProtTestPGasL" />
+        <bind source="_PLC_View.ProtTestPgH" target="ProtTestPGasH" />
+        <bind source="_PLC_View.ProtTestPaL" target="ProtTestPO2L" />
+        <bind source="_PLC_View.ProtTestFan" target="ProtTestFan" />
+        <parameter name="InSetProtPGasH" uuid="324131d1-fd83-44ea-869a-dae25c4f0d51" direction="in" type="float32" />
+        <bind source="InSetProtPGasH" target="_PLC_View.SetProtPgH" />
+        <parameter name="OutSetProtPGasH" uuid="a1fdfa21-dfd3-4b6b-ab4a-1765d29af6a9" direction="out" type="float32" />
+        <bind source="_PLC_View.SetProtPgH" target="OutSetProtPGasH" />
+        <parameter name="InSetProtPGasL" uuid="39c3ecc0-f599-4f34-a312-6d89f8e2a822" direction="in" type="float32" />
+        <bind source="InSetProtPGasL" target="_PLC_View.SetProtPgL" />
+        <parameter name="OutSetProtPGasL" uuid="554dbcf7-b721-414e-9fcf-ca3f09d3a447" direction="out" type="float32" />
+        <bind source="_PLC_View.SetProtPgL" target="OutSetProtPGasL" />
+        <parameter name="InCheckProt" uuid="862577b3-7fae-4054-85f2-93188413b34d" direction="in" type="bool" />
+        <bind source="InCheckProt" target="_PLC_View.CheckProt" />
+        <parameter name="OutCheckProt" uuid="e41d4d3b-d619-4478-9b0f-e7cfdec58c24" direction="out" type="bool">
+          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":".Защита включена.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":".Защита отключена.","Severity":1,"Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
+        <bind source="_PLC_View.CheckProt" target="OutCheckProt" />
+        <parameter name="ProtTestFireB" uuid="b4d244fd-7050-420b-b781-d06a28423c69" direction="out" type="bool">
+          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":".Пропадание факела горелки.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
+        <bind source="_PLC_View.ProtTestFireB" target="ProtTestFireB" />
+        <parameter name="InSetProtPO2L" uuid="9abf1ebc-00fa-4e56-a625-c3b97a62160f" direction="in" type="float32" />
+        <bind source="InSetProtPO2L" target="_PLC_View.SetProtPaL" />
+        <parameter name="OutSetProtPO2L" uuid="9bfeb17e-ee93-4551-8c1a-6cf2a64538fd" direction="out" type="float32" />
+        <bind source="_PLC_View.SetProtPaL" target="OutSetProtPO2L" />
       </type>
     </type>
     <type name="Vent" xmlns="automation.control" uuid="5d5e306c-b89d-494a-9780-7125f2bfc1a4">
@@ -8650,6 +8705,7 @@ else
         <parameter name="NoGerm" type="bool" direction="out" xmlns="automation.control" uuid="75dcc432-dcc9-4a8e-a8ad-59eff04ef916" />
         <parameter name="NoVent" type="bool" direction="out" xmlns="automation.control" uuid="05ac05ec-9953-4635-8510-cad404a31f34" />
         <parameter name="AlarmPGasCollHigh" type="bool" direction="out" xmlns="automation.control" uuid="ebdc5d4e-58e5-4059-9c75-5fe95284517b" />
+        <parameter name="AlarmVacH" type="bool" direction="out" xmlns="automation.control" uuid="8937e680-71e6-4431-8db3-2804d35990e0" />
       </type>
       <type name="IOS_View" xmlns="automation.control" aspect="Aspects.IOS_Aspect" original="ProtectsBoiler" uuid="34cacda0-da21-4dbd-a163-81f506dc1097">
         <ref name="_PLC_View" type="PLC_View" xmlns="automation.reference" uuid="2df91735-51c9-445f-8b36-3d07f2903b63" />
@@ -8737,6 +8793,12 @@ else
         <bind source="_PLC_View.AlarmTWaterOutHigh" target="AlarmTWatOutH" />
         <bind source="_PLC_View.AlarmFWaterOutLow" target="AlarmQWatOutL" />
         <bind source="_PLC_View.AlarmPGasCollHigh" target="AlarmPGasCollH" />
+        <parameter name="AlarmVacH" direction="out" type="bool" xmlns="automation.control" uuid="66428160-341e-41a7-a171-a92f519575a1">
+          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Разрежение ниже нормы.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
+        <bind source="_PLC_View.AlarmVacH" target="AlarmVacH" />
       </type>
     </type>
     <type name="Boiler" xmlns="automation.control" uuid="c15fbe2c-7d35-4602-9078-fa66ab0b4bbc">
@@ -9543,47 +9605,47 @@ else
         <ref name="_PLC_View" type="PLC_View" xmlns="automation.reference" uuid="a5c05ebf-2f05-44a1-9681-996474a17875" />
         <parameter name="AlarmPGasCollL" uuid="78a1da7c-3139-4c82-8b6e-a282cef61266" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление газа в коллекторе ниже нормы.Сигнализация.","Severity":335,"Sound":"trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление газа в коллекторе ниже нормы.Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmPGasCollH" uuid="bf263d78-f000-4c0a-a2dd-5354050b3fa1" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление газа в коллекторе выше нормы.Сигнализация.","Severity":335,"Sound":"trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление газа в коллекторе выше нормы.Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmPOilL" uuid="31ce0895-309b-45a0-8045-1cfb04e26ccb" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление дизельного топлива ниже нормы. Сигнализация.","Severity":335,"Sound":"trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление дизельного топлива ниже нормы. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmPWatOutL" uuid="f4bb63c2-0f09-4066-b20c-0bb952327fca" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление воды за котлом ниже нормы. Сигнализация.","Severity":335,"Sound":"trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление воды за котлом ниже нормы. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmPWatOutH" uuid="62daa159-79bb-4754-9036-a463eede5f3e" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление воды за котлом выше нормы. Сигнализация.","Severity":335,"Sound":"trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление воды за котлом выше нормы. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmTWatOutH" uuid="2aa708a7-8688-43f2-b043-6b017693e9d6" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Температура воды за котлом выше нормы. Сигнализация.","Severity":335,"Sound":"trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Температура воды за котлом выше нормы. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmQWatOutL" uuid="6131a7a1-380d-43c6-a5c4-bdce870323d9" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Расход воды за котлом ниже нормы. Сигнализация.","Severity":335,"Sound":"trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Расход воды за котлом ниже нормы. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmVacH" uuid="0a92c197-52c0-475a-a649-f96357d838a7" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Разрежение ниже нормы. Сигнализация.","Severity":335,"Sound":"trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Разрежение ниже нормы. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmTSmokeH" uuid="77f2bb07-6bd8-4eed-b6c7-9af770a0dad2" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Температура дымовых газов выше нормы. Сигнализация.","Severity":335,"Sound":"trevoga1.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Температура дымовых газов выше нормы. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmPGasCollLow" target="AlarmPGasCollL" />
@@ -9918,7 +9980,7 @@ else
         <attribute type="unit.System.Attributes.Title" xmlns="system" />
         <attribute type="unit.System.Attributes.Description" value="KKS" xmlns="system" />
         <parameter name="Start" type="bool" direction="out" xmlns="automation.control" uuid="3b66523c-a061-4f2d-b179-08e5e5761690" />
-        <parameter name="ArmStart" type="bool" direction="in" xmlns="automation.control" uuid="f5041c5e-7535-4aba-978a-ad058c0b2a43" />
+        <parameter name="ArmStart" type="bool" direction="in-out" xmlns="automation.control" uuid="f5041c5e-7535-4aba-978a-ad058c0b2a43" />
         <parameter name="IgnProgress" direction="out" type="int32" xmlns="automation.control" uuid="a193547a-fb08-4119-aef3-727da1f11331" />
         <parameter name="BurnStatus" direction="out" type="string" uuid="30adbff7-ebc5-472b-8d9d-786040efc3f5" />
         <parameter name="FinalIgnBurn" type="bool" direction="out" xmlns="automation.control" uuid="c6943ec3-7adf-4f15-830d-ff9653244653" />
@@ -9926,6 +9988,14 @@ else
         <parameter name="AlarmFan" type="bool" direction="out" xmlns="automation.control" uuid="b9da7583-8564-45fe-8caf-59a49a89b1ef" />
         <attribute type="Attributes.BurnNumber" value="0" xmlns="system" />
         <parameter name="AlarmBurner" type="bool" direction="out" xmlns="automation.control" uuid="aaa45e80-2b01-4fd3-af24-e251226f83c1" />
+        <parameter name="ProtTestPgL" type="bool" direction="out" xmlns="automation.control" uuid="e04ffca5-7ab9-4c6e-a87b-5a5735c9305e" />
+        <parameter name="ProtTestPgH" type="bool" direction="out" xmlns="automation.control" uuid="f3b35a3d-c009-4b2a-8eb4-bf3d15cd5749" />
+        <parameter name="ProtTestPaL" type="bool" direction="out" xmlns="automation.control" uuid="5675dfc6-29b7-4133-8533-4a64c43cd3ea" />
+        <parameter name="ProtTestFan" type="bool" direction="out" xmlns="automation.control" uuid="1c4b8fcd-8e5f-4aa1-84a1-77b810bcd356" />
+        <parameter name="CheckProt" type="bool" direction="in-out" xmlns="automation.control" uuid="8f587e09-9d36-4a03-8ba4-b6f5a44c46e8" />
+        <parameter name="SetProtPaL" type="float32" direction="in-out" xmlns="automation.control" uuid="3b305535-359c-46e3-912c-1a423c0d79ce" />
+        <parameter name="SetProtPgH" type="float32" direction="in-out" xmlns="automation.control" uuid="cfb5fd42-3c89-40da-93fc-ecead840bca0" />
+        <parameter name="SetProtPgL" type="float32" direction="in-out" xmlns="automation.control" uuid="a6935d71-4bb5-43af-8adf-381853fbc03d" />
       </type>
       <type name="IOS_View" xmlns="automation.control" aspect="Aspects.IOS_Aspect" original="BurnerWork" uuid="4f58a86f-722d-458f-8938-985e384bdfd0">
         <ref name="_PLC_View" type="PLC_View" xmlns="automation.reference" uuid="6f8f0eb6-7989-4b11-8d8d-4fdd83b21308" />
@@ -9975,6 +10045,52 @@ else
         </parameter>
         <parameter name="AlarmBurner" direction="out" type="bool" uuid="d5280e42-9731-4ab7-9eff-08d20ffd78a9" />
         <bind source="_PLC_View.AlarmBurner" target="AlarmBurner" />
+        <parameter name="ProtTestPGasL" type="bool" direction="out" xmlns="automation.control" uuid="5aa5886a-5902-4479-99bb-989c0403629e">
+          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":".Давление газа ниже нормы.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
+        <parameter name="ProtTestPGasH" type="bool" direction="out" xmlns="automation.control" uuid="62130df5-1a9a-498c-89e3-5b9edef1c7e1">
+          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":".Давление газа выше нормы.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
+        <parameter name="ProtTestPO2L" type="bool" direction="out" xmlns="automation.control" uuid="81f03688-3e4d-4e35-8b32-344333e80f58">
+          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":".Давление воздуха ниже нормы.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
+        <parameter name="ProtTestFan" type="bool" direction="out" xmlns="automation.control" uuid="5700518f-3302-4c4f-8f7f-39b6076310ed">
+          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":".Отключение вентилятора.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
+        <bind source="_PLC_View.ProtTestPgL" target="ProtTestPGasL" />
+        <bind source="_PLC_View.ProtTestPgH" target="ProtTestPGasH" />
+        <bind source="_PLC_View.ProtTestPaL" target="ProtTestPO2L" />
+        <bind source="_PLC_View.ProtTestFan" target="ProtTestFan" />
+        <parameter name="OutArmStart" uuid="093859ae-22f0-44a4-ac0d-32de4d00462c" direction="out" type="bool" />
+        <bind source="_PLC_View.ArmStart" target="OutArmStart" />
+        <parameter name="InCheckProt" uuid="00818e3e-0d1f-456e-a5dd-1e5b2b8eeb44" direction="in" type="bool" />
+        <bind source="InCheckProt" target="_PLC_View.CheckProt" />
+        <parameter name="OutCheckProt" uuid="ce571808-3bae-4b69-a6f1-c66397024a51" direction="out" type="bool">
+          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":".Защита включена.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":".Защита отключена.","Severity":1,"Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
+        <bind source="_PLC_View.CheckProt" target="OutCheckProt" />
+        <parameter name="InSetProtPO2L" uuid="bbdba656-6316-4b9c-9c33-0ba0fe0bd78e" direction="in" type="float32" />
+        <bind source="InSetProtPO2L" target="_PLC_View.SetProtPaL" />
+        <parameter name="OutSetProtPO2L" uuid="7ffabb1a-b9ab-4420-9b35-6346d3dc0592" direction="out" type="float32" />
+        <bind source="_PLC_View.SetProtPaL" target="OutSetProtPO2L" />
+        <parameter name="InSetProtPGasH" uuid="040acf6f-a71e-4f5e-bf44-c6b59bf57719" direction="in" type="float32" />
+        <bind source="InSetProtPGasH" target="_PLC_View.SetProtPgH" />
+        <parameter name="OutSetProtPGasH" uuid="cef2b7e2-b14b-42ec-aa6c-1f4c5c9d9534" direction="out" type="float32" />
+        <bind source="_PLC_View.SetProtPgH" target="OutSetProtPGasH" />
+        <parameter name="InSetProtPGasL" uuid="1c46c3a7-cd4d-4c79-bb24-79108aee37de" direction="in" type="float32" />
+        <bind source="InSetProtPGasL" target="_PLC_View.SetProtPgL" />
+        <parameter name="OutSetProtPGasL" uuid="05aa709f-2979-46d0-b4d8-84a87a07227c" direction="out" type="float32" />
+        <bind source="_PLC_View.SetProtPgL" target="OutSetProtPGasL" />
       </type>
     </type>
     <type name="dwState" xmlns="automation.control" uuid="7779db55-fba4-4de8-a3c7-280a871dcb95">

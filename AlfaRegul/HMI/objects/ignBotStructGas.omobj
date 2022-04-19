@@ -351,7 +351,7 @@
 		<init target="initName" ver="4" value="PO2"/>
 		<do-trace access-modifier="private" target="BurnValPath" ver="4">
 			<body>
-				<![CDATA["GROUP"+Str.ToString(Group)+"."+here.InitPath+".Burn"]]>
+				<![CDATA["Group"+Str.ToString(Group)+".Burn"+Str.ToString((burner.BurnNumber-1)%4+1)]]>
 			</body>
 		</do-trace>
 		<do-trace access-modifier="private" target="Tooltip" ver="4">
@@ -391,7 +391,7 @@
 		<init target="initName" ver="4" value="PGas"/>
 		<do-trace access-modifier="private" target="BurnValPath" ver="4">
 			<body>
-				<![CDATA["GROUP"+Str.ToString(Group)+"."+here.InitPath+".Burn"]]>
+				<![CDATA["Group"+Str.ToString(Group)+".Burn"+Str.ToString((burner.BurnNumber-1)%4+1)]]>
 			</body>
 		</do-trace>
 		<do-trace access-modifier="private" target="Tooltip" ver="4">

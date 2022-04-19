@@ -6676,6 +6676,12 @@
     <nodeId>Application.GVL.stAlarmBoil.Al_PgCol_H</nodeId>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Alarms.Protect.AlarmVacH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAlarmBoil.Al_Vacuum_H</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Alarms.Signal.AlarmPGasCollLow</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -7580,6 +7586,60 @@
     <arrayposition>2</arrayposition>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn3.Burn.SetProtPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[3].fPgBurnH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn3.Burn.SetProtPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[3].fPgBurnL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn3.Burn.CheckProt</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stCheckProt.bCheckProt_3</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn3.Burn.ProtTestFireB</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[3].bFireBurn</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn3.Burn.ProtTestPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[3].bPGasL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn3.Burn.ProtTestPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[3].bPGasH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn3.Burn.ProtTestPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[3].bPAirL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn3.Burn.SetProtPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[3].fPairL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn3.Burn.ProtTestFan</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[3].bFan</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Group1.Burn3.FlapOil.Mid</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -7848,6 +7908,54 @@
     <arrayposition>0</arrayposition>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn1.Burn.ProtTestPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[1].bPGasL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn1.Burn.ProtTestPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[1].bPGasH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn1.Burn.ProtTestPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[1].bPAirL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn1.Burn.ProtTestFan</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[1].bFan</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn1.Burn.CheckProt</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stCheckProt.bCheckProt_1</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn1.Burn.SetProtPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[1].fPairL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn1.Burn.SetProtPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[1].fPgBurnH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn1.Burn.SetProtPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[1].fPgBurnL</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Group1.Burn1.FlapOil.Mid</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -8044,6 +8152,54 @@
     <arrayposition>1</arrayposition>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn2.Burn.ProtTestPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[2].bPGasL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn2.Burn.ProtTestPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[2].bPGasH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn2.Burn.ProtTestPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[2].bPAirL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn2.Burn.ProtTestFan</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[2].bFan</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn2.Burn.CheckProt</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stCheckProt.bCheckProt_2</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn2.Burn.SetProtPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[2].fPairL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn2.Burn.SetProtPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[2].fPgBurnH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn2.Burn.SetProtPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[2].fPgBurnL</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Group1.Burn2.FlapOil.Mid</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -8238,6 +8394,54 @@
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.arbAlarmIgn</nodeId>
     <arrayposition>3</arrayposition>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn4.Burn.ProtTestPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[4].bPGasL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn4.Burn.ProtTestPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[4].bPGasH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn4.Burn.ProtTestPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[4].bPAirL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn4.Burn.ProtTestFan</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[4].bFan</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn4.Burn.CheckProt</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stCheckProt.bCheckProt_4</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn4.Burn.SetProtPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[4].fPairL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn4.Burn.SetProtPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[4].fPgBurnH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group1.Burn4.Burn.SetProtPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[4].fPgBurnL</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Group1.Burn4.FlapOil.Mid</node-path>
@@ -8909,6 +9113,60 @@
     <arrayposition>5</arrayposition>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn2.Burn.SetProtPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[6].fPgBurnH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn2.Burn.SetProtPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[6].fPgBurnL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn2.Burn.CheckProt</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stCheckProt.bCheckProt_6</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn2.Burn.ProtTestFireB</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[6].bFireBurn</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn2.Burn.ProtTestPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[6].bPGasL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn2.Burn.ProtTestPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[6].bPGasH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn2.Burn.ProtTestPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[6].bPAirL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn2.Burn.SetProtPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[6].fPairL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn2.Burn.ProtTestFan</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[6].bFan</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Group2.Burn2.FlapOil.Mid</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -9117,6 +9375,54 @@
     <arrayposition>6</arrayposition>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn3.Burn.ProtTestPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[7].bPGasL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn3.Burn.ProtTestPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[7].bPGasH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn3.Burn.ProtTestPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[7].bPAirL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn3.Burn.ProtTestFan</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[7].bFan</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn3.Burn.CheckProt</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stCheckProt.bCheckProt_7</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn3.Burn.SetProtPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[7].fPairL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn3.Burn.SetProtPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[7].fPgBurnH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn3.Burn.SetProtPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[7].fPgBurnL</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Group2.Burn3.FlapOil.Mid</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -9313,6 +9619,54 @@
     <arrayposition>7</arrayposition>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn4.Burn.ProtTestPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[8].bPGasL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn4.Burn.ProtTestPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[8].bPGasH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn4.Burn.ProtTestPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[8].bPAirL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn4.Burn.ProtTestFan</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[8].bFan</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn4.Burn.CheckProt</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stCheckProt.bCheckProt_8</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn4.Burn.SetProtPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[8].fPairL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn4.Burn.SetProtPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[8].fPgBurnH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn4.Burn.SetProtPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[8].fPgBurnL</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Group2.Burn4.FlapOil.Mid</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -9507,6 +9861,54 @@
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.arbAlarmIgn</nodeId>
     <arrayposition>4</arrayposition>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn1.Burn.ProtTestPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[5].bPGasL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn1.Burn.ProtTestPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[5].bPGasH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn1.Burn.ProtTestPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[5].bPAirL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn1.Burn.ProtTestFan</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[5].bFan</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn1.Burn.CheckProt</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stCheckProt.bCheckProt_5</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn1.Burn.SetProtPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[5].fPairL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn1.Burn.SetProtPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[5].fPgBurnH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group2.Burn1.Burn.SetProtPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[5].fPgBurnL</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Group2.Burn1.FlapOil.Mid</node-path>
@@ -9873,6 +10275,60 @@
     <arrayposition>10</arrayposition>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn3.Burn.SetProtPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[11].fPgBurnH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn3.Burn.SetProtPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[11].fPgBurnL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn3.Burn.CheckProt</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stCheckProt.bCheckProt_11</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn3.Burn.ProtTestFireB</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[11].bFireBurn</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn3.Burn.ProtTestPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[11].bPGasL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn3.Burn.ProtTestPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[11].bPGasH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn3.Burn.ProtTestPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[11].bPAirL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn3.Burn.SetProtPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[11].fPairL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn3.Burn.ProtTestFan</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[11].bFan</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Group3.Burn3.FlapOil.Mid</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -10081,6 +10537,54 @@
     <arrayposition>9</arrayposition>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn2.Burn.ProtTestPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[10].bPGasL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn2.Burn.ProtTestPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[10].bPGasH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn2.Burn.ProtTestPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[10].bPAirL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn2.Burn.ProtTestFan</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[10].bFan</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn2.Burn.CheckProt</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stCheckProt.bCheckProt_10</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn2.Burn.SetProtPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[10].fPairL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn2.Burn.SetProtPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[10].fPgBurnH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn2.Burn.SetProtPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[10].fPgBurnL</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Group3.Burn2.FlapOil.Mid</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -10277,6 +10781,54 @@
     <arrayposition>11</arrayposition>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn4.Burn.ProtTestPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[12].bPGasL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn4.Burn.ProtTestPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[12].bPGasH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn4.Burn.ProtTestPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[12].bPAirL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn4.Burn.ProtTestFan</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[12].bFan</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn4.Burn.CheckProt</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stCheckProt.bCheckProt_12</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn4.Burn.SetProtPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[12].fPairL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn4.Burn.SetProtPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[12].fPgBurnH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn4.Burn.SetProtPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[12].fPgBurnL</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Group3.Burn4.FlapOil.Mid</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -10471,6 +11023,54 @@
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.arbAlarmIgn</nodeId>
     <arrayposition>8</arrayposition>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn1.Burn.ProtTestPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[9].bPGasL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn1.Burn.ProtTestPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[9].bPGasH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn1.Burn.ProtTestPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[9].bPAirL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn1.Burn.ProtTestFan</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[9].bFan</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn1.Burn.CheckProt</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stCheckProt.bCheckProt_9</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn1.Burn.SetProtPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[9].fPairL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn1.Burn.SetProtPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[9].fPgBurnH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group3.Burn1.Burn.SetProtPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[9].fPgBurnL</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Group3.Burn1.FlapOil.Mid</node-path>
@@ -10837,6 +11437,60 @@
     <arrayposition>13</arrayposition>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn2.Burn.SetProtPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[14].fPgBurnH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn2.Burn.SetProtPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[14].fPgBurnL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn2.Burn.CheckProt</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stCheckProt.bCheckProt_14</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn2.Burn.ProtTestFireB</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[14].bFireBurn</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn2.Burn.ProtTestPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[14].bPGasL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn2.Burn.ProtTestPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[14].bPGasH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn2.Burn.ProtTestPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[14].bPAirL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn2.Burn.SetProtPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[14].fPairL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn2.Burn.ProtTestFan</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[14].bFan</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Group4.Burn2.FlapOil.Mid</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -11045,6 +11699,54 @@
     <arrayposition>14</arrayposition>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn3.Burn.ProtTestPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[15].bPGasL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn3.Burn.ProtTestPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[15].bPGasH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn3.Burn.ProtTestPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[15].bPAirL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn3.Burn.ProtTestFan</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[15].bFan</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn3.Burn.CheckProt</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stCheckProt.bCheckProt_15</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn3.Burn.SetProtPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[15].fPairL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn3.Burn.SetProtPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[15].fPgBurnH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn3.Burn.SetProtPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[15].fPgBurnL</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Group4.Burn3.FlapOil.Mid</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -11239,6 +11941,54 @@
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.arbAlarmIgn</nodeId>
     <arrayposition>15</arrayposition>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn4.Burn.ProtTestPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[16].bPGasL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn4.Burn.ProtTestPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[16].bPGasH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn4.Burn.ProtTestPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[16].bPAirL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn4.Burn.ProtTestFan</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[16].bFan</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn4.Burn.CheckProt</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stCheckProt.bCheckProt_16</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn4.Burn.SetProtPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[16].fPairL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn4.Burn.SetProtPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[16].fPgBurnH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn4.Burn.SetProtPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[16].fPgBurnL</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Group4.Burn4.FlapOil.Mid</node-path>
@@ -11437,6 +12187,54 @@
     <arrayposition>12</arrayposition>
   </item>
   <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn1.Burn.ProtTestPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[13].bPGasL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn1.Burn.ProtTestPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[13].bPGasH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn1.Burn.ProtTestPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[13].bPAirL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn1.Burn.ProtTestFan</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstBurnAlarmCheck[13].bFan</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn1.Burn.CheckProt</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stCheckProt.bCheckProt_13</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn1.Burn.SetProtPaL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[13].fPairL</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn1.Burn.SetProtPgH</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[13].fPgBurnH</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Group4.Burn1.Burn.SetProtPgL</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arstSetProt[13].fPgBurnL</nodeId>
+  </item>
+  <item Binding="Introduced">
     <node-path>ROOT.Group4.Burn1.FlapOil.Mid</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -11508,178 +12306,6 @@
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.arfPgazFix</nodeId>
     <arrayposition>3</arrayposition>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.BurnStartSequence.BurnStep1</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.arQueueIgnBurn</nodeId>
-    <arrayposition>0</arrayposition>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.BurnStartSequence.BurnStep2</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.arQueueIgnBurn</nodeId>
-    <arrayposition>1</arrayposition>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.BurnStartSequence.BurnStep3</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.arQueueIgnBurn</nodeId>
-    <arrayposition>2</arrayposition>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.BurnStartSequence.BurnStep4</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.arQueueIgnBurn</nodeId>
-    <arrayposition>3</arrayposition>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.BurnStartSequence.BurnStep5</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.arstSelectWorkBurn[5].iNum</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.BurnStartSequence.BurnStep6</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.arstSelectWorkBurn[6].iNum</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.BurnStartSequence.BurnStep7</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.arstSelectWorkBurn[7].iNum</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.BurnStartSequence.BurnStep8</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.arstSelectWorkBurn[8].iNum</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.BurnStartSequence.Err5</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.arstSelectWorkBurn[5].bEr</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.BurnStartSequence.Err6</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.arstSelectWorkBurn[6].bEr</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.BurnStartSequence.Err7</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.arstSelectWorkBurn[7].bEr</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.BurnStartSequence.Err8</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.arstSelectWorkBurn[8].bEr</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.BurnStartSequence.BurnStep9</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.arstSelectWorkBurn[9].iNum</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.BurnStartSequence.BurnStep10</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.arstSelectWorkBurn[10].iNum</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.BurnStartSequence.BurnStep11</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.arstSelectWorkBurn[11].iNum</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.BurnStartSequence.BurnStep12</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.arstSelectWorkBurn[12].iNum</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.BurnStartSequence.BurnStep13</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.arstSelectWorkBurn[13].iNum</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.BurnStartSequence.BurnStep14</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.arstSelectWorkBurn[14].iNum</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.BurnStartSequence.BurnStep15</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.arstSelectWorkBurn[15].iNum</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.BurnStartSequence.BurnStep16</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.arstSelectWorkBurn[16].iNum</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.BurnStartSequence.Err9</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.arstSelectWorkBurn[9].bEr</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.BurnStartSequence.Err10</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.arstSelectWorkBurn[10].bEr</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.BurnStartSequence.Err11</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.arstSelectWorkBurn[11].bEr</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.BurnStartSequence.Err12</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.arstSelectWorkBurn[12].bEr</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.BurnStartSequence.Err13</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.arstSelectWorkBurn[13].bEr</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.BurnStartSequence.Err14</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.arstSelectWorkBurn[14].bEr</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.BurnStartSequence.Err15</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.arstSelectWorkBurn[15].bEr</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.BurnStartSequence.Err16</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.arstSelectWorkBurn[16].bEr</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.IgnSequence.Sequence1.Ign1</node-path>
@@ -12316,5 +12942,177 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.arstNumBurnPoil[16].fPg</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.BurnStartSequence.BurnStep1</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arQueueIgnBurn</nodeId>
+    <arrayposition>0</arrayposition>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.BurnStartSequence.BurnStep2</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arQueueIgnBurn</nodeId>
+    <arrayposition>1</arrayposition>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.BurnStartSequence.BurnStep3</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arQueueIgnBurn</nodeId>
+    <arrayposition>2</arrayposition>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.BurnStartSequence.BurnStep4</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.arQueueIgnBurn</nodeId>
+    <arrayposition>3</arrayposition>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.BurnStartSequence.BurnStep5</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[5].iNum</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.BurnStartSequence.BurnStep6</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[6].iNum</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.BurnStartSequence.BurnStep7</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[7].iNum</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.BurnStartSequence.BurnStep8</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[8].iNum</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.BurnStartSequence.Err5</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[5].bEr</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.BurnStartSequence.Err6</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[6].bEr</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.BurnStartSequence.Err7</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[7].bEr</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.BurnStartSequence.Err8</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[8].bEr</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.BurnStartSequence.BurnStep9</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[9].iNum</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.BurnStartSequence.BurnStep10</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[10].iNum</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.BurnStartSequence.BurnStep11</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[11].iNum</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.BurnStartSequence.BurnStep12</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[12].iNum</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.BurnStartSequence.BurnStep13</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[13].iNum</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.BurnStartSequence.BurnStep14</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[14].iNum</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.BurnStartSequence.BurnStep15</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[15].iNum</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.BurnStartSequence.BurnStep16</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[16].iNum</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.BurnStartSequence.Err9</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[9].bEr</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.BurnStartSequence.Err10</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[10].bEr</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.BurnStartSequence.Err11</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[11].bEr</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.BurnStartSequence.Err12</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[12].bEr</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.BurnStartSequence.Err13</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[13].bEr</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.BurnStartSequence.Err14</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[14].bEr</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.BurnStartSequence.Err15</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[15].bEr</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.BurnStartSequence.Err16</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.arstSelectWorkBurn[16].bEr</nodeId>
   </item>
 </root>

@@ -2603,11 +2603,11 @@ unit.Global.ShowMSG("Время срабатывания "+Column_2.txt.Text+" �
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-if (TypeConvert.ToFloat(Str.ToDouble(me.Text,refData.TimeAlarmL))<0)
-	refData.InTimeAlarmL=refData.TimeAlarmL;
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,refData.TimeAlarmH))<0)
+	refData.InTimeAlarmH=refData.TimeAlarmH;
 else
-	refData.InTimeAlarmL = TypeConvert.ToFloat(Str.ToDouble(me.Text,refData.TimeAlarmL));
-me.Text=refData.TimeAlarmL.ValueAsString;]]>
+	refData.InTimeAlarmH = TypeConvert.ToFloat(Str.ToDouble(me.Text,refData.TimeAlarmH));
+me.Text=refData.TimeAlarmH.ValueAsString;]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -2973,11 +2973,11 @@ unit.Global.ShowMSG("Время срабатывания "+Column_2.txt.Text+" �
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
-if (TypeConvert.ToFloat(Str.ToDouble(me.Text,refData.TimeAlarmL))<0)
-	refData.InTimeAlarmL=refData.TimeAlarmL;
+if (TypeConvert.ToFloat(Str.ToDouble(me.Text,refData.TimeAlarmH))<0)
+	refData.InTimeAlarmH=refData.TimeAlarmH;
 else
-	refData.InTimeAlarmL = TypeConvert.ToFloat(Str.ToDouble(me.Text,refData.TimeAlarmL));
-me.Text=refData.TimeAlarmL.ValueAsString;]]>
+	refData.InTimeAlarmH = TypeConvert.ToFloat(Str.ToDouble(me.Text,refData.TimeAlarmH));
+me.Text=refData.TimeAlarmH.ValueAsString;]]>
 						</body>
 					</do-on>
 					<do-trace access-modifier="private" target="ReadOnly" ver="4">
@@ -3885,7 +3885,7 @@ while (i<10)
 					<designed target="Tooltip" value="" ver="4"/>
 					<designed target="Width" value="55" ver="4"/>
 					<designed target="Height" value="20" ver="4"/>
-					<designed target="Text" value="кгс/см²" ver="4"/>
+					<designed target="Text" value="кПа" ver="4"/>
 					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
 					<designed target="FontColor" value="4278190080" ver="4"/>
 					<designed target="TextAlignment" value="132" ver="4"/>
@@ -4037,7 +4037,7 @@ unit.Global.ShowMSG(Column_1.txt.Text+" изменена на "+me.Text+" "+Colu
 					<designed target="Tooltip" value="" ver="4"/>
 					<designed target="Width" value="50" ver="4"/>
 					<designed target="Height" value="20" ver="4"/>
-					<designed target="Text" value="кгс/см²" ver="4"/>
+					<designed target="Text" value="кПа" ver="4"/>
 					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
 					<designed target="FontColor" value="4278190080" ver="4"/>
 					<designed target="TextAlignment" value="132" ver="4"/>
@@ -4189,7 +4189,7 @@ unit.Global.ShowMSG(Column_1.txt.Text+" изменена на "+me.Text+" "+Colu
 					<designed target="Tooltip" value="" ver="4"/>
 					<designed target="Width" value="75" ver="4"/>
 					<designed target="Height" value="20" ver="4"/>
-					<designed target="Text" value="мм вод. ст." ver="4"/>
+					<designed target="Text" value="кПа" ver="4"/>
 					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
 					<designed target="FontColor" value="4278190080" ver="4"/>
 					<designed target="TextAlignment" value="132" ver="4"/>
@@ -4797,7 +4797,7 @@ unit.Global.ShowMSG(Column_1.txt.Text+" изменена на "+me.Text+" "+Colu
 					<designed target="Tooltip" value="" ver="4"/>
 					<designed target="Width" value="50" ver="4"/>
 					<designed target="Height" value="20" ver="4"/>
-					<designed target="Text" value="кгс/см²" ver="4"/>
+					<designed target="Text" value="кПа" ver="4"/>
 					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
 					<designed target="FontColor" value="4278190080" ver="4"/>
 					<designed target="TextAlignment" value="132" ver="4"/>
@@ -4949,7 +4949,7 @@ unit.Global.ShowMSG(Column_1.txt.Text+" изменена на "+me.Text+" "+Colu
 					<designed target="Tooltip" value="" ver="4"/>
 					<designed target="Width" value="65" ver="4"/>
 					<designed target="Height" value="20" ver="4"/>
-					<designed target="Text" value="кгс/см²" ver="4"/>
+					<designed target="Text" value="кПа" ver="4"/>
 					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
 					<designed target="FontColor" value="4278190080" ver="4"/>
 					<designed target="TextAlignment" value="132" ver="4"/>

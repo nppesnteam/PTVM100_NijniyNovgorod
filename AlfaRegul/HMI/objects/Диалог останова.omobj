@@ -74,10 +74,12 @@
 			<body kind="om">
 				<![CDATA[refIgnStart_1=false;
 refIgnStart_2=false;
+refIgnStart_3=false;
 refIgnStart=false;
 here.Close();]]>
 			</body>
 		</do-on>
+		<designed target="Checked" value="false" ver="4"/>
 	</object>
 	<object access-modifier="private" name="btnNo" display-name="btnNo" uuid="74b788d1-5f3b-4f18-9b75-6639d74f40c1" base-type="SystemButton" base-type-id="22504b6b-d24c-45e5-a9dd-6fb41e3d49c1" ver="4">
 		<designed target="X" value="150" ver="4"/>
@@ -105,5 +107,6 @@ here.Close();]]>
 	<object access-modifier="private" name="notifText" display-name="notifText" uuid="794ae044-3691-4675-9b41-090931d0cbfc" base-type="notifying_string" base-type-id="14976fbf-36ab-415f-abc3-9f8fdc217351" ver="4"/>
 	<object access-modifier="private" name="refIgnStart_1" display-name="refIgnStart_1" uuid="1ced6da8-d423-4ef0-8b67-57bd3b81709a" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" base-const="true" base-ref="true" ver="4"/>
 	<object access-modifier="private" name="refIgnStart_2" display-name="refIgnStart_2" uuid="445cdca0-7546-4f25-ac08-01d9f7268f63" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" base-const="true" base-ref="true" ver="4"/>
+	<object access-modifier="private" name="refIgnStart_3" display-name="refIgnStart_3" uuid="6d5d1e5b-3459-4a19-96b5-c42df7beb007" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" base-const="true" base-ref="true" ver="4"/>
 </type>
 

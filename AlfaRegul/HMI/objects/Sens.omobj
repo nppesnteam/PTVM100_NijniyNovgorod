@@ -300,7 +300,7 @@
 					<![CDATA[InBurner]]>
 				</condition>
 				<expr>
-					<![CDATA["ROOT.GAS."+BurnValPath]]>
+					<![CDATA["ROOT."+BurnValPath+".Burn"]]>
 				</expr>
 			</conditional-expr>
 			<default-expr>
@@ -318,6 +318,16 @@
 	fETProtectH=0;]]>
 			</body>
 		</do-on>
+		<do-trace access-modifier="private" target="Path" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[InBurner]]>
+				</condition>
+				<expr>
+					<![CDATA["OutSetProt"+initName+"H"]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
 	</object>
 	<object access-modifier="private" name="ProtectL" display-name="ProtectL" uuid="e35775b5-d79e-48a9-8503-66ed9ec6f0ff" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="ProtectOpcSorce"/>
@@ -327,6 +337,16 @@
 	fETProtectL=0;]]>
 			</body>
 		</do-on>
+		<do-trace access-modifier="private" target="Path" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[InBurner]]>
+				</condition>
+				<expr>
+					<![CDATA["OutSetProt"+initName+"L"]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
 	</object>
 	<object access-modifier="private" name="SignalH" display-name="SignalH" uuid="8808472f-a71a-42ab-b884-b93e49cd6da2" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="SignalOpcSorce"/>
@@ -410,7 +430,7 @@
 					<![CDATA[InBurner]]>
 				</condition>
 				<expr>
-					<![CDATA["ROOT.PROTECTS.BurnTime"]]>
+					<![CDATA["ROOT.AlarmsValue.DelAlarmsBurn"]]>
 				</expr>
 			</conditional-expr>
 			<default-expr>
@@ -428,9 +448,19 @@
 			</body>
 		</do-on>
 		<do-trace access-modifier="private" target="Path" ver="4">
-			<body>
-				<![CDATA["Alarm"+initName+"L"]]>
-			</body>
+			<conditional-expr>
+				<condition>
+					<![CDATA[InBurner]]>
+				</condition>
+				<expr>
+					<![CDATA["ProtTest"+initName+"L"]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA["Alarm"+initName+"L"]]>
+				</expr>
+			</default-expr>
 		</do-trace>
 		<init target="Source" ver="4" ref="ProtectPLCOPCSorce"/>
 	</object>
@@ -456,9 +486,19 @@
 			</body>
 		</do-on>
 		<do-trace access-modifier="private" target="Path" ver="4">
-			<body>
-				<![CDATA["Alarm"+initName+"H"]]>
-			</body>
+			<conditional-expr>
+				<condition>
+					<![CDATA[InBurner]]>
+				</condition>
+				<expr>
+					<![CDATA["ProtTest"+initName+"H"]]>
+				</expr>
+			</conditional-expr>
+			<default-expr>
+				<expr>
+					<![CDATA["Alarm"+initName+"H"]]>
+				</expr>
+			</default-expr>
 		</do-trace>
 		<init target="Source" ver="4" ref="ProtectPLCOPCSorce"/>
 	</object>
@@ -673,7 +713,7 @@ OpenProtCheckWindow.Invoke();]]>
 					<![CDATA[InBurner]]>
 				</condition>
 				<expr>
-					<![CDATA["ROOT.GAS."+BurnValPath+".InMaskProt"]]>
+					<![CDATA["ROOT."+BurnValPath+".Burn.InCheckProt"]]>
 				</expr>
 			</conditional-expr>
 			<default-expr>
@@ -713,7 +753,7 @@ if (me.Value&&isOpenedProtCheck&&unit.Global.OutCheckProt)
 					<![CDATA[InBurner]]>
 				</condition>
 				<expr>
-					<![CDATA["ROOT.GAS."+BurnValPath+".OutMaskProt"]]>
+					<![CDATA["ROOT."+BurnValPath+".Burn.OutCheckProt"]]>
 				</expr>
 			</conditional-expr>
 			<default-expr>
@@ -725,9 +765,29 @@ if (me.Value&&isOpenedProtCheck&&unit.Global.OutCheckProt)
 	</object>
 	<object access-modifier="private" name="InProtectH" display-name="InProtectH" uuid="38052118-819f-4a1b-a373-2581cc69f85e" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="ProtectOpcSorce"/>
+		<do-trace access-modifier="private" target="Path" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[InBurner]]>
+				</condition>
+				<expr>
+					<![CDATA["InSetProt"+initName+"H"]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
 	</object>
 	<object access-modifier="private" name="InProtectL" display-name="InProtectL" uuid="f18e1dc9-4097-4dcb-b76a-65ab906cc72e" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="ProtectOpcSorce"/>
+		<do-trace access-modifier="private" target="Path" ver="4">
+			<conditional-expr>
+				<condition>
+					<![CDATA[InBurner]]>
+				</condition>
+				<expr>
+					<![CDATA["InSetProt"+initName+"L"]]>
+				</expr>
+			</conditional-expr>
+		</do-trace>
 	</object>
 	<object access-modifier="private" name="InSignalH" display-name="InSignalH" uuid="4d833e11-8805-4314-b1b1-ee9cf93e1497" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
 		<init target="Source" ver="4" ref="SignalOpcSorce"/>
@@ -795,19 +855,22 @@ while (i<10)
 		<init target="Source" ver="4" ref="ProtectOpcSorce"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
 			<body kind="om">
-				<![CDATA[if (me.ValueAsString==initName+"L")
+				<![CDATA[if (!InBurner)
 {
-	ProtectL.Path="Prot"+String.ToString(Index+1)+".OutProtect";
-	InProtectL.Path="Prot"+String.ToString(Index+1)+".InProtect";
-	InProtOffL.Path="Prot"+String.ToString(Index+1)+".InProtOff";
-	OutProtOffL.Path="Prot"+String.ToString(Index+1)+".OutProtOff";
-}
-if (me.ValueAsString==initName+"H")
-{
-	ProtectH.Path="Prot"+String.ToString(Index+1)+".OutProtect";
-	InProtectH.Path="Prot"+String.ToString(Index+1)+".InProtect";
-	InProtOffH.Path="Prot"+String.ToString(Index+1)+".InProtOff";
-	OutProtOffH.Path="Prot"+String.ToString(Index+1)+".OutProtOff";
+	if (me.ValueAsString==initName+"L")
+	{
+		ProtectL.Path="Prot"+String.ToString(Index+1)+".OutProtect";
+		InProtectL.Path="Prot"+String.ToString(Index+1)+".InProtect";
+		InProtOffL.Path="Prot"+String.ToString(Index+1)+".InProtOff";
+		OutProtOffL.Path="Prot"+String.ToString(Index+1)+".OutProtOff";
+	}
+	if (me.ValueAsString==initName+"H")
+	{
+		ProtectH.Path="Prot"+String.ToString(Index+1)+".OutProtect";
+		InProtectH.Path="Prot"+String.ToString(Index+1)+".InProtect";
+		InProtOffH.Path="Prot"+String.ToString(Index+1)+".InProtOff";
+		OutProtOffH.Path="Prot"+String.ToString(Index+1)+".OutProtOff";
+	}
 }]]>
 			</body>
 		</do-on>
@@ -820,7 +883,7 @@ if (me.ValueAsString==initName+"H")
 					<![CDATA[InBurner]]>
 				</condition>
 				<expr>
-					<![CDATA["OuttDel"+initName]]>
+					<![CDATA["IntDel"+initName]]>
 				</expr>
 			</conditional-expr>
 			<default-expr>
@@ -838,7 +901,7 @@ if (me.ValueAsString==initName+"H")
 					<![CDATA[InBurner]]>
 				</condition>
 				<expr>
-					<![CDATA["OuttDel"+initName]]>
+					<![CDATA["IntDel"+initName]]>
 				</expr>
 			</conditional-expr>
 			<default-expr>
@@ -859,7 +922,7 @@ if (me.ValueAsString==initName+"H")
 					<![CDATA[InBurner]]>
 				</condition>
 				<expr>
-					<![CDATA["ROOT.GAS."+BurnValPath]]>
+					<![CDATA["ROOT."+BurnValPath+".Burn"]]>
 				</expr>
 			</conditional-expr>
 			<default-expr>
