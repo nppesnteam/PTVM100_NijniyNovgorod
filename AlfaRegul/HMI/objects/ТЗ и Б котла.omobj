@@ -556,12 +556,12 @@ unit.Global.ShowMSG("Время срабатывания "+Column_2.txt.Text+" �
 								<![CDATA[refData.OutProtOffL]]>
 							</condition>
 							<expr>
-								<![CDATA["Сигнал"]]>
+								<![CDATA["Выведена"]]>
 							</expr>
 						</conditional-expr>
 						<default-expr>
 							<expr>
-								<![CDATA["Срабатывание"]]>
+								<![CDATA["Введена"]]>
 							</expr>
 						</default-expr>
 					</do-trace>
@@ -886,12 +886,12 @@ unit.Global.ShowMSG("Время срабатывания "+Column_2.txt.Text+" �
 								<![CDATA[refData.OutProtOffH]]>
 							</condition>
 							<expr>
-								<![CDATA["Сигнал"]]>
+								<![CDATA["Выведена"]]>
 							</expr>
 						</conditional-expr>
 						<default-expr>
 							<expr>
-								<![CDATA["Срабатывание"]]>
+								<![CDATA["Введена"]]>
 							</expr>
 						</default-expr>
 					</do-trace>
@@ -1256,12 +1256,12 @@ unit.Global.ShowMSG("Время срабатывания "+Column_2.txt.Text+" �
 								<![CDATA[refData.OutProtOffL]]>
 							</condition>
 							<expr>
-								<![CDATA["Сигнал"]]>
+								<![CDATA["Выведена"]]>
 							</expr>
 						</conditional-expr>
 						<default-expr>
 							<expr>
-								<![CDATA["Срабатывание"]]>
+								<![CDATA["Введена"]]>
 							</expr>
 						</default-expr>
 					</do-trace>
@@ -1622,12 +1622,12 @@ unit.Global.ShowMSG("Время срабатывания "+Column_2.txt.Text+" �
 								<![CDATA[refData.OutProtOffL]]>
 							</condition>
 							<expr>
-								<![CDATA["Сигнал"]]>
+								<![CDATA["Выведена"]]>
 							</expr>
 						</conditional-expr>
 						<default-expr>
 							<expr>
-								<![CDATA["Срабатывание"]]>
+								<![CDATA["Введена"]]>
 							</expr>
 						</default-expr>
 					</do-trace>
@@ -1952,12 +1952,12 @@ unit.Global.ShowMSG("Время срабатывания "+Column_2.txt.Text+" �
 								<![CDATA[refData.OutProtOffH]]>
 							</condition>
 							<expr>
-								<![CDATA["Сигнал"]]>
+								<![CDATA["Выведена"]]>
 							</expr>
 						</conditional-expr>
 						<default-expr>
 							<expr>
-								<![CDATA["Срабатывание"]]>
+								<![CDATA["Введена"]]>
 							</expr>
 						</default-expr>
 					</do-trace>
@@ -2322,12 +2322,12 @@ unit.Global.ShowMSG("Время срабатывания "+Column_2.txt.Text+" �
 								<![CDATA[refData.OutProtOffL]]>
 							</condition>
 							<expr>
-								<![CDATA["Сигнал"]]>
+								<![CDATA["Выведена"]]>
 							</expr>
 						</conditional-expr>
 						<default-expr>
 							<expr>
-								<![CDATA["Срабатывание"]]>
+								<![CDATA["Введена"]]>
 							</expr>
 						</default-expr>
 					</do-trace>
@@ -2688,12 +2688,12 @@ unit.Global.ShowMSG("Время срабатывания "+Column_2.txt.Text+" �
 								<![CDATA[refData.OutProtOffH]]>
 							</condition>
 							<expr>
-								<![CDATA["Сигнал"]]>
+								<![CDATA["Выведена"]]>
 							</expr>
 						</conditional-expr>
 						<default-expr>
 							<expr>
-								<![CDATA["Срабатывание"]]>
+								<![CDATA["Введена"]]>
 							</expr>
 						</default-expr>
 					</do-trace>
@@ -3058,12 +3058,12 @@ unit.Global.ShowMSG("Время срабатывания "+Column_2.txt.Text+" �
 								<![CDATA[refData.OutProtOffH]]>
 							</condition>
 							<expr>
-								<![CDATA["Сигнал"]]>
+								<![CDATA["Выведена"]]>
 							</expr>
 						</conditional-expr>
 						<default-expr>
 							<expr>
-								<![CDATA["Срабатывание"]]>
+								<![CDATA["Введена"]]>
 							</expr>
 						</default-expr>
 					</do-trace>
@@ -6559,7 +6559,7 @@ unit.Global.ShowMSG(Column_1.txt.Text+" изменено на "+me.Text+" "+Colu
 					<designed target="Tooltip" value="" ver="4"/>
 					<designed target="Width" value="445" ver="4"/>
 					<designed target="Height" value="20" ver="4"/>
-					<designed target="Text" value="Время розжига запальника горелки (дизтопливо)" ver="4"/>
+					<designed target="Text" value="Время розжига запальника горелки (рез.топливо)" ver="4"/>
 					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
 					<designed target="FontColor" value="4278190080" ver="4"/>
 					<designed target="TextAlignment" value="129" ver="4"/>

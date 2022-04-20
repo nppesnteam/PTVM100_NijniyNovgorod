@@ -870,7 +870,7 @@
 			<designed target="PenWidth" value="5" ver="4"/>
 			<designed target="BrushColor" value="0xff000000" ver="4"/>
 			<designed target="BrushStyle" value="0" ver="4"/>
-			<object access-modifier="private" name="HistogramBar_1" display-name="HistogramBar_1" uuid="377e03d7-52dd-4fc8-937f-922dd88dbe47" base-type="HistogramBar" base-type-id="abcbe2c6-2016-434a-b9bf-f6cbfa135e4c" ver="4">
+			<object access-modifier="private" name="hystFireIntensity" display-name="hystFireIntensity" uuid="377e03d7-52dd-4fc8-937f-922dd88dbe47" base-type="HistogramBar" base-type-id="abcbe2c6-2016-434a-b9bf-f6cbfa135e4c" ver="4">
 				<designed target="X" value="1178" ver="4"/>
 				<designed target="Y" value="70" ver="4"/>
 				<designed target="ZValue" value="0" ver="4"/>
@@ -879,26 +879,65 @@
 				<designed target="Visible" value="true" ver="4"/>
 				<designed target="Opacity" value="1" ver="4"/>
 				<designed target="Enabled" value="true" ver="4"/>
-				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Tooltip" value="Интенсивность общего факела" ver="4"/>
 				<designed target="Width" value="20" ver="4"/>
 				<designed target="Height" value="110" ver="4"/>
 				<designed target="MinLimit" value="0" ver="4"/>
 				<designed target="MaxLimit" value="100" ver="4"/>
-				<designed target="LowValue" value="0" ver="4"/>
-				<designed target="HighValue" value="100" ver="4"/>
-				<designed target="Value" value="0.5" ver="4"/>
+				<designed target="LowValue" value="20" ver="4"/>
+				<designed target="HighValue" value="80" ver="4"/>
+				<designed target="Value" value="0" ver="4"/>
 				<designed target="Orientation" value="2" ver="4"/>
 				<designed target="PenColor" value="4278190080" ver="4"/>
 				<designed target="PenStyle" value="1" ver="4"/>
 				<designed target="PenWidth" value="1" ver="4"/>
-				<designed target="BrushColor" value="4278190080" ver="4"/>
-				<designed target="BrushStyle" value="0" ver="4"/>
-				<designed target="BarBrushColor" value="4278255360" ver="4"/>
+				<designed target="BrushColor" value="0xffffffff" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<designed target="BarBrushColor" value="0xffffaa00" ver="4"/>
 				<designed target="BarBrushStyle" value="1" ver="4"/>
 				<designed target="BarLowBrushColor" value="4294967040" ver="4"/>
 				<designed target="BarLowBrushStyle" value="1" ver="4"/>
-				<designed target="BarHighBrushColor" value="4294901760" ver="4"/>
+				<designed target="BarHighBrushColor" value="0xffff5500" ver="4"/>
 				<designed target="BarHighBrushStyle" value="1" ver="4"/>
+				<do-trace access-modifier="private" target="Value" ver="4">
+					<body>
+						<![CDATA[FireIntensity]]>
+					</body>
+				</do-trace>
+			</object>
+			<object access-modifier="private" name="FireIntensity" display-name="FireIntensity" uuid="44767a86-1fff-43bc-b188-926fbb416c39" base-type="OpcItemFloat4" base-type-id="8c6c503b-9447-48cd-a5af-304a7f9b2dcd" ver="4">
+				<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+				<init target="Path" ver="4" value="ROOT.Diag.Main.AI.Module2.Channel5.VALUE"/>
+			</object>
+			<object access-modifier="private" name="Fire_1" display-name="Fire_1" uuid="99419444-865d-430c-88e0-3c59cc6f2671" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+				<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+				<init target="Path" ver="4" value="ROOT.Diag.Main.DI.Module2.Channel6.HProg"/>
+			</object>
+			<object access-modifier="private" name="Fire_2" display-name="Fire_2" uuid="d9bcbc48-bf6a-4abb-8208-b5eea974e56f" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+				<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+				<init target="Path" ver="4" value="ROOT.Diag.Main.DI.Module2.Channel7.HProg"/>
+			</object>
+			<object access-modifier="private" name="visuFire_1" display-name="visuFire_1" uuid="ee3b778a-04c6-41c6-b27d-1eb9288e5f89" base-type="Fire" base-type-id="7fd9dfac-5936-4e23-8574-fb32e8a4e18a" ver="4">
+				<designed target="X" value="1150" ver="4"/>
+				<designed target="Y" value="165" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<do-trace access-modifier="private" target="Visible" ver="4">
+					<body>
+						<![CDATA[Fire_1]]>
+					</body>
+				</do-trace>
+				<designed target="Visible" value="false" ver="4"/>
+			</object>
+			<object access-modifier="private" name="visuFire_2" display-name="visuFire_2" uuid="ab1c01a6-cff6-4edb-ad22-680d06bcb47e" base-type="Fire" base-type-id="7fd9dfac-5936-4e23-8574-fb32e8a4e18a" ver="4">
+				<designed target="X" value="1150" ver="4"/>
+				<designed target="Y" value="80" ver="4"/>
+				<designed target="Rotation" value="180" ver="4"/>
+				<do-trace access-modifier="private" target="Visible" ver="4">
+					<body>
+						<![CDATA[Fire_2]]>
+					</body>
+				</do-trace>
+				<designed target="Visible" value="false" ver="4"/>
 			</object>
 		</object>
 		<object access-modifier="private" name="Oil" display-name="Oil" uuid="e53fbfe2-4738-49e5-b24d-dc7bbae7f1a8" base-type="Frame" base-type-id="71f78e19-ef99-4133-a029-2968b14f02b6" ver="4">
