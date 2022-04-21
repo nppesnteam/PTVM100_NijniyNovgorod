@@ -179,6 +179,7 @@
 		<designed target="Rotation" value="0" ver="3"/>
 		<init target="initOPCSource" ver="4" ref="here.hereOPCSource"/>
 		<init target="initPath" ver="4" value="Burn"/>
+		<init target="UseFinal" ver="4" value="true"/>
 	</object>
 	<object access-modifier="private" name="Valve2" display-name="Valve2" uuid="b213c237-c161-44bf-bb04-0c0642397fe1" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 		<designed target="X" value="121" ver="4"/>

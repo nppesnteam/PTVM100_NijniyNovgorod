@@ -8728,17 +8728,17 @@ else
         </parameter>
         <parameter name="AlarmPWatOutH" uuid="a4dda9fa-4d3e-4b28-88a0-43d20341c247" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление воды за котлом выше нормы. Защита.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление теплоносителя на выходе выше нормы. Защита.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmTWatOutH" uuid="51cde381-9791-42b0-baf9-dcb8b0a898a2" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Температура воды за котлом выше нормы. Защита.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Температура теплоносителя на выходе выше нормы. Защита.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmQWatOutL" uuid="5de94fab-2109-40ff-a5dd-839cf8fe4edc" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Расход воды за котлом ниже нормы. Защита.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Расход теплоносителя на выходе ниже нормы. Защита.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmBoilerStop" uuid="c77cf169-eb15-4966-97ae-97209ef5bdda" direction="out" type="bool">
@@ -8759,7 +8759,7 @@ else
         </parameter>
         <parameter name="AlarmPWatOutL" uuid="54241258-1b30-4240-947b-f2c99537ecc4" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление воды за котлом ниже нормы. Защита.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление теплоносителя на выходе ниже нормы. Защита.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <handler name="Handler" uuid="36ed2d16-60cd-4028-b797-9d9f169a18cd">
@@ -8808,13 +8808,13 @@ else
         <bind source="_PLC_View.AlarmVacH" target="AlarmVacH" />
         <parameter name="AlarmPWaterErr" uuid="db2a8f64-62af-4cad-935b-b6ad4065a9d8" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Ошибка обоих датчиков давления теплоносителя после котла.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Ошибка обоих датчиков давления теплоносителя на выходе.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmPWaterErr" target="AlarmPWaterErr" />
         <parameter name="AlarmTWaterErr" uuid="8ca7a9b5-d4b9-4c67-99f3-156b09a1b43d" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Ошибка обоих датчиков температуры теплоносителя после котла.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Ошибка обоих датчиков температуры теплоносителя на выходе.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmTWaterErr" target="AlarmTWaterErr" />
@@ -9651,22 +9651,22 @@ else
         </parameter>
         <parameter name="AlarmPWatOutL" uuid="f4bb63c2-0f09-4066-b20c-0bb952327fca" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление воды за котлом ниже нормы. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление теплоносителя на выходе ниже нормы. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmPWatOutH" uuid="62daa159-79bb-4754-9036-a463eede5f3e" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление воды за котлом выше нормы. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление теплоносителя на выходе выше нормы. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmTWatOutH" uuid="2aa708a7-8688-43f2-b043-6b017693e9d6" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Температура воды за котлом выше нормы. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Температура теплоносителя на выходе выше нормы. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmQWatOutL" uuid="6131a7a1-380d-43c6-a5c4-bdce870323d9" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Расход воды за котлом ниже нормы. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Расход теплоносителя на выходе ниже нормы. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmVacH" uuid="0a92c197-52c0-475a-a649-f96357d838a7" direction="out" type="bool">
@@ -9708,37 +9708,37 @@ else
         <bind source="_PLC_View.AlarmDiffPG" target="AlarmDiffPG" />
         <parameter name="AlarmDiffPWat" uuid="794f2b9a-81d5-4093-b0c4-8de0a2861fa1" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Превышение разницы значений датчиков давления теплоносителя после котла. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Превышение разницы значений датчиков давления теплоносителя на выходе. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmDiffPWat" target="AlarmDiffPWat" />
         <parameter name="AlarmDiffTWat" uuid="9635ff7f-585f-48c2-bc7c-92cc91d9e541" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Превышение разницы значений датчиков температуры теплоносителя после котла. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Превышение разницы значений датчиков температуры теплоносителя на выходе. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmDiffTWat" target="AlarmDiffTWat" />
         <parameter name="AlarmPWaterErr1" uuid="e9bddfcf-de4f-463b-8cc6-efd214d12818" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Ошибка датчика 1 давления теплоносителя после котла.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Ошибка датчика 1 давления теплоносителя на выходе","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmPWaterErr1" target="AlarmPWaterErr1" />
         <parameter name="AlarmPWaterErr2" uuid="8db62be0-9e5e-408a-9dcd-81b04d8c5739" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Ошибка датчика 2 давления теплоносителя после котла.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Ошибка датчика 2 давления теплоносителя на выходе.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmPWaterErr2" target="AlarmPWaterErr2" />
         <parameter name="AlarmTWaterErr2" uuid="d95300a6-a32f-461d-9f60-9998812a5d64" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Ошибка датчика 2 температуры теплоносителя после котла.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Ошибка датчика 2 температуры теплоносителя на выходе.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmTWaterErr2" target="AlarmTWaterErr2" />
         <parameter name="AlarmTWaterErr1" uuid="183609a8-4ec4-4a2c-838b-ca1692b6226a" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Ошибка датчика 1 температуры теплоносителя после котла.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Ошибка датчика 1 температуры теплоносителя на выходе.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmTWaterErr1" target="AlarmTWaterErr1" />
@@ -10381,22 +10381,22 @@ else
         </parameter>
         <parameter name="AlarmPWatOutL" direction="out" type="bool" uuid="ff348fb2-112d-4f2c-962f-362631d41a8d">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Давление воды за котлом ниже нормы\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Давление воды за котлом ниже нормы\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Давление теплоносителя на выходе ниже нормы\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Давление теплоносителя на выходе ниже нормы\".","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmPWatOutH" direction="out" type="bool" uuid="5c81abed-1694-4923-b62d-41a22c133613">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Давление воды за котлом выше нормы\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Давление воды за котлом выше нормы\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Давление теплоносителя на выходе выше нормы\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Давление теплоносителя на выходе выше нормы\".","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmTWatOutH" direction="out" type="bool" uuid="4db2bacf-c956-4204-9f77-fda3f6e6c0bb">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Температура воды за котлом выше нормы\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Температура воды за котлом выше нормы\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Температура теплоносителя на выходе выше нормы\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Температура теплоносителя на выходе выше нормы\".","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmQWatOutL" direction="out" type="bool" uuid="ba3080fe-274c-4ebf-b664-366c3c8c14f8">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Расход воды за котлом ниже нормы\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Расход воды за котлом ниже нормы\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Расход теплоносителя на выходе ниже нормы\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Расход теплоносителя на выходе ниже нормы\".","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmVacH" direction="out" type="bool" uuid="80999255-5641-4407-b6c2-a4f84d135469">
@@ -10438,37 +10438,37 @@ else
         <bind source="_PLC_View.AlarmDiffPG" target="AlarmDiffPG" />
         <parameter name="AlarmDiffPWat" direction="out" type="bool" uuid="d661bfe7-329e-4274-9da1-6748c4e59e96">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Превышение разницы значений датчиков давления теплоносителя после котла\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Превышение разницы значений датчиков давления теплоносителя после котла\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Превышение разницы значений датчиков давления теплоносителя на выходе\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Превышение разницы значений датчиков давления теплоносителя на выходе\".","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmDiffPWat" target="AlarmDiffPWat" />
         <parameter name="AlarmDiffTWat" direction="out" type="bool" uuid="f94628ad-7b26-45ef-92b4-f5ee6f0cf800">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Превышение разницы значений датчиков температуры теплоносителя после котла\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Превышение разницы значений датчиков температуры теплоносителя после котла\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Превышение разницы значений датчиков температуры теплоносителя на выходе\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Превышение разницы значений датчиков температуры теплоносителя на выходе\".","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmDiffTWat" target="AlarmDiffTWat" />
         <parameter name="AlarmPWaterErr1" direction="out" type="bool" uuid="3fe8242c-e949-4dcd-883d-194efb0212cf">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Ошибка датчика 1 давления теплоносителя после котла\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Ошибка датчика 1 давления теплоносителя после котла\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Ошибка датчика 1 давления теплоносителя на выходе\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Ошибка датчика 1 давления теплоносителя на выходе\".","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmPWaterErr1" target="AlarmPWaterErr1" />
         <parameter name="AlarmPWaterErr2" direction="out" type="bool" uuid="d7fe92e9-9905-49f6-8cd6-1e4f9ee51341">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Ошибка датчика 2 давления теплоносителя после котла\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Ошибка датчика 2 давления теплоносителя после котла\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Ошибка датчика 2 давления теплоносителя на выходе\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Ошибка датчика 2 давления теплоносителя на выходе\".","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmPWaterErr2" target="AlarmPWaterErr2" />
         <parameter name="AlarmTWaterErr2" direction="out" type="bool" uuid="54d7af39-fdd3-472d-865a-08dd88c07541">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Ошибка датчика 2 температуры теплоносителя после котла\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Ошибка датчика 2 температуры теплоносителя после котла\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Ошибка датчика 2 температуры теплоносителя на выходе\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Ошибка датчика 2 температуры теплоносителя на выходе\".","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmTWaterErr2" target="AlarmTWaterErr2" />
         <parameter name="AlarmTWaterErr1" direction="out" type="bool" uuid="d443b23e-6fb0-4134-99dc-d88388a9bed7">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Ошибка датчика 1 температуры теплоносителя после котла\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Ошибка датчика 1 температуры теплоносителя после котла\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Ошибка датчика 1 температуры теплоносителя на выходе\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Ошибка датчика 1 температуры теплоносителя на выходе\".","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmTWaterErr1" target="AlarmTWaterErr1" />
