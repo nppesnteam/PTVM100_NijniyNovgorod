@@ -316,7 +316,7 @@ unit.Global.ActiveMainFrame = "Растопочная группа №" + Str.To
 				<designed target="DisabledPenWidth" value="1" ver="4"/>
 				<do-trace access-modifier="private" target="Enabled" ver="4">
 					<body>
-						<![CDATA[!OutIgnStart]]>
+						<![CDATA[!OutIgnStart&&VentOk&&GermOk&&BoilerInWork]]>
 					</body>
 				</do-trace>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
@@ -593,7 +593,7 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="DisabledPenWidth" value="1" ver="4"/>
 				<do-trace access-modifier="private" target="Enabled" ver="4">
 					<body>
-						<![CDATA[!OutIgnStart]]>
+						<![CDATA[!OutIgnStart&&VentOk&&GermOk&&BoilerInWork]]>
 					</body>
 				</do-trace>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
@@ -896,7 +896,7 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="DisabledPenWidth" value="1" ver="4"/>
 				<do-trace access-modifier="private" target="Enabled" ver="4">
 					<body>
-						<![CDATA[!OutIgnStart]]>
+						<![CDATA[!OutIgnStart&&VentOk&&GermOk&&BoilerInWork]]>
 					</body>
 				</do-trace>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
@@ -1199,7 +1199,7 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="DisabledPenWidth" value="1" ver="4"/>
 				<do-trace access-modifier="private" target="Enabled" ver="4">
 					<body>
-						<![CDATA[!OutIgnStart]]>
+						<![CDATA[!OutIgnStart&&VentOk&&GermOk&&BoilerInWork]]>
 					</body>
 				</do-trace>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
@@ -1836,8 +1836,8 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
 				<init target="initPath" ver="4" value="PAfterFlap"/>
-				<init target="EUColor" ver="4" value="0xff00aa00"/>
-				<init target="VALUETxtColor" ver="4" value="0xff00ff00"/>
+				<init target="EUColor" ver="4" value="0xffffff00"/>
+				<init target="VALUETxtColor" ver="4" value="0xffffff00"/>
 			</object>
 			<object access-modifier="private" name="TGasAfterGate" display-name="TGasAfterGate" uuid="5be65475-d417-4eb5-8b9a-76e89cb10d69" base-type="Sens" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
 				<designed target="X" value="95" ver="4"/>
@@ -2812,5 +2812,17 @@ OpenBurnSteps.Invoke();]]>
 		</object>
 	</object>
 	<object access-modifier="private" name="StopCounter" display-name="StopCounter" uuid="8daf5a37-f69a-42bb-bc82-f5be51e5d256" base-type="notifying_int4" base-type-id="5ccca629-a45d-46c8-a56c-83ecde8126f7" ver="4"/>
+	<object access-modifier="private" name="GermOk" display-name="GermOk" uuid="4ba5163d-d21e-41da-80bc-6eca2ca27e84" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.Alarms.Protect.GermOk"/>
+	</object>
+	<object access-modifier="private" name="VentOk" display-name="VentOk" uuid="c4464ba8-6c7e-4fb1-8704-92b1663be5ef" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.Alarms.Protect.VentOk"/>
+	</object>
+	<object access-modifier="private" name="BoilerInWork" display-name="BoilerInWork" uuid="7caa2ab4-ccd6-42e3-9f93-ebe1e255661d" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.Boiler.BoilerInWork"/>
+	</object>
 </type>
 

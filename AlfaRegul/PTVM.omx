@@ -8824,6 +8824,10 @@ else
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmPGasErr" target="AlarmPGasErr" />
+        <parameter name="GermOk" direction="out" type="bool" xmlns="automation.control" uuid="dadfb87c-39f6-4856-96ba-3bea319aaad1" />
+        <parameter name="VentOk" direction="out" type="bool" xmlns="automation.control" uuid="3db0833b-33da-4559-8afe-7b1e2b93deb1" />
+        <bind source="_PLC_View.AlarmVentOK" target="VentOk" />
+        <bind source="_PLC_View.AlarmGermOK" target="GermOk" />
       </type>
     </type>
     <type name="Boiler" xmlns="automation.control" uuid="c15fbe2c-7d35-4602-9078-fa66ab0b4bbc">
@@ -9970,7 +9974,7 @@ else
         <bind source="InProtOff" target="Reference.ProtOff" />
         <parameter name="OutProtOff" uuid="2751fd14-be9d-4082-9f0e-62d4e14c7023" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":".Защита отключена","Severity":2,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":".Защита включена","Severity":2,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":".Защита выведена.","Severity":2,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":".Защита введена.","Severity":2,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="Reference.ProtOff" target="OutProtOff" />
@@ -10366,47 +10370,47 @@ else
         <ref name="_PLC_View" type="PLC_View" xmlns="automation.reference" uuid="41c7fd69-7463-4efb-b770-ce479d946ce4" />
         <parameter name="AlarmPGasCollL" direction="out" type="bool" uuid="6709bd15-d897-437c-9972-31dec3970889">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Давление газа в коллекторе ниже нормы\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Давление газа в коллекторе ниже нормы\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Давление газа в коллекторе ниже нормы. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Давление газа в коллекторе ниже нормы. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmPGasCollH" direction="out" type="bool" uuid="2f676965-9b72-4638-92d0-53a8145c8cca">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Давление газа в коллекторе выше нормы\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Давление газа в коллекторе выше нормы\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Давление газа в коллекторе выше нормы. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Давление газа в коллекторе выше нормы. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmPOilL" direction="out" type="bool" uuid="e8875359-5f06-4f1f-b7c5-d77c2088546e">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Давление рез.топлива ниже нормы\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Давление рез.топлива ниже нормы\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Давление рез.топлива ниже нормы. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Давление рез.топлива ниже нормы. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmPWatOutL" direction="out" type="bool" uuid="ff348fb2-112d-4f2c-962f-362631d41a8d">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Давление теплоносителя на выходе ниже нормы\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Давление теплоносителя на выходе ниже нормы\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Давление теплоносителя на выходе ниже нормы. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Давление теплоносителя на выходе ниже нормы. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmPWatOutH" direction="out" type="bool" uuid="5c81abed-1694-4923-b62d-41a22c133613">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Давление теплоносителя на выходе выше нормы\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Давление теплоносителя на выходе выше нормы\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Давление теплоносителя на выходе выше нормы. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Давление теплоносителя на выходе выше нормы. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmTWatOutH" direction="out" type="bool" uuid="4db2bacf-c956-4204-9f77-fda3f6e6c0bb">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Температура теплоносителя на выходе выше нормы\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Температура теплоносителя на выходе выше нормы\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Температура теплоносителя на выходе выше нормы. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Температура теплоносителя на выходе выше нормы. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmQWatOutL" direction="out" type="bool" uuid="ba3080fe-274c-4ebf-b664-366c3c8c14f8">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Расход теплоносителя на выходе ниже нормы\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Расход теплоносителя на выходе ниже нормы\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Расход теплоносителя на выходе ниже нормы. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Расход теплоносителя на выходе ниже нормы. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmVacH" direction="out" type="bool" uuid="80999255-5641-4407-b6c2-a4f84d135469">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Разрежение ниже нормы\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Разрежение ниже нормы\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Разрежение ниже нормы. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Разрежение ниже нормы. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmTSmokeH" direction="out" type="bool" uuid="ab1a82c2-a177-42e6-9aa5-c4da470d768c">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Температура дымовых газов выше нормы\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Температура дымовых газов выше нормы\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Температура дымовых газов выше нормы. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Температура дымовых газов выше нормы. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmPGasCollLow" target="AlarmPGasCollL" />
@@ -10420,67 +10424,67 @@ else
         <bind source="_PLC_View.AlarmTSmoke" target="AlarmTSmokeH" />
         <parameter name="AlarmCH4" direction="out" type="bool" uuid="3e7b0474-32f9-4f03-bd96-09708510d597">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Превышения содержания CH4\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Превышения содержания CH4\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Превышения содержания CH4. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Превышения содержания CH4. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmCH4" target="AlarmCH4" />
         <parameter name="AlarmCO" direction="out" type="bool" uuid="762b698f-670b-4f2a-8d20-4bf9ef6b5ca0">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Превышения содержания CО\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Превышения содержания CО\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Превышения содержания CО. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Превышения содержания CО. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmCO" target="AlarmCO" />
         <parameter name="AlarmDiffPG" direction="out" type="bool" uuid="5ebe5175-760f-4194-aecc-affa3a4c64cd">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Превышение разницы значений датчиков давления газа в коллекторе\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Превышение разницы значений датчиков давления газа в коллекторе\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Превышение разницы значений датчиков давления газа в коллекторе. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Превышение разницы значений датчиков давления газа в коллекторе. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmDiffPG" target="AlarmDiffPG" />
         <parameter name="AlarmDiffPWat" direction="out" type="bool" uuid="d661bfe7-329e-4274-9da1-6748c4e59e96">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Превышение разницы значений датчиков давления теплоносителя на выходе\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Превышение разницы значений датчиков давления теплоносителя на выходе\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Превышение разницы значений датчиков давления теплоносителя на выходе. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Превышение разницы значений датчиков давления теплоносителя на выходе. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmDiffPWat" target="AlarmDiffPWat" />
         <parameter name="AlarmDiffTWat" direction="out" type="bool" uuid="f94628ad-7b26-45ef-92b4-f5ee6f0cf800">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Превышение разницы значений датчиков температуры теплоносителя на выходе\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Превышение разницы значений датчиков температуры теплоносителя на выходе\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Превышение разницы значений датчиков температуры теплоносителя на выходе. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Превышение разницы значений датчиков температуры теплоносителя на выходе. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmDiffTWat" target="AlarmDiffTWat" />
         <parameter name="AlarmPWaterErr1" direction="out" type="bool" uuid="3fe8242c-e949-4dcd-883d-194efb0212cf">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Ошибка датчика 1 давления теплоносителя на выходе\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Ошибка датчика 1 давления теплоносителя на выходе\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Ошибка датчика 1 давления теплоносителя на выходе. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Ошибка датчика 1 давления теплоносителя на выходе. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmPWaterErr1" target="AlarmPWaterErr1" />
         <parameter name="AlarmPWaterErr2" direction="out" type="bool" uuid="d7fe92e9-9905-49f6-8cd6-1e4f9ee51341">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Ошибка датчика 2 давления теплоносителя на выходе\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Ошибка датчика 2 давления теплоносителя на выходе\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Ошибка датчика 2 давления теплоносителя на выходе. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Ошибка датчика 2 давления теплоносителя на выходе. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmPWaterErr2" target="AlarmPWaterErr2" />
         <parameter name="AlarmTWaterErr2" direction="out" type="bool" uuid="54d7af39-fdd3-472d-865a-08dd88c07541">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Ошибка датчика 2 температуры теплоносителя на выходе\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Ошибка датчика 2 температуры теплоносителя на выходе\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Ошибка датчика 2 температуры теплоносителя на выходе. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Ошибка датчика 2 температуры теплоносителя на выходе. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmTWaterErr2" target="AlarmTWaterErr2" />
         <parameter name="AlarmTWaterErr1" direction="out" type="bool" uuid="d443b23e-6fb0-4134-99dc-d88388a9bed7">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Ошибка датчика 1 температуры теплоносителя на выходе\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Ошибка датчика 1 температуры теплоносителя на выходе\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Ошибка датчика 1 температуры теплоносителя на выходе. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Ошибка датчика 1 температуры теплоносителя на выходе. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmTWaterErr1" target="AlarmTWaterErr1" />
         <parameter name="AlarmPGasErr2" direction="out" type="bool" uuid="4eb91dd8-4519-4321-a83e-d850170d3382">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Ошибка датчика 2 давления газа в коллекторе\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Ошибка датчика 2 давления газа в коллекторе\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Ошибка датчика 2 давления газа в коллекторе. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Ошибка датчика 2 давления газа в коллекторе. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmPGasErr2" target="AlarmPGasErr2" />
         <parameter name="AlarmPGasErr1" direction="out" type="bool" uuid="f3f4db30-9ff1-45c7-afcf-61c34e4881fc">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Выведена сигнализация \"Ошибка датчика 1 давления газа в коллекторе\".","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Введена сигнализация \"Ошибка датчика 1 давления газа в коллекторе\".","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Ошибка датчика 1 давления газа в коллекторе. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Ошибка датчика 1 давления газа в коллекторе. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmPGasErr1" target="AlarmPGasErr1" />
