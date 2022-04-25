@@ -201,7 +201,7 @@
 						</conditional-expr>
 						<conditional-expr>
 							<condition>
-								<![CDATA[(Port5_State||Port6_State)&&!CPU1_MAIN&&iRedMode==4]]>
+								<![CDATA[(Port5_State||Port6_State)&&iRedMode==4]]>
 							</condition>
 							<expr>
 								<![CDATA[0xff00ff00]]>
@@ -465,6 +465,14 @@
 						<conditional-expr>
 							<condition>
 								<![CDATA[(Port5_State||Port6_State)&&!CPU1_MAIN&&(iRedMode==5||iRedMode==4)]]>
+							</condition>
+							<expr>
+								<![CDATA[0xff00ff00]]>
+							</expr>
+						</conditional-expr>
+						<conditional-expr>
+							<condition>
+								<![CDATA[(Port5_State||Port6_State)&&iRedMode==4]]>
 							</condition>
 							<expr>
 								<![CDATA[0xff00ff00]]>
