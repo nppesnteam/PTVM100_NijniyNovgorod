@@ -2350,11 +2350,6 @@
 				<designed target="DisabledPenColor" value="4288716960" ver="4"/>
 				<designed target="DisabledPenStyle" value="1" ver="4"/>
 				<designed target="DisabledPenWidth" value="1" ver="4"/>
-				<do-trace access-modifier="private" target="Visible" ver="4">
-					<body>
-						<![CDATA[here.Alarms.VentOk&&!here.Alarms.GermOk]]>
-					</body>
-				</do-trace>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
 					<body kind="om">
 						<![CDATA[InStartGerm=!OutStartGerm;]]>
@@ -2776,7 +2771,7 @@
 				</object>
 				<do-trace access-modifier="private" target="Visible" ver="4">
 					<body>
-						<![CDATA[Alarms.VentOk&&!Final]]>
+						<![CDATA[(Alarms.VentOk&&!Final)||Alarm]]>
 					</body>
 				</do-trace>
 			</object>
@@ -3217,7 +3212,7 @@
 				</object>
 				<do-trace access-modifier="private" target="Visible" ver="4">
 					<body>
-						<![CDATA[Alarms.VentOk&&!Final]]>
+						<![CDATA[(Alarms.VentOk&&!Final)||Alarm]]>
 					</body>
 				</do-trace>
 			</object>
@@ -3650,7 +3645,7 @@
 				</object>
 				<do-trace access-modifier="private" target="Visible" ver="4">
 					<body>
-						<![CDATA[Alarms.VentOk&&!Final]]>
+						<![CDATA[(Alarms.VentOk&&!Final)||Alarm]]>
 					</body>
 				</do-trace>
 			</object>
@@ -4083,7 +4078,7 @@
 				</object>
 				<do-trace access-modifier="private" target="Visible" ver="4">
 					<body>
-						<![CDATA[Alarms.VentOk&&!Final]]>
+						<![CDATA[(Alarms.VentOk&&!Final)||Alarm]]>
 					</body>
 				</do-trace>
 			</object>
