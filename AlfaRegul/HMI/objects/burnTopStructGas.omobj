@@ -202,7 +202,7 @@
 		<init target="initPath" ver="4" value="FlapOil"/>
 		<do-trace access-modifier="private" target="Tooltip" ver="4">
 			<body kind="om">
-				<![CDATA[NAME+" "+BurnNumber]]>
+				<![CDATA[NAME]]>
 			</body>
 		</do-trace>
 	</object>
@@ -215,7 +215,7 @@
 		<init target="initPath" ver="4" value="ValveII"/>
 		<do-trace access-modifier="private" target="Tooltip" ver="4">
 			<body kind="om">
-				<![CDATA[NAME+" "+BurnNumber]]>
+				<![CDATA[NAME]]>
 			</body>
 		</do-trace>
 	</object>
@@ -232,7 +232,7 @@
 		</do-trace>
 		<do-trace access-modifier="private" target="Tooltip" ver="4">
 			<body kind="om">
-				<![CDATA[NAME+" "+BurnNumber]]>
+				<![CDATA[NAME]]>
 			</body>
 		</do-trace>
 	</object>
@@ -245,7 +245,7 @@
 		<init target="initPath" ver="4" value="FlapO2"/>
 		<do-trace access-modifier="private" target="Tooltip" ver="4">
 			<body kind="om">
-				<![CDATA[NAME+" "+BurnNumber]]>
+				<![CDATA[NAME]]>
 			</body>
 		</do-trace>
 	</object>
@@ -271,7 +271,7 @@
 		</do-trace>
 		<do-trace access-modifier="private" target="Tooltip" ver="4">
 			<body kind="om">
-				<![CDATA[NAME+" "+BurnNumber+", "+EU]]>
+				<![CDATA[NAME+", "+EU]]>
 			</body>
 		</do-trace>
 	</object>
@@ -297,7 +297,7 @@
 		</do-trace>
 		<do-trace access-modifier="private" target="Tooltip" ver="4">
 			<body kind="om">
-				<![CDATA[NAME+" "+BurnNumber+", "+EU]]>
+				<![CDATA[NAME+", "+EU]]>
 			</body>
 		</do-trace>
 	</object>

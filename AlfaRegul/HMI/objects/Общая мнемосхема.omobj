@@ -2771,7 +2771,7 @@
 				</object>
 				<do-trace access-modifier="private" target="Visible" ver="4">
 					<body>
-						<![CDATA[(Alarms.VentOk&&!Final)||Alarm]]>
+						<![CDATA[!Final&&BoilerWork]]>
 					</body>
 				</do-trace>
 			</object>
@@ -3212,7 +3212,7 @@
 				</object>
 				<do-trace access-modifier="private" target="Visible" ver="4">
 					<body>
-						<![CDATA[(Alarms.VentOk&&!Final)||Alarm]]>
+						<![CDATA[!Final&&BoilerWork]]>
 					</body>
 				</do-trace>
 			</object>
@@ -3645,7 +3645,7 @@
 				</object>
 				<do-trace access-modifier="private" target="Visible" ver="4">
 					<body>
-						<![CDATA[(Alarms.VentOk&&!Final)||Alarm]]>
+						<![CDATA[!Final&&BoilerWork]]>
 					</body>
 				</do-trace>
 			</object>
@@ -4078,7 +4078,7 @@
 				</object>
 				<do-trace access-modifier="private" target="Visible" ver="4">
 					<body>
-						<![CDATA[(Alarms.VentOk&&!Final)||Alarm]]>
+						<![CDATA[!Final&&BoilerWork]]>
 					</body>
 				</do-trace>
 			</object>

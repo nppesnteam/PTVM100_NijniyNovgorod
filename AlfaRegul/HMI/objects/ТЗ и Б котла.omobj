@@ -12459,7 +12459,7 @@ me.Text=OutOpenAIgn_1.ValueAsString;]]>
 					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
-unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_2.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
+unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_3.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -12566,12 +12566,6 @@ unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_2.txt.T
 							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
 						</body>
 					</do-trace>
-					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
-						<body kind="om">
-							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
-unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_2.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
-						</body>
-					</do-on>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
@@ -12580,6 +12574,12 @@ if (TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_2))<0)
 else
 	InOpenGIgn_2 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_2));
 me.Text=OutOpenGIgn_2.ValueAsString;]]>
+						</body>
+					</do-on>
+					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_2.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -12631,12 +12631,6 @@ me.Text=OutOpenGIgn_2.ValueAsString;]]>
 							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
 						</body>
 					</do-trace>
-					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
-						<body kind="om">
-							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
-unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_2.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
-						</body>
-					</do-on>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
@@ -12645,6 +12639,12 @@ if (TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_2))<0)
 else
 	InOpenAIgn_2 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_2));
 me.Text=OutOpenAIgn_2.ValueAsString;]]>
+						</body>
+					</do-on>
+					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_3.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -12751,12 +12751,6 @@ me.Text=OutOpenAIgn_2.ValueAsString;]]>
 							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
 						</body>
 					</do-trace>
-					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
-						<body kind="om">
-							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
-unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_2.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
-						</body>
-					</do-on>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
@@ -12765,6 +12759,12 @@ if (TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_3))<0)
 else
 	InOpenGIgn_3 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_3));
 me.Text=OutOpenGIgn_3.ValueAsString;]]>
+						</body>
+					</do-on>
+					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_2.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -12816,12 +12816,6 @@ me.Text=OutOpenGIgn_3.ValueAsString;]]>
 							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
 						</body>
 					</do-trace>
-					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
-						<body kind="om">
-							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
-unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_2.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
-						</body>
-					</do-on>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
@@ -12830,6 +12824,12 @@ if (TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_3))<0)
 else
 	InOpenAIgn_3 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_3));
 me.Text=OutOpenAIgn_3.ValueAsString;]]>
+						</body>
+					</do-on>
+					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_3.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -12936,12 +12936,6 @@ me.Text=OutOpenAIgn_3.ValueAsString;]]>
 							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
 						</body>
 					</do-trace>
-					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
-						<body kind="om">
-							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
-unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_2.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
-						</body>
-					</do-on>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
@@ -12950,6 +12944,12 @@ if (TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_4))<0)
 else
 	InOpenGIgn_4 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenGIgn_4));
 me.Text=OutOpenGIgn_4.ValueAsString;]]>
+						</body>
+					</do-on>
+					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_2.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
 						</body>
 					</do-on>
 				</object>
@@ -13001,12 +13001,6 @@ me.Text=OutOpenGIgn_4.ValueAsString;]]>
 							<![CDATA[!unit.Security.AllowSettingsChange.Value]]>
 						</body>
 					</do-trace>
-					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
-						<body kind="om">
-							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
-unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_2.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
-						</body>
-					</do-on>
 					<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="EditFinished">
 						<body kind="om">
 							<![CDATA[me.Text=Str.Replace(me.Text,",",".");
@@ -13015,6 +13009,12 @@ if (TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_4))<0)
 else
 	InOpenAIgn_4 = TypeConvert.ToFloat(Str.ToDouble(me.Text,OutOpenAIgn_4));
 me.Text=OutOpenAIgn_4.ValueAsString;]]>
+						</body>
+					</do-on>
+					<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="EditFinished">
+						<body kind="om">
+							<![CDATA[if (TypeConvert.ToFloat(Str.ToDouble(Str.Replace(me.Text,",","."),-1))>=0)
+unit.Global.ShowMSG(txtOpenBeforeIgn.Text+" ("+Str.Replace(Header.Column_3.txt.Text,"(секунд)","")+"горелки "+Column_1.txt.Text+")"+" изменено на "+me.Text+" сек.",2);]]>
 						</body>
 					</do-on>
 				</object>

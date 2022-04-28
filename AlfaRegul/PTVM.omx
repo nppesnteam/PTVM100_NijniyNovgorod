@@ -3273,36 +3273,36 @@
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой 3" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="PO2" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="f6754916-736c-4538-b01d-1981270c6e40">
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой 3" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="ValveII" xmlns="automation.control" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="67e5e28b-6c11-4f93-9f6e-77e6bf4f0490">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки 3" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="ValveIgn" xmlns="automation.control" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="d4089ecc-4d6e-409f-99ad-d87a2a845be9">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан запальника горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан запальника горелки 3" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="FlapGas" xmlns="automation.control" base-type="Types.Flap.PLC_View" aspect="Aspects.PLC_Aspect" uuid="1a66f6af-80b2-4d2f-8a8c-f1ea1c0ce3cc">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Заслонка газа перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Заслонка газа перед горелкой 3" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
                 <object name="FlapO2" xmlns="automation.control" base-type="Types.FlapNoPosit.PLC_View" aspect="Aspects.PLC_Aspect" uuid="db0bce03-487e-472c-bb51-e0f2e12ece54">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой 3" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
                 <object name="Vent" xmlns="automation.control" base-type="Types.Vent.PLC_View" aspect="Aspects.PLC_Aspect" uuid="47451f61-ee2d-46ad-bc97-b1592571f582">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки 3" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerIgn.PLC_View" aspect="Aspects.PLC_Aspect" uuid="948df0ca-8fdf-424b-8197-91c83fec01be">
@@ -3311,7 +3311,7 @@
                   <attribute type="Attributes.BurnNumber" value="3" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="d76eb34d-043a-4bc6-aa00-7284639b667d">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 3" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -3321,46 +3321,46 @@
                 <object name="ManCtrlFan" base-type="Types.ManOnOffCtrl.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="5756dfff-f45f-4613-9caa-28a949cb5574" />
               </object>
               <object name="Valve1" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="156c350d-f2d6-4741-af79-b6b4e109801f">
-                <attribute type="unit.System.Attributes.Description" value="ПЗК-1 группы горелок" xmlns="system" />
+                <attribute type="unit.System.Attributes.Description" value="ПЗК-1 группы горелок 1" xmlns="system" />
               </object>
               <object name="ValveDensity" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="f4627b25-6280-4ba2-b8eb-1bf7ea277dc4">
-                <attribute type="unit.System.Attributes.Description" value="Клапан опрессовки группы горелок" xmlns="system" />
+                <attribute type="unit.System.Attributes.Description" value="Клапан опрессовки группы горелок 1" xmlns="system" />
               </object>
               <object name="ValveSecurity" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="840d2d4d-adf2-4ef1-b5e0-e44405ab5560">
-                <attribute type="unit.System.Attributes.Description" value="Клапан безопасности группы горелок" xmlns="system" />
+                <attribute type="unit.System.Attributes.Description" value="Клапан безопасности группы горелок 1" xmlns="system" />
               </object>
               <object name="PBetween" base-type="Types.AnalogSens.PLC_View" uuid="983527e5-6757-44ef-b6d0-e52b7d4f9a4d">
                 <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                 <attribute type="Attributes.DIGITS" value="2" xmlns="system" />
                 <attribute type="Attributes.EU" value="кПа" xmlns="system" />
-                <attribute type="unit.System.Attributes.Description" value="Давление между ПЗК группы горелок" xmlns="system" />
+                <attribute type="unit.System.Attributes.Description" value="Давление между ПЗК группы горелок 1" xmlns="system" />
               </object>
               <object name="Burn1" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="f3dddce4-3e11-4a40-bd9e-8fce6407f6fa">
                 <object name="PGas" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="93d2bbd8-9fbc-4e38-9ff3-b2f4fb2b8241">
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой 1" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="PO2" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="f2a2feda-fdd8-47d3-9584-859bce6fdbfb">
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой 1" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="ValveII" xmlns="automation.control" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="1162190f-442f-4ff7-9551-8794a14d0838">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки 1" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="FlapO2" xmlns="automation.control" base-type="Types.FlapNoPosit.PLC_View" aspect="Aspects.PLC_Aspect" uuid="98c4bfb7-e1af-4181-854b-cf20170c054c">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой 1" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
                 <object name="Vent" xmlns="automation.control" base-type="Types.Vent.PLC_View" aspect="Aspects.PLC_Aspect" uuid="497931f2-30da-4e7f-89b6-711faa4e8556">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки 1" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerWork.PLC_View" aspect="Aspects.PLC_Aspect" uuid="55cf35e2-2164-42d5-b98b-90f229b4203f">
@@ -3369,7 +3369,7 @@
                   <attribute type="Attributes.BurnNumber" value="1" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="db2dfbe5-00d1-40ad-9ca4-86f511a51a5d">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 1" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -3382,27 +3382,27 @@
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой 2" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="PO2" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="6f003eed-443e-4c8c-a40d-d3412d5487e4">
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой 2" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="ValveII" xmlns="automation.control" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="7674144c-b895-430a-8fa3-69fa69671dad">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки 2" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="FlapO2" xmlns="automation.control" base-type="Types.FlapNoPosit.PLC_View" aspect="Aspects.PLC_Aspect" uuid="346e3001-0b89-459d-ae9c-5c50564d3f9f">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой 2" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
                 <object name="Vent" xmlns="automation.control" base-type="Types.Vent.PLC_View" aspect="Aspects.PLC_Aspect" uuid="e5558e1e-4253-432f-afd7-4e59eb2c30fe">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки 2" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerWork.PLC_View" aspect="Aspects.PLC_Aspect" uuid="3b630567-5dc1-4cdf-93a4-2deb882449ab">
@@ -3411,7 +3411,7 @@
                   <attribute type="Attributes.BurnNumber" value="2" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="9cf506dd-38da-4c4a-8f38-7cda16371dca">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 2" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -3424,27 +3424,27 @@
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой 4" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="PO2" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="ff725a91-1f77-4ee6-8448-181c63b7730b">
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой 4" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="ValveII" xmlns="automation.control" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="6ff99e5e-1d76-4357-a710-1dbe8782a607">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки 4" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="FlapO2" xmlns="automation.control" base-type="Types.FlapNoPosit.PLC_View" aspect="Aspects.PLC_Aspect" uuid="aba80220-d30b-4521-8c82-0b7131ca0135">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой 4" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
                 <object name="Vent" xmlns="automation.control" base-type="Types.Vent.PLC_View" aspect="Aspects.PLC_Aspect" uuid="dff4aef5-bff2-4529-8763-77e1eefe9e08">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки 4" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerWork.PLC_View" aspect="Aspects.PLC_Aspect" uuid="325bdf6d-c891-49e0-8b86-3ec0ba30c953">
@@ -3453,7 +3453,7 @@
                   <attribute type="Attributes.BurnNumber" value="4" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="a13a35b9-4dd4-478d-bf3d-411ed856e6bf">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 4" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -3466,7 +3466,7 @@
                 <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                 <attribute type="Attributes.DIGITS" value="2" xmlns="system" />
                 <attribute type="Attributes.EU" value="кПа" xmlns="system" />
-                <attribute type="unit.System.Attributes.Description" value="Давление фиксированное между ПЗК группы горелок" xmlns="system" />
+                <attribute type="unit.System.Attributes.Description" value="Давление фиксированное между ПЗК группы горелок 1" xmlns="system" />
               </object>
             </object>
             <object name="Smoke" xmlns="automation.control" uuid="d398f095-d15f-4f9d-9596-667d8730251c">
@@ -3504,19 +3504,19 @@
             </object>
             <object name="Group2" xmlns="automation.control" uuid="7a39816f-aba6-4623-952b-75a7be7a4572">
               <object name="Valve1" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="e75d2abc-7665-49e9-b23b-7a318a870e92">
-                <attribute type="unit.System.Attributes.Description" value="ПЗК-1 группы горелок" xmlns="system" />
+                <attribute type="unit.System.Attributes.Description" value="ПЗК-1 группы горелок 2" xmlns="system" />
               </object>
               <object name="ValveDensity" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="b8267ed6-8971-4ad6-ab90-6cf110b38d1d">
-                <attribute type="unit.System.Attributes.Description" value="Клапан опрессовки группы горелок" xmlns="system" />
+                <attribute type="unit.System.Attributes.Description" value="Клапан опрессовки группы горелок 2" xmlns="system" />
               </object>
               <object name="ValveSecurity" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="c27859e7-cf0f-45ce-813d-5f830cda395e">
-                <attribute type="unit.System.Attributes.Description" value="Клапан безопасности группы горелок" xmlns="system" />
+                <attribute type="unit.System.Attributes.Description" value="Клапан безопасности группы горелок 2" xmlns="system" />
               </object>
               <object name="PBetween" base-type="Types.AnalogSens.PLC_View" uuid="f8506964-38cc-4683-89c3-c936465db0cb">
                 <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                 <attribute type="Attributes.DIGITS" value="2" xmlns="system" />
                 <attribute type="Attributes.EU" value="кПа" xmlns="system" />
-                <attribute type="unit.System.Attributes.Description" value="Давление между ПЗК группы горелок" xmlns="system" />
+                <attribute type="unit.System.Attributes.Description" value="Давление между ПЗК группы горелок 2" xmlns="system" />
               </object>
               <object name="Germ" base-type="Types.Germ.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="cf620d9e-b19c-4536-996e-ccdab3d5abf9" />
               <object name="Burn2" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="dd182787-9da3-4c6c-ad7d-cd72745085ad">
@@ -3524,36 +3524,36 @@
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой 6" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="PO2" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="fc81112e-9adc-49c3-8798-6c443289f32d">
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой 6" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="ValveII" xmlns="automation.control" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="4a7a2ffd-fc35-4569-97a1-3e415308c65e">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки 6" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="ValveIgn" xmlns="automation.control" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="4b8cf9d6-fe22-49c3-b55c-89f7d13f61a8">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан запальника горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан запальника горелки 6" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="FlapGas" xmlns="automation.control" base-type="Types.Flap.PLC_View" aspect="Aspects.PLC_Aspect" uuid="cecb1df6-8e12-4898-8919-115b38435cad">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Заслонка газа перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Заслонка газа перед горелкой 6" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
                 <object name="FlapO2" xmlns="automation.control" base-type="Types.FlapNoPosit.PLC_View" aspect="Aspects.PLC_Aspect" uuid="62fd7dc4-d2fb-457c-802a-2f456e142041">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой 6" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
                 <object name="Vent" xmlns="automation.control" base-type="Types.Vent.PLC_View" aspect="Aspects.PLC_Aspect" uuid="07b55bef-0e2d-42c0-82f1-f44cfb6bdb3b">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки 6" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerIgn.PLC_View" aspect="Aspects.PLC_Aspect" uuid="86097536-6dfa-460c-9727-152b6267838a">
@@ -3562,7 +3562,7 @@
                   <attribute type="Attributes.BurnNumber" value="6" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="cb25f18d-d202-47ef-a6f5-11a6745b5df9">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 6" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -3576,27 +3576,27 @@
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой 7" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="PO2" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="b0e5cdcb-8ca7-4bb5-a3ad-52f4b2cbb3a0">
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой 7" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="ValveII" xmlns="automation.control" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="2f39aed2-78c6-4cc9-86c0-f85f5c5259c0">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки 7" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="FlapO2" xmlns="automation.control" base-type="Types.FlapNoPosit.PLC_View" aspect="Aspects.PLC_Aspect" uuid="67cb7182-a503-46b0-a982-05e1140a9960">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой 7" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
                 <object name="Vent" xmlns="automation.control" base-type="Types.Vent.PLC_View" aspect="Aspects.PLC_Aspect" uuid="7ce4ba50-d083-4b18-83f7-227064d6825e">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки 7" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerWork.PLC_View" aspect="Aspects.PLC_Aspect" uuid="29fec796-9b21-4596-a5f1-f7dc4fbc9291">
@@ -3605,7 +3605,7 @@
                   <attribute type="Attributes.BurnNumber" value="7" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="acfaef9a-ab50-4fd3-a899-e3f0033ac251">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 7" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -3618,27 +3618,27 @@
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой 8" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="PO2" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="0d02c87d-b490-42c8-844e-af2ab7fe80fc">
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой 8" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="ValveII" xmlns="automation.control" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="50660c1c-ff45-425a-a157-0c27d000565f">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки 8" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="FlapO2" xmlns="automation.control" base-type="Types.FlapNoPosit.PLC_View" aspect="Aspects.PLC_Aspect" uuid="041624ed-5c88-4b3b-95e0-e2250037ac2c">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой 8" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
                 <object name="Vent" xmlns="automation.control" base-type="Types.Vent.PLC_View" aspect="Aspects.PLC_Aspect" uuid="281d8018-79f7-42ba-b939-4ede16dfb615">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки 8" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerWork.PLC_View" aspect="Aspects.PLC_Aspect" uuid="28b2efbc-e5b6-4678-932a-6dc4d03821ad">
@@ -3647,7 +3647,7 @@
                   <attribute type="Attributes.BurnNumber" value="8" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="f4bb3291-126e-4fbe-978e-99a4761179ac">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 8" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -3660,27 +3660,27 @@
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой 5" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="PO2" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="cca95a48-5b52-46a1-ba6f-cd0d771c3bdf">
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой 5" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="ValveII" xmlns="automation.control" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="d9dfec9d-6884-4b79-98aa-0ac08361f494">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки 5" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="FlapO2" xmlns="automation.control" base-type="Types.FlapNoPosit.PLC_View" aspect="Aspects.PLC_Aspect" uuid="527fe738-2be3-4b89-87ab-3c9b3785e251">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой 5" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
                 <object name="Vent" xmlns="automation.control" base-type="Types.Vent.PLC_View" aspect="Aspects.PLC_Aspect" uuid="c1eb1a64-d184-4980-ad0d-0c1edf8b741c">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки 5" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerWork.PLC_View" aspect="Aspects.PLC_Aspect" uuid="ae336336-f517-406a-ae56-fe7ded95fe6e">
@@ -3689,7 +3689,7 @@
                   <attribute type="Attributes.BurnNumber" value="5" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="4932b5ab-f82c-4e09-a145-303973047188">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 5" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -3701,24 +3701,24 @@
                 <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                 <attribute type="Attributes.DIGITS" value="2" xmlns="system" />
                 <attribute type="Attributes.EU" value="кПа" xmlns="system" />
-                <attribute type="unit.System.Attributes.Description" value="Давление фиксированное между ПЗК группы горелок" xmlns="system" />
+                <attribute type="unit.System.Attributes.Description" value="Давление фиксированное между ПЗК группы горелок 2" xmlns="system" />
               </object>
             </object>
             <object name="Group3" xmlns="automation.control" uuid="596ffea6-ed71-4759-add4-07d88698e102">
               <object name="Valve1" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="81e26a46-e68a-471f-913a-160ba87dd445">
-                <attribute type="unit.System.Attributes.Description" value="ПЗК-1 группы горелок" xmlns="system" />
+                <attribute type="unit.System.Attributes.Description" value="ПЗК-1 группы горелок 3" xmlns="system" />
               </object>
               <object name="ValveDensity" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="5259ac27-a486-4288-90d6-fc6152c56187">
-                <attribute type="unit.System.Attributes.Description" value="Клапан опрессовки группы горелок" xmlns="system" />
+                <attribute type="unit.System.Attributes.Description" value="Клапан опрессовки группы горелок 3" xmlns="system" />
               </object>
               <object name="ValveSecurity" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="dd1c200f-79da-476c-ab7d-84d2fe05baa8">
-                <attribute type="unit.System.Attributes.Description" value="Клапан безопасности группы горелок" xmlns="system" />
+                <attribute type="unit.System.Attributes.Description" value="Клапан безопасности группы горелок 3" xmlns="system" />
               </object>
               <object name="PBetween" base-type="Types.AnalogSens.PLC_View" uuid="4170a173-7d10-477a-9647-91d621a886db">
                 <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                 <attribute type="Attributes.DIGITS" value="2" xmlns="system" />
                 <attribute type="Attributes.EU" value="кПа" xmlns="system" />
-                <attribute type="unit.System.Attributes.Description" value="Давление между ПЗК группы горелок" xmlns="system" />
+                <attribute type="unit.System.Attributes.Description" value="Давление между ПЗК группы горелок 3" xmlns="system" />
               </object>
               <object name="Germ" base-type="Types.Germ.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="cf734cb7-22d6-4bab-ac92-213f8893138d" />
               <object name="Burn3" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="24d4ef63-115b-4697-ba0f-169a4cdf8a5f">
@@ -3726,36 +3726,36 @@
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой 11" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="PO2" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="1001ac2b-be82-4016-9636-1be1488e24eb">
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой 11" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="ValveII" xmlns="automation.control" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="73392278-73b7-44db-8b18-f96b0fceaf91">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки 11" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="ValveIgn" xmlns="automation.control" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="8268e1e3-48aa-4951-98cd-e3c2e3333daf">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан запальника горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан запальника горелки 11" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="FlapGas" xmlns="automation.control" base-type="Types.Flap.PLC_View" aspect="Aspects.PLC_Aspect" uuid="562656cf-ba5d-43f3-ad8e-e9baeeb15a9a">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Заслонка газа перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Заслонка газа перед горелкой 11" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
                 <object name="FlapO2" xmlns="automation.control" base-type="Types.FlapNoPosit.PLC_View" aspect="Aspects.PLC_Aspect" uuid="45bfae6a-e11c-46e3-9290-8f39196af9e7">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой 11" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
                 <object name="Vent" xmlns="automation.control" base-type="Types.Vent.PLC_View" aspect="Aspects.PLC_Aspect" uuid="577d9025-ec6c-49c9-be43-5bb536aa5061">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки 11" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerIgn.PLC_View" aspect="Aspects.PLC_Aspect" uuid="1b7382a9-2639-42a6-9523-859600abc8ad">
@@ -3764,7 +3764,7 @@
                   <attribute type="Attributes.BurnNumber" value="11" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="de87698a-2cc8-47dd-9c03-8730b23adbf5">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 11" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -3778,27 +3778,27 @@
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой 10" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="PO2" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="88864e0d-36d5-424d-93a9-28860f613cba">
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой 10" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="ValveII" xmlns="automation.control" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="83e527a5-e0b8-487d-bc8b-88163249daf6">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки 10" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="FlapO2" xmlns="automation.control" base-type="Types.FlapNoPosit.PLC_View" aspect="Aspects.PLC_Aspect" uuid="2d867286-48d9-47dc-a594-9d5e4dc57bab">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой 10" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
                 <object name="Vent" xmlns="automation.control" base-type="Types.Vent.PLC_View" aspect="Aspects.PLC_Aspect" uuid="14ec4145-2e31-4219-be4a-fb15f67ef54b">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки 10" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerWork.PLC_View" aspect="Aspects.PLC_Aspect" uuid="91ba96ee-c261-451a-b2b0-38c82aaf2787">
@@ -3807,7 +3807,7 @@
                   <attribute type="Attributes.BurnNumber" value="10" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="8b336eea-464a-40a6-863f-fa551a02eb01">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 10" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -3820,27 +3820,27 @@
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой 12" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="PO2" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="c3924826-f26a-4b32-8e13-d203b42f73b8">
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой 12" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="ValveII" xmlns="automation.control" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="45c41c51-6e14-4335-980a-c80cf2169cb2">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки 12" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="FlapO2" xmlns="automation.control" base-type="Types.FlapNoPosit.PLC_View" aspect="Aspects.PLC_Aspect" uuid="38d13d66-d2bb-44dd-a9f3-3b35755c7653">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой 12" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
                 <object name="Vent" xmlns="automation.control" base-type="Types.Vent.PLC_View" aspect="Aspects.PLC_Aspect" uuid="0fc6252f-3c88-4838-9831-43a8a6867181">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки 12" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerWork.PLC_View" aspect="Aspects.PLC_Aspect" uuid="bd690db3-5d65-4f9b-9f82-325d3a697794">
@@ -3849,7 +3849,7 @@
                   <attribute type="Attributes.BurnNumber" value="12" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="af29a783-4e6b-410e-b03a-f27cb157ee5d">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 12" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -3862,27 +3862,27 @@
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой 9" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="PO2" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="5a1919eb-aef6-477e-b7e8-64a152335b71">
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой 9" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="ValveII" xmlns="automation.control" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="dff79f65-5339-4a3b-8ad3-27550662a12a">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки 9" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="FlapO2" xmlns="automation.control" base-type="Types.FlapNoPosit.PLC_View" aspect="Aspects.PLC_Aspect" uuid="cee4c06f-0141-46c6-a20e-0a2a9eb610fa">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой 9" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
                 <object name="Vent" xmlns="automation.control" base-type="Types.Vent.PLC_View" aspect="Aspects.PLC_Aspect" uuid="b4ab15cd-54cb-47d7-8286-845705555696">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки 9" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerWork.PLC_View" aspect="Aspects.PLC_Aspect" uuid="6281578d-927e-4228-bfc6-1f524db92f31">
@@ -3891,7 +3891,7 @@
                   <attribute type="Attributes.BurnNumber" value="9" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="52f7b0f6-b57a-4c8f-bdf3-fe252fe2a7da">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 9" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -3903,24 +3903,24 @@
                 <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                 <attribute type="Attributes.DIGITS" value="2" xmlns="system" />
                 <attribute type="Attributes.EU" value="кПа" xmlns="system" />
-                <attribute type="unit.System.Attributes.Description" value="Давление фиксированное между ПЗК группы горелок" xmlns="system" />
+                <attribute type="unit.System.Attributes.Description" value="Давление фиксированное между ПЗК группы горелок 3" xmlns="system" />
               </object>
             </object>
             <object name="Group4" xmlns="automation.control" uuid="93d35e81-8137-43f2-a720-284b685d53a8">
               <object name="Valve1" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="32d0cd18-83d1-482a-82b5-3edfb3d5795e">
-                <attribute type="unit.System.Attributes.Description" value="ПЗК-1 группы горелок" xmlns="system" />
+                <attribute type="unit.System.Attributes.Description" value="ПЗК-1 группы горелок 4" xmlns="system" />
               </object>
               <object name="ValveDensity" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="5c462964-5218-484d-80b9-c1465f66f0ed">
-                <attribute type="unit.System.Attributes.Description" value="Клапан опрессовки группы горелок" xmlns="system" />
+                <attribute type="unit.System.Attributes.Description" value="Клапан опрессовки группы горелок 4" xmlns="system" />
               </object>
               <object name="ValveSecurity" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="ed841648-1811-4318-b2b5-e8983e9f47a5">
-                <attribute type="unit.System.Attributes.Description" value="Клапан безопасности группы горелок" xmlns="system" />
+                <attribute type="unit.System.Attributes.Description" value="Клапан безопасности группы горелок 4" xmlns="system" />
               </object>
               <object name="PBetween" base-type="Types.AnalogSens.PLC_View" uuid="7341b2bd-8406-411f-8be4-c3e77799a33b">
                 <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                 <attribute type="Attributes.DIGITS" value="2" xmlns="system" />
                 <attribute type="Attributes.EU" value="кПа" xmlns="system" />
-                <attribute type="unit.System.Attributes.Description" value="Давление между ПЗК группы горелок" xmlns="system" />
+                <attribute type="unit.System.Attributes.Description" value="Давление между ПЗК группы горелок 4" xmlns="system" />
               </object>
               <object name="Germ" base-type="Types.Germ.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="1d806da4-9672-4dfd-965a-028243e365b7" />
               <object name="Burn2" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="001f0029-8191-42f4-8dc0-4ef4c335c060">
@@ -3928,36 +3928,36 @@
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой 14" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="PO2" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="eb2a2286-3510-45d6-8da7-02d9e73e99ec">
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой 14" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="ValveII" xmlns="automation.control" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="f811c4d2-e19f-4007-b147-e5f389cb3d66">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки 14" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="ValveIgn" xmlns="automation.control" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="8fc00150-10b3-4676-97db-fc4b04caa11e">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан запальника горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан запальника горелки 14" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="FlapGas" xmlns="automation.control" base-type="Types.Flap.PLC_View" aspect="Aspects.PLC_Aspect" uuid="c4e5b3f4-b322-4a4c-b2aa-0fb08bc2b3f6">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Заслонка газа перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Заслонка газа перед горелкой 14" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
                 <object name="FlapO2" xmlns="automation.control" base-type="Types.FlapNoPosit.PLC_View" aspect="Aspects.PLC_Aspect" uuid="1beb88a6-55d9-4152-bef9-36573d4bca5b">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой 14" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
                 <object name="Vent" xmlns="automation.control" base-type="Types.Vent.PLC_View" aspect="Aspects.PLC_Aspect" uuid="e8c31c9e-9e4c-4619-aef5-1dc949cc7079">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки 14" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerIgn.PLC_View" aspect="Aspects.PLC_Aspect" uuid="7926f37f-be5d-4d41-b292-7a11c81c9d35">
@@ -3966,7 +3966,7 @@
                   <attribute type="Attributes.BurnNumber" value="14" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="c34a98ca-f590-4a1c-843b-890356114f2c">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 14" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -3980,27 +3980,27 @@
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой 15" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="PO2" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="1ba0adf0-e9c7-47a6-95aa-1c904a1f5b88">
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой 15" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="ValveII" xmlns="automation.control" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="4a6c42e7-b9aa-49b0-8383-66e3d3459f9b">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки 15" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="FlapO2" xmlns="automation.control" base-type="Types.FlapNoPosit.PLC_View" aspect="Aspects.PLC_Aspect" uuid="3598daff-1d21-4397-8503-2ce0d96344fc">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой 15" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
                 <object name="Vent" xmlns="automation.control" base-type="Types.Vent.PLC_View" aspect="Aspects.PLC_Aspect" uuid="0f204f78-2683-48d6-b75c-376158216b1e">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки 15" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerWork.PLC_View" aspect="Aspects.PLC_Aspect" uuid="27acb3cb-9e11-4719-8922-4a97399e61dd">
@@ -4009,7 +4009,7 @@
                   <attribute type="Attributes.BurnNumber" value="15" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="c2d93a79-1032-4562-a0a2-7949e5746583">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 15" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -4022,27 +4022,27 @@
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой 16" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="PO2" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="53dc84c0-9f39-4155-8732-2c204c025663">
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой 16" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="ValveII" xmlns="automation.control" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="5075d2c2-df6c-4fe1-94ce-924f0106e158">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки 16" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="FlapO2" xmlns="automation.control" base-type="Types.FlapNoPosit.PLC_View" aspect="Aspects.PLC_Aspect" uuid="8036daea-61a5-4a02-952d-a4b989411dcf">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой 16" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
                 <object name="Vent" xmlns="automation.control" base-type="Types.Vent.PLC_View" aspect="Aspects.PLC_Aspect" uuid="b97470c2-bb26-4633-b499-bc01161f3b4d">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки 16" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerWork.PLC_View" aspect="Aspects.PLC_Aspect" uuid="8e098aa7-0ea8-4530-9714-213ebf952fc6">
@@ -4051,7 +4051,7 @@
                   <attribute type="Attributes.BurnNumber" value="16" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="692e7098-fc8e-4d25-adb6-f506a0feb47b">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 16" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -4064,27 +4064,27 @@
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление газа перед горелкой 13" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="PO2" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="f7150ef3-057d-4a29-a235-392ffd71e48a">
                   <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление воздуха перед горелкой 13" />
                   <attribute type="Attributes.DIGITS" xmlns="system" value="2" />
                 </object>
                 <object name="ValveII" xmlns="automation.control" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="915f1f49-507c-4af6-9935-c78cf56b458c">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК-2 горелки 13" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="FlapO2" xmlns="automation.control" base-type="Types.FlapNoPosit.PLC_View" aspect="Aspects.PLC_Aspect" uuid="172098b8-a63c-4d94-8e79-723c248af216">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Шибер воздуховода перед горелкой 13" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
                 <object name="Vent" xmlns="automation.control" base-type="Types.Vent.PLC_View" aspect="Aspects.PLC_Aspect" uuid="32e00abc-db0c-4c96-ad24-f8f81ed2b396">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентилятор горелки 13" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 </object>
                 <object name="Burn" xmlns="automation.control" base-type="Types.BurnerWork.PLC_View" aspect="Aspects.PLC_Aspect" uuid="12221cf7-c4a4-48de-bc95-c4b22c37f138">
@@ -4093,7 +4093,7 @@
                   <attribute type="Attributes.BurnNumber" value="13" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="f3071878-e5b6-4d21-a22d-e2ae6be3dea1">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 13" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -4105,7 +4105,7 @@
                 <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                 <attribute type="Attributes.DIGITS" value="2" xmlns="system" />
                 <attribute type="Attributes.EU" value="кПа" xmlns="system" />
-                <attribute type="unit.System.Attributes.Description" value="Давление фиксированное между ПЗК группы горелок" xmlns="system" />
+                <attribute type="unit.System.Attributes.Description" value="Давление фиксированное между ПЗК группы горелок 4" xmlns="system" />
               </object>
             </object>
             <object name="IgnSequence" uuid="d6437b46-046b-48b1-934e-1a04ff1b2390">
