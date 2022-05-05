@@ -87,7 +87,7 @@
     <node-path>ROOT.Gas.ValveBlowBot.Err</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAlarmValveFanAll.bAlarmValveBlowRight</nodeId>
+    <nodeId>Application.GVL.stAlarmValveFanAll.bAlarmValveBlowLeft</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Gas.ValveAfterFlap.InH</node-path>
@@ -123,7 +123,7 @@
     <node-path>ROOT.Gas.ValveBlowTop.Err</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stAlarmValveFanAll.bAlarmValveBlowLeft</nodeId>
+    <nodeId>Application.GVL.stAlarmValveFanAll.bAlarmValveBlowRight</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Gas.Flap.Mid</node-path>
@@ -6847,7 +6847,7 @@
     <node-path>ROOT.Boiler.PowerBoiler</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.stFlow.fEGaz</nodeId>
+    <nodeId>Application.GVL.stFlow.fCalcQw</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Boiler.ArmStartAllow</node-path>

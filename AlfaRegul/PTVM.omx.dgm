@@ -13,7 +13,7 @@
     <aspect Id="b2644f27-09c5-490c-9beb-1a2385a6320a" Left="40" Top="40" Width="88.14" Height="22" />
     <aspect Id="41422fe0-35e8-4613-9e70-35a179b3f752" Left="168.14" Top="40" Width="87.3666666666667" Height="22" />
   </namespace>
-  <namespace Id="f4b1b109-6b5a-41cf-86e7-6351ad7105f6" OffsetX="0" OffsetY="30.8800000000001" Scale="1" SnapToGrid="true">
+  <namespace Id="f4b1b109-6b5a-41cf-86e7-6351ad7105f6" OffsetX="36.3066666666671" OffsetY="0" Scale="1" SnapToGrid="true">
     <type Id="052eb6e7-546c-480c-8672-8c9256ca17d0" Left="40" Top="40" Width="81.6766666666667" Height="76" />
     <type Id="45069495-4b73-4d84-9de0-ac0ec969af37" Left="130" Top="40" Width="81.6766666666667" Height="76" />
     <type Id="1cbcc2f7-d2db-44e1-aaae-bcb6fc7a03e7" Left="130" Top="130" Width="81.6766666666667" Height="76" />
@@ -55,10 +55,10 @@
     </type>
   </type>
   <type Id="ffb133e9-0b9b-472b-b152-693590b6012b" OffsetX="0" OffsetY="0" Scale="0.8" SnapToGrid="false">
-    <parameter Id="d1ad7c27-bb4d-4998-96bb-5473b5824af0" Left="849.783333333327" Top="26" Width="125.216666666667" Height="22" />
-    <parameter Id="4ba1d733-08be-433e-83d4-fae16ea017db" Left="844.376666666667" Top="52" Width="130.623333333333" Height="22" />
+    <parameter Id="d1ad7c27-bb4d-4998-96bb-5473b5824af0" Left="1130.78333333333" Top="26" Width="125.216666666667" Height="22" />
+    <parameter Id="4ba1d733-08be-433e-83d4-fae16ea017db" Left="1125.37666666667" Top="52" Width="130.623333333333" Height="22" />
     <parameter Id="89fcba83-2123-400c-8e09-aa230745efff" Left="656.638352979018" Top="78" Width="103.824980354309" Height="22" />
-    <parameter Id="5564148c-eebe-4592-bb68-d578f08d084f" Left="802.463333333327" Top="104" Width="172.536666666667" Height="22" />
+    <parameter Id="5564148c-eebe-4592-bb68-d578f08d084f" Left="1083.46333333333" Top="104" Width="172.536666666667" Height="22" />
   </type>
   <type Id="cb7ef9d8-afe3-4ca3-b6df-24003d1aba5e" OffsetX="0" OffsetY="0" Scale="0.8" SnapToGrid="false">
     <parameter Id="245fbd30-70a0-4576-8ec4-206bd7f923bd" Left="1065.43666666667" Top="26" Width="124.563333333333" Height="22" />
@@ -98,7 +98,7 @@
   </computer>
   <external-runtime Id="ca84ac37-dd76-40f6-8765-24a2d6bcf4f5" OffsetX="0" OffsetY="0" Scale="0.8" SnapToGrid="false">
     <application-object Id="8d9beb07-0316-49fa-a1bf-d3e05e4f9f50" Left="195.15" Top="26" Width="134.44" Height="98" />
-    <opcua-server Id="2cf86c2a-f319-4add-9221-d2a8e4c5b575" Left="1193.43" Top="26" Width="171.61" Height="58.59" />
+    <opcua-server Id="2cf86c2a-f319-4add-9221-d2a8e4c5b575" Left="1159.43" Top="26" Width="171.61" Height="58.59" />
   </external-runtime>
   <application-object Id="8d9beb07-0316-49fa-a1bf-d3e05e4f9f50" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
     <exec-module Id="5eeff558-b604-4936-bf1f-69d6f5257aa5" Left="66" Top="26" Width="119.213333333333" Height="85" />
@@ -5261,23 +5261,24 @@
     <type Id="bf1ba13e-892f-4278-b444-488f22e39338" Left="191.5" Top="26" Width="221.703333333333" Height="392.63" />
     <type Id="4f58a86f-722d-458f-8938-985e384bdfd0" Left="440" Top="30" Width="243.026666666667" Height="458.63" />
   </type>
-  <type Id="bf1ba13e-892f-4278-b444-488f22e39338" OffsetX="235.313294041952" OffsetY="0" Scale="1" SnapToGrid="false">
-    <parameter Id="3b66523c-a061-4f2d-b179-08e5e5761690" Left="937.938313687643" Top="26" Width="96.3749803543091" Height="22" />
-    <parameter Id="f5041c5e-7535-4aba-978a-ad058c0b2a43" Left="65.9999999999999" Top="26" Width="118.624980354309" Height="22" />
-    <parameter Id="a193547a-fb08-4119-aef3-727da1f11331" Left="880.636627375285" Top="52" Width="153.676666666667" Height="22" />
-    <parameter Id="30adbff7-ebc5-472b-8d9d-786040efc3f5" Left="886.569960708618" Top="78" Width="147.743333333333" Height="22" />
-    <parameter Id="c6943ec3-7adf-4f15-830d-ff9653244653" Left="896.084980354309" Top="104" Width="138.228313687642" Height="22" />
-    <parameter Id="c21964dd-13d3-489f-a2a4-e673ffafee9d" Left="911.889960708618" Top="130" Width="122.423333333333" Height="22" />
-    <parameter Id="b9da7583-8564-45fe-8caf-59a49a89b1ef" Left="912.728313687643" Top="156" Width="121.584980354309" Height="22" />
-    <parameter Id="aaa45e80-2b01-4fd3-af24-e251226f83c1" Left="895.991647020976" Top="182" Width="138.321647020976" Height="22" />
-    <parameter Id="e04ffca5-7ab9-4c6e-a87b-5a5735c9305e" Left="900.801647020976" Top="208" Width="133.511647020976" Height="22" />
-    <parameter Id="f3b35a3d-c009-4b2a-8eb4-bf3d15cd5749" Left="897.931647020976" Top="234" Width="136.381647020976" Height="22" />
-    <parameter Id="5675dfc6-29b7-4133-8533-4a64c43cd3ea" Left="901.728313687643" Top="260" Width="132.584980354309" Height="22" />
-    <parameter Id="1c4b8fcd-8e5f-4aa1-84a1-77b810bcd356" Left="901.448313687643" Top="286" Width="132.864980354309" Height="22" />
+  <type Id="bf1ba13e-892f-4278-b444-488f22e39338" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+    <parameter Id="3b66523c-a061-4f2d-b179-08e5e5761690" Left="1016.62501964569" Top="26" Width="96.3749803543091" Height="22" />
+    <parameter Id="f5041c5e-7535-4aba-978a-ad058c0b2a43" Left="66" Top="26" Width="118.624980354309" Height="22" />
+    <parameter Id="a193547a-fb08-4119-aef3-727da1f11331" Left="959.323333333333" Top="52" Width="153.676666666667" Height="22" />
+    <parameter Id="30adbff7-ebc5-472b-8d9d-786040efc3f5" Left="965.256666666666" Top="78" Width="147.743333333333" Height="22" />
+    <parameter Id="c6943ec3-7adf-4f15-830d-ff9653244653" Left="974.771686312357" Top="104" Width="138.228313687642" Height="22" />
+    <parameter Id="c21964dd-13d3-489f-a2a4-e673ffafee9d" Left="990.576666666666" Top="130" Width="122.423333333333" Height="22" />
+    <parameter Id="b9da7583-8564-45fe-8caf-59a49a89b1ef" Left="991.415019645691" Top="156" Width="121.584980354309" Height="22" />
+    <parameter Id="aaa45e80-2b01-4fd3-af24-e251226f83c1" Left="974.678352979024" Top="182" Width="138.321647020976" Height="22" />
+    <parameter Id="e04ffca5-7ab9-4c6e-a87b-5a5735c9305e" Left="979.488352979024" Top="208" Width="133.511647020976" Height="22" />
+    <parameter Id="f3b35a3d-c009-4b2a-8eb4-bf3d15cd5749" Left="976.618352979024" Top="234" Width="136.381647020976" Height="22" />
+    <parameter Id="5675dfc6-29b7-4133-8533-4a64c43cd3ea" Left="980.415019645691" Top="260" Width="132.584980354309" Height="22" />
+    <parameter Id="1c4b8fcd-8e5f-4aa1-84a1-77b810bcd356" Left="980.135019645691" Top="286" Width="132.864980354309" Height="22" />
     <parameter Id="8f587e09-9d36-4a03-8ba4-b6f5a44c46e8" Left="204.624980354309" Top="26" Width="125.968313687642" Height="22" />
     <parameter Id="3b305535-359c-46e3-912c-1a423c0d79ce" Left="350.593294041951" Top="26" Width="147.773333333333" Height="22" />
     <parameter Id="cfb5fd42-3c89-40da-93fc-ecead840bca0" Left="518.366627375285" Top="26" Width="151.57" Height="22" />
     <parameter Id="a6935d71-4bb5-43af-8adf-381853fbc03d" Left="689.936627375285" Top="26" Width="148.7" Height="22" />
+    <parameter Id="40a78fba-1122-4466-80fb-962ffe684dde" Left="958.323333333333" Top="312" Width="153.676666666667" Height="22" />
   </type>
   <type Id="4f58a86f-722d-458f-8938-985e384bdfd0" OffsetX="42.0000000000032" OffsetY="0" Scale="1" SnapToGrid="true">
     <ref Id="6f8f0eb6-7989-4b11-8d8d-4fdd83b21308" Left="227.553333333333" Top="26" Width="218.916666666667" Height="392.63" />
@@ -6934,7 +6935,7 @@
     <object Id="cef858cc-40c6-4955-8f8c-a785c4bb91b5" Left="768.973333333333" Top="556" Width="331.486666666667" Height="266.63" />
     <object Id="ca1941e9-db51-4d20-8a7d-85d3929b8f14" Left="66" Top="576" Width="340.026666666667" Height="77.26" />
   </object>
-  <object Id="18252114-489c-4f64-a296-7a7ef97e2ccb" OffsetX="0" OffsetY="0" Scale="0.53389873132176" SnapToGrid="false">
+  <object Id="18252114-489c-4f64-a296-7a7ef97e2ccb" OffsetX="0" OffsetY="0" Scale="0.6673734141522" SnapToGrid="false">
     <object Id="7128a066-a7c0-4b44-b968-e8c6a5a95c4a" Left="66" Top="26" Width="112.0343884954" Height="266.63" />
     <object Id="ed80c7bf-bc21-4de0-9b1c-c7610a3706dc" Left="80.002553301879" Top="495.413965252393" Width="80.0438189525829" Height="178.63" />
     <object Id="44e07dcc-ebdd-46d9-9707-7bfa3791f3d8" Left="196.326625384601" Top="31.4267510433802" Width="101.264050988545" Height="222.63" />
@@ -6960,7 +6961,7 @@
     <object Id="b19e229e-a430-4731-aa70-4725824443ec" Left="750.673333333333" Top="156" Width="325.423333333333" Height="112.63" />
     <object Id="504f74f4-5923-4007-8851-1e38905bb1c1" Left="66" Top="186" Width="325.423333333333" Height="112.63" />
   </object>
-  <object Id="ed80c7bf-bc21-4de0-9b1c-c7610a3706dc" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
+  <object Id="ed80c7bf-bc21-4de0-9b1c-c7610a3706dc" OffsetX="97.8299999999999" OffsetY="0" Scale="1" SnapToGrid="false">
     <object Id="626d4a02-e6a0-466d-8f90-2b7f6f7ccdc5" Left="66" Top="26" Width="295.846666666667" Height="143.26" />
     <object Id="445c3235-94e5-49f2-bb14-dcacd852d218" Left="381.846666666667" Top="26" Width="289.943333333333" Height="112.63" />
     <object Id="7a296a80-31b4-4dff-99b0-c8ed552ab8d9" Left="691.79" Top="26" Width="302.02" Height="112.63" />
@@ -7016,7 +7017,7 @@
     <handler Id="cd768195-d5a8-4241-9c95-a249c3a3e30d" Left="66" Top="2006" Width="168.193333333333" Height="665" IsExpanded="true" />
     <handler Id="8e0bb9ca-f17e-4188-b135-a8f3fc63cde8" Left="254.193333333333" Top="2006" Width="143.203333333333" Height="665" IsExpanded="true" />
   </object>
-  <object Id="177e2bc9-d0df-4df7-83df-2852bc49a698" OffsetX="0" OffsetY="373.176234412949" Scale="0.7767902891438" SnapToGrid="false">
+  <object Id="177e2bc9-d0df-4df7-83df-2852bc49a698" OffsetX="0" OffsetY="1656.87793826316" Scale="0.73564768089345" SnapToGrid="false">
     <object Id="1086be4c-0ea2-408d-89c1-14b34f9c48f3" Left="66" Top="26" Width="396.54" Height="165.26" />
     <object Id="e8a5f67c-37e6-4bfd-b964-820a834b1486" Left="482.54" Top="26" Width="396.54" Height="165.26" />
     <object Id="73aa3dec-2e57-4439-a758-92d200a230fa" Left="899.08" Top="26" Width="396.54" Height="165.26" />
@@ -7051,8 +7052,12 @@
     <object Id="0bd27a9b-278d-41cb-bb23-2036b838633f" Left="488.47" Top="1826" Width="402.47" Height="165.26" />
     <object Id="33b18320-e03f-48b4-bacf-17ba1a8cbaab" Left="910.94" Top="1826" Width="375.4" Height="77.26" />
     <object Id="8fb49dfb-cf4e-4e06-8b67-c14e2558bd9c" Left="910.94" Top="1916" Width="398.306666666667" Height="77.26" />
-    <handler Id="4067460d-0f08-47b6-8c70-759548491239" Left="66" Top="2006" Width="168.193333333333" Height="665" IsExpanded="true" />
+    <handler Id="4067460d-0f08-47b6-8c70-759548491239" Left="66" Top="2006" Width="168.193333333333" Height="745" IsExpanded="true" />
     <handler Id="0032e305-b35d-4aea-90cf-86ab89d1c1c9" Left="254.193333333333" Top="2006" Width="143.203333333333" Height="665" IsExpanded="true" />
+    <parameter Id="f19ad78b-bde2-4f63-ac17-1334da8e8927" Left="1357.08882705788" Top="2066.11827988504" Width="125.801647020976" Height="22" />
+    <parameter Id="a842efac-5fe1-494a-a154-3812f8509135" Left="1356.20926691117" Top="2097.25404529662" Width="125.801647020976" Height="22" />
+    <parameter Id="7147ee89-972f-4acc-b84c-5c226c075b36" Left="1356.53810263243" Top="2126.30185469352" Width="125.801647020976" Height="22" />
+    <parameter Id="2f4b5654-326c-4e4c-b343-9755832c217f" Left="1355.41" Top="2153.26170807576" Width="125.801647020976" Height="22" />
   </object>
   <object Id="4aaa9aa4-bfbc-4fc3-b1d3-0777234cfeba" OffsetX="0" OffsetY="1897.30958487653" Scale="0.791500512172515" SnapToGrid="false">
     <object Id="37dd8089-31cb-4140-89d8-e2eebe2d37a7" Left="66" Top="26" Width="396.54" Height="165.26" />
@@ -7912,7 +7917,7 @@
     <object Id="7a2a6d5e-eeb1-4619-8b40-b6e0e0a71911" Left="82.6125" Top="457.25" Width="76.4933333333333" Height="164" />
     <object Id="58d8d84d-6a99-44b6-b732-cc133d58048d" Left="196.293333333333" Top="30.6875" Width="92.7166666666667" Height="208" />
     <object Id="e58178f1-215b-474a-a520-45ac8413b572" Left="196.51" Top="254.125" Width="95.04" Height="186" />
-    <object Id="33208b53-c89b-49f1-bd00-b965109464d7" Left="200.6125" Top="641.625" Width="88.3566666666667" Height="76" />
+    <object Id="33208b53-c89b-49f1-bd00-b965109464d7" Left="363.1125" Top="561.9375" Width="88.3566666666667" Height="76" />
     <object Id="08ff30e1-7dd8-404c-aa1a-59a78eb2cee3" Left="626.156666666667" Top="26" Width="261.186666666667" Height="612.63" />
     <object Id="36e91e67-16ba-48e7-aba0-4c039b561b49" Left="180.780833333333" Top="472.875" Width="128.256666666667" Height="142" />
     <object Id="1ab03151-cabf-4b37-a685-837d1c013166" Left="355.6" Top="33.8125" Width="101.546666666667" Height="252" />
@@ -7921,9 +7926,9 @@
     <object Id="596ffea6-ed71-4759-add4-07d88698e102" Left="355.885" Top="299.4375" Width="101.546666666667" Height="252" />
     <object Id="93d35e81-8137-43f2-a720-284b685d53a8" Left="470.1125" Top="299.125" Width="101.546666666667" Height="252" />
     <object Id="d6437b46-046b-48b1-934e-1a04ff1b2390" Left="908.5775" Top="28.8125" Width="120.443333333333" Height="384" />
-    <object Id="29ed9476-d21d-44c2-9868-fc7b021b1b1a" Left="1058.45333333333" Top="374.4375" Width="235.653333333333" Height="326.63" />
-    <object Id="04b8146c-3de2-4655-b210-d3c74f9b53e4" Left="1055.01583333333" Top="36.625" Width="235.653333333333" Height="326.63" />
-    <object Id="95132eaa-8fc7-46cc-bcbf-5dedaa7db8bd" Left="1313.1875" Top="36.75" Width="220.736666666667" Height="480.63" />
+    <object Id="29ed9476-d21d-44c2-9868-fc7b021b1b1a" Left="1047.51583333333" Top="366.625" Width="235.653333333333" Height="326.63" />
+    <object Id="04b8146c-3de2-4655-b210-d3c74f9b53e4" Left="1042.51583333333" Top="27.25" Width="235.653333333333" Height="326.63" />
+    <object Id="95132eaa-8fc7-46cc-bcbf-5dedaa7db8bd" Left="1299.125" Top="32.0625" Width="220.736666666667" Height="480.63" />
   </object>
   <object Id="36e91e67-16ba-48e7-aba0-4c039b561b49" OffsetX="0" OffsetY="0" Scale="0.64" SnapToGrid="false">
     <object Id="8d9138df-9dbe-4046-a191-90c3c5474f26" Left="66" Top="26" Width="256.153333333333" Height="238.63" />

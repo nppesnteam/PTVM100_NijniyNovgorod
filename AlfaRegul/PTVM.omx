@@ -4578,9 +4578,13 @@ Channel9.HProg=Math.TestBit(StateProg.State,8);
 Channel10.HProg=Math.TestBit(StateProg.State,9);
 Channel11.HProg=Math.TestBit(StateProg.State,10);
 Channel12.HProg=Math.TestBit(StateProg.State,11);
+Source1OK=Math.TestBit(StateProg.State,11);
 Channel13.HProg=Math.TestBit(StateProg.State,12);
+Source2OK=Math.TestBit(StateProg.State,12);
 Channel14.HProg=Math.TestBit(StateProg.State,13);
+SourceAuto=Math.TestBit(StateProg.State,13);
 Channel15.HProg=Math.TestBit(StateProg.State,14);
+Source2Work=Math.TestBit(StateProg.State,14);
 Channel16.HProg=Math.TestBit(StateProg.State,15);
 Channel17.HProg=Math.TestBit(StateProg.State,16);
 Channel18.HProg=Math.TestBit(StateProg.State,17);
@@ -4635,6 +4639,26 @@ Channel31.H=Math.TestBit(State.State,30);
 Channel32.H=Math.TestBit(State.State,31);</property>
                   <trigger on="State.State" />
                 </handler>
+                <ct:parameter name="Source1OK" uuid="f19ad78b-bde2-4f63-ac17-1334da8e8927" type="bool" direction="out">
+                  <attribute type="unit.Server.Attributes.Alarm">
+                    <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Ввод 1 АВР в норме.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Ввод 1 АВР не в норме.","Severity":1,"Type":3}],"Type":2}}</property>
+                  </attribute>
+                </ct:parameter>
+                <parameter name="Source2OK" type="bool" direction="out" xmlns="automation.control" uuid="a842efac-5fe1-494a-a154-3812f8509135">
+                  <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+                    <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Ввод 2 АВР в норме.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Ввод 2 АВР не в норме.","Severity":1,"Type":3}],"Type":2}}</property>
+                  </attribute>
+                </parameter>
+                <parameter name="SourceAuto" type="bool" direction="out" xmlns="automation.control" uuid="7147ee89-972f-4acc-b84c-5c226c075b36">
+                  <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+                    <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Автоматический режим работы АВР.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Ручной режим работы АВР.","Severity":1,"Type":3}],"Type":2}}</property>
+                  </attribute>
+                </parameter>
+                <parameter name="Source2Work" type="bool" direction="out" xmlns="automation.control" uuid="2f4b5654-326c-4e4c-b343-9755832c217f">
+                  <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+                    <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Ввод 2 АВР в работе.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Ввод 1 АВР в работе.","Severity":1,"Type":3}],"Type":2}}</property>
+                  </attribute>
+                </parameter>
               </ct:object>
               <ct:object name="Module3" uuid="4aaa9aa4-bfbc-4fc3-b1d3-0777234cfeba" original="PLC.Runtime.PLC_App.ROOT.Diag.Main.DI.Module3" aspect="Aspects.IOS_Aspect">
                 <ct:object name="Channel1" uuid="37dd8089-31cb-4140-89d8-e2eebe2d37a7" original="PLC.Runtime.PLC_App.ROOT.Diag.Main.DI.Module3.Channel1" base-type="Types.DI.IOS_View" aspect="Aspects.IOS_Aspect">
@@ -10067,6 +10091,7 @@ else
         <parameter name="SetProtPaL" type="float32" direction="in-out" xmlns="automation.control" uuid="3b305535-359c-46e3-912c-1a423c0d79ce" />
         <parameter name="SetProtPgH" type="float32" direction="in-out" xmlns="automation.control" uuid="cfb5fd42-3c89-40da-93fc-ecead840bca0" />
         <parameter name="SetProtPgL" type="float32" direction="in-out" xmlns="automation.control" uuid="a6935d71-4bb5-43af-8adf-381853fbc03d" />
+        <parameter name="IgnProgress1" direction="out" type="int32" xmlns="automation.control" uuid="40a78fba-1122-4466-80fb-962ffe684dde" />
       </type>
       <type name="IOS_View" xmlns="automation.control" aspect="Aspects.IOS_Aspect" original="BurnerWork" uuid="4f58a86f-722d-458f-8938-985e384bdfd0">
         <ref name="_PLC_View" type="PLC_View" xmlns="automation.reference" uuid="6f8f0eb6-7989-4b11-8d8d-4fdd83b21308" />
