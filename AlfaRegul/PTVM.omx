@@ -76,9 +76,9 @@
                     <object name="Channel1" aspect="Aspects.PLC_Aspect" base-type="Types.AI.PLC_View" uuid="6bcf5eb1-aaa1-4d22-9756-0ed42d356d20">
                       <attribute type="Attributes.ALIAS" value="F" xmlns="system" />
                       <attribute type="Attributes.DIGITS" value="1" xmlns="system" />
-                      <attribute type="Attributes.EU" value="м³/ч" xmlns="system" />
+                      <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                       <attribute type="unit.System.Attributes.Title" value="1N460FT01" xmlns="system" />
-                      <attribute type="unit.System.Attributes.Description" value="Расход газа" xmlns="system" />
+                      <attribute type="unit.System.Attributes.Description" value="Перепад давления на диафрагме (газ)" xmlns="system" />
                     </object>
                     <object name="Channel2" aspect="Aspects.PLC_Aspect" base-type="Types.AI.PLC_View" xmlns="automation.control" uuid="c9b9811c-106e-408f-a6f3-e5ce3e23b530">
                       <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
@@ -111,9 +111,9 @@
                     <object name="Channel6" aspect="Aspects.PLC_Aspect" base-type="Types.AI.PLC_View" xmlns="automation.control" uuid="73842045-f161-414e-9b07-70aa0b1153ec">
                       <attribute type="Attributes.ALIAS" value="F" xmlns="system" />
                       <attribute type="Attributes.DIGITS" value="1" xmlns="system" />
-                      <attribute type="Attributes.EU" value="кг/ч" xmlns="system" />
+                      <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                       <attribute type="unit.System.Attributes.Title" value="1N820FT01" xmlns="system" />
-                      <attribute type="unit.System.Attributes.Description" value="Расход резервного топлива" xmlns="system" />
+                      <attribute type="unit.System.Attributes.Description" value="Перепад давления на диафрагме (мазут)" xmlns="system" />
                     </object>
                     <object name="Channel7" aspect="Aspects.PLC_Aspect" base-type="Types.AI.PLC_View" xmlns="automation.control" uuid="4dbff7fd-21db-435c-a5f8-d04f1ac021a6">
                       <attribute type="Attributes.ALIAS" value="T" xmlns="system" />
@@ -160,9 +160,9 @@
                     <object name="Channel13" aspect="Aspects.PLC_Aspect" base-type="Types.AI.PLC_View" xmlns="automation.control" uuid="32cda5cd-1f37-4706-b59c-ca55857375a7">
                       <attribute type="Attributes.ALIAS" value="F" xmlns="system" />
                       <attribute type="Attributes.DIGITS" value="1" xmlns="system" />
-                      <attribute type="Attributes.EU" value="т/ч" xmlns="system" />
+                      <attribute type="Attributes.EU" value="кПа" xmlns="system" />
                       <attribute type="unit.System.Attributes.Title" value="1N130FT01" xmlns="system" />
-                      <attribute type="unit.System.Attributes.Description" value="Расход теплоносителя" xmlns="system" />
+                      <attribute type="unit.System.Attributes.Description" value="Перепад давления на диафрагме (вода)" xmlns="system" />
                     </object>
                     <object name="Channel14" aspect="Aspects.PLC_Aspect" base-type="Types.AI.PLC_View" xmlns="automation.control" uuid="abf09a72-ad77-4122-835f-9785cec292b5">
                       <attribute type="Attributes.ALIAS" value="T" xmlns="system" />
