@@ -3237,22 +3237,22 @@
                 </object>
                 <object name="Prot4" base-type="Types.ProtectsValueBoiler.PLC_View" xmlns="automation.control" uuid="a77e933b-6968-43f9-92c4-d979ca0be065">
                   <attribute type="Attributes.EU" value="мПа" xmlns="system" />
-                  <attribute type="unit.System.Attributes.Description" value="Давление теплоносителя на выходе ниже нормы" xmlns="system" />
+                  <attribute type="unit.System.Attributes.Description" value="Давление воды на выходе ниже нормы" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="PWatOutL" xmlns="system" />
                 </object>
                 <object name="Prot5" base-type="Types.ProtectsValueBoiler.PLC_View" xmlns="automation.control" uuid="43dd3313-9486-4578-a034-47d120d065a8">
                   <attribute type="Attributes.EU" value="мПа" xmlns="system" />
-                  <attribute type="unit.System.Attributes.Description" value="Давление теплоносителя на выходе выше нормы" xmlns="system" />
+                  <attribute type="unit.System.Attributes.Description" value="Давление воды на выходе выше нормы" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="PWatOutH" xmlns="system" />
                 </object>
                 <object name="Prot6" base-type="Types.ProtectsValueBoiler.PLC_View" xmlns="automation.control" uuid="e7d765c6-5fbf-4300-bff1-09c04dc3672b">
                   <attribute type="Attributes.EU" value="т/ч" xmlns="system" />
-                  <attribute type="unit.System.Attributes.Description" value="Расход теплоносителя ниже нормы" xmlns="system" />
+                  <attribute type="unit.System.Attributes.Description" value="Расход воды ниже нормы" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="QWatOutL" xmlns="system" />
                 </object>
                 <object name="Prot7" base-type="Types.ProtectsValueBoiler.PLC_View" xmlns="automation.control" uuid="f170df8e-c78f-4896-83ed-e5b8af63080c">
                   <attribute type="Attributes.EU" value="°C" xmlns="system" />
-                  <attribute type="unit.System.Attributes.Description" value="Температура теплоносителя на выходе выше нормы" xmlns="system" />
+                  <attribute type="unit.System.Attributes.Description" value="Температура воды на выходе выше нормы" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="TWatOutH" xmlns="system" />
                 </object>
                 <object name="Prot8" base-type="Types.ProtectsValueBoiler.PLC_View" xmlns="automation.control" uuid="79362d86-26c2-42c4-a12b-4f4dc726fb98">
@@ -4134,7 +4134,6 @@
         <opc:opcua-server name="OpcUaServer" uuid="2cf86c2a-f319-4add-9221-d2a8e4c5b575" tag-map="PLC_App.OpcUaAddressMap" endpoint-name="regul_ua_server" port="4840" />
       </dp:external-runtime>
       <ethernet-adapter name="EthernetAdapter2" address="192.168.2.211" network="MOXA-2" xmlns="automation.ethernet" uuid="56ce3a9b-2e42-4283-b2b2-8e1d727e4aa6" />
-      <ethernet-adapter name="EthernetAdapter3" address="192.168.56.102" network="Virtual" xmlns="automation.ethernet" uuid="faba00e9-d63e-4de2-a32c-593612072e90" />
     </dp:computer>
     <dp:application-object name="IOS_App" uuid="28985c17-7d18-4cac-b712-ec3f38d5543e">
       <dp:exec-module name="AppModule" uuid="83464f57-c692-4349-8b1f-76ac1cba9228">
@@ -8138,7 +8137,6 @@ Channel32.H=Math.TestBit(State.State,31);</property>
         <historian-database name="DB_HISTORY" alias="DB_HISTORY" usage="values" uuid="80e7f860-d1c2-45d7-97da-07b828138a13" />
       </historian>
       <ethernet-adapter name="EthernetAdapter2" address="192.168.2.221" network="MOXA-2" xmlns="automation.ethernet" uuid="91fda8b8-7591-46c1-9fef-6e98b93d1e66" />
-      <ethernet-adapter name="EthernetAdapter3" address="192.168.56.1" network="Virtual" xmlns="automation.ethernet" uuid="b7226b98-828b-4d96-9b00-6abc86e6c9ba" />
     </dp:domain-node>
     <dp:domain-node name="ARM2" uuid="e82dac4e-1a72-485a-b222-c0e683cd7837" address="ARM2">
       <eth:ethernet-adapter name="EthernetAdapter1" uuid="42c5727e-3794-4cca-8ba1-fc7e0870bd8a" address="192.168.1.222" network="MOXA-1" />

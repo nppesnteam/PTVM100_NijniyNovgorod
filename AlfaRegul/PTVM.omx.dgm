@@ -94,11 +94,10 @@
     <ethernet-adapter Id="45256400-eb18-4ee3-b611-8e62720bd162" Left="173.03666666667" Top="35.286672153473" Width="144.463333333333" Height="45.63" />
     <external-runtime Id="ca84ac37-dd76-40f6-8765-24a2d6bcf4f5" Left="30" Top="30" Width="109.013333333333" Height="56" />
     <ethernet-adapter Id="56ce3a9b-2e42-4283-b2b2-8e1d727e4aa6" Left="173.03666666667" Top="100.916672153473" Width="144.463333333333" Height="45.63" />
-    <ethernet-adapter Id="faba00e9-d63e-4de2-a32c-593612072e90" Left="171.03666666667" Top="165.310687599182" Width="144.463333333333" Height="45.63" />
   </computer>
   <external-runtime Id="ca84ac37-dd76-40f6-8765-24a2d6bcf4f5" OffsetX="0" OffsetY="0" Scale="0.8" SnapToGrid="false">
     <application-object Id="8d9beb07-0316-49fa-a1bf-d3e05e4f9f50" Left="195.15" Top="26" Width="134.44" Height="98" />
-    <opcua-server Id="2cf86c2a-f319-4add-9221-d2a8e4c5b575" Left="1159.43" Top="26" Width="171.61" Height="58.59" />
+    <opcua-server Id="2cf86c2a-f319-4add-9221-d2a8e4c5b575" Left="1091.43" Top="26" Width="171.61" Height="58.59" />
   </external-runtime>
   <application-object Id="8d9beb07-0316-49fa-a1bf-d3e05e4f9f50" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
     <exec-module Id="5eeff558-b604-4936-bf1f-69d6f5257aa5" Left="66" Top="26" Width="119.213333333333" Height="85" />
@@ -153,7 +152,6 @@
     <io-server Id="e9409a7b-e053-4d2c-bfc2-5d9d16110d9d" Left="50" Top="50" Width="193.083333333333" Height="168" />
     <historian Id="c799a40b-48e2-43da-b2b6-7b2380f90845" Left="287.5625" Top="58.6" Width="139.72" Height="84" />
     <ethernet-adapter Id="91fda8b8-7591-46c1-9fef-6e98b93d1e66" Left="369.75666666667" Top="281.935687599182" Width="159.993333333333" Height="45.63" />
-    <ethernet-adapter Id="b7226b98-828b-4d96-9b00-6abc86e6c9ba" Left="379.03666666667" Top="345.320687599182" Width="144.463333333333" Height="45.63" />
   </domain-node>
   <domain-node Id="e82dac4e-1a72-485a-b222-c0e683cd7837" OffsetX="0" OffsetY="0" Scale="0.8" SnapToGrid="false">
     <ethernet-adapter Id="42c5727e-3794-4cca-8ba1-fc7e0870bd8a" Left="265.536666666667" Top="137.786672153473" Width="144.463333333333" Height="45.63" />
@@ -7937,7 +7935,7 @@
     <object Id="25e76701-bcc7-4d77-8a99-a540e7709566" Left="630.436666666667" Top="196" Width="261.226666666667" Height="568.63" />
     <object Id="1ba0f4a9-2b29-4b6f-95a3-c1f56ce849f8" Left="911.663333333333" Top="26" Width="142.09" Height="230" />
   </object>
-  <object Id="1ba0f4a9-2b29-4b6f-95a3-c1f56ce849f8" OffsetX="84.76" OffsetY="0" Scale="1" SnapToGrid="false">
+  <object Id="1ba0f4a9-2b29-4b6f-95a3-c1f56ce849f8" OffsetX="0" OffsetY="0" Scale="1" SnapToGrid="false">
     <object Id="6d88a536-bd07-4228-8b0d-30edc196d12e" Left="70.24" Top="26" Width="222.88" Height="84.63" />
     <object Id="c815052a-1228-4bdc-b750-8b2fec8d7f97" Left="313.12" Top="26" Width="222.88" Height="84.63" />
     <object Id="1ffe30e8-e6c4-4a22-8c60-8a7d1b5df895" Left="556" Top="26" Width="222.88" Height="84.63" />
@@ -8321,4 +8319,15 @@
     <object Id="fb838e33-97fb-49ab-b3ac-e4eee58e765f" Left="562.113333333333" Top="446" Width="228.056666666667" Height="128.63" />
     <object Id="c0885150-8d5e-4e4f-a6e5-f281744d0831" Left="810.17" Top="446" Width="228.056666666667" Height="128.63" />
   </object>
+  <object Id="86e4d700-7fd3-4cf8-b746-2f6d6557a350" OffsetX="0" OffsetY="0" Scale="0.6673734141522" SnapToGrid="false">
+    <object Id="87794566-5f39-4310-9ca0-0ee3cb8fd381" Left="66" Top="26" Width="311.166666666667" Height="473.26" />
+    <object Id="b53e1c5e-affb-4907-b869-ab63170916ea" Left="397.166666666667" Top="26" Width="305.92" Height="495.26" />
+  </object>
+  <object Id="87794566-5f39-4310-9ca0-0ee3cb8fd381" OffsetX="0" OffsetY="0" Scale="0.6673734141522" SnapToGrid="false">
+    <init-ref Id="r:init-ref[0]" Left="66" Top="577.417305755899" Width="300.26" Height="22" />
+  </object>
+  <object Id="b53e1c5e-affb-4907-b869-ab63170916ea" OffsetX="0" OffsetY="0" Scale="0.6673734141522" SnapToGrid="false">
+    <init-ref Id="r:init-ref[0]" Left="421.733333333333" Top="590" Width="294.533333333333" Height="22" />
+  </object>
+  <object Id="7f0fd9b7-1e7b-47ce-ac66-dda9a18e3cf4" OffsetX="0" OffsetY="0" Scale="0.64" SnapToGrid="false" />
 </Diagrams>

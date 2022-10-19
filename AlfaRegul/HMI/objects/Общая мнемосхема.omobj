@@ -820,7 +820,7 @@
 				<designed target="Tooltip" value="" ver="4"/>
 				<designed target="Width" value="132" ver="4"/>
 				<designed target="Height" value="45" ver="4"/>
-				<designed target="Text" value="Теплоноситель
+				<designed target="Text" value="Вода
 на входе" ver="4"/>
 				<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
 				<designed target="FontColor" value="0xffffffff" ver="4"/>
@@ -838,7 +838,7 @@
 				<designed target="Tooltip" value="" ver="4"/>
 				<designed target="Width" value="132" ver="4"/>
 				<designed target="Height" value="45" ver="4"/>
-				<designed target="Text" value="Теплоноситель
+				<designed target="Text" value="Вода
 на выходе" ver="4"/>
 				<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
 				<designed target="FontColor" value="0xffffffff" ver="4"/>
@@ -2309,20 +2309,20 @@
 				<init target="Path" ver="4" value="ROOT.Gas"/>
 			</object>
 			<object access-modifier="private" name="StartGerm" display-name="StartGerm" uuid="fe6da31f-9c1c-44d0-9995-053354012a72" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
-				<designed target="X" value="352.833" ver="4"/>
-				<designed target="Y" value="355.833" ver="4"/>
+				<designed target="X" value="323.833" ver="4"/>
+				<designed target="Y" value="354.833" ver="4"/>
 				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="false" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
 				<designed target="Opacity" value="1" ver="4"/>
 				<designed target="Enabled" value="true" ver="4"/>
 				<designed target="Tooltip" value="" ver="4"/>
-				<designed target="Width" value="110" ver="4"/>
-				<designed target="Height" value="37" ver="4"/>
+				<designed target="Width" value="156" ver="4"/>
+				<designed target="Height" value="41" ver="4"/>
 				<designed target="Checkable" value="false" ver="4"/>
 				<designed target="Checked" value="false" ver="4"/>
-				<designed target="Text" value="Проверка
+				<designed target="Text" value="Перезапуск проверки
 герметичности" ver="4"/>
 				<designed target="TextAlignment" value="132" ver="4"/>
 				<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
@@ -2355,6 +2355,11 @@
 						<![CDATA[InStartGerm=!OutStartGerm;]]>
 					</body>
 				</do-on>
+				<do-trace access-modifier="private" target="Enabled" ver="4">
+					<body>
+						<![CDATA[Group1.Germ.Alarm||Group2.Germ.Alarm||Group3.Germ.Alarm||Group4.Germ.Alarm]]>
+					</body>
+				</do-trace>
 			</object>
 			<object access-modifier="private" name="InStartGerm" display-name="InStartGerm" uuid="52876110-907d-4e95-9e35-5f3b6e22d459" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 				<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
@@ -2704,7 +2709,7 @@
 				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="false" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
 				<designed target="Opacity" value="1" ver="4"/>
 				<designed target="Enabled" value="true" ver="4"/>
 				<designed target="Tooltip" value="" ver="4"/>
@@ -2723,7 +2728,7 @@
 					<designed target="ZValue" value="0" ver="4"/>
 					<designed target="Rotation" value="0" ver="4"/>
 					<designed target="Scale" value="1" ver="4"/>
-					<designed target="Visible" value="false" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
 					<designed target="Opacity" value="1" ver="4"/>
 					<designed target="Enabled" value="true" ver="4"/>
 					<designed target="Tooltip" value="" ver="4"/>
@@ -2736,11 +2741,6 @@
 					<do-trace access-modifier="private" target="Text" ver="4">
 						<body>
 							<![CDATA[Descr]]>
-						</body>
-					</do-trace>
-					<do-trace access-modifier="private" target="Visible" ver="4">
-						<body>
-							<![CDATA[!Final&&BoilerWork]]>
 						</body>
 					</do-trace>
 				</object>
@@ -2769,11 +2769,6 @@
 					<init target="Source" ver="4" ref="OPCSource"/>
 					<init target="Path" ver="4" value="Germ.Descr"/>
 				</object>
-				<do-trace access-modifier="private" target="Visible" ver="4">
-					<body>
-						<![CDATA[!Final&&BoilerWork]]>
-					</body>
-				</do-trace>
 			</object>
 			<object access-modifier="private" name="txtGroup" display-name="txtGroup" uuid="23c63864-b1b1-4abd-83cd-407bd173dc9d" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
 				<designed target="X" value="375" ver="4"/>
@@ -3145,7 +3140,7 @@
 				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="false" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
 				<designed target="Opacity" value="1" ver="4"/>
 				<designed target="Enabled" value="true" ver="4"/>
 				<designed target="Tooltip" value="" ver="4"/>
@@ -3164,7 +3159,7 @@
 					<designed target="ZValue" value="0" ver="4"/>
 					<designed target="Rotation" value="0" ver="4"/>
 					<designed target="Scale" value="1" ver="4"/>
-					<designed target="Visible" value="false" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
 					<designed target="Opacity" value="1" ver="4"/>
 					<designed target="Enabled" value="true" ver="4"/>
 					<designed target="Tooltip" value="" ver="4"/>
@@ -3177,11 +3172,6 @@
 					<do-trace access-modifier="private" target="Text" ver="4">
 						<body>
 							<![CDATA[Descr]]>
-						</body>
-					</do-trace>
-					<do-trace access-modifier="private" target="Visible" ver="4">
-						<body>
-							<![CDATA[!Final&&BoilerWork]]>
 						</body>
 					</do-trace>
 				</object>
@@ -3210,11 +3200,6 @@
 					<init target="Source" ver="4" ref="OPCSource"/>
 					<init target="Path" ver="4" value="Germ.Descr"/>
 				</object>
-				<do-trace access-modifier="private" target="Visible" ver="4">
-					<body>
-						<![CDATA[!Final&&BoilerWork]]>
-					</body>
-				</do-trace>
 			</object>
 			<object access-modifier="private" name="txtGroup" display-name="txtGroup" uuid="b1aff0b0-13dd-4824-bede-0152c8d94e9e" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
 				<designed target="X" value="225" ver="4"/>
@@ -3578,7 +3563,7 @@
 				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="false" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
 				<designed target="Opacity" value="1" ver="4"/>
 				<designed target="Enabled" value="true" ver="4"/>
 				<designed target="Tooltip" value="" ver="4"/>
@@ -3597,7 +3582,7 @@
 					<designed target="ZValue" value="0" ver="4"/>
 					<designed target="Rotation" value="0" ver="4"/>
 					<designed target="Scale" value="1" ver="4"/>
-					<designed target="Visible" value="false" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
 					<designed target="Opacity" value="1" ver="4"/>
 					<designed target="Enabled" value="true" ver="4"/>
 					<designed target="Tooltip" value="" ver="4"/>
@@ -3610,11 +3595,6 @@
 					<do-trace access-modifier="private" target="Text" ver="4">
 						<body>
 							<![CDATA[Descr]]>
-						</body>
-					</do-trace>
-					<do-trace access-modifier="private" target="Visible" ver="4">
-						<body>
-							<![CDATA[!Final&&BoilerWork]]>
 						</body>
 					</do-trace>
 				</object>
@@ -3643,11 +3623,6 @@
 					<init target="Source" ver="4" ref="OPCSource"/>
 					<init target="Path" ver="4" value="Germ.Descr"/>
 				</object>
-				<do-trace access-modifier="private" target="Visible" ver="4">
-					<body>
-						<![CDATA[!Final&&BoilerWork]]>
-					</body>
-				</do-trace>
 			</object>
 			<object access-modifier="private" name="txtGroup" display-name="txtGroup" uuid="776b5aaf-aa38-4fd1-954e-22fd408f9fb0" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
 				<designed target="X" value="375" ver="4"/>
@@ -4011,7 +3986,7 @@
 				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<designed target="Scale" value="1" ver="4"/>
-				<designed target="Visible" value="false" ver="4"/>
+				<designed target="Visible" value="true" ver="4"/>
 				<designed target="Opacity" value="1" ver="4"/>
 				<designed target="Enabled" value="true" ver="4"/>
 				<designed target="Tooltip" value="" ver="4"/>
@@ -4030,7 +4005,7 @@
 					<designed target="ZValue" value="0" ver="4"/>
 					<designed target="Rotation" value="0" ver="4"/>
 					<designed target="Scale" value="1" ver="4"/>
-					<designed target="Visible" value="false" ver="4"/>
+					<designed target="Visible" value="true" ver="4"/>
 					<designed target="Opacity" value="1" ver="4"/>
 					<designed target="Enabled" value="true" ver="4"/>
 					<designed target="Tooltip" value="" ver="4"/>
@@ -4043,11 +4018,6 @@
 					<do-trace access-modifier="private" target="Text" ver="4">
 						<body>
 							<![CDATA[Descr]]>
-						</body>
-					</do-trace>
-					<do-trace access-modifier="private" target="Visible" ver="4">
-						<body>
-							<![CDATA[!Final&&BoilerWork]]>
 						</body>
 					</do-trace>
 				</object>
@@ -4076,11 +4046,6 @@
 					<init target="Source" ver="4" ref="OPCSource"/>
 					<init target="Path" ver="4" value="Germ.Descr"/>
 				</object>
-				<do-trace access-modifier="private" target="Visible" ver="4">
-					<body>
-						<![CDATA[!Final&&BoilerWork]]>
-					</body>
-				</do-trace>
 			</object>
 			<object access-modifier="private" name="txtGroup" display-name="txtGroup" uuid="77192776-dd6b-4961-a11c-95570d37a65d" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
 				<designed target="X" value="225" ver="4"/>

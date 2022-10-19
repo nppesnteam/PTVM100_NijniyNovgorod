@@ -9,16 +9,16 @@
 	<designed target="Enabled" value="true" ver="4"/>
 	<designed target="Tooltip" value="" ver="4"/>
 	<designed target="Width" value="300" ver="4"/>
-	<designed target="Height" value="180" ver="4"/>
+	<designed target="Height" value="190" ver="4"/>
 	<designed target="PenColor" value="4278190080" ver="4"/>
 	<designed target="PenStyle" value="0" ver="4"/>
 	<designed target="PenWidth" value="1" ver="4"/>
-	<designed target="BrushColor" value="0xff000000" ver="4"/>
+	<designed target="BrushColor" value="0xff4d4d4d" ver="4"/>
 	<designed target="BrushStyle" value="1" ver="4"/>
 	<designed target="WindowX" value="0" ver="4"/>
 	<designed target="WindowY" value="0" ver="4"/>
 	<designed target="WindowWidth" value="300" ver="4"/>
-	<designed target="WindowHeight" value="180" ver="4"/>
+	<designed target="WindowHeight" value="190" ver="4"/>
 	<designed target="WindowCaption" value="ФГУ РОЗЖИГА" ver="4"/>
 	<designed target="ShowWindowCaption" value="true" ver="4"/>
 	<designed target="ShowWindowMinimize" value="false" ver="4"/>
@@ -132,7 +132,7 @@
 		<designed target="Width" value="52" ver="4"/>
 		<designed target="Height" value="23" ver="4"/>
 		<designed target="Checkable" value="false" ver="4"/>
-		<designed target="Text" value="РТ" ver="4"/>
+		<designed target="Text" value="МАЗУТ" ver="4"/>
 		<designed target="TextAlignment" value="132" ver="4"/>
 		<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
 		<designed target="FontColor" value="4278190080" ver="4"/>
@@ -506,8 +506,8 @@ while(i<16)
 		<init target="Path" ver="4" value="ROOT.BOILER.InBoilerInWork"/>
 	</object>
 	<object access-modifier="private" name="txtIgnType" display-name="txtIgnType" uuid="695d48ee-d9c8-4d50-bc6e-6cd86bb1f5cf" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
-		<designed target="X" value="15.25" ver="4"/>
-		<designed target="Y" value="103.5" ver="4"/>
+		<designed target="X" value="4.25" ver="4"/>
+		<designed target="Y" value="97.5" ver="4"/>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="1" ver="4"/>
@@ -515,16 +515,16 @@ while(i<16)
 		<designed target="Opacity" value="1" ver="4"/>
 		<designed target="Enabled" value="true" ver="4"/>
 		<designed target="Tooltip" value="" ver="4"/>
-		<designed target="Width" value="118.5" ver="4"/>
-		<designed target="Height" value="60" ver="4"/>
-		<designed target="Text" value="Розжиг растопочных горелок" ver="4"/>
+		<designed target="Width" value="133.5" ver="4"/>
+		<designed target="Height" value="89" ver="4"/>
+		<designed target="Text" value="Алгоритм розжига растопочных горелок" ver="4"/>
 		<designed target="Font" value="Arial,12,-1,5,75,0,0,0,0,0,Narrow Bold" ver="4"/>
 		<designed target="FontColor" value="0xffffffff" ver="4"/>
 		<designed target="TextAlignment" value="132" ver="4"/>
 	</object>
 	<object access-modifier="private" name="btnAuto" display-name="btnAuto" uuid="d97063a3-6612-4d73-8d27-32ae58dbca33" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
-		<designed target="X" value="138" ver="4"/>
-		<designed target="Y" value="96" ver="4"/>
+		<designed target="X" value="142" ver="4"/>
+		<designed target="Y" value="104" ver="4"/>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="1" ver="4"/>
@@ -594,8 +594,8 @@ while(i<16)
 		</do-trace>
 	</object>
 	<object access-modifier="private" name="btnMan" display-name="btnMan" uuid="e1f01742-f2df-4f8f-923c-fc90db55e074" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
-		<designed target="X" value="138" ver="4"/>
-		<designed target="Y" value="137" ver="4"/>
+		<designed target="X" value="142" ver="4"/>
+		<designed target="Y" value="145" ver="4"/>
 		<designed target="ZValue" value="0" ver="4"/>
 		<designed target="Rotation" value="0" ver="4"/>
 		<designed target="Scale" value="1" ver="4"/>
@@ -658,6 +658,11 @@ while(i<16)
 			</body>
 		</do-on>
 		<designed target="Checked" value="false" ver="4"/>
+		<do-trace access-modifier="private" target="Enabled" ver="4">
+			<body>
+				<![CDATA[VentOK&&GermOk]]>
+			</body>
+		</do-trace>
 	</object>
 </type>
 
