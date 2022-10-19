@@ -1108,7 +1108,7 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="Enabled" value="true" ver="4"/>
 				<designed target="InvokeTrigger" value="false" ver="4"/>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-by-id="false" form-action="open-dialog">
-					<object access-modifier="private" uuid="7c2960f3-7569-4953-9108-cde3c129f98b" base-type="Диалог останова" base-type-id="9eff29d5-9015-4d45-b1e9-0f16f1be7649" ver="4">
+					<object access-modifier="private" uuid="79b0b52e-9738-4064-9f17-03853d0451a5" base-type="Диалог останова" base-type-id="9eff29d5-9015-4d45-b1e9-0f16f1be7649" ver="4">
 						<designed target="WindowX" value="835" ver="4"/>
 						<designed target="WindowY" value="502" ver="4"/>
 						<init target="refIgnStart" ver="4" ref="IgnStart"/>
@@ -2824,5 +2824,6 @@ OpenBurnSteps.Invoke();]]>
 		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
 		<init target="Path" ver="4" value="ROOT.Boiler.BoilerInWork"/>
 	</object>
+	<designed target="WindowIconPath" value="" ver="5"/>
 </type>
 

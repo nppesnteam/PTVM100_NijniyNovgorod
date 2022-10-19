@@ -154,9 +154,7 @@ Timer.Active = true;]]>
 Trig=false;]]>
 		</body>
 	</do-on>
-	<object access-modifier="private" name="Keyboard" display-name="Keyboard" uuid="f045d579-428d-4940-ab13-4ef3628a29d2" base-type="Keyboard" base-type-id="9430301f-2693-4c5c-9013-867d8d8f73f4" ver="4">
-		<designed target="Locale" value="en-US" ver="4"/>
-	</object>
+	<object access-modifier="private" name="Keyboard" display-name="Keyboard" uuid="f045d579-428d-4940-ab13-4ef3628a29d2" base-type="Keyboard" base-type-id="9430301f-2693-4c5c-9013-867d8d8f73f4" ver="4"/>
 	<object access-modifier="private" name="btnChngPass" display-name="btnChngPass" uuid="0f046f7b-fa46-474b-be03-9d89ae50b4a4" base-type="Button" base-type-id="61e46e4a-827f-4dd2-ac8a-b68bcaddf442" ver="4">
 		<designed target="X" value="50" ver="4"/>
 		<designed target="Y" value="80" ver="4"/>
@@ -354,5 +352,6 @@ OldStateEnt=Keyboard.KeyState(82);
 	</object>
 	<object access-modifier="private" name="OldStateEsc" display-name="OldStateEsc" uuid="dbd369a2-55ab-4da1-8e96-291ddfa3034e" base-type="int1" base-type-id="756a0a23-7e63-4a13-8a35-e8a38909e5ed" ver="4"/>
 	<object access-modifier="private" name="OldStateEnt" display-name="OldStateEnt" uuid="550a6282-6f10-47cd-a262-1cd2dd30d948" base-type="int1" base-type-id="756a0a23-7e63-4a13-8a35-e8a38909e5ed" ver="4"/>
+	<designed target="WindowIconPath" value="" ver="5"/>
 </type>
 
