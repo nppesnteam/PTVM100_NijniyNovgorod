@@ -2651,11 +2651,6 @@
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
 				<init target="initPath" ver="4" value="Valve1"/>
-				<do-trace access-modifier="private" target="Tooltip" ver="4">
-					<body kind="om">
-						<![CDATA[NAME+" "+String.ToString(Group)]]>
-					</body>
-				</do-trace>
 				<designed target="Scale" value="1.5" ver="4"/>
 			</object>
 			<object access-modifier="private" name="ValveDensity" display-name="ValveDensity" uuid="13f4696d-512e-4227-8d1b-c7b6d0917b42" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
@@ -2665,11 +2660,6 @@
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
 				<init target="initPath" ver="4" value="ValveDensity"/>
-				<do-trace access-modifier="private" target="Tooltip" ver="4">
-					<body kind="om">
-						<![CDATA[NAME+" "+String.ToString(Group)]]>
-					</body>
-				</do-trace>
 			</object>
 			<object access-modifier="private" name="ValveSecurity" display-name="ValveSecurity" uuid="07870348-b1a0-4e03-b6b1-9280ef5e9cdf" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="578" ver="4"/>
@@ -2678,11 +2668,6 @@
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
 				<init target="initPath" ver="4" value="ValveSecurity"/>
-				<do-trace access-modifier="private" target="Tooltip" ver="4">
-					<body kind="om">
-						<![CDATA[NAME+" "+String.ToString(Group)]]>
-					</body>
-				</do-trace>
 				<init target="OutInvert" ver="4" value="true"/>
 			</object>
 			<object access-modifier="private" name="PBetween" display-name="PBetween" uuid="2c0bef40-2e48-43c6-8c71-04f8863c90f1" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
@@ -3082,11 +3067,6 @@
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
 				<init target="initPath" ver="4" value="Valve1"/>
-				<do-trace access-modifier="private" target="Tooltip" ver="4">
-					<body kind="om">
-						<![CDATA[NAME+" "+String.ToString(Group)]]>
-					</body>
-				</do-trace>
 				<designed target="Scale" value="1.5" ver="4"/>
 			</object>
 			<object access-modifier="private" name="ValveDensity" display-name="ValveDensity" uuid="80541c08-b17e-4a28-b721-8bf4934163a2" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
@@ -3096,11 +3076,6 @@
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
 				<init target="initPath" ver="4" value="ValveDensity"/>
-				<do-trace access-modifier="private" target="Tooltip" ver="4">
-					<body kind="om">
-						<![CDATA[NAME+" "+String.ToString(Group)]]>
-					</body>
-				</do-trace>
 			</object>
 			<object access-modifier="private" name="ValveSecurity" display-name="ValveSecurity" uuid="e4c2e57e-1268-4ff3-b177-db07fc3a0445" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="578" ver="4"/>
@@ -3109,11 +3084,6 @@
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
 				<init target="initPath" ver="4" value="ValveSecurity"/>
-				<do-trace access-modifier="private" target="Tooltip" ver="4">
-					<body kind="om">
-						<![CDATA[NAME+" "+String.ToString(Group)]]>
-					</body>
-				</do-trace>
 				<init target="OutInvert" ver="4" value="true"/>
 			</object>
 			<object access-modifier="private" name="PBetween" display-name="PBetween" uuid="cb2a827f-c42b-459d-ba25-9e1ccd2054ab" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
@@ -3505,11 +3475,6 @@
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
 				<init target="initPath" ver="4" value="Valve1"/>
-				<do-trace access-modifier="private" target="Tooltip" ver="4">
-					<body kind="om">
-						<![CDATA[NAME+" "+String.ToString(Group)]]>
-					</body>
-				</do-trace>
 				<designed target="Scale" value="1.5" ver="4"/>
 			</object>
 			<object access-modifier="private" name="ValveDensity" display-name="ValveDensity" uuid="f50cc7f2-85e9-4996-9881-230ffb86e091" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
@@ -3519,11 +3484,6 @@
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
 				<init target="initPath" ver="4" value="ValveDensity"/>
-				<do-trace access-modifier="private" target="Tooltip" ver="4">
-					<body kind="om">
-						<![CDATA[NAME+" "+String.ToString(Group)]]>
-					</body>
-				</do-trace>
 			</object>
 			<object access-modifier="private" name="ValveSecurity" display-name="ValveSecurity" uuid="2e6cb29a-0645-4ad6-9f12-3e7770b7c997" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="578" ver="4"/>
@@ -3532,11 +3492,6 @@
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
 				<init target="initPath" ver="4" value="ValveSecurity"/>
-				<do-trace access-modifier="private" target="Tooltip" ver="4">
-					<body kind="om">
-						<![CDATA[NAME+" "+String.ToString(Group)]]>
-					</body>
-				</do-trace>
 				<init target="OutInvert" ver="4" value="true"/>
 			</object>
 			<object access-modifier="private" name="PBetween" display-name="PBetween" uuid="174ca7a6-a82e-478e-91dd-03bd861d220d" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
@@ -3928,11 +3883,6 @@
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
 				<init target="initPath" ver="4" value="Valve1"/>
-				<do-trace access-modifier="private" target="Tooltip" ver="4">
-					<body kind="om">
-						<![CDATA[NAME+" "+String.ToString(Group)]]>
-					</body>
-				</do-trace>
 				<designed target="Scale" value="1.5" ver="4"/>
 			</object>
 			<object access-modifier="private" name="ValveDensity" display-name="ValveDensity" uuid="377c7491-bf28-4b60-9dfe-ed7d7da4e1d7" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
@@ -3942,11 +3892,6 @@
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
 				<init target="initPath" ver="4" value="ValveDensity"/>
-				<do-trace access-modifier="private" target="Tooltip" ver="4">
-					<body kind="om">
-						<![CDATA[NAME+" "+String.ToString(Group)]]>
-					</body>
-				</do-trace>
 			</object>
 			<object access-modifier="private" name="ValveSecurity" display-name="ValveSecurity" uuid="9fc17c48-2057-48b6-80f1-60fa92925f25" base-type="valve" base-type-id="98113973-9854-4dd1-9221-2cfccad5aaa0" ver="4">
 				<designed target="X" value="578" ver="4"/>
@@ -3955,11 +3900,6 @@
 				<init target="Color" ver="4" value="0xffffff00"/>
 				<init target="initOPCSource" ver="4" ref="OPCSource"/>
 				<init target="initPath" ver="4" value="ValveSecurity"/>
-				<do-trace access-modifier="private" target="Tooltip" ver="4">
-					<body kind="om">
-						<![CDATA[NAME+" "+String.ToString(Group)]]>
-					</body>
-				</do-trace>
 				<init target="OutInvert" ver="4" value="true"/>
 			</object>
 			<object access-modifier="private" name="PBetween" display-name="PBetween" uuid="bc73b792-76a7-4cb1-bed3-d1ccde033c01" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">

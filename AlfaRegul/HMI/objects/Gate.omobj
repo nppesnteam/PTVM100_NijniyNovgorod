@@ -293,6 +293,22 @@
 		<body kind="om">
 			<![CDATA[mX = TypeConvert.ToFloat(ScreenX(MouseX, MouseY));
 mY = TypeConvert.ToFloat(ScreenY(MouseX, MouseY));
+if (mX+230>1920)
+{
+	posX=mX-(240-(1920-mX));
+}
+else
+{
+	posX=mX;
+}
+if (mY+140>1080)
+{
+	posY=mY-(140-(1080-mY));
+}
+else
+{
+	posY=mY;
+}
 OpenModuleWindow.Invoke();]]>
 		</body>
 	</do-on>
@@ -308,17 +324,17 @@ OpenModuleWindow.Invoke();]]>
 		</do-trace>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Invoked" form-action="open-new" form-by-id="false">
 			<object access-modifier="private" uuid="a428767a-c665-42da-ad06-bfe707ba30af" base-type="Задвижка" base-type-id="59f13389-349d-4b37-8d6e-5c9ed352abbc" ver="4">
+				<init target="refData" ver="4" ref="here"/>
 				<init target="WindowX" ver="4">
 					<expr>
-						<![CDATA[mX]]>
+						<![CDATA[posX]]>
 					</expr>
 				</init>
 				<init target="WindowY" ver="4">
 					<expr>
-						<![CDATA[mY]]>
+						<![CDATA[posY]]>
 					</expr>
 				</init>
-				<init target="refData" ver="4" ref="here"/>
 			</object>
 		</do-on>
 	</object>
@@ -335,5 +351,7 @@ OpenModuleWindow.Invoke();]]>
 		<init target="Source" ver="4" ref="hereOPCSource"/>
 		<init target="Path" ver="4" value="InStop"/>
 	</object>
+	<object access-modifier="private" name="posX" display-name="posX" uuid="396e5ad3-07cc-4eab-ae90-0824618e591e" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
+	<object access-modifier="private" name="posY" display-name="posY" uuid="3dd43969-2ee7-42bd-bb03-423ed7499127" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
 </type>
 

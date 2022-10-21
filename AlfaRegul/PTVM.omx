@@ -9131,9 +9131,10 @@ else
         <parameter name="PO2BurnL" type="float32" direction="in-out" xmlns="automation.control" uuid="eebdfb7f-ed87-4528-9582-df06562520b0" />
         <parameter name="ImpGas" type="float32" direction="in-out" xmlns="automation.control" uuid="708525aa-fa30-42f6-8c6b-003709dc3a0b" />
         <parameter name="ImpO2" type="float32" direction="in-out" xmlns="automation.control" uuid="290ab807-4378-425e-9b6e-07750b9294aa" />
-        <parameter name="ImpDel" type="float32" direction="in-out" xmlns="automation.control" uuid="2a0214bf-6245-456c-85d4-b7ced0eb2a07" />
+        <parameter name="ImpDelO2" type="float32" direction="in-out" xmlns="automation.control" uuid="2a0214bf-6245-456c-85d4-b7ced0eb2a07" />
         <parameter name="PMax" type="float32" direction="in-out" xmlns="automation.control" uuid="81d3c5cc-3c13-4a08-8173-ae91d7af951b" />
         <parameter name="PMin" type="float32" direction="in-out" xmlns="automation.control" uuid="d9e6535c-d0b9-4bb9-99d3-7be8e20c45f7" />
+        <parameter name="ImpDelGas" type="float32" direction="in-out" xmlns="automation.control" uuid="de9122f5-4a10-4fee-95b6-e0f7addf8020" />
       </type>
       <type name="IOS_View" original="ProtectsValueBurn" aspect="Aspects.IOS_Aspect" uuid="d518e931-7e5b-4323-98a7-cfbb13b53a5a">
         <ref name="Reference" type="PLC_View" xmlns="automation.reference" uuid="4b85f0df-a1b8-40ac-bd52-4e04161bff14" />
@@ -9161,14 +9162,14 @@ else
           <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; ServerTime=&quot;True&quot;" xmlns="system" />
         </parameter>
         <bind source="Reference.PO2BurnL" target="OutPO2BurnL" />
-        <parameter name="InImpDel" uuid="75874fc6-7db1-46bf-a828-70962aa0a2db" direction="in" type="float32">
+        <parameter name="InImpDelO2" uuid="75874fc6-7db1-46bf-a828-70962aa0a2db" direction="in" type="float32">
           <attribute type="unit.System.Attributes.Description" value="Минимальная пауза между импульсами" xmlns="system" />
         </parameter>
-        <bind source="InImpDel" target="Reference.ImpDel" />
-        <parameter name="OutImpDel" uuid="50a72270-3111-4dd0-9621-214a057ec609" direction="out" type="float32">
+        <bind source="InImpDelO2" target="Reference.ImpDelO2" />
+        <parameter name="OutImpDelO2" uuid="50a72270-3111-4dd0-9621-214a057ec609" direction="out" type="float32">
           <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; ServerTime=&quot;True&quot;" xmlns="system" />
         </parameter>
-        <bind source="Reference.ImpDel" target="OutImpDel" />
+        <bind source="Reference.ImpDelO2" target="OutImpDelO2" />
         <parameter name="InPMin" uuid="7a8d3605-e7c2-49d1-a3c7-c895476e57ca" direction="in" type="float32">
           <attribute type="unit.System.Attributes.Description" value="Допустимое минимальное давления газа при опрессовке" xmlns="system" />
         </parameter>
@@ -9201,6 +9202,10 @@ else
           <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; ServerTime=&quot;True&quot;" xmlns="system" />
         </parameter>
         <bind source="Reference.ImpO2" target="OutImpO2" />
+        <parameter name="InImpDelGas" uuid="4c6dffb4-ecdd-4611-aba1-b4708304d4ec" direction="in" type="float32" />
+        <bind source="InImpDelGas" target="Reference.ImpDelGas" />
+        <parameter name="OutImpDelGas" uuid="09132c8c-f3f1-44af-9a21-88f9fed2f21b" direction="out" type="float32" />
+        <bind source="Reference.ImpDelGas" target="OutImpDelGas" />
       </type>
     </type>
     <type name="TimeProcesses" xmlns="automation.control" uuid="1892c2da-86ea-4909-a954-63141311dbb1">

@@ -2809,6 +2809,232 @@ OpenBurnSteps.Invoke();]]>
 					</body>
 				</do-trace>
 			</object>
+			<object access-modifier="private" name="lnSpark_1" display-name="lnSpark_1" uuid="3aed1af4-3eb2-44ce-860b-eb172bc829ce" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
+				<designed target="X" value="250" ver="4"/>
+				<designed target="Y" value="565" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="false" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="27.2728" ver="4"/>
+				<designed target="Height" value="27.3636" ver="4"/>
+				<designed target="PenColor" value="0xffffff00" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffff0000" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="07c9c945-a40f-471e-8d26-d3912e12586e" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+				</object>
+				<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="769b4ce9-f91d-4299-97d9-6fd466ed5fa7" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+					<designed target="X" value="-0.2024" ver="4"/>
+					<designed target="Y" value="-27.3636" ver="4"/>
+				</object>
+				<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="f46d1b5b-9208-44ac-bee5-ee3fab92e7b8" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+					<designed target="X" value="11.9188" ver="4"/>
+					<designed target="Y" value="-1.90909" ver="4"/>
+				</object>
+				<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="b64d38db-d8a2-4352-a10f-b4282baf3603" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+					<designed target="X" value="-11.8186" ver="4"/>
+					<designed target="Y" value="-17.0606" ver="4"/>
+				</object>
+				<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="24144d19-81af-4609-a0a6-52f31a449cff" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+					<designed target="X" value="15.4542" ver="4"/>
+					<designed target="Y" value="-17.0606" ver="4"/>
+				</object>
+				<object access-modifier="private" name="Point_6" display-name="Point_6" uuid="0d7d100c-2396-46ec-9c10-850d65ffdbff" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+				</object>
+				<do-trace access-modifier="private" target="Visible" ver="4">
+					<body>
+						<![CDATA[bSpark_1&&here.Group==1]]>
+					</body>
+				</do-trace>
+			</object>
+			<object access-modifier="private" name="lnSpark_2" display-name="lnSpark_2" uuid="d75429ec-370e-4ea4-8a4d-a1fe91494207" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
+				<designed target="X" value="250" ver="4"/>
+				<designed target="Y" value="415" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="false" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="27.2728" ver="4"/>
+				<designed target="Height" value="27.3636" ver="4"/>
+				<designed target="PenColor" value="0xffffff00" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffff0000" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="41d4b64e-f656-4c58-98e1-a8ea55d74f5e" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+				</object>
+				<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="f66d1c8f-ae14-41d4-8f40-6059e0481eba" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+					<designed target="X" value="-0.2024" ver="4"/>
+					<designed target="Y" value="-27.3636" ver="4"/>
+				</object>
+				<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="0021e9aa-84ad-4fe7-8661-55af7ee35fad" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+					<designed target="X" value="11.9188" ver="4"/>
+					<designed target="Y" value="-1.90909" ver="4"/>
+				</object>
+				<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="bba4e4da-4524-4f95-9eac-0b05dce30f72" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+					<designed target="X" value="-11.8186" ver="4"/>
+					<designed target="Y" value="-17.0606" ver="4"/>
+				</object>
+				<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="e971095a-c8c6-451c-b775-a02dbd7748fc" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+					<designed target="X" value="15.4542" ver="4"/>
+					<designed target="Y" value="-17.0606" ver="4"/>
+				</object>
+				<object access-modifier="private" name="Point_6" display-name="Point_6" uuid="8766fc1c-b8b6-4bb7-ab2a-83a3052a1557" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+				</object>
+				<do-trace access-modifier="private" target="Visible" ver="4">
+					<body>
+						<![CDATA[bSpark_2&&here.Group==2]]>
+					</body>
+				</do-trace>
+			</object>
+			<object access-modifier="private" name="lnSpark_3" display-name="lnSpark_3" uuid="bb1267cb-afeb-4a29-9c3a-ff96260df635" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
+				<designed target="X" value="250" ver="4"/>
+				<designed target="Y" value="565" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="false" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="27.2728" ver="4"/>
+				<designed target="Height" value="27.3636" ver="4"/>
+				<designed target="PenColor" value="0xffffff00" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffff0000" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="2476d91d-d894-453d-91b9-615fc7e4fe64" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+				</object>
+				<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="3a2f3c96-932f-4cea-8a17-1a90249be938" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+					<designed target="X" value="-0.2024" ver="4"/>
+					<designed target="Y" value="-27.3636" ver="4"/>
+				</object>
+				<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="77e75daa-83e6-4fbf-9d0b-7a8228c088d8" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+					<designed target="X" value="11.9188" ver="4"/>
+					<designed target="Y" value="-1.90909" ver="4"/>
+				</object>
+				<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="fca5a27f-a4cd-4825-aa10-72895e0d9825" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+					<designed target="X" value="-11.8186" ver="4"/>
+					<designed target="Y" value="-17.0606" ver="4"/>
+				</object>
+				<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="057463da-8ae0-4fd4-a87e-1268a14fb580" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+					<designed target="X" value="15.4542" ver="4"/>
+					<designed target="Y" value="-17.0606" ver="4"/>
+				</object>
+				<object access-modifier="private" name="Point_6" display-name="Point_6" uuid="e850fbe2-db03-4b6a-8432-f89de2243df2" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+				</object>
+				<do-trace access-modifier="private" target="Visible" ver="4">
+					<body>
+						<![CDATA[bSpark_3&&here.Group==3]]>
+					</body>
+				</do-trace>
+			</object>
+			<object access-modifier="private" name="lnSpark_4" display-name="lnSpark_4" uuid="e3166601-36e3-46b1-827b-7d62c11ef63f" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
+				<designed target="X" value="250" ver="4"/>
+				<designed target="Y" value="415" ver="4"/>
+				<designed target="ZValue" value="0" ver="4"/>
+				<designed target="Rotation" value="0" ver="4"/>
+				<designed target="Scale" value="1" ver="4"/>
+				<designed target="Visible" value="false" ver="4"/>
+				<designed target="Opacity" value="1" ver="4"/>
+				<designed target="Enabled" value="true" ver="4"/>
+				<designed target="Tooltip" value="" ver="4"/>
+				<designed target="Width" value="27.2728" ver="4"/>
+				<designed target="Height" value="27.3636" ver="4"/>
+				<designed target="PenColor" value="0xffffff00" ver="4"/>
+				<designed target="PenStyle" value="1" ver="4"/>
+				<designed target="PenWidth" value="1" ver="4"/>
+				<designed target="BrushColor" value="0xffff0000" ver="4"/>
+				<designed target="BrushStyle" value="1" ver="4"/>
+				<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="2e5ed68d-021d-45b1-8c6c-34f06c937103" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+				</object>
+				<object access-modifier="private" name="Point_2" display-name="Point_2" uuid="fd3ddbb8-bcbb-4dbc-bdea-7e9bb243053c" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+					<designed target="X" value="-0.2024" ver="4"/>
+					<designed target="Y" value="-27.3636" ver="4"/>
+				</object>
+				<object access-modifier="private" name="Point_3" display-name="Point_3" uuid="43639037-df0f-4316-9714-67d99613af71" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+					<designed target="X" value="11.9188" ver="4"/>
+					<designed target="Y" value="-1.90909" ver="4"/>
+				</object>
+				<object access-modifier="private" name="Point_4" display-name="Point_4" uuid="22f93f9b-a144-4912-a4eb-4ff36722906a" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+					<designed target="X" value="-11.8186" ver="4"/>
+					<designed target="Y" value="-17.0606" ver="4"/>
+				</object>
+				<object access-modifier="private" name="Point_5" display-name="Point_5" uuid="babdd102-f250-40f1-abed-e8a903b8770a" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+					<designed target="X" value="15.4542" ver="4"/>
+					<designed target="Y" value="-17.0606" ver="4"/>
+				</object>
+				<object access-modifier="private" name="Point_6" display-name="Point_6" uuid="65380f56-3aba-4dd6-ac0f-950ccf05c615" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
+					<designed target="X" value="0" ver="4"/>
+					<designed target="Y" value="0" ver="4"/>
+				</object>
+				<do-trace access-modifier="private" target="Visible" ver="4">
+					<body>
+						<![CDATA[bSpark_4&&here.Group==4]]>
+					</body>
+				</do-trace>
+			</object>
+		</object>
+		<object access-modifier="private" name="SSmoke" display-name="SSmoke" uuid="0fc5f296-65ef-4700-8a8c-b96c96e0b310" base-type="Sens" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
+			<designed target="X" value="593.636" ver="4"/>
+			<designed target="Y" value="161.5" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<init target="EUTextColor" ver="4" value="0xff888888"/>
+			<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
+			<init target="VALUEBrushType" ver="4" value="1"/>
+			<init target="EUBackgroundColor" ver="4" value="0xff000000"/>
+			<init target="EUBrushType" ver="4" value="1"/>
+			<init target="PenType" ver="4" value="1"/>
+			<init target="initPath" ver="4" value="S"/>
+			<init target="initName" ver="4" value="Vac"/>
+			<init target="initOPCSource" ver="4" ref="OpcSource"/>
+		</object>
+		<object access-modifier="private" name="Text_1" display-name="Text_1" uuid="6e4c7780-a881-499d-b965-b86d1d4b6bdc" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
+			<designed target="X" value="576.97" ver="4"/>
+			<designed target="Y" value="123.181" ver="4"/>
+			<designed target="ZValue" value="0" ver="4"/>
+			<designed target="Rotation" value="0" ver="4"/>
+			<designed target="Scale" value="1" ver="4"/>
+			<designed target="Visible" value="true" ver="4"/>
+			<designed target="Opacity" value="1" ver="4"/>
+			<designed target="Enabled" value="true" ver="4"/>
+			<designed target="Tooltip" value="" ver="4"/>
+			<designed target="Width" value="89.8485" ver="4"/>
+			<designed target="Height" value="33.4849" ver="4"/>
+			<designed target="Text" value="Разрежение в топке" ver="4"/>
+			<designed target="Font" value="Arial,10,-1,5,75,0,0,0,0,0,Полужирный" ver="4"/>
+			<designed target="FontColor" value="0xffffffff" ver="4"/>
+			<designed target="TextAlignment" value="132" ver="4"/>
+		</object>
+		<object access-modifier="private" name="OpcSource" display-name="OpcSource" uuid="99633928-6ef4-4e8f-b9ec-61de5ec22aa9" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
+			<designed target="Active" value="false" ver="4"/>
+			<designed target="UpdateRate" value="0" ver="4"/>
+			<designed target="ReAdvise" value="0" ver="4"/>
+			<init target="ParentSource" ver="4" ref="unit.Connections.OpcSource"/>
+			<init target="Path" ver="4" value="ROOT.Smoke"/>
 		</object>
 	</object>
 	<object access-modifier="private" name="StopCounter" display-name="StopCounter" uuid="8daf5a37-f69a-42bb-bc82-f5be51e5d256" base-type="notifying_int4" base-type-id="5ccca629-a45d-46c8-a56c-83ecde8126f7" ver="4"/>
@@ -2823,6 +3049,22 @@ OpenBurnSteps.Invoke();]]>
 	<object access-modifier="private" name="BoilerInWork" display-name="BoilerInWork" uuid="7caa2ab4-ccd6-42e3-9f93-ebe1e255661d" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
 		<init target="Path" ver="4" value="ROOT.Boiler.BoilerInWork"/>
+	</object>
+	<object access-modifier="private" name="bSpark_1" display-name="bSpark_1" uuid="9180db9a-211c-4925-a601-96b0d82deba5" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.Diag.Group1.DO.Module1.Channel27.H"/>
+	</object>
+	<object access-modifier="private" name="bSpark_2" display-name="bSpark_2" uuid="af7b42de-edfd-4a1c-a949-c034e912b38a" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.Diag.Group2.DO.Module1.Channel27.H"/>
+	</object>
+	<object access-modifier="private" name="bSpark_3" display-name="bSpark_3" uuid="b559acc7-99e8-4f43-966b-63c022f225ea" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.Diag.Group3.DO.Module1.Channel27.H"/>
+	</object>
+	<object access-modifier="private" name="bSpark_4" display-name="bSpark_4" uuid="f4eea4db-9941-4d54-a874-a095906863e2" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
+		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
+		<init target="Path" ver="4" value="ROOT.Diag.Group4.DO.Module1.Channel27.H"/>
 	</object>
 </type>
 

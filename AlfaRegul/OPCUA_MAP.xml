@@ -7102,10 +7102,10 @@
     <nodeId>Application.PersistentVars.stSetProt.fImpA</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.AlarmsValue.ProtectsValueBurn.ImpDel</node-path>
+    <node-path>ROOT.AlarmsValue.ProtectsValueBurn.ImpDelO2</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.stSetProt.fPeriodPWM</nodeId>
+    <nodeId>Application.PersistentVars.stSetProt.fPeriodPWMAir</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.AlarmsValue.ProtectsValueBurn.PMax</node-path>
@@ -7118,6 +7118,12 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.PersistentVars.stCtrlGerm.fPmin</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.AlarmsValue.ProtectsValueBurn.ImpDelGas</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.PersistentVars.stSetProt.fPeriodPWMGas</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.AlarmsValue.DelAlarmsBurn.tDelFire</node-path>
@@ -7441,7 +7447,7 @@
     <node-path>ROOT.AlarmsValue.ValueAlarmBoiler.Prot9.Signal</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
-    <nodeId>Application.PersistentVars.stSetProt.fTsmo</nodeId>
+    <nodeId>Application.PersistentVars.stSetProtPre.fTSmoke</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Group1.Burn3.PGas.VALUE</node-path>
