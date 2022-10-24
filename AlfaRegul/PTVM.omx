@@ -8765,7 +8765,7 @@ else
         </parameter>
         <parameter name="AlarmBoilerStop" uuid="c77cf169-eb15-4966-97ae-97209ef5bdda" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Аварийный останов котла кнопкой.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Message":"Аварийный останов котла кнопкой.","Severity":668,"Sound":"alarm.wav","Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Аварийный останов котла кнопкой.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Message":"Аварийный останов котла кнопкой.","Severity":668,"Sound":"alarm.wav","Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmBoilerStop" target="AlarmBoilerStop" />
@@ -8920,7 +8920,7 @@ else
         <bind source="_PLC_View.BoilerInWork" target="BoilerInWork" />
         <parameter name="AlarmBoilerStop" uuid="c4fa878e-6396-4e38-a88a-d490f268de96" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Аварийный останов котла.","Severity":1,"Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Аварийный останов котла.","Severity":668,"Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmBoilerStop" target="AlarmBoilerStop" />
@@ -10094,7 +10094,6 @@ else
         <parameter name="SetProtPaL" type="float32" direction="in-out" xmlns="automation.control" uuid="3b305535-359c-46e3-912c-1a423c0d79ce" />
         <parameter name="SetProtPgH" type="float32" direction="in-out" xmlns="automation.control" uuid="cfb5fd42-3c89-40da-93fc-ecead840bca0" />
         <parameter name="SetProtPgL" type="float32" direction="in-out" xmlns="automation.control" uuid="a6935d71-4bb5-43af-8adf-381853fbc03d" />
-        <parameter name="IgnProgress1" direction="out" type="int32" xmlns="automation.control" uuid="40a78fba-1122-4466-80fb-962ffe684dde" />
       </type>
       <type name="IOS_View" xmlns="automation.control" aspect="Aspects.IOS_Aspect" original="BurnerWork" uuid="4f58a86f-722d-458f-8938-985e384bdfd0">
         <ref name="_PLC_View" type="PLC_View" xmlns="automation.reference" uuid="6f8f0eb6-7989-4b11-8d8d-4fdd83b21308" />
