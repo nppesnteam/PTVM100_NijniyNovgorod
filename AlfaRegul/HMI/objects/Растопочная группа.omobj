@@ -959,7 +959,7 @@ StartBurn.Invoke();]]>
 					<body kind="om">
 						<![CDATA[if (here.Group%2==0)
 {
-	DialText="Остановить горелку №"+String.ToString(Scheme.Group.burn3.BurnNumber)+"?";
+	DialText="Остановить горелку №"+String.ToString(Scheme.Group.burn2.BurnNumber)+"?";
 	StopBurn.Invoke();
 }
 else

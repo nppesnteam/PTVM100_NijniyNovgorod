@@ -8765,7 +8765,7 @@ else
         </parameter>
         <parameter name="AlarmBoilerStop" uuid="c77cf169-eb15-4966-97ae-97209ef5bdda" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Аварийный останов котла кнопкой.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Message":"Аварийный останов котла кнопкой.","Severity":668,"Sound":"alarm.wav","Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Аварийный останов котла кнопкой.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Message":"Аварийный останов котла кнопкой.","Severity":668,"Sound":"alarm.wav","Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmBoilerStop" target="AlarmBoilerStop" />

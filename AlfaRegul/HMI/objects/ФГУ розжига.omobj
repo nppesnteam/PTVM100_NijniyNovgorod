@@ -428,11 +428,11 @@ unit.Global.isFGUOpened=true;]]>
 	</object>
 	<object access-modifier="private" name="GermOk" display-name="GermOk" uuid="0abb5139-c51f-4ba6-b368-94a8abc327d6" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
-		<init target="Path" ver="4" value="ROOT.ALARMS.OtherAlarms.AlarmGermOK"/>
+		<init target="Path" ver="4" value="ROOT.ALARMS.Protect.AlarmGermOK"/>
 	</object>
 	<object access-modifier="private" name="VentOK" display-name="VentOK" uuid="aa8d5c9d-8b4d-411d-abaa-01d2d597bf57" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
-		<init target="Path" ver="4" value="ROOT.ALARMS.OtherAlarms.AlarmVentOK"/>
+		<init target="Path" ver="4" value="ROOT.ALARMS.Protect.AlarmVentOK"/>
 	</object>
 	<object access-modifier="private" name="OutReset" display-name="OutReset" uuid="1cb7a359-a5e8-4f70-b699-8cbb3baa05e4" base-type="OpcItemBool" base-type-id="a9fc4ea9-0a0d-42c7-a17a-009dcf19fe35" ver="4">
 		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
