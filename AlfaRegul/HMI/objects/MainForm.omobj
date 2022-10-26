@@ -777,6 +777,7 @@
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="3" event="MouseClick" form-by-id="false" frame-link="here.MainFrame" form-action="open-in-frame">
 					<object access-modifier="private" uuid="d437977b-fdd7-448c-9a4e-024011eea16c" base-type="Газ" base-type-id="f51061bd-0db8-43c4-a53c-77c2e4c09e04" ver="3">
 						<designed target="WindowPosition" value="0" ver="4"/>
+						<init target="linkMain" ver="4" ref="here"/>
 					</object>
 				</do-on>
 				<do-trace access-modifier="private" target="Enabled" ver="4">
@@ -2175,7 +2176,9 @@ else
 		<designed target="Enabled" value="true" ver="4"/>
 		<designed target="InvokeTrigger" value="false" ver="4"/>
 		<do-on access-modifier="private" name="Handler_2" display-name="Handler_2" ver="4" event="Invoked" frame-link="MainFrame" form-action="open-in-frame" form-by-id="false">
-			<object access-modifier="private" uuid="e0c883d1-4989-4195-8157-fc5394b9fd54" base-type="Газ" base-type-id="f51061bd-0db8-43c4-a53c-77c2e4c09e04" ver="4"/>
+			<object access-modifier="private" uuid="e0c883d1-4989-4195-8157-fc5394b9fd54" base-type="Газ" base-type-id="f51061bd-0db8-43c4-a53c-77c2e4c09e04" ver="4">
+				<init target="linkMain" ver="4" ref="here"/>
+			</object>
 		</do-on>
 		<do-on access-modifier="private" name="Handler_3" display-name="Handler_3" ver="4" event="Invoked" frame-link="TopPanel" form-action="open-in-frame" form-by-id="false">
 			<object access-modifier="private" uuid="27d2e2e7-ef39-4b52-a17b-71d6bc8cce4c" base-type="Алармы" base-type-id="578ca24a-7ad0-4c4b-a4b9-79f340804e42" ver="4"/>

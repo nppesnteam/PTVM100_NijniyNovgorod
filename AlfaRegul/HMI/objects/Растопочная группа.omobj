@@ -592,9 +592,19 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="DisabledPenStyle" value="1" ver="4"/>
 				<designed target="DisabledPenWidth" value="1" ver="4"/>
 				<do-trace access-modifier="private" target="Enabled" ver="4">
-					<body>
-						<![CDATA[!OutIgnStart&&VentOk&&GermOk&&BoilerInWork&&Scheme.Group.burn3.burner.FinalIgnBurn]]>
-					</body>
+					<conditional-expr>
+						<condition>
+							<![CDATA[here.Group%2==0]]>
+						</condition>
+						<expr>
+							<![CDATA[!OutIgnStart&&VentOk&&GermOk&&BoilerInWork]]>
+						</expr>
+					</conditional-expr>
+					<default-expr>
+						<expr>
+							<![CDATA[!OutIgnStart&&VentOk&&GermOk&&BoilerInWork&&Scheme.Group.burn3.burner.FinalIgnBurn]]>
+						</expr>
+					</default-expr>
 				</do-trace>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
 					<body kind="om">
@@ -895,9 +905,19 @@ OpenBurnSteps.Invoke();]]>
 				<designed target="DisabledPenStyle" value="1" ver="4"/>
 				<designed target="DisabledPenWidth" value="1" ver="4"/>
 				<do-trace access-modifier="private" target="Enabled" ver="4">
-					<body>
-						<![CDATA[!OutIgnStart&&VentOk&&GermOk&&BoilerInWork]]>
-					</body>
+					<conditional-expr>
+						<condition>
+							<![CDATA[here.Group%2==0]]>
+						</condition>
+						<expr>
+							<![CDATA[!OutIgnStart&&VentOk&&GermOk&&BoilerInWork&&Scheme.Group.burn3.burner.FinalIgnBurn]]>
+						</expr>
+					</conditional-expr>
+					<default-expr>
+						<expr>
+							<![CDATA[!OutIgnStart&&VentOk&&GermOk&&BoilerInWork]]>
+						</expr>
+					</default-expr>
 				</do-trace>
 				<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
 					<body kind="om">

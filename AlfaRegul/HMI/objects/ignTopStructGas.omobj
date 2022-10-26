@@ -230,6 +230,12 @@
 				<![CDATA[NAME]]>
 			</body>
 		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
+			<body kind="om">
+				<![CDATA[unit.Global.OpenedGroup = Group;
+linkMnemo.linkMain.OpenGroup.Invoke();]]>
+			</body>
+		</do-on>
 	</object>
 	<object access-modifier="private" name="TubeGasIgn" display-name="TubeGasIgn" uuid="0fe37fa0-7d1d-402b-81c3-ddd4a91eea63" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
 		<designed target="X" value="14" ver="4"/>
@@ -493,5 +499,6 @@
 			<![CDATA[burner.BurnNumber.ValueAsString]]>
 		</body>
 	</do-trace>
+	<object access-modifier="private" name="linkMnemo" display-name="linkMnemo" uuid="ed9f417c-438e-4cd7-958b-ac1980dbcf7a" base-type="Общая мнемосхема" base-type-id="f51061bd-0db8-43c4-a53c-77c2e4c09e04" base-const="true" base-ref="true" ver="4"/>
 </type>
 

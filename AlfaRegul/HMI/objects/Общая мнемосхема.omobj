@@ -2595,6 +2595,7 @@
 					</body>
 				</do-trace>
 				<init target="InitPath" ver="4" value="Burn1"/>
+				<init target="linkMnemo" ver="4" ref="here"/>
 			</object>
 			<object access-modifier="private" name="burn2" display-name="burn2" uuid="0fed8e6a-4b6d-4a57-adb4-96aba9ee8500" base-type="burnBotStruct" base-type-id="786ccf73-d011-47bb-b5ef-884fac70c28a" ver="4">
 				<designed target="X" value="400" ver="4"/>
@@ -2607,6 +2608,7 @@
 					</body>
 				</do-trace>
 				<init target="InitPath" ver="4" value="Burn2"/>
+				<init target="linkMnemo" ver="4" ref="here"/>
 			</object>
 			<object access-modifier="private" name="burn3" display-name="burn3" uuid="1dfe7997-4d4a-404e-9cf5-de855ce03c19" base-type="ignBotStruct" base-type-id="77bbc896-40d4-4ab3-8953-e4843c938e7a" ver="4">
 				<designed target="X" value="250" ver="4"/>
@@ -2624,6 +2626,7 @@
 					</body>
 				</do-trace>
 				<init target="InitPath" ver="4" value="Burn3"/>
+				<init target="linkMnemo" ver="4" ref="here"/>
 			</object>
 			<object access-modifier="private" name="burn4" display-name="burn4" uuid="b63d6b37-75b7-4730-97e7-0492625142fb" base-type="burnBotStruct" base-type-id="786ccf73-d011-47bb-b5ef-884fac70c28a" ver="4">
 				<designed target="X" value="100" ver="4"/>
@@ -2636,6 +2639,7 @@
 					</body>
 				</do-trace>
 				<init target="InitPath" ver="4" value="Burn4"/>
+				<init target="linkMnemo" ver="4" ref="here"/>
 			</object>
 			<object access-modifier="private" name="OPCSource" display-name="OPCSource" uuid="a80582e3-2a0b-4eb1-8815-0489676484db" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
 				<designed target="Active" value="false" ver="4"/>
@@ -3011,6 +3015,7 @@
 					</body>
 				</do-trace>
 				<init target="InitPath" ver="4" value="burn1"/>
+				<init target="linkMnemo" ver="4" ref="here"/>
 			</object>
 			<object access-modifier="private" name="burn2" display-name="burn2" uuid="63f063b4-9333-4b5d-a7ba-ecbf5da12fd6" base-type="ignBotStruct" base-type-id="77bbc896-40d4-4ab3-8953-e4843c938e7a" ver="4">
 				<designed target="X" value="400" ver="4"/>
@@ -3028,6 +3033,7 @@
 					</body>
 				</do-trace>
 				<init target="InitPath" ver="4" value="Burn2"/>
+				<init target="linkMnemo" ver="4" ref="here"/>
 			</object>
 			<object access-modifier="private" name="burn3" display-name="burn3" uuid="e69a71e6-7ebf-4281-8698-e69c626ff2f9" base-type="burnBotStruct" base-type-id="786ccf73-d011-47bb-b5ef-884fac70c28a" ver="4">
 				<designed target="X" value="250" ver="4"/>
@@ -3040,6 +3046,7 @@
 					</body>
 				</do-trace>
 				<init target="InitPath" ver="4" value="Burn3"/>
+				<init target="linkMnemo" ver="4" ref="here"/>
 			</object>
 			<object access-modifier="private" name="burn4" display-name="burn4" uuid="e3c19ab9-a75c-4585-abf8-6fe02f711d9e" base-type="burnBotStruct" base-type-id="786ccf73-d011-47bb-b5ef-884fac70c28a" ver="4">
 				<designed target="X" value="100" ver="4"/>
@@ -3052,6 +3059,7 @@
 					</body>
 				</do-trace>
 				<init target="InitPath" ver="4" value="Burn4"/>
+				<init target="linkMnemo" ver="4" ref="here"/>
 			</object>
 			<object access-modifier="private" name="OPCSource" display-name="OPCSource" uuid="98d80ab4-6b77-412d-add9-d2f62836783d" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
 				<designed target="Active" value="false" ver="4"/>
@@ -3419,6 +3427,7 @@
 					</body>
 				</do-trace>
 				<init target="InitPath" ver="4" value="Burn1"/>
+				<init target="linkMnemo" ver="4" ref="here"/>
 			</object>
 			<object access-modifier="private" name="burn2" display-name="burn2" uuid="238f9d22-84d0-46e2-88fe-b52485f20b87" base-type="burnTopStruct" base-type-id="db217da3-5b19-4c08-9357-c27589892127" ver="4">
 				<designed target="X" value="400" ver="4"/>
@@ -3431,6 +3440,7 @@
 					</body>
 				</do-trace>
 				<init target="InitPath" ver="4" value="Burn2"/>
+				<init target="linkMnemo" ver="4" ref="here"/>
 			</object>
 			<object access-modifier="private" name="burn3" display-name="burn3" uuid="1fe49933-685a-47e4-9f91-0921148c40e9" base-type="ignTopStruct" base-type-id="f4c86c1f-2d49-4b68-b807-72500ee8461a" ver="4">
 				<designed target="X" value="250" ver="4"/>
@@ -3448,6 +3458,7 @@
 					</body>
 				</do-trace>
 				<init target="InitPath" ver="4" value="Burn3"/>
+				<init target="linkMnemo" ver="4" ref="here"/>
 			</object>
 			<object access-modifier="private" name="burn4" display-name="burn4" uuid="6814e974-4642-4407-b81f-68724128f055" base-type="burnTopStruct" base-type-id="db217da3-5b19-4c08-9357-c27589892127" ver="4">
 				<designed target="X" value="100" ver="4"/>
@@ -3460,6 +3471,7 @@
 					</body>
 				</do-trace>
 				<init target="InitPath" ver="4" value="Burn4"/>
+				<init target="linkMnemo" ver="4" ref="here"/>
 			</object>
 			<object access-modifier="private" name="OPCSource" display-name="OPCSource" uuid="582dee4b-cd0a-472c-808c-d5f5a03a7f61" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
 				<designed target="Active" value="true" ver="4"/>
@@ -3827,6 +3839,7 @@
 					</body>
 				</do-trace>
 				<init target="InitPath" ver="4" value="burn1"/>
+				<init target="linkMnemo" ver="4" ref="here"/>
 			</object>
 			<object access-modifier="private" name="burn2" display-name="burn2" uuid="abf22ed9-b067-49b2-8628-ea8d8d481d13" base-type="ignTopStruct" base-type-id="f4c86c1f-2d49-4b68-b807-72500ee8461a" ver="4">
 				<designed target="X" value="400" ver="4"/>
@@ -3844,6 +3857,7 @@
 					</body>
 				</do-trace>
 				<init target="InitPath" ver="4" value="Burn2"/>
+				<init target="linkMnemo" ver="4" ref="here"/>
 			</object>
 			<object access-modifier="private" name="burn3" display-name="burn3" uuid="7e76f36e-e884-45ae-bf49-9ea2b370f1d5" base-type="burnTopStruct" base-type-id="db217da3-5b19-4c08-9357-c27589892127" ver="4">
 				<designed target="X" value="250" ver="4"/>
@@ -3856,6 +3870,7 @@
 					</body>
 				</do-trace>
 				<init target="InitPath" ver="4" value="Burn3"/>
+				<init target="linkMnemo" ver="4" ref="here"/>
 			</object>
 			<object access-modifier="private" name="burn4" display-name="burn4" uuid="93c59cf8-836b-4c2d-a951-c32f499632dd" base-type="burnTopStruct" base-type-id="db217da3-5b19-4c08-9357-c27589892127" ver="4">
 				<designed target="X" value="100" ver="4"/>
@@ -3868,6 +3883,7 @@
 					</body>
 				</do-trace>
 				<init target="InitPath" ver="4" value="Burn4"/>
+				<init target="linkMnemo" ver="4" ref="here"/>
 			</object>
 			<object access-modifier="private" name="OPCSource" display-name="OPCSource" uuid="f4f87823-8987-431b-9008-cb0acdc9c309" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
 				<designed target="Active" value="false" ver="4"/>
@@ -6512,5 +6528,6 @@ OpenBlow.Invoke();]]>
 		<init target="Source" ver="4" ref="hereOpcSource"/>
 		<init target="Path" ver="4" value="VentProgress"/>
 	</object>
+	<object access-modifier="private" name="linkMain" display-name="linkMain" uuid="159c9f8c-8d55-4ff7-bdf9-0cd3186a1cb5" base-type="MainForm" base-type-id="c9cad641-8960-46db-9523-43c92084d4a1" base-const="true" base-ref="true" ver="4"/>
 </type>
 

@@ -192,6 +192,12 @@
 				<![CDATA[NAME]]>
 			</body>
 		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
+			<body kind="om">
+				<![CDATA[unit.Global.OpenedGroup = Group;
+linkMnemo.linkMain.OpenGroup.Invoke();]]>
+			</body>
+		</do-on>
 	</object>
 	<object access-modifier="private" name="FlapOil" display-name="FlapOil" uuid="f6ec5dc9-8a88-45bd-8dbf-7f04ab1cc866" base-type="Flap+Mode" base-type-id="b78f6792-0d3a-4088-980d-276c0d3138ee" ver="3">
 		<designed target="X" value="-43" ver="3"/>
@@ -373,5 +379,6 @@
 			<![CDATA[burner.BurnNumber.ValueAsString]]>
 		</body>
 	</do-trace>
+	<object access-modifier="private" name="linkMnemo" display-name="linkMnemo" uuid="a2a25888-8ba0-424a-9db4-e5f37ad1a5b2" base-type="Общая мнемосхема" base-type-id="f51061bd-0db8-43c4-a53c-77c2e4c09e04" base-const="true" base-ref="true" ver="4"/>
 </type>
 

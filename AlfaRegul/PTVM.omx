@@ -120,21 +120,21 @@
                       <attribute type="Attributes.DIGITS" value="1" xmlns="system" />
                       <attribute type="Attributes.EU" value="°C" xmlns="system" />
                       <attribute type="unit.System.Attributes.Title" value="1N820TT01" xmlns="system" />
-                      <attribute type="unit.System.Attributes.Description" value="Температура резервного топлива после диафрагмы" xmlns="system" />
+                      <attribute type="unit.System.Attributes.Description" value="Температура Мазута после диафрагмы" xmlns="system" />
                     </object>
                     <object name="Channel8" aspect="Aspects.PLC_Aspect" base-type="Types.AI.PLC_View" xmlns="automation.control" uuid="14ca0e2c-4800-41d3-9628-54b7357e0a19">
                       <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                       <attribute type="Attributes.DIGITS" value="2" xmlns="system" />
                       <attribute type="Attributes.EU" value="МПа" xmlns="system" />
                       <attribute type="unit.System.Attributes.Title" value="1N820PT01" xmlns="system" />
-                      <attribute type="unit.System.Attributes.Description" value="Давление резервного топлива после диафрагмы" xmlns="system" />
+                      <attribute type="unit.System.Attributes.Description" value="Давление Мазута после диафрагмы" xmlns="system" />
                     </object>
                     <object name="Channel9" aspect="Aspects.PLC_Aspect" base-type="Types.AI.PLC_View" xmlns="automation.control" uuid="46fe2682-f77b-4d6d-b66e-79718f07f4eb">
                       <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                       <attribute type="Attributes.DIGITS" value="2" xmlns="system" />
                       <attribute type="Attributes.EU" value="МПа" xmlns="system" />
                       <attribute type="unit.System.Attributes.Title" value="1N820PT02" xmlns="system" />
-                      <attribute type="unit.System.Attributes.Description" value="Давление резервного топлива после регулирующей заслонкой" xmlns="system" />
+                      <attribute type="unit.System.Attributes.Description" value="Давление Мазута после регулирующей заслонкой" xmlns="system" />
                     </object>
                     <object name="Channel10" aspect="Aspects.PLC_Aspect" base-type="Types.AI.PLC_View" xmlns="automation.control" uuid="971ddf64-19e5-4744-81ed-82f3febb05e6">
                       <attribute type="Attributes.ALIAS" value="T" xmlns="system" />
@@ -169,14 +169,14 @@
                       <attribute type="Attributes.DIGITS" value="1" xmlns="system" />
                       <attribute type="Attributes.EU" value="°C" xmlns="system" />
                       <attribute type="unit.System.Attributes.Title" value="1N130TT01" xmlns="system" />
-                      <attribute type="unit.System.Attributes.Description" value="Температура теплоносителя перед котлом" xmlns="system" />
+                      <attribute type="unit.System.Attributes.Description" value="Температура Воды перед котлом" xmlns="system" />
                     </object>
                     <object name="Channel15" aspect="Aspects.PLC_Aspect" base-type="Types.AI.PLC_View" xmlns="automation.control" uuid="fb838e33-97fb-49ab-b3ac-e4eee58e765f">
                       <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                       <attribute type="Attributes.DIGITS" value="2" xmlns="system" />
                       <attribute type="Attributes.EU" value="МПа" xmlns="system" />
                       <attribute type="unit.System.Attributes.Title" value="1N130PT01" xmlns="system" />
-                      <attribute type="unit.System.Attributes.Description" value="Давление теплоносителя перед котлом" xmlns="system" />
+                      <attribute type="unit.System.Attributes.Description" value="Давление Воды перед котлом" xmlns="system" />
                     </object>
                     <object name="Channel16" aspect="Aspects.PLC_Aspect" base-type="Types.AI.PLC_View" xmlns="automation.control" uuid="c0885150-8d5e-4e4f-a6e5-f281744d0831">
                       <attribute type="Attributes.ALIAS" xmlns="system" value=" " />
@@ -192,28 +192,28 @@
                       <attribute type="Attributes.DIGITS" value="1" xmlns="system" />
                       <attribute type="Attributes.EU" value="°C" xmlns="system" />
                       <attribute type="unit.System.Attributes.Title" value="1N131TT01" xmlns="system" />
-                      <attribute type="unit.System.Attributes.Description" value="Температура теплоносителя после котла 1" xmlns="system" />
+                      <attribute type="unit.System.Attributes.Description" value="Температура Воды после котла 1" xmlns="system" />
                     </object>
                     <object name="Channel2" aspect="Aspects.PLC_Aspect" base-type="Types.AI.PLC_View" xmlns="automation.control" uuid="cf0d1118-5297-4df0-9819-baf10d4cfb12">
                       <attribute type="Attributes.ALIAS" value="T" xmlns="system" />
                       <attribute type="Attributes.DIGITS" value="1" xmlns="system" />
                       <attribute type="Attributes.EU" value="°C" xmlns="system" />
                       <attribute type="unit.System.Attributes.Title" value="1N131TT02" xmlns="system" />
-                      <attribute type="unit.System.Attributes.Description" value="Температура теплоносителя после котла 2" xmlns="system" />
+                      <attribute type="unit.System.Attributes.Description" value="Температура Воды после котла 2" xmlns="system" />
                     </object>
                     <object name="Channel3" aspect="Aspects.PLC_Aspect" base-type="Types.AI.PLC_View" xmlns="automation.control" uuid="2f9c9302-f08c-4319-91a8-e30d773eb6c6">
                       <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                       <attribute type="Attributes.DIGITS" value="2" xmlns="system" />
                       <attribute type="Attributes.EU" value="МПа" xmlns="system" />
                       <attribute type="unit.System.Attributes.Title" value="1N131PT01" xmlns="system" />
-                      <attribute type="unit.System.Attributes.Description" value="Давление теплоносителя после котла 1" xmlns="system" />
+                      <attribute type="unit.System.Attributes.Description" value="Давление Воды после котла 1" xmlns="system" />
                     </object>
                     <object name="Channel4" aspect="Aspects.PLC_Aspect" base-type="Types.AI.PLC_View" xmlns="automation.control" uuid="67d69da9-f882-4f4e-b70c-4446f2654016">
                       <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                       <attribute type="Attributes.DIGITS" value="2" xmlns="system" />
                       <attribute type="Attributes.EU" value="МПа" xmlns="system" />
                       <attribute type="unit.System.Attributes.Title" value="1N131PT02" xmlns="system" />
-                      <attribute type="unit.System.Attributes.Description" value="Давление теплоносителя после котла 2" xmlns="system" />
+                      <attribute type="unit.System.Attributes.Description" value="Давление Воды после котла 2" xmlns="system" />
                     </object>
                     <object name="Channel5" aspect="Aspects.PLC_Aspect" base-type="Types.AI.PLC_View" xmlns="automation.control" uuid="cfa591f9-475e-4cd8-95c1-a445500895c1">
                       <attribute type="Attributes.ALIAS" value=" " xmlns="system" />
@@ -234,7 +234,7 @@
                       <attribute type="Attributes.DIGITS" value="0" xmlns="system" />
                       <attribute type="Attributes.EU" value="%" xmlns="system" />
                       <attribute type="unit.System.Attributes.Title" value="1N815MA01" xmlns="system" />
-                      <attribute type="unit.System.Attributes.Description" value="Датчик положения МЭО регулирующей заслонки резервного топлива" xmlns="system" />
+                      <attribute type="unit.System.Attributes.Description" value="Датчик положения МЭО регулирующей заслонки Мазута" xmlns="system" />
                     </object>
                     <object name="Channel8" aspect="Aspects.PLC_Aspect" base-type="Types.AI.PLC_View" xmlns="automation.control" uuid="242e4c0b-01ff-450b-bf91-11dbda6f6cde">
                       <attribute type="Attributes.ALIAS" value=" " xmlns="system" />
@@ -337,67 +337,67 @@
                     </object>
                     <object name="Channel9" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="67e1f079-db61-40e8-92a6-df06c5b0b8ad">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815S01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка резервного топлива перед котлом (не откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка Мазута перед котлом (не откр.)" />
                     </object>
                     <object name="Channel10" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="bd3bf392-ab7e-40c5-98fd-0fcbb7c6a395">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815S01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка резервного топлива перед котлом (не закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка Мазута перед котлом (не закр.)" />
                     </object>
                     <object name="Channel11" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="076b4992-8b49-40ce-9fd9-8aa13e52a830">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815S01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка резервного топлива перед котлом (откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка Мазута перед котлом (откр.)" />
                     </object>
                     <object name="Channel12" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="9a0c240b-dc0a-4288-a8d8-7742784adc3d">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815S01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка резервного топлива перед котлом (закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка Мазута перед котлом (закр.)" />
                     </object>
                     <object name="Channel13" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="b32d84f6-2c64-4334-81d7-2c11bedebcdb">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N130S01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка теплоносителя перед котлом (не откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка Воды перед котлом (не откр.)" />
                     </object>
                     <object name="Channel14" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="e2ac7f9d-2e3c-406f-823c-54e8bd0e55ed">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N130S01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка теплоносителя перед котлом (не закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка Воды перед котлом (не закр.)" />
                     </object>
                     <object name="Channel15" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="aa89db23-34e0-47d2-a095-7fded1513379">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N130S01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка теплоносителя перед котлом (откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка Воды перед котлом (откр.)" />
                     </object>
                     <object name="Channel16" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="dccea657-34c8-4548-b422-193d5c56002f">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N130S01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка теплоносителя перед котлом (закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка Воды перед котлом (закр.)" />
                     </object>
                     <object name="Channel17" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="f940f105-fd7b-4ef1-b29c-fe1116adcadd">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N131S01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка теплоносителя в обход котла (не откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка Воды в обход котла (не откр.)" />
                     </object>
                     <object name="Channel18" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="be76c4d4-fdbe-4202-8065-a313002df8ff">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N131S01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка теплоносителя в обход котла (не закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка Воды в обход котла (не закр.)" />
                     </object>
                     <object name="Channel19" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="a104de23-6944-4774-bc3b-ddf7b60b07d1">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N131S01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка теплоносителя в обход котла (откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка Воды в обход котла (откр.)" />
                     </object>
                     <object name="Channel20" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="fb2b4d2e-f7e9-4f11-b615-302b52fc2fe3">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N131S01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка теплоносителя в обход котла (закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка Воды в обход котла (закр.)" />
                     </object>
                     <object name="Channel21" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="3cfee283-7869-4e64-9db7-71fdfb7115b1">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N132S01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка теплоносителя после котла (не откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка Воды после котла (не откр.)" />
                     </object>
                     <object name="Channel22" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="391158a8-34e3-45ef-a16c-f56aaef23ad6">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N132S01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка теплоносителя после котла (не закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка Воды после котла (не закр.)" />
                     </object>
                     <object name="Channel23" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="5e525a89-ad1e-4fe3-ab03-5966dd57421b">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N132S01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка теплоносителя после котла (откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка Воды после котла (откр.)" />
                     </object>
                     <object name="Channel24" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="2938b74f-838d-42a4-82c5-7b0f39f675a6">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N132S01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка теплоносителя после котла (закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка Воды после котла (закр.)" />
                     </object>
                     <object name="Channel25" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="7806d90b-090a-4b9d-8c93-e485dbb8507b">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N460MA01" />
@@ -409,11 +409,11 @@
                     </object>
                     <object name="Channel27" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="122fc6c8-e656-4d46-a0b1-8d2af00551b1">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Регулятор резервного топлива перед котлом (откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Регулятор Мазута перед котлом (откр.)" />
                     </object>
                     <object name="Channel28" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="830009c7-3984-4141-9556-cac14c295298">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Регулятор резервного топлива перед котлом (закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Регулятор Мазута перед котлом (закр.)" />
                     </object>
                     <object name="Channel29" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="b2b1646b-1b9f-4eb5-b5e9-f51fe603add1">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N400MA01" />
@@ -455,11 +455,11 @@
                     </object>
                     <object name="Channel4" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="ceec5786-c2ee-4e3e-ab9b-d83a1fc3e9ca">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815S03" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="ПЗК резервного топлива (откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="ПЗК Мазута (откр.)" />
                     </object>
                     <object name="Channel5" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="85dad974-a1c0-4c3f-a683-0de430c2ef2c">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815S03" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="ПЗК резервного топлива (закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="ПЗК Мазута (закр.)" />
                     </object>
                     <object name="Channel6" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="abac6f7c-7244-431c-9bb7-ed810867dd45">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N001BE01" />
@@ -551,7 +551,7 @@
                     </object>
                     <object name="Channel28" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="f76c2ad6-f7e1-4544-8b16-fd8b6936264d">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="SB4" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Ручн/Авт&quot; регулятора рез. топлива" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Ручн/Авт&quot; регулятора Мазута" />
                     </object>
                     <object name="Channel29" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="6c5fd3f4-f2cd-4309-ba30-016c329167ec">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="SB5" />
@@ -581,11 +581,11 @@
                   <object name="Module3" xmlns="automation.control" uuid="1a8eb40f-05d4-4629-b187-b9d4f467e8f7">
                     <object name="Channel1" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" uuid="410fca6b-10ce-4f59-8ade-24438b47c448">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="SB9" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Больше&quot; регулятора рез. топлива" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Больше&quot; регулятора Мазута" />
                     </object>
                     <object name="Channel2" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="996ec6a8-64e6-4c72-8cf9-533178c3a4af">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="SB10" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Меньше&quot; регулятора рез. топлива" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Меньше&quot; регулятора Мазута" />
                     </object>
                     <object name="Channel3" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="93b4e581-a643-4e58-85a3-55752a042cea">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="SB11" />
@@ -629,51 +629,51 @@
                     </object>
                     <object name="Channel13" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="63e5e789-93bc-4936-b268-27c46cf7f971">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="SB21" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Открыть&quot; задвижки рез. топлива" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Открыть&quot; задвижки Мазута" />
                     </object>
                     <object name="Channel14" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="8f760116-e297-4ca7-aa66-b272103ae816">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="SB22" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Стоп&quot; задвижки рез. топлива" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Стоп&quot; задвижки Мазута" />
                     </object>
                     <object name="Channel15" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="16e51a2f-8761-4ee1-86d9-a4249fd1a49b">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="SB23" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Закрыть&quot; задвижки рез. топлива" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Закрыть&quot; задвижки Мазута" />
                     </object>
                     <object name="Channel16" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="13798f6f-1abe-4087-8c39-216660c9f1e9">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="SB24" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Открыть&quot; задвижки теплоносителя перед котлом" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Открыть&quot; задвижки Воды перед котлом" />
                     </object>
                     <object name="Channel17" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="c21cf5fc-f391-403c-80c8-0fac1f2ad38f">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="SB25" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Стоп&quot; задвижки теплоносителя перед котлом" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Стоп&quot; задвижки Воды перед котлом" />
                     </object>
                     <object name="Channel18" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="e2fb9b12-3999-4659-91f2-eaae03d6db97">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="SB26" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Закрыть&quot; задвижки теплоносителя перед котлом" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Закрыть&quot; задвижки Воды перед котлом" />
                     </object>
                     <object name="Channel19" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="211ba70a-35e9-4ef6-a64a-e6ce381f8458">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="SB27" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Открыть&quot; задвижки теплоносителя перед котлом" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Открыть&quot; задвижки Воды перед котлом" />
                     </object>
                     <object name="Channel20" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="d18bca57-167c-41b2-9466-9d20f2831bfe">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="SB28" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Стоп&quot; задвижки теплоносителя в обход котла" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Стоп&quot; задвижки Воды в обход котла" />
                     </object>
                     <object name="Channel21" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="6a1e5c04-6874-4104-9de6-9f94273fada7">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="SB29" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Закрыть&quot; задвижки теплоносителя в обход котла" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Закрыть&quot; задвижки Воды в обход котла" />
                     </object>
                     <object name="Channel22" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="49a79092-e272-49c2-8e9f-eb6fd40f66ab">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="SB30" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Открыть&quot; задвижки теплоносителя после котла" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Открыть&quot; задвижки Воды после котла" />
                     </object>
                     <object name="Channel23" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="c08a5c5b-6f1a-434b-bc29-51db31ef0188">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="SB31" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Стоп&quot; задвижки теплоносителя после котла" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Стоп&quot; задвижки Воды после котла" />
                     </object>
                     <object name="Channel24" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="ee827e57-e713-4e6b-aaf5-d6d167563472">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="SB32" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Закрыть&quot; задвижки теплоносителя после котла" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кнопка &quot;Закрыть&quot; задвижки Воды после котла" />
                     </object>
                     <object name="Channel25" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="89a75191-62c1-4786-8335-8987cb36833d">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
@@ -737,35 +737,35 @@
                     </object>
                     <object name="Channel5" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="1d864800-7d83-4bd7-a68f-5883c8f60ef9">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815S01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка резервного топлива перед котлом (откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка Мазута перед котлом (откр.)" />
                     </object>
                     <object name="Channel6" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="f9710153-a886-4f9f-90cc-0fd68ace99be">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815S01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка резервного топлива перед котлом (закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка Мазута перед котлом (закр.)" />
                     </object>
                     <object name="Channel7" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="0cdbe8c1-2253-45d3-8d27-1a39c10b68ec">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N130S01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка теплоносителя перед котлом (откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка Воды перед котлом (откр.)" />
                     </object>
                     <object name="Channel8" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="c20144d8-482a-4254-918e-bb03fa159746">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N130S01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка теплоносителя перед котлом (закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка Воды перед котлом (закр.)" />
                     </object>
                     <object name="Channel9" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="0e3379f9-4308-47f0-9f3d-4da9577c907a">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N131S01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка теплоносителя в обход котла (откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка Воды в обход котла (откр.)" />
                     </object>
                     <object name="Channel10" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="fcb135c4-7882-406a-acef-493dba5ebfd5">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N131S01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка теплоносителя в обход котла (закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка Воды в обход котла (закр.)" />
                     </object>
                     <object name="Channel11" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="72ba9081-6d6a-4a92-9d25-979b2864c8e3">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N132S01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка теплоносителя после котла (откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка Воды после котла (откр.)" />
                     </object>
                     <object name="Channel12" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="04c2edac-e592-41be-b09a-de0d6fc2a7a8">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N132S01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка теплоносителя после котла (закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка Воды после котла (закр.)" />
                     </object>
                     <object name="Channel13" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="04d8e02f-79ce-46eb-a813-a4c1da27b773">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N460MA01" />
@@ -777,11 +777,11 @@
                     </object>
                     <object name="Channel15" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="671f3338-8893-41ab-9ea4-482f5136485e">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Регулятор резервного топлива перед котлом (откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Регулятор Мазута перед котлом (откр.)" />
                     </object>
                     <object name="Channel16" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="1fc047ec-9cda-41b0-ba64-8cd8ad3c408d">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Регулятор резервного топлива перед котлом (закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Регулятор Мазута перед котлом (закр.)" />
                     </object>
                     <object name="Channel17" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="a76deabc-4a5d-4cd6-9cbb-47dfe4b90bb4">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N400MA01" />
@@ -813,7 +813,7 @@
                     </object>
                     <object name="Channel24" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="04253111-2cd2-42f0-a5f0-aaa084fb8b9a">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815S03" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК рез. топлива (откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Клапан ПЗК Мазута (откр.)" />
                     </object>
                     <object name="Channel25" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="d257f3df-91d1-4ad3-b5ea-26f145ca7d85">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
@@ -971,7 +971,7 @@
                     </object>
                     <object name="Channel30" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="320ad2d5-9611-4a9b-b492-ffa539bdbf27">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Подсветка кнопки &quot;Автомат&quot; регулятора рез. топлива" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Подсветка кнопки &quot;Автомат&quot; регулятора Мазута" />
                     </object>
                     <object name="Channel31" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="71acc51a-d1cf-4d41-a0f8-deee23cebacb">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
@@ -1181,35 +1181,35 @@
                     </object>
                     <object name="Channel19" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="1d34a79e-0df7-4046-9609-2c176e9bac38">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №1 (не откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №1 (не откр.)" />
                     </object>
                     <object name="Channel20" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="09aa6e88-3340-4dc2-937a-6344a2766e3f">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №1 (не закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №1 (не закр.)" />
                     </object>
                     <object name="Channel21" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="53d3f5e6-c49b-42b5-b5d1-0c845f069701">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA02" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №2 (не откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №2 (не откр.)" />
                     </object>
                     <object name="Channel22" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="caf04b44-a3a1-46df-bfcb-a4b4d166a920">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA02" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №2 (не закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №2 (не закр.)" />
                     </object>
                     <object name="Channel23" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="18053181-f14b-4145-9978-0d2800e7c782">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA03" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №3 (не откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №3 (не откр.)" />
                     </object>
                     <object name="Channel24" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="0865dd09-f929-4233-9337-1784a0ce0aff">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA03" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №3 (не закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №3 (не закр.)" />
                     </object>
                     <object name="Channel25" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="dedd87fa-653f-49d5-8a97-af535c1a0ae7">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA04" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №4 (не откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №4 (не откр.)" />
                     </object>
                     <object name="Channel26" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="83d20ab7-6898-4752-b880-12de7f1c4828">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA04" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №4 (не закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №4 (не закр.)" />
                     </object>
                     <object name="Channel27" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="6d0360b2-331a-4182-bf81-48b0ce5b612d">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N341D01" />
@@ -1247,19 +1247,19 @@
                   <object name="Module2" xmlns="automation.control" uuid="24c29108-ab6d-4e8a-9269-6aa803790c72">
                     <object name="Channel1" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" uuid="aea0d062-206c-4e6b-b8b0-3057ed927993">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №1 (авт.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №1 (авт.)" />
                     </object>
                     <object name="Channel2" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="dd280317-a414-40f9-b3c8-691caa4ed539">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA02" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №2 (авт.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №2 (авт.)" />
                     </object>
                     <object name="Channel3" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="41389b88-40f8-41a6-87b0-bb2e4d63515b">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA03" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №3 (авт.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №3 (авт.)" />
                     </object>
                     <object name="Channel4" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="300174cb-9a38-4ec2-a8a7-802ee6d69306">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA04" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №4 (авт.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №4 (авт.)" />
                     </object>
                     <object name="Channel5" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="8d95f122-2073-4faa-847d-d6911a6c0743">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
@@ -1459,35 +1459,35 @@
                     </object>
                     <object name="Channel19" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="a9e36498-651e-4d3b-add2-c4b13b1c6c4f">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №1 (откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №1 (откр.)" />
                     </object>
                     <object name="Channel20" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="6634890d-231d-4f4a-8def-f31767209890">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA01" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №1 (закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №1 (закр.)" />
                     </object>
                     <object name="Channel21" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="aa496d4b-d1c2-4948-a1dc-0b53c93fb4ec">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA02" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №2 (откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №2 (откр.)" />
                     </object>
                     <object name="Channel22" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="29886033-0d99-451b-90c9-23330e72783f">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA02" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №2 (закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №2 (закр.)" />
                     </object>
                     <object name="Channel23" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="f9993b92-6a63-4e7f-88df-57753d939eb4">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA03" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №3 (откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №3 (откр.)" />
                     </object>
                     <object name="Channel24" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="8d0511cd-0464-4590-8d88-e7fb447b514c">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA03" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №3 (закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №3 (закр.)" />
                     </object>
                     <object name="Channel25" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="d8a35c38-6eff-48ff-8a20-050ace224921">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA04" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №4 (откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №4 (откр.)" />
                     </object>
                     <object name="Channel26" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="0f8be9fb-2f7b-475f-918c-078a891340c2">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA04" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №4 (закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №4 (закр.)" />
                     </object>
                     <object name="Channel27" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="3abe822e-ef64-4071-afe2-ec3a4d53657e">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1TV1" />
@@ -1713,35 +1713,35 @@
                     </object>
                     <object name="Channel19" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="c24c04fa-88da-40aa-bf76-7da8e4d668d4">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA05" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №5 (не откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №5 (не откр.)" />
                     </object>
                     <object name="Channel20" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="ca3aec57-c779-444f-a3f5-e1ca9bcc9c0a">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA05" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №5 (не закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №5 (не закр.)" />
                     </object>
                     <object name="Channel21" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="c62dbfb3-8642-4ff0-9edb-2b801c0d4575">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA06" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №6 (не откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №6 (не откр.)" />
                     </object>
                     <object name="Channel22" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="30ca446a-01f8-4868-a8ab-bda55625e0e8">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA06" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №6 (не закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №6 (не закр.)" />
                     </object>
                     <object name="Channel23" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="4bd5fdf0-fa62-47a4-9291-58ce6079d11e">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA07" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №7 (не откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №7 (не откр.)" />
                     </object>
                     <object name="Channel24" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="4d85132b-d510-46c5-926c-9a4c4b72070f">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA07" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №7 (не закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №7 (не закр.)" />
                     </object>
                     <object name="Channel25" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="ef1b7cbb-625e-441c-ba4d-969795d84222">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA08" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №8 (не откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №8 (не откр.)" />
                     </object>
                     <object name="Channel26" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="813b9f09-ec3a-4565-8059-1acf9e45cfdf">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA08" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №8 (не закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №8 (не закр.)" />
                     </object>
                     <object name="Channel27" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="60578301-b214-4145-8e21-e86756358da8">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N342D01" />
@@ -1779,19 +1779,19 @@
                   <object name="Module2" xmlns="automation.control" uuid="c66511f0-7ef4-44f6-889f-dcf794b8041a">
                     <object name="Channel1" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" uuid="0179335b-b00b-460f-8ac1-c2e63c20a7c0">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA05" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №5 (авт.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №5 (авт.)" />
                     </object>
                     <object name="Channel2" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="4edc4a6b-f9cd-4619-8c04-b40fb07f5a36">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA06" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №6 (авт.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №6 (авт.)" />
                     </object>
                     <object name="Channel3" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="a4af0009-7505-4781-b605-0f8eef6df2c4">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA07" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №7 (авт.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №7 (авт.)" />
                     </object>
                     <object name="Channel4" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="a7595074-de38-4d16-91ce-7ea5c8180f6c">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA08" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №8 (авт.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №8 (авт.)" />
                     </object>
                     <object name="Channel5" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="055f1967-5147-4c13-a7fc-4326c56cbcf9">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
@@ -1991,35 +1991,35 @@
                     </object>
                     <object name="Channel19" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="8335a1f0-eb7c-4008-bd88-9b179efa80df">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA05" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №5 (откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №5 (откр.)" />
                     </object>
                     <object name="Channel20" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="2d8ec585-b25c-4554-ab1d-678fcbcdacb1">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA05" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №5 (закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №5 (закр.)" />
                     </object>
                     <object name="Channel21" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="28b698b7-8556-4954-be23-5ff9146d8896">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA06" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №6 (откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №6 (откр.)" />
                     </object>
                     <object name="Channel22" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="8c60118b-950a-4269-b9d5-8e9929ce2fa2">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA06" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №6 (закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №6 (закр.)" />
                     </object>
                     <object name="Channel23" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="03ab28c3-0cbb-470b-9d19-338367ae6e97">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA07" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №7 (откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №7 (откр.)" />
                     </object>
                     <object name="Channel24" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="c90b24a6-2b1e-4c07-8dcb-fefca5eb2ff5">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA07" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №7 (закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №7 (закр.)" />
                     </object>
                     <object name="Channel25" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="b4211876-72aa-466f-8a0c-dd24a09160f5">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA08" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №8 (откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №8 (откр.)" />
                     </object>
                     <object name="Channel26" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="f21b026c-7868-441d-a54d-89bf4501c32e">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA08" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №8 (закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №8 (закр.)" />
                     </object>
                     <object name="Channel27" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="6fa43a7b-6cb8-41e9-93ed-b10552a20dd5">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1TV2" />
@@ -2245,35 +2245,35 @@
                     </object>
                     <object name="Channel19" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="86804234-56ae-49bb-8a22-be7a2a979d4e">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA09" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №9 (не откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №9 (не откр.)" />
                     </object>
                     <object name="Channel20" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="f4efe89e-581e-4955-aa5c-f6e762eae1a2">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA09" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №9 (не закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №9 (не закр.)" />
                     </object>
                     <object name="Channel21" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="ddd6b9ce-69c9-4661-82fc-15610326309c">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA10" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №10 (не откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №10 (не откр.)" />
                     </object>
                     <object name="Channel22" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="3fe166e5-7000-4479-b6c6-9e39102de275">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA10" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №10 (не закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №10 (не закр.)" />
                     </object>
                     <object name="Channel23" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="5aa33fcf-69cb-49b1-a7eb-f4c2ad119b25">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA11" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №11 (не откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №11 (не откр.)" />
                     </object>
                     <object name="Channel24" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="d3c70078-e32b-4c89-8903-15dcb0e1084a">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA11" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №11 (не закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №11 (не закр.)" />
                     </object>
                     <object name="Channel25" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="78d5d3b8-f099-44b5-b195-ad6819ab9c4f">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA12" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №12 (не откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №12 (не откр.)" />
                     </object>
                     <object name="Channel26" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="e7dc61e7-21af-4481-8e18-8f17599979f3">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA12" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №12 (не закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №12 (не закр.)" />
                     </object>
                     <object name="Channel27" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="dbae8e26-307a-4167-ba4a-685d261e3fdd">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N343D01" />
@@ -2311,19 +2311,19 @@
                   <object name="Module2" xmlns="automation.control" uuid="49080210-4bca-4ded-aa62-cb11b53bafb9">
                     <object name="Channel1" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" uuid="902f0def-17d9-4b0f-b432-a27d2a86378d">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA09" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №9 (авт.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №9 (авт.)" />
                     </object>
                     <object name="Channel2" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="8b39c808-811d-40a0-839a-f90e59f068f9">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA10" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №10 (авт.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №10 (авт.)" />
                     </object>
                     <object name="Channel3" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="497a8249-d46d-40c4-8e1c-d2cc2934dd26">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA11" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №11 (авт.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №11 (авт.)" />
                     </object>
                     <object name="Channel4" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="dad505ed-f9c9-4319-b5a0-fb823d9ddd70">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA12" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №12 (авт.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №12 (авт.)" />
                     </object>
                     <object name="Channel5" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="5bddeead-9c4e-46e0-b4c9-d9c39382549f">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
@@ -2523,35 +2523,35 @@
                     </object>
                     <object name="Channel19" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="a88b4519-ff4c-4fd9-85b7-76d5e467a51b">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA09" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №9 (откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №9 (откр.)" />
                     </object>
                     <object name="Channel20" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="a907afe3-c64b-44eb-9c08-6347c3095f5a">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA09" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №9 (закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №9 (закр.)" />
                     </object>
                     <object name="Channel21" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="20b91780-e5fb-408d-800b-e2c13b838ae2">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA10" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №10 (откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №10 (откр.)" />
                     </object>
                     <object name="Channel22" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="4dfdfae5-b286-4716-9173-b7e5b30faacc">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA10" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №10 (закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №10 (закр.)" />
                     </object>
                     <object name="Channel23" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="2cbfb4db-fece-478e-88ef-1567d5695240">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA11" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №11 (откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №11 (откр.)" />
                     </object>
                     <object name="Channel24" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="bed130b5-e82c-4c0f-8ec2-a9276ffce272">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA11" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №11 (закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №11 (закр.)" />
                     </object>
                     <object name="Channel25" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="05db9914-56bd-47be-bd77-1cb3a5cd7e08">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA12" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №12 (откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №12 (откр.)" />
                     </object>
                     <object name="Channel26" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="55d8dcfb-faba-485a-912c-51c4c4935a19">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA12" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №12 (закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №12 (закр.)" />
                     </object>
                     <object name="Channel27" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="3d6d1fc1-5d1c-4eee-991b-86c9d6124979">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1TV3" />
@@ -2777,35 +2777,35 @@
                     </object>
                     <object name="Channel19" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="48d84dc3-bcc9-4621-bcde-6a7cf2d9c5b4">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA13" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №13 (не откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №13 (не откр.)" />
                     </object>
                     <object name="Channel20" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="daf9a309-d598-4bde-aafa-bc0d57df294a">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA13" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №13 (не закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №13 (не закр.)" />
                     </object>
                     <object name="Channel21" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="eed8b5d4-f071-4bbe-8146-ca7afa2fb25d">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA14" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №14 (не откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №14 (не откр.)" />
                     </object>
                     <object name="Channel22" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="0868017e-e58d-4a7d-b790-3f334c3120f0">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA14" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №14 (не закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №14 (не закр.)" />
                     </object>
                     <object name="Channel23" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="a113ad5e-8ed8-44eb-acf9-0e46b957cd32">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA15" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №15 (не откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №15 (не откр.)" />
                     </object>
                     <object name="Channel24" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="6578b184-d3dc-4fcd-8b43-cc7f456ef5e9">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA15" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №15 (не закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №15 (не закр.)" />
                     </object>
                     <object name="Channel25" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="e18e42a0-1d81-4c4b-b830-64a225470b30">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA16" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №16 (не откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №16 (не откр.)" />
                     </object>
                     <object name="Channel26" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="514cbdb3-5601-45f9-bb98-df487591573d">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA16" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №16 (не закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №16 (не закр.)" />
                     </object>
                     <object name="Channel27" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="e210cfa5-1d93-4b26-8af9-2fbef9fe75a5">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N344D01" />
@@ -2843,19 +2843,19 @@
                   <object name="Module2" xmlns="automation.control" uuid="327b886c-9aea-4ad9-bef5-37fba4c04ce6">
                     <object name="Channel1" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" uuid="6c923c4d-0441-4b33-ab92-46c863da4cc1">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA13" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №13 (авт.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №13 (авт.)" />
                     </object>
                     <object name="Channel2" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="cfddcf5d-a225-486d-87c2-f17d6cd6688f">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA14" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №14 (авт.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №14 (авт.)" />
                     </object>
                     <object name="Channel3" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="070a7496-6899-4387-8464-f68b7849ea65">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA15" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №15 (авт.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №15 (авт.)" />
                     </object>
                     <object name="Channel4" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="0116cf6d-0081-41cf-bbb4-3908f340322a">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA16" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №16 (авт.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №16 (авт.)" />
                     </object>
                     <object name="Channel5" aspect="Aspects.PLC_Aspect" base-type="Types.DI.PLC_View" xmlns="automation.control" uuid="7d9763b5-835a-46b4-b670-e0d616fd8225">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
@@ -3055,35 +3055,35 @@
                     </object>
                     <object name="Channel19" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="6d7b1c95-df37-4dc6-a523-44ae3e83f3c6">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA13" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №13 (откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №13 (откр.)" />
                     </object>
                     <object name="Channel20" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="f49e7f86-ba03-420d-b6d2-21c261255daa">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA13" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №13 (закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №13 (закр.)" />
                     </object>
                     <object name="Channel21" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="dd8e5fed-5b68-4747-84f7-a860507cb338">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA14" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №14 (откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №14 (откр.)" />
                     </object>
                     <object name="Channel22" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="625edb07-7acf-4b7f-ba04-25b485fdcd31">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA14" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №14 (закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №14 (закр.)" />
                     </object>
                     <object name="Channel23" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="b91383e5-0c70-45d0-9fbd-44c7d9b85957">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA15" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №15 (откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №15 (откр.)" />
                     </object>
                     <object name="Channel24" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="e4562c25-5e1d-4f85-b6d6-bc37fd4ed7be">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA15" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №15 (закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №15 (закр.)" />
                     </object>
                     <object name="Channel25" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="bf2fc95d-0d4f-4e31-b281-8e34b59a36a7">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA16" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №16 (откр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №16 (откр.)" />
                     </object>
                     <object name="Channel26" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="c2e2b606-350c-404e-9bf6-9cf99760414e">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1N815MA16" />
-                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран рез. топлива перед горелкой №16 (закр.)" />
+                      <attribute type="unit.System.Attributes.Description" xmlns="system" value="Кран Мазута перед горелкой №16 (закр.)" />
                     </object>
                     <object name="Channel27" aspect="Aspects.PLC_Aspect" base-type="Types.DO.PLC_View" xmlns="automation.control" uuid="7bc38749-f6d0-466e-b78d-563ae390522a">
                       <attribute type="unit.System.Attributes.Title" xmlns="system" value="1TV4" />
@@ -3119,28 +3119,28 @@
             </object>
             <object name="Water" uuid="58d8d84d-6a99-44b6-b732-cc133d58048d">
               <object name="PIn" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" uuid="84c25f52-468f-4dbf-8016-3d4da6ae1b09">
-                <attribute type="unit.System.Attributes.Description" value="Давление теплоносителя на входе в котёл" xmlns="system" />
+                <attribute type="unit.System.Attributes.Description" value="Давление Воды на входе в котёл" xmlns="system" />
                 <attribute type="unit.System.Attributes.Title" value=" " xmlns="system" />
                 <attribute type="Attributes.EU" value="МПа" xmlns="system" />
                 <attribute type="Attributes.ALIAS" value="P" xmlns="system" />
                 <attribute type="Attributes.DIGITS" value="2" xmlns="system" />
               </object>
               <object name="TIn" xmlns="automation.control" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" uuid="074f05a4-6e8f-4efa-8c1d-9b13acbc3e11">
-                <attribute type="unit.System.Attributes.Description" xmlns="system" value="Температура теплоносителя на входе в котёл" />
+                <attribute type="unit.System.Attributes.Description" xmlns="system" value="Температура Воды на входе в котёл" />
                 <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 <attribute type="Attributes.EU" value="°С" xmlns="system" />
                 <attribute type="Attributes.ALIAS" value="T" xmlns="system" />
                 <attribute type="Attributes.DIGITS" value="1" xmlns="system" />
               </object>
               <object name="F" xmlns="automation.control" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" uuid="ffd1abe5-191e-490e-8e23-b94c9549ba0c">
-                <attribute type="unit.System.Attributes.Description" xmlns="system" value="Расход теплоносителя на входе в котёл" />
+                <attribute type="unit.System.Attributes.Description" xmlns="system" value="Расход Воды на входе в котёл" />
                 <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 <attribute type="Attributes.EU" value="т/час" xmlns="system" />
                 <attribute type="Attributes.ALIAS" value="F" xmlns="system" />
                 <attribute type="Attributes.DIGITS" value="1" xmlns="system" />
               </object>
               <object name="TOut" xmlns="automation.control" base-type="Types.AnalogDoubleSens.PLC_View" aspect="Aspects.PLC_Aspect" uuid="36be75a4-81a2-4b79-b347-cb653589b7f6">
-                <attribute type="unit.System.Attributes.Description" xmlns="system" value="Температура теплоносителя на выходе из котла" />
+                <attribute type="unit.System.Attributes.Description" xmlns="system" value="Температура Воды на выходе из котла" />
                 <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 <attribute type="Attributes.EU" value="°С" xmlns="system" />
                 <attribute type="Attributes.ALIAS" value="T" xmlns="system" />
@@ -3148,14 +3148,14 @@
               </object>
               <object name="GateIn" base-type="Types.Gate.PLC_View" aspect="Aspects.PLC_Aspect" uuid="56476935-3260-4383-b9ba-a6f282c166f7">
                 <attribute type="unit.System.Attributes.Title" value=" " xmlns="system" />
-                <attribute type="unit.System.Attributes.Description" value="Задвижка теплоносителя перед котлом" xmlns="system" />
+                <attribute type="unit.System.Attributes.Description" value="Задвижка Воды перед котлом" xmlns="system" />
               </object>
               <object name="GateOut" xmlns="automation.control" base-type="Types.Gate.PLC_View" aspect="Aspects.PLC_Aspect" uuid="d8aa622c-f7c5-4658-a931-95cb3e8bc3ed">
                 <attribute type="unit.System.Attributes.Title" xmlns="system" value="  " />
-                <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка теплоносителя после котла" />
+                <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка Воды после котла" />
               </object>
               <object name="POut" xmlns="automation.control" base-type="Types.AnalogDoubleSens.PLC_View" aspect="Aspects.PLC_Aspect" uuid="71ddc20d-eb9d-4947-b51d-40e1fd0a6b37">
-                <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление теплоносителя на выходе из котла" />
+                <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление Воды на выходе из котла" />
                 <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 <attribute type="Attributes.EU" value="МПа" xmlns="system" />
                 <attribute type="Attributes.ALIAS" xmlns="system" value="P" />
@@ -3163,48 +3163,48 @@
               </object>
               <object name="GateBypass" base-type="Types.Gate.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="61a22483-f4d3-4c2b-bb9a-718ed58e648a">
                 <attribute type="unit.System.Attributes.Title" value=" " xmlns="system" />
-                <attribute type="unit.System.Attributes.Description" value="Задвижка теплоносителя в обход котла" xmlns="system" />
+                <attribute type="unit.System.Attributes.Description" value="Задвижка Воды в обход котла" xmlns="system" />
               </object>
             </object>
             <object name="Oil" uuid="e58178f1-215b-474a-a520-45ac8413b572">
               <object name="PBeforeFlap" xmlns="automation.control" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" uuid="fd3357b0-d672-4f71-be58-c01ae0a03721">
-                <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление рез. топлива после задвижки" />
+                <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление Мазута после задвижки" />
                 <attribute type="Attributes.ALIAS" xmlns="system" value="P" />
                 <attribute type="Attributes.EU" xmlns="system" value="МПа" />
                 <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 <attribute type="Attributes.DIGITS" value="2" xmlns="system" />
               </object>
               <object name="T" xmlns="automation.control" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" uuid="3e1c8d1f-5c4b-46bb-8640-9c6c42b41dd1">
-                <attribute type="unit.System.Attributes.Description" xmlns="system" value="Температура рез. топлива после задвижки" />
+                <attribute type="unit.System.Attributes.Description" xmlns="system" value="Температура Мазута после задвижки" />
                 <attribute type="Attributes.ALIAS" xmlns="system" value="T" />
                 <attribute type="Attributes.EU" xmlns="system" value="°С" />
                 <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 <attribute type="Attributes.DIGITS" value="1" xmlns="system" />
               </object>
               <object name="F" xmlns="automation.control" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" uuid="5e132345-acf0-4979-8dc7-fdc7116ec6ac">
-                <attribute type="unit.System.Attributes.Description" xmlns="system" value="Расход рез. топлива после задвижки" />
+                <attribute type="unit.System.Attributes.Description" xmlns="system" value="Расход Мазута после задвижки" />
                 <attribute type="Attributes.ALIAS" xmlns="system" value="F" />
                 <attribute type="Attributes.EU" xmlns="system" value="кг/ч" />
                 <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 <attribute type="Attributes.DIGITS" value="1" xmlns="system" />
               </object>
               <object name="PAfterFlap" xmlns="automation.control" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" uuid="16d0c79a-40ce-47dd-a90a-4a33330650f7">
-                <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление рез. топлива после регулятора" />
+                <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление Мазута после регулятора" />
                 <attribute type="Attributes.ALIAS" xmlns="system" value="P" />
                 <attribute type="Attributes.EU" xmlns="system" value="МПа" />
                 <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 <attribute type="Attributes.DIGITS" value="2" xmlns="system" />
               </object>
               <object name="Gate" xmlns="automation.control" base-type="Types.Gate.PLC_View" aspect="Aspects.PLC_Aspect" uuid="3fa2d8a9-632e-4fd9-afd8-998c505fff19">
-                <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка рез. топлива перед котлом" />
+                <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка Мазута перед котлом" />
                 <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
               </object>
               <object name="Valve" xmlns="automation.control" base-type="Types.Valve.PLC_View" aspect="Aspects.PLC_Aspect" uuid="7d40620f-1b96-4662-8ca7-12c19b0a2cfb">
-                <attribute type="unit.System.Attributes.Description" xmlns="system" value="ПЗК рез. топлива перед котлом" />
+                <attribute type="unit.System.Attributes.Description" xmlns="system" value="ПЗК Мазута перед котлом" />
                 <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
               </object>
               <object name="Flap" xmlns="automation.control" base-type="Types.Regulator.PLC_View" aspect="Aspects.PLC_Aspect" uuid="3010e2ab-fdc7-4601-a6a0-834817d1b0f7">
-                <attribute type="unit.System.Attributes.Description" xmlns="system" value="Регулирующая заслонка рез. топлива перед котлом" />
+                <attribute type="unit.System.Attributes.Description" xmlns="system" value="Регулирующая заслонка Мазута перед котлом" />
                 <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 <attribute type="Attributes.EU" value="МПа" xmlns="system" />
               </object>
@@ -3311,7 +3311,7 @@
                   <attribute type="Attributes.BurnNumber" value="3" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="d76eb34d-043a-4bc6-aa00-7284639b667d">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 3" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль Мазута перед горелкой 3" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -3369,7 +3369,7 @@
                   <attribute type="Attributes.BurnNumber" value="1" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="db2dfbe5-00d1-40ad-9ca4-86f511a51a5d">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 1" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль Мазута перед горелкой 1" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -3411,7 +3411,7 @@
                   <attribute type="Attributes.BurnNumber" value="2" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="9cf506dd-38da-4c4a-8f38-7cda16371dca">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 2" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль Мазута перед горелкой 2" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -3453,7 +3453,7 @@
                   <attribute type="Attributes.BurnNumber" value="4" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="a13a35b9-4dd4-478d-bf3d-411ed856e6bf">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 4" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль Мазута перед горелкой 4" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -3562,7 +3562,7 @@
                   <attribute type="Attributes.BurnNumber" value="6" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="cb25f18d-d202-47ef-a6f5-11a6745b5df9">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 6" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль Мазута перед горелкой 6" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -3605,7 +3605,7 @@
                   <attribute type="Attributes.BurnNumber" value="7" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="acfaef9a-ab50-4fd3-a899-e3f0033ac251">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 7" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль Мазута перед горелкой 7" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -3647,7 +3647,7 @@
                   <attribute type="Attributes.BurnNumber" value="8" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="f4bb3291-126e-4fbe-978e-99a4761179ac">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 8" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль Мазута перед горелкой 8" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -3689,7 +3689,7 @@
                   <attribute type="Attributes.BurnNumber" value="5" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="4932b5ab-f82c-4e09-a145-303973047188">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 5" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль Мазута перед горелкой 5" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -3764,7 +3764,7 @@
                   <attribute type="Attributes.BurnNumber" value="11" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="de87698a-2cc8-47dd-9c03-8730b23adbf5">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 11" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль Мазута перед горелкой 11" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -3807,7 +3807,7 @@
                   <attribute type="Attributes.BurnNumber" value="10" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="8b336eea-464a-40a6-863f-fa551a02eb01">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 10" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль Мазута перед горелкой 10" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -3849,7 +3849,7 @@
                   <attribute type="Attributes.BurnNumber" value="12" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="af29a783-4e6b-410e-b03a-f27cb157ee5d">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 12" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль Мазута перед горелкой 12" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -3891,7 +3891,7 @@
                   <attribute type="Attributes.BurnNumber" value="9" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="52f7b0f6-b57a-4c8f-bdf3-fe252fe2a7da">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 9" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль Мазута перед горелкой 9" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -3966,7 +3966,7 @@
                   <attribute type="Attributes.BurnNumber" value="14" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="c34a98ca-f590-4a1c-843b-890356114f2c">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 14" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль Мазута перед горелкой 14" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -4009,7 +4009,7 @@
                   <attribute type="Attributes.BurnNumber" value="15" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="c2d93a79-1032-4562-a0a2-7949e5746583">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 15" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль Мазута перед горелкой 15" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -4051,7 +4051,7 @@
                   <attribute type="Attributes.BurnNumber" value="16" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="692e7098-fc8e-4d25-adb6-f506a0feb47b">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 16" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль Мазута перед горелкой 16" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -4093,7 +4093,7 @@
                   <attribute type="Attributes.BurnNumber" value="13" xmlns="system" />
                 </object>
                 <object name="FlapOil" xmlns="automation.control" base-type="Types.FlapNoPosit+Mode.PLC_View" aspect="Aspects.PLC_Aspect" uuid="f3071878-e5b6-4d21-a22d-e2ae6be3dea1">
-                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль рез. топлива перед горелкой 13" />
+                  <attribute type="unit.System.Attributes.Description" xmlns="system" value="Вентиль Мазута перед горелкой 13" />
                   <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                   <attribute type="Attributes.EU" value="%" xmlns="system" />
                 </object>
@@ -8750,24 +8750,20 @@ else
         </parameter>
         <parameter name="AlarmPWatOutH" uuid="a4dda9fa-4d3e-4b28-88a0-43d20341c247" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление теплоносителя на выходе выше нормы. Защита.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление Воды на выходе выше нормы. Защита.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmTWatOutH" uuid="51cde381-9791-42b0-baf9-dcb8b0a898a2" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Температура теплоносителя на выходе выше нормы. Защита.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Температура Воды на выходе выше нормы. Защита.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmQWatOutL" uuid="5de94fab-2109-40ff-a5dd-839cf8fe4edc" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Расход теплоносителя на выходе ниже нормы. Защита.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Расход Воды на выходе ниже нормы. Защита.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
-        <parameter name="AlarmBoilerStop" uuid="c77cf169-eb15-4966-97ae-97209ef5bdda" direction="out" type="bool">
-          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Аварийный останов котла кнопкой.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Message":"Аварийный останов котла кнопкой.","Severity":668,"Sound":"alarm.wav","Type":3}],"Type":2}}</property>
-          </attribute>
-        </parameter>
+        <parameter name="AlarmBoilerStop" uuid="c77cf169-eb15-4966-97ae-97209ef5bdda" direction="out" type="bool" />
         <bind source="_PLC_View.AlarmBoilerStop" target="AlarmBoilerStop" />
         <parameter name="AlarmVentOK" uuid="41c0d459-c5d7-4aa4-9bcc-8c5f21154bc2" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
@@ -8781,7 +8777,7 @@ else
         </parameter>
         <parameter name="AlarmPWatOutL" uuid="54241258-1b30-4240-947b-f2c99537ecc4" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление теплоносителя на выходе ниже нормы. Защита.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление Воды на выходе ниже нормы. Защита.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <handler name="Handler" uuid="36ed2d16-60cd-4028-b797-9d9f169a18cd">
@@ -8830,13 +8826,13 @@ else
         <bind source="_PLC_View.AlarmVacH" target="AlarmVacH" />
         <parameter name="AlarmPWaterErr" uuid="db2a8f64-62af-4cad-935b-b6ad4065a9d8" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Ошибка обоих датчиков давления теплоносителя на выходе.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Ошибка обоих датчиков давления Воды на выходе.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmPWaterErr" target="AlarmPWaterErr" />
         <parameter name="AlarmTWaterErr" uuid="8ca7a9b5-d4b9-4c67-99f3-156b09a1b43d" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Ошибка обоих датчиков температуры теплоносителя на выходе.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Ошибка обоих датчиков температуры Воды на выходе.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmTWaterErr" target="AlarmTWaterErr" />
@@ -8985,7 +8981,7 @@ else
         <bind source="InMaskPWatOut" target="_PLC_View.MaskPWatOut" />
         <parameter name="OutMaskPWatOut" uuid="0725dd1b-a7e1-45fa-9cff-c945d19a96ec" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"Message":"Включена защита по давлению теплоносителя.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Отключена защита по давлению теплоносителя для проверка.","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"Message":"Включена защита по давлению Воды.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Отключена защита по давлению Воды для проверка.","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.MaskPWatOut" target="OutMaskPWatOut" />
@@ -8993,7 +8989,7 @@ else
         <bind source="InMaskTWatOut" target="_PLC_View.MaskTWatOut" />
         <parameter name="OutMaskTWatOut" uuid="6900bcf9-be6c-46df-a8e1-87c0baca5f8a" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"Message":"Включена защита по температуре теплоносителя.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Отключена защита по температуре теплоносителя (для проверка).","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"Message":"Включена защита по температуре Воды.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Отключена защита по температуре Воды (для проверка).","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.MaskTWatOut" target="OutMaskTWatOut" />
@@ -9001,7 +8997,7 @@ else
         <bind source="InMaskQWatOut" target="_PLC_View.MaskQWatOut" />
         <parameter name="OutMaskQWatOut" uuid="464f0758-e92d-4b90-a338-16ca766e99ae" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"Message":"Включена защита по расходу теплоносителя.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Отключена защита по расходу теплоносителя (для проверка).","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"Message":"Включена защита по расходу Воды.","Severity":1,"Type":2},{"AckStrategy":0,"IsEnabled":true,"Message":"Отключена защита по расходу Воды (для проверка).","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.MaskQWatOut" target="OutMaskQWatOut" />
@@ -9682,22 +9678,22 @@ else
         </parameter>
         <parameter name="AlarmPWatOutL" uuid="f4bb63c2-0f09-4066-b20c-0bb952327fca" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление теплоносителя на выходе ниже нормы. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление Воды на выходе ниже нормы. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmPWatOutH" uuid="62daa159-79bb-4754-9036-a463eede5f3e" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление теплоносителя на выходе выше нормы. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Давление Воды на выходе выше нормы. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmTWatOutH" uuid="2aa708a7-8688-43f2-b043-6b017693e9d6" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Температура теплоносителя на выходе выше нормы. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Температура Воды на выходе выше нормы. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmQWatOutL" uuid="6131a7a1-380d-43c6-a5c4-bdce870323d9" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Расход теплоносителя на выходе ниже нормы. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Расход Воды на выходе ниже нормы. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmVacH" uuid="0a92c197-52c0-475a-a649-f96357d838a7" direction="out" type="bool">
@@ -9739,37 +9735,37 @@ else
         <bind source="_PLC_View.AlarmDiffPG" target="AlarmDiffPG" />
         <parameter name="AlarmDiffPWat" uuid="794f2b9a-81d5-4093-b0c4-8de0a2861fa1" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Превышение разницы значений датчиков давления теплоносителя на выходе. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Превышение разницы значений датчиков давления Воды на выходе. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmDiffPWat" target="AlarmDiffPWat" />
         <parameter name="AlarmDiffTWat" uuid="9635ff7f-585f-48c2-bc7c-92cc91d9e541" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Превышение разницы значений датчиков температуры теплоносителя на выходе. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Превышение разницы значений датчиков температуры Воды на выходе. Сигнализация.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmDiffTWat" target="AlarmDiffTWat" />
         <parameter name="AlarmPWaterErr1" uuid="e9bddfcf-de4f-463b-8cc6-efd214d12818" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Ошибка датчика 1 давления теплоносителя на выходе","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Ошибка датчика 1 давления Воды на выходе","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmPWaterErr1" target="AlarmPWaterErr1" />
         <parameter name="AlarmPWaterErr2" uuid="8db62be0-9e5e-408a-9dcd-81b04d8c5739" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Ошибка датчика 2 давления теплоносителя на выходе.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Ошибка датчика 2 давления Воды на выходе.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmPWaterErr2" target="AlarmPWaterErr2" />
         <parameter name="AlarmTWaterErr2" uuid="d95300a6-a32f-461d-9f60-9998812a5d64" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Ошибка датчика 2 температуры теплоносителя на выходе.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Ошибка датчика 2 температуры Воды на выходе.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmTWaterErr2" target="AlarmTWaterErr2" />
         <parameter name="AlarmTWaterErr1" uuid="183609a8-4ec4-4a2c-838b-ca1692b6226a" direction="out" type="bool">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Ошибка датчика 1 температуры теплоносителя на выходе.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Ошибка датчика 1 температуры Воды на выходе.","Severity":335,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmTWaterErr1" target="AlarmTWaterErr1" />
@@ -10412,22 +10408,22 @@ else
         </parameter>
         <parameter name="AlarmPWatOutL" direction="out" type="bool" uuid="ff348fb2-112d-4f2c-962f-362631d41a8d">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Давление теплоносителя на выходе ниже нормы. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Давление теплоносителя на выходе ниже нормы. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Давление Воды на выходе ниже нормы. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Давление Воды на выходе ниже нормы. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmPWatOutH" direction="out" type="bool" uuid="5c81abed-1694-4923-b62d-41a22c133613">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Давление теплоносителя на выходе выше нормы. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Давление теплоносителя на выходе выше нормы. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Давление Воды на выходе выше нормы. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Давление Воды на выходе выше нормы. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmTWatOutH" direction="out" type="bool" uuid="4db2bacf-c956-4204-9f77-fda3f6e6c0bb">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Температура теплоносителя на выходе выше нормы. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Температура теплоносителя на выходе выше нормы. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Температура Воды на выходе выше нормы. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Температура Воды на выходе выше нормы. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmQWatOutL" direction="out" type="bool" uuid="ba3080fe-274c-4ebf-b664-366c3c8c14f8">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Расход теплоносителя на выходе ниже нормы. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Расход теплоносителя на выходе ниже нормы. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Расход Воды на выходе ниже нормы. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Расход Воды на выходе ниже нормы. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <parameter name="AlarmVacH" direction="out" type="bool" uuid="80999255-5641-4407-b6c2-a4f84d135469">
@@ -10469,37 +10465,37 @@ else
         <bind source="_PLC_View.AlarmDiffPG" target="AlarmDiffPG" />
         <parameter name="AlarmDiffPWat" direction="out" type="bool" uuid="d661bfe7-329e-4274-9da1-6748c4e59e96">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Превышение разницы значений датчиков давления теплоносителя на выходе. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Превышение разницы значений датчиков давления теплоносителя на выходе. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Превышение разницы значений датчиков давления Воды на выходе. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Превышение разницы значений датчиков давления Воды на выходе. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmDiffPWat" target="AlarmDiffPWat" />
         <parameter name="AlarmDiffTWat" direction="out" type="bool" uuid="f94628ad-7b26-45ef-92b4-f5ee6f0cf800">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Превышение разницы значений датчиков температуры теплоносителя на выходе. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Превышение разницы значений датчиков температуры теплоносителя на выходе. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Превышение разницы значений датчиков температуры Воды на выходе. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Превышение разницы значений датчиков температуры Воды на выходе. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmDiffTWat" target="AlarmDiffTWat" />
         <parameter name="AlarmPWaterErr1" direction="out" type="bool" uuid="3fe8242c-e949-4dcd-883d-194efb0212cf">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Ошибка датчика 1 давления теплоносителя на выходе. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Ошибка датчика 1 давления теплоносителя на выходе. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Ошибка датчика 1 давления Воды на выходе. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Ошибка датчика 1 давления Воды на выходе. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmPWaterErr1" target="AlarmPWaterErr1" />
         <parameter name="AlarmPWaterErr2" direction="out" type="bool" uuid="d7fe92e9-9905-49f6-8cd6-1e4f9ee51341">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Ошибка датчика 2 давления теплоносителя на выходе. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Ошибка датчика 2 давления теплоносителя на выходе. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Ошибка датчика 2 давления Воды на выходе. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Ошибка датчика 2 давления Воды на выходе. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmPWaterErr2" target="AlarmPWaterErr2" />
         <parameter name="AlarmTWaterErr2" direction="out" type="bool" uuid="54d7af39-fdd3-472d-865a-08dd88c07541">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Ошибка датчика 2 температуры теплоносителя на выходе. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Ошибка датчика 2 температуры теплоносителя на выходе. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Ошибка датчика 2 температуры Воды на выходе. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Ошибка датчика 2 температуры Воды на выходе. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmTWaterErr2" target="AlarmTWaterErr2" />
         <parameter name="AlarmTWaterErr1" direction="out" type="bool" uuid="d443b23e-6fb0-4134-99dc-d88388a9bed7">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Ошибка датчика 1 температуры теплоносителя на выходе. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Ошибка датчика 1 температуры теплоносителя на выходе. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":"Ошибка датчика 1 температуры Воды на выходе. Сигнализация выведена","Severity":1,"Type":2},{"AckStrategy":0,"IsDeactivation":true,"IsEnabled":true,"Message":"Ошибка датчика 1 температуры Воды на выходе. Сигнализация введена","Severity":1,"Type":3}],"Type":2}}</property>
           </attribute>
         </parameter>
         <bind source="_PLC_View.AlarmTWaterErr1" target="AlarmTWaterErr1" />

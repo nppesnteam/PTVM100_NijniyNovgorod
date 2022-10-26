@@ -351,6 +351,12 @@
 				<![CDATA[NAME]]>
 			</body>
 		</do-trace>
+		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="MouseClick">
+			<body kind="om">
+				<![CDATA[unit.Global.OpenedGroup = Group;
+linkMnemo.linkMain.OpenGroup.Invoke();]]>
+			</body>
+		</do-on>
 	</object>
 	<object access-modifier="private" name="hereOPCSource" display-name="hereOPCSource" uuid="3cab0b30-7e6b-4578-820f-c9c034c617e8" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
 		<designed target="Active" value="false" ver="4"/>
@@ -373,5 +379,6 @@
 			<![CDATA[burner.BurnNumber.ValueAsString]]>
 		</body>
 	</do-trace>
+	<object access-modifier="private" name="linkMnemo" display-name="linkMnemo" uuid="691c8185-5d50-4db3-9e4e-58a37e35e004" base-type="Общая мнемосхема" base-type-id="f51061bd-0db8-43c4-a53c-77c2e4c09e04" base-const="true" base-ref="true" ver="4"/>
 </type>
 
