@@ -8188,7 +8188,7 @@ Channel32.H=Math.TestBit(State.State,31);</property>
         </parameter>
         <r:ref name="_PLC_View" uuid="df740357-17ff-47af-9066-8090a73a82d8" type="PLC_View" />
         <parameter name="VALUE" uuid="4ccdeaf0-39e5-48cc-acdb-0dca1b7d9fd5" direction="out" type="float32">
-          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; Deadband=&quot;0.05&quot; MinTime=&quot;2000&quot; ServerTime=&quot;True&quot;" xmlns="system" />
+          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; MinTime=&quot;1000&quot; ServerTime=&quot;True&quot;" xmlns="system" />
         </parameter>
         <bind source="_PLC_View.VALUE" target="VALUE" />
         <parameter name="KKS" uuid="6ee9672a-e6dd-42a5-b415-d23498368ba8" type="string" direction="out">
@@ -8222,7 +8222,7 @@ STATUS_BITS.LowerElectrical = Math.TestBit(STATUS,4);</property>
         <parameter name="OutMASK" uuid="cf7ec64c-e9f9-4d91-84dd-bd9988e9749a" direction="out" type="bool" />
         <bind source="_PLC_View.MASK" target="OutMASK" />
         <parameter name="ELECTROVALUE" uuid="1a9ff29c-0f95-4c0c-b005-14a01b2deff1" direction="out" type="float32">
-          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; Deadband=&quot;0.05&quot; MinTime=&quot;2000&quot; ServerTime=&quot;True&quot;" xmlns="system" />
+          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; MinTime=&quot;1000&quot; ServerTime=&quot;True&quot;" xmlns="system" />
         </parameter>
         <bind source="_PLC_View.ELECTROVALUE" target="ELECTROVALUE" />
         <parameter name="InMASK" uuid="1c740c65-f16a-43d9-adaf-94eb6b0a0608" direction="in" type="bool" />
@@ -8704,7 +8704,7 @@ else
         </parameter>
         <ref name="_PLC_View" type="PLC_View" xmlns="automation.reference" uuid="348ef885-c2e2-48ab-ad03-430bf790fc35" />
         <parameter name="VALUE" direction="out" type="float32" uuid="f702187f-7ead-41f5-b297-22e207d099b5">
-          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; Deadband=&quot;0.01&quot; MinTime=&quot;2000&quot; ServerTime=&quot;True&quot;" xmlns="system" />
+          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; MinTime=&quot;1000&quot; ServerTime=&quot;True&quot;" xmlns="system" />
         </parameter>
         <bind source="_PLC_View.VALUE" target="VALUE" />
         <parameter name="KKS" type="string" direction="out" uuid="416cecdf-c0bf-4bec-8971-102a9bc4c738">
@@ -8891,7 +8891,7 @@ else
         <parameter name="VentProgress" uuid="3188a942-6e09-41fc-97ea-a6ea3e547c2f" direction="out" type="int32" />
         <bind source="_PLC_View.VentProgress" target="VentProgress" />
         <parameter name="PowerBoiler" uuid="35ee0b87-0219-42ef-9643-0ce70c84a17f" direction="out" type="float32">
-          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; Deadband=&quot;0.1&quot; MinTime=&quot;10000&quot; ServerTime=&quot;True&quot;" xmlns="system" />
+          <attribute type="unit.Server.Attributes.History" xmlns="system" value="Enable=&quot;True&quot; MinTime=&quot;1000&quot; ServerTime=&quot;True&quot;" />
         </parameter>
         <bind source="_PLC_View.PowerBoiler" target="PowerBoiler" />
         <parameter name="ArmStartAllow" uuid="3f5ff0d9-68cb-4758-9f71-d38f12903d4b" direction="out" type="bool" />
@@ -9828,11 +9828,11 @@ else
           <attribute type="unit.System.Attributes.InitialValue" value="@(object:System.Attributes.Title)" xmlns="system" />
         </parameter>
         <parameter name="VALUE1" uuid="7e1d8481-8285-4865-9ec3-9dc6c9046aa3" direction="out" type="float32">
-          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; Deadband=&quot;0.01&quot; MinTime=&quot;2000&quot; ServerTime=&quot;True&quot;" xmlns="system" />
+          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; MinTime=&quot;1000&quot; ServerTime=&quot;True&quot;" xmlns="system" />
         </parameter>
         <bind source="_PLC_View.VALUE1" target="VALUE1" />
         <parameter name="VALUE2" uuid="af1f5f94-e299-4326-8161-c6fb1df141f7" direction="out" type="float32">
-          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; Deadband=&quot;0.01&quot; MinTime=&quot;2000&quot; ServerTime=&quot;True&quot;" xmlns="system" />
+          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; MinTime=&quot;1000&quot; ServerTime=&quot;True&quot;" xmlns="system" />
         </parameter>
         <bind source="_PLC_View.VALUE2" target="VALUE2" />
         <parameter name="IniSel" uuid="68bb4822-3077-49ca-b098-0fef7759c4be" direction="in" type="int16" />
@@ -10326,7 +10326,7 @@ else
       <type name="IOS_View" xmlns="automation.control" aspect="Aspects.IOS_Aspect" original="Value" uuid="1417fb67-e1c0-4119-911d-96f7cf4d9c6d">
         <ref name="_PLC_View" type="PLC_View" xmlns="automation.reference" uuid="989a36fb-c6ab-4316-83be-dc806694aafd" />
         <parameter name="VALUE" uuid="3e7980ed-03db-4448-a355-cba86a361408" direction="out" type="float32">
-          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; Deadband=&quot;0.01&quot; MinTime=&quot;2000&quot; ServerTime=&quot;True&quot;" xmlns="system" />
+          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; MinTime=&quot;1000&quot; ServerTime=&quot;True&quot;" xmlns="system" />
         </parameter>
         <bind source="_PLC_View.VALUE" target="VALUE" />
       </type>
