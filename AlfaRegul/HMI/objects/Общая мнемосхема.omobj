@@ -459,11 +459,11 @@
 					<designed target="Rotation" value="0" ver="4"/>
 					<object access-modifier="private" name="GradientPoint_1" display-name="GradientPoint_1" uuid="296b9e95-58f9-400e-a951-07467f5e62df" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="4">
 						<designed target="Position" value="0" ver="4"/>
-						<designed target="Color" value="0xff0000ff" ver="4"/>
+						<designed target="Color" value="0xffff0000" ver="4"/>
 					</object>
 					<object access-modifier="private" name="GradientPoint_2" display-name="GradientPoint_2" uuid="199a07e7-39cb-4979-9e82-d5fc468435f5" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="4">
 						<designed target="Position" value="1" ver="4"/>
-						<designed target="Color" value="0xffff0000" ver="4"/>
+						<designed target="Color" value="0xff0000ff" ver="4"/>
 					</object>
 				</object>
 				<object access-modifier="private" name="Point_31" display-name="Point_31" uuid="0fc1e2ab-ec2d-429a-af53-da64c6750714" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
@@ -479,7 +479,7 @@
 					<designed target="Y" value="0" ver="4"/>
 				</object>
 			</object>
-			<object access-modifier="private" name="TubeWaterIn2" display-name="TubeWaterIn2" uuid="eb793e91-689a-475e-9a1e-db49044cf16f" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
+			<object access-modifier="private" name="TubeWaterOut2" display-name="TubeWaterOut2" uuid="eb793e91-689a-475e-9a1e-db49044cf16f" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
 				<designed target="X" value="26" ver="4"/>
 				<designed target="Y" value="470" ver="4"/>
 				<designed target="ZValue" value="0" ver="4"/>
@@ -494,7 +494,7 @@
 				<designed target="PenColor" value="0xff00aa00" ver="4"/>
 				<designed target="PenStyle" value="1" ver="4"/>
 				<designed target="PenWidth" value="2" ver="4"/>
-				<designed target="BrushColor" value="0xff0000ff" ver="4"/>
+				<designed target="BrushColor" value="0xffff0000" ver="4"/>
 				<designed target="BrushStyle" value="1" ver="4"/>
 				<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="e6680d70-275d-4cdd-9184-3f521ac5f3e3" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
 					<designed target="X" value="0" ver="4"/>
@@ -529,7 +529,7 @@
 					<designed target="Y" value="2" ver="4"/>
 				</object>
 			</object>
-			<object access-modifier="private" name="TubeWaterOut2" display-name="TubeWaterOut2" uuid="fe44adf5-f518-4bfa-93f6-7720d1b317e6" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
+			<object access-modifier="private" name="TubeWaterIn2" display-name="TubeWaterIn2" uuid="fe44adf5-f518-4bfa-93f6-7720d1b317e6" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
 				<designed target="X" value="1316" ver="4"/>
 				<designed target="Y" value="470" ver="4"/>
 				<designed target="ZValue" value="0" ver="4"/>
@@ -544,7 +544,7 @@
 				<designed target="PenColor" value="0xff00aa00" ver="4"/>
 				<designed target="PenStyle" value="1" ver="4"/>
 				<designed target="PenWidth" value="2" ver="4"/>
-				<designed target="BrushColor" value="0xffff0000" ver="4"/>
+				<designed target="BrushColor" value="0xff0000ff" ver="4"/>
 				<designed target="BrushStyle" value="1" ver="4"/>
 				<object access-modifier="private" name="Point_1" display-name="Point_1" uuid="2570879a-04c9-44df-b11d-e40e15a5a0ff" base-type="Point" base-type-id="467f1af0-7bb4-4a61-b6fb-06e7bfd530d6" ver="4">
 					<designed target="X" value="0" ver="4"/>
@@ -579,7 +579,7 @@
 					<designed target="Y" value="2" ver="4"/>
 				</object>
 			</object>
-			<object access-modifier="private" name="TubeWaterOut1" display-name="TubeWaterOut1" uuid="9eef37fd-c8ac-41bf-a8fe-82345133dbb1" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
+			<object access-modifier="private" name="TubeWaterIn1" display-name="TubeWaterIn1" uuid="9eef37fd-c8ac-41bf-a8fe-82345133dbb1" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
 				<designed target="X" value="616" ver="4"/>
 				<designed target="Y" value="102" ver="4"/>
 				<designed target="ZValue" value="0" ver="4"/>
@@ -589,7 +589,7 @@
 				<designed target="Opacity" value="1" ver="4"/>
 				<designed target="Enabled" value="true" ver="4"/>
 				<designed target="Tooltip" value="" ver="4"/>
-				<designed target="Width" value="141" ver="4"/>
+				<designed target="Width" value="142" ver="4"/>
 				<designed target="Height" value="45" ver="4"/>
 				<designed target="PenColor" value="0xff00aa00" ver="4"/>
 				<designed target="PenStyle" value="1" ver="4"/>
@@ -640,11 +640,11 @@
 					</object>
 					<object access-modifier="private" name="GradientPoint_2" display-name="GradientPoint_2" uuid="c5893070-0cab-40eb-84e1-c2e84dcac596" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="4">
 						<designed target="Position" value="1" ver="4"/>
-						<designed target="Color" value="0xffff0000" ver="4"/>
+						<designed target="Color" value="0xff0000ff" ver="4"/>
 					</object>
 				</object>
 			</object>
-			<object access-modifier="private" name="TubeWaterIn1" display-name="TubeWaterIn1" uuid="fdd7aac6-a1a9-4be6-b256-4cdcdb5690c3" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
+			<object access-modifier="private" name="TubeWaterOut1" display-name="TubeWaterOut1" uuid="fdd7aac6-a1a9-4be6-b256-4cdcdb5690c3" base-type="Line" base-type-id="4dd08b15-1502-453f-a174-2c0a5aa850ba" ver="4">
 				<designed target="X" value="336" ver="4"/>
 				<designed target="Y" value="102" ver="4"/>
 				<designed target="ZValue" value="0" ver="4"/>
@@ -701,7 +701,7 @@
 					<designed target="Rotation" value="0" ver="4"/>
 					<object access-modifier="private" name="GradientPoint_1" display-name="GradientPoint_1" uuid="c066708d-7275-46f0-be89-e8545f4a3fbd" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="4">
 						<designed target="Position" value="0" ver="4"/>
-						<designed target="Color" value="0xff0000ff" ver="4"/>
+						<designed target="Color" value="0xffff0000" ver="4"/>
 					</object>
 					<object access-modifier="private" name="GradientPoint_2" display-name="GradientPoint_2" uuid="77144ece-943f-43da-8022-5841897a8746" base-type="GradientPoint" base-type-id="0d4fa414-e154-4e66-8c6e-63211b3c6891" ver="4">
 						<designed target="Position" value="1" ver="4"/>
@@ -710,7 +710,7 @@
 				</object>
 			</object>
 			<object access-modifier="private" name="GateWaterIn" display-name="GateWaterIn" uuid="34be9ced-6fb7-41cd-b06c-fc4f576c882e" base-type="gate" base-type-id="412146cb-dc7b-472f-be3b-e66aa672ce43" ver="4">
-				<designed target="X" value="322" ver="4"/>
+				<designed target="X" value="612" ver="4"/>
 				<designed target="Y" value="99" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xff00aa00"/>
@@ -719,7 +719,7 @@
 				<designed target="Scale" value="1.5" ver="4"/>
 			</object>
 			<object access-modifier="private" name="GateWaterOut" display-name="GateWaterOut" uuid="f0947ba5-1d0b-4965-9035-42fd5bab8c51" base-type="gate" base-type-id="412146cb-dc7b-472f-be3b-e66aa672ce43" ver="4">
-				<designed target="X" value="612" ver="4"/>
+				<designed target="X" value="322" ver="4"/>
 				<designed target="Y" value="99" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="Color" ver="4" value="0xff00aa00"/>
@@ -737,21 +737,21 @@
 				<designed target="Scale" value="1.5" ver="4"/>
 			</object>
 			<object access-modifier="private" name="ArrowWaterIn" display-name="ArrowWaterIn" uuid="aacd07a2-59af-4e1e-9a62-196a5726f923" base-type="arrow" base-type-id="bd45c7e6-c41b-44ca-a8f9-0542667feb49" ver="4">
-				<designed target="X" value="323" ver="4"/>
+				<designed target="X" value="613" ver="4"/>
 				<designed target="Y" value="40" ver="4"/>
 				<designed target="Rotation" value="270" ver="4"/>
 				<init target="Color" ver="4" value="0xff00aa00"/>
 				<designed target="Scale" value="1.2" ver="4"/>
 			</object>
 			<object access-modifier="private" name="ArrowWaterOut" display-name="ArrowWaterOut" uuid="2edfabd6-edc8-4895-9a54-7bf8a6edf189" base-type="arrow" base-type-id="bd45c7e6-c41b-44ca-a8f9-0542667feb49" ver="4">
-				<designed target="X" value="613" ver="4"/>
+				<designed target="X" value="323" ver="4"/>
 				<designed target="Y" value="40" ver="4"/>
 				<designed target="Rotation" value="90" ver="4"/>
 				<init target="Color" ver="4" value="0xff00aa00"/>
 				<designed target="Scale" value="1.2" ver="4"/>
 			</object>
 			<object access-modifier="private" name="PWaterIn" display-name="PWaterIn" uuid="e3d14cae-67a5-45f3-bab4-5e0c773df0c8" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
-				<designed target="X" value="221" ver="4"/>
+				<designed target="X" value="687" ver="4"/>
 				<designed target="Y" value="110" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xff00aa00"/>
@@ -764,7 +764,7 @@
 				<init target="initPath" ver="4" value="PIn"/>
 			</object>
 			<object access-modifier="private" name="TWaterIn" display-name="TWaterIn" uuid="0c24adc1-71d1-45cd-9451-6227eab21afe" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
-				<designed target="X" value="131" ver="4"/>
+				<designed target="X" value="787" ver="4"/>
 				<designed target="Y" value="110" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xff00aa00"/>
@@ -777,8 +777,8 @@
 				<init target="initPath" ver="4" value="TIn"/>
 			</object>
 			<object access-modifier="private" name="FWaterIn" display-name="FWaterIn" uuid="32b17bc7-6f58-441e-a59e-44c428534d03" base-type="rectangleSlim" base-type-id="bda7de48-3eeb-48b5-8968-c64cf04eb418" ver="4">
-				<designed target="X" value="887" ver="4"/>
-				<designed target="Y" value="107" ver="4"/>
+				<designed target="X" value="45" ver="4"/>
+				<designed target="Y" value="110" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="EUTextColor" ver="4" value="0xff00aa00"/>
 				<init target="VALUEBackgroundColor" ver="4" value="0xff000000"/>
@@ -791,7 +791,7 @@
 				<init target="initName" ver="4" value="QWatOut"/>
 			</object>
 			<object access-modifier="private" name="PWaterOut" display-name="PWaterOut" uuid="7ce5cd5f-ca40-403b-bd05-70f0e411381e" base-type="rectangleWithFooter" base-type-id="f0efb2b9-b2c2-4ae5-9828-4b87079c3c46" ver="4">
-				<designed target="X" value="687" ver="4"/>
+				<designed target="X" value="221" ver="4"/>
 				<designed target="Y" value="105" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
@@ -801,7 +801,7 @@
 				<init target="initName" ver="4" value="PWatOut"/>
 			</object>
 			<object access-modifier="private" name="TWaterOut" display-name="TWaterOut" uuid="908a4632-d66d-48ec-8109-62cea0016b85" base-type="rectangleWithFooter" base-type-id="f0efb2b9-b2c2-4ae5-9828-4b87079c3c46" ver="4">
-				<designed target="X" value="787" ver="4"/>
+				<designed target="X" value="131" ver="4"/>
 				<designed target="Y" value="105" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
 				<init target="initOPCSource" ver="4" ref="OpcSource"/>
@@ -811,7 +811,7 @@
 				<init target="initName" ver="4" value="TWatOut"/>
 			</object>
 			<object access-modifier="private" name="TxtWaterIn" display-name="TxtWaterIn" uuid="30e9163b-3e57-4e4c-ab3c-538e7df9f098" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
-				<designed target="X" value="180" ver="4"/>
+				<designed target="X" value="640" ver="4"/>
 				<designed target="Y" value="40" ver="4"/>
 				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>
@@ -829,7 +829,7 @@
 				<designed target="TextAlignment" value="132" ver="4"/>
 			</object>
 			<object access-modifier="private" name="TxtWaterOut" display-name="TxtWaterOut" uuid="4fa762aa-3826-4e26-894f-1e8ccdd55f7b" base-type="Text" base-type-id="21d59f8d-2ca4-4592-92ca-b4dc48992a0f" ver="4">
-				<designed target="X" value="640" ver="4"/>
+				<designed target="X" value="180" ver="4"/>
 				<designed target="Y" value="40" ver="4"/>
 				<designed target="ZValue" value="0" ver="4"/>
 				<designed target="Rotation" value="0" ver="4"/>

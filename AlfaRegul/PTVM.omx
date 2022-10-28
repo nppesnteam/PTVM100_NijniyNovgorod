@@ -3133,7 +3133,7 @@
                 <attribute type="Attributes.DIGITS" value="1" xmlns="system" />
               </object>
               <object name="F" xmlns="automation.control" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" uuid="ffd1abe5-191e-490e-8e23-b94c9549ba0c">
-                <attribute type="unit.System.Attributes.Description" xmlns="system" value="Расход Воды на входе в котёл" />
+                <attribute type="unit.System.Attributes.Description" xmlns="system" value="Расход Воды через котёл" />
                 <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 <attribute type="Attributes.EU" value="т/час" xmlns="system" />
                 <attribute type="Attributes.ALIAS" value="F" xmlns="system" />
@@ -8526,11 +8526,7 @@ STATUS_BITS.LowerElectrical = Math.TestBit(STATUS,4);</property>
         <bind source="_PLC_View.IgnProgress" target="IgnProgress" />
         <parameter name="BurnStatus" uuid="844379f2-3f3c-4f5d-9bce-c2b59c23fd48" direction="out" type="string" />
         <bind source="_PLC_View.BurnStatus" target="BurnStatus" />
-        <parameter name="FinalIgnBurn" uuid="9385de72-7abc-4ca1-b24e-997b63b3de0d" direction="out" type="bool">
-          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":".Розжиг завершён.","Severity":1,"Type":2},{"AckStrategy":0,"Message":"","Severity":1,"Type":3}],"Type":2}}</property>
-          </attribute>
-        </parameter>
+        <parameter name="FinalIgnBurn" uuid="9385de72-7abc-4ca1-b24e-997b63b3de0d" direction="out" type="bool" />
         <bind source="_PLC_View.FinalIgnBurn" target="FinalIgnBurn" />
         <parameter name="nBurn" uuid="e2940f47-9b5c-46b3-8ebb-00b70ff7bacf" direction="out" type="int16">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
