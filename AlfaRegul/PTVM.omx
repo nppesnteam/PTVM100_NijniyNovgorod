@@ -3265,6 +3265,11 @@
                   <attribute type="unit.System.Attributes.Description" value="Температура дымовых газов выше нормы" xmlns="system" />
                   <attribute type="Attributes.ALIAS" value="TSmoke" xmlns="system" />
                 </object>
+                <object name="Prot10" base-type="Types.ProtectsValueBoiler.PLC_View" xmlns="automation.control" uuid="2195e13d-6a1c-4a5c-a552-3f36863740b0">
+                  <attribute type="Attributes.EU" value="%" xmlns="system" />
+                  <attribute type="unit.System.Attributes.Description" value="Интенсивность общего факела ниже нормы" xmlns="system" />
+                  <attribute type="Attributes.ALIAS" value="SharedFireL" xmlns="system" />
+                </object>
               </object>
             </object>
             <object name="Group1" xmlns="automation.control" uuid="1ab03151-cabf-4b37-a685-837d1c013166">
@@ -4129,6 +4134,13 @@
             <object name="RegimeMap" base-type="Types.Regime.PLC_View" aspect="Aspects.PLC_Aspect" uuid="29ed9476-d21d-44c2-9868-fc7b021b1b1a" />
             <object name="RegimeMapOil" base-type="Types.Regime.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="04b8146c-3de2-4655-b210-d3c74f9b53e4" />
             <object name="SignalOff" uuid="95132eaa-8fc7-46cc-bcbf-5dedaa7db8bd" base-type="Types.SignalOffBoiler.PLC_View" aspect="Aspects.PLC_Aspect" />
+            <object name="FireIntensity" uuid="84a1c881-cf56-4934-991b-c615b80c67da" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect">
+              <attribute type="Attributes.ALIAS" value="B" xmlns="system" />
+              <attribute type="Attributes.EU" value="%" xmlns="system" />
+              <attribute type="unit.System.Attributes.Description" value="Интенсивность общего факела" xmlns="system" />
+              <attribute type="unit.System.Attributes.Title" value=" " xmlns="system" />
+              <attribute type="Attributes.DIGITS" value="0" xmlns="system" />
+            </object>
           </object>
         </dp:application-object>
         <opc:opcua-server name="OpcUaServer" uuid="2cf86c2a-f319-4add-9221-d2a8e4c5b575" tag-map="PLC_App.OpcUaAddressMap" endpoint-name="regul_ua_server" port="4840" />
@@ -7397,6 +7409,11 @@ Channel32.H=Math.TestBit(State.State,31);</property>
                 <property name="target">Domain.PLC.Runtime.PLC_App.ROOT.AlarmsValue.ValueAlarmBoiler.Prot9</property>
               </r:init-ref>
             </ct:object>
+            <ct:object name="Prot10" uuid="1a831e3e-5b30-43a6-a16e-bd12265f31ec" original="PLC.Runtime.PLC_App.ROOT.AlarmsValue.ValueAlarmBoiler.Prot10" base-type="Types.ProtectsValueBoiler.IOS_View" aspect="Aspects.IOS_Aspect">
+              <r:init-ref ref="Reference">
+                <property name="target">Domain.PLC.Runtime.PLC_App.ROOT.AlarmsValue.ValueAlarmBoiler.Prot10</property>
+              </r:init-ref>
+            </ct:object>
           </ct:object>
         </ct:object>
         <ct:object name="Group1" uuid="9f7bcaa5-4913-499c-865c-db7b8342d499" original="PLC.Runtime.PLC_App.ROOT.Group1" aspect="Aspects.IOS_Aspect">
@@ -8103,6 +8120,9 @@ Channel32.H=Math.TestBit(State.State,31);</property>
         <ct:object name="SignalOff" uuid="e7afd498-5384-48a8-bdaf-1caf40c53f6a" original="PLC.Runtime.PLC_App.ROOT.SignalOff" base-type="Types.SignalOffBoiler.IOS_View" aspect="Aspects.IOS_Aspect">
           <r:init-ref ref="_PLC_View" target="Domain.PLC.Runtime.PLC_App.ROOT.SignalOff" />
         </ct:object>
+        <ct:object name="FireIntensity" uuid="c32e9ea9-884b-4163-bc1a-ad4ab8c0c0e3" original="PLC.Runtime.PLC_App.ROOT.FireIntensity" base-type="Types.AnalogSens.IOS_View" aspect="Aspects.IOS_Aspect">
+          <r:init-ref ref="_PLC_View" target="Domain.PLC.Runtime.PLC_App.ROOT.FireIntensity" />
+        </ct:object>
       </ct:object>
     </dp:application-object>
     <dp:domain-node name="ARM1" uuid="5c501410-d8c6-4207-b464-de8db5742447">
@@ -8119,8 +8139,6 @@ Channel32.H=Math.TestBit(State.State,31);</property>
         <history-module name="HistoryModule" xmlns="server" uuid="b1d93501-49c0-4062-9cb5-f13f8cef2c42" logging-required="false" active="true">
           <historian-database-link database="Historian.DB_EVENTS" queue-alias="DB_EVENTS" />
           <historian-database-link database="Historian.DB_HISTORY" queue-alias="DB_HISTORY" />
-          <historian-database-link database="ARM2.Historian.DB_EVENTS" />
-          <historian-database-link database="ARM2.Historian.DB_HISTORY" />
         </history-module>
         <opcua-client name="OpcUaClient" xmlns="server" uuid="93826dc2-a48e-4092-975b-af251935e9c6">
           <opcua-server-link server="PLC.Runtime.OpcUaServer" security-mode="none" sampling-interval="200" update-rate="200" write-only-to-active-server="true" write-on-connect="false" can-suspended-server-be-active="true" control-signal-id-type="string" active-server-timeout="1000" notification-queue-size="0" max-nodes-per-browse="0" max-nodes-per-write="0" max-nodes-per-read="0" max-monitored-items-per-call="0" authorization-mode="Anonymous" control-signal-namespace="urn:ProsoftSystems:regul_ua_server:iec_data" control-signal-value="5" control-signal-id="Application.PLC_PRG.mode" session-timeout="5000" standby-mode="request-data" />
@@ -8187,9 +8205,7 @@ Channel32.H=Math.TestBit(State.State,31);</property>
           <attribute type="unit.System.Attributes.InitialValue" value="@(object:Attributes.DIGITS)" xmlns="system" />
         </parameter>
         <r:ref name="_PLC_View" uuid="df740357-17ff-47af-9066-8090a73a82d8" type="PLC_View" />
-        <parameter name="VALUE" uuid="4ccdeaf0-39e5-48cc-acdb-0dca1b7d9fd5" direction="out" type="float32">
-          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; MinTime=&quot;1000&quot; ServerTime=&quot;True&quot;" xmlns="system" />
-        </parameter>
+        <parameter name="VALUE" uuid="4ccdeaf0-39e5-48cc-acdb-0dca1b7d9fd5" direction="out" type="float32" />
         <bind source="_PLC_View.VALUE" target="VALUE" />
         <parameter name="KKS" uuid="6ee9672a-e6dd-42a5-b415-d23498368ba8" type="string" direction="out">
           <attribute type="unit.System.Attributes.InitialValue" value="@(object:System.Attributes.Title)" xmlns="system" />
@@ -8443,9 +8459,7 @@ STATUS_BITS.LowerElectrical = Math.TestBit(STATUS,4);</property>
           <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; ServerTime=&quot;True&quot;" xmlns="system" />
         </parameter>
         <bind source="_PLC_View.fSetTask" target="OutfSetTask" />
-        <parameter name="Param" uuid="b75e563d-8e3b-4dfa-9f7f-fd8906408316" direction="out" type="float32">
-          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;true&quot; Deadband=&quot;0.01&quot; ServerTime=&quot;false&quot; MinTime=&quot;2000&quot;" xmlns="system" />
-        </parameter>
+        <parameter name="Param" uuid="b75e563d-8e3b-4dfa-9f7f-fd8906408316" direction="out" type="float32" />
         <bind source="_PLC_View.Param" target="Param" />
         <parameter name="MisAlign" uuid="dddaa3e9-a22b-4aad-858f-cd513f96ae88" type="float32" direction="out" />
         <formula target="MisAlign" source-code="OutfSetTask - Param" />
@@ -8704,7 +8718,7 @@ else
         </parameter>
         <ref name="_PLC_View" type="PLC_View" xmlns="automation.reference" uuid="348ef885-c2e2-48ab-ad03-430bf790fc35" />
         <parameter name="VALUE" direction="out" type="float32" uuid="f702187f-7ead-41f5-b297-22e207d099b5">
-          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; MinTime=&quot;1000&quot; ServerTime=&quot;True&quot;" xmlns="system" />
+          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; MinTime=&quot;1000&quot; ServerTime=&quot;False&quot;" xmlns="system" />
         </parameter>
         <bind source="_PLC_View.VALUE" target="VALUE" />
         <parameter name="KKS" type="string" direction="out" uuid="416cecdf-c0bf-4bec-8971-102a9bc4c738">
@@ -8731,6 +8745,7 @@ else
         <parameter name="AlarmPWaterErr" type="bool" direction="out" xmlns="automation.control" uuid="3b098f7e-a18e-483f-b6d7-b2955999efc0" />
         <parameter name="AlarmTWaterErr" type="bool" direction="out" xmlns="automation.control" uuid="c651d7d3-3938-468b-98ea-fb5c56f4bfd6" />
         <parameter name="AlarmPGasErr" type="bool" direction="out" xmlns="automation.control" uuid="16e546af-3bc9-4947-bc8b-118643d6d5b5" />
+        <parameter name="AlarmSharedFire" type="bool" direction="out" xmlns="automation.control" uuid="db4668e6-d210-43a9-8bcb-a762c9365d00" />
       </type>
       <type name="IOS_View" xmlns="automation.control" aspect="Aspects.IOS_Aspect" original="ProtectsBoiler" uuid="34cacda0-da21-4dbd-a163-81f506dc1097">
         <ref name="_PLC_View" type="PLC_View" xmlns="automation.reference" uuid="2df91735-51c9-445f-8b36-3d07f2903b63" />
@@ -8842,6 +8857,12 @@ else
         <parameter name="VentOk" direction="out" type="bool" xmlns="automation.control" uuid="3db0833b-33da-4559-8afe-7b1e2b93deb1" />
         <bind source="_PLC_View.AlarmVentOK" target="VentOk" />
         <bind source="_PLC_View.AlarmGermOK" target="GermOk" />
+        <parameter name="AlarmSharedFireL" uuid="085f9716-fb2f-4e6d-b023-ff1ffb69af09" direction="out" type="bool">
+          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
+            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":1,"IsEnabled":true,"Message":"Интенсивность факела ниже нормы.","Severity":668,"Sound":"alarm.wav","Type":2},{"AckStrategy":1,"Severity":1,"Type":3}],"Type":2}}</property>
+          </attribute>
+        </parameter>
+        <bind source="_PLC_View.AlarmSharedFire" target="AlarmSharedFireL" />
       </type>
     </type>
     <type name="Boiler" xmlns="automation.control" uuid="c15fbe2c-7d35-4602-9078-fa66ab0b4bbc">
@@ -8879,6 +8900,7 @@ else
         <parameter name="bMute" type="bool" direction="in-out" xmlns="automation.control" uuid="74b62f0a-870b-4dcf-a858-0b34a9bf9942" />
         <parameter name="KPD" direction="out" type="float32" xmlns="automation.control" uuid="07ba42fc-3fd2-4be1-a2e8-de89a2197f2d" />
         <parameter name="MaskVac" type="bool" direction="in-out" xmlns="automation.control" uuid="59cda660-ca9f-46f6-bda0-ab321a33191e" />
+        <parameter name="MaskSharedFire" type="bool" direction="in-out" xmlns="automation.control" uuid="6282f9ca-da07-4a51-8d4b-4373b3bfdd14" />
       </type>
       <type name="IOS_View" xmlns="automation.control" aspect="Aspects.IOS_Aspect" original="Boiler" uuid="75814766-5317-4871-870a-b481b5f2198d">
         <ref name="_PLC_View" type="PLC_View" xmlns="automation.reference" uuid="c7683099-3278-4c6f-80ff-7887581b9e66" />
@@ -9044,6 +9066,10 @@ else
         <bind source="InMaskVac" target="_PLC_View.MaskVac" />
         <parameter name="OutMaskVac" uuid="a2b938ab-ea50-4d73-9f2c-c1d7b5a532e8" direction="out" type="bool" />
         <bind source="_PLC_View.MaskVac" target="OutMaskVac" />
+        <parameter name="InMaskSharedFire" uuid="8cbaebc2-26ad-465f-9666-8076054a6515" direction="in" type="bool" />
+        <bind source="InMaskSharedFire" target="_PLC_View.MaskSharedFire" />
+        <parameter name="OutMaskSharedFire" uuid="0dc82e22-b4e5-4469-a5fd-762b2b9266f1" direction="out" type="bool" />
+        <bind source="_PLC_View.MaskSharedFire" target="OutMaskSharedFire" />
       </type>
     </type>
     <type name="DelAlarmsBoiler" xmlns="automation.control" uuid="7bf32a59-7c25-4527-868a-f68a8101e433">
@@ -9057,6 +9083,7 @@ else
         <parameter name="PWatH" type="float32" direction="in-out" xmlns="automation.control" uuid="a53fd344-3054-4bf6-b511-606de38937a8" />
         <parameter name="TSmoke" type="float32" direction="in-out" xmlns="automation.control" uuid="2a195a9a-13d0-445e-a66e-0050dfb290f9" />
         <parameter name="POilL" type="float32" direction="in-out" xmlns="automation.control" uuid="20a2f3cb-abfa-4942-a048-40af57c03b83" />
+        <parameter name="SharedFire" type="float32" direction="in-out" xmlns="automation.control" uuid="04fc08fe-fca5-4e52-b28c-07e051745232" />
       </type>
       <type name="IOS_View" original="DelAlarmsBoiler" aspect="Aspects.IOS_Aspect" uuid="62c9aa1e-6108-4f19-9669-8ebd3deb786e">
         <ref name="Reference" type="PLC_View" xmlns="automation.reference" uuid="50aec717-33c3-4449-81a6-c89c68f01225" />
@@ -9114,6 +9141,12 @@ else
           <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; ServerTime=&quot;True&quot;" xmlns="system" />
         </parameter>
         <bind source="Reference.POilL" target="OutPOilL" />
+        <parameter name="InSharedFireL" uuid="ce1f841c-4472-4e59-a745-08b838520b5f" direction="in" type="float32" />
+        <bind source="InSharedFireL" target="Reference.SharedFire" />
+        <parameter name="OutSharedFireL" uuid="0d6b9959-a337-4c92-a647-9e85aef3a3c7" direction="out" type="float32">
+          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; ServerTime=&quot;True&quot;" xmlns="system" />
+        </parameter>
+        <bind source="Reference.SharedFire" target="OutSharedFireL" />
       </type>
     </type>
     <type name="ProtectsValueBurn" xmlns="automation.control" uuid="29e4d40a-0090-4147-abc8-25bf21bb49f4">
@@ -10112,11 +10145,7 @@ else
         <bind source="_PLC_View.IgnProgress" target="IgnProgress" />
         <parameter name="BurnStatus" direction="out" type="string" uuid="dcdd17c6-90bd-4abf-8b58-e556efffcb9f" />
         <bind source="_PLC_View.BurnStatus" target="BurnStatus" />
-        <parameter name="FinalIgnBurn" direction="out" type="bool" uuid="40550a1b-01cb-4071-aa85-ef2650677d01">
-          <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
-            <property name="value">{"Condition":{"IsEnabled":"true","Subconditions":[{"AckStrategy":0,"IsEnabled":true,"Message":".Розжиг завершён.","Severity":1,"Type":2},{"AckStrategy":0,"Message":"","Severity":1,"Type":3}],"Type":2}}</property>
-          </attribute>
-        </parameter>
+        <parameter name="FinalIgnBurn" direction="out" type="bool" uuid="40550a1b-01cb-4071-aa85-ef2650677d01" />
         <bind source="_PLC_View.FinalIgnBurn" target="FinalIgnBurn" />
         <parameter name="nBurn" direction="out" type="int16" uuid="9c33ba07-cb22-40f8-b7ec-f16cac18ed56">
           <attribute type="unit.Server.Attributes.Alarm" xmlns="system">
@@ -10325,9 +10354,7 @@ else
       </type>
       <type name="IOS_View" xmlns="automation.control" aspect="Aspects.IOS_Aspect" original="Value" uuid="1417fb67-e1c0-4119-911d-96f7cf4d9c6d">
         <ref name="_PLC_View" type="PLC_View" xmlns="automation.reference" uuid="989a36fb-c6ab-4316-83be-dc806694aafd" />
-        <parameter name="VALUE" uuid="3e7980ed-03db-4448-a355-cba86a361408" direction="out" type="float32">
-          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; MinTime=&quot;1000&quot; ServerTime=&quot;True&quot;" xmlns="system" />
-        </parameter>
+        <parameter name="VALUE" uuid="3e7980ed-03db-4448-a355-cba86a361408" direction="out" type="float32" />
         <bind source="_PLC_View.VALUE" target="VALUE" />
       </type>
     </type>

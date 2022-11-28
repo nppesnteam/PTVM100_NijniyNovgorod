@@ -843,7 +843,7 @@ fETSignalH=0;]]>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="Initialized">
 			<body kind="om">
 				<![CDATA[i:	uint1=0;
-while (i<10)
+while (i<11)
 {
 	ALIASProt[i].Path="Prot"+String.ToString(i+1)+".ALIAS";
 	i+=1;
@@ -851,7 +851,7 @@ while (i<10)
 			</body>
 		</do-on>
 	</object>
-	<object access-modifier="private" name="ALIASProt" display-name="ALIASProt" uuid="c88a4d2d-7721-4d18-a285-88ff0d46147a" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4" cardinal="9">
+	<object access-modifier="private" name="ALIASProt" display-name="ALIASProt" uuid="c88a4d2d-7721-4d18-a285-88ff0d46147a" base-type="OpcItemString" base-type-id="19347e85-d46e-416c-96e4-ce7914342e6c" ver="4" cardinal="10">
 		<init target="Source" ver="4" ref="ProtectOpcSorce"/>
 		<do-on access-modifier="private" name="Handler_1" display-name="Handler_1" ver="4" event="OnValueChanged">
 			<body kind="om">
