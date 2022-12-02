@@ -366,12 +366,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_1.fPE301</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel1.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_0</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel1.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -388,12 +382,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_1.fPE302</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel2.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_1</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel2.MASK</node-path>
@@ -414,12 +402,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_1.fTE303</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel3.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_2</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel3.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -436,12 +418,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_1.fPE304</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel4.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_3</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel4.MASK</node-path>
@@ -462,12 +438,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_1.fPE305</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel5.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_4</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel5.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -484,12 +454,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_1.fPE306</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel6.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_5</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel6.MASK</node-path>
@@ -510,12 +474,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_1.fTE307</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel7.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_6</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel7.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -532,12 +490,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_1.fPE308</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel8.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_7</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel8.MASK</node-path>
@@ -558,12 +510,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_1.fPE309</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel9.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_8</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel9.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -580,12 +526,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_1.fTE310</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel10.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_9</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel10.MASK</node-path>
@@ -606,12 +546,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_1.fQE311</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel11.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_10</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel11.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -628,12 +562,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_1.fPE312</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel12.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_11</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel12.MASK</node-path>
@@ -654,12 +582,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_1.fPE313</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel13.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_12</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel13.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -676,12 +598,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_1.fTE314</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel14.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_13</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel14.MASK</node-path>
@@ -702,12 +618,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_1.fPE315</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel15.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_14</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel15.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -724,12 +634,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_1.fREZ316</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module1.Channel16.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_15</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module1.Channel16.MASK</node-path>
@@ -750,12 +654,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_2.fTE317</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel1.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_0</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel1.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -772,12 +670,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_2.fTE318</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel2.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_1</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel2.MASK</node-path>
@@ -798,12 +690,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_2.fPE319</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel3.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_2</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel3.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -820,12 +706,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_2.fPE320</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel4.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_3</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel4.MASK</node-path>
@@ -846,12 +726,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_2.fBE321</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel5.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_4</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel5.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -868,12 +742,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_2.fAM322</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel6.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_5</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel6.MASK</node-path>
@@ -894,12 +762,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_2.fAM323</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel7.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_6</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel7.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -916,12 +778,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_2.fAM324</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel8.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_7</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel8.MASK</node-path>
@@ -942,12 +798,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_2.fAM325</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel9.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_8</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel9.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -964,12 +814,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_2.fREZ326</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel10.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_9</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel10.MASK</node-path>
@@ -990,12 +834,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_2.fREZ327</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel11.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_10</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel11.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -1012,12 +850,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_2.fREZ328</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel12.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_11</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel12.MASK</node-path>
@@ -1038,12 +870,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_2.fREZ329</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel13.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_12</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel13.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -1060,12 +886,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_2.fREZ330</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel14.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_13</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel14.MASK</node-path>
@@ -1086,12 +906,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_2.fREZ331</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel15.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_14</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel15.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -1108,12 +922,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_2.fREZ332</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Main.AI.Module2.Channel16.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_15</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Main.AI.Module2.Channel16.MASK</node-path>
@@ -2150,12 +1958,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIAi2_1.fAM301</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel1.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_0</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel1.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -2172,12 +1974,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIAi2_1.fPE302</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel2.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_1</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel2.MASK</node-path>
@@ -2198,12 +1994,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIAi2_1.fPE303</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel3.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_2</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel3.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -2220,12 +2010,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIAi2_1.fPE304</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel4.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_3</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel4.MASK</node-path>
@@ -2246,12 +2030,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIAi2_1.fPE305</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel5.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_4</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel5.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -2268,12 +2046,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIAi2_1.fPE306</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel6.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_5</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel6.MASK</node-path>
@@ -2294,12 +2066,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIAi2_1.fPE307</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel7.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_6</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel7.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -2316,12 +2082,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIAi2_1.fPE308</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel8.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_7</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel8.MASK</node-path>
@@ -2342,12 +2102,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIAi2_1.fPE309</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel9.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_8</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel9.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -2364,12 +2118,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIAi2_1.fPE310</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel10.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_9</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel10.MASK</node-path>
@@ -2390,12 +2138,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIAi2_1.fREZ311</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel11.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_10</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel11.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -2412,12 +2154,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIAi2_1.fREZ312</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel12.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_11</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel12.MASK</node-path>
@@ -2438,12 +2174,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIAi2_1.fREZ313</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel13.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_12</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel13.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -2460,12 +2190,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIAi2_1.fREZ314</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel14.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_13</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel14.MASK</node-path>
@@ -2486,12 +2210,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIAi2_1.fREZ315</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel15.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_14</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel15.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -2508,12 +2226,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIAi2_1.fREZ316</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group1.AI.Module1.Channel16.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_15</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group1.AI.Module1.Channel16.MASK</node-path>
@@ -3145,12 +2857,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIAi2_1.fAM301</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel1.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_0</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel1.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -3167,12 +2873,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIAi2_1.fPE302</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel2.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_1</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel2.MASK</node-path>
@@ -3193,12 +2893,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIAi2_1.fPE303</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel3.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_2</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel3.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -3215,12 +2909,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIAi2_1.fPE304</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel4.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_3</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel4.MASK</node-path>
@@ -3241,12 +2929,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIAi2_1.fPE305</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel5.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_4</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel5.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -3263,12 +2945,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIAi2_1.fPE306</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel6.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_5</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel6.MASK</node-path>
@@ -3289,12 +2965,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIAi2_1.fPE307</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel7.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_6</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel7.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -3311,12 +2981,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIAi2_1.fPE308</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel8.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_7</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel8.MASK</node-path>
@@ -3337,12 +3001,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIAi2_1.fPE309</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel9.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_8</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel9.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -3359,12 +3017,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIAi2_1.fPE310</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel10.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_9</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel10.MASK</node-path>
@@ -3385,12 +3037,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIAi2_1.fREZ311</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel11.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_10</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel11.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -3407,12 +3053,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIAi2_1.fREZ312</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel12.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_11</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel12.MASK</node-path>
@@ -3433,12 +3073,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIAi2_1.fREZ313</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel13.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_12</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel13.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -3455,12 +3089,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIAi2_1.fREZ314</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel14.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_13</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel14.MASK</node-path>
@@ -3481,12 +3109,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIAi2_1.fREZ315</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel15.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_14</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel15.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -3503,12 +3125,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIAi2_1.fREZ316</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group2.AI.Module1.Channel16.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_15</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group2.AI.Module1.Channel16.MASK</node-path>
@@ -4140,12 +3756,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIIAi2_1.fAM301</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel1.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_0</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel1.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -4162,12 +3772,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIIAi2_1.fPE302</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel2.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_1</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel2.MASK</node-path>
@@ -4188,12 +3792,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIIAi2_1.fPE303</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel3.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_2</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel3.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -4210,12 +3808,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIIAi2_1.fPE304</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel4.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_3</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel4.MASK</node-path>
@@ -4236,12 +3828,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIIAi2_1.fPE305</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel5.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_4</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel5.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -4258,12 +3844,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIIAi2_1.fPE306</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel6.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_5</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel6.MASK</node-path>
@@ -4284,12 +3864,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIIAi2_1.fPE307</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel7.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_6</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel7.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -4306,12 +3880,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIIAi2_1.fPE308</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel8.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_7</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel8.MASK</node-path>
@@ -4332,12 +3900,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIIAi2_1.fPE309</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel9.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_8</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel9.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -4354,12 +3916,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIIAi2_1.fPE310</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel10.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_9</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel10.MASK</node-path>
@@ -4380,12 +3936,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIIAi2_1.fREZ311</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel11.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_10</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel11.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -4402,12 +3952,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIIAi2_1.fREZ312</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel12.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_11</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel12.MASK</node-path>
@@ -4428,12 +3972,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIIAi2_1.fREZ313</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel13.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_12</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel13.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -4450,12 +3988,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIIAi2_1.fREZ314</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel14.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_13</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel14.MASK</node-path>
@@ -4476,12 +4008,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIIAi2_1.fREZ315</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel15.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_14</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel15.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -4498,12 +4024,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIIIAi2_1.fREZ316</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group3.AI.Module1.Channel16.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_15</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group3.AI.Module1.Channel16.MASK</node-path>
@@ -5135,12 +4655,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIVAi2_1.fAM301</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel1.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_0</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel1.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -5157,12 +4671,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIVAi2_1.fPE302</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel2.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_1</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel2.MASK</node-path>
@@ -5183,12 +4691,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIVAi2_1.fPE303</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel3.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_2</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel3.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -5205,12 +4707,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIVAi2_1.fPE304</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel4.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_3</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel4.MASK</node-path>
@@ -5231,12 +4727,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIVAi2_1.fPE305</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel5.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_4</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel5.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -5253,12 +4743,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIVAi2_1.fPE306</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel6.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_5</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel6.MASK</node-path>
@@ -5279,12 +4763,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIVAi2_1.fPE307</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel7.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_6</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel7.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -5301,12 +4779,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIVAi2_1.fPE308</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel8.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_7</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel8.MASK</node-path>
@@ -5327,12 +4799,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIVAi2_1.fPE309</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel9.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_8</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel9.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -5349,12 +4815,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIVAi2_1.fPE310</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel10.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_9</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel10.MASK</node-path>
@@ -5375,12 +4835,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIVAi2_1.fREZ311</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel11.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_10</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel11.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -5397,12 +4851,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIVAi2_1.fREZ312</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel12.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_11</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel12.MASK</node-path>
@@ -5423,12 +4871,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIVAi2_1.fREZ313</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel13.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_12</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel13.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -5445,12 +4887,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIVAi2_1.fREZ314</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel14.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_13</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel14.MASK</node-path>
@@ -5471,12 +4907,6 @@
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIVAi2_1.fREZ315</nodeId>
   </item>
   <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel15.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_14</nodeId>
-  </item>
-  <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel15.MASK</node-path>
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
@@ -5493,12 +4923,6 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stSlaveIVAi2_1.fREZ316</nodeId>
-  </item>
-  <item Binding="Introduced">
-    <node-path>ROOT.Diag.Group4.AI.Module1.Channel16.STATUS</node-path>
-    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
-    <nodeIdType>String</nodeIdType>
-    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_15</nodeId>
   </item>
   <item Binding="Introduced">
     <node-path>ROOT.Diag.Group4.AI.Module1.Channel16.MASK</node-path>
@@ -13158,5 +12582,635 @@
     <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
     <nodeIdType>String</nodeIdType>
     <nodeId>Application.GVL.stAiSensorValStat.srAnalogSensorValue.stMainAi2_2.fBE321</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.AverageParams.FGas</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAverageValueHourly.fFgas</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.AverageParams.FWat</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAverageValueHourly.fFWatOut</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.AverageParams.PGasCol</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAverageValueHourly.fPGasCol</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.AverageParams.PVac</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAverageValueHourly.fPVac</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.AverageParams.PWatIn</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAverageValueHourly.fPWatIn</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.AverageParams.PWatOut</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAverageValueHourly.fPWatOut</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.AverageParams.TFlueGas</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAverageValueHourly.fTFlueGas</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.AverageParams.TWatIn</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAverageValueHourly.fTWatIn</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.AverageParams.TWatOut</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.stAverageValueHourly.fTWatOut</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel1.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_0</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel2.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_1</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel3.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_2</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel4.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_3</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel5.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_4</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel6.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_5</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel7.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_6</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel8.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_7</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel9.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_8</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel10.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_9</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel11.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_10</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel12.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_11</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel13.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_12</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel14.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_13</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel15.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_14</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module1.Channel16.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[0].b_15</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel1.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_0</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel2.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_1</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel3.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_2</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel4.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_3</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel5.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_4</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel6.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_5</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel7.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_6</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel8.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_7</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel9.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_8</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel10.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_9</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel11.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_10</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel12.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_11</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel13.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_12</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel14.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_13</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel15.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_14</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Main.AI.Module2.Channel16.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[1].b_15</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel1.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_0</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel2.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_1</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel3.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_2</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel4.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_3</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel5.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_4</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel6.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_5</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel7.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_6</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel8.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_7</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel9.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_8</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel10.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_9</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel11.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_10</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel12.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_11</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel13.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_12</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel14.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_13</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel15.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_14</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group1.AI.Module1.Channel16.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[2].b_15</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel1.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_0</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel2.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_1</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel3.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_2</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel4.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_3</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel5.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_4</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel6.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_5</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel7.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_6</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel8.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_7</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel9.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_8</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel10.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_9</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel11.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_10</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel12.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_11</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel13.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_12</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel14.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_13</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel15.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_14</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group2.AI.Module1.Channel16.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[3].b_15</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel1.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_0</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel2.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_1</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel3.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_2</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel4.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_3</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel5.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_4</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel6.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_5</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel7.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_6</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel8.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_7</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel9.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_8</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel10.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_9</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel11.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_10</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel12.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_11</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel13.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_12</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel14.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_13</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel15.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_14</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group3.AI.Module1.Channel16.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[4].b_15</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel1.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_0</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel2.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_1</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel3.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_2</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel4.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_3</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel5.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_4</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel6.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_5</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel7.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_6</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel8.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_7</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel9.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_8</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel10.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_9</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel11.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_10</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel12.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_11</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel13.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_12</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel14.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_13</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel15.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_14</nodeId>
+  </item>
+  <item Binding="Introduced">
+    <node-path>ROOT.Diag.Group4.AI.Module1.Channel16.STATUS</node-path>
+    <namespace>urn:ProsoftSystems:regul_ua_server:iec_data</namespace>
+    <nodeIdType>String</nodeIdType>
+    <nodeId>Application.GVL.srAnalogSensorStatusArch[5].b_15</nodeId>
   </item>
 </root>

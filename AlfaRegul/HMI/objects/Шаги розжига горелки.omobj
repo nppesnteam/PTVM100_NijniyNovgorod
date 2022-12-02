@@ -118,7 +118,7 @@ while (i<19)
 		<init target="Source" ver="4" ref="unit.Connections.OpcSource"/>
 		<do-trace access-modifier="private" target="Path" ver="4">
 			<body>
-				<![CDATA["ROOT.GAS.GROUP"+Str.ToString(GroupNum)+".burn"+Str.ToString(BurnNum)+".Burn.nBurn"]]>
+				<![CDATA["ROOT.GROUP"+Str.ToString(GroupNum)+".burn"+Str.ToString(BurnNum)+".Burn.nBurn"]]>
 			</body>
 		</do-trace>
 	</object>

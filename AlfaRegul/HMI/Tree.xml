@@ -50,7 +50,7 @@
   </Style>
  </Styles>
  <Worksheet ss:Name="Tree">
-  <Table ss:ExpandedColumnCount="12" ss:ExpandedRowCount="878" x:FullColumns="1"
+  <Table ss:ExpandedColumnCount="12" ss:ExpandedRowCount="887" x:FullColumns="1"
    x:FullRows="1" ss:DefaultRowHeight="15">
    <Column ss:Width="564.75"/>
    <Column ss:Width="51"/>
@@ -5309,6 +5309,60 @@
     <Cell><Data ss:Type="String">кПа</Data></Cell>
     <Cell><Data ss:Type="String">Давление между ПЗК группы 4</Data></Cell>
    </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Среднечасовые значения\Давление газа после регулятора</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.AverageParams.PGasCol</Data></Cell>
+    <Cell><Data ss:Type="String">кПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление газа после регулятора</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Среднечасовые значения\Расход газа</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.AverageParams.FGas</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">м³/ч</Data></Cell>
+    <Cell><Data ss:Type="String">Расход газа</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Среднечасовые значения\Температура дымовых газов</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.AverageParams.TFlueGas</Data></Cell>
+    <Cell><Data ss:Type="String">°C</Data></Cell>
+    <Cell><Data ss:Type="String">Температура дымовых газов</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Среднечасовые значения\Разрежения</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.AverageParams.PVac</Data></Cell>
+    <Cell><Data ss:Type="String">Па</Data></Cell>
+    <Cell><Data ss:Type="String">Разрежение</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Среднечасовые значения\Давление воды на входе</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.AverageParams.PWatIn</Data></Cell>
+    <Cell><Data ss:Type="String">МПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воды на входе</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Среднечасовые значения\Температура воды на входе</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.AverageParams.TWatIn</Data></Cell>
+    <Cell><Data ss:Type="String">°C</Data></Cell>
+    <Cell><Data ss:Type="String">Температура воды на входе</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Среднечасовые значения\Давление воды на выходе</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.AverageParams.PWatOut</Data></Cell>
+    <Cell><Data ss:Type="String">МПа</Data></Cell>
+    <Cell><Data ss:Type="String">Давление воды на выходе</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Среднечасовые значения\Температура воды на выходе</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.AverageParams.TWatOut</Data></Cell>
+    <Cell><Data ss:Type="String">°C</Data></Cell>
+    <Cell><Data ss:Type="String">Температура воды на выходе</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">Котёл\Среднечасовые значения\Расход воды</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">ROOT.AverageParams.FWat</Data></Cell>
+    <Cell><Data ss:Type="String">т/ч</Data></Cell>
+    <Cell><Data ss:Type="String">Расход воды</Data></Cell>
+   </Row>
   </Table>
   <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
    <PageSetup>
@@ -5325,11 +5379,11 @@
    </Print>
    <Zoom>85</Zoom>
    <Selected/>
-   <TopRowVisible>733</TopRowVisible>
+   <TopRowVisible>864</TopRowVisible>
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>669</ActiveRow>
+     <ActiveRow>887</ActiveRow>
      <ActiveCol>4</ActiveCol>
     </Pane>
    </Panes>

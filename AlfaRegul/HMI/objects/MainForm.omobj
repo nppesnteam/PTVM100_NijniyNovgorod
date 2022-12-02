@@ -1445,11 +1445,6 @@ else
 						</expr>
 					</conditional-expr>
 				</do-trace>
-				<do-trace access-modifier="private" target="Enabled" ver="4">
-					<body>
-						<![CDATA[!BoilerWork]]>
-					</body>
-				</do-trace>
 				<do-trace access-modifier="private" target="Visible" ver="4">
 					<body>
 						<![CDATA[unit.Security.AllowSettingsChange.Value]]>
@@ -1484,6 +1479,11 @@ else
 					</conditional-expr>
 				</do-trace>
 				<designed target="Checked" value="false" ver="4"/>
+				<do-trace access-modifier="private" target="Enabled" ver="4">
+					<body>
+						<![CDATA[unit.Security.AllowSettingsChange.Value]]>
+					</body>
+				</do-trace>
 			</object>
 			<object access-modifier="private" name="mX" display-name="mX" uuid="48f36819-62ba-4233-8af8-bfcf55223962" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
 			<object access-modifier="private" name="mY" display-name="mY" uuid="6b966644-04e3-45fb-8a14-823b50ea6c4d" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
@@ -1666,7 +1666,7 @@ InManCtrl=false;]]>
 				<designed target="DisabledPenWidth" value="1" ver="4"/>
 				<do-trace access-modifier="private" target="Enabled" ver="4">
 					<body>
-						<![CDATA[!BoilerWork]]>
+						<![CDATA[unit.Security.AllowSettingsChange.Value]]>
 					</body>
 				</do-trace>
 				<do-trace access-modifier="private" target="Visible" ver="4">

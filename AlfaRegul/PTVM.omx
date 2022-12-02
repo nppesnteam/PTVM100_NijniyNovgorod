@@ -4141,6 +4141,13 @@
               <attribute type="unit.System.Attributes.Title" value=" " xmlns="system" />
               <attribute type="Attributes.DIGITS" value="0" xmlns="system" />
             </object>
+            <object name="AverageParams" base-type="Types.AverageParams.PLC_View" aspect="Aspects.PLC_Aspect" xmlns="automation.control" uuid="09e3f516-3c83-44a2-a8f9-145f572001fe">
+              <attribute type="Attributes.ALIAS" value="B" xmlns="system" />
+              <attribute type="Attributes.EU" value="%" xmlns="system" />
+              <attribute type="unit.System.Attributes.Description" value="Интенсивность общего факела" xmlns="system" />
+              <attribute type="unit.System.Attributes.Title" value=" " xmlns="system" />
+              <attribute type="Attributes.DIGITS" value="0" xmlns="system" />
+            </object>
           </object>
         </dp:application-object>
         <opc:opcua-server name="OpcUaServer" uuid="2cf86c2a-f319-4add-9221-d2a8e4c5b575" tag-map="PLC_App.OpcUaAddressMap" endpoint-name="regul_ua_server" port="4840" />
@@ -8123,6 +8130,9 @@ Channel32.H=Math.TestBit(State.State,31);</property>
         <ct:object name="FireIntensity" uuid="c32e9ea9-884b-4163-bc1a-ad4ab8c0c0e3" original="PLC.Runtime.PLC_App.ROOT.FireIntensity" base-type="Types.AnalogSens.IOS_View" aspect="Aspects.IOS_Aspect">
           <r:init-ref ref="_PLC_View" target="Domain.PLC.Runtime.PLC_App.ROOT.FireIntensity" />
         </ct:object>
+        <ct:object name="AverageParams" uuid="18298d44-46e5-456a-929d-075335ae4db8" original="PLC.Runtime.PLC_App.ROOT.AverageParams" base-type="Types.AverageParams.IOS_View" aspect="Aspects.IOS_Aspect">
+          <r:init-ref ref="_PLC_View" target="Domain.PLC.Runtime.PLC_App.ROOT.AverageParams" />
+        </ct:object>
       </ct:object>
     </dp:application-object>
     <dp:domain-node name="ARM1" uuid="5c501410-d8c6-4207-b464-de8db5742447">
@@ -8187,7 +8197,6 @@ Channel32.H=Math.TestBit(State.State,31);</property>
         <attribute type="unit.System.Attributes.Title" value="KKS" />
         <attribute type="unit.System.Attributes.Description" value="Описание" />
         <ct:parameter name="VALUE" uuid="d1ad7c27-bb4d-4998-96bb-5473b5824af0" type="float32" direction="out" />
-        <ct:parameter name="STATUS" uuid="4ba1d733-08be-433e-83d4-fae16ea017db" type="uint8" direction="out" />
         <parameter name="MASK" type="bool" direction="in-out" xmlns="automation.control" uuid="89fcba83-2123-400c-8e09-aa230745efff" />
         <parameter name="ELECTROVALUE" type="float32" direction="out" xmlns="automation.control" uuid="5564148c-eebe-4592-bb68-d578f08d084f" />
       </ct:type>
@@ -8205,7 +8214,9 @@ Channel32.H=Math.TestBit(State.State,31);</property>
           <attribute type="unit.System.Attributes.InitialValue" value="@(object:Attributes.DIGITS)" xmlns="system" />
         </parameter>
         <r:ref name="_PLC_View" uuid="df740357-17ff-47af-9066-8090a73a82d8" type="PLC_View" />
-        <parameter name="VALUE" uuid="4ccdeaf0-39e5-48cc-acdb-0dca1b7d9fd5" direction="out" type="float32" />
+        <parameter name="VALUE" uuid="4ccdeaf0-39e5-48cc-acdb-0dca1b7d9fd5" direction="out" type="float32">
+          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; MinTime=&quot;1000&quot; ServerTime=&quot;True&quot;" xmlns="system" />
+        </parameter>
         <bind source="_PLC_View.VALUE" target="VALUE" />
         <parameter name="KKS" uuid="6ee9672a-e6dd-42a5-b415-d23498368ba8" type="string" direction="out">
           <attribute type="unit.System.Attributes.InitialValue" value="@(object:System.Attributes.Title)" xmlns="system" />
@@ -8234,7 +8245,6 @@ STATUS_BITS.UpperElectrical = Math.TestBit(STATUS,3);
 STATUS_BITS.LowerElectrical = Math.TestBit(STATUS,4);</property>
         </handler>
         <parameter name="STATUS" uuid="f72b3b82-e3c4-4c4a-b7c1-2ad6e8a46ef9" direction="out" type="uint8" />
-        <bind source="_PLC_View.STATUS" target="STATUS" />
         <parameter name="OutMASK" uuid="cf7ec64c-e9f9-4d91-84dd-bd9988e9749a" direction="out" type="bool" />
         <bind source="_PLC_View.MASK" target="OutMASK" />
         <parameter name="ELECTROVALUE" uuid="1a9ff29c-0f95-4c0c-b005-14a01b2deff1" direction="out" type="float32">
@@ -8718,7 +8728,7 @@ else
         </parameter>
         <ref name="_PLC_View" type="PLC_View" xmlns="automation.reference" uuid="348ef885-c2e2-48ab-ad03-430bf790fc35" />
         <parameter name="VALUE" direction="out" type="float32" uuid="f702187f-7ead-41f5-b297-22e207d099b5">
-          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; MinTime=&quot;1000&quot; ServerTime=&quot;False&quot;" xmlns="system" />
+          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; MinTime=&quot;1000&quot; ServerTime=&quot;True&quot;" xmlns="system" />
         </parameter>
         <bind source="_PLC_View.VALUE" target="VALUE" />
         <parameter name="KKS" type="string" direction="out" uuid="416cecdf-c0bf-4bec-8971-102a9bc4c738">
@@ -10354,7 +10364,9 @@ else
       </type>
       <type name="IOS_View" xmlns="automation.control" aspect="Aspects.IOS_Aspect" original="Value" uuid="1417fb67-e1c0-4119-911d-96f7cf4d9c6d">
         <ref name="_PLC_View" type="PLC_View" xmlns="automation.reference" uuid="989a36fb-c6ab-4316-83be-dc806694aafd" />
-        <parameter name="VALUE" uuid="3e7980ed-03db-4448-a355-cba86a361408" direction="out" type="float32" />
+        <parameter name="VALUE" uuid="3e7980ed-03db-4448-a355-cba86a361408" direction="out" type="float32">
+          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; MinTime=&quot;1000&quot; ServerTime=&quot;True&quot;" xmlns="system" />
+        </parameter>
         <bind source="_PLC_View.VALUE" target="VALUE" />
       </type>
     </type>
@@ -10574,6 +10586,63 @@ else
         <bind source="InAlarmPGasErr1" target="_PLC_View.AlarmPGasErr1" />
         <parameter name="InAlarmPGasErr2" uuid="6ebc4735-80cf-4dcf-9eed-9af015f0c6eb" direction="in" type="bool" />
         <bind source="InAlarmPGasErr2" target="_PLC_View.AlarmPGasErr2" />
+      </type>
+    </type>
+    <type name="AverageParams" xmlns="automation.control" uuid="92a36dbf-fd30-46db-9b69-bd51c93e2088">
+      <type name="PLC_View" original="AverageParams" aspect="Aspects.PLC_Aspect" uuid="93c4d9c2-371f-44b1-adc8-f1218408670e">
+        <attribute type="Attributes.ALIAS" xmlns="system" />
+        <attribute type="Attributes.DIGITS" value="0" xmlns="system" />
+        <attribute type="Attributes.EU" value="ЕИ" xmlns="system" />
+        <attribute type="unit.System.Attributes.Title" value="KKS" xmlns="system" />
+        <attribute type="unit.System.Attributes.Description" value="Описание" xmlns="system" />
+        <parameter name="FGas" type="float32" direction="out" uuid="5820ffb1-17d9-422a-b831-331947be7ed5" />
+        <parameter name="FWat" type="float32" direction="out" xmlns="automation.control" uuid="b8706c75-66e1-4929-912a-11f9bb8bac93" />
+        <parameter name="PGasCol" type="float32" direction="out" xmlns="automation.control" uuid="7e593cde-bead-4035-b68a-3ab79781466b" />
+        <parameter name="PVac" type="float32" direction="out" xmlns="automation.control" uuid="6d2f58ab-c4fc-4a82-9eae-1f299d5ca417" />
+        <parameter name="PWatIn" type="float32" direction="out" xmlns="automation.control" uuid="7b7ecc08-4a20-45fb-a824-a99f00d8fadf" />
+        <parameter name="PWatOut" type="float32" direction="out" xmlns="automation.control" uuid="e133171b-dfca-4909-9321-7d32b856492e" />
+        <parameter name="TFlueGas" type="float32" direction="out" xmlns="automation.control" uuid="a9a1af24-3218-478f-aaf3-204bcccb4074" />
+        <parameter name="TWatIn" type="float32" direction="out" xmlns="automation.control" uuid="17af04ca-733d-480b-a34f-ac7efcdf2f87" />
+        <parameter name="TWatOut" type="float32" direction="out" xmlns="automation.control" uuid="474e6999-ae0a-4a7b-a578-6f951b82ea50" />
+      </type>
+      <type name="IOS_View" xmlns="automation.control" aspect="Aspects.IOS_Aspect" original="AverageParams" uuid="01579a87-9d50-40fa-b201-2070c118ed39">
+        <ref name="_PLC_View" type="PLC_View" xmlns="automation.reference" uuid="d5ae4884-bf5a-40ce-b0f2-783cfe172c82" />
+        <parameter name="FGas" uuid="176702c4-395b-4822-816b-be19e89db85e" direction="out" type="float32">
+          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; ServerTime=&quot;False&quot;" xmlns="system" />
+        </parameter>
+        <bind source="_PLC_View.FGas" target="FGas" />
+        <parameter name="FWat" uuid="bb8bd20d-389f-4bd9-8d0d-c23498778aa1" direction="out" type="float32">
+          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; ServerTime=&quot;False&quot;" xmlns="system" />
+        </parameter>
+        <bind source="_PLC_View.FWat" target="FWat" />
+        <parameter name="PGasCol" uuid="b44086ba-5ee7-46af-8d52-a8f75621ed7c" direction="out" type="float32">
+          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; ServerTime=&quot;False&quot;" xmlns="system" />
+        </parameter>
+        <bind source="_PLC_View.PGasCol" target="PGasCol" />
+        <parameter name="PVac" uuid="56de3900-d229-4a1e-ae4e-d70d8ff59078" direction="out" type="float32">
+          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; ServerTime=&quot;False&quot;" xmlns="system" />
+        </parameter>
+        <bind source="_PLC_View.PVac" target="PVac" />
+        <parameter name="PWatIn" uuid="f53bf02e-caae-4fef-8061-78120210b0f6" direction="out" type="float32">
+          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; ServerTime=&quot;False&quot;" xmlns="system" />
+        </parameter>
+        <bind source="_PLC_View.PWatIn" target="PWatIn" />
+        <parameter name="PWatOut" uuid="d4a2ee65-18fd-49f6-b5e2-d71a3a67e3b0" direction="out" type="float32">
+          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; ServerTime=&quot;False&quot;" xmlns="system" />
+        </parameter>
+        <bind source="_PLC_View.PWatOut" target="PWatOut" />
+        <parameter name="TFlueGas" uuid="01c16305-bb8f-4e4e-b755-12a78aac69c9" direction="out" type="float32">
+          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; ServerTime=&quot;False&quot;" xmlns="system" />
+        </parameter>
+        <bind source="_PLC_View.TFlueGas" target="TFlueGas" />
+        <parameter name="TWatIn" uuid="e9a7cb8a-d395-4534-8307-231e0f8c918a" direction="out" type="float32">
+          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; ServerTime=&quot;False&quot;" xmlns="system" />
+        </parameter>
+        <bind source="_PLC_View.TWatIn" target="TWatIn" />
+        <parameter name="TWatOut" uuid="5b1a8dc7-65de-402c-86be-3b7379236b58" direction="out" type="float32">
+          <attribute type="unit.Server.Attributes.History" value="Enable=&quot;True&quot; ServerTime=&quot;False&quot;" xmlns="system" />
+        </parameter>
+        <bind source="_PLC_View.TWatOut" target="TWatOut" />
       </type>
     </type>
   </namespace>

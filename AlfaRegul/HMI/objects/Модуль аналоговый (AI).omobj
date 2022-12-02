@@ -231,7 +231,7 @@
 			</object>
 		</object>
 		<object access-modifier="private" name="Column_6" display-name="Column_6" uuid="921abdd9-7eb0-4340-ac63-a76cd051bd38" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
-			<designed target="X" value="700" ver="4"/>
+			<designed target="X" value="750" ver="4"/>
 			<designed target="Y" value="0" ver="4"/>
 			<designed target="ZValue" value="0" ver="4"/>
 			<designed target="Rotation" value="0" ver="4"/>
@@ -267,7 +267,7 @@
 			</object>
 		</object>
 		<object access-modifier="private" name="Column_7" display-name="Column_7" uuid="2237990f-d200-4cf4-b0a6-b4a406fcbf4e" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
-			<designed target="X" value="720" ver="4"/>
+			<designed target="X" value="700" ver="4"/>
 			<designed target="Y" value="0" ver="4"/>
 			<designed target="ZValue" value="0" ver="4"/>
 			<designed target="Rotation" value="0" ver="4"/>
@@ -650,7 +650,7 @@
 		<object access-modifier="private" name="posX" display-name="posX" uuid="c1e06b15-573b-4555-a567-c3d68f0a83b9" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
 		<object access-modifier="private" name="posY" display-name="posY" uuid="bf6b43d1-ec92-4413-acdf-a171d3f9c149" base-type="float4" base-type-id="730a70b7-31fd-42cf-860d-ba8faa618f9d" ver="4"/>
 		<object access-modifier="private" name="Column_6" display-name="Column_6" uuid="7c606a0b-3305-4624-9a35-545540bb547f" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
-			<designed target="X" value="700" ver="4"/>
+			<designed target="X" value="750" ver="4"/>
 			<designed target="Y" value="0" ver="4"/>
 			<designed target="ZValue" value="0" ver="4"/>
 			<designed target="Rotation" value="0" ver="4"/>
@@ -669,7 +669,7 @@
 			<designed target="BrushStyle" value="0" ver="4"/>
 		</object>
 		<object access-modifier="private" name="Column_7" display-name="Column_7" uuid="f46fbd71-bd1e-4391-8099-78c514bf9c2a" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
-			<designed target="X" value="720" ver="4"/>
+			<designed target="X" value="700" ver="4"/>
 			<designed target="Y" value="0" ver="4"/>
 			<designed target="ZValue" value="0" ver="4"/>
 			<designed target="Rotation" value="0" ver="4"/>
@@ -818,7 +818,7 @@ while (i<16)
 				<![CDATA[unit.Security.AllowSettingsChange.Value]]>
 			</condition>
 			<expr>
-				<![CDATA[850]]>
+				<![CDATA[750]]>
 			</expr>
 		</conditional-expr>
 		<default-expr>
@@ -833,7 +833,7 @@ while (i<16)
 				<![CDATA[unit.Security.AllowSettingsChange.Value]]>
 			</condition>
 			<expr>
-				<![CDATA[850]]>
+				<![CDATA[750]]>
 			</expr>
 		</conditional-expr>
 		<default-expr>

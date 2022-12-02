@@ -480,15 +480,15 @@ OpenBurnSteps.Invoke();]]>
 									<![CDATA[posY]]>
 								</expr>
 							</init>
-							<init target="GroupNum" ver="4">
-								<expr>
-									<![CDATA[Group+1]]>
-								</expr>
-							</init>
 							<init target="refData" ver="4" ref="here"/>
 							<init target="BurnNum" ver="4">
 								<expr>
 									<![CDATA[1]]>
+								</expr>
+							</init>
+							<init target="GroupNum" ver="4">
+								<expr>
+									<![CDATA[Group]]>
 								</expr>
 							</init>
 						</object>
@@ -766,15 +766,15 @@ OpenBurnSteps.Invoke();]]>
 									<![CDATA[posY]]>
 								</expr>
 							</init>
-							<init target="GroupNum" ver="4">
-								<expr>
-									<![CDATA[Group+1]]>
-								</expr>
-							</init>
 							<init target="refData" ver="4" ref="here"/>
 							<init target="BurnNum" ver="4">
 								<expr>
 									<![CDATA[2]]>
+								</expr>
+							</init>
+							<init target="GroupNum" ver="4">
+								<expr>
+									<![CDATA[Group]]>
 								</expr>
 							</init>
 						</object>
@@ -1079,15 +1079,15 @@ OpenBurnSteps.Invoke();]]>
 									<![CDATA[posY]]>
 								</expr>
 							</init>
-							<init target="GroupNum" ver="4">
-								<expr>
-									<![CDATA[Group+1]]>
-								</expr>
-							</init>
 							<init target="refData" ver="4" ref="here"/>
 							<init target="BurnNum" ver="4">
 								<expr>
 									<![CDATA[3]]>
+								</expr>
+							</init>
+							<init target="GroupNum" ver="4">
+								<expr>
+									<![CDATA[Group]]>
 								</expr>
 							</init>
 						</object>
@@ -1371,15 +1371,15 @@ OpenBurnSteps.Invoke();]]>
 									<![CDATA[posY]]>
 								</expr>
 							</init>
+							<init target="refData" ver="4" ref="here"/>
 							<init target="GroupNum" ver="4">
 								<expr>
-									<![CDATA[Group+1]]>
+									<![CDATA[Group]]>
 								</expr>
 							</init>
-							<init target="refData" ver="4" ref="here"/>
 							<init target="BurnNum" ver="4">
 								<expr>
-									<![CDATA[3]]>
+									<![CDATA[4]]>
 								</expr>
 							</init>
 						</object>
