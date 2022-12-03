@@ -1343,7 +1343,7 @@ unit.Global.ShowMSG("Время срабатывания "+Column_2.txt.Text+" �
 					<designed target="Tooltip" value="" ver="4"/>
 					<designed target="Width" value="345" ver="4"/>
 					<designed target="Height" value="30" ver="4"/>
-					<designed target="Text" value="ТЗ: Давление рез.топлива в коллекторе ниже нормы" ver="4"/>
+					<designed target="Text" value="ТЗ: Давление мазута в коллекторе ниже нормы" ver="4"/>
 					<designed target="Font" value="Arial,10,-1,5,50,0,0,0,0,0,Обычный" ver="4"/>
 					<designed target="FontColor" value="4278190080" ver="4"/>
 					<designed target="TextAlignment" value="129" ver="4"/>
@@ -10793,7 +10793,7 @@ unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" гор
 					</do-on>
 				</object>
 				<object access-modifier="private" name="BurnCount" display-name="BurnCount" uuid="3e642ae8-3aef-4e00-a0b1-1ae995dfd56b" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
-				<init target="BurnCount" ver="4" value="12"/>
+				<init target="BurnCount" ver="4" value="13"/>
 			</object>
 			<object access-modifier="private" name="Column_12" display-name="Column_12" uuid="e0a2ab51-0a97-40b5-abee-900ad6146ac2" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
 				<designed target="X" value="550" ver="4"/>
@@ -10860,7 +10860,7 @@ unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" гор
 					</do-on>
 				</object>
 				<object access-modifier="private" name="BurnCount" display-name="BurnCount" uuid="a04ad9ed-49d5-4489-81a4-f9a8566f33bb" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
-				<init target="BurnCount" ver="4" value="12"/>
+				<init target="BurnCount" ver="4" value="14"/>
 			</object>
 			<object access-modifier="private" name="Column_13" display-name="Column_13" uuid="236897bd-9ca0-45fd-86fd-7c6da8eeb940" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
 				<designed target="X" value="600" ver="4"/>
@@ -10927,7 +10927,7 @@ unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" гор
 					</do-on>
 				</object>
 				<object access-modifier="private" name="BurnCount" display-name="BurnCount" uuid="e0250a29-d609-40c5-a8de-043779b6da15" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
-				<init target="BurnCount" ver="4" value="12"/>
+				<init target="BurnCount" ver="4" value="15"/>
 			</object>
 			<object access-modifier="private" name="Column_14" display-name="Column_14" uuid="a83d2361-f062-4b37-ba54-8d4bdf42d647" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
 				<designed target="X" value="650" ver="4"/>
@@ -10994,7 +10994,7 @@ unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" гор
 					</do-on>
 				</object>
 				<object access-modifier="private" name="BurnCount" display-name="BurnCount" uuid="951db08f-e6ec-4783-99ea-cec9a549631d" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
-				<init target="BurnCount" ver="4" value="12"/>
+				<init target="BurnCount" ver="4" value="16"/>
 			</object>
 		</object>
 		<object access-modifier="private" name="OPCRegimeMap" display-name="OPCRegimeMap" uuid="944253e6-cc65-4ac4-84f8-d6cc63da4495" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
@@ -12375,7 +12375,7 @@ unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" гор
 					</do-on>
 				</object>
 				<object access-modifier="private" name="BurnCount" display-name="BurnCount" uuid="0ef8711c-f4d9-48e3-94c4-55c5b04e27d9" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
-				<init target="BurnCount" ver="4" value="12"/>
+				<init target="BurnCount" ver="4" value="13"/>
 			</object>
 			<object access-modifier="private" name="Column_12" display-name="Column_12" uuid="283c87e9-b9a6-4ae7-9145-ae3c7b9f0d77" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
 				<designed target="X" value="550" ver="4"/>
@@ -12442,7 +12442,7 @@ unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" гор
 					</do-on>
 				</object>
 				<object access-modifier="private" name="BurnCount" display-name="BurnCount" uuid="fa675c08-ebfd-4a22-ae3b-deece06e4117" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
-				<init target="BurnCount" ver="4" value="12"/>
+				<init target="BurnCount" ver="4" value="14"/>
 			</object>
 			<object access-modifier="private" name="Column_13" display-name="Column_13" uuid="7f513c49-bd97-4162-abff-74d05629c4f6" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
 				<designed target="X" value="600" ver="4"/>
@@ -12509,7 +12509,7 @@ unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" гор
 					</do-on>
 				</object>
 				<object access-modifier="private" name="BurnCount" display-name="BurnCount" uuid="e20084e8-b90e-42cb-93f4-15de466c71b6" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
-				<init target="BurnCount" ver="4" value="12"/>
+				<init target="BurnCount" ver="4" value="15"/>
 			</object>
 			<object access-modifier="private" name="Column_14" display-name="Column_14" uuid="9a259c91-4a5c-457f-89e0-8d7d4b039184" base-type="Rectangle" base-type-id="15726dc3-881e-4d8d-b0fa-a8f8237f08ca" ver="4">
 				<designed target="X" value="650" ver="4"/>
@@ -12576,7 +12576,7 @@ unit.Global.ShowMSG(Column_1.txt.Text+" при работе "+BurnCount+" гор
 					</do-on>
 				</object>
 				<object access-modifier="private" name="BurnCount" display-name="BurnCount" uuid="c2d1b70d-a383-4bdb-9351-6ddd7643ed0f" base-type="string" base-type-id="76403785-f3d5-41a7-9eb6-d19d2aa2d95d" ver="4"/>
-				<init target="BurnCount" ver="4" value="12"/>
+				<init target="BurnCount" ver="4" value="16"/>
 			</object>
 		</object>
 		<object access-modifier="private" name="OPCRegimeMap" display-name="OPCRegimeMap" uuid="9ebda8a1-31fb-4539-ac8c-9546fa1ecc6f" base-type="OpcSource" base-type-id="87519c51-54a2-4fbf-9709-be83ebcb2028" ver="4">
