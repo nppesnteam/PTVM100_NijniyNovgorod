@@ -33,7 +33,7 @@
                 <attribute type="Attributes.ALIAS" value="F" xmlns="system" />
                 <attribute type="Attributes.EU" value="м³/час" xmlns="system" />
                 <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                <attribute type="Attributes.DIGITS" value="1" xmlns="system" />
+                <attribute type="Attributes.DIGITS" value="0" xmlns="system" />
               </object>
               <object name="Gate1" xmlns="automation.control" base-type="Types.Gate.PLC_View" aspect="Aspects.PLC_Aspect" uuid="c0259387-9c94-4445-a8f7-dd7a4388fb8f">
                 <attribute type="unit.System.Attributes.Description" xmlns="system" value="Задвижка 1 газа перед котлом" />
@@ -3137,7 +3137,7 @@
                 <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
                 <attribute type="Attributes.EU" value="т/час" xmlns="system" />
                 <attribute type="Attributes.ALIAS" value="F" xmlns="system" />
-                <attribute type="Attributes.DIGITS" value="1" xmlns="system" />
+                <attribute type="Attributes.DIGITS" value="0" xmlns="system" />
               </object>
               <object name="TOut" xmlns="automation.control" base-type="Types.AnalogDoubleSens.PLC_View" aspect="Aspects.PLC_Aspect" uuid="36be75a4-81a2-4b79-b347-cb653589b7f6">
                 <attribute type="unit.System.Attributes.Description" xmlns="system" value="Температура Воды на выходе из котла" />
@@ -3186,7 +3186,7 @@
                 <attribute type="Attributes.ALIAS" xmlns="system" value="F" />
                 <attribute type="Attributes.EU" xmlns="system" value="кг/ч" />
                 <attribute type="unit.System.Attributes.Title" xmlns="system" value=" " />
-                <attribute type="Attributes.DIGITS" value="1" xmlns="system" />
+                <attribute type="Attributes.DIGITS" value="0" xmlns="system" />
               </object>
               <object name="PAfterFlap" xmlns="automation.control" base-type="Types.AnalogSens.PLC_View" aspect="Aspects.PLC_Aspect" uuid="16d0c79a-40ce-47dd-a90a-4a33330650f7">
                 <attribute type="unit.System.Attributes.Description" xmlns="system" value="Давление Мазута после регулятора" />
