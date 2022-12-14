@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Alpha.Net.Agent Name="Node_Domain" ParentAgentPort="1000" NetEnterPort="1010">
+  <ChildAgents>
+    <ChildAgent Name="ARM2" Address="192.168.1.222" Port="1001" />
+  </ChildAgents>
+</Alpha.Net.Agent>

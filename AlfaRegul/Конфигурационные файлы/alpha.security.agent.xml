@@ -1,0 +1,35 @@
+﻿<Configuration>
+  <LdapHost value="127.0.0.1" />
+  <LdapPort value="389" />
+  <LdapUser value="cn=Manager,dc=maxcrc,dc=com" />
+  <LdapPassword value="d7Jaoz233zb8YRR2EzevgFI7H/hEHrbyrJpIElB6O48hPSo5kPGAvoqlNZBgzo6HTg8uwA35QxWYeax4LdvwsgD8E9xvLIhOb/lIaqsPVHtEx4y79f9dDA05+Zh820ZxGi4tkFf9jj8c1u+zuWveSoCUHLRpSwLOkkwmlgIVvYU" />
+  <LdapSecure value="False" />
+  <SecurityDn value="ou=Security,dc=maxcrc,dc=com" />
+  <DefaultUser value="Operator" />
+  <DefaultUserPassword value="Vu46PVxQNErqCSN752qUB2sOgOcitPm/QVgL8lJGUbHE3+qyJ2FdmUL5OYGirj6zuVldb7nN88iVsPdtMp+LlWEJ/gkFuFFyZHx+x3Mj+NaLcu8kM27Ya28vSlzhQAOqcGcPoa8pVG/KVAOfriRKDHdjI8KvpKnG/fK/+x2ezzw" />
+  <GuestDisplayName value="Гость" />
+  <AuditLogConsumers>
+    <OpcDaLogConsumer>
+      <Server xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Host="127.0.0.1" ProgId="AP.OPCDAServer">
+        <SeverityMap>
+          <Severity Category="Critical" Value="800" />
+          <Severity Category="Important" Value="200" />
+          <Severity Category="Info" Value="100" />
+          <Severity Category="Debug" Value="0" />
+        </SeverityMap>
+        <SignalMap>
+          <Signal Name="DynEvents.DynSignal" Mode="DynamicEvent" />
+          <Signal Name="DynEvents.UserNameDynSignal" Mode="DynamicEvent" />
+          <Signal Name="DynEvents.DisplayNameDynSignal" Mode="DynamicEvent" />
+          <Signal Name="DynEvents.GroupNameDynSignal" Mode="DynamicEvent" />
+          <Signal Name="DynEvents.WorkstationNameDynSignal" Mode="DynamicEvent" />
+          <Signal Name="DynEvents.Message" Mode="Value" />
+          <Signal Name="DynEvents.UserNameMessage" Mode="Value" />
+          <Signal Name="DynEvents.DisplayNameMessage" Mode="Value" />
+          <Signal Name="DynEvents.GroupNameMessage" Mode="Value" />
+          <Signal Name="DynEvents.WorkstationNameMessage" Mode="Value" />
+        </SignalMap>
+      </Server>
+    </OpcDaLogConsumer>
+  </AuditLogConsumers>
+</Configuration>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Alpha.Domain.Agent Name="SDKU ADA">
+  <EntryPointAlphaNetAgent Name="Node_Domain" Port="1010" />
+  <InstalledComponents>
+    <Alpha.Server Name="InstalledAlphaServer" ServiceName="Alpha.Server" />
+    <Alpha.Server Name="InstalledAlphaAccessPoint" ServiceName="Alpha.AccessPoint" />
+  </InstalledComponents>
+  <Domain>
+    <WorkstationRoles>
+      <WorkstationRole Name="THIN_CLIENT">
+        <KnownWorkstations />
+      </WorkstationRole>
+    </WorkstationRoles>
+    <ConfigurationCache Path="C:/DomainStorage/cache" />
+  </Domain>
+  <Server>
+    <Components StoragePath="C:/DomainStorage">
+      <Component InstalledName="InstalledAlphaServer" Name="AlphaServer" />
+      <Component InstalledName="InstalledAlphaAccessPoint" Name="AccessPoint" />
+    </Components>
+  </Server>
+</Alpha.Domain.Agent>
